@@ -10,9 +10,9 @@ site:
   newsletter_url: https://alltechstocks.substack.com
   # The contact form needs a free Formspree form (formspree.io). Paste its ID here, e.g. "xyzabcd".
   # Until then the Contact page explains it isn't ready yet.
-  formspree_id: ""
+  formspree_id: "https://formspree.io/f/xjyyvjqd"
   # Google Analytics 4 Measurement ID, e.g. "G-ABC123XYZ". Blank = no analytics and no cookie banner.
-  ga_id: ""
+  ga_id: "G-YV69WTHYP0"
 
 # The disclaimer shown on every page and in every email. Keep it plain.
 disclaimer: >-
@@ -31,7 +31,7 @@ prices:
 # SEC EDGAR, for US filings. The SEC asks every automated user to say who they are and give a contact
 # email. Use an inbox you read, e.g. "All Tech Stocks andy@yourdomain.com". EDGAR stays off until you change it.
 sec:
-  user_agent: "All Tech Stocks you@example.com"
+  user_agent: "All Tech Stocks andy@towerone.com"
   forms: [8-K, 10-Q, 10-K, 6-K, 20-F, "4", SC 13D, SC 13G, SCHEDULE 13D, SCHEDULE 13G, S-1, S-4, DEF 14A]
   pause_seconds: 0.25       # between requests; the SEC allows 10 a second, we use 4
   keep_days: 60
