@@ -44,9 +44,10 @@
       {% if stock.market == "UK" %}
       <div class="panel-head"><h2>Price</h2><p>Opens in a new tab.</p></div>
       <div class="price-box">
-        <p>We can't show London Stock Exchange prices here yet. The free charts we use don't include them. See the delayed {{ stock.name }} price and chart on Google Finance instead.</p>
-        <a class="price-out" href="{{ stock.google_finance }}" rel="noopener" target="_blank">See {{ stock.symbol }} price on Google Finance &#8599;</a>
+        <p>We can't show London Stock Exchange prices here yet. See the {{ stock.name }} price and chart on TradingView.</p>
+        <a class="price-out" href="https://www.tradingview.com/symbols/{{ stock.exchange }}-{{ stock.symbol }}/" rel="noopener nofollow" target="_blank">See {{ stock.symbol }} on TradingView &#8599;</a>
       </div>
+      <p class="out-label">Also on <a href="{{ stock.google_finance }}" rel="noopener" target="_blank">Google Finance &#8599;</a></p>
       {% else %}
       <div class="panel-head"><h2>Price</h2><p>Delayed, from TradingView.</p></div>
       {% if prices.widgets %}
