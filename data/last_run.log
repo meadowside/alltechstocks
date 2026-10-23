@@ -1,5 +1,5 @@
-All Tech Stocks run: auto at Fri 23 Oct 13:29 UK time
-  feeds: 21/45 worked, 1 new items (1 excluded by rules, 9 Google queries resting this hour)
-  filings: SEC EDGAR is off (set sec.user_agent in config/rules.yaml)
-  stories: 587 grouped, 290 name a watched stock or pass the market rules
-  site: 279 stories live, 0 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: META
+All Tech Stocks run: auto at Fri 23 Oct 14:48 UK time
+  feeds: 45/45 worked, 865 new items (289 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 1079 new filings
+  stories: 722 grouped, 404 name a watched stock or pass the market rules
+  site: 392 stories live, 0 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: META
