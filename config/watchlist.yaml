@@ -10,6 +10,7 @@
 # exact:       words matched with exact capitals only, for names that are also everyday words
 #              ("Arm" the company, not "arm" the body part)
 # group:       software, chips, internet, hardware, security, fintech, games, telecoms, services, data
+# ignore:      optional phrases that look like the name but aren't the company ("per capita")
 # results:     optional next results date (YYYY-MM-DD), shown on the stock's page. Fill in from the
 #              company's investor relations site. Leave it out if you don't know.
 #
@@ -41,7 +42,7 @@ stocks:
   - {symbol: KLAC, exchange: NASDAQ, name: KLA, group: chips, aliases: [KLA Corp, KLA Corporation]}
   - {symbol: ASML, exchange: NASDAQ, name: ASML, group: chips, aliases: [ASML]}
   - {symbol: TSM, exchange: NYSE, name: TSMC, group: chips, aliases: [TSMC, Taiwan Semiconductor]}
-  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, aliases: [Arm Holdings, Rene Haas], exact: [Arm]}
+  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the]}
   - {symbol: MRVL, exchange: NASDAQ, name: Marvell, group: chips, aliases: [Marvell Technology, Marvell]}
   - {symbol: SNPS, exchange: NASDAQ, name: Synopsys, group: chips, aliases: [Synopsys]}
   - {symbol: CDNS, exchange: NASDAQ, name: Cadence, group: chips, aliases: [Cadence Design]}
@@ -119,7 +120,7 @@ stocks:
   - {symbol: CCC, exchange: LSE, name: Computacenter, group: services, aliases: [Computacenter]}
   - {symbol: KNOS, exchange: LSE, name: Kainos, group: services, aliases: [Kainos]}
   - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: services, aliases: [Bytes Technology]}
-  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita]}
+  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita], ignore: [per capita, capita income, capita gdp]}
   - {symbol: RSW, exchange: LSE, name: Renishaw, group: hardware, aliases: [Renishaw]}
   - {symbol: OXIG, exchange: LSE, name: Oxford Instruments, group: hardware, aliases: [Oxford Instruments]}
   - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}

@@ -31,6 +31,8 @@ class Tagger:
             for a in s.exact:
                 exact[a] = s.symbol
         self.loose_map, self.exact_map = loose, exact
+        ignore = [p for st in cfg.stocks for p in st.ignore]
+        self.ignore_re = re.compile(r"(?<![\w])(" + _alternation(ignore) + r")(?![\w])", re.IGNORECASE) if ignore else None
         self.loose_re = re.compile(r"(?<![\w])(" + _alternation(list(loose)) + r")(?![\w])", re.IGNORECASE) if loose else None
         self.exact_re = re.compile(r"(?<![\w])(" + _alternation(list(exact)) + r")(?![\w])") if exact else None
         self.us_symbols = {s.symbol for s in cfg.stocks if s.market == "US"}
@@ -42,6 +44,8 @@ class Tagger:
         """Every watched symbol mentioned in the text."""
         if not text:
             return set()
+        if self.ignore_re:
+            text = self.ignore_re.sub(" ", text)
         found: set[str] = set()
         if self.loose_re:
             found |= {self.loose_map[m.lower()] for m in self.loose_re.findall(text)}

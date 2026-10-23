@@ -47,6 +47,7 @@ class Stock:
     aliases: list[str] = field(default_factory=list)
     exact: list[str] = field(default_factory=list)
     results: str | None = None     # next results date, YYYY-MM-DD, if known
+    ignore: list[str] = field(default_factory=list)  # phrases that look like the name but aren't ("per capita")
 
     @property
     def market(self) -> str:
