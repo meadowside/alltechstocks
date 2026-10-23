@@ -9,7 +9,7 @@
 # always_tech: every item counts as tech, even if the headline doesn't say so
 # ticker:    a company's own newsroom: every item is tagged with this stock
 # domain:    used to match Google News items back to this outlet
-# google:    a Google News feed; the real outlet is read from each item
+# google:    a Google News feed. The real outlet is read from each item
 #
 # Google News queries for every stock on the watchlist are added automatically (see auto_google in
 # rules.yaml), so you don't need to list companies here.

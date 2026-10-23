@@ -122,7 +122,7 @@ def fetch_all(cfg: Config, db: DB, rules: Rules, now: datetime, fixtures: Path |
             hint_source = outlet or source
 
             text = f"{title}. {summary}"
-            excluded = rules.exclusion_reason(title, url, summary)
+            excluded = rules.exclusion_reason(title, url, summary, outlet_name)
             # Rough relevance for the record only; stories recompute it every run.
             relevance = 3 if (tagger.find(title) or hint_source.ticker) else 2 if tagger.find(summary) else 1
             section = rules.pick_section(rules.section_hits(text), hint_source.sections)

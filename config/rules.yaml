@@ -130,7 +130,28 @@ exclude:
                    "overvalued", "bargain stock", "bargain buy", "no-brainer", "screaming buy", "strong buy", "buy rating",
                    "sell rating", "upgrade to buy", "downgrade to sell", "multibagger", "next nvidia",
                    "motley fool", "| the motley fool", "seeking alpha", "zacks", "stock forecast",
-                   "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
+                   "says sell", "says buy", "rated buy", "rated sell", "dip buyers", "analyst says", "analysts say",
+                   "stock flaws", "more stocks", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
+  # Daily market wraps and automated quote pages. They name a dozen companies each and clump
+  # unrelated stories together, so they never count. Sector-wide tech stories still run.
+  wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",
+                  "european stocks", "european shares", "asian stocks", "asian shares", "wall street",
+                  "stock market today", "stock market news", "stocks today", "markets today", "market wrap",
+                  "markets live", "movers", "midday update", "closing bell", "opening bell", "premarket",
+                  "pre-market", "futures", "stock price |", "stock quote", "stock grades", "advanced charts",
+                  "price chart", "earnings call transcript", "outperforms market", "underperforms market",
+                  "outperforms competitors", "underperforms competitors", "trading volume", "short interest",
+                  "options activity", "unusual options", "holdings", "stake in", "position in", "shares sold by",
+                  "shares bought by", "stock position", "institutional", "research & ratings", "ratings |",
+                  "| profile", "cl a profile", "biggest moves", "making the biggest", "and more stocks",
+                  "stocks moving", "stock movers"]
+  # Outlets that never count: automated stock-news farms and tip sites. Matched on the outlet name
+  # Google gives, any case. Add any that turn up on the status page.
+  outlets: [kalkine, ad hoc news, marketbeat, tipranks, simply wall st, simplywall.st, investorplace,
+            "24/7 wall st", gurufocus, benzinga, defense world, etf daily news, american banking news,
+            ticker report, stocktitan, stock titan, insider monkey, stocknews, the globe and mail,
+            marketscreener, nasdaq.com, investing.com, finviz, ainvest, coincentral, "stock traders daily",
+            moomoo, webull, msn, yahoo finance, aol, the motley fool, motley fool, zacks, seeking alpha]
   summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
                      "zacks rank", "stocks to buy"]
   title_keyword_exceptions: [launch, launches, launched]

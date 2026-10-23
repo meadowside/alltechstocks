@@ -15,7 +15,9 @@ def _phrase_regex(phrases: list[str]) -> re.Pattern | None:
 
 
 # Product reviews carry the year: "Pixel 11 2026 review", "OLED TV Review (2026)".
-REVIEW_TITLE = re.compile(r"(\b20\d\d\s+review|\breview\s*\(20\d\d\))\s*$", re.IGNORECASE)
+REVIEW_TITLE = re.compile(r"(\b20\d\d\s+review|\breview\s*\(20\d\d\))\s*$|\breview\s+[-–—]\s", re.IGNORECASE)
+# Quote and profile pages: "SHOP | Shopify Inc. Cl A Profile", "Marvell Stock Grades | MRVL".
+QUOTE_PAGE = re.compile(r"^[A-Z][A-Z.]{0,5}\s+\||\|\s*[A-Z][A-Z.]{0,5}\s*$")
 
 
 class Rules:
@@ -26,6 +28,8 @@ class Rules:
         self.title_keywords = [k.lower() for k in ex["title_keywords"]]
         self.title_exceptions = [k.lower() for k in ex.get("title_keyword_exceptions", [])]
         self.summary_keywords = [k.lower() for k in ex.get("summary_keywords", [])]
+        self.wraps = [k.lower() for k in ex.get("wrap_patterns", [])]
+        self.outlets = [k.lower() for k in ex.get("outlets", [])]
 
         self.section_order = cfg.section_ids
         self.section_res = {sid: _phrase_regex(words) for sid, words in r["section_keywords"].items()}
@@ -38,7 +42,11 @@ class Rules:
         return any(self.section_res.get(sid) and self.section_res[sid].search(text) for sid in self.tech_sections)
 
     # ---------- exclusions ----------
-    def exclusion_reason(self, title: str, url: str, summary: str = "") -> str | None:
+    def exclusion_reason(self, title: str, url: str, summary: str = "", outlet: str = "") -> str | None:
+        o = (outlet or "").lower()
+        for k in self.outlets:
+            if k in o:
+                return f"outlet:{k}"
         u = (url or "").lower()
         for p in self.url_patterns:
             if p in u:
@@ -48,8 +56,13 @@ class Rules:
             if k in sm:
                 return f"summary:{k}"
         if REVIEW_TITLE.search(title or ""):
-            return "title:ends in review"
+            return "title:review"
+        if QUOTE_PAGE.search(title or ""):
+            return "title:quote page"
         t = f" {(title or '').lower()} "
+        for k in self.wraps:
+            if k in t:
+                return f"market wrap:{k}"
         for k in self.title_keywords:
             if k in t:
                 if any(e in t for e in self.title_exceptions) and k in ("review:", "hands-on", "hands on:"):

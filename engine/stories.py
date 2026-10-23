@@ -175,7 +175,7 @@ def _keep(item, cfg: Config, rules: Rules, tagger: Tagger) -> bool:
     """Every article must name a watched stock or be about tech on its own, before grouping.
     Otherwise a general business item (oil prices, a job advert) can join a story and take over
     its headline."""
-    if rules.exclusion_reason(item["title"], item["url"], item["summary"] or ""):  # rules edited since the item was fetched
+    if rules.exclusion_reason(item["title"], item["url"], item["summary"] or "", item["outlet_name"]):  # rules edited since fetch
         return False
     src = cfg.by_id.get(item["source_id"])
     if src and src.ticker:

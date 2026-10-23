@@ -62,13 +62,15 @@ class Tagger:
     def tag_story(self, items: list, source_ticker=lambda item: None) -> tuple[list[str], int, set[str]]:
         """Returns (symbols, relevance, symbols named in a headline) for a group of items.
 
-        A stock belongs to the story if it's in any headline, or in the summaries of at least
-        two articles. Symbols come back most-mentioned first.
-        relevance: 3 a stock in a headline, 2 a stock in summaries only or a market-wide story, 1 neither.
+        A stock belongs to the story only if enough of the coverage is about it: named in at least a
+        quarter of the headlines (and in two or more once a story has three or more articles), or in the
+        summaries of half the articles. One stray mention in one article doesn't count. Symbols come back
+        most-mentioned first.
+        relevance: 3 a stock in the headlines, 2 summaries only or a market-wide story, 1 neither.
         """
-        weight: dict[str, int] = {}
-        in_title: set[str] = set()
-        summary_hits: dict[str, int] = {}
+        n = len(items)
+        title_hits: dict[str, int] = {}
+        text_hits: dict[str, int] = {}
         wide = False
         for i in items:
             title, summary = i["title"] or "", i["summary"] or ""
@@ -76,16 +78,15 @@ class Tagger:
             own = source_ticker(i)
             if own:
                 t.add(own)
-            s = self.find(summary) - t
-            in_title |= t
             for sym in t:
-                weight[sym] = weight.get(sym, 0) + 2
-            for sym in s:
-                weight[sym] = weight.get(sym, 0) + 1
-                summary_hits[sym] = summary_hits.get(sym, 0) + 1
+                title_hits[sym] = title_hits.get(sym, 0) + 1
+            for sym in t | self.find(summary):
+                text_hits[sym] = text_hits.get(sym, 0) + 1
             wide = wide or self.is_market_wide(f"{title}. {summary}")
-        keep = [sym for sym in weight if sym in in_title or summary_hits.get(sym, 0) >= 2]
-        keep.sort(key=lambda sym: (-weight[sym], sym))
+        need_title = max(1 if n < 3 else 2, -(-n // 4))
+        in_title = {sym for sym, k in title_hits.items() if k >= need_title}
+        in_text = {sym for sym, k in text_hits.items() if k >= max(2, -(-n // 2))}
+        keep = sorted(in_title | in_text, key=lambda sym: (-title_hits.get(sym, 0), -text_hits[sym], sym))
         if in_title:
             rel = 3
         elif keep or wide:
