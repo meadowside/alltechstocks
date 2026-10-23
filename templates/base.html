@@ -303,8 +303,8 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
       <a href="{{ root }}index.html" class="{{ 'on' if page == 'home' }}">Top</a>
       <a href="{{ root }}us.html" class="{{ 'on' if page == 'us' }}">US</a>
       <a href="{{ root }}uk.html" class="{{ 'on' if page == 'uk' }}">UK</a>
-      <a href="{{ root }}stocks/index.html" class="{{ 'on' if page == 'stocks' }}">All {{ stocks|length }} stocks</a>
       {% for id, name in nav %}<a href="{{ root }}{{ id }}.html" class="{{ 'on' if page == id }}">{{ name }}</a>{% endfor %}
+      <a href="{{ root }}stocks/index.html" class="{{ 'on' if page == 'stocks' }}">All {{ stocks|length }} stocks</a>
     </nav>
   </div>
 </header>
