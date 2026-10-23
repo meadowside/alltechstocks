@@ -10,6 +10,7 @@ One Atom feed per company, about 75 requests an hour. Each filing is stored once
 from __future__ import annotations
 
 import json
+import os
 import re
 import time
 import urllib.request
@@ -60,8 +61,13 @@ ITEM_RE = re.compile(r"Item\s+(\d\.\d\d)", re.IGNORECASE)
 ACC_RE = re.compile(r"accession-number=([\d-]+)")
 
 
+def user_agent(cfg: Config) -> str:
+    """The SEC_USER_AGENT secret if set, so the contact email stays out of the code. Else rules.yaml."""
+    return (os.environ.get("SEC_USER_AGENT") or cfg.rules.get("sec", {}).get("user_agent") or "").strip()
+
+
 def enabled(cfg: Config) -> bool:
-    ua = cfg.rules.get("sec", {}).get("user_agent", "")
+    ua = user_agent(cfg)
     return bool(ua) and PLACEHOLDER not in ua and "@" in ua
 
 
@@ -105,9 +111,9 @@ def fetch_filings(cfg: Config, db: DB, now: datetime, fixtures: Path | None = No
     sec = cfg.rules.get("sec", {})
     stats = {"companies": 0, "ok": 0, "new": 0}
     if fixtures is None and not enabled(cfg):
-        db.record_health("sec-edgar", now, False, 0, "Off: set sec.user_agent in rules.yaml to your name and email")
+        db.record_health("sec-edgar", now, False, 0, "Off: add the SEC_USER_AGENT secret in GitHub (name and contact email)")
         return stats
-    ua = sec["user_agent"]
+    ua = user_agent(cfg)
     wanted = {f.upper() for f in sec.get("forms", [])}
     keep_days = int(sec.get("keep_days", 60))
     oldest = now - timedelta(days=keep_days)

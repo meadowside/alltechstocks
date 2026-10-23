@@ -51,7 +51,7 @@ def main():
         if fs["companies"]:
             print(f"  filings: {fs['ok']}/{fs['companies']} companies checked, {fs['new']} new filings")
         else:
-            print("  filings: SEC EDGAR is off (set sec.user_agent in config/rules.yaml)")
+            print("  filings: SEC EDGAR is off (add the SEC_USER_AGENT secret in GitHub)")
         db.prune(now)
         stories = build_stories(db, cfg, rules, now)
         shown = sum(1 for s in stories if s.eligible)
