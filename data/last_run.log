@@ -1,5 +1,12 @@
-All Tech Stocks run: auto at Fri 23 Oct 15:23 UK time
-  feeds: 45/45 worked, 54 new items (19 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 23 Oct 15:41 UK time
+  feeds: 45/45 worked, 136 new items (63 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 768 grouped, 454 name a watched stock or pass the market rules
-  site: 443 stories live, 0 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: META
+  stories: 785 grouped, 471 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: buy): 'LSEG agrees to buy Octus, a US provider of energy and commodities market intelligence, expanding its data and analytics offering for custome'
+  AI line rejected (reads like advice or a prediction: shares fell): "Super Micro's shares fell further than its rivals' on Thursday, a move the coverage does not tie to any specific change in its customers, pr"
+  AI line rejected (reads like advice or a prediction: buy): 'Salesforce plans to buy Braze, a customer engagement platform, to add more AI-driven marketing tools to its Customer 360 product range.'
+  AI line rejected (reads like advice or a prediction: buying): 'Cognizant, an IT services firm, is buying DyFlex Solutions, a partner that works on SAP systems, which could add SAP-focused services and AI'
+  AI line rejected (42 words): "I can't write this one without the underlying details, since the headline gives no specifics on what the three reasons are. Could you share "
+  AI line rejected (50 words): "I can't write a meaningful business line from this: the only supporting detail is the headline itself, which names a stock deal and a court "
+  site: 461 stories live, 25 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: META
+  AI lines: 25 written, 6 rejected, 0 failed calls
