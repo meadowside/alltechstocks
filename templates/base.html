@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en-GB" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.name }}: {{ site.tagline }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.tagline }} Updated every hour. News for research, not financial advice.{% endblock %}">
+<link rel="icon" href="{{ root }}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{ root }}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="{{ root }}favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="{{ root }}apple-touch-icon.png">
+<meta property="og:image" content="{{ site.url }}/logo-512.png">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% block og_title %}{{ site.name }}: {{ site.tagline }}{% endblock %}">
+<meta property="og:description" content="The US and UK tech stock stories the most outlets are covering, ranked and updated every hour. News for research, not advice.">
+<meta property="og:url" content="{% block og_url %}{{ site.url }}/{{ page if page not in ('home', None) else 'index' }}.html{% endblock %}">
+<meta name="twitter:card" content="summary">
+<script>
+  // Light by default; remember the reader's choice if they switch.
+  try { if (localStorage.getItem("theme") === "dark") document.documentElement.dataset.theme = "dark"; } catch (e) {}
+</script>
+{% block head %}{% endblock %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f6f7f9; --card: #ffffff; --ink: #131722; --muted: #5d6573; --rule: #e0e3e8;
+  --accent: #1d4ed8; --accent-soft: #e6edfc; --accent-ink: #1e3a8a; --navy: #0d1b2a; --chip: #eef0f4;
+  --warn-soft: #fff6e0; --warn-ink: #6b4a00;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme: light;
+}
+:root[data-theme="dark"] {
+  --paper: #0e1116; --card: #161a21; --ink: #e8eaee; --muted: #9aa1ad; --rule: #272c35;
+  --accent: #7aa2ff; --accent-soft: #1a2540; --accent-ink: #a9c2ff; --navy: #0b1730; --chip: #1f242d;
+  --warn-soft: #2a2312; --warn-ink: #f0d58a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+.cookie-bar { position: fixed; left: 16px; right: 16px; bottom: 16px; max-width: 720px; margin: 0 auto; z-index: 50;
+  background: var(--card); color: var(--ink); border: 1px solid var(--rule); border-radius: 12px; padding: 14px 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.15); display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font: 14px/1.45 var(--sans); }
+.cookie-bar[hidden] { display: none; }
+.cookie-bar p { margin: 0; flex: 1 1 320px; }
+.cookie-bar a { color: var(--accent-ink); }
+.cookie-bar div { display: flex; gap: 8px; }
+.cookie-bar button { font: 600 14px var(--sans); border-radius: 8px; padding: 8px 14px; cursor: pointer;
+  background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+.cookie-bar button.ghost { background: transparent; color: var(--ink); border-color: var(--rule); }
+
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.5 var(--sans); }
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+/* ---- header ---- */
+header.top { border-bottom: 1px solid var(--rule); background: var(--card); }
+.masthead { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0 10px; flex-wrap: wrap; }
+.brand { font: 700 30px/1 var(--serif); letter-spacing: -0.5px; }
+.brand .hl-word { color: var(--accent); }
+.tagline { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.mast-right { display: flex; align-items: center; gap: 12px; }
+.updated { color: var(--muted); font-size: 13px; }
+.theme-btn { display: inline-flex; align-items: center; gap: 6px; font: 500 13px var(--sans); color: var(--ink);
+  background: var(--chip); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 11px; cursor: pointer; }
+.theme-btn svg { width: 15px; height: 15px; }
+.theme-btn .moon, [data-theme="dark"] .theme-btn .sun { display: inline; }
+.theme-btn .sun, [data-theme="dark"] .theme-btn .moon { display: none; }
+nav.sections { display: flex; gap: 6px; overflow-x: auto; padding: 4px 0 14px; scrollbar-width: none; }
+nav.sections a { white-space: nowrap; font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 999px; background: var(--chip); }
+nav.sections a.on { background: var(--accent); color: #fff; }
+[data-theme="dark"] nav.sections a.on { color: #0b1730; }
+nav.sections a:hover { text-decoration: none; }
+
+/* ---- shared bits ---- */
+main.wrap { padding-top: 24px; padding-bottom: 48px; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 24px; align-items: start; }
+.label { font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.dot { opacity: .5; }
+.tag { font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 4px; background: var(--chip); color: var(--muted); }
+.src { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 5px; color: var(--muted); font-size: 12.5px; }
+.src img { width: 14px; height: 14px; border-radius: 3px; }
+.empty { color: var(--muted); padding: 14px 0; font-size: 14px; }
+
+/* ---- top story ---- */
+.lead-story { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 24px; margin-bottom: 24px;
+  display: grid; grid-template-columns: 120px minmax(0, 1fr); column-gap: 24px; row-gap: 14px; }
+.big-count { border-right: 1px solid var(--rule); padding-right: 20px; text-align: center; align-self: start; }
+.big-count b { display: block; font: 700 64px/1 var(--serif); color: var(--accent); letter-spacing: -2px; }
+.big-count span { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.3; }
+.lead-body h1 { font: 700 30px/1.2 var(--serif); margin: 4px 0 8px; letter-spacing: -0.3px; }
+.lead-body .teaser { font-size: 16px; color: var(--muted); margin: 0 0 10px; }
+.lead-story .why { grid-column: 1 / -1; margin: 0; padding: 12px 14px; background: var(--accent-soft); border-radius: 8px; font-size: 14.5px; }
+.coverage { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; font-size: 13px; }
+.cov-title { font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.grp { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; }
+.grp em { font-style: normal; font-size: 11.5px; color: var(--muted); }
+.grp .o { display: inline-flex; align-items: center; gap: 5px; }
+.grp-1 .o { font-weight: 600; font-size: 14px; }
+.grp-3 .o { color: var(--muted); }
+.grp img { width: 14px; height: 14px; border-radius: 3px; }
+.more-n { color: var(--muted); font-size: 12px; }
+
+/* ---- ranked sections ---- */
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.section { background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--accent); border-radius: 10px; padding: 16px 20px 6px; }
+.section-head { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid var(--rule); padding-bottom: 8px; }
+.section-head h2 { font: 700 19px/1.2 var(--serif); margin: 0; }
+.section-head a { font-size: 12.5px; color: var(--muted); }
+ol.ranked { list-style: none; margin: 0; padding: 0; }
+.row { display: grid; grid-template-columns: 26px minmax(0, 1fr) 46px; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.row:last-child { border-bottom: 0; }
+.row:target { background: var(--accent-soft); margin: 0 -12px; padding: 12px; border-radius: 8px; scroll-margin-top: 16px; }
+.rank { font: 700 18px/1.2 var(--serif); color: var(--muted); }
+.row:first-child .rank { color: var(--accent); }
+.hl { display: block; font: 600 16px/1.35 var(--serif); margin-bottom: 4px; }
+.row:first-child .hl { font-size: 18px; }
+.sowhat { margin: 2px 0 6px; font-size: 13.5px; line-height: 1.45; color: var(--ink); padding-left: 10px; border-left: 2px solid var(--accent); }
+.sowhat b { font-weight: 600; color: var(--accent-ink); }
+span.count { text-align: center; background: var(--chip); border-radius: 8px; padding: 4px 0 3px; }
+span.count b { display: block; font: 700 17px/1 var(--serif); }
+span.count small { display: block; font-size: 10px; color: var(--muted); margin-top: 2px; }
+.row:first-child span.count { background: var(--accent-soft); }
+.row:first-child span.count b { color: var(--accent-ink); }
+
+/* ---- source lists ---- */
+details.count { position: relative; }
+details.count summary { list-style: none; cursor: pointer; text-align: center; background: var(--chip); border-radius: 8px; padding: 4px 0 3px; }
+details.count summary::-webkit-details-marker { display: none; }
+details.count summary:hover, details.count[open] summary { outline: 1px solid var(--accent); }
+details.count summary b { display: block; font: 700 17px/1 var(--serif); }
+details.count summary small { display: block; font-size: 10px; color: var(--muted); margin-top: 2px; }
+.row:first-child details.count summary { background: var(--accent-soft); }
+.row:first-child details.count summary b { color: var(--accent-ink); }
+.cov-pop { position: absolute; right: 0; top: calc(100% + 6px); z-index: 5; width: 240px; background: var(--card);
+  border: 1px solid var(--rule); border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.12); padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 2px; text-align: left; }
+.cov-pop .cov-title { margin-bottom: 4px; }
+.cov-pop a { display: flex; align-items: center; gap: 7px; padding: 5px 4px; border-radius: 6px; font-size: 13.5px; }
+.cov-pop a:hover { background: var(--chip); text-decoration: none; }
+.cov-pop img, .more-list img { width: 14px; height: 14px; border-radius: 3px; }
+a.o:hover { color: var(--accent); }
+.more-d summary { cursor: pointer; color: var(--muted); font-size: 12px; list-style: none; }
+.more-d summary::-webkit-details-marker { display: none; }
+.more-d[open] summary { margin-bottom: 4px; }
+.more-list { display: inline-flex; flex-wrap: wrap; gap: 4px 10px; }
+.order-switch { display: inline-flex; background: var(--chip); border-radius: 999px; padding: 3px; margin: 0 0 14px; }
+.order-switch button { font: 500 13px var(--sans); color: var(--muted); background: none; border: 0; border-radius: 999px; padding: 6px 14px; cursor: pointer; }
+.order-switch button[aria-selected="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.08); }
+
+/* ---- sidebar ---- */
+ul.justin { list-style: none; margin: 0; padding: 0; }
+ul.justin li { display: grid; grid-template-columns: 52px 1fr; gap: 6px; padding: 10px 0; border-top: 1px solid var(--rule); }
+ul.justin .when { font-size: 12px; font-weight: 600; color: var(--accent-ink); padding-top: 2px; }
+ul.justin a { font: 600 14.5px/1.35 var(--serif); }
+ul.justin .n { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+aside.side { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 16px; }
+.box { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; }
+.box h2 { font: 700 17px/1.2 var(--serif); margin: 0 0 4px; }
+.box .sub { color: var(--muted); font-size: 12.5px; margin: 0 0 8px; }
+ol.trend { list-style: none; margin: 0; padding: 0; counter-reset: t; }
+ol.trend li { counter-increment: t; display: grid; grid-template-columns: 22px 1fr; gap: 4px; padding: 10px 0; border-top: 1px solid var(--rule); }
+ol.trend li::before { content: counter(t); font: 700 17px/1.2 var(--serif); color: var(--accent); }
+ol.trend a { font: 600 14.5px/1.35 var(--serif); }
+ol.trend .n { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+ol.trend .n b { color: var(--accent-ink); font-weight: 600; }
+.promo { display: block; padding: 12px 0; border-top: 1px solid var(--rule); }
+.promo:hover { text-decoration: none; }
+.promo b { display: block; font: 700 15px/1.3 var(--serif); }
+.promo span { display: block; color: var(--muted); font-size: 13px; margin: 3px 0 6px; }
+.promo em { font-style: normal; font-size: 12.5px; font-weight: 600; color: var(--accent); }
+.promo:hover em { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---- pages, signup, footer ---- */
+.page-head h1 { font: 700 28px/1.2 var(--serif); margin: 0 0 4px; }
+.page-head p { color: var(--muted); margin: 0 0 18px; }
+.signup { margin-top: 24px; background: var(--navy); color: #fff; border-radius: 10px; padding: 20px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.signup p { margin: 0; font-size: 15px; }
+.signup a.btn { background: #7aa2ff; color: #0b1730; font-weight: 600; padding: 9px 16px; border-radius: 8px; white-space: nowrap; }
+footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: 12.5px; padding: 20px 0 32px; }
+footer .foot { display: flex; flex-direction: column; gap: 6px; }
+footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
+footer nav a { color: var(--ink); font-weight: 500; }
+footer p { margin: 0 0 8px; max-width: 760px; }
+
+/* ---- About, Privacy, Terms, Contact ---- */
+.prose { max-width: 680px; margin: 0 auto; background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 28px 32px 20px; }
+.prose h1 { font: 700 30px/1.2 var(--serif); margin: 0 0 12px; }
+.prose h2 { font: 700 19px/1.3 var(--serif); margin: 24px 0 6px; }
+.prose p, .prose li { font-size: 15.5px; line-height: 1.6; }
+.prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.prose .lede { font-size: 17px; color: var(--muted); }
+.prose .small { font-size: 13px; color: var(--muted); margin-top: 24px; }
+.prose .notice { padding: 12px 14px; background: var(--accent-soft); border-radius: 8px; }
+form.contact { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
+form.contact label { display: flex; flex-direction: column; gap: 5px; font-size: 13.5px; font-weight: 600; }
+form.contact input, form.contact textarea, form.contact select { font: 15px var(--sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 8px; padding: 9px 11px; }
+form.contact input:focus, form.contact textarea:focus, form.contact select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+form.contact button { align-self: flex-start; font: 600 15px var(--sans); background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 10px 18px; cursor: pointer; }
+[data-theme="dark"] form.contact button { color: #0b1730; }
+form.contact .hp { position: absolute; left: -9999px; }
+@media (max-width: 760px) { .prose { padding: 20px 18px 14px; } .prose h1 { font-size: 26px; } }
+table.status { width: 100%; border-collapse: collapse; background: var(--card); font-size: 13px; }
+table.status th, table.status td { text-align: left; padding: 7px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+.ok { color: var(--accent); font-weight: 600; } .bad { color: #b42318; font-weight: 600; }
+
+/* ---- stocks ---- */
+.risk { background: var(--warn-soft); color: var(--warn-ink); font-size: 12.5px; text-align: center; padding: 6px 16px; }
+.risk a { text-decoration: underline; text-underline-offset: 2px; }
+.tk { display: inline-block; font: 600 11.5px/1 var(--sans); letter-spacing: .02em; padding: 3px 6px 2px; border-radius: 4px;
+  background: var(--accent-soft); color: var(--accent-ink); }
+a.tk:hover { text-decoration: none; outline: 1px solid var(--accent); }
+ul.justin a.tk, ol.trend a.tk, ul.filings a.tk { font: 600 11.5px/1 var(--sans); }
+.tks { display: inline-flex; gap: 4px; flex-wrap: wrap; margin-right: 4px; }
+.mkt { font-size: 10.5px; font-weight: 600; color: var(--muted); border: 1px solid var(--rule); border-radius: 4px; padding: 1px 4px; }
+table.stocks { width: 100%; border-collapse: collapse; font-size: 14px; }
+table.stocks th { text-align: left; font-size: 11.5px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  padding: 8px 8px; border-bottom: 1px solid var(--rule); }
+table.stocks td { padding: 10px 8px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.stocks tr:last-child td { border-bottom: 0; }
+table.stocks td.n { font: 700 16px/1.2 var(--serif); color: var(--muted); width: 28px; }
+table.stocks td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.stocks th.num { text-align: right; }
+table.stocks .nm { display: block; font-weight: 600; margin-top: 3px; }
+table.stocks .story a { font: 600 14.5px/1.35 var(--serif); }
+.panel { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 20px; margin-bottom: 24px; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; border-bottom: 1px solid var(--rule); padding-bottom: 8px; margin-bottom: 4px; }
+.panel-head h2 { font: 700 19px/1.2 var(--serif); margin: 0; }
+.panel-head p { margin: 0; color: var(--muted); font-size: 12.5px; }
+ul.filings { list-style: none; margin: 0; padding: 0; }
+ul.filings li { padding: 9px 0; border-top: 1px solid var(--rule); font-size: 13.5px; }
+ul.filings .when { color: var(--muted); font-size: 12px; }
+ul.filings b { font-weight: 600; }
+.price-box { min-height: 120px; border: 1px dashed var(--rule); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.price-box.on { border: 0; padding: 0; }
+.price-box p { margin: 0; color: var(--muted); font-size: 13.5px; }
+.price-box button { align-self: flex-start; font: 600 14px var(--sans); background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+[data-theme="dark"] .price-box button { color: #0b1730; }
+.links { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 0; }
+.links a { font-size: 13px; font-weight: 500; padding: 6px 11px; border-radius: 999px; background: var(--chip); }
+.stock-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+.stock-head h1 { font: 700 32px/1.15 var(--serif); margin: 0; letter-spacing: -.3px; }
+.stock-head .tk { font-size: 14px; padding: 5px 8px 4px; }
+.facts { display: flex; gap: 8px 22px; flex-wrap: wrap; color: var(--muted); font-size: 13.5px; margin: 0 0 18px; }
+.facts b { color: var(--ink); font-weight: 600; }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; align-items: start; }
+ol.plain { list-style: none; margin: 0; padding: 0; }
+ol.plain li { padding: 11px 0; border-top: 1px solid var(--rule); }
+ol.plain li:first-child { border-top: 0; }
+ol.plain .meta { display: block; color: var(--muted); font-size: 12.5px; margin-top: 3px; }
+ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
+.filter { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 14px; }
+.filter button { font: 500 13px var(--sans); color: var(--ink); background: var(--chip); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 12px; cursor: pointer; }
+.filter button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+[data-theme="dark"] .filter button[aria-pressed="true"] { color: #0b1730; }
+@media (max-width: 1000px) { .cols { grid-template-columns: 1fr; } }
+@media (max-width: 640px) { table.stocks .hide-s { display: none; } .stock-head h1 { font-size: 26px; } }
+
+@media (max-width: 1000px) {
+  .layout { grid-template-columns: 1fr; }
+  aside.side { position: static; }
+}
+@media (max-width: 760px) {
+  .grid { grid-template-columns: 1fr; }
+  .lead-story { grid-template-columns: 1fr; padding: 18px 16px; }
+  .big-count { border-right: 0; padding-right: 0; text-align: left; display: flex; align-items: baseline; gap: 8px; }
+  .big-count b { font-size: 44px; }
+  .big-count span br { display: none; }
+  .lead-body h1 { font-size: 24px; }
+  .section { padding: 14px 16px 4px; }
+  .brand { font-size: 26px; }
+  .updated { display: none; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="masthead">
+      <div>
+        <a class="brand" href="{{ root }}index.html">All Tech <span class="hl-word">Stocks</span></a>
+        <div class="tagline">{{ site.tagline }}</div>
+      </div>
+      <div class="mast-right">
+        <span class="updated">Updated {{ updated }}</span>
+        <button class="theme-btn" id="theme-btn" type="button" aria-label="Switch between light and dark mode">
+          <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <span class="theme-label">Dark</span>
+        </button>
+      </div>
+    </div>
+    <nav class="sections" aria-label="Sections">
+      <a href="{{ root }}index.html" class="{{ 'on' if page == 'home' }}">Top</a>
+      <a href="{{ root }}us.html" class="{{ 'on' if page == 'us' }}">US</a>
+      <a href="{{ root }}uk.html" class="{{ 'on' if page == 'uk' }}">UK</a>
+      <a href="{{ root }}stocks/index.html" class="{{ 'on' if page == 'stocks' }}">All stocks</a>
+      {% for id, name in nav %}<a href="{{ root }}{{ id }}.html" class="{{ 'on' if page == id }}">{{ name }}</a>{% endfor %}
+    </nav>
+  </div>
+</header>
+<div class="risk">News coverage for research. Not financial advice, and never a recommendation to buy, sell or hold. <a href="{{ root }}terms.html#not-advice">Read why</a></div>
+<main class="wrap">
+{% if sidebar %}
+<div class="layout">
+  <div>{% block main %}{% endblock %}</div>
+  <aside class="side">
+    {% if just_in %}
+    <section class="box">
+      <h2>Just in</h2>
+      <p class="sub">The newest stories, as they land.</p>
+      <ul class="justin">
+        {% for s in just_in %}
+        <li><span class="when">{{ s.first_seen | ago }}</span><div><a href="{{ s.link }}" rel="noopener" target="_blank">{{ s.headline }}</a>
+          <span class="n">{% for t in s.tickers[:3] %}<a class="tk" href="{{ root }}stocks/{{ stocks[t].slug }}.html">{{ t }}</a> {% endfor %}{{ s.link_outlet.name }}{% if s.source_count > 1 %}, {{ s.source_count }} outlets{% endif %}</span></div></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    {% if filings_box %}
+    <section class="box">
+      <h2>New US filings</h2>
+      <p class="sub">Results, deals and big events filed with the SEC in the last two days.</p>
+      <ul class="filings">
+        {% for f in filings_box %}
+        <li><a class="tk" href="{{ root }}stocks/{{ stocks[f.symbol].slug }}.html">{{ f.symbol }}</a> <a href="{{ f.url }}" rel="noopener" target="_blank"><b>{{ f.label }}</b> ({{ f.form }})</a> <span class="when">{{ f.filed | ago }}</span></li>
+        {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+    {% if trending %}
+    <section class="box">
+      <h2>Trending</h2>
+      <p class="sub">Picking up the most new coverage in the last few hours.</p>
+      <ol class="trend">
+        {% for t in trending %}
+        <li><div><a href="{{ t.story.link }}" rel="noopener" target="_blank">{{ t.story.headline }}</a>
+          <span class="n">{{ t.story.source_count }} outlets, <b>+{{ t.new }} recently</b></span></div></li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+    {% if promos %}
+    <section class="box">
+      <h2>Sister titles</h2>
+      {% for p in promos %}
+      <a class="promo" href="{{ p.url }}" rel="noopener" target="_blank"><b>{{ p.name }}</b><span>{{ p.line }}</span><em>{{ p.cta }} &rarr;</em></a>
+      {% endfor %}
+    </section>
+    {% endif %}
+  </aside>
+</div>
+{% else %}
+{{ self.main() }}
+{% endif %}
+</main>
+<footer>
+  <div class="wrap foot">
+    <p><b>Not financial advice.</b> {{ disclaimer }}</p>
+    <p>Every headline links to the publisher that wrote it. {{ site.name }} ranks US and UK tech stock news by how many outlets cover it and refreshes every hour. "So what" lines are written by AI. &copy; {{ year }} {{ site.name }}.</p>
+    <nav aria-label="Site information">
+      <a href="{{ root }}about.html">About</a><a href="{{ root }}privacy.html">Privacy</a><a href="{{ root }}terms.html">Terms</a><a href="{{ root }}contact.html">Contact</a><a href="#" id="cookie-settings">Cookie settings</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-btn");
+  var label = btn.querySelector(".theme-label");
+  function show() { label.textContent = root.dataset.theme === "dark" ? "Light" : "Dark"; }
+  show();
+  btn.addEventListener("click", function () {
+    root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    show();
+  });
+  // Source lists: one open at a time, and a click elsewhere closes it.
+  var pops = document.querySelectorAll("details.count");
+  pops.forEach(function (d) {
+    d.addEventListener("toggle", function () { if (d.open) pops.forEach(function (o) { if (o !== d) o.open = false; }); });
+  });
+  document.addEventListener("click", function (e) {
+    pops.forEach(function (d) { if (d.open && !d.contains(e.target)) d.open = false; });
+  });
+})();
+</script>
+{% set want_consent = site.ga_id or prices.widgets %}
+{% if want_consent %}
+<div id="cookie-bar" class="cookie-bar" hidden>
+  <p>Can we use cookies? {% if site.ga_id %}Google Analytics counts visits so we know which stories people read{% if prices.widgets %}, and {% else %}. {% endif %}{% endif %}{% if prices.widgets %}{% if not site.ga_id %}T{% else %}t{% endif %}he price charts come from TradingView, which may set its own.{% endif %} No ads, nothing sold. <a href="{{ root }}privacy.html">Privacy</a></p>
+  <div><button type="button" data-consent="yes">Accept</button><button type="button" data-consent="no" class="ghost">No thanks</button></div>
+</div>
+{% endif %}
+<script>
+// Nothing from Google Analytics or TradingView loads until the reader says yes.
+// Pages listen for the "ats-consent" event to load price charts.
+(function () {
+  var ID = "{{ site.ga_id or '' }}", bar = document.getElementById("cookie-bar");
+  function get() { try { return localStorage.getItem("ats-consent"); } catch (e) { return null; } }
+  function set(v) { try { localStorage.setItem("ats-consent", v); } catch (e) {} }
+  window.atsConsent = get;
+  function load() {
+    document.dispatchEvent(new Event("ats-consent"));
+    if (!ID || window.gaLoaded) return; window.gaLoaded = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", ID, { anonymize_ip: true });
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+    document.head.appendChild(s);
+  }
+  window.atsAccept = function () { set("yes"); if (bar) bar.hidden = true; load(); };
+  function clearCookies() {
+    document.cookie.split(";").forEach(function (c) {
+      var n = c.split("=")[0].trim();
+      if (n.indexOf("_ga") === 0) {
+        ["", "; domain=" + location.hostname, "; domain=." + location.hostname.replace(/^www\./, "")].forEach(function (d) {
+          document.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + d;
+        });
+      }
+    });
+  }
+  var link = document.getElementById("cookie-settings");
+  if (!bar) { if (link) link.remove(); return; }
+  var c = get();
+  if (c === "yes") document.addEventListener("DOMContentLoaded", load); else if (c !== "no") bar.hidden = false;
+  bar.addEventListener("click", function (e) {
+    var v = e.target.getAttribute("data-consent"); if (!v) return;
+    set(v); bar.hidden = true;
+    if (v === "yes") load(); else { clearCookies(); if (window.gaLoaded || window.tvLoaded) location.reload(); }
+  });
+  if (link) link.addEventListener("click", function (e) { e.preventDefault(); bar.hidden = false; });
+})();
+</script>
+</body>
+</html>

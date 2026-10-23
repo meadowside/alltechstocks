@@ -1,0 +1,21 @@
+{% extends "pages/_page.html" %}
+{% block body %}
+<p class="lede">A story tagged with the wrong company, a stock we should follow, a sponsorship question or a correction? Send it here. We can't answer questions about whether to buy or sell anything.</p>
+{% if site.formspree_id %}
+<form class="contact" action="https://formspree.io/f/{{ site.formspree_id }}" method="POST">
+  <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+  <label>Your email<input type="email" name="email" autocomplete="email" required></label>
+  <label>What's it about?
+    <select name="topic">
+      <option>General</option><option>Correction or takedown</option><option>Story tagged with the wrong company</option><option>Suggest a stock or outlet</option><option>Sponsorship</option>
+    </select>
+  </label>
+  <label>Message<textarea name="message" rows="6" required></textarea></label>
+  <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit">Send message</button>
+  <p class="small">We use your details only to reply. See the <a href="privacy.html">privacy policy</a>.</p>
+</form>
+{% else %}
+<p class="notice">The contact form isn't switched on yet. Please check back soon.</p>
+{% endif %}
+{% endblock %}

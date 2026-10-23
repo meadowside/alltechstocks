@@ -1,0 +1,29 @@
+{% extends "pages/_page.html" %}
+{% block body %}
+<p class="lede">Short version: nothing that sets cookies loads until you say yes. We don't use advertising cookies and we don't sell anything about you.</p>
+
+<h2>What this site collects</h2>
+{% if site.ga_id %}<p>If you click Accept on the cookie banner, Google Analytics sets cookies that count visits and show which pages and stories get read. Google sees your IP address and basic details about your browser and device. We see only totals. If you click No thanks, Analytics never loads.</p>
+{% else %}<p>Nothing that identifies you, unless you use the contact form. There are no analytics, no tracking pixels and no advertising cookies.</p>{% endif %}
+{% if prices.widgets %}<p>The price charts on each stock's page come from TradingView. They load when you accept cookies or click Show price chart. TradingView then receives your IP address and may set its own cookies, under TradingView's privacy policy.</p>{% endif %}
+<p>You can change your mind any time with Cookie settings at the bottom of every page. Your light or dark mode choice and your cookie choice are saved in your own browser so the site remembers them. They never leave your device.</p>
+
+<h2>Other services the site uses</h2>
+<ul>
+  <li><b>GitHub Pages</b> hosts the site. Like any web host, it may log your IP address for security.</li>
+  <li><b>Google Fonts</b> and <b>Google's favicon service</b> supply the typefaces and the small outlet logos, so your browser asks Google for them.</li>
+  {% if site.ga_id %}<li><b>Google Analytics</b> counts visits, only if you accept cookies.</li>
+  {% endif %}{% if prices.widgets %}<li><b>TradingView</b> supplies the price charts, only if you allow them.</li>
+  {% endif %}<li><b>Formspree</b> processes messages sent through the contact form.</li>
+  <li><b>Substack</b> runs the email list. If you sign up, Substack's own privacy policy applies to that.</li>
+</ul>
+<p>When you click a headline, a filing or a price link you leave this site, and that site's own privacy policy applies.</p>
+
+<h2>Contact form messages</h2>
+<p>If you send a message, we receive your name, email address and message. We use them only to reply, and delete them when they're no longer needed.</p>
+
+<h2>Your rights</h2>
+<p>Under UK data protection law you can ask to see, correct or delete any personal data we hold about you. Use the <a href="contact.html">contact form</a>. If you're unhappy with how we handle it, you can complain to the Information Commissioner's Office at ico.org.uk.</p>
+
+<p class="small">{{ site.name }} is run by {{ site.owner }}. Last updated {{ updated_date }}.</p>
+{% endblock %}

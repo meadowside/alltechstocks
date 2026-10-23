@@ -1,0 +1,25 @@
+{% extends "pages/_page.html" %}
+{% block body %}
+<p class="lede">{{ site.name }} shows which US and UK listed tech companies the news is covering most, updated every hour. It's a place to start your research. It never tells you what to buy or sell.</p>
+
+<h2>How it works</h2>
+<p>Every hour we read about 30 news feeds: Reuters, Bloomberg, the Financial Times, CNBC, the BBC and the rest of the financial press, plus tech titles and official sources. We also run a news search for each of the {{ stocks|length }} companies we follow. Articles about the same event are grouped into one story, and each story is tagged with the companies it names.</p>
+<p>Stories are then ranked by how many outlets are covering them. Major outlets count for more than smaller ones and older stories slowly sink. The stock table works the same way: a company rises when more outlets write about it. Nobody picks the order by hand.</p>
+<p>Every headline links straight to the publisher that wrote it. We don't copy articles.</p>
+
+<h2>Filings and prices</h2>
+<p>For US companies we also list filings from the SEC's free EDGAR service: results, deals, insider trades and other official documents. UK companies publish through the London Stock Exchange, and those announcements appear when outlets cover them.</p>
+<p>Price charts come from TradingView's free widgets. They're delayed and load only when you allow them. For anything you'll act on, use your broker's own prices.</p>
+
+<h2>What this site isn't</h2>
+<p>A lot of coverage means a company is being talked about. It doesn't mean its shares will go up, down or anywhere. We never publish tips, top picks, price targets or predictions, and we filter out other people's. Read <a href="terms.html#not-advice">why this isn't advice</a>.</p>
+
+<h2>The "So what" lines</h2>
+<p>The short "So what" line under a story is written by AI from the coverage. It explains what the news means for the company's business and is checked by software so it never comments on the shares. Like any summary it can be wrong. The publisher's article is always the source to trust.</p>
+
+<h2>The email</h2>
+<p>The most covered stories go out by email at 7am UK time, Monday to Friday. <a href="{{ site.newsletter_url }}">Sign up free</a>.</p>
+
+<h2>Who runs it</h2>
+<p>{{ site.name }} is run by {{ site.owner }}, who also publishes All UK Tech, AI Prompt Hackers and Answerable. Spotted a story tagged with the wrong company, or a stock we should follow? <a href="contact.html">Get in touch</a>.</p>
+{% endblock %}

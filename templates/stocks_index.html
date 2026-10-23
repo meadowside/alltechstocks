@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}All stocks we follow: {{ site.name }}{% endblock %}
+{% block og_url %}{{ site.url }}/stocks/{% endblock %}
+{% block main %}
+<div class="page-head">
+  <h1>All stocks we follow</h1>
+  <p>{{ rows|length }} US and UK listed tech companies. Each has a page with its recent news, US filings and a delayed price chart.</p>
+</div>
+<div class="filter" role="group" aria-label="Filter stocks">
+  <button type="button" aria-pressed="true" data-f="all">All</button>
+  <button type="button" aria-pressed="false" data-f="US">US</button>
+  <button type="button" aria-pressed="false" data-f="UK">UK</button>
+  {% for g in groups %}<button type="button" aria-pressed="false" data-f="{{ g }}">{{ g|capitalize }}</button>{% endfor %}
+</div>
+<section class="panel">
+  <table class="stocks" id="all-stocks">
+    <thead><tr><th>Stock</th><th class="hide-s">Exchange</th><th class="hide-s">Type</th><th class="num">Stories today</th><th class="num">This week</th></tr></thead>
+    <tbody>
+    {% for s in rows %}{% set m = summary[s.symbol] %}
+    <tr data-m="{{ s.market }}" data-g="{{ s.group }}">
+      <td><a class="tk" href="{{ s.slug }}.html">{{ s.symbol }}</a> <a class="nm" href="{{ s.slug }}.html">{{ s.name }}</a></td>
+      <td class="hide-s">{{ s.exchange }}</td>
+      <td class="hide-s">{{ s.group|capitalize }}</td>
+      <td class="num">{{ m.day or "" }}</td>
+      <td class="num">{{ m.week or "" }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</section>
+<p class="empty">Story counts measure news coverage only. A stock with lots of stories is being talked about, which tells you nothing about whether it's a good investment.</p>
+<script>
+document.querySelectorAll(".filter button").forEach(function (b) {
+  b.addEventListener("click", function () {
+    document.querySelectorAll(".filter button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+    var f = b.dataset.f;
+    document.querySelectorAll("#all-stocks tbody tr").forEach(function (r) {
+      r.hidden = !(f === "all" || r.dataset.m === f || r.dataset.g === f);
+    });
+  });
+});
+</script>
+{% endblock %}

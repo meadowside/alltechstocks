@@ -1,0 +1,200 @@
+# All Tech Stocks: rules
+# Edit these lists freely. Matching is case-insensitive and on whole words.
+
+site:
+  name: All Tech Stocks
+  tagline: US and UK tech stock news, ranked by who's covering it.
+  url: https://alltechstocks.com
+  timezone: Europe/London
+  owner: Andy Wood                 # named on the About, Privacy and Terms pages
+  newsletter_url: https://alltechstocks.substack.com
+  # The contact form needs a free Formspree form (formspree.io). Paste its ID here, e.g. "xyzabcd".
+  # Until then the Contact page explains it isn't ready yet.
+  formspree_id: ""
+  # Google Analytics 4 Measurement ID, e.g. "G-ABC123XYZ". Blank = no analytics and no cookie banner.
+  ga_id: ""
+
+# The disclaimer shown on every page and in every email. Keep it plain.
+disclaimer: >-
+  All Tech Stocks is a news index for research. Nothing here is financial advice or a recommendation
+  to buy, sell or hold any investment. Rankings show how much news coverage a company is getting,
+  not whether its shares are a good investment. Prices are delayed and supplied by TradingView.
+  Check the original sources and consider regulated advice before you invest.
+
+# Prices. Launch setting: free TradingView widgets on each stock's page, loaded only when the reader
+# accepts cookies or clicks "Show price chart". Set widgets to false to switch them off everywhere
+# (for example if TradingView asks you to, or once you buy a proper display licence).
+prices:
+  widgets: true
+  chart_range: 12M          # 1D, 1M, 3M, 12M, 60M or ALL
+
+# SEC EDGAR, for US filings. The SEC asks every automated user to say who they are and give a contact
+# email. Use an inbox you read, e.g. "All Tech Stocks andy@yourdomain.com". EDGAR stays off until you change it.
+sec:
+  user_agent: "All Tech Stocks you@example.com"
+  forms: [8-K, 10-Q, 10-K, 6-K, 20-F, "4", SC 13D, SC 13G, SCHEDULE 13D, SCHEDULE 13G, S-1, S-4, DEF 14A]
+  pause_seconds: 0.25       # between requests; the SEC allows 10 a second, we use 4
+  keep_days: 60
+
+# Order here is the order on the site and in the email.
+# email_min / email_max: a section with fewer than email_min items runs short, never padded.
+sections:
+  - id: results
+    name: Results & Outlook
+    email_min: 3
+    email_max: 8
+    site_max: 10
+  - id: deals
+    name: Deals & Listings
+    email_min: 3
+    email_max: 6
+    site_max: 10
+  - id: ai
+    name: AI
+    email_min: 3
+    email_max: 6
+    site_max: 10
+  - id: chips
+    name: Chips & Hardware
+    email_min: 2
+    email_max: 6
+    site_max: 10
+  - id: regulation
+    name: Regulation & Legal
+    email_min: 2
+    email_max: 5
+    site_max: 10
+  - id: companies
+    name: Companies & Markets
+    email_min: 2
+    email_max: 6
+    site_max: 10
+
+# Keywords that pull a story into a section. When several match,
+# the section with the most hits wins; ties go to the first in this list.
+section_keywords:
+  results: [results, earnings, quarterly, quarter, q1, q2, q3, q4, first-quarter, second-quarter, third-quarter,
+            fourth-quarter, half-year, half year, interim results, full-year, full year, annual results, trading update,
+            trading statement, revenue, revenues, sales rose, sales fell, profit, profits, loss, losses, guidance,
+            outlook, forecast, profit warning, eps, dividend, beats, misses, 10-q, 10-k]
+  deals: [acquire, acquires, acquired, acquisition, takeover, merger, merge, bid, offer, buyout, deal to buy,
+          agrees to buy, to buy, sells, divest, divestment, spin-off, spinoff, ipo, listing, listed, float,
+          flotation, share sale, stake, buyback, share buyback, tender offer, delisting, private equity]
+  ai: [ai, artificial intelligence, llm, llms, chatbot, chatbots, openai, anthropic, chatgpt, gemini, claude, copilot,
+       machine learning, generative, agentic, ai agents, superintelligence, ai models, ai spending, ai capex]
+  chips: [chip, chips, chipmaker, chipmakers, semiconductor, semiconductors, gpu, gpus, foundry, fab, fabs, wafer,
+          wafers, memory, hbm, dram, nand, processor, processors, data centre, data centres, data center,
+          data centers, server, servers, export controls, euv, lithography]
+  regulation: [regulator, regulators, regulation, antitrust, competition watchdog, cma, ftc, sec, doj,
+               department of justice, european commission, ofcom, ico, fca, lawsuit, sued, sues, court, judge,
+               ruling, trial, fine, fined, penalty, probe, investigation, settlement, tariff, tariffs, ban, banned,
+               digital markets act, dma, online safety]
+  companies: [ceo, chief executive, cfo, appoints, appointed, steps down, resigns, layoffs, job cuts, redundancies,
+              launch, launches, unveils, product, partnership, contract, outage, breach, hack, hacked, strike]
+
+# A story must mention one of these, or a watched stock, to count. It stops general news getting in.
+tech_sections: [ai, chips]
+tech_keywords: [tech, technology, tech stocks, tech shares, software, internet, cloud, semiconductor, chip, chips,
+                nasdaq, ftse, s&p 500, shares, stock, stocks, investors, market value, market cap]
+
+# Market relevance replaces the UK angle on All UK Tech.
+# 3 = a watched stock in the headline, 2 = a watched stock in the summary or a market-wide tech story,
+# 1 = neither (held back).
+market:
+  # Words that make a story about the tech market as a whole, with no single stock named.
+  wide: [tech stocks, tech shares, technology stocks, technology shares, chip stocks, chip shares,
+         semiconductor stocks, nasdaq composite, nasdaq 100, philadelphia semiconductor index, magnificent seven,
+         ftse techmark, tech sell-off, tech selloff, ai stocks, ai shares, ai bubble]
+  # A market-wide story needs at least this coverage to run.
+  wide_min_coverage: 6
+
+# Stories matching these never appear.
+exclude:
+  url_patterns: [/deals/, /deal/, /reviews/, /review/, /best-, /buying-guide, /coupon, /voucher, /promo, /sponsored/,
+                 /partner-content/, /advertorial/, /quiz/, /podcast/, /video/, /live/, /obituar,
+                 fool.com, fool.co.uk, seekingalpha.com, /stocks-to-buy, /stock-picks, /price-prediction,
+                 /price-target, /penny-stock]
+  # Phrases matched anywhere in the title. This site never runs buy or sell tips or price predictions,
+  # including other people's. Remove a phrase here if it blocks real news.
+  title_keywords: ["deals:", "best deals", "black friday", "prime day", discount, "% off", voucher, coupon,
+                   "best ", "top 10", "top ten", "top 5", "top five", "review:", "hands-on", "hands on:",
+                   "how to", "what is", "explained", quiz, sponsored, "in partnership with", "partner content",
+                   podcast, "live:", "as it happened", "week in review", "the week in", "weekly:", "roundup:",
+                   "round-up:", "morning briefing", "evening briefing", webinar, "opinion:", "comment:", "letters:",
+                   "stocks to buy", "stock to buy", "shares to buy", "share to buy", "to buy now", "buy now",
+                   "should you buy", "should i buy", "is it time to buy", "time to buy", "worth buying",
+                   "buy the dip", "buy or sell", "buy, sell", "sell now", "should you sell", "stocks to sell",
+                   "stock pick", "stock picks", "top pick", "top picks", "price target", "price targets",
+                   "price prediction", "price forecast", "could soar", "set to soar", "to soar", "millionaire",
+                   "get rich", "passive income", "dividend stocks", "growth stocks to", "undervalued",
+                   "overvalued", "bargain stock", "bargain buy", "no-brainer", "screaming buy", "strong buy", "buy rating",
+                   "sell rating", "upgrade to buy", "downgrade to sell", "multibagger", "next nvidia",
+                   "motley fool", "| the motley fool", "seeking alpha", "zacks", "stock forecast",
+                   "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
+  summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
+                     "zacks rank", "stocks to buy"]
+  title_keyword_exceptions: [launch, launches, launched]
+
+# Sidebar: newest stories and promos for sister titles. Edit freely.
+just_in:
+  max: 6
+trending:
+  window_hours: 6        # a story trends when outlets have joined it this recently
+  min_new_outlets: 2
+  max: 6
+promos:
+  - name: All UK Tech
+    url: https://alluktech.com
+    line: UK tech news, ranked by who's covering it.
+    cta: Read
+  - name: AI Prompt Hackers
+    url: https://aiprompthackers.com
+    line: Prompts and workflows that make AI earn its keep. Join 32,000 readers.
+    cta: Read free
+  - name: Answerable
+    url: https://readanswerable.com
+    line: How to run AI inside a business without getting caught out by the rules.
+    cta: Read free
+
+# The "most covered stocks" table on the home page.
+stocks_table:
+  hours: 24              # coverage counted over this window
+  max: 15                # rows on the home page (the Stocks page lists every watched stock)
+
+# AI "so what" lines (only when ANTHROPIC_API_KEY is set). Each story is written once and reused.
+ai_lines:
+  per_section: 6
+  trending: false
+  max_new_per_run: 25
+  max_new_per_day: 150
+
+scoring:
+  coverage_cap: 15
+  freshness_half_life_hours: 12    # a story loses half its score every 12 hours, aged from its middle article
+  regulator_bonus: 0.5             # nudge when an official source (filing, regulator, company) is in the story
+  exclusive_floor: 4
+  global_min_coverage: 6           # same as market.wide_min_coverage, kept for the engine
+  global_max_per_email: 2
+  max_links_per_outlet_email: 2
+  repeat_growth_needed: 0.5        # a story sent before returns only if coverage grew by half
+
+clustering:
+  window_hours: 36
+  close_after_hours: 72
+  min_link_similarity: 0.15
+  min_centroid_similarity: 0.08
+  merge_similarity: 0.15
+
+# Google News queries built from the watchlist, a few companies per query.
+# These fill the gaps the outlet feeds miss. Items are credited to the outlet that wrote them.
+auto_google:
+  per_query: 6           # companies per query; Google News handles a few ORs well
+  when: 1d
+  rotate: 2              # run half the queries one hour, half the next, to go easy on Google
+  # US stocks are searched in US English, UK stocks in UK English.
+
+email:
+  build_hour: 6               # UK time; the first run from 6am builds the email
+  late_window_hours: 4        # if runs are late, still build it up to 10am
+  weekdays_only: true
+  filings_max: 8              # "New filings" in the email: results, deals and big events only

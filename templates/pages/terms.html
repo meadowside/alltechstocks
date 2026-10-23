@@ -1,0 +1,30 @@
+{% extends "pages/_page.html" %}
+{% block body %}
+<p class="lede">By using {{ site.name }} you agree to these terms. The most important part comes first.</p>
+
+<h2 id="not-advice">This is not financial advice</h2>
+<p class="notice">{{ disclaimer }}</p>
+<p>{{ site.name }} is an automated index of news. It isn't a broker, an adviser or an investment research firm, and it isn't authorised or regulated by the Financial Conduct Authority or any other regulator. Nothing on the site or in the email takes your circumstances into account.</p>
+<p>Rankings show how many outlets are covering a company. That measures attention. A company can top the table because of a scandal, a lawsuit or a collapse. Investments can go down as well as up and you may get back less than you put in.</p>
+<p>Before you invest, read the company's own announcements and filings and think about getting advice from a regulated financial adviser.</p>
+
+<h2>What we provide</h2>
+<p>A free index of tech company news. We show headlines and link to the publishers that wrote them. The articles belong to those publishers, and their terms apply on their sites.</p>
+
+<h2>Prices and filings</h2>
+<p>Price charts are supplied by TradingView, are delayed and may be wrong or out of date. Filings come from the SEC's EDGAR service. We show what they publish and can't promise it's complete or current. Always check the original.</p>
+
+<h2>Accuracy</h2>
+<p>The ranking and the company tags are automatic and the "So what" lines are written by AI, so mistakes happen: a story tagged with the wrong company, a summary that misses the point, a link that has moved. Check the original article before relying on anything you read here.</p>
+
+<h2>Links</h2>
+<p>We aren't responsible for the content of the sites we link to. If you're a publisher and want a headline changed or removed, <a href="contact.html">tell us</a> and we'll sort it quickly.</p>
+
+<h2>Our content</h2>
+<p>The site design, the rankings and the "So what" lines are ours. You're welcome to link to any page. Please don't copy the site wholesale.</p>
+
+<h2>Changes</h2>
+<p>We may update these terms. The date below shows when they last changed.</p>
+
+<p class="small">These terms are governed by the law of England and Wales. {{ site.name }} is run by {{ site.owner }}. Last updated {{ updated_date }}.</p>
+{% endblock %}

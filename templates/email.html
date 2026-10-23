@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Email {{ date }}: {{ site.name }}</title>
+<style>
+  body { margin: 0; background: #eceae4; font: 16px/1.55 Georgia, serif; color: #15171b; }
+  .bar { position: sticky; top: 0; background: #15171b; color: #fff; font: 14px/1.4 -apple-system, "Segoe UI", sans-serif;
+         padding: 12px 16px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+  .bar button { font: 600 14px -apple-system, "Segoe UI", sans-serif; background: #1d4ed8; color: #fff; border: 0;
+                border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+  .sheet { max-width: 680px; margin: 24px auto 64px; background: #fff; padding: 32px 36px; border-radius: 8px; }
+  .fill { background: #fff3b0; }
+  h2 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 28px 0 8px; color: #1d4ed8; }
+  .tk { font: 600 12px -apple-system, "Segoe UI", sans-serif; color: #1e3a8a; }
+  .note { color: #5f6672; font-size: 14px; font-style: italic; }
+  h3 { font-size: 22px; line-height: 1.3; margin: 6px 0; }
+  ul { padding-left: 20px; } li { margin: 0 0 10px; }
+  a { color: #012169; }
+  .src { color: #5f6672; font-size: 14px; }
+  @media (max-width: 600px) { .sheet { padding: 22px 18px; margin: 0; border-radius: 0; } }
+</style>
+</head>
+<body>
+<div class="bar">
+  <span>{{ date_long }}. Fill the yellow bits in Substack, then send.</span>
+  <button id="copy" type="button">Copy email</button>
+</div>
+
+<div class="sheet" id="email">
+<p class="note">The most covered US and UK tech stock news. For research, not financial advice.</p>
+<p class="fill">[Opening note: two or three sentences on what's big today. Report, don't tip.]</p>
+<p class="fill">Andy</p>
+
+{% if ranked %}
+<h2>Most covered stocks</h2>
+<ul>
+{% for r in ranked %}<li><span class="tk">{{ r.stock.symbol }}</span> <a href="{{ site.url }}/stocks/{{ r.stock.slug }}.html">{{ r.stock.name }}</a>: {{ r.outlet_count }} outlets, {{ r.story_count }} {{ "story" if r.story_count == 1 else "stories" }}</li>
+{% endfor %}
+</ul>
+<p class="note">Ranked by news coverage, not by merit. Not a buy list.</p>
+{% endif %}
+
+{% if top %}
+<h2>Top story</h2>
+<h3><a href="{{ top.link }}">{{ top.headline }}</a></h3>
+<p class="src">{{ top.link_outlet.name }}{% if top.paywall %} (£){% endif %} · {{ top.source_count }} source{{ 's' if top.source_count != 1 }}{% if top.tickers %} · <span class="tk">{{ top.tickers[:3]|join(", ") }}</span>{% endif %}</p>
+<p><strong>Why it matters:</strong> <span class="fill">[Your line. Business impact only, nothing on the shares.{% if top.so_what %} AI suggests: {{ top.so_what }}{% endif %} The data says: {{ top.why }}]</span></p>
+{% endif %}
+
+{% for sec in sections %}{% if sec.stories %}
+<h2>{{ sec.name }}</h2>
+<ul>
+{% for s in sec.stories %}
+  <li>{% if s.is_update %}<strong>Update:</strong> {% endif %}<a href="{{ s.link }}">{{ s.headline }}</a>
+    <span class="src">({{ s.link_outlet.name }}{% if s.paywall %}, £{% endif %}{% if s.source_count > 1 %}, {{ s.source_count }} sources{% endif %})</span>{% if s.tickers %} <span class="tk">{{ s.tickers[:3]|join(", ") }}</span>{% endif %}
+    {% if loop.first and s.so_what %}<br><em>So what: {{ s.so_what }}</em>{% endif %}</li>
+{% endfor %}
+</ul>
+{% endif %}{% endfor %}
+
+{% if filings %}
+<h2>New US filings</h2>
+<ul>
+{% for f in filings %}<li><span class="tk">{{ f.symbol }}</span> {{ stocks[f.symbol].name }}: <a href="{{ f.url }}">{{ f.label }} ({{ f.form }})</a></li>
+{% endfor %}
+</ul>
+{% endif %}
+
+<p class="note">Not financial advice. {{ disclaimer }}</p>
+<p>More tech stock news, updated every hour, at <a href="{{ site.url }}">{{ site.url | replace("https://", "") }}</a>.</p>
+</div>
+
+<script>
+document.getElementById("copy").addEventListener("click", async () => {
+  const el = document.getElementById("email");
+  const btn = document.getElementById("copy");
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      "text/html": new Blob([el.innerHTML], { type: "text/html" }),
+      "text/plain": new Blob([el.innerText], { type: "text/plain" })
+    })]);
+  } catch (e) {
+    const range = document.createRange(); range.selectNodeContents(el);
+    const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    document.execCommand("copy"); sel.removeAllRanges();
+  }
+  btn.textContent = "Copied. Paste into Substack";
+  setTimeout(() => btn.textContent = "Copy email", 3000);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% from "_macros.html" import row with context %}
+{% block title %}{{ stock.name }} ({{ stock.symbol }}) news and filings: {{ site.name }}{% endblock %}
+{% block description %}The latest {{ stock.name }} ({{ stock.exchange }}: {{ stock.symbol }}) news from every major outlet{% if stock.market == "US" %}, plus SEC filings{% endif %}, ranked by coverage. News for research, not financial advice.{% endblock %}
+{% block og_title %}{{ stock.name }} ({{ stock.symbol }}): news ranked by who's covering it{% endblock %}
+{% block og_url %}{{ site.url }}/stocks/{{ stock.slug }}.html{% endblock %}
+{% block main %}
+<div class="stock-head">
+  <h1>{{ stock.name }}</h1>
+  <span class="tk">{{ stock.exchange }}: {{ stock.symbol }}</span>
+</div>
+<p class="facts">
+  <span>Listed in the <b>{{ stock.market }}</b></span>
+  <span>Type: <b>{{ stock.group|capitalize }}</b></span>
+  <span>Stories today: <b>{{ summary.day }}</b></span>
+  <span>This week: <b>{{ summary.week }}</b></span>
+  {% if results_date and results_date.date() >= today %}<span>Next results (company's own date): <b>{{ results_date.strftime("%-d %B %Y") }}</b></span>{% endif %}
+</p>
+
+<div class="cols">
+  <div>
+    <section class="panel">
+      <div class="panel-head"><h2>Latest coverage</h2><p>Live stories, most covered first.</p></div>
+      {% if live %}
+      <ol class="ranked">{% for s in live %}{{ row(s, loop.index) }}{% endfor %}</ol>
+      {% else %}<p class="empty">No live stories in the last 48 hours.</p>{% endif %}
+    </section>
+
+    {% if older %}
+    <section class="panel">
+      <div class="panel-head"><h2>Earlier this month</h2><p>Stories from the last 30 days.</p></div>
+      <ol class="plain">
+        {% for h in older %}
+        <li><a class="h" href="{{ h.link }}" rel="noopener" target="_blank">{{ h.headline }}</a>
+          <span class="meta">{{ (h.last_seen | iso) | day }} · {{ h.outlet }}{% if h.paywall %} <span class="tag">£</span>{% endif %}{% if h.outlets > 1 %} · {{ h.outlets }} outlets{% endif %}</span></li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+  </div>
+
+  <aside>
+    <section class="panel">
+      <div class="panel-head"><h2>Price</h2><p>Delayed, from TradingView.</p></div>
+      {% if prices.widgets %}
+      <div class="price-box" id="price-box" data-symbol="{{ stock.tv_symbol }}" data-range="{{ prices.chart_range or '12M' }}">
+        <p>The price chart comes from TradingView, which may set cookies. It loads when you allow it.</p>
+        <button type="button" id="price-load">Show price chart</button>
+      </div>
+      {% endif %}
+      <div class="links">
+        <a href="{{ stock.google_finance }}" rel="noopener" target="_blank">Google Finance</a>
+        <a href="https://www.tradingview.com/symbols/{{ stock.exchange }}-{{ stock.symbol }}/" rel="noopener nofollow" target="_blank">TradingView</a>
+        {% if stock.market == "US" %}<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ stock.symbol }}&amp;owner=include&amp;count=40" rel="noopener" target="_blank">All SEC filings</a>{% endif %}
+      </div>
+    </section>
+
+    {% if stock.market == "US" %}
+    <section class="panel">
+      <div class="panel-head"><h2>SEC filings</h2><p>Last 60 days, newest first.</p></div>
+      {% if filings %}
+      <ul class="filings">
+        {% for f in filings[:20] %}
+        <li><a href="{{ f.url }}" rel="noopener" target="_blank"><b>{{ f.label }}</b></a> <span class="tag">{{ f.form }}</span><br><span class="when">{{ (f.filed | iso) | day }}</span></li>
+        {% endfor %}
+      </ul>
+      {% else %}<p class="empty">No filings saved yet. They appear here once the engine has checked EDGAR.</p>{% endif %}
+    </section>
+    {% else %}
+    <section class="panel">
+      <div class="panel-head"><h2>Announcements</h2></div>
+      <p class="empty">UK companies publish results and other price-sensitive news through the London Stock Exchange's RNS. When outlets cover an announcement it appears under Latest coverage.</p>
+    </section>
+    {% endif %}
+
+    {% if peers %}
+    <section class="panel">
+      <div class="panel-head"><h2>Same type</h2></div>
+      <div class="links">{% for p in peers %}<a href="{{ p.slug }}.html">{{ p.name }} <span class="mkt">{{ p.symbol }}</span></a>{% endfor %}</div>
+    </section>
+    {% endif %}
+  </aside>
+</div>
+
+{% if prices.widgets %}
+<script>
+(function () {
+  var box = document.getElementById("price-box"); if (!box) return;
+  function theme() { return document.documentElement.dataset.theme === "dark" ? "dark" : "light"; }
+  function widget(src, cfg, height) {
+    var wrap = document.createElement("div");
+    wrap.className = "tradingview-widget-container";
+    wrap.style.minHeight = height + "px";
+    var inner = document.createElement("div");
+    inner.className = "tradingview-widget-container__widget";
+    wrap.appendChild(inner);
+    var s = document.createElement("script");
+    s.type = "text/javascript"; s.async = true; s.src = src;
+    s.text = JSON.stringify(cfg);
+    wrap.appendChild(s);
+    return wrap;
+  }
+  function load() {
+    if (window.tvLoaded) return; window.tvLoaded = true;
+    var sym = box.dataset.symbol;
+    box.innerHTML = ""; box.classList.add("on");
+    box.appendChild(widget("https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js",
+      { symbol: sym, width: "100%", locale: "en", colorTheme: theme(), isTransparent: true }, 160));
+    box.appendChild(widget("https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js",
+      { symbol: sym, width: "100%", height: 220, locale: "en", dateRange: box.dataset.range, colorTheme: theme(),
+        isTransparent: true, autosize: false, largeChartUrl: "" }, 220));
+    var credit = document.createElement("div");
+    credit.className = "tradingview-widget-copyright";
+    credit.style.fontSize = "12px";
+    credit.innerHTML = '<a href="https://www.tradingview.com/symbols/' + sym.replace(":", "-") +
+      '/" rel="noopener nofollow" target="_blank">' + sym + ' price by TradingView</a>. Delayed. Not a recommendation.';
+    box.appendChild(credit);
+  }
+  // Clicking loads the chart on this page only. It doesn't switch on Google Analytics.
+  document.getElementById("price-load").addEventListener("click", load);
+  document.addEventListener("ats-consent", load);
+})();
+</script>
+{% endif %}
+{% endblock %}

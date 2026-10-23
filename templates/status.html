@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Status: {{ site.name }}{% endblock %}
+{% block head %}<meta name="robots" content="noindex">{% endblock %}
+{% block main %}
+<div class="page-head">
+  <h1>Engine status</h1>
+  <p>For Andy. Feeds that fail here need a new URL in config/sources.yaml. Google News queries built from the watchlist are marked "auto" and take turns, half each hour.</p>
+</div>
+<table class="status">
+  <tr><th>Source</th><th>Tier</th><th>State</th><th>Items in feed</th><th>Last worked</th><th>Error</th></tr>
+  {% for r in rows %}
+  <tr>
+    <td>{{ r.name }}<br><small>{{ r.id }}{% if r.auto %} (auto){% endif %}</small></td>
+    <td>{{ r.tier }}</td>
+    <td>{% if r.ok %}<span class="ok">OK</span>{% else %}<span class="bad">Failing</span>{% endif %}</td>
+    <td>{{ r.count if r.count is not none else "" }}</td>
+    <td>{{ (r.last_ok | ago) if r.last_ok else "never" }}</td>
+    <td><small>{{ r.error or "" }}</small></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% if quiet %}
+<div class="page-head" style="margin-top:28px">
+  <h1>{{ quiet|length }} watched stocks with no stories this week</h1>
+  <p>Check their aliases in config/watchlist.yaml, or whether they've been taken private or delisted.</p>
+</div>
+<p>{% for s in quiet %}<a class="tk" href="stocks/{{ s.slug }}.html">{{ s.symbol }}</a> {{ s.name }}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+{% endif %}
+
+<div class="page-head" style="margin-top:28px">
+  <h1>Top {{ stories|length }} of {{ total }} stories</h1>
+  <p>Everything the engine grouped, including stories it held back and why.</p>
+</div>
+<table class="status">
+  <tr><th>Score</th><th>Story</th><th>Section</th><th>Stocks</th><th>Outlets</th><th>Shown?</th></tr>
+  {% for s in stories %}
+  <tr>
+    <td>{{ "%.1f"|format(s.score) }}</td>
+    <td>{{ s.headline }}</td>
+    <td>{{ s.section }}</td>
+    <td>{{ s.tickers|join(", ") }}{% if s.is_global %} market{% endif %}</td>
+    <td>{{ s.outlets.values()|map(attribute="name")|join(", ") }}</td>
+    <td>{% if s.eligible %}<span class="ok">Yes</span>{% else %}<span class="bad">No</span> <small>{{ s.why_not }}</small>{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

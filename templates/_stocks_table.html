@@ -1,0 +1,23 @@
+<section class="panel" id="stocks">
+  <div class="panel-head">
+    <h2>{{ ranked_title | default("Most covered stocks") }}</h2>
+    <p>Last {{ ranked_hours }} hours. Ranked by news coverage, which measures attention, not quality. This is not a buy list.</p>
+  </div>
+  {% if ranked %}
+  <table class="stocks">
+    <thead><tr><th></th><th>Stock</th><th class="num">Outlets</th><th class="num hide-s">Stories</th><th class="hide-s">Most covered story</th></tr></thead>
+    <tbody>
+    {% for r in ranked %}
+    <tr>
+      <td class="n">{{ loop.index }}</td>
+      <td><a class="tk" href="{{ root }}stocks/{{ r.stock.slug }}.html">{{ r.stock.symbol }}</a> <span class="mkt">{{ r.stock.market }}</span>
+        <a class="nm" href="{{ root }}stocks/{{ r.stock.slug }}.html">{{ r.stock.name }}</a></td>
+      <td class="num">{{ r.outlet_count }}</td>
+      <td class="num hide-s">{{ r.story_count }}</td>
+      <td class="story hide-s"><a href="{{ r.top.link }}" rel="noopener" target="_blank">{{ r.top.headline }}</a></td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}<p class="empty">No stock coverage yet in this window.</p>{% endif %}
+</section>

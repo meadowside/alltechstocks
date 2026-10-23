@@ -1,0 +1,140 @@
+# All Tech Stocks: the watchlist
+#
+# Every story is tagged with the stocks it mentions, using the names below.
+# Add, remove or edit freely. Changes apply on the next hourly run.
+#
+# symbol:      the ticker as the exchange lists it. Put quotes round tickers YAML reads as words: "ON", "YES", "NO"
+# exchange:    NASDAQ, NYSE or LSE
+# name:        shown on the site
+# aliases:     words that tag a story with this stock, matched on whole words, any case
+# exact:       words matched with exact capitals only, for names that are also everyday words
+#              ("Arm" the company, not "arm" the body part)
+# group:       software, chips, internet, hardware, security, fintech, games, telecoms, services, data
+# results:     optional next results date (YYYY-MM-DD), shown on the stock's page. Fill in from the
+#              company's investor relations site. Leave it out if you don't know.
+#
+# Google News queries for each stock are built from these names automatically.
+# Check the status page after the first week: stocks with no coverage at all may need better aliases,
+# or may have been taken private or delisted.
+
+stocks:
+  # ================= US: the giants =================
+  - {symbol: AAPL, exchange: NASDAQ, name: Apple, group: hardware, aliases: [Apple Inc, iPhone, iPad, Tim Cook], exact: [Apple]}
+  - {symbol: MSFT, exchange: NASDAQ, name: Microsoft, group: software, aliases: [Microsoft, Satya Nadella, Azure, LinkedIn, Xbox]}
+  - {symbol: NVDA, exchange: NASDAQ, name: Nvidia, group: chips, aliases: [Nvidia, Jensen Huang]}
+  - {symbol: GOOGL, exchange: NASDAQ, name: Alphabet, group: internet, aliases: [Alphabet, Google, YouTube, Sundar Pichai, DeepMind, Waymo]}
+  - {symbol: AMZN, exchange: NASDAQ, name: Amazon, group: internet, aliases: [Amazon, AWS, Amazon Web Services, Andy Jassy]}
+  - {symbol: META, exchange: NASDAQ, name: Meta Platforms, group: internet, aliases: [Meta Platforms, Facebook, Instagram, WhatsApp, Mark Zuckerberg, Zuckerberg], exact: [Meta]}
+  - {symbol: TSLA, exchange: NASDAQ, name: Tesla, group: hardware, aliases: [Tesla]}
+  - {symbol: AVGO, exchange: NASDAQ, name: Broadcom, group: chips, aliases: [Broadcom, Hock Tan, VMware]}
+  - {symbol: ORCL, exchange: NYSE, name: Oracle, group: software, aliases: [Larry Ellison], exact: [Oracle]}
+  - {symbol: NFLX, exchange: NASDAQ, name: Netflix, group: internet, aliases: [Netflix]}
+
+  # ================= US: chips and semiconductor equipment =================
+  - {symbol: AMD, exchange: NASDAQ, name: AMD, group: chips, aliases: [Advanced Micro Devices, Lisa Su], exact: [AMD]}
+  - {symbol: INTC, exchange: NASDAQ, name: Intel, group: chips, aliases: [Intel Corp, Lip-Bu Tan], exact: [Intel]}
+  - {symbol: QCOM, exchange: NASDAQ, name: Qualcomm, group: chips, aliases: [Qualcomm, Snapdragon]}
+  - {symbol: TXN, exchange: NASDAQ, name: Texas Instruments, group: chips, aliases: [Texas Instruments]}
+  - {symbol: MU, exchange: NASDAQ, name: Micron, group: chips, aliases: [Micron Technology, Micron]}
+  - {symbol: AMAT, exchange: NASDAQ, name: Applied Materials, group: chips, aliases: [Applied Materials]}
+  - {symbol: LRCX, exchange: NASDAQ, name: Lam Research, group: chips, aliases: [Lam Research]}
+  - {symbol: KLAC, exchange: NASDAQ, name: KLA, group: chips, aliases: [KLA Corp, KLA Corporation]}
+  - {symbol: ASML, exchange: NASDAQ, name: ASML, group: chips, aliases: [ASML]}
+  - {symbol: TSM, exchange: NYSE, name: TSMC, group: chips, aliases: [TSMC, Taiwan Semiconductor]}
+  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, aliases: [Arm Holdings, Rene Haas], exact: [Arm]}
+  - {symbol: MRVL, exchange: NASDAQ, name: Marvell, group: chips, aliases: [Marvell Technology, Marvell]}
+  - {symbol: SNPS, exchange: NASDAQ, name: Synopsys, group: chips, aliases: [Synopsys]}
+  - {symbol: CDNS, exchange: NASDAQ, name: Cadence, group: chips, aliases: [Cadence Design]}
+  - {symbol: NXPI, exchange: NASDAQ, name: NXP, group: chips, aliases: [NXP Semiconductors, NXP]}
+  - {symbol: "ON", exchange: NASDAQ, name: ON Semiconductor, group: chips, aliases: [ON Semiconductor, onsemi]}
+  - {symbol: MCHP, exchange: NASDAQ, name: Microchip, group: chips, aliases: [Microchip Technology]}
+  - {symbol: ADI, exchange: NASDAQ, name: Analog Devices, group: chips, aliases: [Analog Devices]}
+
+  # ================= US: hardware, servers and networking =================
+  - {symbol: SMCI, exchange: NASDAQ, name: Super Micro Computer, group: hardware, aliases: [Super Micro, Supermicro]}
+  - {symbol: DELL, exchange: NYSE, name: Dell Technologies, group: hardware, aliases: [Dell Technologies, Michael Dell], exact: [Dell]}
+  - {symbol: HPE, exchange: NYSE, name: Hewlett Packard Enterprise, group: hardware, aliases: [Hewlett Packard Enterprise, HPE]}
+  - {symbol: HPQ, exchange: NYSE, name: HP Inc, group: hardware, aliases: [HP Inc]}
+  - {symbol: IBM, exchange: NYSE, name: IBM, group: services, aliases: [IBM, Arvind Krishna]}
+  - {symbol: CSCO, exchange: NASDAQ, name: Cisco, group: hardware, aliases: [Cisco]}
+  - {symbol: ANET, exchange: NYSE, name: Arista Networks, group: hardware, aliases: [Arista Networks, Arista]}
+  - {symbol: CRWV, exchange: NASDAQ, name: CoreWeave, group: data, aliases: [CoreWeave]}
+
+  # ================= US: software =================
+  - {symbol: CRM, exchange: NYSE, name: Salesforce, group: software, aliases: [Salesforce, Marc Benioff, Slack]}
+  - {symbol: ADBE, exchange: NASDAQ, name: Adobe, group: software, aliases: [Adobe]}
+  - {symbol: NOW, exchange: NYSE, name: ServiceNow, group: software, aliases: [ServiceNow]}
+  - {symbol: INTU, exchange: NASDAQ, name: Intuit, group: software, aliases: [Intuit, TurboTax, QuickBooks]}
+  - {symbol: WDAY, exchange: NASDAQ, name: Workday, group: software, aliases: [Workday]}
+  - {symbol: SNOW, exchange: NYSE, name: Snowflake, group: data, aliases: [Snowflake Inc], exact: [Snowflake]}
+  - {symbol: PLTR, exchange: NASDAQ, name: Palantir, group: software, aliases: [Palantir, Alex Karp]}
+  - {symbol: DDOG, exchange: NASDAQ, name: Datadog, group: software, aliases: [Datadog]}
+  - {symbol: MDB, exchange: NASDAQ, name: MongoDB, group: data, aliases: [MongoDB]}
+  - {symbol: TEAM, exchange: NASDAQ, name: Atlassian, group: software, aliases: [Atlassian]}
+  - {symbol: SAP, exchange: NYSE, name: SAP, group: software, aliases: [SAP SE], exact: [SAP]}
+  - {symbol: APP, exchange: NASDAQ, name: AppLovin, group: software, aliases: [AppLovin]}
+  - {symbol: ZM, exchange: NASDAQ, name: Zoom, group: software, aliases: [Zoom Video, Zoom Communications]}
+  - {symbol: DOCU, exchange: NASDAQ, name: DocuSign, group: software, aliases: [DocuSign]}
+  - {symbol: TWLO, exchange: NYSE, name: Twilio, group: software, aliases: [Twilio]}
+  - {symbol: U, exchange: NYSE, name: Unity Software, group: games, aliases: [Unity Software]}
+
+  # ================= US: security =================
+  - {symbol: PANW, exchange: NASDAQ, name: Palo Alto Networks, group: security, aliases: [Palo Alto Networks]}
+  - {symbol: CRWD, exchange: NASDAQ, name: CrowdStrike, group: security, aliases: [CrowdStrike]}
+  - {symbol: FTNT, exchange: NASDAQ, name: Fortinet, group: security, aliases: [Fortinet]}
+  - {symbol: ZS, exchange: NASDAQ, name: Zscaler, group: security, aliases: [Zscaler]}
+  - {symbol: NET, exchange: NYSE, name: Cloudflare, group: security, aliases: [Cloudflare]}
+  - {symbol: OKTA, exchange: NASDAQ, name: Okta, group: security, aliases: [Okta]}
+
+  # ================= US: internet and platforms =================
+  - {symbol: SHOP, exchange: NASDAQ, name: Shopify, group: internet, aliases: [Shopify]}
+  - {symbol: UBER, exchange: NYSE, name: Uber, group: internet, aliases: [Uber]}
+  - {symbol: ABNB, exchange: NASDAQ, name: Airbnb, group: internet, aliases: [Airbnb]}
+  - {symbol: DASH, exchange: NASDAQ, name: DoorDash, group: internet, aliases: [DoorDash, Deliveroo]}
+  - {symbol: SPOT, exchange: NYSE, name: Spotify, group: internet, aliases: [Spotify]}
+  - {symbol: RDDT, exchange: NYSE, name: Reddit, group: internet, aliases: [Reddit]}
+  - {symbol: SNAP, exchange: NYSE, name: Snap, group: internet, aliases: [Snap Inc, Snapchat]}
+  - {symbol: PINS, exchange: NYSE, name: Pinterest, group: internet, aliases: [Pinterest]}
+
+  # ================= US: fintech =================
+  - {symbol: PYPL, exchange: NASDAQ, name: PayPal, group: fintech, aliases: [PayPal, Venmo]}
+  - {symbol: XYZ, exchange: NYSE, name: Block, group: fintech, aliases: [Block Inc, Cash App, Jack Dorsey]}
+  - {symbol: COIN, exchange: NASDAQ, name: Coinbase, group: fintech, aliases: [Coinbase]}
+  - {symbol: HOOD, exchange: NASDAQ, name: Robinhood, group: fintech, aliases: [Robinhood]}
+
+  # ================= US: games =================
+  - {symbol: EA, exchange: NASDAQ, name: Electronic Arts, group: games, aliases: [Electronic Arts]}
+  - {symbol: TTWO, exchange: NASDAQ, name: Take-Two, group: games, aliases: [Take-Two, Rockstar Games, GTA 6, GTA VI]}
+  - {symbol: RBLX, exchange: NYSE, name: Roblox, group: games, aliases: [Roblox]}
+
+  # ================= UK: London Stock Exchange =================
+  - {symbol: SGE, exchange: LSE, name: Sage Group, group: software, aliases: [Sage Group]}
+  - {symbol: REL, exchange: LSE, name: RELX, group: data, aliases: [RELX, LexisNexis]}
+  - {symbol: EXPN, exchange: LSE, name: Experian, group: data, aliases: [Experian]}
+  - {symbol: LSEG, exchange: LSE, name: London Stock Exchange Group, group: data, aliases: [London Stock Exchange Group, LSEG]}
+  - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
+  - {symbol: RMV, exchange: LSE, name: Rightmove, group: internet, aliases: [Rightmove]}
+  - {symbol: HLMA, exchange: LSE, name: Halma, group: hardware, aliases: [Halma]}
+  - {symbol: SCT, exchange: LSE, name: Softcat, group: services, aliases: [Softcat]}
+  - {symbol: CCC, exchange: LSE, name: Computacenter, group: services, aliases: [Computacenter]}
+  - {symbol: KNOS, exchange: LSE, name: Kainos, group: services, aliases: [Kainos]}
+  - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: services, aliases: [Bytes Technology]}
+  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita]}
+  - {symbol: RSW, exchange: LSE, name: Renishaw, group: hardware, aliases: [Renishaw]}
+  - {symbol: OXIG, exchange: LSE, name: Oxford Instruments, group: hardware, aliases: [Oxford Instruments]}
+  - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
+  - {symbol: RPI, exchange: LSE, name: Raspberry Pi Holdings, group: hardware, aliases: [Raspberry Pi]}
+  - {symbol: WISE, exchange: LSE, name: Wise, group: fintech, aliases: [Wise plc, Kristo Kaarmann]}
+  - {symbol: TRST, exchange: LSE, name: Trustpilot, group: internet, aliases: [Trustpilot]}
+  - {symbol: MOON, exchange: LSE, name: Moonpig, group: internet, aliases: [Moonpig]}
+  - {symbol: OCDO, exchange: LSE, name: Ocado, group: internet, aliases: [Ocado]}
+  - {symbol: BCG, exchange: LSE, name: Baltic Classifieds, group: internet, aliases: [Baltic Classifieds]}
+  - {symbol: GAW, exchange: LSE, name: Games Workshop, group: games, aliases: [Games Workshop, Warhammer]}
+  - {symbol: FDEV, exchange: LSE, name: Frontier Developments, group: games, aliases: [Frontier Developments]}
+  - {symbol: BT.A, exchange: LSE, name: BT Group, group: telecoms, aliases: [BT Group, Openreach]}
+  - {symbol: VOD, exchange: LSE, name: Vodafone, group: telecoms, aliases: [Vodafone, VodafoneThree]}
+  - {symbol: NCC, exchange: LSE, name: NCC Group, group: security, aliases: [NCC Group]}
+  - {symbol: GBG, exchange: LSE, name: GB Group, group: security, aliases: [GB Group, GBG]}
+  - {symbol: CRW, exchange: LSE, name: Craneware, group: software, aliases: [Craneware]}
+  - {symbol: ATG, exchange: LSE, name: Auction Technology Group, group: internet, aliases: [Auction Technology Group]}
+  - {symbol: PINE, exchange: LSE, name: Pinewood Technologies, group: software, aliases: [Pinewood Technologies]}

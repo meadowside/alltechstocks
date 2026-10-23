@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from "_macros.html" import row, coverage, src_line, chips with context %}
+{% block main %}
+{% if top %}
+<article class="lead-story">
+  <div class="big-count"><b>{{ top.source_count }}</b><span>outlets <br>covering this</span></div>
+  <div class="lead-body">
+    <div class="label">Most covered story</div>
+    <h1><a href="{{ top.link }}" rel="noopener" target="_blank">{{ top.headline }}</a></h1>
+    {% if top.teaser %}<p class="teaser">{{ top.teaser }}</p>{% endif %}
+    {{ src_line(top) }}
+  </div>
+  {% if top.so_what %}<p class="why"><b>So what:</b> {{ top.so_what }}</p>
+  {% elif top.why %}<p class="why"><b>Why it's top:</b> {{ top.why }}</p>{% endif %}
+  {{ coverage(top) }}
+</article>
+{% endif %}
+
+{% include "_stocks_table.html" %}
+
+<div class="grid">
+{% for sec in sections %}
+  <section class="section" id="{{ sec.id }}">
+    <div class="section-head"><h2>{{ sec.name }}</h2>{% if sec.stories|length > 6 %}<a href="{{ sec.id }}.html">All {{ sec.stories|length }} &rarr;</a>{% endif %}</div>
+    {% if sec.stories %}
+    <ol class="ranked">{% for s in sec.stories[:6] %}{{ row(s, loop.index) }}{% endfor %}</ol>
+    {% else %}<p class="empty">Quiet so far today.</p>{% endif %}
+  </section>
+{% endfor %}
+</div>
+
+{% include "_signup.html" %}
+{% endblock %}

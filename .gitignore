@@ -1,0 +1,8 @@
+site/
+site-test/
+data/test/
+__pycache__/
+*.pyc
+.venv/
+tests/fixtures/
+data/sec_tickers.json.tmp

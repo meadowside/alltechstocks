@@ -1,0 +1,53 @@
+{% macro favicon(outlet) -%}
+{% if outlet.domain %}<img src="https://www.google.com/s2/favicons?domain={{ outlet.domain }}&sz=32" alt="" loading="lazy">{% endif %}
+{%- endmacro %}
+
+{% macro chips(s, n=4) -%}
+{% if s.tickers %}<span class="tks">{% for t in s.tickers[:n] %}<a class="tk" href="{{ root }}stocks/{{ stocks[t].slug }}.html" title="{{ stocks[t].name }}: all coverage">{{ t }}</a>{% endfor %}</span>{% endif %}
+{%- endmacro %}
+
+{% macro src_line(s) -%}
+<span class="src">{{ chips(s) }}{{ favicon(s.link_outlet) }}{{ s.link_outlet.name }}<span class="dot">·</span>{{ s.last_seen | ago }}{% if s.paywall %}<span class="tag" title="Paywalled">£</span>{% endif %}{% if s.is_global %}<span class="tag" title="About the tech market as a whole">Market</span>{% endif %}{% if s.exclusive %}<span class="tag">Exclusive</span>{% endif %}</span>
+{%- endmacro %}
+
+{% macro row(s, n, anchor=true) -%}
+<li class="row"{% if anchor %} id="s{{ s.key }}"{% endif %}>
+  <span class="rank">{{ n }}</span>
+  <div class="row-body">
+    <a class="hl" href="{{ s.link }}" rel="noopener" target="_blank">{{ s.headline }}</a>
+    {% if s.so_what %}<p class="sowhat"><b>So what:</b> {{ s.so_what }}</p>{% endif %}
+    {{ src_line(s) }}
+  </div>
+  {% if s.source_count > 1 %}
+  <details class="count">
+    <summary title="See who's covering this"><b>{{ s.source_count }}</b><small>outlets</small></summary>
+    <div class="cov-pop">
+      <span class="cov-title">Who's covering it</span>
+      {% for o, item in s.sources() %}<a href="{{ item.url }}" rel="noopener" target="_blank" title="{{ item.title }}">{{ favicon(o) }}{{ o.name }}{% if o.source and o.source.paywall %} <span class="tag">£</span>{% endif %}</a>{% endfor %}
+    </div>
+  </details>
+  {% else %}
+  <span class="count" title="Only one outlet so far"><b>1</b><small>outlet</small></span>
+  {% endif %}
+</li>
+{%- endmacro %}
+
+{% macro coverage(s) -%}
+{% set groups = [("Major outlets", s.outlets.values()|selectattr("tier", "equalto", 1)|list),
+                 ("Markets press", s.outlets.values()|selectattr("tier", "equalto", 2)|list),
+                 ("Also", s.outlets.values()|rejectattr("tier", "in", [1, 2])|list)] %}
+{% set links = {} %}{% for o, item in s.sources() %}{% set _ = links.update({o.key: item}) %}{% endfor %}
+<div class="coverage">
+  <span class="cov-title">Who's covering it</span>
+  {% for name, outs in groups if outs %}
+  <span class="grp grp-{{ loop.index }}"><em>{{ name }}</em>
+    {% for o in outs[:6] %}<a class="o" href="{{ links[o.key].url }}" rel="noopener" target="_blank" title="{{ links[o.key].title }}">{{ favicon(o) }}{{ o.name }}</a>{% endfor %}
+    {% if outs|length > 6 %}
+    <details class="more-d"><summary>+{{ outs|length - 6 }} more</summary>
+      <span class="more-list">{% for o in outs[6:] %}<a class="o" href="{{ links[o.key].url }}" rel="noopener" target="_blank" title="{{ links[o.key].title }}">{{ favicon(o) }}{{ o.name }}</a>{% endfor %}</span>
+    </details>
+    {% endif %}
+  </span>
+  {% endfor %}
+</div>
+{%- endmacro %}

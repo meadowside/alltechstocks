@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% from "_macros.html" import row with context %}
+{% block title %}{{ section.name }}: {{ site.name }}{% endblock %}
+{% block og_title %}{{ section.name }} news, ranked by who's covering it: {{ site.name }}{% endblock %}
+{% block main %}
+<div class="page-head">
+  <h1>{{ section.name }}</h1>
+  <p>Most covered puts the biggest stories first. Latest shows the newest first.</p>
+</div>
+<div class="order-switch" role="tablist" aria-label="Sort stories">
+  <button type="button" role="tab" aria-selected="true" data-show="covered">Most covered</button>
+  <button type="button" role="tab" aria-selected="false" data-show="latest">Latest</button>
+</div>
+<section class="section">
+  {% if stories %}
+  <ol class="ranked" data-list="covered">{% for s in stories %}{{ row(s, loop.index) }}{% endfor %}</ol>
+  <ol class="ranked" data-list="latest" hidden>{% for s in latest %}{{ row(s, loop.index, false) }}{% endfor %}</ol>
+  {% else %}<p class="empty">Quiet so far today.</p>{% endif %}
+</section>
+<script>
+document.querySelectorAll(".order-switch button").forEach(function (b) {
+  b.addEventListener("click", function () {
+    document.querySelectorAll(".order-switch button").forEach(function (x) { x.setAttribute("aria-selected", x === b); });
+    document.querySelectorAll("[data-list]").forEach(function (l) { l.hidden = l.dataset.list !== b.dataset.show; });
+  });
+});
+</script>
+{% include "_signup.html" %}
+{% endblock %}

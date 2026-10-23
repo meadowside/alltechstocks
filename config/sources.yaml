@@ -1,0 +1,355 @@
+# All Tech Stocks: source list
+#
+# tier:      1 major financial and national, 2 markets and business specialist, 3 tech press,
+#            4 primary (company newsrooms, exchange announcements), 0 backfill
+# weight:    what one write-up from this outlet adds to a story's coverage score
+# sections:  where this source's stories usually belong (a hint, keywords win)
+# paywall:   true adds a £ tag when we have to link it
+# confirm:   a primary source that needs one outlet to cover the story too
+# always_tech: every item counts as tech, even if the headline doesn't say so
+# ticker:    a company's own newsroom: every item is tagged with this stock
+# domain:    used to match Google News items back to this outlet
+# google:    a Google News feed; the real outlet is read from each item
+#
+# Google News queries for every stock on the watchlist are added automatically (see auto_google in
+# rules.yaml), so you don't need to list companies here.
+#
+# Every URL below needs checking once the engine runs for real.
+# Open /status.html on the site to see which feeds work.
+
+sources:
+  # ---------- Tier 1: major financial and national ----------
+  - id: reuters
+    name: Reuters
+    url: https://news.google.com/rss/search?q=site:reuters.com+(technology+OR+chip+OR+software+OR+shares)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: reuters.com
+    google: true
+    tier: 1
+    weight: 3
+    sections: [results, deals]
+
+  - id: bloomberg
+    name: Bloomberg
+    url: https://news.google.com/rss/search?q=site:bloomberg.com+(technology+OR+chip+OR+software+OR+shares)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: bloomberg.com
+    google: true
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [results, deals]
+
+  - id: ft
+    name: Financial Times
+    url: https://www.ft.com/technology?format=rss
+    domain: ft.com
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [deals, results]
+
+  - id: ft-companies
+    name: Financial Times
+    url: https://www.ft.com/companies?format=rss
+    domain: ft.com
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [results, deals]
+
+  - id: wsj-tech
+    name: The Wall Street Journal
+    url: https://feeds.content.dowjones.io/public/rss/RSSWSJD
+    domain: wsj.com
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [companies, deals]
+
+  - id: cnbc-tech
+    name: CNBC
+    url: https://www.cnbc.com/id/19854910/device/rss/rss.html
+    domain: cnbc.com
+    tier: 1
+    weight: 3
+    sections: [companies, results]
+
+  - id: cnbc-earnings
+    name: CNBC
+    url: https://www.cnbc.com/id/15839135/device/rss/rss.html
+    domain: cnbc.com
+    tier: 1
+    weight: 3
+    sections: [results]
+
+  - id: marketwatch
+    name: MarketWatch
+    url: https://news.google.com/rss/search?q=site:marketwatch.com+(tech+OR+technology+OR+chip+OR+software)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: marketwatch.com
+    google: true
+    tier: 1
+    weight: 3
+    sections: [results]
+
+  - id: bbc-business
+    name: BBC
+    url: https://feeds.bbci.co.uk/news/business/rss.xml
+    domain: bbc.co.uk
+    tier: 1
+    weight: 3
+    sections: [companies]
+
+  - id: bbc-tech
+    name: BBC
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    domain: bbc.co.uk
+    tier: 1
+    weight: 3
+    sections: [companies, ai]
+
+  - id: guardian-business
+    name: The Guardian
+    url: https://www.theguardian.com/uk/business/rss
+    domain: theguardian.com
+    tier: 1
+    weight: 3
+    sections: [companies]
+
+  - id: guardian-tech
+    name: The Guardian
+    url: https://www.theguardian.com/uk/technology/rss
+    domain: theguardian.com
+    tier: 1
+    weight: 3
+    sections: [companies, regulation]
+
+  - id: telegraph-business
+    name: The Telegraph
+    url: https://www.telegraph.co.uk/business/rss.xml
+    domain: telegraph.co.uk
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [companies]
+
+  - id: times-business
+    name: The Times
+    url: https://news.google.com/rss/search?q=site:thetimes.com/business-money+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: thetimes.com
+    google: true
+    tier: 1
+    weight: 3
+    paywall: true
+    sections: [companies]
+
+  - id: sky-business
+    name: Sky News
+    url: https://feeds.skynews.com/feeds/rss/business.xml
+    domain: news.sky.com
+    tier: 1
+    weight: 3
+    sections: [companies]
+
+  - id: ap
+    name: AP
+    url: https://news.google.com/rss/search?q=site:apnews.com+(technology+OR+tech)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: apnews.com
+    google: true
+    tier: 1
+    weight: 3
+    sections: [companies]
+
+  # ---------- Tier 2: markets and business specialists ----------
+  - id: cityam
+    name: City AM
+    url: https://www.cityam.com/feed/
+    domain: cityam.com
+    tier: 2
+    weight: 2
+    sections: [companies, deals]
+
+  - id: barrons
+    name: Barron's
+    url: https://news.google.com/rss/search?q=site:barrons.com+(tech+OR+chip+OR+software)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: barrons.com
+    google: true
+    tier: 2
+    weight: 2
+    paywall: true
+    sections: [results]
+
+  - id: this-is-money
+    name: This is Money
+    url: https://www.thisismoney.co.uk/money/markets/index.rss
+    domain: thisismoney.co.uk
+    tier: 2
+    weight: 2
+    sections: [results]
+
+  - id: proactive
+    name: Proactive Investors
+    url: https://news.google.com/rss/search?q=site:proactiveinvestors.co.uk+(technology+OR+software+OR+tech)+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: proactiveinvestors.co.uk
+    google: true
+    tier: 2
+    weight: 2
+    sections: [results]
+
+  - id: investors-chronicle
+    name: Investors' Chronicle
+    url: https://news.google.com/rss/search?q=site:investorschronicle.co.uk+when:2d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: investorschronicle.co.uk
+    google: true
+    tier: 2
+    weight: 2
+    paywall: true
+    sections: [results]
+
+  - id: axios
+    name: Axios
+    url: https://news.google.com/rss/search?q=site:axios.com+(tech+OR+technology+OR+AI)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: axios.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [companies, ai]
+
+  - id: the-information
+    name: The Information
+    url: https://news.google.com/rss/search?q=site:theinformation.com+when:2d&hl=en-US&gl=US&ceid=US:en
+    domain: theinformation.com
+    google: true
+    tier: 2
+    weight: 2
+    paywall: true
+    sections: [ai, companies]
+
+  # ---------- Tier 3: tech press ----------
+  - id: techcrunch
+    name: TechCrunch
+    url: https://techcrunch.com/feed/
+    domain: techcrunch.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies, ai]
+
+  - id: the-verge
+    name: The Verge
+    url: https://www.theverge.com/rss/index.xml
+    domain: theverge.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies]
+
+  - id: the-register
+    name: The Register
+    url: https://www.theregister.com/headlines.atom
+    domain: theregister.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies, chips]
+
+  - id: ars-technica
+    name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/index
+    domain: arstechnica.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies]
+
+  - id: toms-hardware
+    name: Tom's Hardware
+    url: https://www.tomshardware.com/feeds/all
+    domain: tomshardware.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [chips]
+
+  # ---------- Tier 4: primary sources ----------
+  # Company newsrooms and exchange announcements. They count once an outlet covers the story too.
+  - id: apple-newsroom
+    name: Apple Newsroom
+    url: https://www.apple.com/newsroom/rss-feed.rss
+    domain: apple.com
+    tier: 4
+    weight: 1
+    confirm: true
+    always_tech: true
+    ticker: AAPL
+    sections: [companies]
+
+  - id: nvidia-newsroom
+    name: Nvidia Newsroom
+    url: https://nvidianews.nvidia.com/releases.xml
+    domain: nvidianews.nvidia.com
+    tier: 4
+    weight: 1
+    confirm: true
+    always_tech: true
+    ticker: NVDA
+    sections: [chips]
+
+  - id: microsoft-news
+    name: Microsoft
+    url: https://news.microsoft.com/feed/
+    domain: news.microsoft.com
+    tier: 4
+    weight: 1
+    confirm: true
+    always_tech: true
+    ticker: MSFT
+    sections: [companies]
+
+  - id: arm-newsroom
+    name: Arm
+    url: https://news.google.com/rss/search?q=site:newsroom.arm.com+when:2d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: arm.com
+    google: true
+    tier: 4
+    weight: 1
+    confirm: true
+    always_tech: true
+    ticker: ARM
+    sections: [chips]
+
+  - id: lse-rns
+    name: London Stock Exchange
+    url: https://news.google.com/rss/search?q=site:londonstockexchange.com/news-article+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: londonstockexchange.com
+    google: true
+    tier: 4
+    weight: 1
+    confirm: true
+    sections: [results]
+
+  - id: businesswire-tech
+    name: Business Wire
+    url: https://news.google.com/rss/search?q=site:businesswire.com+(results+OR+acquire+OR+announces)+technology+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: businesswire.com
+    google: true
+    tier: 4
+    weight: 1
+    confirm: true
+    sections: [results]
+
+  # ---------- Backfill: topic queries ----------
+  # Per-stock queries are added automatically from the watchlist. These catch market-wide stories.
+  - id: gn-tech-stocks-us
+    name: Google News
+    url: https://news.google.com/rss/search?q=%22tech+stocks%22+OR+%22chip+stocks%22+OR+Nasdaq+when:1d&hl=en-US&gl=US&ceid=US:en
+    google: true
+    tier: 0
+    weight: 1
+    sections: [companies]
+
+  - id: gn-tech-stocks-uk
+    name: Google News
+    url: https://news.google.com/rss/search?q=FTSE+(tech+OR+technology+OR+software)+shares+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    google: true
+    tier: 0
+    weight: 1
+    sections: [companies]

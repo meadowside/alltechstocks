@@ -1,0 +1,74 @@
+name: Hourly run
+
+# Every hour at :23. Fetches news and SEC filings, ranks stories and stocks, and republishes the site.
+# In the 6am UK hour on weekdays it also builds the email.
+on:
+  schedule:
+    - cron: "23 * * * *"
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "auto (normal run) or email (build today's email now)"
+        default: auto
+        type: choice
+        options: [auto, email]
+
+permissions:
+  contents: write    # to save the database back to the repo
+  pages: write       # to publish the site
+  id-token: write
+
+concurrency:
+  group: engine
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Run the engine
+        run: |
+          set -o pipefail
+          python run.py "${{ inputs.command || 'auto' }}" 2>&1 | tee data/last_run.log
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Save the database
+        # Code may have been pushed while this run was working, so catch up before saving.
+        # Our new data wins any clash. If saving still fails, the site is published anyway.
+        # Runs even when the engine fails, so data/last_run.log shows what went wrong.
+        if: always()
+        continue-on-error: true
+        run: |
+          git config user.name "All Tech Stocks bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          git commit -m "Data update $(date -u +%Y-%m-%dT%H:%MZ)" || { echo "Nothing new to save"; exit 0; }
+          for i in 1 2 3; do
+            git pull --rebase -X theirs origin main && git push && exit 0
+            echo "Save attempt $i failed, retrying"; sleep 5
+          done
+          exit 1
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deploy
+        uses: actions/deploy-pages@v4
