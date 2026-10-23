@@ -60,6 +60,11 @@ header.top { border-bottom: 1px solid var(--rule); background: var(--card); }
 .tagline { color: var(--muted); font-size: 14px; margin-top: 4px; }
 .mast-right { display: flex; align-items: center; gap: 12px; }
 .updated { color: var(--muted); font-size: 13px; }
+.find input { font: 14px var(--sans); color: var(--ink); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px;
+  padding: 7px 14px; width: 270px; }
+.find input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+@media (max-width: 760px) { .mast-right { width: 100%; } .find, .find input { width: 100%; } }
 .theme-btn { display: inline-flex; align-items: center; gap: 6px; font: 500 13px var(--sans); color: var(--ink);
   background: var(--chip); border: 1px solid var(--rule); border-radius: 999px; padding: 5px 11px; cursor: pointer; }
 .theme-btn svg { width: 15px; height: 15px; }
@@ -287,13 +292,18 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
       </div>
       <div class="mast-right">
         <span class="updated">Updated {{ updated }}</span>
+        <form class="find" id="find" role="search" action="{{ root }}stocks/index.html">
+          <label for="find-in" class="sr">Find a stock</label>
+          <input id="find-in" list="stock-list" placeholder="Find a stock, e.g. Nvidia or SGE" autocomplete="off">
+          <datalist id="stock-list">{% for s in stocks.values()|sort(attribute="name") %}<option value="{{ s.name }} ({{ s.symbol }})" data-slug="{{ s.slug }}">{% endfor %}</datalist>
+        </form>
       </div>
     </div>
     <nav class="sections" aria-label="Sections">
       <a href="{{ root }}index.html" class="{{ 'on' if page == 'home' }}">Top</a>
       <a href="{{ root }}us.html" class="{{ 'on' if page == 'us' }}">US</a>
       <a href="{{ root }}uk.html" class="{{ 'on' if page == 'uk' }}">UK</a>
-      <a href="{{ root }}stocks/index.html" class="{{ 'on' if page == 'stocks' }}">All stocks</a>
+      <a href="{{ root }}stocks/index.html" class="{{ 'on' if page == 'stocks' }}">All {{ stocks|length }} stocks</a>
       {% for id, name in nav %}<a href="{{ root }}{{ id }}.html" class="{{ 'on' if page == id }}">{{ name }}</a>{% endfor %}
     </nav>
   </div>
@@ -364,6 +374,20 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
 </footer>
 <script>
 (function () {
+  // Find a stock: pick from the list (or type a name or ticker and press Enter) to open its page.
+  var form = document.getElementById("find"), input = document.getElementById("find-in");
+  var opts = Array.prototype.slice.call(document.querySelectorAll("#stock-list option"));
+  function go(exact) {
+    var q = input.value.trim().toLowerCase(); if (!q) return false;
+    var hit = opts.find(function (o) { return o.value.toLowerCase() === q; }) ||
+      opts.find(function (o) { var m = o.value.match(/\(([^)]+)\)$/); return m && m[1].toLowerCase() === q; }) ||
+      (!exact && opts.find(function (o) { return o.value.toLowerCase().indexOf(q) === 0; })) ||
+      (!exact && opts.find(function (o) { return o.value.toLowerCase().indexOf(q) > -1; }));
+    if (hit) { location.href = form.getAttribute("action").replace("index.html", hit.dataset.slug + ".html"); return true; }
+    return false;
+  }
+  input.addEventListener("change", function () { go(true); });
+  form.addEventListener("submit", function (e) { e.preventDefault(); if (!go(false)) location.href = form.getAttribute("action"); });
   // Source lists: one open at a time, and a click elsewhere closes it.
   var pops = document.querySelectorAll("details.count");
   pops.forEach(function (d) {
