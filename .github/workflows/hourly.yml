@@ -43,6 +43,7 @@ jobs:
       - name: Run the engine
         run: |
           set -o pipefail
+          mkdir -p data
           python run.py "${{ inputs.command || 'auto' }}" 2>&1 | tee data/last_run.log
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
