@@ -1,22 +1,25 @@
 name: Hourly run
 
-# Every hour at :23. Fetches news and SEC filings, ranks stories and stocks, and republishes the site.
-# In the 6am UK hour on weekdays it also builds the email.
+# Every hour at :23 (plus a backup at :53 from cron-job.org). Fetches news and SEC filings, ranks stories
+# and stocks, and republishes the site. In the 6am UK hour on weekdays it also builds the email.
+# Whichever of the two arrives first does the work. The other one sees the engine already ran in the
+# last 45 minutes and stops after a few seconds, so it only costs one Actions minute.
 on:
   schedule:
     - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       command:
-        description: "auto (normal run) or email (build today's email now)"
+        description: "auto (normal run, skipped if one ran in the last 45 min), force (normal run, never skipped) or email (build today's email now)"
         default: auto
         type: choice
-        options: [auto, email]
+        options: [auto, force, email]
 
 permissions:
   contents: write    # to save the database back to the repo
   pages: write       # to publish the site
   id-token: write
+  actions: read      # to see whether another run already did the work
 
 concurrency:
   group: engine
@@ -30,21 +33,50 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
+      - name: Skip if the engine already ran in the last 45 minutes
+        id: check
+        if: (inputs.command || 'auto') == 'auto'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          THIS_RUN: ${{ github.run_id }}
+        run: |
+          cutoff=$(date -u -d '45 minutes ago' +%Y-%m-%dT%H:%M:%SZ)
+          runs=$(gh api "repos/$GH_REPO/actions/workflows/hourly.yml/runs?per_page=6" \
+                   --jq ".workflow_runs[] | select(.id != $THIS_RUN) | .id" || true)
+          for id in $runs; do
+            done_at=$(gh api "repos/$GH_REPO/actions/runs/$id/jobs" \
+                        --jq '.jobs[].steps[]? | select(.name == "Run the engine" and .conclusion == "success") | .completed_at' \
+                        2>/dev/null | head -1 || true)
+            if [ -n "$done_at" ] && [[ "$done_at" > "$cutoff" ]]; then
+              echo "The engine already ran at $done_at (run $id). Nothing to do."
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+          echo "No successful run in the last 45 minutes, so this one does the work."
+
       - uses: actions/checkout@v4
+        if: steps.check.outputs.skip != 'true'
 
       - uses: actions/setup-python@v5
+        if: steps.check.outputs.skip != 'true'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Install
+        if: steps.check.outputs.skip != 'true'
         run: pip install -r requirements.txt
 
       - name: Run the engine
+        if: steps.check.outputs.skip != 'true'
         run: |
           set -o pipefail
           mkdir -p data
-          python run.py "${{ inputs.command || 'auto' }}" 2>&1 | tee data/last_run.log
+          cmd="${{ inputs.command || 'auto' }}"
+          if [ "$cmd" = force ]; then cmd=auto; fi
+          python run.py "$cmd" 2>&1 | tee data/last_run.log
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
@@ -55,7 +87,7 @@ jobs:
         # Code may have been pushed while this run was working, so catch up before saving.
         # Our new data wins any clash. If saving still fails, the site is published anyway.
         # Runs even when the engine fails, so data/last_run.log shows what went wrong.
-        if: always()
+        if: always() && steps.check.outputs.skip != 'true'
         continue-on-error: true
         run: |
           git config user.name "All Tech Stocks bot"
@@ -69,8 +101,11 @@ jobs:
           exit 1
 
       - uses: actions/configure-pages@v5
+        if: steps.check.outputs.skip != 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.check.outputs.skip != 'true'
         with:
           path: site
       - id: deploy
+        if: steps.check.outputs.skip != 'true'
         uses: actions/deploy-pages@v4
