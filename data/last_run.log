@@ -1,6 +1,7 @@
-All Tech Stocks run: auto at Fri 23 Oct 21:53 UK time
-  feeds: 45/45 worked, 280 new items (87 excluded by rules, 9 Google queries resting this hour)
-  filings: 68/73 companies checked, 5 new filings
-  stories: 1060 grouped, 695 name a watched stock or pass the market rules
-  site: 681 stories live, 1 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: NFLX
-  AI lines: 1 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Fri 23 Oct 22:53 UK time
+  feeds: 45/45 worked, 277 new items (91 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 3 new filings
+  stories: 1101 grouped, 718 name a watched stock or pass the market rules
+  AI line rejected (38 words): 'The coverage gives only a headline about an expanded AI security deal between CrowdStrike and Nvidia, with no detail on its terms, scope or '
+  site: 702 stories live, 0 new AI lines. Top: Apple's foldable iPhone hits stores with $2,000 price tag and scarce supply. Most covered stock: NFLX
+  AI lines: 0 written, 1 rejected, 0 failed calls
