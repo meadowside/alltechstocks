@@ -1,0 +1,5 @@
+All Tech Stocks run: auto at Fri 23 Oct 13:24 UK time
+  feeds: 45/45 worked, 181 new items (8 excluded by rules, 9 Google queries resting this hour)
+  filings: SEC EDGAR is off (set sec.user_agent in config/rules.yaml)
+  stories: 663 grouped, 371 name a watched stock or pass the market rules
+  site: 360 stories live, 0 new AI lines. Top: UK’s FTSE 100 falls as banks, miners drag; Barclays slides on job cuts. Most covered stock: META
