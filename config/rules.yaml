@@ -131,7 +131,9 @@ exclude:
                    "sell rating", "upgrade to buy", "downgrade to sell", "multibagger", "next nvidia",
                    "motley fool", "| the motley fool", "seeking alpha", "zacks", "stock forecast",
                    "says sell", "says buy", "rated buy", "rated sell", "dip buyers", "analyst says", "analysts say",
-                   "stock flaws", "more stocks", "moderate buy", "moderate sell", "consensus rating", "analyst rating",
+                   "stock flaws", "more stocks", "technical analysis", "resistance level", "near resistance",
+                   "support level", "near support", "uptrend", "downtrend", "chart pattern", "price analysis",
+                   "forecast:", "price outlook", "stock outlook", "elliott wave", "golden cross", "death cross", "moderate buy", "moderate sell", "consensus rating", "analyst rating",
                    "stock now rated", "rating reiterated", "rating lowered", "rating raised", "price objective",
                    "earns buy", "earns sell", "overweight rating", "underweight rating", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
@@ -146,14 +148,15 @@ exclude:
                   "options activity", "unusual options", "holdings", "stake in", "position in", "shares sold by",
                   "shares bought by", "stock position", "institutional", "research & ratings", "ratings |",
                   "| profile", "cl a profile", "biggest moves", "making the biggest", "and more stocks",
-                  "stocks moving", "stock movers"]
+                  "stocks moving", "stock movers", "plc estimates", "inc. estimates", "estimates –"]
   # Outlets that never count: automated stock-news farms and tip sites. Matched on the outlet name
   # Google gives, any case. Add any that turn up on the status page.
   outlets: [kalkine, ad hoc news, marketbeat, tipranks, simply wall st, simplywall.st, investorplace,
             "24/7 wall st", gurufocus, benzinga, defense world, etf daily news, american banking news,
             ticker report, stocktitan, stock titan, insider monkey, stocknews, the globe and mail,
             marketscreener, nasdaq.com, investing.com, finviz, ainvest, coincentral, "stock traders daily",
-            moomoo, webull, msn, yahoo finance, aol, the motley fool, motley fool, zacks, seeking alpha]
+            moomoo, webull, msn, yahoo finance, aol, the motley fool, motley fool, zacks, seeking alpha,
+            traders union, forex.com, tradingkey, chartmill, auto trader nz, fxstreet, coinpedia, economies.com]
   summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
                      "zacks rank", "stocks to buy"]
   title_keyword_exceptions: [launch, launches, launched]

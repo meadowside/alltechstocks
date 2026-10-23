@@ -124,19 +124,29 @@ def cluster(items: list, cfg: Config) -> list[list]:
     t_link = float(c["min_link_similarity"])
     t_centroid = float(c["min_centroid_similarity"])
 
-    texts = [f"{i['title']}. {i['title']}. {i['summary'] or ''}" for i in items]  # title counts double
+    # "REG - Company PLC - " is boilerplate on every UK announcement. Left in, it makes unrelated
+    # announcements look alike.
+    def strip_reg(t: str) -> str:
+        return re.sub(r"^REG\s*-\s*", "", t or "")
+    texts = [f"{strip_reg(i['title'])}. {strip_reg(i['title'])}. {i['summary'] or ''}" for i in items]  # title counts double
+    tagger = Tagger(cfg)
+    heads = [tagger.find(i["title"]) for i in items]
     vec = TfidfVectorizer(stop_words="english", ngram_range=(1, 2), sublinear_tf=True)
     X = vec.fit_transform(texts).toarray()
 
     # An item joins the story whose closest member is most like it, provided it's also
     # reasonably close to the story as a whole (stops one loose match chaining two stories).
-    groups: list[dict] = []  # {"idx": [...], "sum": vector, "first": dt, "last": dt}
+    # Two articles whose headlines name different watched stocks, and none in common, are never
+    # the same story however alike their wording.
+    groups: list[dict] = []  # {"idx": [...], "sum": vector, "first": dt, "last": dt, "tk": set}
     for idx, item in enumerate(items):
         t = parse_iso(item["published"])
         v = X[idx]
         best, best_sim = None, 0.0
         for g in groups:
             if t - g["last"] > window or t - g["first"] > close_after:
+                continue
+            if heads[idx] and g["tk"] and not (heads[idx] & g["tk"]):
                 continue
             link = max(float(np.dot(X[m], v)) for m in g["idx"])
             centroid = g["sum"] / (np.linalg.norm(g["sum"]) or 1.0)
@@ -146,8 +156,9 @@ def cluster(items: list, cfg: Config) -> list[list]:
             best["idx"].append(idx)
             best["sum"] = best["sum"] + v
             best["last"] = max(best["last"], t)
+            best["tk"] |= heads[idx]
         else:
-            groups.append({"idx": [idx], "sum": v.copy(), "first": t, "last": t})
+            groups.append({"idx": [idx], "sum": v.copy(), "first": t, "last": t, "tk": set(heads[idx])})
 
     # Second pass: merge stories that ended up split (one outlet worded it very differently).
     t_merge = float(c["merge_similarity"])
@@ -162,9 +173,12 @@ def cluster(items: list, cfg: Config) -> list[list]:
             ga, gb = groups[a], groups[b]
             if max(ga["last"], gb["last"]) - min(ga["first"], gb["first"]) > close_after:
                 continue
+            if ga["tk"] and gb["tk"] and not (ga["tk"] & gb["tk"]):
+                continue
             ga["idx"] += gb["idx"]
             ga["sum"] = ga["sum"] + gb["sum"]
             ga["first"], ga["last"] = min(ga["first"], gb["first"]), max(ga["last"], gb["last"])
+            ga["tk"] |= gb["tk"]
             groups.pop(b)
             merged = True
             break

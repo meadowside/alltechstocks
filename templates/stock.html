@@ -41,20 +41,27 @@
 
   <aside>
     <section class="panel">
-      <div class="panel-head"><h2>Price</h2><p>{% if stock.market == "US" %}Delayed, from TradingView.{% else %}Delayed, via Google Finance.{% endif %}</p></div>
-      {% if prices.widgets and stock.market == "UK" %}
-      <p class="empty">TradingView's free charts don't include London Stock Exchange prices, so there's no chart here. Google Finance shows the delayed price.</p>
-      {% elif prices.widgets %}
+      {% if stock.market == "UK" %}
+      <div class="panel-head"><h2>Price</h2><p>Opens in a new tab.</p></div>
+      <div class="price-box">
+        <p>We can't show London Stock Exchange prices here yet. The free charts we use don't include them. See the delayed {{ stock.name }} price and chart on Google Finance instead.</p>
+        <a class="price-out" href="{{ stock.google_finance }}" rel="noopener" target="_blank">See {{ stock.symbol }} price on Google Finance &#8599;</a>
+      </div>
+      {% else %}
+      <div class="panel-head"><h2>Price</h2><p>Delayed, from TradingView.</p></div>
+      {% if prices.widgets %}
       <div class="price-box" id="price-box" data-symbol="{{ stock.tv_symbol }}" data-range="{{ prices.chart_range or '12M' }}">
         <p>The price chart comes from TradingView, which may set cookies. It loads when you allow it.</p>
         <button type="button" id="price-load">Show price chart</button>
       </div>
       {% endif %}
+      <p class="out-label">More on other sites (opens in a new tab):</p>
       <div class="links">
-        <a href="{{ stock.google_finance }}" rel="noopener" target="_blank">Google Finance</a>
-        <a href="https://www.tradingview.com/symbols/{{ stock.exchange }}-{{ stock.symbol }}/" rel="noopener nofollow" target="_blank">TradingView</a>
-        {% if stock.market == "US" %}<a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ stock.symbol }}&amp;owner=include&amp;count=40" rel="noopener" target="_blank">All SEC filings</a>{% endif %}
+        <a href="{{ stock.google_finance }}" rel="noopener" target="_blank">Google Finance &#8599;</a>
+        <a href="https://www.tradingview.com/symbols/{{ stock.exchange }}-{{ stock.symbol }}/" rel="noopener nofollow" target="_blank">TradingView &#8599;</a>
+        <a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK={{ stock.symbol }}&amp;owner=include&amp;count=40" rel="noopener" target="_blank">All SEC filings &#8599;</a>
       </div>
+      {% endif %}
     </section>
 
     {% if stock.market == "US" %}
