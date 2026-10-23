@@ -16,8 +16,6 @@
 </article>
 {% endif %}
 
-{% include "_stocks_table.html" %}
-
 <div class="grid">
 {% for sec in sections %}
   <section class="section" id="{{ sec.id }}">
@@ -28,6 +26,8 @@
   </section>
 {% endfor %}
 </div>
+
+<div style="margin-top:24px">{% include "_stocks_table.html" %}</div>
 
 {% include "_signup.html" %}
 {% endblock %}
