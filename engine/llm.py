@@ -21,7 +21,11 @@ BANNED = ["bombshell", "shocking", "stunning", "game-changer", "game changer", "
 # Advice, opinions on the shares and predictions. Whole words, any case. A line containing any of
 # these is thrown away. Better no line than one that reads like a tip.
 ADVICE_RE = re.compile(r"\b(" + "|".join([
-    r"buy", r"buys", r"buying", r"sell", r"sells", r"selling", r"hold", r"holding",
+    # Buying and selling the shares, not companies buying companies ("Salesforce plans to buy Braze" is fine).
+    r"buy (?:the |its |their )?(?:shares|stock|dip)", r"sell (?:the |its |their )?(?:shares|stock)",
+    r"hold (?:the |its |their )?(?:shares|stock)", r"buying (?:the )?(?:shares|stock|opportunity)",
+    r"selling (?:the )?(?:shares|stock)", r"(?:buy|sell|hold) (?:rating|signal|call)", r"a (?:buy|sell|hold)\b",
+    r"time to (?:buy|sell)", r"worth buying",
     r"bullish", r"bearish", r"bull case", r"bear case", r"upside", r"downside",
     r"undervalued", r"overvalued", r"cheap", r"expensive", r"bargain", r"valuation",
     r"price target", r"target price", r"rally", r"rallies", r"soar", r"soars", r"surge", r"surges", r"plunge", r"plunges",
@@ -50,6 +54,7 @@ Strict rules:
 - Never predict. Describe what has happened or what the company has said, and nothing more.
 - No dashes, no semicolons. Don't repeat the headline. Don't start with "This".
 - Never mention the coverage, the sources or the article. Talk about the story.
+If the coverage gives too little to say anything useful, reply with the single word NONE.
 Reply with the sentence only."""
 
 
@@ -88,6 +93,8 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
         print(f"  AI call failed: {e}")
         return None
     text = clean_line(raw)
+    if text.strip(" .").upper() == "NONE":
+        return ""  # nothing useful to say: no line, not an error
     reason = reject_reason(text)
     if reason == "empty":
         reason = f"empty, stop_reason={data.get('stop_reason')}, blocks={[b.get('type') for b in data.get('content', [])]}"

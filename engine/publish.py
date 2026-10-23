@@ -77,8 +77,13 @@ def just_in(stories: list[Story], cfg: Config) -> list[Story]:
 def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Config, now: datetime) -> int:
     """Attach saved AI lines to every story, and write new ones for the stories that need them.
     Each story is written once: the line is saved against all its items and reused from then on."""
+    skipped = set()
     for s in everything:
-        s.so_what = db.why_line(s.item_ids) or ""
+        saved = db.why_line(s.item_ids) or ""
+        if saved == "-":  # the model had nothing useful to say; don't ask again
+            skipped.add(id(s))
+            saved = ""
+        s.so_what = saved
     ai = cfg.rules.get("ai_lines", {})
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
     day_start = local.replace(hour=0, minute=0, second=0, microsecond=0)
@@ -87,7 +92,7 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
     for s in wanted:
         if made >= budget:
             break
-        if s.so_what or id(s) in seen:
+        if s.so_what or id(s) in seen or id(s) in skipped:
             continue
         seen.add(id(s))
         snippets = [i["summary"] or i["title"] for i in s.items if "news.google.com" not in i["url"]] or [s.headline]
@@ -95,7 +100,9 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
         line = llm.why_it_matters(s.headline, snippets, companies)
         if line is None and not llm.enabled():
             break  # no key: don't loop through every story
-        if line:
+        if line == "":
+            db.save_why_line(s.item_ids, "-", now)
+        elif line:
             s.so_what = line
             db.save_why_line(s.item_ids, line, now)
             made += 1
