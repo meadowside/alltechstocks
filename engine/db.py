@@ -189,6 +189,13 @@ class DB:
             (symbol, json.dumps(sorted(ids)), row["headline"], row["link"], row["outlet"], int(row["paywall"]),
              row["outlets"], int(row["in_headline"]), row["section"], first, row["last_seen"]))
 
+    def purge_stock_stories(self, keep) -> int:
+        """Delete saved stock stories that fail today's rules (rules can change after a story was saved)."""
+        rows = self.conn.execute("SELECT id, headline, link, outlet FROM stock_stories").fetchall()
+        bad = [r["id"] for r in rows if not keep(r)]
+        self.conn.executemany("DELETE FROM stock_stories WHERE id = ?", [(i,) for i in bad])
+        return len(bad)
+
     def stock_stories(self, since: datetime, symbol: str | None = None) -> list[sqlite3.Row]:
         q, args = "SELECT * FROM stock_stories WHERE last_seen >= ?", [iso(since)]
         if symbol:

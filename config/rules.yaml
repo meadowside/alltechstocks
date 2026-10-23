@@ -131,11 +131,13 @@ exclude:
                    "sell rating", "upgrade to buy", "downgrade to sell", "multibagger", "next nvidia",
                    "motley fool", "| the motley fool", "seeking alpha", "zacks", "stock forecast",
                    "says sell", "says buy", "rated buy", "rated sell", "dip buyers", "analyst says", "analysts say",
-                   "stock flaws", "more stocks", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
+                   "stock flaws", "more stocks", "moderate buy", "moderate sell", "consensus rating", "analyst rating",
+                   "stock now rated", "rating reiterated", "rating lowered", "rating raised", "price objective",
+                   "earns buy", "earns sell", "overweight rating", "underweight rating", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
   # unrelated stories together, so they never count. Sector-wide tech stories still run.
   wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",
-                  "european stocks", "european shares", "asian stocks", "asian shares", "wall street",
+                  "european stocks", "european shares", "asian stocks", "asian shares", "stocks on wall street",
                   "stock market today", "stock market news", "stocks today", "markets today", "market wrap",
                   "markets live", "movers", "midday update", "closing bell", "opening bell", "premarket",
                   "pre-market", "futures", "stock price |", "stock quote", "stock grades", "advanced charts",

@@ -134,6 +134,9 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
     _NOW = now
     live = [s for s in stories if s.eligible and now - s.last_seen <= timedelta(hours=48)]
     _with_why(live, cfg)
+    from .rules import Rules
+    rules = Rules(cfg)
+    db.purge_stock_stories(lambda r: not rules.exclusion_reason(r["headline"], r["link"], "", r["outlet"]))
     _record_history(live, db)
     top = next((s for s in live if not s.is_global), None)
 
