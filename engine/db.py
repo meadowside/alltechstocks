@@ -204,11 +204,15 @@ class DB:
         return self.conn.execute(q + " ORDER BY last_seen DESC", args).fetchall()
 
     # ----- AI "so what" lines -----
-    def why_line(self, item_ids: list[int]) -> str | None:
+    def why_line(self, item_ids: list[int], valid_from: str | None = None) -> str | None:
         if not item_ids:
             return None
-        q = "SELECT line FROM why_lines WHERE item_id IN (%s) ORDER BY created LIMIT 1" % ",".join("?" * len(item_ids))
-        row = self.conn.execute(q, item_ids).fetchone()
+        q = "SELECT line FROM why_lines WHERE item_id IN (%s)" % ",".join("?" * len(item_ids))
+        args = list(item_ids)
+        if valid_from:  # lines written before a fix to how they're made are ignored and rewritten
+            q += " AND created >= ?"
+            args.append(str(valid_from))
+        row = self.conn.execute(q + " ORDER BY created DESC LIMIT 1", args).fetchone()
         if not row:
             return None
         return row["line"].strip().split("\n")[0].strip()  # older lines may carry a stray note

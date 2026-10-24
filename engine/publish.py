@@ -78,8 +78,9 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
     """Attach saved AI lines to every story, and write new ones for the stories that need them.
     Each story is written once: the line is saved against all its items and reused from then on."""
     skipped = set()
+    ai = cfg.rules.get("ai_lines", {})
     for s in everything:
-        saved = db.why_line(s.core_ids or s.item_ids) or ""
+        saved = db.why_line(s.core_ids or s.item_ids, ai.get("valid_from")) or ""
         if saved and saved != "-" and llm.NON_ANSWER.search(saved):
             saved = "-"  # an older "nothing here" line written as a sentence
         if saved == "-":  # the model had nothing useful to say; don't ask again
@@ -97,7 +98,8 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
         if s.so_what or id(s) in seen or id(s) in skipped:
             continue
         seen.add(id(s))
-        snippets = [i["summary"] or i["title"] for i in s.items if "news.google.com" not in i["url"]] or [s.headline]
+        core = [i for i in s.items if i["id"] in set(s.core_ids)] or s.items
+        snippets = [i["summary"] or i["title"] for i in core if "news.google.com" not in i["url"]] or [s.headline]
         companies = ", ".join(f"{cfg.by_symbol[t].name} ({t})" for t in s.tickers[:3])
         line = llm.why_it_matters(s.headline, snippets, companies)
         if line is None and not llm.enabled():

@@ -206,6 +206,8 @@ stocks_table:
 
 # AI "so what" lines (only when ANTHROPIC_API_KEY is set). Each story is written once and reused.
 ai_lines:
+  # Saved lines older than this are ignored and written again (set after a fix to how lines are made).
+  valid_from: "2026-10-24T12:40:00"
   per_section: 6
   trending: false
   max_new_per_run: 25
