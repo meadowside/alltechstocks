@@ -7,8 +7,6 @@
   <h1>{{ "US listed" if market == "US" else "UK listed" }} tech stocks</h1>
   <p>{% if market == "US" %}News on tech companies listed on the Nasdaq and the New York Stock Exchange.{% else %}News on tech companies listed on the London Stock Exchange.{% endif %} Most covered first.</p>
 </div>
-{% set ranked_title = "Most covered " ~ market ~ " stocks" %}
-{% include "_stocks_table.html" %}
 <div class="order-switch" role="tablist" aria-label="Sort stories">
   <button type="button" role="tab" aria-selected="true" data-show="covered">Most covered</button>
   <button type="button" role="tab" aria-selected="false" data-show="latest">Latest</button>
@@ -19,6 +17,8 @@
   <ol class="ranked" data-list="latest" hidden>{% for s in latest %}{{ row(s, loop.index, false) }}{% endfor %}</ol>
   {% else %}<p class="empty">Quiet so far today.</p>{% endif %}
 </section>
+{% set ranked_title = "Most covered " ~ market ~ " stocks" %}
+<div style="margin-top:24px">{% include "_stocks_table.html" %}</div>
 <script>
 document.querySelectorAll(".order-switch button").forEach(function (b) {
   b.addEventListener("click", function () {
