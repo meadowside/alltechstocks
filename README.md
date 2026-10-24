@@ -28,6 +28,22 @@ slide") with coverage of 6 or more.
 Stock score = the sum of the scores of its stories in the last 24 hours, full weight when it's in a
 headline and half when it's only in the text. That's attention, not merit, and every page says so.
 
+## Coverage history (trends)
+
+Every run also rolls coverage into two tables that are never pruned: `stock_daily` (one row per stock
+per UK day: stories, headline stories, outlets, attention) and `section_daily` (kept articles per
+section per day). Recent days are rebuilt each run while stories are still growing, then freeze.
+Code in `engine/trends.py`. To see what it says:
+
+```
+python run.py trends                 # yesterday
+python run.py trends --date 2026-11-12
+```
+
+Spikes stay blank until there are 14 days of history and "new on the radar" until there are 60.
+Treat the first fortnight after launch as warm-up: feeds and Google queries were still being added,
+so those days undercount. All of it describes attention only, never what a share might do.
+
 ## The rules this site keeps
 
 - No buy or sell suggestions, no predictions, no top picks. Headlines with "stocks to buy", "price

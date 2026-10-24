@@ -4,6 +4,7 @@
                             # rebuild the site, and build the email in the 6am hour on weekdays
   python run.py hourly      # fetch, rank and rebuild the site only
   python run.py email       # build today's email now (even if one exists)
+  python run.py trends      # print coverage spikes and section shares from saved history (no fetching)
 
 Options:
   --fixtures DIR            # read feeds from DIR/<source id>.xml (and DIR/edgar/<TICKER>.xml) instead of the internet
@@ -17,7 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from engine import edgar, llm, notify
+from engine import edgar, llm, notify, trends
 from engine.config import ROOT, Config
 from engine.db import DB
 from engine.fetch import fetch_all
@@ -28,11 +29,12 @@ from engine.stories import build_stories
 
 def main():
     ap = argparse.ArgumentParser(description="All Tech Stocks engine")
-    ap.add_argument("command", choices=["auto", "hourly", "email"])
+    ap.add_argument("command", choices=["auto", "hourly", "email", "trends"])
     ap.add_argument("--fixtures", type=Path)
     ap.add_argument("--now")
     ap.add_argument("--db", type=Path, default=ROOT / "data" / "news.db")
     ap.add_argument("--out", type=Path, default=ROOT / "site")
+    ap.add_argument("--date", help="for trends: the UK date to report on (default yesterday)")
     args = ap.parse_args()
 
     now = (datetime.strptime(args.now, "%Y-%m-%dT%H:%MZ").replace(tzinfo=timezone.utc)
@@ -42,6 +44,12 @@ def main():
     db = DB(args.db)
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
     print(f"All Tech Stocks run: {args.command} at {local:%a %d %b %H:%M} UK time")
+
+    if args.command == "trends":
+        trends.record_daily(db, cfg, now)
+        print(trends.report(db, cfg, now, args.date))
+        db.close()
+        return
 
     try:
         stats = fetch_all(cfg, db, rules, now, fixtures=args.fixtures)
@@ -61,6 +69,10 @@ def main():
         site = build_site(stories, db, cfg, now, args.out, archive)
         print(f"  site: {site['live']} stories live, {site['new_ai_lines']} new AI lines. "
               f"Top: {site['top']}. Most covered stock: {site['top_stock']}")
+
+        tr = trends.record_daily(db, cfg, now)
+        print(f"  trends: {tr['stock_rows']} stock-days and {tr['section_rows']} section-days refreshed, "
+              f"{trends.history_days(db)} days of history")
 
         email_cfg = cfg.rules["email"]
         weekday_ok = local.weekday() < 5 or not email_cfg.get("weekdays_only", True)
