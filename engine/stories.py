@@ -304,11 +304,24 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     if s.is_global and "companies" in cfg.section_ids:
         s.section = "companies"  # market-wide stories sit with the general news
 
+    # A link must be to an article about the same thing as the headline. Clusters can hold loosely
+    # related pieces (a Sky story on iPhone buying mistakes beside the foldable iPhone launch), so
+    # another outlet's copy only counts when its own title shares most of the headline's words.
+    head_words = _title_words(s.headline)
+
+    def same_story(item) -> bool:
+        if item is lead_item:
+            return True
+        w = _title_words(item["title"])
+        if not head_words or not w:
+            return False
+        return len(head_words & w) / min(len(head_words), len(w)) >= cfg.rules["clustering"].get("link_title_overlap", 0.5)
+
     def linkable(o: Outlet, free: bool):
-        for i in o.items:
-            if "news.google.com" in i["url"]:
-                continue
-            if free and o.source and o.source.paywall:
+        if free and o.source and o.source.paywall:
+            return None
+        for i in sorted(o.items, key=lambda i: i is not lead_item):
+            if "news.google.com" in i["url"] or not same_story(i):
                 continue
             return i
         return None
@@ -320,9 +333,12 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
             item = linkable(o, free)
             if item and all(opt[0] is not o for opt in options):
                 options.append((o, item["url"]))
+    if all(opt[0] is not lead for opt in options):
+        options.append((lead, lead_item["url"]))  # the headline's own article, even via Google or a paywall
     for o in ranked:
-        if all(opt[0] is not o for opt in options):
-            options.append((o, o.items[0]["url"]))
+        item = next((i for i in o.items if same_story(i)), None)
+        if item and all(opt[0] is not o for opt in options):
+            options.append((o, item["url"]))
     s.link_options = options
     s.link_outlet, s.link = options[0]
     s.paywall = bool(s.link_outlet.source and s.link_outlet.source.paywall)
@@ -332,6 +348,13 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
 
 
 WORD_RE = re.compile(r"[a-z0-9£$]+")
+TITLE_STOP = {"the", "a", "an", "and", "or", "of", "to", "in", "on", "for", "with", "as", "at", "by", "from",
+              "is", "are", "its", "it", "after", "over", "new", "says", "say", "s"}
+
+
+def _title_words(title: str) -> set[str]:
+    t = re.sub(r"\s[-|–]\s[^-|–]+$", "", (title or "").lower())  # drop a trailing " - Outlet name"
+    return {w for w in WORD_RE.findall(t) if w not in TITLE_STOP}
 
 
 def best_teaser(group: list, headline: str) -> str:

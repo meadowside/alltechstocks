@@ -30,18 +30,8 @@
 </div>
 
 <div class="sheet" id="email">
-<p class="note">The most covered US and UK tech stock news. For research, not financial advice.</p>
 <p class="fill">[Opening note: two or three sentences on what's big today. Report, don't tip.]</p>
 <p class="fill">Andy</p>
-
-{% if ranked %}
-<h2>Most covered stocks</h2>
-<ul>
-{% for r in ranked %}<li><span class="tk">{{ r.stock.symbol }}</span> <a href="{{ site.url }}/stocks/{{ r.stock.slug }}.html">{{ r.stock.name }}</a>: {{ r.outlet_count }} outlets, {{ r.story_count }} {{ "story" if r.story_count == 1 else "stories" }}</li>
-{% endfor %}
-</ul>
-<p class="note">Ranked by news coverage, not by merit. Not a buy list.</p>
-{% endif %}
 
 {% if top %}
 <h2>Top story</h2>
@@ -54,12 +44,21 @@
 <h2>{{ sec.name }}</h2>
 <ul>
 {% for s in sec.stories %}
-  <li>{% if s.is_update %}<strong>Update:</strong> {% endif %}<a href="{{ s.link }}">{{ s.headline }}</a>
+  <li>{% if loop.first %}<strong>Andy's Pick:</strong> {% endif %}{% if s.is_update %}<strong>Update:</strong> {% endif %}<a href="{{ s.link }}">{{ s.headline }}</a>
     <span class="src">({{ s.link_outlet.name }}{% if s.paywall %}, £{% endif %}{% if s.source_count > 1 %}, {{ s.source_count }} sources{% endif %})</span>{% if s.tickers %} <span class="tk">{{ s.tickers[:3]|join(", ") }}</span>{% endif %}
     {% if loop.first and s.so_what %}<br><em>So what: {{ s.so_what }}</em>{% endif %}</li>
 {% endfor %}
 </ul>
 {% endif %}{% endfor %}
+
+{% if ranked %}
+<h2>Most covered stocks</h2>
+<ul>
+{% for r in ranked %}<li><span class="tk">{{ r.stock.symbol }}</span> <a href="{{ site.url }}/stocks/{{ r.stock.slug }}.html">{{ r.stock.name }}</a>: {{ r.outlet_count }} outlets, {{ r.story_count }} {{ "story" if r.story_count == 1 else "stories" }}</li>
+{% endfor %}
+</ul>
+<p class="note">Ranked by news coverage, not by merit. Not a buy list.</p>
+{% endif %}
 
 {% if filings %}
 <h2>New US filings</h2>

@@ -357,7 +357,7 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     env = _env()
     args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, stocks=cfg.by_symbol,
                 date_long=local.strftime("%A %-d %B %Y"), date=date, ranked=ranked[:5], filings=filings,
-                disclaimer=cfg.rules.get("disclaimer", ""))
+                disclaimer=cfg.rules.get("email_disclaimer", cfg.rules.get("disclaimer", "")))
     html = env.get_template("email.html").render(**args)
     md = env.get_template("email.md").render(**args).strip() + "\n"
     # Saved with the data in the repo, not on the public site. Andy's Desktop button

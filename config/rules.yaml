@@ -20,6 +20,12 @@ disclaimer: >-
   to buy, sell or hold any investment. Rankings show how much news coverage a company is getting,
   not whether its shares are a good investment. Prices are delayed and supplied by TradingView.
   Check the original sources and consider regulated advice before you invest.
+# The email version leaves out prices, because the email doesn't show any.
+email_disclaimer: >-
+  All Tech Stocks is a news index for research. Nothing here is financial advice or a recommendation
+  to buy, sell or hold any investment. Rankings show how much news coverage a company is getting,
+  not whether its shares are a good investment. Check the original sources and consider regulated
+  advice before you invest.
 
 # Prices. Launch setting: free TradingView widgets on each stock's page, loaded only when the reader
 # accepts cookies or clicks "Show price chart". Set widgets to false to switch them off everywhere
@@ -88,7 +94,9 @@ section_keywords:
   regulation: [regulator, regulators, regulation, antitrust, competition watchdog, cma, ftc, sec, doj,
                department of justice, european commission, ofcom, ico, fca, lawsuit, sued, sues, court, judge,
                ruling, trial, fine, fined, penalty, probe, investigation, settlement, tariff, tariffs, ban, banned,
-               digital markets act, dma, online safety]
+               digital markets act, dma, online safety, regulatory, regulatory filing, regulatory document,
+               objects to, object to, objection, tokenized, tokenised, tokenization, tokenisation, compliance,
+               legal challenge, petition, watchdog, privacy rules]
   companies: [ceo, chief executive, cfo, appoints, appointed, steps down, resigns, layoffs, job cuts, redundancies,
               launch, launches, unveils, product, partnership, contract, outage, breach, hack, hacked, strike]
 
@@ -135,7 +143,14 @@ exclude:
                    "support level", "near support", "uptrend", "downtrend", "chart pattern", "price analysis",
                    "forecast:", "price outlook", "stock outlook", "elliott wave", "golden cross", "death cross", "moderate buy", "moderate sell", "consensus rating", "analyst rating",
                    "stock now rated", "rating reiterated", "rating lowered", "rating raised", "price objective",
-                   "earns buy", "earns sell", "overweight rating", "underweight rating", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio"]
+                   "earns buy", "earns sell", "overweight rating", "underweight rating", "where will", "stock be in", "stock in 5 years", "stock in 10 years", "could make you", "i'd buy", "i'm buying", "i bought", "my portfolio",
+                   "% upside", "% downside", "sees upside", "sees downside", "upside potential", "downside risk",
+                   "technical level", "key level", "price levels",
+                   "codes (", "codes [", "game codes", "codes for", "redeem code", "promo code", ") guide", "game guide", "beginner's guide", "complete guide", "walkthrough", "tier list",
+                   "to watch this weekend", "what to watch", "watch this weekend", "new movies", "new shows",
+                   "movies and shows", "shows to watch", "movies to watch", "new on netflix", "leaving netflix",
+                   "trailer", "release date", "cast list", "ending explained", "halloween", "takeover event",
+                   "horoscope", "recipe"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
   # unrelated stories together, so they never count. Sector-wide tech stories still run.
   wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",
@@ -144,7 +159,7 @@ exclude:
                   "markets live", "movers", "midday update", "closing bell", "opening bell", "premarket",
                   "pre-market", "futures", "stock price |", "stock quote", "stock grades", "advanced charts",
                   "price chart", "earnings call transcript", "outperforms market", "underperforms market",
-                  "outperforms competitors", "underperforms competitors", "trading volume", "short interest",
+                  "outperforms competitors", "underperforms competitors", "when compared to competitors", "trading volume", "short interest",
                   "options activity", "unusual options", "holdings", "stake in", "position in", "shares sold by",
                   "shares bought by", "stock position", "institutional", "research & ratings", "ratings |",
                   "| profile", "cl a profile", "biggest moves", "making the biggest", "and more stocks",

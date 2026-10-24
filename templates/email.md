@@ -9,18 +9,10 @@
 
 {% endif %}All Tech Stocks, {{ date_long }}
 
-*The most covered US and UK tech stock news. For research, not financial advice.*
-
 [Your opening note: two or three sentences on what's big today. Report, don't tip.]
 
 Andy
-{% if ranked %}
-## Most covered stocks
-
-{% for r in ranked %}- **{{ r.stock.symbol }}** [{{ r.stock.name | md }}]({{ site.url }}/stocks/{{ r.stock.slug }}.html): {{ r.outlet_count }} outlets, {{ r.story_count }} {{ "story" if r.story_count == 1 else "stories" }}
-{% endfor %}
-*Ranked by news coverage, not by merit. Not a buy list.*
-{% endif %}{% if top %}
+{% if top %}
 ## Top story
 
 **[{{ top.headline | md }}]({{ top.link }})**
@@ -31,12 +23,19 @@ Andy
 {% for sec in sections %}{% if sec.stories %}{% set lead = sec.stories[0] %}
 ## {{ sec.name }}
 
-**{% if lead.is_update %}Update: {% endif %}[{{ lead.headline | md }}]({{ lead.link }})** ({{ lead.link_outlet.name }}{% if lead.paywall %}, £{% endif %}{% if lead.source_count > 1 %}, {{ lead.source_count }} sources{% endif %}){{ tks(lead) }}{% if lead.so_what %}
+**Andy's Pick: {% if lead.is_update %}Update: {% endif %}[{{ lead.headline | md }}]({{ lead.link }})** ({{ lead.link_outlet.name }}{% if lead.paywall %}, £{% endif %}{% if lead.source_count > 1 %}, {{ lead.source_count }} sources{% endif %}){{ tks(lead) }}{% if lead.so_what %}
 *So what: {{ lead.so_what | md }}*{% endif %}
 {% if sec.stories|length > 1 %}
 {% for s in sec.stories[1:] %}- {% if s.is_update %}Update: {% endif %}[{{ s.headline | md }}]({{ s.link }}) ({{ s.link_outlet.name }}{% if s.paywall %}, £{% endif %}){{ tks(s) }}
 {% endfor %}{% endif %}
-{% endif %}{% endfor %}{% if filings %}
+{% endif %}{% endfor %}{% if ranked %}
+## Most covered stocks
+
+{% for r in ranked %}- **{{ r.stock.symbol }}** [{{ r.stock.name | md }}]({{ site.url }}/stocks/{{ r.stock.slug }}.html): {{ r.outlet_count }} outlets, {{ r.story_count }} {{ "story" if r.story_count == 1 else "stories" }}
+{% endfor %}
+*Ranked by news coverage, not by merit. Not a buy list.*
+{% endif %}
+{% if filings %}
 ## New US filings
 
 {% for f in filings %}- **{{ f.symbol }}** {{ stocks[f.symbol].name | md }}: [{{ f.label }} ({{ f.form }})]({{ f.url }})
