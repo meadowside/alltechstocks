@@ -72,6 +72,26 @@ CREATE TABLE IF NOT EXISTS why_lines (
     created TEXT NOT NULL
 );
 
+-- Trend history. One row per stock per UK day, kept forever (about 100 rows a day, a few MB a year).
+-- Rebuilt from stock_stories for the last 29 days on every run, then frozen. engine/trends.py
+CREATE TABLE IF NOT EXISTS stock_daily (
+    date TEXT NOT NULL,             -- UK date, YYYY-MM-DD, of the story's first sighting
+    symbol TEXT NOT NULL,
+    stories INTEGER NOT NULL,       -- stories naming the stock
+    headline_stories INTEGER NOT NULL,
+    outlets INTEGER NOT NULL,       -- outlets summed across those stories
+    attention REAL NOT NULL,        -- outlets, full weight in a headline, half in the text only
+    PRIMARY KEY (date, symbol)
+);
+
+-- Kept articles per section per UK day, kept forever. Rebuilt for the last 13 days on every run.
+CREATE TABLE IF NOT EXISTS section_daily (
+    date TEXT NOT NULL,
+    section TEXT NOT NULL,
+    items INTEGER NOT NULL,
+    PRIMARY KEY (date, section)
+);
+
 CREATE TABLE IF NOT EXISTS source_health (
     source_id TEXT PRIMARY KEY,
     last_attempt TEXT,
