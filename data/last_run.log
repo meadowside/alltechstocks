@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Sat 24 Oct 16:53 UK time
-  feeds: 45/45 worked, 225 new items (86 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 24 Oct 17:53 UK time
+  feeds: 45/45 worked, 258 new items (56 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1346 grouped, 920 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: portfolio): 'LSEG would add Octus, a provider of energy and commodities market intelligence and data, to its portfolio, expanding its information service'
-  AI line rejected (38 words): 'The coverage only poses a question about a possible tie-up between Fifa and Netflix, with no confirmed deal, terms or plans from either comp'
-  site: 871 stories live, 8 new AI lines. Top: Instacart Rallies on Report of Sale Talks With Uber, DoorDash. Most covered stock: AMZN
-  trends: 195 stock-days and 29 section-days refreshed, 5 days of history
-  AI lines: 8 written, 2 rejected, 0 failed calls
+  stories: 1394 grouped, 969 name a watched stock or pass the market rules
+  site: 912 stories live, 10 new AI lines. Top: Instacart Rallies on Report of Sale Talks With Uber, DoorDash. Most covered stock: NFLX
+  trends: 199 stock-days and 29 section-days refreshed, 5 days of history
+  AI lines: 10 written, 0 rejected, 0 failed calls
