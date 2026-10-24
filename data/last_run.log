@@ -1,10 +1,7 @@
-All Tech Stocks run: auto at Sat 24 Oct 13:38 UK time
-  feeds: 45/45 worked, 26 new items (7 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 24 Oct 14:53 UK time
+  feeds: 45/45 worked, 198 new items (77 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1333 grouped, 897 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: invest): "Lam Research's comments on spending have raised doubts among customers about how much chipmakers will invest in equipment in coming periods."
-  AI line rejected (38 words): "Cognizant, not SAP, is the buyer here, and the deal could bring DyFlex's SAP expertise into Cognizant's consulting business, which may matte"
-  AI line rejected (43 words): "The fine is against Coinbase's Irish unit, which is its EU hub, so it points to compliance failings in the region where it serves European c"
-  AI line rejected (36 words): 'A New Mexico judge has ordered Meta to pay $25bn after a jury found it misled users over data taken for a political campaign, a penalty that'
-  site: 880 stories live, 21 new AI lines. Top: Instacart Rallies on Report of Sale Talks With Uber, DoorDash. Most covered stock: AMZN
-  AI lines: 21 written, 4 rejected, 0 failed calls
+  stories: 1333 grouped, 910 name a watched stock or pass the market rules
+  site: 884 stories live, 16 new AI lines. Top: Instacart Rallies on Report of Sale Talks With Uber, DoorDash. Most covered stock: AMZN
+  trends: 193 stock-days and 29 section-days refreshed, 5 days of history
+  AI lines: 16 written, 0 rejected, 0 failed calls
