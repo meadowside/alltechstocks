@@ -93,7 +93,7 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
         print(f"  AI call failed: {e}")
         return None
     text = clean_line(raw)
-    if text.strip(" .").upper() == "NONE":
+    if text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
         return ""  # nothing useful to say: no line, not an error
     reason = reject_reason(text)
     if reason == "empty":
@@ -176,6 +176,12 @@ def clean_line(raw: str) -> str:
     """Keep the first paragraph only. The model sometimes adds a note to itself after the sentence."""
     first = next((p for p in raw.strip().split("\n") if p.strip()), "")
     return first.strip().strip('"').strip()
+
+
+# The model sometimes says "nothing here" in a sentence instead of answering NONE.
+NON_ANSWER = re.compile(r"no clear (effect|impact|link)|names no |doesn't name|does not name|the headline suggests|"
+                        r"the headline (only|just)|unclear (how|whether|what)|not clear (how|whether|what)|"
+                        r"no (direct|obvious) (effect|impact|link)|isn't about|is not about", re.I)
 
 
 def reject_reason(text: str) -> str | None:

@@ -150,7 +150,9 @@ exclude:
                    "to watch this weekend", "what to watch", "watch this weekend", "new movies", "new shows",
                    "movies and shows", "shows to watch", "movies to watch", "new on netflix", "leaving netflix",
                    "trailer", "release date", "cast list", "ending explained", "halloween", "takeover event",
-                   "horoscope", "recipe"]
+                   "horoscope", "recipe", "% gain ahead", "gain ahead", "sees a 2", "sees a 3", "sees a 4", "bullish rating",
+                   "bearish rating", "key facts:", "quote & history", "news, quote", "total current assets",
+                   "total assets of", "the guide #", "joins cast", "thriller series", "drama series"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
   # unrelated stories together, so they never count. Sector-wide tech stories still run.
   wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",

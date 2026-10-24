@@ -1,6 +1,7 @@
 """Groups items into stories (clusters) and scores them."""
 from __future__ import annotations
 
+from collections import Counter
 import re
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
@@ -62,6 +63,7 @@ class Story:
     regulator: bool = False          # an official source (company, exchange) is in the story
     why: str = ""
     so_what: str = ""   # AI line, when there is one
+    core_ids: list = field(default_factory=list)  # items that match the headline
     tickers: list = field(default_factory=list)          # watched symbols, most mentioned first
     headline_tickers: set = field(default_factory=set)   # those named in a headline
     is_update: bool = False
@@ -304,41 +306,53 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     if s.is_global and "companies" in cfg.section_ids:
         s.section = "companies"  # market-wide stories sit with the general news
 
-    # A link must be to an article about the same thing as the headline. Clusters can hold loosely
-    # related pieces (a Sky story on iPhone buying mistakes beside the foldable iPhone launch), so
-    # another outlet's copy only counts when its own title shares most of the headline's words.
-    head_words = _title_words(s.headline)
+    # Each outlet's link is its most typical article in the group: the one whose title words
+    # turn up most across the other titles. A group can hold loosely related pieces from one
+    # outlet (a Sky story on iPhone buying mistakes beside the foldable iPhone launch), and
+    # "the outlet's first article" can be the odd one out. Same approach as All UK Tech.
+    def words(t: str) -> set:
+        return {w for w in WORD_RE.findall((t or "").lower()) if len(w) > 3}
+    df = Counter(w for i in group for w in words(i["title"]))
+
+    def typical(item) -> float:
+        ws = words(item["title"])
+        return sum(df[w] for w in ws) / len(ws) if ws else 0.0
+
+    # Another outlet's article only stands in for the headline when its title shares most of
+    # the top outlet's headline words. Otherwise a loosely related piece in the group (a Sky
+    # story on iPhone buying mistakes beside the foldable iPhone launch) takes over the story.
+    lead_words = _title_words(lead_item["title"])
 
     def same_story(item) -> bool:
         if item is lead_item:
             return True
         w = _title_words(item["title"])
-        if not head_words or not w:
+        if not lead_words or not w:
             return False
-        return len(head_words & w) / min(len(head_words), len(w)) >= cfg.rules["clustering"].get("link_title_overlap", 0.5)
+        return len(lead_words & w) / min(len(lead_words), len(w)) >= cfg.rules["clustering"].get("link_title_overlap", 0.5)
 
     def linkable(o: Outlet, free: bool):
         if free and o.source and o.source.paywall:
             return None
-        for i in sorted(o.items, key=lambda i: i is not lead_item):
-            if "news.google.com" in i["url"] or not same_story(i):
-                continue
-            return i
-        return None
+        real = [i for i in o.items if "news.google.com" not in i["url"] and same_story(i)]
+        return max(real, key=typical) if real else None
 
     # Every outlet we could link, best first: free before paywalled, real URLs before Google redirects.
-    options = []
+    options, chosen = [], []
     for free in (True, False):
         for o in ranked:
             item = linkable(o, free)
             if item and all(opt[0] is not o for opt in options):
                 options.append((o, item["url"]))
+                chosen.append(item)
     if all(opt[0] is not lead for opt in options):
-        options.append((lead, lead_item["url"]))  # the headline's own article, even via Google or a paywall
-    for o in ranked:
-        item = next((i for i in o.items if same_story(i)), None)
-        if item and all(opt[0] is not o for opt in options):
-            options.append((o, item["url"]))
+        options.append((lead, lead_item["url"]))  # the headline's own article, via Google if need be
+        chosen.append(lead_item)
+    # The headline is the linked article's own title, so the two always agree.
+    s.headline = chosen[0]["title"]
+    # The articles this story is really about: AI lines are saved against and read from these only,
+    # so an article that drifts into a different group can't bring its old line with it.
+    s.core_ids = [i["id"] for i in group if same_story(i)]
     s.link_options = options
     s.link_outlet, s.link = options[0]
     s.paywall = bool(s.link_outlet.source and s.link_outlet.source.paywall)
@@ -355,8 +369,6 @@ TITLE_STOP = {"the", "a", "an", "and", "or", "of", "to", "in", "on", "for", "wit
 def _title_words(title: str) -> set[str]:
     t = re.sub(r"\s[-|–]\s[^-|–]+$", "", (title or "").lower())  # drop a trailing " - Outlet name"
     return {w for w in WORD_RE.findall(t) if w not in TITLE_STOP}
-
-
 def best_teaser(group: list, headline: str) -> str:
     """The summary that shares most words with the headline. Roundup posts often carry a summary
     about a different story, so the link's own summary can't be trusted."""

@@ -79,7 +79,9 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
     Each story is written once: the line is saved against all its items and reused from then on."""
     skipped = set()
     for s in everything:
-        saved = db.why_line(s.item_ids) or ""
+        saved = db.why_line(s.core_ids or s.item_ids) or ""
+        if saved and saved != "-" and llm.NON_ANSWER.search(saved):
+            saved = "-"  # an older "nothing here" line written as a sentence
         if saved == "-":  # the model had nothing useful to say; don't ask again
             skipped.add(id(s))
             saved = ""
@@ -101,10 +103,10 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
         if line is None and not llm.enabled():
             break  # no key: don't loop through every story
         if line == "":
-            db.save_why_line(s.item_ids, "-", now)
+            db.save_why_line(s.core_ids or s.item_ids, "-", now)
         elif line:
             s.so_what = line
-            db.save_why_line(s.item_ids, line, now)
+            db.save_why_line(s.core_ids or s.item_ids, line, now)
             made += 1
     return made
 
