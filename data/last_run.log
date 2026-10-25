@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Sun 25 Oct 02:53 UK time
-  feeds: 45/45 worked, 97 new items (26 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sun 25 Oct 03:53 UK time
+  feeds: 45/45 worked, 121 new items (36 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1525 grouped, 1076 name a watched stock or pass the market rules
-  site: 916 stories live, 4 new AI lines. Top: Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend. Most covered stock: NFLX
-  trends: 221 stock-days and 35 section-days refreshed, 6 days of history
-  AI lines: 4 written, 0 rejected, 0 failed calls
+  stories: 1542 grouped, 1093 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: outperform): "Qualcomm faces a rival in Samsung's in-house Exynos 2700, which is reported to outperform its latest chip and is expected to be used in Sams"
+  site: 930 stories live, 4 new AI lines. Top: Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend. Most covered stock: NFLX
+  trends: 227 stock-days and 35 section-days refreshed, 6 days of history
+  AI lines: 4 written, 1 rejected, 0 failed calls
