@@ -371,16 +371,27 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     for name, text in ((f"{date}.html", html), (f"{date}.md", md), ("latest.md", md), ("latest.html", html)):
         (email_archive / name).write_text(text, encoding="utf-8")
 
-    if lead:
-        try:
-            from . import cover
-            words = titles[0] if titles and len(titles[0]) <= 70 else lead.headline
-            png = cover.render(words, lead.source_count, lead.tickers[:3], local, email_archive / f"{date}-cover.png")
-            (email_archive / "latest-cover.png").write_bytes(png.read_bytes())
-        except Exception as e:  # a missing cover must never stop the email
-            print(f"  cover failed: {e}")
-
     chosen = ([top] if top else []) + [s for sec in picked["sections"] for s in sec["stories"]]
+    if lead:
+        # One cover per title idea, so whichever title Andy picks has a cover that matches it.
+        # Chips show the stocks each title names, the number is the day's story count.
+        from . import cover
+        from .tickers import Tagger
+        tagger = Tagger(cfg)
+        for i, words in enumerate(titles[:3] or [lead.headline], start=1):
+            try:
+                found = tagger.find(words)
+                tks = sorted(found, key=lambda t: min(
+                    [words.lower().find(a.lower()) for a in [t] + cfg.by_symbol[t].aliases + cfg.by_symbol[t].exact
+                     if a and words.lower().find(a.lower()) >= 0] or [999])) or lead.tickers
+                name = f"{date}-cover.png" if i == 1 else f"{date}-cover-{i}.png"
+                png = cover.render(words if len(words) <= 90 else lead.headline, len(chosen), tks[:3], local,
+                                   email_archive / name)
+                if i == 1:
+                    (email_archive / "latest-cover.png").write_bytes(png.read_bytes())
+            except Exception as e:  # a missing cover must never stop the email
+                print(f"  cover {i} failed: {e}")
+
     db.clear_sent(date)  # a rebuild replaces the day's record rather than adding to it
     for s in chosen:
         db.record_sent(date, s.item_ids, s.coverage)

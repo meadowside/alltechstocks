@@ -20,14 +20,15 @@ else
     exit 1
   fi
 fi
-if [ ! -f "$C" ]; then
-  if curl -fsSL "$BASE/$D-cover.png?nocache=$(date +%s)" -o "$C.tmp"; then
-    mv "$C.tmp" "$C"
-    echo "Downloaded the cover image"
+# Cover 1, 2 and 3 match title ideas 1, 2 and 3.
+for N in "" "-2" "-3"; do
+  CN="emails/$D-cover$N.png"
+  [ -f "$CN" ] && continue
+  if curl -fsSL "$BASE/$D-cover$N.png?nocache=$(date +%s)" -o "$CN.tmp"; then
+    mv "$CN.tmp" "$CN"
   else
-    rm -f "$C.tmp"
-    echo "No cover image today."
+    rm -f "$CN.tmp"
   fi
-fi
+done
 open -e "$F"
 [ -f "$C" ] && open -R "$C"

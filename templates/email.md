@@ -2,7 +2,7 @@
     Kept simple on purpose: the Desktop "Copy for Substack" button converts exactly these
     pieces (## headings, - bullets, **bold**, *italic*, [links](url)) into formatting. -#}
 {% macro tks(s) %}{% if s.tickers %} {{ s.tickers[:3]|join(", ") }}{% endif %}{% endmacro -%}
-{% if titles %}TITLE IDEAS (pick one for the Substack title, then delete these lines)
+{% if titles %}TITLE IDEAS (pick one for the Substack title, then delete these lines. Cover 1, 2 and 3 match titles 1, 2 and 3)
 {% for t in titles %}{{ loop.index }}. {{ t }}
 {% endfor %}
 ---

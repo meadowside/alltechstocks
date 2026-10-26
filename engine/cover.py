@@ -60,7 +60,9 @@ def _fit_headline(draw, text: str, width: int, height: int):
     return font, _wrap(draw, text, font, width)[:4], 65
 
 
-def render(headline: str, outlets: int, tickers: list[str], when: datetime, out: Path) -> Path:
+def render(headline: str, stories: int, tickers: list[str], when: datetime, out: Path) -> Path:
+    """The Substack cover. The big number is how many stories are in the day's email, so it
+    stays true whichever stories the title mentions."""
     img = Image.new("RGB", (W, H), DARK)
     d = ImageDraw.Draw(img)
 
@@ -74,7 +76,7 @@ def render(headline: str, outlets: int, tickers: list[str], when: datetime, out:
     d.text((PAD + 106, PAD - 2), "ALL TECH STOCKS", font=_sans(34, 800), fill=WHITE)
     d.text((PAD + 106, PAD + 40), when.strftime("%A %-d %B").upper(), font=_sans(26, 600), fill=BRIGHT)
 
-    # Ticker chips for the stocks in the story.
+    # Ticker chips for the stocks the title names.
     tag_font = _sans(28, 800)
     ty, tx = 250, PAD
     for tag in (tickers or ["TECH STOCKS"])[:3]:
@@ -96,20 +98,20 @@ def render(headline: str, outlets: int, tickers: list[str], when: datetime, out:
     d.text((PAD, H - PAD - 58), "alltechstocks.com", font=_sans(34, 700), fill=LIGHT)
     d.text((PAD, H - PAD - 14), "News for research. Not financial advice.", font=_sans(24, 500), fill=BRIGHT)
 
-    # The number: how many outlets are on this story.
-    num = str(outlets)
+    # The number: how many stories are in today's email.
+    num = str(stories)
     cx = panel_x + (W - panel_x) // 2
     size = 300 if len(num) <= 2 else 230
     nf = _sans(size, 900)
     nw = d.textlength(num, font=nf)
     d.text((cx - nw / 2, 250), num, font=nf, fill=WHITE)
     lf = _sans(38, 800)
-    for i, word in enumerate(("OUTLETS", "COVERING", "THIS STORY")):
+    for i, word in enumerate(("STORIES", "IN TODAY'S", "EMAIL")):
         lw = d.textlength(word, font=lf)
         d.text((cx - lw / 2, 600 + i * 50), word, font=lf, fill=LIGHT)
     d.line([cx - 60, 790, cx + 60, 790], fill=LIGHT, width=6)
     sf = _sans(30, 600)
-    for i, word in enumerate(("Ranked by who's", "covering it")):
+    for i, word in enumerate(("Ranked by who's", "covering them")):
         lw = d.textlength(word, font=sf)
         d.text((cx - lw / 2, 830 + i * 42), word, font=sf, fill=WHITE)
 
