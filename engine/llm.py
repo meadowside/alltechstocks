@@ -109,33 +109,17 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
 STATS = {"ok": 0, "rejected": 0, "failed": 0}
 
 
-TITLE_PROMPT = """You suggest email subject lines for All Tech Stocks, a weekday email of the most covered
-US and UK tech stock news. It is a research digest, not an advice service.
-
-Today's most covered story ({sources} outlets): {top}
-Other lead stories:
-{others}
-
-Write THREE different subject lines, one per line, no numbering, no quotes.
-Each 60 characters or fewer, starting with a capital letter. Plain British English. Specific, not clickbait.
-Lead with the top story in at least two of them. One may combine two stories.
-Never suggest buying or selling, never mention share price moves or predictions.
-No dashes, no semicolons, no hype words, no questions answered in the same line.
-Reply with the three lines only."""
-
-
-def email_titles(top: str, sources: int, others: list[str]) -> list[str]:
-    """Three subject line ideas for the day's email. One cheap call per build."""
+def _ask(prompt: str, max_tokens: int = 300) -> str | None:
+    """One plain call to the model. Returns the reply text, or None if the key is missing or the call fails."""
     key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key or not top:
-        return []
+    if not key:
+        return None
     body = {
         "model": os.environ.get("LLM_MODEL", DEFAULT_MODEL),
-        "max_tokens": 200,
+        "max_tokens": max_tokens,
         "thinking": {"type": "disabled"},
         "output_config": {"effort": "low"},
-        "messages": [{"role": "user", "content": TITLE_PROMPT.format(
-            top=top, sources=sources, others="\n".join(f"- {o}" for o in others[:5]))}],
+        "messages": [{"role": "user", "content": prompt}],
     }
     req = urllib.request.Request(
         API_URL, data=json.dumps(body).encode(),
@@ -144,31 +128,122 @@ def email_titles(top: str, sources: int, others: list[str]) -> list[str]:
     try:
         with urllib.request.urlopen(req, timeout=30) as resp:
             data = json.load(resp)
-        raw = "".join(b.get("text", "") for b in data.get("content", []))
+        return "".join(b.get("text", "") for b in data.get("content", []))
     except Exception as e:
-        print(f"  AI titles failed: {e}")
+        print(f"  AI call failed: {e}")
+        return None
+
+
+def _lead_list(leads: list[tuple[str, int]]) -> str:
+    return "\n".join(f"- {h} ({n} outlet{'s' if n != 1 else ''})" for h, n in leads[:6])
+
+
+TITLE_PROMPT = """You suggest email subject lines for All Tech Stocks, a weekday email of the most covered
+US and UK tech stock news. It is a research digest, not an advice service.
+
+Today's lead stories, most covered first:
+{leads}
+
+Write THREE different subject lines, one per line, no numbering, no quotes.
+Every line must combine TWO of the lead stories, so a reader sees two reasons to open it.
+Use the two most covered stories in at least one line. Vary the pairing across the three.
+Name the companies. Join the two with a comma or "and", or "as" if one led to the other.
+Each 70 characters or fewer, starting with a capital letter. Plain British English. Specific, not clickbait.
+Never suggest buying or selling, never mention share price moves or predictions.
+No dashes, no semicolons, no hype words, no questions.
+Reply with the three lines only."""
+
+
+def email_titles(leads: list[tuple[str, int]]) -> list[str]:
+    """Three subject line ideas for the day's email, each pairing two lead stories. One call per build.
+    leads: (headline, outlet count), most covered first."""
+    if len(leads) < 2:
+        return []
+    raw = _ask(TITLE_PROMPT.format(leads=_lead_list(leads)), 200)
+    if not raw:
         return []
     out = []
     for line in raw.splitlines():
         t = line.strip().lstrip("-*0123456789.) ").strip().strip('"').strip()
         low = t.lower()
-        if not t or len(t) > 80 or any(b in low for b in BANNED) or ADVICE_RE.search(t):
+        if not t or len(t) > 80 or "?" in t or any(b in low for b in BANNED) or ADVICE_RE.search(t):
             continue
         out.append(t[0].upper() + t[1:])
     return out[:3]
 
 
-def fallback_titles(top: str, sources: int, second: str | None) -> list[str]:
-    """Used when the AI call is off or fails, so there are always three."""
-    if not top:
+NOTE_PROMPT = """You draft the opening note for today's All Tech Stocks email, a weekday digest of the most
+covered US and UK tech stock news. Andy signs it. It is a research digest, never an advice service.
+
+Today is {day}.
+Lead stories, most covered first:
+{leads}
+
+Write two or three short sentences, 60 words or fewer in total, saying what's big today.
+Pick the two or three stories that matter most for the companies' businesses and say what happened.
+Skip crime, celebrity, gossip and stories with no real business angle, even if they're listed.
+Voice: a sharp, plain-speaking British editor writing to regular readers. Contractions are fine.
+A short fragment to open is fine. Name the companies.
+Strict rules:
+- Never say or hint whether to buy, sell or hold anything.
+- Never mention share prices, valuations, returns or what the shares might do.
+- Never predict. Upcoming results may be mentioned only as scheduled events.
+- No dashes of any kind, no semicolons, no commas before "and" in a list, no hype words.
+- Don't mention outlets, sources, coverage counts or this email. Don't greet the reader or sign off.
+Reply with the note only."""
+
+
+def opening_note(leads: list[tuple[str, int]], day: str) -> str | None:
+    """A suggested opening note for Andy to edit. None if the call fails or the note breaks a rule."""
+    if not leads:
+        return None
+    raw = _ask(NOTE_PROMPT.format(leads=_lead_list(leads), day=day), 300)
+    if not raw:
+        return None
+    text = " ".join(p.strip() for p in raw.strip().split("\n") if p.strip()).strip('"').strip()
+    reason = note_reject_reason(text)
+    if reason:
+        print(f"  AI opening note rejected ({reason}): {text[:160]!r}")
+        return None
+    return text
+
+
+def note_reject_reason(text: str) -> str | None:
+    if not text:
+        return "empty"
+    words = len(text.split())
+    if words > 75:
+        return f"{words} words"
+    sentences = len(re.findall(r"[.!?](?:\s|$)", text))
+    if sentences > 4:
+        return f"{sentences} sentences"
+    low = text.lower()
+    hit = next((b for b in BANNED if b in low), None)
+    if hit:
+        return f"banned: {hit}"
+    m = ADVICE_RE.search(text)
+    if m:
+        return f"reads like advice or a prediction: {m.group(0)}"
+    if not text.endswith((".", "!")):
+        return "unfinished"
+    return None
+
+
+def fallback_titles(leads: list[tuple[str, int]]) -> list[str]:
+    """Used when the AI call is off or fails: each title pairs two lead stories."""
+    def short(h: str) -> str:
+        return h.split(",")[0].split(":")[0].split(" | ")[0].strip()
+    heads = [short(h) for h, _ in leads if h]
+    if not heads:
         return []
-    short = top.split(",")[0].split(":")[0].strip()
-    titles = [top]
-    if second and len(short) + len(second) < 85:
-        titles.append(f"{short}, plus {second[0].lower() + second[1:]}")
-    elif second:
-        titles.append(second)
-    titles.append(f"{sources} outlets on one story: {short}" if sources > 1 else f"Tech stocks today: {short}")
+    if len(heads) == 1:
+        return [heads[0]]
+    def low(h: str) -> str:  # "Earnings playbook" -> "earnings playbook", but "UK government" stays
+        return h[0].lower() + h[1:] if len(h) > 1 and h[1].islower() else h
+    a, rest = heads[0], heads[1:]
+    titles = [f"{a}, plus {low(b)}" for b in rest[:3]]
+    if len(rest) >= 2:
+        titles[-1] = f"{rest[0]}, plus {low(rest[1])}"
     return titles[:3]
 
 

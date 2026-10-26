@@ -82,7 +82,7 @@ def main():
             and email_cfg["build_hour"] <= local.hour < email_cfg["build_hour"] + email_cfg.get("late_window_hours", 4)
         ):
             res = build_email(stories, db, cfg, now, args.out, archive)
-            print(f"  email: {res['stories']} stories, {res['llm_lines']} new AI lines"
+            print(f"  email: {res['stories']} stories, {res['llm_lines']} new AI lines, opening note: {'yes' if res['opening'] else 'no'}"
                   + (f", short sections: {', '.join(res['short_sections'])}" if res["short_sections"] else ""))
             message = (f"All Tech Stocks email for {res['date']} is ready. "
                        "Double-click 'Get today's email' in the All Tech Stocks folder on your Desktop.")

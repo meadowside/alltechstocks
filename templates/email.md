@@ -9,7 +9,8 @@
 
 {% endif %}All Tech Stocks, {{ date_long }}
 
-[Your opening note: two or three sentences on what's big today. Report, don't tip.]
+{% if opening %}[Suggested opening note below. Edit it, then delete this line. Report, don't tip.]
+{{ opening | md }}{% else %}[Your opening note: two or three sentences on what's big today. Report, don't tip.]{% endif %}
 
 Andy
 {% if top %}

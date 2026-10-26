@@ -30,7 +30,8 @@
 </div>
 
 <div class="sheet" id="email">
-<p class="fill">[Opening note: two or three sentences on what's big today. Report, don't tip.]</p>
+{% if opening %}<p class="fill">[Suggested opening note. Edit it, then delete this line. Report, don't tip.]</p>
+<p>{{ opening }}</p>{% else %}<p class="fill">[Opening note: two or three sentences on what's big today. Report, don't tip.]</p>{% endif %}
 <p class="fill">Andy</p>
 
 {% if top %}

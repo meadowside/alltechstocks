@@ -346,20 +346,21 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     llm_used = add_so_what(picks, picks, db, cfg, now)
 
     lead = top or (picks[0] if picks else None)
-    titles: list[str] = []
-    if lead:
-        others = [p.headline for p in picks if p is not lead]
-        titles = llm.email_titles(lead.headline, lead.source_count, others)
-        if len(titles) < 3:
-            extra = llm.fallback_titles(lead.headline, lead.source_count, others[0] if others else None)
-            titles += [t for t in extra if t not in titles][: 3 - len(titles)]
-
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
+    # Lead stories for the titles and the opening note: the top story first, then the
+    # section picks by how many outlets covered them.
+    leads = [(p.headline, p.source_count) for p in
+             ([lead] if lead else []) + sorted((p for p in picks if p is not lead), key=lambda p: -p.source_count)]
+    titles = llm.email_titles(leads)
+    if len(titles) < 3:
+        titles += [t for t in llm.fallback_titles(leads) if t not in titles][: 3 - len(titles)]
+    opening = llm.opening_note(leads, local.strftime("%A %-d %B")) if leads else None
+
     date = local.strftime("%Y-%m-%d")
     ranked = rank_stocks([s for s in stories if s.eligible], cfg, now, int(picked["lookback"].total_seconds() // 3600))
     filings = db.filings_since(now - picked["lookback"], notable_only=True)[: cfg.rules["email"].get("filings_max", 8)]
     env = _env()
-    args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, stocks=cfg.by_symbol,
+    args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, opening=opening, stocks=cfg.by_symbol,
                 date_long=local.strftime("%A %-d %B %Y"), date=date, ranked=ranked[:5], filings=filings,
                 disclaimer=cfg.rules.get("email_disclaimer", cfg.rules.get("disclaimer", "")))
     html = env.get_template("email.html").render(**args)
@@ -384,5 +385,5 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     for s in chosen:
         db.record_sent(date, s.item_ids, s.coverage)
     db.record_email(date, now)
-    return {"date": date, "stories": len(chosen), "llm_lines": llm_used,
+    return {"date": date, "stories": len(chosen), "llm_lines": llm_used, "opening": bool(opening),
             "short_sections": [sec["name"] for sec in picked["sections"] if sec["short"]]}
