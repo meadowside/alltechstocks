@@ -134,41 +134,55 @@ def cluster(items: list, cfg: Config) -> list[list]:
     tagger = Tagger(cfg)
     heads = [tagger.find(i["title"]) for i in items]
     vec = TfidfVectorizer(stop_words="english", ngram_range=(1, 2), sublinear_tf=True)
-    X = vec.fit_transform(texts).toarray()
+    X = vec.fit_transform(texts)  # sparse, each row has unit length
+    # Every article-to-article similarity in one go. A story's centroid is never stored as a vector:
+    # its similarity to an article is the sum of that article's similarities to the members, divided
+    # by the length of the summed vector, and that length comes from the same table. Same answers as
+    # comparing full vectors, without holding thousands of 40,000-wide vectors in memory.
+    S = (X @ X.T).toarray()
 
     # An item joins the story whose closest member is most like it, provided it's also
     # reasonably close to the story as a whole (stops one loose match chaining two stories).
     # Two articles whose headlines name different watched stocks, and none in common, are never
     # the same story however alike their wording.
-    groups: list[dict] = []  # {"idx": [...], "sum": vector, "first": dt, "last": dt, "tk": set}
+    groups: list[dict] = []  # {"idx": [...], "n2": squared length of the summed vector, "first", "last", "tk"}
     for idx, item in enumerate(items):
         t = parse_iso(item["published"])
-        v = X[idx]
-        best, best_sim = None, 0.0
+        row = S[idx]
+        best, best_sim, best_dot = None, 0.0, 0.0
         for g in groups:
             if t - g["last"] > window or t - g["first"] > close_after:
                 continue
             if heads[idx] and g["tk"] and not (heads[idx] & g["tk"]):
                 continue
-            link = max(float(np.dot(X[m], v)) for m in g["idx"])
-            centroid = g["sum"] / (np.linalg.norm(g["sum"]) or 1.0)
-            if link >= t_link and float(np.dot(centroid, v)) >= t_centroid and link > best_sim:
-                best, best_sim = g, link
+            sims = row[g["idx"]]
+            link = float(sims.max())
+            dot = float(sims.sum())
+            centroid_sim = dot / (np.sqrt(g["n2"]) or 1.0)
+            if link >= t_link and centroid_sim >= t_centroid and link > best_sim:
+                best, best_sim, best_dot = g, link, dot
         if best is not None:
             best["idx"].append(idx)
-            best["sum"] = best["sum"] + v
+            best["n2"] += 2 * best_dot + float(S[idx, idx])
             best["last"] = max(best["last"], t)
             best["tk"] |= heads[idx]
         else:
-            groups.append({"idx": [idx], "sum": v.copy(), "first": t, "last": t, "tk": set(heads[idx])})
+            groups.append({"idx": [idx], "n2": float(S[idx, idx]), "first": t, "last": t, "tk": set(heads[idx])})
 
     # Second pass: merge stories that ended up split (one outlet worded it very differently).
+    # P[a, b] is the dot product of story a's summed vector with story b's.
     t_merge = float(c["merge_similarity"])
+    if len(groups) > 1:
+        M = np.zeros((len(groups), len(items)))
+        for gi, g in enumerate(groups):
+            M[gi, g["idx"]] = 1.0
+        P = (M @ S) @ M.T
     merged = True
     while merged and len(groups) > 1:
         merged = False
-        cents = np.array([g["sum"] / (np.linalg.norm(g["sum"]) or 1.0) for g in groups])
-        sims = cents @ cents.T
+        norms = np.sqrt(np.clip(np.diag(P), 0, None))
+        norms[norms == 0] = 1.0
+        sims = P / np.outer(norms, norms)
         np.fill_diagonal(sims, 0)
         pairs = np.argwhere(np.triu(sims) >= t_merge)
         for a, b in sorted(pairs.tolist(), key=lambda p: -sims[p[0], p[1]]):
@@ -178,9 +192,11 @@ def cluster(items: list, cfg: Config) -> list[list]:
             if ga["tk"] and gb["tk"] and not (ga["tk"] & gb["tk"]):
                 continue
             ga["idx"] += gb["idx"]
-            ga["sum"] = ga["sum"] + gb["sum"]
             ga["first"], ga["last"] = min(ga["first"], gb["first"]), max(ga["last"], gb["last"])
             ga["tk"] |= gb["tk"]
+            P[a, :] += P[b, :]
+            P[:, a] += P[:, b]
+            P = np.delete(np.delete(P, b, axis=0), b, axis=1)
             groups.pop(b)
             merged = True
             break
