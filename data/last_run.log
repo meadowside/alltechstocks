@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Tue 27 Oct 22:53 UK time
-  feeds: 45/45 worked, 214 new items (72 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 4 new filings
-  stories: 1885 grouped, 1356 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, so I cannot say what Oracle announced at its AI World keynote. Without details of products, pricing, cus'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline points to Micron pushing back against Chinese memory makers, but the coverage gives no specifics on what that pushback involves'
-  site: 1059 stories live, 4 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
-  trends: 395 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 4 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 27 Oct 23:53 UK time
+  feeds: 45/45 worked, 207 new items (58 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 0 new filings
+  stories: 1876 grouped, 1351 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, with no detail on what Micron actually did to push back against Chinese memory competitors. Without spec'
+  site: 1060 stories live, 5 new AI lines. Top: Oracle AI World keynote: Here's what you need to know. Most covered stock: AAPL
+  trends: 396 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 5 written, 1 rejected, 0 failed calls
