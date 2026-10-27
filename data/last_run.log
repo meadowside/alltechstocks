@@ -1,10 +1,11 @@
-All Tech Stocks run: email at Tue 27 Oct 09:40 UK time
-  feeds: 45/45 worked, 45 new items (20 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: email at Tue 27 Oct 09:43 UK time
+  feeds: 45/45 worked, 11 new items (4 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1691 grouped, 1254 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: investing): 'Computacenter has raised its profit forecast, pointing to strong demand as businesses build out data centre capacity. The IT services and re'
-  site: 963 stories live, 25 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
-  trends: 369 stock-days and 47 section-days refreshed, 8 days of history
-  email: 38 stories, 5 new AI lines, opening note: yes
+  stories: 1692 grouped, 1256 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline, and it describes Micron's stock finding its footing while the company pushes back on a Chinese memory th"
+  site: 965 stories live, 25 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
+  trends: 370 stock-days and 47 section-days refreshed, 8 days of history
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Cadence Design Systems has raised its full-year outlook, meaning it now expects stronger results for the financial year than it previously f'
+  email: 38 stories, 4 new AI lines, opening note: yes
   notify: skipped (no Telegram settings)
-  AI lines: 30 written, 1 rejected, 0 failed calls
+  AI lines: 29 written, 2 rejected, 0 failed calls

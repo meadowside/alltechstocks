@@ -1,14 +1,14 @@
 TITLE IDEAS (pick one for the Substack title, then delete these lines. Cover 1, 2 and 3 match titles 1, 2 and 3)
-1. Meta's $95bn Stock Offering and Cadence Raises Outlook
-2. Meta Plans $95bn Share Sale for AI as Cadence Lifts FY Outlook
-3. Meta Stock Offering to Fund AI, and Intel Buys Classiq for Quantum
+1. Meta's $95 billion stock offering and Cadence raising its FY outlook
+2. Meta's $95 billion offering and IBM Agent Identity going generally available
+3. Intel buys Classiq as Korea's current account surplus climbs on chips
 
 ---
 
 All Tech Stocks, Tuesday 27 October 2026
 
 [Suggested opening note below. Edit it, then delete this line. Report, don't tip.]
-Meta's $95 billion stock offering is the story of the day, and it's a big bet on AI. Intel is buying Classiq to push into quantum computing, and Cadence raised its full-year outlook.
+Meta's $95 billion stock offering is the story of the day, with the AI build-out now funded by fresh equity. Intel is buying Classiq to push further into quantum computing, and Cadence has raised its full-year outlook.
 
 Andy
 
@@ -18,13 +18,12 @@ Andy
 CNBC, 27 sources. META, NVDA
 
 [Suggested "Why it matters" below. Edit it, then delete this line. Business impact only, nothing on the shares.]
-**Why it matters:** Meta is asking the market for up to $95 billion to pay for its AI infrastructure and superintelligence push, which means the scale of its spending is now being funded from outside rather than from its own cash flow. For Nvidia, which supplies much of the hardware that bill covers, that is a clear sign of how much demand is still coming from the largest platforms.
+**Why it matters:** Meta is betting that the cost of its AI build-out is too large to fund from cash flow alone, so it is turning to investors for up to $95 billion. For customers and rivals, the question now is whether that money converts into the superintelligence capabilities Meta has promised, and how much of the sector's spending depends on the same pool of capital.
 
 
 ## Results & Outlook
 
 **Andy's Pick: [Cadence Design Systems Raises FY Outlook](https://news.google.com/rss/articles/CBMimwFBVV95cUxOUVBhakhFWGlTbTZpbFlJRlVuWDdJMnE4ZkpSQW1yWTF6aEhwSEhyTm9rbVFpWmZTUmV6QTlkUmZjbkszSjUyNDI0VXlGeE9qOHBGT2t0OXR5eUctVm9QMjd2YTVJRkZDRUlpb3BLSjRheGhtOVhrb24zeVU3SWFFRGpBdmVWTHNmbXJfN3pyVktMUHdUdVNaU1JqQQ?oc=5)** (MarketWatch, 13 sources) CDNS
-*So what: It does not state the new revenue or earnings range, the reasons behind the change, or whether particular products or customer segments drove it. Without those details there is nothing further that can be said accurately about the effect on its customers, products, costs or rivals.*
 
 - [Computacenter upgrades profit forecast thanks to data centre boom](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPOEpOUU1KQ3ZMci1QV3Z5YXVXYzlVZ09zbEdjWWI0dVZLVUJaNzczd1NVdnBMaGFiM0NYUnlya0ZlbDZEV2syNVdTMXVWdXA0aHQzUlRQc3Q2eFE2anJTWFZtb0o0NExyMjFTLXd0c2VqeElvVDdWRzhnZkdldjhrLW5WMFAwZ2p1cnFHclo5U1lhSlR0ckxZVTdQRlUxdXZ6RHdBcTMydUg1RXVrTEFVajZDVy01WHM4dXR5WlotUl9sMWc?oc=5) (The Times, £) CCC
 - [ASML may account for up to 1.6% of Dutch economy in 2026, ING says](https://news.google.com/rss/articles/CBMimwFBVV95cUxONGtjNXdMdmcyX3V6bDA3N3QtSVVwRjVBWEVCNm1CS3dtdmJfYklJNzhHR1JsT0hxa2V2UHJlQ1pXRnRCbGlVc0pKMHhxRXFoUVV6el9Qa0l6Z3llbEdqN25fNnIzVHl0OGthcGpJUHVhemZRaHdLQ0lWck5GNXdOdEtrWHpURlEzNy1adk15MWpxQU0wZmViMlhkTQ?oc=5) (Reuters) ASML
@@ -50,7 +49,7 @@ CNBC, 27 sources. META, NVDA
 ## AI
 
 **Andy's Pick: [IBM Agent Identity is now generally available: Building trust for the agentic era](https://news.google.com/rss/articles/CBMiugFBVV95cUxPZHdVUnNTX0ZRbXlBUTE1V2ZlbWUwTHY5XzljOTlyX0pPaEh6YkZ4WUNTVHYxRzdmS3M5dUhBemdSc2YtbVpyVkMxdjFDaDc1NTlhdDdieGV4ZDl2aTd0ZFcxUV9hS1I0cnd1VDlaR21oWVFfN2JqSU1MZHE1WW5Nc1REQy1uSElvZVVFN19GTkJMNWRNY1VWY0pFdW5fY1JCZXBHLVlqd0drYkRrSmtCeUxkeWQxa19jaUE?oc=5)** (IBM, 12 sources) IBM
-*So what: IBM has made its Agent Identity product generally available, giving businesses a way to manage and verify the identities of AI agents that act on their behalf. The launch targets a growing concern among enterprises about controlling software agents that can access systems and data without direct human oversight. For IBM, it extends its existing identity and security offerings into the agentic AI market, where it competes with other large software and cloud providers building similar controls.*
+*So what: IBM has made its Agent Identity product generally available, giving businesses a way to manage and verify the identities of AI agents that act on their systems. The product is aimed at firms deploying autonomous software that needs access to data and tools, where trust and access control are the main concerns. For IBM, it extends its enterprise software offer into the fast-growing area of agentic AI, where rivals are also building identity and security tools.*
 
 - [Anthropic Highlights Disruptions to TSMC Operations as a Risk](https://news.google.com/rss/articles/CBMisgFBVV95cUxQUHlyOHJuRjlUbFJuWVVISkpvR0lBZEVkR3lacVgzQjROMHhsVExJTHJzVXNua09xT0hVT2lVelgzN29QWk5sUkNDakMtVjZIbjZJSTZtYnVJaHpTbHVrblNDa1hYSWVFbmJfVTZULTBOcXBKT3NvMkNiTTNIcnowdmlOdHpLV3JjMlEyam9HaXN2N2NTRGFpREFaM1dPQUtiSWxaSEF5aFR4eGZrV0xkeEtR?oc=5) (Bloomberg, £) TSM
 - [Banks, Blackstone Form $63 Billion Financing Vehicle for Broadcom AI Tech](https://www.wsj.com/tech/ai/banks-blackstone-form-63-billion-financing-vehicle-for-broadcom-ai-tech-0438f6d2?mod=rss_Technology) (The Wall Street Journal, £) AVGO
@@ -74,7 +73,7 @@ CNBC, 27 sources. META, NVDA
 ## Regulation & Legal
 
 **Andy's Pick: [BT, EE, TalkTalk and Vodafone the worst for broadband complaints](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZnRoUUxqSFZ4T1czTFpoS2p1cFM2SGpHNkRJMkNJWVpMTmNtQ2x0Z09HR2J4X3lxRWJITk5KRXQwZ3FqWDhBak11YlJzYkwycnNzb3NkMHJ3dEpFZDdKUFR5cE1Nc3E4QlhTNHlRTnZxQlB0dFVFOE16TXFJYThIam84Q29ybWVtc0xvNGtDM1ZCZ0VEbmFYYmZTVVBHRzk4bllTYnRZQ2hzRi1FR05xSi1xTlJ1OU5uaTl3Zm1LcWZFdw?oc=5)** (The Times, £, 6 sources) VOD
-*So what: BT, EE, TalkTalk and Vodafone have been named as the providers drawing the most broadband complaints. For Vodafone, the finding puts its customer service record in the spotlight alongside its rivals. Readers can see how its complaint levels compare with the other large providers in the same group.*
+*So what: BT, EE, TalkTalk and Vodafone have been named among the providers drawing the most broadband complaints. For Vodafone, the finding puts its home broadband service under public scrutiny alongside larger rivals. Complaint rankings of this kind can influence how customers choose providers and how regulators look at service quality across the sector.*
 
 - [Spotify Streaming Fraud Lawsuit That Claimed Drake Gets Billions of Fake Plays Dismissed by Judge](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX2V3UVEzMFh2Y0dmc1gxMWsyT05pRWJqVHVUbF9nY3lxMkdtVzVjdHltaFJHZHNkTHZyTlpHOWFwVlpSbDBYWHl4WjR6SXZYMEVuLWFXb29iWFhweG5CMFdmams5R3JsTU5HMnlyMnZvZFVJdmU1Nnk0VzllQURXN2c3b0hHTGVtbVpJ?oc=5) (Billboard) SPOT
 - [Uber boda riders win first victory in account deactivation case](https://news.google.com/rss/articles/CBMingFBVV95cUxPSjJkYnRTeU82LUMzUlVxdnpaTXZJZTJTdUNncDNEUEJ4OGZuSHQ2cWRDZ1ZYblNFZElZRmFxMzgwMXRxUDRNTURiNFkwMlpqX1B1NXI0Wk80MS0wblByZFFaRnVfYVFyQ28zaHZmWWI5cHNlV2NmenBnYWpSWktPeWhiV3RQcDI2dFVoZnZYQlhtTzM5MzJnSlduTGZBUQ?oc=5) (Business Daily) UBER
@@ -85,7 +84,7 @@ CNBC, 27 sources. META, NVDA
 ## Companies & Markets
 
 **Andy's Pick: [Jon Gosselin, kids appearing in Netflix doc about reality TV family](https://news.google.com/rss/articles/CBMiqwFBVV95cUxOQzNQM25tQm5TdW5OYVlnd2tlU05sQ184WUhnV0hleW5xWkJTV0lzVTBVekRiSlFYdUh6NEs3T1VhaGREOTVlcWx3RDdrMERaOXM5RE9rRGs5WTFfdC0xbTZ3c085UERqbTVQOU11MUM2MVdWMmhZSGlJMnBXUGYtX1h2T2plRzViczYxX3BFMWlxYWthYnhjTHNvUWtBRXh6SUVvYVp0TVFxc00?oc=5)** (KARK, 7 sources) NFLX
-*So what: Jon Gosselin and his children are set to feature in a Netflix documentary about the reality TV family that made them well known. The film revisits the family's time on television and the public attention that followed. For Netflix, it adds to a steady run of factual and reality-style titles that draw viewers to its catalogue.*
+*So what: Jon Gosselin and his children are set to feature in a Netflix documentary about the reality TV family they were once part of. The film revisits the Kate Plus 8 era, when the family's television show ran for several seasons on TLC. For Netflix, the title adds to its slate of true-crime and reality documentaries, a genre it has leaned on heavily for viewer engagement.*
 
 - [Anthropic begins countdown to IPO with prospectus filing](https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb?syn-25a6b1a6=1) (Financial Times, £)
 - [Environmentalists celebrate Lula's reelection in Brazil: 'The Amazon can breathe a sigh of relief'](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQSTMzcG91Skp3UXltdFhrb2V4UGFoSWFoSFZ4MnpGRUZ3WnRBTnFGS1FXVTJ2UEVhTWxGWlRHcE9oWTJWZ2lWdWJkX01CMk82VGtBa290cW50aHAyOENMWkx4NXFVdFVOeGhsaWZTRVpGMXRpWldsem9heWF0aWd2bmpLZWJmemV2TmRGcGMtcUFOYjZPMzQ1MGZVaFJnOGs4ZGtlSDZZSk44ZW1EZ2pnME9rZEd6SG1IY3dCU3VHQnpINjhYUUU5anVSR3pQRUZOR0tXUjN0emZ4VWxjS2k5SHVn?oc=5) (ClickOnDetroit | WDIV Local 4) AMZN
@@ -99,7 +98,7 @@ CNBC, 27 sources. META, NVDA
 - **AMZN** [Amazon](https://alltechstocks.com/stocks/amzn.html): 79 outlets, 52 stories
 - **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 88 outlets, 25 stories
 - **MSFT** [Microsoft](https://alltechstocks.com/stocks/msft.html): 127 outlets, 32 stories
-- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 115 outlets, 38 stories
+- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 116 outlets, 38 stories
 - **NFLX** [Netflix](https://alltechstocks.com/stocks/nflx.html): 63 outlets, 27 stories
 
 *Ranked by news coverage, not by merit. Not a buy list.*
