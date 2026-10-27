@@ -1,10 +1,8 @@
-All Tech Stocks run: auto at Tue 27 Oct 16:43 UK time
-  feeds: 45/45 worked, 237 new items (78 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 17:53 UK time
+  feeds: 45/45 worked, 312 new items (93 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1836 grouped, 1348 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'BT, EE, TalkTalk and Vodafone have been named as the worst performers for broadband complaints, a ranking that puts Vodafone among the provi'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Airbnb is to introduce checkout limits for bookings from 20 November 2026. No detail is giv'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, which says the Netherlands is bucking a wider European tech slowdown thanks to ASML. Nothing in the mate'
-  site: 1051 stories live, 9 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: NVDA
-  trends: 386 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 9 written, 3 rejected, 0 failed calls
+  stories: 1844 grouped, 1343 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "I don't have enough detail in the coverage to say anything about what the data showed, which expert raised the challenge, or what Rightmove "
+  site: 1049 stories live, 9 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
+  trends: 387 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 9 written, 1 rejected, 0 failed calls
