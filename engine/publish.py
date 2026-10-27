@@ -83,6 +83,8 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
         saved = db.why_line(s.core_ids or s.item_ids, ai.get("valid_from")) or ""
         if saved and saved != "-" and llm.NON_ANSWER.search(saved):
             saved = "-"  # an older "nothing here" line written as a sentence
+        elif saved and saved != "-" and not llm.drop_padding(saved):
+            saved = ""  # mostly "the coverage doesn't say" filler: write it again
         if saved == "-":  # the model had nothing useful to say; don't ask again
             skipped.add(id(s))
             saved = ""

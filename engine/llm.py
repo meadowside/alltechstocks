@@ -292,19 +292,21 @@ def fallback_titles(leads: list[tuple[str, int]]) -> list[str]:
 
 # Sentences that talk about the source material or what isn't known instead of the story.
 PADDING = re.compile(r"\b(the|its|this) (coverage|headline|article|report|information given|details available)\b|"
-                     r"\b(does not|doesn't|do not|don't) (say|describe|detail|give|mention|specify)|"
+                     r"\b(does not|doesn't|do not|don't|did not|didn't) (say|state|describe|detail|give|mention|specify|explain|disclose)|"
+                     r"\bwithout (those|these|more|further) details\b|\bnothing (further|more|else)\b.*\bsaid\b|"
+                     r"\b(limited|little) (information|detail)\b|"
                      r"\b(is|are|remains?|it's) (not yet |still )?(unclear|not clear)|"
                      r"\bdirect effect\b|\bno detail\b", re.I)
 
 
 def drop_padding(text: str) -> str:
     """Remove sentences that pad the line with what the coverage doesn't say. If that leaves fewer
-    than two sentences of a longer line, the line is kept as it was and the checks decide."""
+    than two real sentences, there's nothing worth saying and the line is dropped."""
     parts = re.split(r"(?<=[.!?])\s+", text.strip())
     if len(parts) < 2:
-        return text
+        return "" if PADDING.search(text) else text
     kept = [p for p in parts if not PADDING.search(p)]
-    return " ".join(kept) if len(kept) >= 2 else text
+    return " ".join(kept) if len(kept) >= 2 else ""  # mostly padding: no line at all
 
 
 def clean_line(raw: str) -> str:
