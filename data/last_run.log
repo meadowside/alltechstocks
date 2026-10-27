@@ -1,8 +1,11 @@
-All Tech Stocks run: auto at Tue 27 Oct 08:53 UK time
-  feeds: 45/45 worked, 217 new items (69 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 09:27 UK time
+  feeds: 45/45 worked, 154 new items (63 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1689 grouped, 1259 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: surge): "Fortinet's cloud security products are facing a reported surge in attacks, a trend that could increase demand for its protection services."
-  site: 951 stories live, 5 new AI lines. Top: IBM Stock Price Today (NYSE: IBM) — Live Chart & Levels. Most covered stock: AMZN
-  trends: 369 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 5 written, 1 rejected, 0 failed calls
+  stories: 1690 grouped, 1257 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: investing): 'Intel has agreed to acquire Classiq, an Israeli startup that builds software for designing quantum algorithms, as part of its push into quan'
+  AI line rejected (108 words): 'DoorDash is reported to be in advanced talks to buy Instacart, its rival in grocery and online delivery. For DoorDash, a deal would bring to'
+  AI line rejected (109 words): 'Texas Instruments has said that a single humanoid robot could carry up to $1,000 of its chip content, a figure that points to a new source o'
+  AI line rejected (114 words): 'The coverage is limited to the headline, which says boda riders, the motorcycle taxi drivers Uber works with in parts of Africa, have won a '
+  site: 960 stories live, 25 new AI lines. Top: IBM Agent Identity is now generally available: Building trust for the agentic era. Most covered stock: AMZN
+  trends: 370 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 25 written, 4 rejected, 0 failed calls
