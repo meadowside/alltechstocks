@@ -1,10 +1,12 @@
-All Tech Stocks run: auto at Tue 27 Oct 13:54 UK time
-  feeds: 45/45 worked, 366 new items (118 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 14:53 UK time
+  feeds: 45/45 worked, 358 new items (151 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1785 grouped, 1296 name a watched stock or pass the market rules
-  AI line rejected (unfinished sentence): 'The coverage gives only a headline and no detail on the data involved, who challenged it, or what the company has said about the change. Wit'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline about Micron pushing back on a Chinese memory threat, with no detail on what Micron actually did, which C'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline: a class action lawsuit brought by investors against AppLovin Corporation. It does not say what the suit '
-  site: 1000 stories live, 15 new AI lines. Top: PayPal Raises Guidance as Turnaround Strategy Shows Promise. Most covered stock: AAPL
-  trends: 381 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 15 written, 3 rejected, 0 failed calls
+  stories: 1806 grouped, 1316 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline figure: Fortinet is reported to have recorded 2.3 billion cloud security attacks. It does not say over wh'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage is limited to a single point: Anthropic has named disruptions to TSMC's operations as a risk. Nothing in the material describes"
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives too little to say anything useful about Micron's business beyond a headline. It names only the company and a general push"
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline and no detail on the actual cleaning rules, their terms, or any company statement, so I can't describe "
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline: a class action lawsuit filed on behalf of investors against AppLovin. Nothing in the material describe'
+  site: 1016 stories live, 12 new AI lines. Top: PayPal Raises Guidance as Turnaround Strategy Shows Promise. Most covered stock: NVDA
+  trends: 383 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 12 written, 5 rejected, 0 failed calls
