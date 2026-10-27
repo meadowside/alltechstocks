@@ -355,12 +355,18 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     if len(titles) < 3:
         titles += [t for t in llm.fallback_titles(leads) if t not in titles][: 3 - len(titles)]
     opening = llm.opening_note(leads, local.strftime("%A %-d %B")) if leads else None
+    top_why = None
+    if top:
+        core = [i for i in top.items if i["id"] in set(top.core_ids)] or top.items
+        snippets = [i["summary"] or i["title"] for i in core if "news.google.com" not in i["url"]] or [top.headline]
+        companies = ", ".join(f"{cfg.by_symbol[t].name} ({t})" for t in top.tickers[:3])
+        top_why = llm.top_why(top.headline, snippets, companies)
 
     date = local.strftime("%Y-%m-%d")
     ranked = rank_stocks([s for s in stories if s.eligible], cfg, now, int(picked["lookback"].total_seconds() // 3600))
     filings = db.filings_since(now - picked["lookback"], notable_only=True)[: cfg.rules["email"].get("filings_max", 8)]
     env = _env()
-    args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, opening=opening, stocks=cfg.by_symbol,
+    args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, opening=opening, top_why=top_why, stocks=cfg.by_symbol,
                 date_long=local.strftime("%A %-d %B %Y"), date=date, ranked=ranked[:5], filings=filings,
                 disclaimer=cfg.rules.get("email_disclaimer", cfg.rules.get("disclaimer", "")))
     html = env.get_template("email.html").render(**args)
@@ -396,5 +402,5 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
     for s in chosen:
         db.record_sent(date, s.item_ids, s.coverage)
     db.record_email(date, now)
-    return {"date": date, "stories": len(chosen), "llm_lines": llm_used, "opening": bool(opening),
+    return {"date": date, "stories": len(chosen), "llm_lines": llm_used, "opening": bool(opening), "top_why": bool(top_why),
             "short_sections": [sec["name"] for sec in picked["sections"] if sec["short"]]}

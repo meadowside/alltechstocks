@@ -1,4 +1,4 @@
-"""Optional: one-sentence "so what" lines for stories on the site and in the email.
+"""Optional: short "so what" paragraphs (three or four sentences) for stories on the site and in the email.
 
 Runs only when ANTHROPIC_API_KEY is set. Each story gets one call, ever: the line is saved
 in the database and reused on every later build. A failed call just means no line.
@@ -46,8 +46,10 @@ Companies tagged: {companies}
 What the coverage says:
 {snippets}
 
-Write ONE sentence, 25 words or fewer, saying what this means for the company's business: its customers,
-products, costs, rivals, rules or plans. Plain British English. No hype.
+Write THREE or FOUR short sentences, 90 words or fewer in total, as one paragraph, saying what this means
+for the company's business. Cover what happened, then the effect on its customers, products, costs, rivals,
+rules or plans, and any wider context a reader needs (a rival's move, a regulator, a past deal).
+Vary the sentence lengths. Plain British English. No hype.
 Strict rules:
 - Never say or hint whether to buy, sell or hold anything.
 - Never mention the share price, valuation, returns or what the shares might do.
@@ -55,7 +57,7 @@ Strict rules:
 - No dashes, no semicolons. Don't repeat the headline. Don't start with "This".
 - Never mention the coverage, the sources or the article. Talk about the story.
 If the coverage gives too little to say anything useful, reply with the single word NONE.
-Reply with the sentence only."""
+Reply with the paragraph only."""
 
 
 def enabled() -> bool:
@@ -68,9 +70,9 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
         return None
     body = {
         "model": os.environ.get("LLM_MODEL", DEFAULT_MODEL),
-        "max_tokens": 200,
+        "max_tokens": 400,
         # Haiku 5.5 thinks by default and the thinking counts against max_tokens, which left
-        # replies empty. One plain sentence needs no thinking.
+        # replies empty. A short paragraph needs no thinking.
         "thinking": {"type": "disabled"},
         "output_config": {"effort": "low"},
         "messages": [{
@@ -208,6 +210,45 @@ def opening_note(leads: list[tuple[str, int]], day: str) -> str | None:
     return text
 
 
+TOP_WHY_PROMPT = """You suggest the "Why it matters" line for the top story in today's All Tech Stocks email,
+a weekday digest of the most covered US and UK tech stock news. Andy edits and signs it.
+It is a research digest, never an advice service.
+
+Top story: {headline}
+Companies tagged: {companies}
+What the coverage says:
+{snippets}
+
+Write two or three short sentences, 60 words or fewer in total, on why this story matters beyond the
+headline: what it changes for the company's business and for its customers, rivals or the wider sector.
+Lead with the single biggest consequence. Voice: a sharp, plain-speaking British editor. Contractions are fine.
+Strict rules:
+- Never say or hint whether to buy, sell or hold anything.
+- Never mention share prices, valuations, returns or what the shares might do.
+- Never predict. Describe what has happened or what the companies have said. "If the deal goes through"
+  style conditions are fine, forecasts are not.
+- No dashes of any kind, no semicolons, no hype words. Don't repeat the headline. Don't start with "This".
+- Never mention the coverage, the sources or the article.
+If the coverage gives too little to say anything useful, reply with the single word NONE.
+Reply with the line only."""
+
+
+def top_why(headline: str, snippets: list[str], companies: str = "") -> str | None:
+    """A suggested 'Why it matters' line for the email's top story. None if off, failed or rule-breaking."""
+    raw = _ask(TOP_WHY_PROMPT.format(headline=headline, companies=companies or "none",
+                                     snippets="\n".join(f"- {s}" for s in snippets[:6] if s)), 300)
+    if not raw:
+        return None
+    text = " ".join(p.strip() for p in raw.strip().split("\n") if p.strip()).strip('"').strip()
+    if text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
+        return None
+    reason = note_reject_reason(text)
+    if reason:
+        print(f"  AI why-it-matters rejected ({reason}): {text[:160]!r}")
+        return None
+    return text
+
+
 def note_reject_reason(text: str) -> str | None:
     if not text:
         return "empty"
@@ -263,8 +304,11 @@ def reject_reason(text: str) -> str | None:
     if not text:
         return "empty"
     words = len(text.split())
-    if words > 35:
+    if words > 105:
         return f"{words} words"
+    sentences = len(re.findall(r"[.!?](?:\s|$)", text))
+    if sentences > 5:
+        return f"{sentences} sentences"
     low = text.lower()
     hit = next((b for b in BANNED if b in low), None)
     if hit:

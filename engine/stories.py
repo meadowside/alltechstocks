@@ -314,9 +314,15 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
             hits[sid] += n
 
     # Headline from the best outlet; link to the best free, non-redirect copy.
-    ranked = sorted(outlets.values(), key=lambda o: (TIER_RANK.get(o.tier, 9), min(parse_iso(i["published"]) for i in o.items)))
+    # An outlet whose headline names one of the story's stocks beats one that doesn't, so a loosely
+    # grouped piece (a Zoom blog post in an IBM story) never takes the headline.
+    named = set(s.headline_tickers)
+    def names_it(i) -> bool:
+        return bool(named & tagger.find(i["title"]))
+    ranked = sorted(outlets.values(), key=lambda o: (0 if not named or any(names_it(i) for i in o.items) else 1,
+                                                     TIER_RANK.get(o.tier, 9), min(parse_iso(i["published"]) for i in o.items)))
     lead = ranked[0]
-    lead_item = min(lead.items, key=lambda i: i["published"])
+    lead_item = min(lead.items, key=lambda i: (0 if not named or names_it(i) else 1, i["published"]))
     s.headline = lead_item["title"]
     s.section = rules.pick_section(hits, lead.source.sections if lead.source else [])
     if s.is_global and "companies" in cfg.section_ids:

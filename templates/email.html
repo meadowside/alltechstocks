@@ -38,7 +38,8 @@
 <h2>Top story</h2>
 <h3><a href="{{ top.link }}">{{ top.headline }}</a></h3>
 <p class="src">{{ top.link_outlet.name }}{% if top.paywall %} (£){% endif %} · {{ top.source_count }} source{{ 's' if top.source_count != 1 }}{% if top.tickers %} · <span class="tk">{{ top.tickers[:3]|join(", ") }}</span>{% endif %}</p>
-<p><strong>Why it matters:</strong> <span class="fill">[Your line. Business impact only, nothing on the shares.{% if top.so_what %} AI suggests: {{ top.so_what }}{% endif %} The data says: {{ top.why }}]</span></p>
+{% set why = top_why or top.so_what %}{% if why %}<p class="fill">[Suggested "Why it matters" below. Edit it, then delete this line. Business impact only, nothing on the shares. The data says: {{ top.why }}]</p>
+<p><strong>Why it matters:</strong> {{ why }}</p>{% else %}<p><strong>Why it matters:</strong> <span class="fill">[Your line. Business impact only, nothing on the shares. The data says: {{ top.why }}]</span></p>{% endif %}
 {% endif %}
 
 {% for sec in sections %}{% if sec.stories %}

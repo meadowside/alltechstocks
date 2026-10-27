@@ -19,7 +19,8 @@ Andy
 **[{{ top.headline | md }}]({{ top.link }})**
 {{ top.link_outlet.name }}{% if top.paywall %} (£){% endif %}, {{ top.source_count }} source{{ 's' if top.source_count != 1 }}.{{ tks(top) }}
 
-**Why it matters:** [Your line. Business impact only, nothing on the shares.{% if top.so_what %} AI suggests: {{ top.so_what | md }}{% endif %}]
+{% set why = top_why or top.so_what %}{% if why %}[Suggested "Why it matters" below. Edit it, then delete this line. Business impact only, nothing on the shares.]
+**Why it matters:** {{ why | md }}{% else %}**Why it matters:** [Your line. Business impact only, nothing on the shares.]{% endif %}
 {% endif %}
 {% for sec in sections %}{% if sec.stories %}{% set lead = sec.stories[0] %}
 ## {{ sec.name }}
