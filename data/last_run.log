@@ -1,7 +1,9 @@
-All Tech Stocks run: auto at Tue 27 Oct 05:53 UK time
-  feeds: 45/45 worked, 159 new items (35 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 06:53 UK time
+  feeds: 45/45 worked, 151 new items (38 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1664 grouped, 1237 name a watched stock or pass the market rules
-  site: 917 stories live, 0 new AI lines. Top: Applied Materials to raise BESI stake to about 20%. Most covered stock: AMZN
-  trends: 359 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+  stories: 1672 grouped, 1235 name a watched stock or pass the market rules
+  site: 913 stories live, 2 new AI lines. Top: IBM Stock Price Today (NYSE: IBM) — Live Chart & Levels. Most covered stock: AMZN
+  trends: 361 stock-days and 47 section-days refreshed, 8 days of history
+  email: 38 stories, 0 new AI lines, opening note: yes
+  notify: skipped (no Telegram settings)
+  AI lines: 2 written, 0 rejected, 0 failed calls

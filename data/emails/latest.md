@@ -1,109 +1,110 @@
-TITLE IDEAS (pick one for the Substack title, then delete these lines)
-1. Apple Formula 1 ads and Qualcomm Samsung 2nm foundry talks
-2. Earnings week ahead for Alphabet and Microsoft, plus UK AI security funding
-3. Qualcomm and Samsung 2nm, as Apple pushes further into advertising
+TITLE IDEAS (pick one for the Substack title, then delete these lines. Cover 1, 2 and 3 match titles 1, 2 and 3)
+1. DoorDash in talks for Instacart, and Anthropic readies IPO filing
+2. DoorDash eyes Instacart as Anthropic files its IPO prospectus
+3. Instacart talks with DoorDash and IBM stock levels in focus
 
 ---
 
-All Tech Stocks, Monday 26 October 2026
+All Tech Stocks, Tuesday 27 October 2026
 
 [Suggested opening note below. Edit it, then delete this line. Report, don't tip.]
-Big day for chips and ads. Qualcomm and Samsung are weighing a 2nm foundry deal, and Apple is pushing deeper into advertising with a Formula 1 tie-up. Alphabet, Microsoft and Amazon all report this week, so expect the big numbers to start landing.
+DoorDash is in advanced talks to buy Instacart, which would reshape the US grocery and delivery market if it lands. Anthropic has filed a prospectus and started its countdown to an IPO, and Cadence Design Systems has raised its full-year outlook.
 
 Andy
 
 ## Top story
 
-**[Apple Is Revving Up Its Ads Business With Formula 1](https://news.google.com/rss/articles/CBMingFBVV95cUxPdmw5VmdCa0M4VFhETjM3OUI2Q3FmeFJNM2taSzBOenZaTkVwZDVWUEQ3eXdGZVQ1Z0U1VjRYdnBxVklRZ2NkQlQwT2FBWDBkRndlS1FoODY2UnNJcEJodTJqbktvVk1jVDllVjh1a2pRNzFsbzg0SkJPdEdaQmVNeEhzX1hsSWJWeUV4UkM0M2pqT1h5enV6UWJCMEMyQQ?oc=5)**
-The Hollywood Reporter, 15 sources. AAPL, META
+**[IBM Stock Price Today (NYSE: IBM) — Live Chart & Levels](https://news.google.com/rss/articles/CBMiWkFVX3lxTFBySUZBS3hPejdOMXowel91TFNucEFMbTdoZXNac21pOUdxZ2FabGFSUTVGaUZMMUVfWDBNM1ZxbHZEYWkzMUl4Y28tRHpvSVhuRktCaU5Edm1FQQ?oc=5)**
+JournalArta, 12 sources. IBM
 
-**Why it matters:** [Your line. Business impact only, nothing on the shares. AI suggests: Apple is expanding its advertising business through a partnership with Formula 1, which could bring its ad offering to a new sports audience.]
+**Why it matters:** [Your line. Business impact only, nothing on the shares.]
 
 
 ## Results & Outlook
 
-**Andy's Pick: [Earnings playbook: Alphabet, Microsoft, Amazon and more report this week. Here's what to expect](https://news.google.com/rss/articles/CBMiggFBVV95cUxQb0l5dnFfdUxybkFnYjFMWUtiZFRVWVNieXI2bEJhSi1ZUDhfQmJSa3lDekl5bkQwcDRZTWdhQUF4cnIxc2U5aERBcmk3OTgyMUwtOWxYVTZ0TjhfcllPalFSLV9zTUVueTlhLUZPYThDdzlaeTVhR2QxQkNtOXJ6REpB?oc=5)** (CNBC, 11 sources) MSFT, AMZN, GOOGL
+**Andy's Pick: [Cadence Design Systems Raises FY Outlook](https://news.google.com/rss/articles/CBMimwFBVV95cUxOUVBhakhFWGlTbTZpbFlJRlVuWDdJMnE4ZkpSQW1yWTF6aEhwSEhyTm9rbVFpWmZTUmV6QTlkUmZjbkszSjUyNDI0VXlGeE9qOHBGT2t0OXR5eUctVm9QMjd2YTVJRkZDRUlpb3BLSjRheGhtOVhrb24zeVU3SWFFRGpBdmVWTHNmbXJfN3pyVktMUHdUdVNaU1JqQQ?oc=5)** (MarketWatch, 13 sources) CDNS
+*So what: Cadence has fixed October 26 as the date it will publish its results, giving investors and customers a set point to review its latest financial performance.*
 
-- [Goldman says these top tech stocks have plenty of upside ahead of earnings](https://news.google.com/rss/articles/CBMijwFBVV95cUxQU1RsT0tCaElxTUItVWIyQl93VUlSSkRDQlFaU1N5cFRGMzVMUWs3aWZyX3NBTHk5ZFpQNmRCNzVTRmcwb3QxTl9QcEdYYXl1UTd5TGhXM0hHMEl2VHNoUUVmd0FvZGFWdDhUNDA2SU1zeGtMT3ZDYl9sbFNmMVgyWEpSZWpOcENXcWJKRDlxaw?oc=5) (CNBC) PLTR
-- [Morgan Stanley Sees Further China Stock Downside Before Bottom](https://news.google.com/rss/articles/CBMiswFBVV95cUxQeUR5Z0dNcnNwcWZpR3dPUWd5VTJHSG5pMjMzUW5DNTJ4MFYyTDlIY0Q3ZWZUNVhKbVNoSi1aNFR5WnhzRTk3bmJOUkthOURaZ1JGVnlkNDhaR1ZBS1Q3VnZ6XzFtd0lCdVpJSkREdkIweDg2bFZQY3hiVnRsLTExcU9tSlBaV29UcEtRRElEbEFYMjRrX1RfZ01GVkNwNVpZMkFwV0IwRUFMdlVDc1VzN2FGMA?oc=5) (Bloomberg, £) AMZN
-- [Netflix Scores Big With Ridley Scott's Long-Awaited 148-Minute Action Epic](https://news.google.com/rss/articles/CBMibkFVX3lxTE9zMGdyeTg5RjFfcUVvYXlubWV4WnhtVTNwcXF6bW92M0w5Q2dyd3pUSG1iYURnUVphTkFiNW1KSm9yM1p4QWQ1V21rWF9EYThIMUVnQXR3VlhQQkR6UktyY0VlR2k5dGZpenJnNUtR?oc=5) (MovieWeb) NFLX
-- [PayPal (NASDAQ:PYPL) vs Robinhood (NASDAQ:HOOD): Which Stock Faces the Bigger Earnings Test?](https://news.google.com/rss/articles/CBMidkFVX3lxTE1iT0VFWDlTckpvY216UDZodUlLZ3Z5SUoyejBfaVNaNXh2WXh0ZGYxYU1RczFWWnkwdHNlLVkyR3hDdnQ5UHFFQURiVGtqS0Z4N3htN3JPVkZzQXZYYXBweE02YnhWSXJTR18yTkhuMDZ3TWFSU1E?oc=5) (Stocks Down Under) PYPL
-- [Vodafone Qatar platinum sponsor of Doha International Conference on AI & Security | Gulf Times](https://news.google.com/rss/articles/CBMizwFBVV95cUxPRUg0enNFekZwb2VfZUQ5ZFktR01EVC1PNXNxeDYyZWVNa0d6d0lBYVc4N3ZvWkczU2dpVTBMWFZ3ZFAzWWlLNkRCbEJSenE2Unp3RmtLVURBUjZhSmprTnRFOUxHU1ZQMENrVEZrU3ZLYzFLY0ROd1YwWkQ2Vzl1VkkyWDRlUC1rQTRmT2ZCaWh2dzNBQVJRYmwtdEdxaTczUHF3T0JoSHRjWnUzM3ZZVzRYbWg0NHFRcUsyR1lQYUw2bVVPdURfeFc4cmpzblnSAc8BQVVfeXFMT0VINHpzRXpGcG9lX2VEOWRZLUdNRFQtTzVzcXg2MmVlTWtHendJQWFXODd2b1pHM1NnaVUwTFhWd2RQM1lpSzZEQmxCUnpxNlJ6d0ZrS1VEQVI2YUpqa050RTlMR1NWUDBDa1RGa1N2S2MxS2NETndWMFpENlc5dVZJMlg0ZVAta0E0Zk9mQmlodnczQUFSUWJsLXRHcWk3M1Bxd09CaEh0Y1p1MzN2WVc0WG1oNDRxUXFLMkdZUGFMNm1VT3VEX3hXOHJqc25Z?oc=5) (Gulf Times) VOD
-- [Nvidia open-sources Flora to make robot video labeling 125x cheaper than GPT-6 Astra](https://news.google.com/rss/articles/CBMirgFBVV95cUxOWDZCdUVjbzZsQ1A2RDg0eE9TMko5cFl6VlJOZjEtLWEzZzEwdVg3M3NXSmtWUlliVkZuTHBZYUdGbHBCXzNDcFlYVHAtLUl5WlBRMmY0aXpsREJUb0RkX3R5V2JmdHIyeEcyRjFrbExGLW5MQWtXX01HaGRLbWFDdGVaVVVnNS1IYUx4VllHNmdzcWtpbUluNXB3UExwcVNPWi0wZ3A3Z1hEdUlyVEE?oc=5) (The Decoder) NVDA
-- [Nasdaq Rebounds to 26,430.89 as Chip Stocks Snap Eight-Day Losing Streak Ahead of Earnings from Tesla and Meta](https://news.google.com/rss/articles/CBMi3wFBVV95cUxNQXlDd04zMUNHd1RwOWZNdEFUSHFzWFhaMHpNUUNhUUV6UzR5Mmg4UXlHZkUwbWN5MzVYXzFHRm5Pa0dnWS12ZVN2V0xhclhDdGpYR1JTWlZHOFkzb2tHZXkwTWU0dERSWFdzbnM1TERQM2Y2SWNJVG9tVkhMYWp5eG13WHhlUHBFNmdLSDJLOWxfNVNmTS1wdndhVlg5U0Z2TWxBeFp2YVRCN2pGUmt1WGZ0bG0zRk9aRDVFTFFhS3FlSUZ2QzZkTVpfNy10dnZ3WTRHOWRRTGptcG5ZVFhr?oc=5) (BBN Times) META, TSLA
+- [South Korea Q3 GDP beats forecasts as AI chip boom boosts exports, investments](https://news.google.com/rss/articles/CBMitwFBVV95cUxPclJITG5OM3lQUHFQQXI0Z0QxNTEzU2RjOXNHakE5aXZiWkJNUjVpYUtiNE1OcVNIY3dNMkxsTHQ3TlpfbnFXM2M0N3VSdDdXbEktX29CaFhLWnZMYS1fWGFpSmo4aERwRkpKTTJPNmRqMVcxTVFONFBnN04yM2FoRlBoaGRkb0YxNmJmU3JTSEJIR3I5N2I0ZndDREZsU01vOEhIa1RqRzlJQ1lhODJubEllc3d4MzQ?oc=5) (Reuters) ON
+- [Genmab Shares Jump After Positive Cancer Study Results](https://news.google.com/rss/articles/CBMirgFBVV95cUxPQ1lmSlRsdlRwZmJCVXlDRFdlNUhvY1hfc3Y4SkxhM3ZSUFlvaGZ6Z3lHcUZnSFBnTHFFVjlpcGxNc01zM043TklhSkIwX3RHa1ZKbmNfb2ZHNkwtNFpNbl9WakpMOUFBeXR2N09WU2djQTRYUkdqaVB5MFVIOUtQa1ZNY3M5VGhUYV9paVRPSlExOFZJWTcwSENoRXdrc1lEZEEzUFlkVF80ajBFVkE?oc=5) (MarketWatch) CCC
+- Update: [Private equity giant: AI payoff strictly limited to Big Tech](https://www.theregister.com/ai-and-ml/2026/10/26/private-equity-giant-ai-payoff-strictly-limited-to-big-tech/5305358) (The Register) MSFT, GOOGL, AMZN
+- [ASML may account for up to 1.6% of Dutch economy in 2026, ING says](https://news.google.com/rss/articles/CBMimwFBVV95cUxONGtjNXdMdmcyX3V6bDA3N3QtSVVwRjVBWEVCNm1CS3dtdmJfYklJNzhHR1JsT0hxa2V2UHJlQ1pXRnRCbGlVc0pKMHhxRXFoUVV6el9Qa0l6Z3llbEdqN25fNnIzVHl0OGthcGpJUHVhemZRaHdLQ0lWck5GNXdOdEtrWHpURlEzNy1adk15MWpxQU0wZmViMlhkTQ?oc=5) (Reuters) ASML
+- [Analog Devices schedules November results while stock trades at EUR 347.10](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQWDB3enpfWUhsZHRxOFBTaU1rZlVieTBmV0VfWTBmUnl4X2ZrT3hKTzBPMERBSjVVcl8ydExZcGZnaFEzZTBwbHRYdlB5bWxnbno3YTVMTFZMZDFXWENTcU1hSWFvSEpvNVI0U1MtSWxUenpmdWNNdUpmTWE3c013akJxTzg4ZFpFbDNXRDhsOEYzQ0w3dkJYQlQzRUQ1c182emhTWVEwRjJCODB2MVJqQjVDWFo4OGtDZ19US3Bmd2w2YXBUZHM1OUhkNHNTRjdXTlhV?oc=5) (ad-hoc-news.de) ADI
+- [Instagram Ramps Up Video Strategy in Escalating TikTok, YouTube Rivalry](https://news.google.com/rss/articles/CBMivgFBVV95cUxOazEzbkRsWGJvYjRyRTg0NUJUVDlnT1dpNkQ3a1MybE1mb1JlY2M1dkxWazQ1VEREcEktX3llOTJtd043aE50aXVIZmdHWmlhVXNQNUgxUkYzQVd6X2Jvc2hLMEpSRXFQRzR1b2FXTGVIbk9KLXdFUTFyMDRsVmppRVd2QzdUM3lmSEVGSFo2b3VIaW1SM0ZWU2d1SkwwTjJuSWdjN2lpc21rV3p0Z1BTa0U0OGd5QXVSSEpGdk93?oc=5) (Bloomberg, £) GOOGL, META, NFLX
+- [FICO Missed Its Chance to Raise Prices, and the Stock Plunges](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNWdlbHl0RFVBcFpHRUpGUl9icmo0MTdmOFFiam5MT21YMWQtcEFpQ21OMWpVZWcwYWNXd0IxeDVOZGpZek1lY0QwT0wxc09icTY5VGl3a3VHTXhVaUNfTC0zQlRlbzRyd3l1cVJXQWRnd1BqajdNWndPb3hoUHlpX0hBWUVMVlRD?oc=5) (Barron's, £) APP
 
 
 ## Deals & Listings
 
-**Andy's Pick: [UK government sets out $800 million of AI security funding](https://news.google.com/rss/articles/CBMioAFBVV95cUxQTDJseUNYVnJGcWZWUjlPR0RUSXJHTVItRmh1dkdnNTFiZ2tmTFhUM1p3YnI1T2RGdlpFZ1JWN3BGR2dCajk3Y1pBMlBCYjNFX2dnbjJzZnNJb1BONkNGREFYamNWT1FLRFJXdjdVeEdMUFZnM3FQRXE2VFBIbFdWUVItWEJwd3F4dmFRbHpKTzE4RWpXSGRnTzY4QVdISFJj?oc=5)** (Reuters, 10 sources) MSFT, NFLX
+**Andy's Pick: [Exclusive | DoorDash Is in Advanced Talks to Acquire Delivery Rival Instacart](https://news.google.com/rss/articles/CBMitgFBVV95cUxPM3ZvRlVFSjNDTHZIeTlnUWhXdjdyTkVZQk1rV0xtTmdjT3VBN05YeVI3cUpGLUlBRC1KaTdKVzMtekd4emZ5TU1nclhrajVLV0VlbmhfRGVOVHpCRG83RmdkOElvOHhyUkRKVkd6VU1LajNUa1JvcUdjdnlVLXBreF9nV3dhOHYzWnJLSm5XVVhmVnlHS0dJRmpxMWpEY2hBMl9Fd1pCNFpiZzBRaWRwcHlEZ1I1Zw?oc=5)** (The Wall Street Journal, £, 43 sources) DASH, UBER
+*So what: DoorDash would gain Instacart's grocery delivery network and customer base if the talks reach agreement, which could reshape its position against Uber Eats.*
 
-- [John Malone Says Trump Administration Told Netflix They Had 'No Chance' Of Getting Regulatory Greenlight For Merger With WBD](https://news.google.com/rss/articles/CBMi9wFBVV95cUxPU1JpTHljQTVsMVZ1QVdsQjd2Sm1LMzNWd0VVelBNTEhmTzk3UVg1R2d6UDM3QkEzNkxsa2ZnTkVUWFNCbUw5QWRjUVZJNE9UdEVtS1RQYWcxaFRmcnN1aEd1eGNoN3N2VjFkTG8ycnQ4UlVUa1FOTHhBc2pKOEk4Ulc0LV9ReXZfZ1JTTTREcktIMWs0a1d5OTNRY1NTa3JKTkZjVklSbXl0ck5hSkNOSXRFem8tU2xVSUxrclFic2lDT00xSnZFWkhXc0tZMjFYd3hEYnViNzF0MnZpZ041c0c1MWhSTmk1VHR4SmhtSEhrQjlyWWJv?oc=5) (TV News Check) NFLX
-- [When to buy Apple’s accessories (and which ones to buy cheaper elsewhere)](https://news.google.com/rss/articles/CBMidEFVX3lxTE9Fc0J6TFhqRzhyRXdQTFRuRjFLRmZzeEE2eEtUQWFVaXJXdzJuSXppX0luVW9ZRWVKZWZpUEdITlp5WVBHZlptSG1icFliRGFTYzc2ODFYT2NTdFFTRUJVclV5TDhEUzJFd0FQb1daWkltOTlB?oc=5) (Fast Company) AAPL
-- [Solana Co-Founder Floats Stake-Weighted Validator Oracle Idea](https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS2lSZndTSi1KY1E2Yld6NXdEdmNWM1REOEtGSld4RldKeThNQUxLdUdnOFBqZndsa3FoSkNPSUtYazEyMDkzY0hzYzBVbzRCaWhNZ2YxakpYbHQ2aWpnTDU3Nk1FZUk5VE1EaFphQnRnd0F3SWdoeHpvTF9aV0RqSHRjaGpDdlJ4MjV6dmJjaW4yZDR3WEh4dzRqY29HNzBVWTBJZVQtYTRTUQ?oc=5) (CoinMarketCap) ORCL
-- [Firmus After the Float: US$2B Backers, 7.2% Nvidia (2026)](https://news.google.com/rss/articles/CBMihAFBVV95cUxNUFByUkc4bnZjMVVwa1NPaHRsTzJmVTk2SFJZdjBHVHBwMXZBTW9Qa0lsZ2J0cGZrZFlNR2w0ZHFkZGlHWFJrdEplWnZnRUViYmhKN3BpQmphQnprTHhNZzdkcVpIUmlLZmJBUl9uN0RaSWxqZk1kQ2U3V0h4N0RwS2NwMjg?oc=5) (tech-insider.org) NVDA
-- [OUE REIT inks Salesforce Tower 50% stake acquisition in $864m deal of the year](https://news.google.com/rss/articles/CBMiswFBVV95cUxOdmx2Y3VpYzh1d21CSEVBQ0FKTVkzMUdjM3VpOHpyUDY1ejVKeUpCNFF3eWdYTkg1aUxiR3gwM1YwbDNsNGdobXhJUkZTVzlEOXVZRHFTdV9heHBrMzZrOS1SSm9Nb3pWMzdaTXRQQjJOem54SlJFTDZILVFRSVNrTTc1UXRLM0F0c2loVkFHU0tNTUZjYjV1dEtkZUZZWTZoU3ZMR0tVRFVNZ0E2anhWeTY2WQ?oc=5) (Green Street News) CRM
+- [Intel to Buy Israeli Startup Classiq in Quantum Computing Push](https://news.google.com/rss/articles/CBMiswFBVV95cUxNNnJjaGVYODVacVE0QlNxazBqMEZRMVhScmV5ME9yLVJRYkZ1dDhBRDhjNm85NU0xeGpFYlVJTm1ybFNTMmxMNEVRZkpyellvMGpEN3VaNzRxWkowT2ZfS19NNlp5WU0tYjhqbmpXZWZjdDRhQWE2blp4VVpQUkUtZ0FJMTBSUVlSVkZ6cHZWTmwyV1B2cjNFQU54YXRDdEthb0NwVV9jNUZMUURZejh5VkpzMA?oc=5) (Bloomberg, £) INTC
+- [How major US stock indexes fared Monday 10/26/2026](https://news.google.com/rss/articles/CBMikwFBVV95cUxOV1hfNndHd2dRbWl2Tm4xNHlMMFRmTDEtRXRqSVQ4a1llNkJaRVZBRWVVclkzUnVwcnBVQVRkYXFkM29Rc05JUnRqTmhyRUVqbWNuUGRtSnFZUE9pUUVwejBydmgxZVEycjJzMm5fbTAwaG9HeG0zR2VYQ1NBZVJlN01tOTJmTW52b2dZdlY2VGk4amc?oc=5) (AP) PINS
+- [Mainland patronage on Uber leaps 130 pct over Golden Week](https://news.google.com/rss/articles/CBMijAFBVV95cUxPd0lKWjhBWnUweEVOX1h1TjlJZmpZbFBOYkJyZ0hDbDVHR255eVAzN1hUOUVQV1RxbUdmd3ZJMDY1c3BhTnc5T0NSd2NYRzhtNV9leF8yNU8xaWVKVEVnZ0hKb0tnQ21ab24ycU1LUTNlZDdfaFV5cmRhcHduOWJZVjlUWndPb3dWR2E0Ng?oc=5) (Macau Business) UBER
+- Update: [Elon Musk’s SpaceX-Tesla merger covers up EV company’s decline](https://news.google.com/rss/articles/CBMipwFBVV95cUxQaGE4b2F3WjQteldCX2haakJQN1lUMHZBa3Nuc0lWbTBvVkp0SmlHWUZLeVlvbEVLUmJWN3oxY0dZaWpqbTZ4T1o4NHp5akFNU3NYb1l4S3Fob2N6YVRwN1d4VE1YRFhqRlVCcDFvMngtd2RqeHZYVTh2eUVvTmRwZ0pRb0hNUnpqMzBKcFBFeEFvclczci1HQmktQ25VRk9SU19TMjNJQQ?oc=5) (The Telegraph, £) TSLA
+- [Rightmove drops “clearly misleading” data after expert’s challenge](https://news.google.com/rss/articles/CBMivgFBVV95cUxPOWlSRHhEXzU0US1UWU1qVmFLQm9SdlZzd1NQYkJlN0dxMlE3U2dnTHFpYXFhZUFITlR4ZDBjeHUyQ3pZVkJsYzFmc3BrVnNHT2xCaWV4RWJwV2RSODFPbXVCWWdsZTdpQ2F5S3p5TnRHOFhZOW1ySnQwUE1MekNlb2Q2b29KaGpDcHkyX253MXlZUnZ0SG9oVXdhRVRpRGptUlo4dl9zTUNYU09yOEZPTG0wdThSRWlhYVpGaVBn?oc=5) (Estate Agent Today) RMV
 
 
 ## AI
 
-**Andy's Pick: [Tesla’s AI ambitions take flight as rivals race to keep up](https://www.ft.com/content/c8db9b39-1922-41f3-b8e9-4488d16f8a2c?syn-25a6b1a6=1)** (Financial Times, £) TSLA
-*So what: A possible SpaceX merger could channel new resources into Tesla's autonomous driving and software work, which the company has been pursuing as a route to new revenue.*
+**Andy's Pick: [Anthropic begins countdown to IPO with prospectus filing](https://www.ft.com/content/f6ecfecd-d797-4d2c-b427-d333297949cb?syn-25a6b1a6=1)** (Financial Times, £, 17 sources) TSM
+*So what: Anthropic's filing shows rapid revenue growth alongside large losses, with the company setting out its executive pay, IPO spending plans and key risks.*
 
-- [Berkshire Stock Is Hot Again. Is It Still a Bargain?](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeHFpZFh5YjJQRGtyaTJsYV9SQVl2UGdSbGpnTHltTFd5c2J3cEQ0RC1pTTJUcWZYTWdnRGJPLTNVN294T2Z6bnpJY1VpUmV4MGF5Qk1NVFVmUUVJQ19NNDZlRGF5SDZQQjRzTmZNWWhiM21CbnVkTVBDUDJidllfM2hGakV3TlZBeklj?oc=5) (Barron's, £) MU
-- [Quote of the day by Microsoft CEO Satya Nadella: 'We have to do something useful with AI, or we'll quickly lose social permission' — challenging AI pioneers to step up their game](https://news.google.com/rss/articles/CBMiqAJBVV95cUxNR1NmczJHUmwzVmVtOUNtcUVJekxkX3RZVmVkSUdIOERMeU93ZThfbFZkTUFEcFp0TUZxZzJoRmk3a2Z3X0F4bWFSUGhDVnNVZkFtSnpTNU5iZGJRYWN5UFhuQ1ZDNTFfYkRqSEh3ckt6MnVqazh6MjFZNG1MTDRISFRyanQ5UUJfNE9jM1BiQklyNHl4dDd0WDJrN2lfVEJUaThoRUFHc19mSWtxOWlRUXdhRDJoTUlVVWdtUVA2dnhUdjBpV21zVk8tamJ6eVNFX0RPbnNJbHNFWGpqQnZrZGFTVkJsNldja3dSY2VRZEtUTmhELTVIVDRsVmhpSE8xdF9lQXk4MXpaX1N0M2FNNTNJVVVnUHFzNjc4dlotcG5aUkozNFRXdQ?oc=5) (TechRadar) MSFT
-- [Tesla and Nvidia just found another AI bottleneck](https://news.google.com/rss/articles/CBMiowFBVV95cUxQd3VpUERiNUd0STJ4bmRZdGpiMEphUUFzOVd5MUNuelhKLThPdUFUY1VTaHpXcE1NaFhzM2VKYW1HSUVyMkpLVlFXQmJaQXF2NmVkMkxrTmdKam1ZekNlT1o2ZHBHblI5eGxFNU9EN0VRTjM4cjRSdkI4UnktRDdjbWJ5MURQVkJKYzAzcDltT1RnTlhDSEswdm0tZjhEeVN5RFU4?oc=5) (TheStreet) NVDA, TSLA
-- [Cisco unveils AI networking plans: what it means for Cisco Systems stock](https://news.google.com/rss/articles/CBMizwFBVV95cUxPOWdPNWxoWEE5RUpRYzBnYXlwd0V5M3dsR1VKRmNGbkNzaTFnaHl1aWI1NXFEUEN4T19CQnlqMnE2UHV3SFNPOEJPX0huUUZGTXZFYUtnNUhQVGhGS1hhTDJINUpKM053UXN0ZHFfQ3JqRmY2MzMteVRHN1ZyZ3BLZFNSZzVuTW1YTUhTQkxfeDI1S1g0Zkk3R2U5MVAwdE1JUnZTTjZSYmpWcjlhN0tFSktiZFMwZ19WRmRzVTlkTm5XZDBCTVNETm9nakUxS28?oc=5) (ad-hoc-news.de) CSCO
-- [Jack Dorsey’s Block made an AI model that talks to you like an awkward new friend](https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech) (The Verge) XYZ
+- [Banks, Blackstone Form $63 Billion Financing Vehicle for Broadcom AI Tech](https://www.wsj.com/tech/ai/banks-blackstone-form-63-billion-financing-vehicle-for-broadcom-ai-tech-0438f6d2?mod=rss_Technology) (The Wall Street Journal, £) AVGO
+- [Microsoft offers 'buyouts' to 60,000 staff including UK workers](https://news.sky.com/story/microsoft-offers-buyouts-to-60000-staff-including-uk-workers-13604076) (Sky News) MSFT
+- [Fortinet Launches FortiGuard Inline AI Security Service to Expand Enterprise AI Protection](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNV3pZSThNT094YTlYSjB1YjhIVG5ORGZXMWp5YjFCR1A0UFhPOU15VE9BRVBheGtlTlNZQUxJTUphOURaWnllMkMyRHI1TTlDYXMtYWlObUViNk41WV9WTVlpOXN3d194TFh2UTR4d0RyOE55WGtDVlc1dkFOMzFLc3UxOG9kU0h0RWhoNjlQdWF1QVhLdkJTX1djaGl4WjdseXJiSVFKeVZYOUpWYlhGQWN3TUZUYjBjYWY5TjhxeXpRUXY1dzkyZQ?oc=5) (citybiz) FTNT
+- [Meta announces $95 billion stock offering to fund AI expansion](https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html) (CNBC) META
+- [Neocloud stocks fall as Elon Musk says more than 200 of them face 'guppy-level death'](https://www.cnbc.com/2026/10/26/neocloud-stocks-today-coreweave-nebius-iren-elon-musk.html) (CNBC) CRWV
 
 
 ## Chips & Hardware
 
-**Andy's Pick: [Qualcomm and Samsung's 2nm foundry evaluation](https://news.google.com/rss/articles/CBMijgFBVV95cUxOQ2dhdjhUdlB6VHhVWGJSX0wyYzFuTEFDNVJiLWdYT3M4NENuNjFDTVFUODEzbTdkWU5wSjJpV1A3cTNKSno5MGpULXdEY2w4Wlp6eXpDLXB4aU4yeWFHNEJVek1iS2lUTzkwSV94QXNEM2J0Sks0RThaRzBSRUpZUWN4Q1ZTZWROOEhjcnR3?oc=5)** (NeoTeo, 15 sources) QCOM
+**Andy's Pick: [NXP Semiconductors stock trades at EUR 209.68 with results due October 27](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbTJldk1hMHNnV0xNc3c0VmVLOXJnZUJNSHd5MXcxRXJ3cFd0QktRdzRDOUJkVGZ3dC1pOS1ab2hiMGFycWY5M0dIQ01KdHhIbVFFYS1wZk9ubC1UdFJOdndLOTJjZ05VXzVRbnUxZkNnTUk3S1lpa1hUdVBoT3hRc3M3TGlYX29zRGJ4eF9HOUI2UkNEM0FSUi1vd1ZrR1dIVkx3T3dtc2IzYXNPdmFKaUZZLVhITDM4NXJZYUNpNmhsUGNORWtQMnZnSHpGZlVCN2c?oc=5)** (ad-hoc-news.de, 27 sources) NXPI
 
-- [Experts question environmental and economic toll of Micron’s imminent chip plant](https://news.google.com/rss/articles/CBMitwFBVV95cUxNU2VnWlc5RXRqYWNydUFkYnVRSmczczI1SXZDQkh4Y2lpbWNleHZ2Tzl4RWtBQ0RfckpBaUU3cVAxQ1Q3OEtETlVjSFhGRDJPNkx6Z0Z5RWtJek5jVFltWnRoNTRSVjRiYlVFVHZMUnFSSTdBNlRMYV9YTzJtaDhfSzdXekE0UWl5TWVvTjN6QU9LRjhyOVhMNGZXMnkxbXVoREZGeEdPX3h5MXR3UXIxUVF3VElvcGM?oc=5) (WAER) MU
-- [Nvidia discusses $2,000-per-GPU annual fee for software that 'runs agents on AI factories'](https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform) (Tom's Hardware) NVDA
-- [SK Hynix Leveraged Funds to Be Delisted in US as AI Rally Cools](https://news.google.com/rss/articles/CBMitAFBVV95cUxNdjFkb2lzQWp0RVhLeW4xek1mdk00blExYWVfYk9EZVZzS05pNWJydkpPaHBmcEJSYjg1SGZ5Ukl1Wk9YbUlFaHpzUXdCcTdGSHg0X0EwSTRJSEFsbGwxZDdVeEg5NUJScXlGSmpKT3FsM3MxN3IzZHg5eV9HWWtCVzJUNVM3YlZkT3NTYnVoamE4NHZtSXBiN1l4c0ZBWXdYNDJuRWNhUUNuMDBDS1ZCQTQ5VU4?oc=5) (Bloomberg, £) MU
-- [Data centers take center stage in Ohio elections](https://news.google.com/rss/articles/CBMirwFBVV95cUxON0p6Z2NnY25mR2t5WC1UUXppTXNIZjB5MGtCMURGSXBXZ3QtUDJwVGZqbDRMYl9JNUFoM0w1ZEVXQmExX2hFcWNySjdvd3NISHg0YjBReXBZdi1la0ZMa2R0Z0FCRVlTVnRNd28zN2s2RDAtckZ4OGttcjY2TW1hcFkxaXVLeGcyMld4dE5nclJlaXA0V3B5V183VkZIQjJfempnam9wU1J1M0ZwalVj?oc=5) (Axios) AAPL
-- [Amazon ends its six-year legal fight with former AWS managers over alleged data center kickbacks](https://news.google.com/rss/articles/CBMixgFBVV95cUxOZU1nOGtkcXl1SW1Xc09SbVR3c25hbk1tQllkQXhkX0pqSEk4RmppRTQxTlBmR1Z6Z0puU24tSlJKcmYyUERXRXlzOEhhZ0VaR1d5VmhjZmVIQVctb2VUZGhOWTBhOS0zV0hrUkJ2QWVEUVphZXV5MWJ4YnRldk1FNDJBT2hERjZhQ3ZBQ1kyNF9lSHRJTVNBVlI0R1hqTGZ1cEdhbjV3WUZtNV9JOUw3VGtpWUQ4X2VDeE1LT2V2elRxcDJscnc?oc=5) (GeekWire) AMZN
+- [IBM Hits 99% Accuracy in Transferring Quantum Information Between Two Chips](https://news.google.com/rss/articles/CBMipAFBVV95cUxPenlBOE1UZmlUS2Z0U2lvNUFzWDI4R2djZDlTTTk5Zk5fLWZzcnRua05XWG9QQjZWUmZZOG1BWVJnVk9SMi1vMEtPaFFiWlFGYmFQZ1NzX0ZVdmZjYnUwR09NSXBmQ2pJSy1RSWJ4bVp5bXh6QW1wdko3TmhadlkyUk1qWUFuYU5Gc2RVOVBmbjdYcHA2RkJZZU5aVEd5WjhwdjMyaA?oc=5) (ScienceAlert) IBM
+- [Which AMD Graphics Card Is Equivalent To The NVIDIA RTX 5070?](https://news.google.com/rss/articles/CBMihgFBVV95cUxPTFBWM0R6d3c3TXhveFJ0Z0tmMTBFenBjaUlwbmFjQ0tkNXdZekZmLU5aZV9nYy1SS3IwMDQtRUNwSXgxekJIa1NGa2EycThDYjBnd3VpRGozZHgxWmdScjNYam5RYnd5QzRkajhUZDVlRTlwOFIxWnFzTE91UkJUc0ZhRUI3dw?oc=5) (bgr.com) NVDA
+- [Lee Jae-yong drives Samsung foundry rebound with 2nm push to challenge TSMC](https://news.google.com/rss/articles/CBMiekFVX3lxTE4wWFZPeHhkM2JyNzJtYlBSY0Q3YlBVUGJSQzlvdVVIRVdUZEtQb2N6bTBoZ05SZFY0NElRUzZpVFAxOGd5bzhWb0Z5U1BuLTZTeVNTOEpiT014UXFjcXZoaTNocXE4OFVUaU0yVGd4dW9pb2ZJcnZpQWRn0gGOAUFVX3lxTE1VZExQQk83ZlI4c3liX2hLaGtYdGI3d2VreHM2YzBPZjRFV0hQbDJqcy1DRnRvd2cxUWhtWlg5UFRjQUp2eUFTa0o2NWg3WlpIMWxCcEhWajRrUVpLQS0yWlVQUS1oTThHaEt6eUZ4ZWlMWTViUFlHNjUyWDZhOV85dlo5Ui1Mb29JSjQ0WUE?oc=5) (Chosunbiz) TSM
+- [Nvidia, Chipmakers Face Higher Costs? TSMC Reportedly Plans Up To 20% Price Hike For Advanced Chip Packaging](https://news.google.com/rss/articles/CBMi_gFBVV95cUxORl9KV01BZUNPZnhEZFNrS1ZwX093WVhGSGN5QzdEWDBOSmdxOHk2UWZ6QWJxbS05Y244SE11a251MllGcUM0NXZtYzh1V09pUkVpRk9BTGRqRlI1aHRXMlUzSG9xam50MHo5cTZiV1M1RzZ0U2pPaDNwdkxDZGYtT0hTTnNsbGRBSmFsZEpyNWpmUlVWYTdBNEFUWG1KWEtna1lpdTJ4OURESTROTUpYSnE3UElLV2dJNUplVUN6WmY1Zmo1WWpnckJaU2ZqLWJRVThQbUZFeEY4RUk4LThqa1VEeG5QZFdydXZqay14OUQ5VWhEdmRoTWhoclluQQ?oc=5) (Stocktwits) NVDA, TSM
+- [Amazon presents water details to county board; Microsoft postpones](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUm9XMWNsNHo3X0ltMEVpU0hkbmRaVkh0bHhJTkpSTFppMmx5aURNTUVyNHlMLUJRbmU2d21HVDZxOFViTXBDLXNMWDM5dm9nRDBzcDUwTHZtUlAtVVE1ZUhZTDFIM2czellTSzQ5UTJfQi13TUZkejZSZFhvc1JlcUV6MUxqQVVIeUVlQy00b1F0VWJIOGV1d0k3VHljMG1TNzRQdFFVWWJQaVdpLXAyemozSmpGQWhmTWtSQVdoVERrNldXMEdkemdhMjJqNVNmWXh4WmFSbw?oc=5) (South Bend Tribune) AMZN, MSFT
 
 
 ## Regulation & Legal
 
-**Andy's Pick: [Arm Comments on Jury Decision in Qualcomm Trial](https://news.google.com/rss/articles/CBMifEFVX3lxTE0ydDd0ZFJyQkJhcUVyMklES29mU3ZkeEZ5TmtnZl9zYnBOWDRFMHZhdldacW53bUdIZ0V6c25jZHBfT1QzdDZvNW9kSndhUlI0dW9QVE1INTJDRTlFMGVsUkIteVllQ1lub1l2aDJlWHBhY0lfenJ2dXd2MVg?oc=5)** (EE Times, 2 sources) ARM, QCOM
+**Andy's Pick: [BT, EE, TalkTalk and Vodafone the worst for broadband complaints](https://news.google.com/rss/articles/CBMiwgFBVV95cUxNZnRoUUxqSFZ4T1czTFpoS2p1cFM2SGpHNkRJMkNJWVpMTmNtQ2x0Z09HR2J4X3lxRWJITk5KRXQwZ3FqWDhBak11YlJzYkwycnNzb3NkMHJ3dEpFZDdKUFR5cE1Nc3E4QlhTNHlRTnZxQlB0dFVFOE16TXFJYThIam84Q29ybWVtc0xvNGtDM1ZCZ0VEbmFYYmZTVVBHRzk4bllTYnRZQ2hzRi1FR05xSi1xTlJ1OU5uaTl3Zm1LcWZFdw?oc=5)** (The Times, £, 6 sources) VOD
+*So what: Vodafone was one of four major UK broadband providers that drew the largest share of customer complaints in the second quarter of 2026, putting pressure on its customer service reputation.*
 
-- [Costco’s New Viral Food Court Dessert Tastes Like My All-Time Favorite Apple Pie](https://news.google.com/rss/articles/CBMic0FVX3lxTE9iVTBOd0RlT2E0bS1RbEoxSHRpaHlDVHlNT1RNZnlIUERhUm5LT0xnWXM1ek1STjNrZmw3Mzkyc2xZVTJ3ZldIZlQ1WTZBMDN6YlFnenU4d1lKQzd3dDY4NlBKZXF4SzhKSDNOeS1mcWFkVEk?oc=5) (The Kitchn) AAPL
-- [Tesla asks judge to void Arkansas commission’s request for documents on its North Little Rock site](https://news.google.com/rss/articles/CBMiqgFBVV95cUxONTJpSGFPMmdhMk5VbVhsVFZnN3EtOUdPS2tVOHVUM1BHNHhlU09XYWdCV2ZsM2Zkd0d2YVBIZ1kwMWtDNHRsQ2ZCay0tY05xemVhUnQxbll1SlZzMkxYVEwycUg5R2ptNlBkV3JSc1U0aVA0LXdoRmVTUzkyUlNreUNlVmF1bUVmVUVnX3A0eUwwVW9HaGlldGxJaTRBeEdBT3hMN2VmRnYzUQ?oc=5) (The Arkansas Democrat-Gazette) TSLA
-- [‘This is a lethal threat’: Indigenous groups fear Bolsonaro’s hold on voters in Brazil’s Amazon towns](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRjliVEJIZzJRLVF1Z3lOaTAyWXl2UXFTZVNXdmVPN0lHclBrU3VCSFV3dU42T055VXRYeHd5Ujk5QVFLdDUxOVBXcmZmclg4bjJuZjFxTUZJZFQzNkpvMEh1T0ppTndQd2p0VU90cGNWaU1zREsxdkhEU05FMkQ3Uk5KMDJGOHYzdEpxczhmTURqUXZoeVlscnVuRm80bVRROWRLYlhob20?oc=5) (The Guardian) AMZN
-- [Airbnb hosts can't ask guests to do 'chores' anymore in rule change](https://news.sky.com/story/airbnb-hosts-can-no-longer-ask-guests-to-do-dishes-or-strip-bed-under-new-rules-13602685) (Sky News) ABNB
+- [AppLovin Corporation (APP) Class Action Lawsuit: Investors](https://news.google.com/rss/articles/CBMimgJBVV95cUxQcjFjUm9vTTZqQzBSWXMtRUJlZ0RGZUxVekE4eVlwOU44T3VBbHRRVjNEQ05SandFSDVSNWlON3Y2MXh0UXBKWXl1a3BmbUlQNGtNZ3pRZl80UjNHNzBzMlpTQzNpTlpXSGhzSWpmY2lTWFJtNDhsSTBlMVJRZi13Sm1rQ005cjBvRUJrZWhrN0pvdjU1cnJmX1pzRWkydlVZZk9pRzdxVVlueHBQSHJyTlF3eVdCTTRiTVhpSW1uMTJMd1hxMW5reThxeGpzSU9PX2Y3R3d4cGRYcUlsMjF2OHh0ZHVzck53ZlM1d2o4dEpnenBrS1J1Y0ZfV185bnZzNEFhaWhydFVzb1VMS1NOUEhIc09iWExJRWc?oc=5) (GlobeNewswire) APP
+- [Spotify Streaming Fraud Lawsuit That Claimed Drake Gets Billions of Fake Plays Dismissed by Judge](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPX2V3UVEzMFh2Y0dmc1gxMWsyT05pRWJqVHVUbF9nY3lxMkdtVzVjdHltaFJHZHNkTHZyTlpHOWFwVlpSbDBYWHl4WjR6SXZYMEVuLWFXb29iWFhweG5CMFdmams5R3JsTU5HMnlyMnZvZFVJdmU1Nnk0VzllQURXN2c3b0hHTGVtbVpJ?oc=5) (Billboard) SPOT
+- [Uber boda riders win first victory in account deactivation case](https://news.google.com/rss/articles/CBMingFBVV95cUxPSjJkYnRTeU82LUMzUlVxdnpaTXZJZTJTdUNncDNEUEJ4OGZuSHQ2cWRDZ1ZYblNFZElZRmFxMzgwMXRxUDRNTURiNFkwMlpqX1B1NXI0Wk80MS0wblByZFFaRnVfYVFyQ28zaHZmWWI5cHNlV2NmenBnYWpSWktPeWhiV3RQcDI2dFVoZnZYQlhtTzM5MzJnSlduTGZBUQ?oc=5) (Business Daily) UBER
+- [Robinhood Ventures Fund I Invests $10 Million In Cognition](https://news.google.com/rss/articles/CBMigwFBVV95cUxQR1R4OW5OdGFJdGIxaFg5LUhOTUNocGJ1N2hVZGdzeXdqRGJfWUhrUWVmczJiTWU5eTJEX3BNcFI5eEVCVVBCU3BURFk4emNmLVc2WE9sSVE2OHgtMFNGZ0gycF8zYXRGSjY2SUtmcVdtWFlwWF82UUVnR29BYlFtNlJ4SQ?oc=5) (Pulse 2.0) HOOD
 
 
 ## Companies & Markets
 
-**Andy's Pick: [Hedge fund returns worsen this week as tech selloff deepens](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNS0h2UUh0dUpTb1VWWGJYWm1KOXM4eXZQc1dyTlJMSWNnQ2tOVS1JRmdTMmJMaGpJSEo1c05kLUpXamZVTWVPWUppREI5OWFPUmZVV3hnektWdlRmWXVHNHpkQldJUk1PVEN0QUQ5NE0zczdSc0RMRGhOV28yYkZqeHFEMTFXUElRTDVCMXUybHRGSFhXcUFBS0hoS3V1NWVSREJGa2FCT1ludVU?oc=5)** (Reuters, 2 sources)
+**Andy's Pick: [Apple Music New Logo: 1 Big Change, No Red (2026)](https://news.google.com/rss/articles/CBMihAFBVV95cUxNWDJRdzdtRlAxcEhfM19RTFQ1a0F6bHBHSTNNTVMxaUV1X3RDZVc4ZHB6b1lXS2FJN1NNVUFBTlVRVVA4VWJTRDVCTkw5azN4ME5KMzRYUmU3ZS1sTExxcVhxQW5wSzU1eXdNNmo2cE1KV2gwNGJWMTdFQngwMmNpcXd1T3c?oc=5)** (tech-insider.org, 8 sources) AAPL
 
-- [Brian Chesky’s new blueprint for Airbnb — and Silicon Valley](https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ01hNWkxcnJIMFIzaDJjaTFtU2xsQ0F5eU4xSmlBVHRJUVNMS280TGlMRGoxcFVidXoyUUhDN3E4eDFMR21ZVldlbU1yZ0J6elh3SXZOcVRlSERGdTRTNG1zaW0zbFkxajRnUWJnakFKZWRHc2VpbFFGbndQVEhNTVZ3Q1dScjNPWmZ4V1FfNnBaS3R6aTNieHVhX3hHaFAzSXc?oc=5) (Semafor) ABNB
-- [Nvidia, Meta and Apple Unveil New Open Models The Morning Download for Oct. 16](https://news.google.com/rss/articles/CBMijgFBVV95cUxNRzl4Qm1LOUgzSHRaWEdvRDhKYkRaemRoOV9GWWVuU0N1THhvaXFnYnhQOWRWaGZBQlBUN3dicGJmWWVuZW9BS3BnLVlGYks2R3I1b1ZuVW9ObVhXX3I1cGViWnJyTnIwd3pfV3BXQVhWZy15dkpDTlFUSVg1YUtjR28wRkFrRHNpT2ktMnpR?oc=5) (The Wall Street Journal, £) AAPL, META, NVDA
-- [Man allegedly attacked fellow Uber passenger for taking up too much space in shared ride](https://news.google.com/rss/articles/CBMitwFBVV95cUxPS19CX2N3MXk3N2pkVlVianZ1LTRzN19Fd01zUVhfQlllUS1yOEZKbmVpTjlHem1lOVNlaVM1T1FmMW93TjM4a3NOZ3RHNEZGclBHNHVRZ1kwRnBWYTFvSDJGdzNvcW13dGJsTGUwdDlpRXNWNmViSDJFby0xNTJwMXR5NENwQ1BkRFAyWmhxSHNJa3haQUdPTDV1b0lQZWg0OFpZSWtQNWRYcUNORmNCbGoycnlLaFXSAcsBQVVfeXFMUG42dDRhRmU2bC15b2EzeDRHQkV3al9aeHNCWFMtbzRDeFpKc0twa2RMc2tBOFdrVEVmYW1IQ3VWWUVBaldxdDI5bDRDdF8wY3RnX1p0cE9lU2NDaElMLUtBZks1SVpRbVQ2Nzc0ci0zczZWT0h4TW4wdUsxdFlJaE9jME5oNVhhNjZSY3lsR1RaUFNTNjZxdlk1eGZCQkNCU2RaM195MFlXbUp4MklZMnpaOXkxY05ubDB0ZFRUX09nN2lVZjJTRklNcm8?oc=5) (WWNY) UBER
-- [Palantir CEO Alex Karp criticizes Europe’s AI stance](https://news.google.com/rss/articles/CBMie0FVX3lxTE5rdk9zOFdUSjZlaGo3dThZekRzR2EyVTl5ZGFVZy1XNVpZSS1IakVtVUZLdkx6MlhmWTdQX0hiT1BCb3Z0VEdjNy13emhhMFQtYVExLW11RkRseEd6T2VwZlQxb0Z1bnhjZHNsNjRqWjkzM01jSHpEV2lBVQ?oc=5) (Crypto Briefing) PLTR
-- [Through smoke and along rivers, Amazon residents make the journey to vote](https://news.google.com/rss/articles/CBMiygFBVV95cUxOTDJiY0lKQ3JsbWVidVF6MWM5LUtHdnlEUEhzVHdfb1g3eHZlbUlQUjRxaXo2bURFN0RpMGlBS05HRG5RVlB4MXZ6SkNKdTZnVEpqRzBPSHlQQkdDLTZicUcxMENud3BiNWcwMzI2alNYX0RVT21VbmZTZzZIbG1FTjdkLTR0NEJNQktNbU0tcFBueTlfekdBQ3ppbnJtWW9kb0Ftb1VCVG9rYlpuNC15aW1KS3VLaWh0cnFPTTJhUVRzZ2xMWHhUbW9R?oc=5) (AP) AMZN
+- [Environmentalists celebrate Lula's reelection in Brazil: 'The Amazon can breathe a sigh of relief'](https://news.google.com/rss/articles/CBMiqAJBVV95cUxQQ2g2NVdsOGM3ajNRb3BKQzdRZEFKQV9vUS0zb1VGNndMYTc2cG9iWjI0enhNVTdzMml4bnprNDJZUmMyU1hRRmh6aEd4RVBPWUpvZDVLbGV3bUVJeUxsVXpmY3cwS1d3YUstc29Nb3hOU3lPQmFmMGh4NzByNkRNTnVMNjU1eGFxcDRPeG5ySVNiS0twZXRwbW03VnBEaXYtaWVETzBFXzdCbUFOYlRzRHlHdUc4RDI5Mml0RC1rUVZYUk81UkZSTHZiQm9ZU1VlNTV3YjJFczBTU2tNNjhKZldNVkdOSWx4Z1ZtVWplOXQ4YWduSWRrdW1rV0lvWWlOTjhlUVE2MHRNNUVyNDcwUnhySUJGTno0c3ItVHNXLXdSZ2tRTjBTVA?oc=5) (Bozeman Daily Chronicle) AMZN
+- [Keanu Reeves to star in Netflix revival of 'Die Hard'-inspired action movie first pitched in 1993](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQalg5NHZ0amk1MklYOFFpU2FPOXdoZG00REJQNk5XZTJyajE3Umh5VTU4UFZqTDVuVTdRUzRpMzVRVmt4OTJwUDNrem5ZbGtqOUx1aHNNdjBRSFdfS3ZKMmw4dVJFaFBlMHhEYzFQS3FZa245bU8wOVRvNDVienRjMkZPekRaOWsxRWhVQ1diSnZ6ZTZCeVFLWFlOdDlBM0laVmRXSE1ldTUzNThkTUt3QVFoRDc0X3BQOUc4aHhiOFhrMFZORW9NdjZsMTY4NDh4ZUk0?oc=5) (Page Six) NFLX
+- [Nasdaq Strengthens Asia-Pacific Leadership Team](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPN2lTZmUxd2hLcWYzMGZBQ2lubUVGSzdfNXJQNkZRTm5TN2FZc0Y3MWU1dS0zN3N6ZkFaSzBpWUt5SmlwRGFlcENoVEE2aFVBdy13OGR4TDNpYldHb0k4U1FlS0lWMUFFTi16VUxZN1pDZG9adWxZWXNHb1JmOU1kY3gzMzJ1Q2xCRjRCLUFQbjlNWC1jeVdhQTFEclZlTjBKYkxpS0x3MDRORXM3TGpKWnl0QzhYNHlxUzdHdnFBb1k4VlJzSzA4ZDN2Q01SVk9mdzViNFdSOE9SSkg2QzlGMlluRzVOd1JLcWpkM0Q1eTI?oc=5) (lincolnjournal.com) WDAY
+- [Foundation Links Passport Phishing Emails to Compromised Cloudflare API Keys](https://news.google.com/rss/articles/CBMisgFBVV95cUxPN0ljdXhDYUZvN1R6NEJwS2F0Rmh5QXBacHpXMVpGVzJDd2R2bm8yUE9odmNNNEVhWVFaaGlsQlVpRGVjVjNmeWxDY1UzUExISlZ4UEdyOHJBMlo4QS1tSGVpSG1BM2lpLUVUbVJJdThVMGs2eVRGd0wxcWdtUVV5OVl5Q2NDZE11VjdPZllES2p6YW9oaEVOYkxFWEw2dm1RYXlQWVFWd0s5aDlSTW1Ybk9B?oc=5) (The Defiant) NET
+- [Building on SAP Expertise: S4A Achieves SAP Partner Status](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOFVpazhvSFE4c1hjY1JiV1NXSDRUV1UxWnBRVTRjZ2ZkbEVheHppOTd4V1BHV1BFVTBvTEVxUzdRX2swZ2NkWmlEOFpGUzV3V0tUckNfLXlOaGtjMDg2ZzhQZzJlY21rbDltSUhnajBuNUdTOHV6U1BXWkJ6UXdJSVdhRXlxT0tmS0s3R3ZQelRWLXU5c25rU0Mxb1VaVTFuSTZnT1BCQXo1ZzZHQTNlMmpLS3F3NTNnY3BCN1pCUG10ZDRzMHM5WQ?oc=5) (GlobeNewswire) SAP
 
 
 ## Most covered stocks
 
-- **AMZN** [Amazon](https://alltechstocks.com/stocks/amzn.html): 128 outlets, 116 stories
-- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 152 outlets, 84 stories
-- **NFLX** [Netflix](https://alltechstocks.com/stocks/nflx.html): 111 outlets, 119 stories
-- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 79 outlets, 82 stories
-- **MSFT** [Microsoft](https://alltechstocks.com/stocks/msft.html): 91 outlets, 66 stories
+- **AMZN** [Amazon](https://alltechstocks.com/stocks/amzn.html): 80 outlets, 51 stories
+- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 118 outlets, 41 stories
+- **MSFT** [Microsoft](https://alltechstocks.com/stocks/msft.html): 129 outlets, 31 stories
+- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 71 outlets, 30 stories
+- **TSLA** [Tesla](https://alltechstocks.com/stocks/tsla.html): 83 outlets, 36 stories
 
 *Ranked by news coverage, not by merit. Not a buy list.*
 
 
 ## New US filings
 
-- **WDAY** Workday: [Major agreement (8-K)](https://www.sec.gov/Archives/edgar/data/1327811/000110465926118496/0001104659-26-118496-index.htm)
-- **MRVL** Marvell: [Major agreement (8-K)](https://www.sec.gov/Archives/edgar/data/1835632/000119312526430424/0001193125-26-430424-index.htm)
-- **TXN** Texas Instruments: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/97476/000009747626000169/0000097476-26-000169-index.htm)
+- **CDNS** Cadence: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/813672/000081367226000116/0000813672-26-000116-index.htm)
 
 
 *Not financial advice. All Tech Stocks is a news index for research. Nothing here is financial advice or a recommendation to buy, sell or hold any investment. Rankings show how much news coverage a company is getting, not whether its shares are a good investment. Check the original sources and consider regulated advice before you invest.*
