@@ -1,10 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 20:53 UK time
-  feeds: 45/45 worked, 385 new items (123 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 21:53 UK time
+  feeds: 45/45 worked, 252 new items (101 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 9 new filings
-  stories: 1863 grouped, 1344 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which names Oracle's AI World keynote and promises an overview, with no detail on what was announced. "
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, and the phrase "what the $2 decided" hints at a jury verdict in Arm\'s dispute with Qualcomm, but the det'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, which points to new Airbnb rules limiting checkout chores for guests in Maryland, though the details of '
-  site: 1044 stories live, 6 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
-  trends: 393 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 6 written, 3 rejected, 0 failed calls
+  stories: 1869 grouped, 1350 name a watched stock or pass the market rules
+  AI line rejected (unfinished sentence): 'The coverage gives only a headline, with no details of what Oracle announced at its AI World keynote, so I cannot say anything specific abou'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline, which describes Micron's stock finding its footing while the company pushes back against a Chinese memor"
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline names a jury verdict in the Arm and Qualcomm dispute, with the damages figure of $2 at its centre, but the coverage provided gi'
+  site: 1058 stories live, 8 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
+  trends: 394 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 8 written, 3 rejected, 0 failed calls
