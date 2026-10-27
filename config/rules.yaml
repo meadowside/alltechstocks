@@ -243,3 +243,8 @@ email:
   late_window_hours: 4        # if runs are late, still build it up to 10am
   weekdays_only: true
   filings_max: 8              # "New filings" in the email: results, deals and big events only
+  # Section order in the email only. The sections list above still sets the site order and
+  # breaks keyword ties, so changing this never moves a story to a different section.
+  order: [companies, deals, regulation, ai, chips, results]
+  # Sections whose stories get no AI "So what" line (headline coverage rarely carries the numbers).
+  no_so_what: [results]

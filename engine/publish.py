@@ -79,7 +79,12 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
     Each story is written once: the line is saved against all its items and reused from then on."""
     skipped = set()
     ai = cfg.rules.get("ai_lines", {})
+    no_line = set(cfg.rules.get("email", {}).get("no_so_what", []))
     for s in everything:
+        if s.section in no_line:
+            s.so_what = ""
+            skipped.add(id(s))
+            continue
         saved = db.why_line(s.core_ids or s.item_ids, ai.get("valid_from")) or ""
         if saved and saved != "-" and llm.NON_ANSWER.search(saved):
             saved = "-"  # an older "nothing here" line written as a sentence
@@ -319,7 +324,10 @@ def select_email(stories: list[Story], db: DB, cfg: Config, now: datetime) -> di
 
     global_count = 0
     sections = []
-    for sec in cfg.sections:
+    order = cfg.rules.get("email", {}).get("order") or [sec["id"] for sec in cfg.sections]
+    by_id = {sec["id"]: sec for sec in cfg.sections}
+    email_sections = [by_id[i] for i in order if i in by_id] + [sec for sec in cfg.sections if sec["id"] not in order]
+    for sec in email_sections:
         picked = []
         for s in candidates:
             if s is top or s.section != sec["id"]:
