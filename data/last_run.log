@@ -1,14 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 15:53 UK time
-  feeds: 45/45 worked, 293 new items (106 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 16:43 UK time
+  feeds: 45/45 worked, 237 new items (78 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1816 grouped, 1329 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives me only the headline and no detail on the data involved, who challenged it, or what Rightmove said in response. I don't h"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Fortinet has reported that its cloud security products detected around 2.3 billion attacks over a set period, though the headline gives no b'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage describes Anthropic flagging disruptions to TSMC's operations as a risk to its business, though the specific nature and timing "
-  AI line rejected (unfinished sentence): 'The headline points to Micron pushing back against Chinese memory makers, but the coverage gives no specifics on what that pushback involves'
-  AI line rejected (reads like advice or a prediction: share price): 'NXP has set October 27 as the date for its results announcement. The coverage gives no detail on what the figures will show or what the comp'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Airbnb's new cleaning rules have sparked online arguments between hosts and guests. It does"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline, which suggests the Netherlands' tech sector has held up better than the rest of Europe, with ASML cited "
-  site: 1025 stories live, 7 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
-  trends: 385 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 7 written, 7 rejected, 0 failed calls
+  stories: 1836 grouped, 1348 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'BT, EE, TalkTalk and Vodafone have been named as the worst performers for broadband complaints, a ranking that puts Vodafone among the provi'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Airbnb is to introduce checkout limits for bookings from 20 November 2026. No detail is giv'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, which says the Netherlands is bucking a wider European tech slowdown thanks to ASML. Nothing in the mate'
+  site: 1051 stories live, 9 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: NVDA
+  trends: 386 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 9 written, 3 rejected, 0 failed calls
