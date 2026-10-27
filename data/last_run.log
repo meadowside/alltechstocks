@@ -1,12 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 10:40 UK time
-  feeds: 45/45 worked, 208 new items (62 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 1723 grouped, 1277 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "I don't have enough detail in the coverage provided to describe what Rightmove withdrew, which data set was involved, or what the expert's c"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which names a "new partner operating model" built around Cisco IQ, a platform meant to turn data-drive'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Micron's stock has steadied while the company pushes back against a threat from Chinese mem"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which names a class action lawsuit brought on behalf of investors against AppLovin. It does not set ou'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, which says Apple Music has a new logo with one major change and no red. Without details of the new desig'
-  site: 972 stories live, 17 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
-  trends: 372 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 17 written, 5 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 27 Oct 11:53 UK time
+  feeds: 45/45 worked, 263 new items (84 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 1 new filings
+  stories: 1735 grouped, 1274 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Anthropic has named disruptions to TSMC's operations as a risk. It does not say what those "
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a title, "The New Partner Operating Model: Turning Intelligence into Action with Cisco IQ", with no detail on what C'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competitors, so I can't say"
+  site: 974 stories live, 16 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
+  trends: 374 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 16 written, 3 rejected, 0 failed calls
