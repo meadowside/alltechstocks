@@ -1,11 +1,9 @@
-All Tech Stocks run: auto at Tue 27 Oct 18:53 UK time
-  feeds: 21/45 worked, 12 new items (0 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 19:53 UK time
+  feeds: 45/45 worked, 240 new items (74 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1830 grouped, 1332 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Rightmove dropped data it was challenged on as "clearly misleading" after an expert raised '
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline figure: Fortinet is reported to have recorded 2.3 billion cloud security attacks. It does not describe th'
-  AI line rejected (reads like advice or a prediction: opportunity): "Texas Instruments has said it expects humanoid robots to carry up to $1,000 of chip content each, a figure that puts the company's analog an"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competition. Without specif'
-  site: 1040 stories live, 5 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
-  trends: 388 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 5 written, 4 rejected, 0 failed calls
+  stories: 1833 grouped, 1323 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, a figure of 2.3 billion attacks, and a reference to cloud security threats. It does not say what period '
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline and no details of the verdict, the damages, the parties' claims or what either company has said. I can't "
+  site: 1026 stories live, 7 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
+  trends: 389 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 7 written, 2 rejected, 0 failed calls
