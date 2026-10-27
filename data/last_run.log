@@ -1,7 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 09:30 UK time
-  feeds: 45/45 worked, 46 new items (21 excluded by rules, 9 Google queries resting this hour)
-  filings: 69/73 companies checked, 0 new filings
-  stories: 1686 grouped, 1253 name a watched stock or pass the market rules
-  site: 961 stories live, 25 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
-  trends: 370 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 25 written, 0 rejected, 0 failed calls
+All Tech Stocks run: email at Tue 27 Oct 09:40 UK time
+  feeds: 45/45 worked, 45 new items (20 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 0 new filings
+  stories: 1691 grouped, 1254 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: investing): 'Computacenter has raised its profit forecast, pointing to strong demand as businesses build out data centre capacity. The IT services and re'
+  site: 963 stories live, 25 new AI lines. Top: Meta announces $95 billion stock offering to fund AI expansion. Most covered stock: AMZN
+  trends: 369 stock-days and 47 section-days refreshed, 8 days of history
+  email: 38 stories, 5 new AI lines, opening note: yes
+  notify: skipped (no Telegram settings)
+  AI lines: 30 written, 1 rejected, 0 failed calls
