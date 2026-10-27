@@ -1,8 +1,11 @@
-All Tech Stocks run: auto at Tue 27 Oct 17:53 UK time
-  feeds: 45/45 worked, 312 new items (93 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 18:53 UK time
+  feeds: 21/45 worked, 12 new items (0 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1844 grouped, 1343 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "I don't have enough detail in the coverage to say anything about what the data showed, which expert raised the challenge, or what Rightmove "
-  site: 1049 stories live, 9 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
-  trends: 387 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 9 written, 1 rejected, 0 failed calls
+  stories: 1830 grouped, 1332 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Rightmove dropped data it was challenged on as "clearly misleading" after an expert raised '
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline figure: Fortinet is reported to have recorded 2.3 billion cloud security attacks. It does not describe th'
+  AI line rejected (reads like advice or a prediction: opportunity): "Texas Instruments has said it expects humanoid robots to carry up to $1,000 of chip content each, a figure that puts the company's analog an"
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competition. Without specif'
+  site: 1040 stories live, 5 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
+  trends: 388 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 5 written, 4 rejected, 0 failed calls
