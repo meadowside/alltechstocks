@@ -2,7 +2,7 @@
 
 US and UK tech stock news, ranked by who's covering it. A research source, never advice.
 
-Built on the All UK Tech engine. It runs every hour on GitHub Actions, reads about 30 news feeds plus a
+Built on the All UK Tech engine. It runs every hour on GitHub Actions, reads about 35 news feeds plus a
 Google News search for every stock on the watchlist, groups articles about the same event into stories,
 tags each story with the stocks it names and ranks stories and stocks by how many outlets cover them.
 It also pulls US filings from SEC EDGAR. On weekday mornings it builds the email for Substack.
