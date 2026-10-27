@@ -1,13 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 12:53 UK time
-  feeds: 45/45 worked, 315 new items (107 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 27 Oct 13:54 UK time
+  feeds: 45/45 worked, 366 new items (118 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1756 grouped, 1278 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Anthropic has flagged disruptions to TSMC's operations as a risk. It does not say what thos"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Fortinet's coverage points to a reported figure of 2.3 billion cloud security attacks, though the headline gives no period, method or breakd"
-  AI line rejected (unfinished sentence): 'The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competition. Without specif'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline and a single line, with no details on what the new cleaning rules actually require, when they take effe'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which names a class action lawsuit brought on behalf of AppLovin investors, but no details of the alle'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, with no figures from the trading update, no name for the incoming chief executive and no detail on what '
-  site: 979 stories live, 13 new AI lines. Top: PayPal Raises Guidance as Turnaround Strategy Shows Promise. Most covered stock: NVDA
-  trends: 379 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 13 written, 6 rejected, 0 failed calls
+  stories: 1785 grouped, 1296 name a watched stock or pass the market rules
+  AI line rejected (unfinished sentence): 'The coverage gives only a headline and no detail on the data involved, who challenged it, or what the company has said about the change. Wit'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline about Micron pushing back on a Chinese memory threat, with no detail on what Micron actually did, which C'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline: a class action lawsuit brought by investors against AppLovin Corporation. It does not say what the suit '
+  site: 1000 stories live, 15 new AI lines. Top: PayPal Raises Guidance as Turnaround Strategy Shows Promise. Most covered stock: AAPL
+  trends: 381 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 15 written, 3 rejected, 0 failed calls
