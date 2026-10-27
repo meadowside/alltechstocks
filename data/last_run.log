@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Tue 27 Oct 19:53 UK time
-  feeds: 45/45 worked, 240 new items (74 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 1833 grouped, 1323 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, a figure of 2.3 billion attacks, and a reference to cloud security threats. It does not say what period '
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline and no details of the verdict, the damages, the parties' claims or what either company has said. I can't "
-  site: 1026 stories live, 7 new AI lines. Top: Anduril, Qualcomm launch BlueChip, a new kind of US-made laptop. Most covered stock: AAPL
-  trends: 389 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 7 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 27 Oct 20:53 UK time
+  feeds: 45/45 worked, 385 new items (123 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 9 new filings
+  stories: 1863 grouped, 1344 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which names Oracle's AI World keynote and promises an overview, with no detail on what was announced. "
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, and the phrase "what the $2 decided" hints at a jury verdict in Arm\'s dispute with Qualcomm, but the det'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, which points to new Airbnb rules limiting checkout chores for guests in Maryland, though the details of '
+  site: 1044 stories live, 6 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
+  trends: 393 stock-days and 47 section-days refreshed, 8 days of history
+  AI lines: 6 written, 3 rejected, 0 failed calls
