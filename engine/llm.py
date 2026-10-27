@@ -46,7 +46,7 @@ Companies tagged: {companies}
 What the coverage says:
 {snippets}
 
-Write THREE or FOUR short sentences, 90 words or fewer in total, as one paragraph, saying what this means
+Write THREE or FOUR short sentences, 80 words or fewer in total, as one paragraph, saying what this means
 for the company's business. Cover what happened, then the effect on its customers, products, costs, rivals,
 rules or plans, and any wider context a reader needs (a rival's move, a regulator, a past deal).
 Vary the sentence lengths. Plain British English. No hype.
@@ -55,7 +55,9 @@ Strict rules:
 - Never mention the share price, valuation, returns or what the shares might do.
 - Never predict. Describe what has happened or what the company has said, and nothing more.
 - No dashes, no semicolons. Don't repeat the headline. Don't start with "This".
-- Never mention the coverage, the sources or the article. Talk about the story.
+- Never mention the coverage, the headline, the sources or the article. Talk about the story.
+- Never pad. Don't say what isn't known, isn't clear or isn't described. Every sentence must add a fact
+  or a consequence. If there's only enough for two solid sentences, write two.
 If the coverage gives too little to say anything useful, reply with the single word NONE.
 Reply with the paragraph only."""
 
@@ -94,7 +96,7 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
         STATS["failed"] += 1
         print(f"  AI call failed: {e}")
         return None
-    text = clean_line(raw)
+    text = drop_padding(clean_line(raw))
     if text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
         return ""  # nothing useful to say: no line, not an error
     reason = reject_reason(text)
@@ -288,6 +290,23 @@ def fallback_titles(leads: list[tuple[str, int]]) -> list[str]:
     return titles[:3]
 
 
+# Sentences that talk about the source material or what isn't known instead of the story.
+PADDING = re.compile(r"\b(the|its|this) (coverage|headline|article|report|information given|details available)\b|"
+                     r"\b(does not|doesn't|do not|don't) (say|describe|detail|give|mention|specify)|"
+                     r"\b(is|are|remains?|it's) (not yet |still )?(unclear|not clear)|"
+                     r"\bdirect effect\b|\bno detail\b", re.I)
+
+
+def drop_padding(text: str) -> str:
+    """Remove sentences that pad the line with what the coverage doesn't say. If that leaves fewer
+    than two sentences of a longer line, the line is kept as it was and the checks decide."""
+    parts = re.split(r"(?<=[.!?])\s+", text.strip())
+    if len(parts) < 2:
+        return text
+    kept = [p for p in parts if not PADDING.search(p)]
+    return " ".join(kept) if len(kept) >= 2 else text
+
+
 def clean_line(raw: str) -> str:
     """Keep the first paragraph only. The model sometimes adds a note to itself after the sentence."""
     first = next((p for p in raw.strip().split("\n") if p.strip()), "")
@@ -304,7 +323,7 @@ def reject_reason(text: str) -> str | None:
     if not text:
         return "empty"
     words = len(text.split())
-    if words > 105:
+    if words > 120:
         return f"{words} words"
     sentences = len(re.findall(r"[.!?](?:\s|$)", text))
     if sentences > 5:
