@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Wed 28 Oct 04:53 UK time
-  feeds: 45/45 worked, 134 new items (40 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 28 Oct 05:53 UK time
+  feeds: 45/45 worked, 159 new items (33 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1929 grouped, 1384 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives no concrete details of what Micron has actually done to push back against Chinese memory competition, such as a specific '
-  site: 1084 stories live, 4 new AI lines. Top: Oracle AI World keynote: Here's what you need to know. Most covered stock: AAPL
-  trends: 431 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 4 written, 1 rejected, 0 failed calls
+  stories: 1945 grouped, 1384 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives no concrete detail on what Micron actually did to push back against Chinese memory makers, so there is little to report b'
+  site: 1076 stories live, 3 new AI lines. Top: Micron widens Seoul hiring push as bonus gap with Samsung, SK hynix grows. Most covered stock: AAPL
+  trends: 434 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
