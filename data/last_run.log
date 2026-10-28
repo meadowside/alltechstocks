@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Tue 27 Oct 23:53 UK time
-  feeds: 45/45 worked, 207 new items (58 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 1876 grouped, 1351 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, with no detail on what Micron actually did to push back against Chinese memory competitors. Without spec'
-  site: 1060 stories live, 5 new AI lines. Top: Oracle AI World keynote: Here's what you need to know. Most covered stock: AAPL
-  trends: 396 stock-days and 47 section-days refreshed, 8 days of history
-  AI lines: 5 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 00:53 UK time
+  feeds: 45/45 worked, 169 new items (48 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 1 new filings
+  stories: 1899 grouped, 1366 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Texas Instruments has reported growth for its third quarter, though the coverage gives no figures for revenue or profit. The analogue chipma'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competitors, so I can't des"
+  site: 1074 stories live, 5 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
+  trends: 402 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 5 written, 2 rejected, 0 failed calls
