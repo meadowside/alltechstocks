@@ -50,7 +50,11 @@ def _with_why(stories: list[Story], cfg: Config) -> None:
     seen: Counter = Counter()
     for overall, s in enumerate(stories, start=1):
         seen[s.section] += 1
-        s.why = why_template(s, seen[s.section], overall, cfg)
+        bigger = None
+        if overall == 1:
+            more = [o for o in stories[1:] if o.source_count > s.source_count]
+            bigger = max(more, key=lambda o: o.source_count) if more else None
+        s.why = why_template(s, seen[s.section], overall, cfg, bigger)
 
 
 # ---------------------------------------------------------------- site

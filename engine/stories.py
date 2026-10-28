@@ -452,7 +452,8 @@ def first_sentence(text: str, headline: str, limit: int = 180) -> str:
     return out
 
 
-def why_template(story: Story, rank_in_section: int, overall_rank: int, cfg: Config) -> str:
+def why_template(story: Story, rank_in_section: int, overall_rank: int, cfg: Config,
+                 bigger: "Story | None" = None) -> str:
     """The free 'why it's here' line, built from the data. Coverage only, never a view on the shares."""
     big = [o.name for o in sorted(story.outlets.values(), key=lambda o: TIER_RANK.get(o.tier, 9)) if o.tier == 1][:2]
     n = story.source_count
@@ -469,7 +470,16 @@ def why_template(story: Story, rank_in_section: int, overall_rank: int, cfg: Con
         off = next(o.name for o in story.outlets.values() if o.source and o.source.is_primary)
         parts.append(f"Includes the official word from {off}.")
     if overall_rank == 1:
-        parts.append("The most covered tech stock story right now.")
+        # The ranking weighs coverage by age, so the top story isn't always the one with the most
+        # outlets. Say so when a bigger story sits lower down, or the numbers look wrong.
+        if bigger is None:
+            parts.append("The most covered tech stock story right now.")
+        elif bigger.first_seen < story.first_seen:
+            parts.append(f"It leads because it's newer. Some stories below have more outlets "
+                         f"(up to {bigger.source_count}), but most of that coverage is older.")
+        else:
+            parts.append("It leads on coverage weighted by how recent it is, so it can outrank "
+                         "stories below with more outlets.")
     elif rank_in_section == 1:
         parts.append(f"Top {cfg.section_names[story.section]} story right now.")
     return " ".join(parts)
