@@ -1,10 +1,9 @@
-All Tech Stocks run: auto at Wed 28 Oct 19:53 UK time
-  feeds: 45/45 worked, 289 new items (80 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 2173 grouped, 1548 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, with a Following feed showing posts from subreddits users have joined and a For You'
-  AI trending line rejected (26 words): 'Apple has launched a refreshed iPad Mini with an 8.5-inch OLED screen, priced from $699, and says it is the biggest update to the line yet.'
-  AI trending line rejected (reads like advice or a prediction: recommendations): 'Reddit is adding a Following feed and a For You feed, mixing posts from communities users have joined with recommendations based on their in'
-  site: 1084 stories live, 5 new AI lines. Top: Oracle Projects $30 Billion Free Cash Flow in Fiscal 2029. Most covered stock: AMZN
-  trends: 459 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 5 written, 3 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 20:53 UK time
+  feeds: 45/45 worked, 350 new items (110 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 8 new filings
+  stories: 2168 grouped, 1546 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed structure for its homepage. Users will get a Following feed showing posts from subreddits they have joined, '
+  AI trending line rejected (27 words): 'Reddit is adding a Following feed and a For You feed, mixing posts from communities users have joined with tailored recommendations, to chan'
+  site: 1080 stories live, 3 new AI lines. Top: Microsoft shares climb 5% after cloud revenue beats expectations. Most covered stock: GOOGL
+  trends: 460 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 3 written, 2 rejected, 0 failed calls
