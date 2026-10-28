@@ -58,6 +58,8 @@ Strict rules:
 - Never mention the coverage, the headline, the sources or the article. Talk about the story.
 - Never pad. Don't say what isn't known, isn't clear or isn't described. Every sentence must add a fact
   or a consequence. If there's only enough for two solid sentences, write two.
+- Never write about yourself or what you can or can't say. No "I", no "speculating", no "the material".
+  If you'd need to explain that the facts are thin, reply NONE instead.
 If the coverage gives too little to say anything useful, reply with the single word NONE.
 Reply with the paragraph only."""
 
@@ -288,7 +290,7 @@ def trend_line(headline: str, snippets: list[str], companies: str = "") -> str |
     if says_none(raw):
         return ""
     text = clean_line(raw)
-    if not text or NON_ANSWER.search(text) or PADDING.search(text):
+    if not text or NON_ANSWER.search(text) or PADDING.search(text) or META.search(text):
         return ""
     reason = trend_reject_reason(text)
     if reason:
@@ -373,8 +375,10 @@ def drop_padding(text: str) -> str:
     than two real sentences, there's nothing worth saying and the line is dropped."""
     parts = re.split(r"(?<=[.!?])\s+", text.strip())
     if len(parts) < 2:
-        return "" if PADDING.search(text) else text
-    kept = [p for p in parts if not PADDING.search(p)]
+        return "" if PADDING.search(text) or META.search(text) else text
+    kept = [p for p in parts if not PADDING.search(p) and not META.search(p)]
+    if len(kept) < len(parts) and kept and BACK_REF.match(kept[0]):
+        return ""  # opens by pointing at a sentence that was cut: no line
     return " ".join(kept) if len(kept) >= 2 else ""  # mostly padding: no line at all
 
 
@@ -394,6 +398,23 @@ def says_none(raw: str) -> bool:
 NON_ANSWER = re.compile(r"no clear (effect|impact|link)|names no |doesn't name|does not name|the headline suggests|"
                         r"the headline (only|just)|unclear (how|whether|what)|not clear (how|whether|what)|"
                         r"no (direct|obvious) (effect|impact|link)|isn't about|is not about", re.I)
+
+# Sentences where the model talks about itself or its inputs instead of the story. drop_padding
+# cuts each one. If too little is left, or what's left leans on a cut sentence, there's no line.
+META = re.compile(
+    r"\bI\b(?!-\d)|\bI'm\b|\bI've\b|\bwe (can't|cannot)\b|speculat\w*|"
+    r"\b(the|source|this) material\b|\bmaterial provided\b|"
+    r"\bthe (coverage|headline|article|report|snippets?|sources?) "
+    r"(gives|describes|points|says|only|raises|mentions|suggests|does|shows|links|reports|separates|is)\b|"
+    r"\bwithout (those|these|any|more|further) (specifics|details?|information)\b|"
+    r"\bwithout any stated\b|\bnothing in the\b|\bnothing further is\b|"
+    r"\b(can't|cannot|can not) be (set out|stated|said|described|determined|assessed)\b|"
+    r"\bfrom what is (available|given|provided)\b|\btoo little to\b|\bbeyond the headline\b|"
+    r"\bis not mentioned\b|\bisn't mentioned\b",
+    re.I)
+
+# A sentence that only makes sense after the one before it.
+BACK_REF = re.compile(r"(that|those|these|this|it|without (that|those|these|this))\b", re.I)
 
 
 def reject_reason(text: str) -> str | None:

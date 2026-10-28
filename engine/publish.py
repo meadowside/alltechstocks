@@ -92,8 +92,10 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
         saved = db.why_line(s.core_ids or s.item_ids, ai.get("valid_from")) or ""
         if saved and saved != "-" and llm.NON_ANSWER.search(saved):
             saved = "-"  # an older "nothing here" line written as a sentence
-        elif saved and saved != "-" and not llm.drop_padding(saved):
-            saved = ""  # mostly "the coverage doesn't say" filler: write it again
+        elif saved and saved != "-":
+            # Saved before the filters caught it: cut the padding and meta sentences, and if
+            # nothing solid is left, write it again (once, the rewrite replaces it).
+            saved = llm.drop_padding(saved)
         if saved == "-":  # the model had nothing useful to say; don't ask again
             skipped.add(id(s))
             saved = ""
@@ -132,7 +134,8 @@ def add_trend_lines(stories: list[Story], db: DB, cfg: Config, now: datetime, bu
         ids = s.core_ids or s.item_ids
         saved = db.trend_line(ids, ai.get("valid_from"))
         if saved is not None:
-            s.trend_line = "" if saved == "-" else saved
+            bad = saved != "-" and (llm.META.search(saved) or llm.PADDING.search(saved))
+            s.trend_line = "" if saved == "-" or bad else saved
             continue
         if made >= budget:
             continue

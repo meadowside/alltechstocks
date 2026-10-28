@@ -248,7 +248,7 @@ class DB:
 
     def save_why_line(self, item_ids: list[int], line: str, now: datetime):
         self.conn.executemany(
-            "INSERT OR IGNORE INTO why_lines (item_id, line, created) VALUES (?, ?, ?)",
+            "INSERT OR REPLACE INTO why_lines (item_id, line, created) VALUES (?, ?, ?)",
             [(i, line, iso(now)) for i in item_ids],
         )
 
