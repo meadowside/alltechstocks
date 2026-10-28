@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Wed 28 Oct 00:53 UK time
-  feeds: 45/45 worked, 169 new items (48 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 1 new filings
-  stories: 1899 grouped, 1366 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Texas Instruments has reported growth for its third quarter, though the coverage gives no figures for revenue or profit. The analogue chipma'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline and no detail on what Micron actually did to push back against Chinese memory competitors, so I can't des"
-  site: 1074 stories live, 5 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
-  trends: 402 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 5 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 01:53 UK time
+  feeds: 45/45 worked, 151 new items (46 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 6 new filings
+  stories: 1898 grouped, 1370 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline figure: Fortinet is reported to have recorded 2.3 billion attacks against cloud security in the period it'
+  site: 1084 stories live, 3 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
+  trends: 409 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
