@@ -316,6 +316,27 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
 <div class="layout">
   <div>{% block main %}{% endblock %}</div>
   <aside class="side">
+    {% if trending %}
+    <section class="box">
+      <h2>Trending</h2>
+      <p class="sub">Picking up the most new coverage in the last few hours.</p>
+      <ol class="trend">
+        {% for t in trending %}
+        <li><div><a href="{{ t.story.link }}" rel="noopener" target="_blank">{{ t.story.headline }}</a>
+          <span class="n">{{ t.story.source_count }} outlets, <b>+{{ t.new }} recently</b></span>
+          {% if t.story.trend_line %}<p class="tl"><b>So what:</b> {{ t.story.trend_line }}</p>{% endif %}</div></li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endif %}
+    {% if promos %}
+    <section class="box">
+      <h2>Sister titles</h2>
+      {% for p in promos %}
+      <a class="promo" href="{{ p.url }}" rel="noopener" target="_blank"><b>{{ p.name }}</b><span>{{ p.line }}</span><em>{{ p.cta }} &rarr;</em></a>
+      {% endfor %}
+    </section>
+    {% endif %}
     {% if just_in %}
     <section class="box">
       <h2>Just in</h2>
@@ -337,27 +358,6 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
         <li><a class="tk" href="{{ root }}stocks/{{ stocks[f.symbol].slug }}.html">{{ f.symbol }}</a> <a href="{{ f.url }}" rel="noopener" target="_blank"><b>{{ f.label }}</b> ({{ f.form }})</a> <span class="when">{{ f.filed | ago }}</span></li>
         {% endfor %}
       </ul>
-    </section>
-    {% endif %}
-    {% if trending %}
-    <section class="box">
-      <h2>Trending</h2>
-      <p class="sub">Picking up the most new coverage in the last few hours.</p>
-      <ol class="trend">
-        {% for t in trending %}
-        <li><div><a href="{{ t.story.link }}" rel="noopener" target="_blank">{{ t.story.headline }}</a>
-          <span class="n">{{ t.story.source_count }} outlets, <b>+{{ t.new }} recently</b></span>
-          {% if t.story.trend_line %}<p class="tl"><b>So what:</b> {{ t.story.trend_line }}</p>{% endif %}</div></li>
-        {% endfor %}
-      </ol>
-    </section>
-    {% endif %}
-    {% if promos %}
-    <section class="box">
-      <h2>Sister titles</h2>
-      {% for p in promos %}
-      <a class="promo" href="{{ p.url }}" rel="noopener" target="_blank"><b>{{ p.name }}</b><span>{{ p.line }}</span><em>{{ p.cta }} &rarr;</em></a>
-      {% endfor %}
     </section>
     {% endif %}
   </aside>
