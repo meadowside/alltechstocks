@@ -72,6 +72,14 @@ CREATE TABLE IF NOT EXISTS why_lines (
     created TEXT NOT NULL
 );
 
+-- One-sentence "So what" lines for the Trending sidebar. Kept apart from why_lines so a story
+-- can have both the long line (sections, email) and the short one (sidebar).
+CREATE TABLE IF NOT EXISTS trend_lines (
+    item_id INTEGER PRIMARY KEY,
+    line TEXT NOT NULL,
+    created TEXT NOT NULL
+);
+
 -- Trend history. One row per stock per UK day, kept forever (about 100 rows a day, a few MB a year).
 -- Rebuilt from stock_stories for the last 29 days on every run, then frozen. engine/trends.py
 CREATE TABLE IF NOT EXISTS stock_daily (
@@ -145,6 +153,7 @@ class DB:
         self.conn.execute("DELETE FROM sent WHERE sent_date < ?", (cutoff[:10],))
         self.conn.execute("DELETE FROM stock_stories WHERE last_seen < ?", (iso(now - timedelta(days=30)),))
         self.conn.execute("DELETE FROM why_lines WHERE created < ?", (cutoff,))
+        self.conn.execute("DELETE FROM trend_lines WHERE created < ?", (cutoff,))
 
     # ----- sent stories -----
     def sent_records(self, except_date: str | None = None) -> list[tuple[set[int], float]]:
@@ -244,10 +253,30 @@ class DB:
         )
 
     def calls_today(self, day_start: datetime) -> int:
-        row = self.conn.execute(
-            "SELECT COUNT(DISTINCT line) AS n FROM why_lines WHERE created >= ?", (iso(day_start),)
-        ).fetchone()
-        return row["n"] or 0
+        n = 0
+        for table in ("why_lines", "trend_lines"):
+            row = self.conn.execute(
+                f"SELECT COUNT(DISTINCT line) AS n FROM {table} WHERE created >= ?", (iso(day_start),)
+            ).fetchone()
+            n += row["n"] or 0
+        return n
+
+    def trend_line(self, item_ids: list[int], valid_from: str | None = None) -> str | None:
+        if not item_ids:
+            return None
+        q = "SELECT line FROM trend_lines WHERE item_id IN (%s)" % ",".join("?" * len(item_ids))
+        args = list(item_ids)
+        if valid_from:
+            q += " AND created >= ?"
+            args.append(str(valid_from))
+        row = self.conn.execute(q + " ORDER BY created DESC LIMIT 1", args).fetchone()
+        return row["line"].strip() if row else None
+
+    def save_trend_line(self, item_ids: list[int], line: str, now: datetime):
+        self.conn.executemany(
+            "INSERT OR IGNORE INTO trend_lines (item_id, line, created) VALUES (?, ?, ?)",
+            [(i, line, iso(now)) for i in item_ids],
+        )
 
     # ----- source health -----
     def record_health(self, source_id: str, now: datetime, ok: bool, count: int, error: str | None):

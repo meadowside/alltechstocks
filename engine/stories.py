@@ -68,6 +68,7 @@ class Story:
     regulator: bool = False          # an official source (company, exchange) is in the story
     why: str = ""
     so_what: str = ""   # AI line, when there is one
+    trend_line: str = ""  # one-sentence AI line for the Trending sidebar
     core_ids: list = field(default_factory=list)  # items that match the headline
     tickers: list = field(default_factory=list)          # watched symbols, most mentioned first
     headline_tickers: set = field(default_factory=set)   # those named in a headline

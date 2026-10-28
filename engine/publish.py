@@ -124,6 +124,33 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
     return made
 
 
+def add_trend_lines(stories: list[Story], db: DB, cfg: Config, now: datetime, budget: int) -> int:
+    """One short sentence per Trending story, written once and saved like the long lines."""
+    ai = cfg.rules.get("ai_lines", {})
+    made = 0
+    for s in stories:
+        ids = s.core_ids or s.item_ids
+        saved = db.trend_line(ids, ai.get("valid_from"))
+        if saved is not None:
+            s.trend_line = "" if saved == "-" else saved
+            continue
+        if made >= budget:
+            continue
+        core = [i for i in s.items if i["id"] in set(s.core_ids)] or s.items
+        snippets = [i["summary"] or i["title"] for i in core if "news.google.com" not in i["url"]] or [s.headline]
+        companies = ", ".join(f"{cfg.by_symbol[t].name} ({t})" for t in s.tickers[:3])
+        line = llm.trend_line(s.headline, snippets, companies)
+        if line is None and not llm.enabled():
+            break
+        if line == "":
+            db.save_trend_line(ids, "-", now)
+        elif line:
+            s.trend_line = line
+            db.save_trend_line(ids, line, now)
+            made += 1
+    return made
+
+
 def _record_history(live: list[Story], db: DB) -> None:
     """Save each stock's stories so its page can show the last month, not just today."""
     for s in live:
@@ -177,9 +204,12 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
     trend = trending([s for s in live if s is not top], cfg, now)
     ai = cfg.rules.get("ai_lines", {})
     wanted = ([top] if top else []) + [s for sec in sections for s in sec["stories"][: ai.get("per_section", 6)]]
-    if ai.get("trending", True):
-        wanted += [t["story"] for t in trend]
     new_lines = add_so_what(wanted, live, db, cfg, now)
+    if ai.get("trending", True):
+        local_now = now.astimezone(ZoneInfo(cfg.site["timezone"]))
+        day_start = local_now.replace(hour=0, minute=0, second=0, microsecond=0)
+        left = min(ai.get("max_new_per_run", 25) - new_lines, ai.get("max_new_per_day", 150) - db.calls_today(day_start))
+        new_lines += add_trend_lines([t["story"] for t in trend], db, cfg, now, max(left, 0))
 
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
     filings_recent = db.filings_since(now - timedelta(days=2), notable_only=True)

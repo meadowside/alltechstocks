@@ -256,6 +256,70 @@ def top_why(headline: str, snippets: list[str], companies: str = "") -> str | No
     return text
 
 
+TREND_PROMPT = """You write the "So what" line for a story in the Trending sidebar of All Tech Stocks, a news
+index of US and UK listed tech companies. Readers use it for research. It is never an advice service.
+
+Story headline: {headline}
+Companies tagged: {companies}
+What the coverage says:
+{snippets}
+
+Write ONE sentence, {max_words} words or fewer, on what this means for the company's business:
+its customers, products, costs, rivals, rules or plans. Plain British English. No hype.
+Strict rules:
+- Never say or hint whether to buy, sell or hold anything.
+- Never mention the share price, valuation, returns or what the shares might do.
+- Never predict. Describe what has happened or what the company has said.
+- No dashes, no semicolons. Don't repeat the headline. Don't start with "This".
+- Never mention the coverage, the headline, the sources or the article.
+If the coverage gives too little to say anything useful, reply with the single word NONE.
+Reply with the sentence only."""
+
+TREND_MAX_WORDS = 25
+
+
+def trend_line(headline: str, snippets: list[str], companies: str = "") -> str | None:
+    """One short sentence for the Trending sidebar. "" when there's nothing to say,
+    None when the key is missing, the call fails or the line breaks a rule."""
+    raw = _ask(TREND_PROMPT.format(headline=headline, companies=companies or "none", max_words=TREND_MAX_WORDS,
+                                   snippets="\n".join(f"- {s}" for s in snippets[:5] if s)), 120)
+    if raw is None:
+        return None
+    if says_none(raw):
+        return ""
+    text = clean_line(raw)
+    if not text or NON_ANSWER.search(text) or PADDING.search(text):
+        return ""
+    reason = trend_reject_reason(text)
+    if reason:
+        STATS["rejected"] += 1
+        print(f"  AI trending line rejected ({reason}): {text[:140]!r}")
+        return None
+    STATS["ok"] += 1
+    return text
+
+
+def trend_reject_reason(text: str) -> str | None:
+    if not text:
+        return "empty"
+    words = len(text.split())
+    if words > TREND_MAX_WORDS:
+        return f"{words} words"
+    sentences = len(re.findall(r"[.!?](?:\s|$)", text))
+    if sentences != 1:
+        return f"{sentences} sentences"
+    low = text.lower()
+    hit = next((b for b in BANNED if b in low), None)
+    if hit:
+        return f"banned: {hit}"
+    m = ADVICE_RE.search(text)
+    if m:
+        return f"reads like advice or a prediction: {m.group(0)}"
+    if not text.endswith((".", "!")):
+        return "unfinished"
+    return None
+
+
 def note_reject_reason(text: str) -> str | None:
     if not text:
         return "empty"
