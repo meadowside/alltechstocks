@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Wed 28 Oct 01:53 UK time
-  feeds: 45/45 worked, 151 new items (46 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 6 new filings
-  stories: 1898 grouped, 1370 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline figure: Fortinet is reported to have recorded 2.3 billion attacks against cloud security in the period it'
-  site: 1084 stories live, 3 new AI lines. Top: Ripple strikes deal with Robinhood to expand its RLUSD digital dollar. Most covered stock: AAPL
-  trends: 409 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 02:53 UK time
+  feeds: 45/45 worked, 120 new items (46 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 0 new filings
+  stories: 1903 grouped, 1374 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline, and it refers to Micron pushing back against a Chinese memory threat without saying what that pushback i'
+  site: 1091 stories live, 2 new AI lines. Top: Oracle AI World keynote: Here's what you need to know. Most covered stock: AAPL
+  trends: 417 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
