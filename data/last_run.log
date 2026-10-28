@@ -1,10 +1,8 @@
-All Tech Stocks run: auto at Wed 28 Oct 12:53 UK time
-  feeds: 45/45 worked, 333 new items (90 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 28 Oct 13:53 UK time
+  feeds: 45/45 worked, 309 new items (103 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2041 grouped, 1447 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Micron's shares have steadied while the company pushes back against competition from Chines"
-  AI trending line rejected (27 words): 'Meta faces a US court test of claims that its platforms are designed to addict young users, which could shape how it builds and markets its '
-  AI trending line rejected (27 words): "Robinhood's crypto trading revenue has weakened, while its equities and options trading has held up well, leaving its core brokerage busines"
-  site: 1054 stories live, 5 new AI lines. Top: South Korea fines Google and Apple over unfair app market practices. Most covered stock: AAPL
-  trends: 453 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 5 written, 3 rejected, 0 failed calls
+  stories: 2069 grouped, 1475 name a watched stock or pass the market rules
+  AI trending line rejected (28 words): 'Amazon is widening its home hardware range with a larger Echo display and a photo frame that runs on Alexa, aimed at households already usin'
+  site: 1069 stories live, 2 new AI lines. Top: South Korea fines Google and Apple over unfair app market practices. Most covered stock: AAPL
+  trends: 455 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
