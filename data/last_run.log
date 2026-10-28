@@ -1,7 +1,9 @@
-All Tech Stocks run: auto at Wed 28 Oct 07:53 UK time
-  feeds: 45/45 worked, 157 new items (70 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 28 Oct 08:53 UK time
+  feeds: 45/45 worked, 163 new items (45 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1980 grouped, 1414 name a watched stock or pass the market rules
-  site: 1097 stories live, 3 new AI lines. Top: Micron widens Seoul hiring push as bonus gap with Samsung, SK hynix grows. Most covered stock: AAPL
-  trends: 439 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  stories: 1988 grouped, 1418 name a watched stock or pass the market rules
+  AI line rejected (unfinished sentence): 'The coverage gives only a headline, with no detail on what Micron actually did to push back against Chinese memory competition. Without spec'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage only offers a headline asking what a passenger should do if an Uber driver wants to make a suspicious stop, with no account of '
+  site: 1091 stories live, 4 new AI lines. Top: Micron widens Seoul hiring push as bonus gap with Samsung, SK hynix grows. Most covered stock: AAPL
+  trends: 443 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 4 written, 2 rejected, 0 failed calls
