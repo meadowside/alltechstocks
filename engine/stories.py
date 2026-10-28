@@ -18,6 +18,11 @@ from .tickers import Tagger
 # Which outlet's headline and link we prefer: national, then UK specialist, global, primary, backfill.
 TIER_RANK = {1: 0, 2: 1, 3: 2, 4: 3, 0: 4}
 EXCLUSIVE_RE = re.compile(r"\bexclusive\b", re.IGNORECASE)
+# Curtain-raisers: fine as coverage, never as the headline once the real thing has happened.
+PREVIEW_RE = re.compile(
+    r"\bwhat to (expect|watch|look for)\b|\bwhat (you|we) (need to |should )?know\b|\bhow to watch\b|"
+    r"\bpreview\b|\blive (updates|blog|coverage|stream)\b|\b(expected|set|poised) to (announce|unveil|reveal|launch)\b|"
+    r"\bwhat .{0,40} (could|might|will) (announce|unveil|reveal)\b", re.IGNORECASE)
 
 
 @dataclass
@@ -319,14 +324,12 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     named = set(s.headline_tickers)
     def names_it(i) -> bool:
         return bool(named & tagger.find(i["title"]))
-    ranked = sorted(outlets.values(), key=lambda o: (0 if not named or any(names_it(i) for i in o.items) else 1,
-                                                     TIER_RANK.get(o.tier, 9), min(parse_iso(i["published"]) for i in o.items)))
-    lead = ranked[0]
-    lead_item = min(lead.items, key=lambda i: (0 if not named or names_it(i) else 1, i["published"]))
-    s.headline = lead_item["title"]
-    s.section = rules.pick_section(hits, lead.source.sections if lead.source else [])
-    if s.is_global and "companies" in cfg.section_ids:
-        s.section = "companies"  # market-wide stories sit with the general news
+
+    # The headline must be about what happened, not a curtain-raiser. A story that runs for days
+    # (a keynote trailed on Thursday, held on Tuesday) otherwise keeps its first article, a "what
+    # you need to know" piece, as the headline and link. Previews only lead when they're all there is.
+    def current(i) -> bool:
+        return not PREVIEW_RE.search(i["title"])
 
     # Each outlet's link is its most typical article in the group: the one whose title words
     # turn up most across the other titles. A group can hold loosely related pieces from one
@@ -339,6 +342,32 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     def typical(item) -> float:
         ws = words(item["title"])
         return sum(df[w] for w in ws) / len(ws) if ws else 0.0
+
+    def first_time(o: Outlet):
+        cur = [parse_iso(i["published"]) for i in o.items if current(i)]
+        return min(cur or [parse_iso(i["published"]) for i in o.items])
+    # When the story began as a preview, the real news came later and in many parts (seven chip
+    # partners at one keynote). Then the article most typical of the whole group leads, so one side
+    # angle doesn't stand for the day. Stories that never had a preview keep the earliest article.
+    old_lead = min(sorted(outlets.values(), key=lambda o: (0 if not named or any(names_it(i) for i in o.items) else 1,
+                                                           TIER_RANK.get(o.tier, 9),
+                                                           min(parse_iso(i["published"]) for i in o.items)))[0].items,
+                   key=lambda i: (0 if not named or names_it(i) else 1, i["published"]))
+    trailed = not current(old_lead)  # the earliest best article is a preview
+
+    def fit(i) -> int:
+        return -round(typical(i)) if trailed and current(i) else 0
+    ranked = sorted(outlets.values(), key=lambda o: (0 if not named or any(names_it(i) for i in o.items) else 1,
+                                                     0 if any(current(i) for i in o.items) else 1,
+                                                     TIER_RANK.get(o.tier, 9), min([fit(i) for i in o.items]),
+                                                     first_time(o)))
+    lead = ranked[0]
+    lead_item = min(lead.items, key=lambda i: (0 if not named or names_it(i) else 1,
+                                               0 if current(i) else 1, fit(i), i["published"]))
+    s.headline = lead_item["title"]
+    s.section = rules.pick_section(hits, lead.source.sections if lead.source else [])
+    if s.is_global and "companies" in cfg.section_ids:
+        s.section = "companies"  # market-wide stories sit with the general news
 
     # Another outlet's article only stands in for the headline when its title shares most of
     # the top outlet's headline words. Otherwise a loosely related piece in the group (a Sky
@@ -357,7 +386,7 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
         if free and o.source and o.source.paywall:
             return None
         real = [i for i in o.items if "news.google.com" not in i["url"] and same_story(i)]
-        return max(real, key=typical) if real else None
+        return max(real, key=lambda i: (current(i), typical(i))) if real else None
 
     # Every outlet we could link, best first: free before paywalled, real URLs before Google redirects.
     options, chosen = [], []

@@ -96,6 +96,8 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
         STATS["failed"] += 1
         print(f"  AI call failed: {e}")
         return None
+    if says_none(raw):
+        return ""  # nothing useful to say: no line, not an error
     text = drop_padding(clean_line(raw))
     if text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
         return ""  # nothing useful to say: no line, not an error
@@ -241,8 +243,11 @@ def top_why(headline: str, snippets: list[str], companies: str = "") -> str | No
                                      snippets="\n".join(f"- {s}" for s in snippets[:6] if s)), 300)
     if not raw:
         return None
+    if says_none(raw):
+        return None
     text = " ".join(p.strip() for p in raw.strip().split("\n") if p.strip()).strip('"').strip()
-    if text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
+    text = drop_padding(text)  # "the coverage here is only a headline..." is not a why-it-matters line
+    if not text or text.strip(" .").upper() == "NONE" or NON_ANSWER.search(text):
         return None
     reason = note_reject_reason(text)
     if reason:
@@ -313,6 +318,12 @@ def clean_line(raw: str) -> str:
     """Keep the first paragraph only. The model sometimes adds a note to itself after the sentence."""
     first = next((p for p in raw.strip().split("\n") if p.strip()), "")
     return first.strip().strip('"').strip()
+
+
+def says_none(raw: str) -> bool:
+    """True when the model answered NONE, even wrapped in an explanation ("...The honest answer is
+    NONE."). Capital NONE as a word never appears in a real line, so any sighting means no line."""
+    return bool(re.search(r"\bNONE\b", raw or ""))
 
 
 # The model sometimes says "nothing here" in a sentence instead of answering NONE.
