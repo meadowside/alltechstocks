@@ -1,8 +1,10 @@
-All Tech Stocks run: auto at Wed 28 Oct 18:53 UK time
-  feeds: 45/45 worked, 253 new items (88 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 1 new filings
-  stories: 2171 grouped, 1548 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup for its homepage, with a Following feed showing posts from subreddits users already follow and a For Y'
-  site: 1095 stories live, 4 new AI lines. Top: Oracle Projects $30 Billion Free Cash Flow in Fiscal 2029. Most covered stock: AMZN
-  trends: 458 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 4 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 19:53 UK time
+  feeds: 45/45 worked, 289 new items (80 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 0 new filings
+  stories: 2173 grouped, 1548 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, with a Following feed showing posts from subreddits users have joined and a For You'
+  AI trending line rejected (26 words): 'Apple has launched a refreshed iPad Mini with an 8.5-inch OLED screen, priced from $699, and says it is the biggest update to the line yet.'
+  AI trending line rejected (reads like advice or a prediction: recommendations): 'Reddit is adding a Following feed and a For You feed, mixing posts from communities users have joined with recommendations based on their in'
+  site: 1084 stories live, 5 new AI lines. Top: Oracle Projects $30 Billion Free Cash Flow in Fiscal 2029. Most covered stock: AMZN
+  trends: 459 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 5 written, 3 rejected, 0 failed calls
