@@ -1,8 +1,10 @@
-All Tech Stocks run: auto at Wed 28 Oct 09:53 UK time
-  feeds: 45/45 worked, 173 new items (61 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 1988 grouped, 1419 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage is a single headline with no detail on any incident, company statement, policy change or rival move, so there is not enough to '
-  site: 1074 stories live, 3 new AI lines. Top: Micron Stock Pops as Rival SK Hynix Fuels AI Frenzy With Two Bombshells. Most covered stock: AAPL
-  trends: 444 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 10:53 UK time
+  feeds: 45/45 worked, 252 new items (92 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 3 new filings
+  stories: 1984 grouped, 1408 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline and no detail on the terms, scale or timing of the expanded collaboration between Oracle and OpenAI. With'
+  AI line rejected (reads like advice or a prediction: portfolio): 'SAP has reported cloud revenue growth for the third quarter, a result that points to continued demand for its subscription software. The clo'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline points to guidance for riders on what to do when a driver wants to make an unexpected stop, a question that touches on rider sa'
+  site: 1048 stories live, 3 new AI lines. Top: Micron Stock Pops as Rival SK Hynix Fuels AI Frenzy With Two Bombshells. Most covered stock: AAPL
+  trends: 451 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 3 written, 3 rejected, 0 failed calls
