@@ -1,13 +1,7 @@
-All Tech Stocks run: auto at Wed 28 Oct 06:53 UK time
-  feeds: 45/45 worked, 169 new items (51 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 28 Oct 07:53 UK time
+  feeds: 45/45 worked, 157 new items (70 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1964 grouped, 1405 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The headline describes a possible surge in Broadcom's stock, but the coverage gives no concrete company event, product launch, deal, custome"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Fortinet's latest threat data points to a very large volume of attacks targeting cloud environments, with the figure put at 2.3 billion. The"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says the Tesla Semi has drawn attention from freight industry figures in Chattanooga. It does no'
-  site: 1092 stories live, 2 new AI lines. Top: Micron widens Seoul hiring push as bonus gap with Samsung, SK hynix grows. Most covered stock: AAPL
-  trends: 438 stock-days and 53 section-days refreshed, 9 days of history
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The headline points to a view that Broadcom's shares could rise sharply, and to what the author calls the biggest dislocation in the market."
-  email: 38 stories, 1 new AI lines, opening note: yes
-  notify: skipped (no Telegram settings)
-  AI lines: 3 written, 4 rejected, 0 failed calls
+  stories: 1980 grouped, 1414 name a watched stock or pass the market rules
+  site: 1097 stories live, 3 new AI lines. Top: Micron widens Seoul hiring push as bonus gap with Samsung, SK hynix grows. Most covered stock: AAPL
+  trends: 439 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 3 written, 0 rejected, 0 failed calls
