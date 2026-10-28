@@ -1,10 +1,10 @@
-All Tech Stocks run: auto at Wed 28 Oct 10:53 UK time
-  feeds: 45/45 worked, 252 new items (92 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 3 new filings
-  stories: 1984 grouped, 1408 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline and no detail on the terms, scale or timing of the expanded collaboration between Oracle and OpenAI. With'
-  AI line rejected (reads like advice or a prediction: portfolio): 'SAP has reported cloud revenue growth for the third quarter, a result that points to continued demand for its subscription software. The clo'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline points to guidance for riders on what to do when a driver wants to make an unexpected stop, a question that touches on rider sa'
-  site: 1048 stories live, 3 new AI lines. Top: Micron Stock Pops as Rival SK Hynix Fuels AI Frenzy With Two Bombshells. Most covered stock: AAPL
-  trends: 451 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 3 written, 3 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 28 Oct 11:53 UK time
+  feeds: 45/45 worked, 268 new items (96 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 0 new filings
+  stories: 1995 grouped, 1414 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Oracle has announced an expanded collaboration with OpenAI. No terms, products, timelines o'
+  AI trending line rejected (30 words): 'Meta faces a US court test over claims its platforms were designed to be addictive to young users, a case that could shape how its products '
+  AI trending line rejected (31 words): 'SAP has committed to training two million people in India in AI skills by 2030, a move aimed at building the talent pool its customers will '
+  site: 1034 stories live, 7 new AI lines. Top: South Korea fines Google and Apple over unfair app market practices. Most covered stock: AAPL
+  trends: 452 stock-days and 53 section-days refreshed, 9 days of history
+  AI lines: 7 written, 3 rejected, 0 failed calls
