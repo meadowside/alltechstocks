@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Wed 28 Oct 13:53 UK time
-  feeds: 45/45 worked, 309 new items (103 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 28 Oct 14:46 UK time
+  feeds: 45/45 worked, 286 new items (111 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2069 grouped, 1475 name a watched stock or pass the market rules
-  AI trending line rejected (28 words): 'Amazon is widening its home hardware range with a larger Echo display and a photo frame that runs on Alexa, aimed at households already usin'
-  site: 1069 stories live, 2 new AI lines. Top: South Korea fines Google and Apple over unfair app market practices. Most covered stock: AAPL
+  stories: 2073 grouped, 1482 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline fact: South Korea has fined Google and Apple over unfair practices in their app markets. No amount, rul'
+  AI trending line rejected (35 words): "South Korean regulators have fined Apple and Alphabet's Google for practices that restrict how app developers can sell and charge for digita"
+  site: 1068 stories live, 3 new AI lines. Top: Amazon debuts the Alexa Photo Frame and Echo Time smart clock, plus other upgraded devices. Most covered stock: AAPL
   trends: 455 stock-days and 53 section-days refreshed, 9 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  AI lines: 3 written, 2 rejected, 0 failed calls
