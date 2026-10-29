@@ -1,12 +1,9 @@
-All Tech Stocks run: auto at Thu 29 Oct 06:53 UK time
-  feeds: 45/45 worked, 140 new items (44 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 07:53 UK time
+  feeds: 45/45 worked, 174 new items (58 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2159 grouped, 1531 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup for its homepage. Users will get a Following feed showing posts from subreddits they have joined, alon'
-  AI trending line rejected (26 words): "Airbnb's France rules from 20 November 2026 would stop hosts requiring guests to do check-out cleaning, which could change how cleaning is a"
-  site: 1074 stories live, 2 new AI lines. Top: Marvell Is Said to Near Deal for Lumentum In AI-Related Megadeal. Most covered stock: GOOGL
-  trends: 488 stock-days and 59 section-days refreshed, 10 days of history
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup on its homepage, with a Following feed showing posts from subreddits users follow and a For You feed t'
-  email: 38 stories, 0 new AI lines, opening note: yes
-  notify: skipped (no Telegram settings)
-  AI lines: 2 written, 3 rejected, 0 failed calls
+  stories: 2142 grouped, 1519 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup for its homepage, with a Following feed showing posts from subreddits users have joined and a For You '
+  AI trending line rejected (27 words): 'Reports say Marvell is nearing a large AI-related deal with Lumentum, a maker of optical components used in data-centre networking, though t'
+  site: 1063 stories live, 1 new AI lines. Top: Airbnb bans check-out cleaning chores: what changes in France on 20 November 2026. Most covered stock: GOOGL
+  trends: 487 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
