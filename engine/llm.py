@@ -117,16 +117,17 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
 STATS = {"ok": 0, "rejected": 0, "failed": 0}
 
 
-def _ask(prompt: str, max_tokens: int = 300) -> str | None:
+def _ask(prompt: str, max_tokens: int = 300, model: str | None = None, timeout: int = 30,
+         effort: str = "low") -> str | None:
     """One plain call to the model. Returns the reply text, or None if the key is missing or the call fails."""
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         return None
     body = {
-        "model": os.environ.get("LLM_MODEL", DEFAULT_MODEL),
+        "model": model or os.environ.get("LLM_MODEL", DEFAULT_MODEL),
         "max_tokens": max_tokens,
         "thinking": {"type": "disabled"},
-        "output_config": {"effort": "low"},
+        "output_config": {"effort": effort},
         "messages": [{"role": "user", "content": prompt}],
     }
     req = urllib.request.Request(
@@ -134,7 +135,7 @@ def _ask(prompt: str, max_tokens: int = 300) -> str | None:
         headers={"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
     )
     try:
-        with urllib.request.urlopen(req, timeout=30) as resp:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
             data = json.load(resp)
         return "".join(b.get("text", "") for b in data.get("content", []))
     except Exception as e:

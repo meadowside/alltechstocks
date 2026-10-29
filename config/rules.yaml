@@ -213,6 +213,19 @@ ai_lines:
   max_new_per_run: 25
   max_new_per_day: 150
 
+# The weekly draft (engine/weekly.py): a Friday round-up for Andy to edit and send on Substack.
+# Saved to data/weekly/<date>.md. Not on the public site. "python run.py weekly" builds it now.
+weekly:
+  day: 4                    # 0 = Monday ... 4 = Friday
+  build_hour: 14            # UK time: after Thursday's US results have been written up
+  late_window_hours: 6      # if runs are late, still build it up to 8pm
+  days: 7                   # how far back the week goes
+  model: claude-sonnet-5-5  # one call a week, so a stronger model than the daily lines
+  top_stories: 5
+  max_results: 8
+  most_covered: 8
+  filings_max: 10
+
 scoring:
   coverage_cap: 15
   freshness_half_life_hours: 12    # a story loses half its score every 12 hours, aged from its middle article
