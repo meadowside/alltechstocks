@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Thu 29 Oct 08:53 UK time
-  feeds: 45/45 worked, 191 new items (62 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 09:53 UK time
+  feeds: 45/45 worked, 176 new items (67 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2150 grouped, 1528 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed experience on its homepage, with a Following feed showing posts from subreddits users already follow and a F'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline: Uber has applied for a ride-hailing service licence. No jurisdiction, licence type or timeline is give'
-  site: 1075 stories live, 2 new AI lines. Top: Airbnb bans check-out cleaning chores: what changes in France on 20 November 2026. Most covered stock: GOOGL
-  trends: 492 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+  stories: 2148 grouped, 1531 name a watched stock or pass the market rules
+  site: 1079 stories live, 2 new AI lines. Top: 'They will rob us of toilet paper': Airbnb hosts melt down over new policy. Most covered stock: GOOGL
+  trends: 499 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
