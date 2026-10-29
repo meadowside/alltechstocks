@@ -40,6 +40,25 @@ EARNINGS_PREVIEW_RE = re.compile(
     r"\b(reports|report|posts) (earnings|results) (tomorrow|today|next|on (mon|tues|wednes|thurs|fri)day)\b",
     re.IGNORECASE)
 
+# Results write-ups. The same company's results and its other news that week (a deal, job cuts) are
+# different stories, but they share the company's name and the usual business words, and a single
+# article mentioning both ("Microsoft posts record revenue after offering buyouts") is enough to
+# pull a week of results coverage into the other story. So results only cluster with results.
+RESULTS_RE = re.compile(
+    r"\b(earnings|quarterly|quarter|q[1-4]|results|revenue|revenues|profit|profits|eps|guidance|"
+    r"half-year|full-year|trading update|(beats?|miss(es)?|tops?) (estimates|expectations|forecasts|views))\b",
+    re.IGNORECASE)
+
+OTHER, PREVIEW, RESULTS = 0, 1, 2
+
+
+def _kind(title: str) -> int:
+    if EARNINGS_PREVIEW_RE.search(title or ""):
+        return PREVIEW
+    if RESULTS_RE.search(title or ""):
+        return RESULTS
+    return OTHER
+
 
 def _core(g: dict) -> set:
     """The stocks a story is about: named in at least half the headlines that name any watched stock.
@@ -169,7 +188,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
     texts = [f"{strip_reg(i['title'])}. {strip_reg(i['title'])}. {i['summary'] or ''}" for i in items]  # title counts double
     tagger = Tagger(cfg)
     heads = [tagger.find(i["title"]) for i in items]
-    preview = [bool(EARNINGS_PREVIEW_RE.search(i["title"] or "")) for i in items]
+    kind = [_kind(i["title"]) for i in items]
     vec = TfidfVectorizer(stop_words="english", ngram_range=(1, 2), sublinear_tf=True)
     X = vec.fit_transform(texts)  # sparse, each row has unit length
     # Every article-to-article similarity in one go. A story's centroid is never stored as a vector:
@@ -184,7 +203,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
     # the same story however alike their wording.
     # "tk" is every stock named in the story's headlines, "tkc" how many headlines name each,
     # "tagged" how many headlines name any; _core() turns those into the stocks the story is about.
-    # "preview" is fixed by the first article: curtain-raisers and results never share a story.
+    # "kind" is fixed by the first article: previews, results and other news never share a story.
     groups: list[dict] = []  # {"idx": [...], "n2": squared length of the summed vector, "first", "last", "tk", ...}
     for idx, item in enumerate(items):
         t = parse_iso(item["published"])
@@ -193,7 +212,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
         for g in groups:
             if t - g["last"] > window or t - g["first"] > close_after:
                 continue
-            if g["preview"] != preview[idx]:
+            if g["kind"] != kind[idx]:
                 continue
             core = g["core"]
             if heads[idx] and core and not (heads[idx] & core):
@@ -216,7 +235,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
             best["core"] = _core(best)
         else:
             groups.append({"idx": [idx], "n2": float(S[idx, idx]), "first": t, "last": t, "tk": set(heads[idx]),
-                           "tkc": Counter(heads[idx]), "tagged": int(bool(heads[idx])), "preview": preview[idx],
+                           "tkc": Counter(heads[idx]), "tagged": int(bool(heads[idx])), "kind": kind[idx],
                            "core": set(heads[idx])})
 
     # Second pass: merge stories that ended up split (one outlet worded it very differently).
@@ -239,7 +258,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
             ga, gb = groups[a], groups[b]
             if max(ga["last"], gb["last"]) - min(ga["first"], gb["first"]) > close_after:
                 continue
-            if ga["preview"] != gb["preview"]:
+            if ga["kind"] != gb["kind"]:
                 continue
             ca, cb = ga["core"], gb["core"]
             if ca and cb and not (ca & cb):
