@@ -1,10 +1,8 @@
-All Tech Stocks run: auto at Thu 29 Oct 20:53 UK time
-  feeds: 45/45 worked, 321 new items (97 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 16 new filings
-  stories: 2339 grouped, 1665 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: Invest): 'ARK Invest, the fund run by Cathie Wood, has made its largest purchase of Robinhood stock in six months after the shares fell 23%. The buyin'
-  AI line rejected (reads like advice or a prediction: shares fell): 'Intel has forecast weaker chip sales than analysts expected, and its shares fell 17% on the news. The lower outlook weighs on its turnaround'
-  AI line rejected (reads like advice or a prediction: rebound): "Samsung Electronics' chip division reported quarterly operating profit below analyst forecasts, despite a rebound in interest in artificial "
-  site: 1203 stories live, 0 new AI lines. Top: Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'. Most covered stock: GOOGL
-  trends: 527 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 0 written, 3 rejected, 0 failed calls
+All Tech Stocks run: auto at Thu 29 Oct 21:53 UK time
+  feeds: 45/45 worked, 351 new items (147 excluded by rules, 9 Google queries resting this hour)
+  filings: 73/73 companies checked, 7 new filings
+  stories: 2358 grouped, 1686 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): 'Intel has forecast weaker chip sales than analysts had expected, and its shares fell 17% on the news. The outlook puts pressure on its turna'
+  site: 1222 stories live, 3 new AI lines. Top: Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'. Most covered stock: GOOGL
+  trends: 528 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
