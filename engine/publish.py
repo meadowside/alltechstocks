@@ -96,9 +96,13 @@ def add_so_what(wanted: list[Story], everything: list[Story], db: DB, cfg: Confi
             # Saved before the filters caught it: cut the padding and meta sentences, and if
             # nothing solid is left, write it again (once, the rewrite replaces it).
             saved = llm.drop_padding(saved)
-        if saved == "-":  # the model had nothing useful to say; don't ask again
-            skipped.add(id(s))
+        if saved == "-":  # the model had nothing useful to say last time
             saved = ""
+            # Don't ask again unless the story has grown since: a "-" written when only a bare
+            # headline was in gets one more try once new matching articles (with real text) arrive.
+            ids = s.core_ids or s.item_ids
+            if len(db.ids_with_why_line(ids)) >= len(ids):
+                skipped.add(id(s))
         s.so_what = saved
     ai = cfg.rules.get("ai_lines", {})
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
