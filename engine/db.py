@@ -246,6 +246,13 @@ class DB:
             return None
         return row["line"].strip().split("\n")[0].strip()  # older lines may carry a stray note
 
+    def ids_with_why_line(self, item_ids: list[int]) -> set[int]:
+        """Which of these items already have a saved line (or a "-" for nothing to say)."""
+        if not item_ids:
+            return set()
+        q = "SELECT item_id FROM why_lines WHERE item_id IN (%s)" % ",".join("?" * len(item_ids))
+        return {r[0] for r in self.conn.execute(q, list(item_ids))}
+
     def save_why_line(self, item_ids: list[int], line: str, now: datetime):
         self.conn.executemany(
             "INSERT OR REPLACE INTO why_lines (item_id, line, created) VALUES (?, ?, ?)",

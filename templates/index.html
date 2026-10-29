@@ -10,8 +10,8 @@
     {% if top.teaser %}<p class="teaser">{{ top.teaser }}</p>{% endif %}
     {{ src_line(top) }}
   </div>
-  {% if top.so_what %}<p class="why"><b>So what:</b> {{ top.so_what }}</p>
-  {% elif top.why %}<p class="why"><b>Why it's top:</b> {{ top.why }}</p>{% endif %}
+  {% if top.why %}<p class="why"><b>Why it's top:</b> {{ top.why }}</p>{% endif %}
+  {% if top.so_what %}<p class="why"><b>So what:</b> {{ top.so_what }}</p>{% endif %}
   {{ coverage(top) }}
 </article>
 {% endif %}
