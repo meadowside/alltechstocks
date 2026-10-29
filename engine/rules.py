@@ -29,7 +29,8 @@ TIP_TITLE = re.compile(
     r"\b(upgrades?|downgrades?|upgraded|downgraded|upgrading|downgrading)\b.{0,40}\b(the stock|the shares|its stock|"
     r"to (buy|sell|hold|neutral|outperform|underperform|overweight|underweight|equal.weight|market perform|accumulate|reduce))\b|"
     r"\b(stock|shares) (upgraded|downgraded)\b|\b(upgrade|downgrade)s? (\w+ )?(stock|shares)\b|"
-    r"\b(initiates?|starts?|resumes?|reiterates?) (coverage|rating)\b",
+    r"\b(initiates?|starts?|resumes?|reiterates?) (coverage|rating)\b|"
+    r"\b(stock|shares)\b.{0,30}\b(could|will|set to|poised to) (see|drop|fall|plunge|soar|surge|rise|double|triple|crash|tank)\b",
     re.IGNORECASE)
 # Quote and profile pages: "SHOP | Shopify Inc. Cl A Profile", "Marvell Stock Grades | MRVL".
 QUOTE_PAGE = re.compile(r"^[A-Z][A-Z.]{0,5}\s+\||\|\s*[A-Z][A-Z.]{0,5}\s*$")

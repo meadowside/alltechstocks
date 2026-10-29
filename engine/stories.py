@@ -45,7 +45,8 @@ EARNINGS_PREVIEW_RE = re.compile(
 # article mentioning both ("Microsoft posts record revenue after offering buyouts") is enough to
 # pull a week of results coverage into the other story. So results only cluster with results.
 RESULTS_RE = re.compile(
-    r"\b(earnings|quarterly|quarter|q[1-4]|results|revenue|revenues|profit|profits|eps|guidance|"
+    # Not plain "quarter": "buyouts for a quarter of its workforce" isn't results.
+    r"\b(earnings|quarterly|(first|second|third|fourth)[ -]quarter|q[1-4]|results|revenue|revenues|profit|profits|eps|guidance|"
     r"half-year|full-year|trading update|(beats?|miss(es)?|tops?) (estimates|expectations|forecasts|views))\b",
     re.IGNORECASE)
 
