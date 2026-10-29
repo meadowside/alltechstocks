@@ -5,6 +5,7 @@
   python run.py hourly      # fetch, rank and rebuild the site only
   python run.py email       # build today's email now (even if one exists)
   python run.py trends      # print coverage spikes and section shares from saved history (no fetching)
+  python run.py weekly      # build this week's draft now from saved history (no fetching)
 
 Options:
   --fixtures DIR            # read feeds from DIR/<source id>.xml (and DIR/edgar/<TICKER>.xml) instead of the internet
@@ -18,7 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from engine import edgar, llm, notify, trends
+from engine import edgar, llm, notify, trends, weekly
 from engine.config import ROOT, Config
 from engine.db import DB
 from engine.fetch import fetch_all
@@ -29,7 +30,7 @@ from engine.stories import build_stories
 
 def main():
     ap = argparse.ArgumentParser(description="All Tech Stocks engine")
-    ap.add_argument("command", choices=["auto", "hourly", "email", "trends"])
+    ap.add_argument("command", choices=["auto", "hourly", "email", "trends", "weekly"])
     ap.add_argument("--fixtures", type=Path)
     ap.add_argument("--now")
     ap.add_argument("--db", type=Path, default=ROOT / "data" / "news.db")
@@ -49,6 +50,14 @@ def main():
         trends.record_daily(db, cfg, now)
         print(trends.report(db, cfg, now, args.date))
         db.close()
+        return
+
+    if args.command == "weekly":
+        try:
+            trends.record_daily(db, cfg, now)
+            _build_weekly(db, cfg, rules, now, args.db.parent / "weekly")
+        finally:
+            db.close()
         return
 
     try:
@@ -87,11 +96,28 @@ def main():
             message = (f"All Tech Stocks email for {res['date']} is ready. "
                        "Double-click 'Get today's email' in the All Tech Stocks folder on your Desktop.")
             print(f"  notify: {notify.send(message)}")
+        wk = cfg.rules.get("weekly", {})
+        weekly_dir = args.db.parent / "weekly"
+        if (args.command == "auto" and wk and local.weekday() == wk.get("day", 4)
+                and not weekly.built(weekly_dir, date)
+                and wk.get("build_hour", 14) <= local.hour < wk.get("build_hour", 14) + wk.get("late_window_hours", 6)):
+            _build_weekly(db, cfg, rules, now, weekly_dir)
         if llm.enabled():
             st = llm.STATS
             print(f"  AI lines: {st['ok']} written, {st['rejected']} rejected, {st['failed']} failed calls")
     finally:
         db.close()
+
+
+def _build_weekly(db, cfg, rules, now, weekly_dir):
+    res = weekly.build(db, cfg, rules, now, weekly_dir)
+    print(f"  weekly: draft for {res['date']}, {res['stories']} big stories, {res['results']} companies reported, "
+          f"AI intro: {'yes' if res['ai_intro'] else 'no'}, AI results paragraphs: {res['ai_results']}")
+    for line in res["log"]:
+        print(f"    {line}")
+    message = (f"All Tech Stocks weekly draft for {res['date']} is ready. "
+               "Double-click 'Get this week's draft' in the All Tech Stocks folder on your Desktop.")
+    print(f"  notify: {notify.send(message)}")
 
 
 if __name__ == "__main__":

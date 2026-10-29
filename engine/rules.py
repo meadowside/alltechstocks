@@ -16,6 +16,22 @@ def _phrase_regex(phrases: list[str]) -> re.Pattern | None:
 
 # Product reviews carry the year: "Pixel 11 2026 review", "OLED TV Review (2026)".
 REVIEW_TITLE = re.compile(r"(\b20\d\d\s+review|\breview\s*\(20\d\d\))\s*$|\breview\s+[-–—]\s", re.IGNORECASE)
+# Analyst calls and tips that the fixed phrases in rules.yaml miss because the words are spread out:
+# "Buy Palantir ahead of earnings, says Rosenblatt", "TD Cowen cuts NXP stock target to $275",
+# "Coinbase Target Cut to $250", "led one analyst to downgrade the stock". This site never runs
+# anyone's buy or sell call or price target. Company deals ("agrees to buy Braze") don't match.
+TIP_TITLE = re.compile(
+    r"^(buy|sell|hold)\b(?! now, pay later)|"
+    r"\b(buy|sell|hold)\b.{0,40}\b(ahead of|before|into|after) (its |the )?(earnings|results|report|print|q[1-4])\b|"
+    r"\b(price |stock |share )?targets? (cut|raised|lowered|hiked|boosted|trimmed|slashed|lifted|increased|reduced)\b|"
+    r"\b(cuts?|raises?|lowers?|lifts?|trims?|boosts?|hikes?|slashes?) .{0,50}\b(price|stock|share) targets?\b|"
+    r"\bPT (raised|cut|lowered|to \$)|"
+    r"\b(upgrades?|downgrades?|upgraded|downgraded|upgrading|downgrading)\b.{0,40}\b(the stock|the shares|its stock|"
+    r"to (buy|sell|hold|neutral|outperform|underperform|overweight|underweight|equal.weight|market perform|accumulate|reduce))\b|"
+    r"\b(stock|shares) (upgraded|downgraded)\b|\b(upgrade|downgrade)s? (\w+ )?(stock|shares)\b|"
+    r"\b(initiates?|starts?|resumes?|reiterates?) (coverage|rating)\b|"
+    r"\b(stock|shares)\b.{0,30}\b(could|will|set to|poised to) (see|drop|fall|plunge|soar|surge|rise|double|triple|crash|tank)\b",
+    re.IGNORECASE)
 # Quote and profile pages: "SHOP | Shopify Inc. Cl A Profile", "Marvell Stock Grades | MRVL".
 QUOTE_PAGE = re.compile(r"^[A-Z][A-Z.]{0,5}\s+\||\|\s*[A-Z][A-Z.]{0,5}\s*$")
 
@@ -59,6 +75,8 @@ class Rules:
             return "title:review"
         if QUOTE_PAGE.search(title or ""):
             return "title:quote page"
+        if TIP_TITLE.search(title or ""):
+            return "title:analyst call or tip"
         t = f" {(title or '').lower()} "
         for k in self.wraps:
             if k in t:

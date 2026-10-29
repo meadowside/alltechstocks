@@ -100,6 +100,25 @@ From then on it runs by itself every hour at :23.
    folder for All Tech Stocks). It downloads the Markdown and the cover image.
 2. Paste into a new Substack post, replace the bracketed bits and send. Report, don't tip.
 
+## Your Saturday weekly draft
+
+At about 6:25am UK time on Saturdays the hourly run also builds a weekly round-up in `data/weekly/` (settings
+under `weekly:` in `config/rules.yaml`). It has the week's biggest stories, a paragraph on each company
+that reported results with links to the write-ups and the SEC filings, the most covered stocks, where
+the coverage went by section, other notable filings and next week's results dates (from `results:` in
+the watchlist).
+
+With `ANTHROPIC_API_KEY` set, one call a week (Sonnet) drafts the intro, the results paragraphs, three
+angles for your take and three title ideas. Every piece goes through the same advice and prediction
+filters as the daily lines, plus a ban on mentioning the shares at all. Anything that fails is left as
+a gap for you to fill, and `data/weekly/<date>-log.txt` says what was dropped and why.
+
+1. Double-click **Get this week's draft** in the `desktop` folder.
+2. Write **Andy's take** in your own words. That's the part worth paying for.
+3. Check each results paragraph against the filing it links to, then send.
+
+`python run.py weekly` builds it now from the saved history, whatever the day.
+
 ## The watchlist
 
 `config/watchlist.yaml` has 103 stocks: 73 US, 30 UK. Add or remove any. Each needs a symbol,
@@ -129,6 +148,7 @@ All in `config/rules.yaml`:
 pip install -r requirements.txt
 python run.py hourly                 # fetch and build the site into ./site
 python run.py email                  # build today's email now
+python run.py weekly                 # build this week's draft now (no fetching)
 ```
 
 Test without the internet, using made-up events:

@@ -24,6 +24,52 @@ PREVIEW_RE = re.compile(
     r"\bpreview\b|\blive (updates|blog|coverage|stream)\b|\b(expected|set|poised) to (announce|unveil|reveal|launch)\b|"
     r"\bwhat .{0,40} (could|might|will) (announce|unveil|reveal)\b", re.IGNORECASE)
 
+# Earnings curtain-raisers: "Alphabet set to report Q3 earnings", "Microsoft, Alphabet earnings loom".
+# They share most of their words with the results coverage that follows, so without a gate the
+# preview becomes the story every company's results pile into, under the preview's headline.
+# A preview and a results write-up are never the same story.
+_EARN = r"(earnings|results|quarterly (report|numbers)|q[1-4] (report|numbers|print))"
+EARNINGS_PREVIEW_RE = re.compile(
+    r"\b(set|due|scheduled|poised|expected) to (report|post|release|announce|unveil)\b|"
+    r"\bwill (report|post|release|announce)\b.{0,40}\b" + _EARN + r"|"
+    r"\b" + _EARN + r"\b.{0,20}\b(preview|previews|loom|looms|looming|on deck|tomorrow|this week|next week|due)\b|"
+    r"\b(ahead of|before|into|awaiting|await|awaits|previewing)\b.{0,40}\b" + _EARN + r"\b|"
+    r"\bwhat to (expect|watch|look for)\b.{0,60}\b" + _EARN + r"|\b" + _EARN + r"\b.{0,60}\bwhat to (expect|watch|look for)\b|"
+    r"\b(investors|traders|wall street|markets?) (eye|eyes|brace|braces|await|awaits)\b|"
+    r"\bseen (posting|reporting)\b|\b(seen|expected) moving after\b|\bmov(e|ing) after earnings\b|"
+    r"\b(reports|report|posts) (earnings|results) (tomorrow|today|next|on (mon|tues|wednes|thurs|fri)day)\b",
+    re.IGNORECASE)
+
+# Results write-ups. The same company's results and its other news that week (a deal, job cuts) are
+# different stories, but they share the company's name and the usual business words, and a single
+# article mentioning both ("Microsoft posts record revenue after offering buyouts") is enough to
+# pull a week of results coverage into the other story. So results only cluster with results.
+RESULTS_RE = re.compile(
+    # Not plain "quarter": "buyouts for a quarter of its workforce" isn't results.
+    r"\b(earnings|quarterly|(first|second|third|fourth)[ -]quarter|q[1-4]|results|revenue|revenues|profit|profits|eps|guidance|"
+    r"half-year|full-year|trading update|(beats?|miss(es)?|tops?) (estimates|expectations|forecasts|views))\b",
+    re.IGNORECASE)
+
+OTHER, PREVIEW, RESULTS = 0, 1, 2
+
+
+def _kind(title: str) -> int:
+    if EARNINGS_PREVIEW_RE.search(title or ""):
+        return PREVIEW
+    if RESULTS_RE.search(title or ""):
+        return RESULTS
+    return OTHER
+
+
+def _core(g: dict) -> set:
+    """The stocks a story is about: named in at least half the headlines that name any watched stock.
+    One article naming two companies ("Alphabet disappoints as Microsoft's cloud brightens") can join
+    either company's story, but doesn't turn it into a story the other company's articles can join."""
+    tagged = g["tagged"]
+    if not tagged:
+        return set()
+    return {t for t, n in g["tkc"].items() if 2 * n >= tagged}
+
 
 @dataclass
 class Outlet:
@@ -131,6 +177,10 @@ def cluster(items: list, cfg: Config) -> list[list]:
     close_after = timedelta(hours=c["close_after_hours"])
     t_link = float(c["min_link_similarity"])
     t_centroid = float(c["min_centroid_similarity"])
+    # An article that names no watched stock joining a story about one needs a closer match.
+    # Stops "Watsco profit falls" or "Wingstop profit rises" riding into a big results story on
+    # the shared word "profit".
+    t_untagged = float(c.get("min_untagged_link_similarity", t_link))
 
     # "REG - Company PLC - " is boilerplate on every UK announcement. Left in, it makes unrelated
     # announcements look alike.
@@ -139,6 +189,7 @@ def cluster(items: list, cfg: Config) -> list[list]:
     texts = [f"{strip_reg(i['title'])}. {strip_reg(i['title'])}. {i['summary'] or ''}" for i in items]  # title counts double
     tagger = Tagger(cfg)
     heads = [tagger.find(i["title"]) for i in items]
+    kind = [_kind(i["title"]) for i in items]
     vec = TfidfVectorizer(stop_words="english", ngram_range=(1, 2), sublinear_tf=True)
     X = vec.fit_transform(texts)  # sparse, each row has unit length
     # Every article-to-article similarity in one go. A story's centroid is never stored as a vector:
@@ -151,7 +202,10 @@ def cluster(items: list, cfg: Config) -> list[list]:
     # reasonably close to the story as a whole (stops one loose match chaining two stories).
     # Two articles whose headlines name different watched stocks, and none in common, are never
     # the same story however alike their wording.
-    groups: list[dict] = []  # {"idx": [...], "n2": squared length of the summed vector, "first", "last", "tk"}
+    # "tk" is every stock named in the story's headlines, "tkc" how many headlines name each,
+    # "tagged" how many headlines name any; _core() turns those into the stocks the story is about.
+    # "kind" is fixed by the first article: previews, results and other news never share a story.
+    groups: list[dict] = []  # {"idx": [...], "n2": squared length of the summed vector, "first", "last", "tk", ...}
     for idx, item in enumerate(items):
         t = parse_iso(item["published"])
         row = S[idx]
@@ -159,10 +213,15 @@ def cluster(items: list, cfg: Config) -> list[list]:
         for g in groups:
             if t - g["last"] > window or t - g["first"] > close_after:
                 continue
-            if heads[idx] and g["tk"] and not (heads[idx] & g["tk"]):
+            if g["kind"] != kind[idx]:
+                continue
+            core = g["core"]
+            if heads[idx] and core and not (heads[idx] & core):
                 continue
             sims = row[g["idx"]]
             link = float(sims.max())
+            if not heads[idx] and core and link < t_untagged:
+                continue
             dot = float(sims.sum())
             centroid_sim = dot / (np.sqrt(g["n2"]) or 1.0)
             if link >= t_link and centroid_sim >= t_centroid and link > best_sim:
@@ -172,8 +231,13 @@ def cluster(items: list, cfg: Config) -> list[list]:
             best["n2"] += 2 * best_dot + float(S[idx, idx])
             best["last"] = max(best["last"], t)
             best["tk"] |= heads[idx]
+            best["tkc"].update(heads[idx])
+            best["tagged"] += bool(heads[idx])
+            best["core"] = _core(best)
         else:
-            groups.append({"idx": [idx], "n2": float(S[idx, idx]), "first": t, "last": t, "tk": set(heads[idx])})
+            groups.append({"idx": [idx], "n2": float(S[idx, idx]), "first": t, "last": t, "tk": set(heads[idx]),
+                           "tkc": Counter(heads[idx]), "tagged": int(bool(heads[idx])), "kind": kind[idx],
+                           "core": set(heads[idx])})
 
     # Second pass: merge stories that ended up split (one outlet worded it very differently).
     # P[a, b] is the dot product of story a's summed vector with story b's.
@@ -195,11 +259,17 @@ def cluster(items: list, cfg: Config) -> list[list]:
             ga, gb = groups[a], groups[b]
             if max(ga["last"], gb["last"]) - min(ga["first"], gb["first"]) > close_after:
                 continue
-            if ga["tk"] and gb["tk"] and not (ga["tk"] & gb["tk"]):
+            if ga["kind"] != gb["kind"]:
+                continue
+            ca, cb = ga["core"], gb["core"]
+            if ca and cb and not (ca & cb):
                 continue
             ga["idx"] += gb["idx"]
             ga["first"], ga["last"] = min(ga["first"], gb["first"]), max(ga["last"], gb["last"])
             ga["tk"] |= gb["tk"]
+            ga["tkc"].update(gb["tkc"])
+            ga["tagged"] += gb["tagged"]
+            ga["core"] = _core(ga)
             P[a, :] += P[b, :]
             P[:, a] += P[:, b]
             P = np.delete(np.delete(P, b, axis=0), b, axis=1)
@@ -330,7 +400,7 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     # (a keynote trailed on Thursday, held on Tuesday) otherwise keeps its first article, a "what
     # you need to know" piece, as the headline and link. Previews only lead when they're all there is.
     def current(i) -> bool:
-        return not PREVIEW_RE.search(i["title"])
+        return not PREVIEW_RE.search(i["title"]) and not EARNINGS_PREVIEW_RE.search(i["title"])
 
     # Each outlet's link is its most typical article in the group: the one whose title words
     # turn up most across the other titles. A group can hold loosely related pieces from one
