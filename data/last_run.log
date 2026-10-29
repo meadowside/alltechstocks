@@ -1,9 +1,12 @@
-All Tech Stocks run: auto at Thu 29 Oct 05:53 UK time
-  feeds: 45/45 worked, 168 new items (49 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 06:53 UK time
+  feeds: 45/45 worked, 140 new items (44 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2170 grouped, 1539 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed structure for its homepage. A Following feed will show posts from subreddits a user has joined, while a For '
-  AI trending line rejected (34 words): 'Microsoft is cutting costs and reshaping its workforce by offering voluntary severance to up to 60,000 staff, with the offer aimed at the US'
-  site: 1075 stories live, 0 new AI lines. Top: Marvell Is Said to Near Deal for Lumentum In AI-Related Megadeal. Most covered stock: GOOGL
-  trends: 486 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 0 written, 2 rejected, 0 failed calls
+  stories: 2159 grouped, 1531 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup for its homepage. Users will get a Following feed showing posts from subreddits they have joined, alon'
+  AI trending line rejected (26 words): "Airbnb's France rules from 20 November 2026 would stop hosts requiring guests to do check-out cleaning, which could change how cleaning is a"
+  site: 1074 stories live, 2 new AI lines. Top: Marvell Is Said to Near Deal for Lumentum In AI-Related Megadeal. Most covered stock: GOOGL
+  trends: 488 stock-days and 59 section-days refreshed, 10 days of history
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup on its homepage, with a Following feed showing posts from subreddits users follow and a For You feed t'
+  email: 38 stories, 0 new AI lines, opening note: yes
+  notify: skipped (no Telegram settings)
+  AI lines: 2 written, 3 rejected, 0 failed calls
