@@ -1,4 +1,4 @@
-"""The weekly draft: a Friday round-up of the week's coverage, results and filings, for Andy to edit,
+"""The weekly draft: a Saturday morning round-up of the week's coverage, results and filings, for Andy to edit,
 add his own take to, and send on Substack.
 
 Everything factual comes from the database: the stories saved against each stock (stock_stories),
@@ -284,7 +284,7 @@ def _facts_text(facts: dict, cfg: Config) -> dict[str, str]:
         for r in facts["results"] if r["facts"]) or "none"
     covered = "\n".join(f"- {m['stock'].name} ({m['stock'].symbol}): {m['stories']} stories"
                         for m in facts["most_covered"]) or "- none"
-    week = f"{facts['start']:%-d %B} to {facts['end']:%A %-d %B %Y}"
+    week = f"{facts['start']:%-d %B} to {_last_weekday(facts['end']):%A %-d %B %Y}"
     return {"biggest": biggest, "results": results, "covered": covered, "week": week}
 
 
@@ -370,6 +370,13 @@ def fallback_titles(facts: dict) -> list[str]:
             if len(names) > 2 else f"{names[0]} and {names[1]}: the week in tech stocks"]
 
 
+def _last_weekday(d: Date) -> Date:
+    """Built on a Saturday, the week it covers ended on Friday."""
+    while d.weekday() > 4:
+        d -= timedelta(days=1)
+    return d
+
+
 def build(db: DB, cfg: Config, rules: Rules, now: datetime, archive: Path) -> dict:
     facts = gather(db, cfg, rules, now)
     pieces, log = draft(facts, cfg)
@@ -380,7 +387,7 @@ def build(db: DB, cfg: Config, rules: Rules, now: datetime, archive: Path) -> di
     tz = ZoneInfo(cfg.site["timezone"])
     md = env.get_template("weekly.md").render(
         site=cfg.site, facts=facts, pieces=pieces, titles=titles, stocks=cfg.by_symbol,
-        week_label=f"Week to {facts['end']:%A %-d %B %Y}",
+        week_label=f"Week to {_last_weekday(facts['end']):%A %-d %B %Y}",
         disclaimer=cfg.rules.get("email_disclaimer", cfg.rules.get("disclaimer", "")),
     ).strip() + "\n"
     md = re.sub(r"\n{3,}", "\n\n", md)

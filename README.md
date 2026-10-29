@@ -100,9 +100,9 @@ From then on it runs by itself every hour at :23.
    folder for All Tech Stocks). It downloads the Markdown and the cover image.
 2. Paste into a new Substack post, replace the bracketed bits and send. Report, don't tip.
 
-## Your Friday weekly draft
+## Your Saturday weekly draft
 
-From 2pm UK time on Fridays the hourly run also builds a weekly round-up in `data/weekly/` (settings
+At about 6:25am UK time on Saturdays the hourly run also builds a weekly round-up in `data/weekly/` (settings
 under `weekly:` in `config/rules.yaml`). It has the week's biggest stories, a paragraph on each company
 that reported results with links to the write-ups and the SEC filings, the most covered stocks, where
 the coverage went by section, other notable filings and next week's results dates (from `results:` in

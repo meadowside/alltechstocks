@@ -1,6 +1,6 @@
 #!/bin/bash
 # Downloads the latest All Tech Stocks weekly draft (editable Markdown).
-# Built on Fridays from 2pm UK time. Opens the newest one, whatever day you run it.
+# Built on Saturdays at about 6:25am UK time. Opens the newest one, whatever day you run it.
 cd "$(dirname "$0")" || exit 1
 mkdir -p weekly
 BASE="https://raw.githubusercontent.com/meadowside/alltechstocks/main/data/weekly"
@@ -19,7 +19,7 @@ if curl -fsSL "$BASE/latest.md?nocache=$(date +%s)" -o "$TMP"; then
   open -e "$F"
 else
   rm -f "$TMP"
-  echo "No weekly draft yet. The first one is built on Friday from 2pm UK time."
+  echo "No weekly draft yet. It's built on Saturdays at about 6:25am UK time."
   read -n1 -s -p "Press any key to close."
   exit 1
 fi

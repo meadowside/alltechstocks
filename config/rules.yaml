@@ -213,12 +213,13 @@ ai_lines:
   max_new_per_run: 25
   max_new_per_day: 150
 
-# The weekly draft (engine/weekly.py): a Friday round-up for Andy to edit and send on Substack.
-# Saved to data/weekly/<date>.md. Not on the public site. "python run.py weekly" builds it now.
+# The weekly draft (engine/weekly.py): a Saturday morning round-up of the week for Andy to edit
+# and send on Substack. Saved to data/weekly/<date>.md. Not on the public site.
+# "python run.py weekly" builds it now.
 weekly:
-  day: 4                    # 0 = Monday ... 4 = Friday
-  build_hour: 14            # UK time: after Thursday's US results have been written up
-  late_window_hours: 6      # if runs are late, still build it up to 8pm
+  day: 5                    # 0 = Monday ... 5 = Saturday
+  build_hour: 6             # UK time: the 6:23 run builds it, so it's ready by 6:30
+  late_window_hours: 6      # if runs are late, still build it up to noon
   days: 7                   # how far back the week goes
   model: claude-sonnet-5-5  # one call a week, so a stronger model than the daily lines
   top_stories: 5
@@ -242,6 +243,8 @@ clustering:
   min_link_similarity: 0.15
   min_centroid_similarity: 0.08
   merge_similarity: 0.15
+  # An article naming no watched stock needs this close a match to join a story that names one.
+  min_untagged_link_similarity: 0.3
 
 # Google News queries built from the watchlist, a few companies per query.
 # These fill the gaps the outlet feeds miss. Items are credited to the outlet that wrote them.
