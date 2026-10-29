@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Thu 29 Oct 14:53 UK time
-  feeds: 45/45 worked, 316 new items (150 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 15:53 UK time
+  feeds: 45/45 worked, 275 new items (104 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2130 grouped, 1537 name a watched stock or pass the market rules
-  site: 1103 stories live, 2 new AI lines. Top: Airbnb Just Did Something Guests Have Been Asking for Years — Here’s What Changed. Most covered stock: GOOGL
-  trends: 515 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  stories: 2258 grouped, 1630 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed structure on its homepage, with a Following feed showing posts from subreddits users follow and a For You fe'
+  site: 1177 stories live, 3 new AI lines. Top: Exclusive | DoorDash Is in Advanced Talks to Acquire Delivery Rival Instacart. Most covered stock: GOOGL
+  trends: 520 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
