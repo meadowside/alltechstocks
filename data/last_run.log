@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Thu 29 Oct 17:53 UK time
-  feeds: 45/45 worked, 260 new items (97 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 18:53 UK time
+  feeds: 45/45 worked, 243 new items (88 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2298 grouped, 1642 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, with a Following feed showing posts from subreddits users have joined and a For You'
-  AI trending line rejected (27 words): 'Airbnb has committed $500 million to a nonprofit to expand emergency accommodation stays, a move that could shape how it handles housing sup'
-  site: 1176 stories live, 0 new AI lines. Top: Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'. Most covered stock: GOOGL
-  trends: 525 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 0 written, 2 rejected, 0 failed calls
+  stories: 2321 grouped, 1667 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage describes hosts who have threatened strike action after Airbnb removed the requirement for guests to do their own cleaning and '
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed structure for its homepage, with a Following feed showing posts from subreddits users have joined and a For '
+  site: 1188 stories live, 6 new AI lines. Top: Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'. Most covered stock: GOOGL
+  trends: 526 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 6 written, 2 rejected, 0 failed calls
