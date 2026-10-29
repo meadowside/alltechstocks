@@ -1,10 +1,9 @@
-All Tech Stocks run: auto at Thu 29 Oct 16:53 UK time
-  feeds: 45/45 worked, 311 new items (115 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 17:53 UK time
+  feeds: 45/45 worked, 260 new items (97 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2312 grouped, 1661 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, adding a Following feed for posts from subreddits users already follow. The For You'
-  AI trending line rejected (26 words): 'Airbnb has committed $500 million to a nonprofit to expand emergency stays, a move that could shape how its platform is used for short-term '
-  AI trending line rejected (26 words): 'Nvidia says it has investigated and debunked claims of chip diversion, while the reported espionage probe involves a cloud partner executive'
-  site: 1187 stories live, 4 new AI lines. Top: Exclusive | DoorDash Is in Advanced Talks to Acquire Delivery Rival Instacart. Most covered stock: GOOGL
-  trends: 522 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 4 written, 3 rejected, 0 failed calls
+  stories: 2298 grouped, 1642 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, with a Following feed showing posts from subreddits users have joined and a For You'
+  AI trending line rejected (27 words): 'Airbnb has committed $500 million to a nonprofit to expand emergency accommodation stays, a move that could shape how it handles housing sup'
+  site: 1176 stories live, 0 new AI lines. Top: Nvidia responds to report Jensen Huang was target of Chinese asset, says diversion allegations were 'investigated and debunked'. Most covered stock: GOOGL
+  trends: 525 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 0 written, 2 rejected, 0 failed calls
