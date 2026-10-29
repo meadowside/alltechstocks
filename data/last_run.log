@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Thu 29 Oct 10:53 UK time
-  feeds: 45/45 worked, 277 new items (86 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 29 Oct 11:53 UK time
+  feeds: 45/45 worked, 339 new items (123 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 1 new filings
-  stories: 2150 grouped, 1533 name a watched stock or pass the market rules
-  site: 1098 stories live, 3 new AI lines. Top: 'They will rob us of toilet paper': Airbnb hosts melt down over new policy. Most covered stock: GOOGL
-  trends: 504 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  stories: 2146 grouped, 1538 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: expensive): 'Microsoft and Alphabet both reported capital spending below analyst estimates, and neither raised its forecast for the year. The shortfall h'
+  site: 1103 stories live, 2 new AI lines. Top: No more chores! Airbnb bans hosts from making guests wash dishes and strip beds. Most covered stock: GOOGL
+  trends: 507 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
