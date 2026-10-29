@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Thu 29 Oct 03:53 UK time
-  feeds: 45/45 worked, 144 new items (39 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 2204 grouped, 1573 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed setup for its homepage, with a Following feed showing posts from subreddits users have joined and a For You '
-  AI trending line rejected (30 words): "Reports describe couriers using several phones to accept Uber Eats orders at higher pay, a practice that points to pressure on the platform'"
-  site: 1096 stories live, 3 new AI lines. Top: Marvell Is Said to Near Deal for Lumentum In AI-Related Megadeal. Most covered stock: GOOGL
-  trends: 480 stock-days and 59 section-days refreshed, 10 days of history
-  AI lines: 3 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Thu 29 Oct 04:53 UK time
+  feeds: 45/45 worked, 143 new items (43 excluded by rules, 9 Google queries resting this hour)
+  filings: 71/73 companies checked, 0 new filings
+  stories: 2178 grouped, 1552 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: recommendations): 'Reddit has announced a new feed layout for its homepage, with a Following feed showing posts from subreddits users already follow and a For '
+  AI trending line rejected (30 words): "Reports describe workers in France using several accounts and phones to take Uber Eats orders, which points to pressure on the platform's ru"
+  site: 1083 stories live, 0 new AI lines. Top: Marvell Is Said to Near Deal for Lumentum In AI-Related Megadeal. Most covered stock: GOOGL
+  trends: 483 stock-days and 59 section-days refreshed, 10 days of history
+  AI lines: 0 written, 2 rejected, 0 failed calls
