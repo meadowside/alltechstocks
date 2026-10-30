@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Fri 30 Oct 08:53 UK time
-  feeds: 45/45 worked, 156 new items (50 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 30 Oct 09:53 UK time
+  feeds: 45/45 worked, 154 new items (79 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2376 grouped, 1717 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Intel's data center business recorded its strongest growth in 15 years, but the result still came in below what Wall Street had expected. Th"
-  site: 1195 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: AMZN
-  trends: 569 stock-days and 65 section-days refreshed, 11 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  stories: 2377 grouped, 1711 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Intel's data center business recorded its fastest growth in 15 years, a result that still left the company short of what analysts had foreca"
+  AI trending line rejected (27 words): 'Spotify plans a paid add-on, at up to $5 a month, that would let users remix songs with AI, adding a new product to its subscription offerin'
+  site: 1186 stories live, 1 new AI lines. Top: Roblox gets first local boss in Joel Neoh. Most covered stock: AMZN
+  trends: 571 stock-days and 65 section-days refreshed, 11 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
