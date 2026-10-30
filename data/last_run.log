@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Fri 30 Oct 01:53 UK time
-  feeds: 45/45 worked, 107 new items (38 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 30 Oct 02:42 UK time
+  feeds: 45/45 worked, 121 new items (40 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2379 grouped, 1706 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Intel has forecast weaker chip sales than analysts expected, and the company's shares fell 17%. The outlook matters because Intel has been t"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives little beyond the headline itself. CCOO, the Spanish trade union, has reportedly secured labour improvements for more tha'
-  site: 1198 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: GOOGL
-  trends: 539 stock-days and 65 section-days refreshed, 11 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  stories: 2384 grouped, 1715 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "Intel has forecast weaker chip sales than analysts expected, and its shares fell 17% on the news. The outlook puts pressure on the company's"
+  site: 1205 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: AMZN
+  trends: 548 stock-days and 65 section-days refreshed, 11 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
