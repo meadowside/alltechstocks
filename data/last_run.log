@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Fri 30 Oct 06:53 UK time
-  feeds: 45/45 worked, 134 new items (52 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 30 Oct 07:53 UK time
+  feeds: 45/45 worked, 108 new items (38 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2395 grouped, 1730 name a watched stock or pass the market rules
-  site: 1203 stories live, 3 new AI lines. Top: Google parent takes $500bn hit on AI worries. Most covered stock: AMZN
-  trends: 563 stock-days and 65 section-days refreshed, 11 days of history
-  email: 38 stories, 0 new AI lines, opening note: yes
-  notify: skipped (no Telegram settings)
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  stories: 2380 grouped, 1712 name a watched stock or pass the market rules
+  site: 1193 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: AMZN
+  trends: 564 stock-days and 65 section-days refreshed, 11 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
