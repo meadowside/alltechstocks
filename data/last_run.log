@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Fri 30 Oct 07:53 UK time
-  feeds: 45/45 worked, 108 new items (38 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 30 Oct 08:53 UK time
+  feeds: 45/45 worked, 156 new items (50 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2380 grouped, 1712 name a watched stock or pass the market rules
-  site: 1193 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: AMZN
-  trends: 564 stock-days and 65 section-days refreshed, 11 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  stories: 2376 grouped, 1717 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Intel's data center business recorded its strongest growth in 15 years, but the result still came in below what Wall Street had expected. Th"
+  site: 1195 stories live, 1 new AI lines. Top: Intel shares drop 18% on Israel factory blast, PC weakness. Most covered stock: AMZN
+  trends: 569 stock-days and 65 section-days refreshed, 11 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
