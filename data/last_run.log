@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Sat 31 Oct 09:53 UK time
-  feeds: 45/45 worked, 142 new items (61 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 31 Oct 10:53 UK time
+  feeds: 45/45 worked, 121 new items (43 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2241 grouped, 1608 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says DoorDash has used AI agents to cut grocery reorder latency from 16 seconds to 2 seconds. Th'
-  AI trending line rejected (29 words): 'Spotify plans a paid add-on, at up to $5 a month, that would let users remix songs using AI, adding a new revenue stream on top of its subsc'
-  site: 1094 stories live, 1 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
-  trends: 643 stock-days and 71 section-days refreshed, 12 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  stories: 2216 grouped, 1593 name a watched stock or pass the market rules
+  site: 1073 stories live, 2 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
+  trends: 644 stock-days and 71 section-days refreshed, 12 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
