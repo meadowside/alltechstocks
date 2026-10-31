@@ -1,11 +1,7 @@
-All Tech Stocks run: auto at Sat 31 Oct 06:53 UK time
-  feeds: 45/45 worked, 123 new items (49 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 31 Oct 07:53 UK time
+  feeds: 45/45 worked, 115 new items (49 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2277 grouped, 1624 name a watched stock or pass the market rules
-  site: 1122 stories live, 1 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
-  trends: 629 stock-days and 71 section-days refreshed, 12 days of history
-  AI call failed: HTTP Error 400: Bad Request
-  weekly: draft for 2026-10-31, 5 big stories, 8 companies reported, AI intro: no, AI results paragraphs: 0
-    AI call failed, AI parts left blank
-  notify: skipped (no Telegram settings)
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  stories: 2272 grouped, 1622 name a watched stock or pass the market rules
+  site: 1123 stories live, 0 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
+  trends: 634 stock-days and 71 section-days refreshed, 12 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
