@@ -102,22 +102,36 @@ From then on it runs by itself every hour at :23.
 
 ## Your Saturday weekly draft
 
-At about 6:25am UK time on Saturdays the hourly run also builds a weekly round-up in `data/weekly/` (settings
-under `weekly:` in `config/rules.yaml`). It has the week's biggest stories, a paragraph on each company
-that reported results with links to the write-ups and the SEC filings, the most covered stocks, where
-the coverage went by section, other notable filings and next week's results dates (from `results:` in
-the watchlist).
+At about 6:25am UK time on Saturdays the hourly run also builds a weekly read on how the press covered
+the companies we follow, in `data/weekly/` with a Substack cover (settings under `weekly:` in
+`config/rules.yaml`, measures in `engine/coverage.py`). It isn't a rerun of the week's stories. It has:
 
-With `ANTHROPIC_API_KEY` set, one call a week (Sonnet) drafts the intro, the results paragraphs, three
-angles for your take and three title ideas. Every piece goes through the same advice and prediction
-filters as the daily lines, plus a ban on mentioning the shares at all. Anything that fails is left as
-a gap for you to fill, and `data/weekly/<date>-log.txt` says what was dropped and why.
+- The Big 3: the three stories the most outlets wrote up, one slot per event, with how fast each spread
+  and how long it ran
+- Pace: the fastest-spreading story, the longest running and the quickest to fade
+- Who got the attention: each company's share of the week's articles, the US/UK split and the
+  companies nobody covered
+- Who gained and lost attention against the week before (once the archive covers a full week before)
+- Where the coverage went by section, the outlets on the most big stories, the busiest and quietest day
+- Results that drew the press, with SEC filings, and next week's results dates
 
-1. Double-click **Get this week's draft** in the `desktop` folder.
+Every count is across the outlets we track, and timings start from the first article we saw. It never
+says who broke a story: with thousands of outlets publishing we can't know that.
+
+Attention is counted from the articles themselves, not the saved stock stories, because a saved story
+can inherit an older first_seen when it's merged with an earlier one.
+
+With `ANTHROPIC_API_KEY` set, one call a week (Sonnet, falling back to the daily model) drafts the intro,
+three angles for your take and three title ideas. Each piece goes through the advice and prediction
+filters, a ban on mentioning the shares and a ban on "who was first" claims. Anything that fails is left
+as a gap, and `data/weekly/<date>-log.txt` says what was dropped and why.
+
+1. Double-click **Get this week's draft** in the `desktop` folder. It downloads the draft and the cover.
 2. Write **Andy's take** in your own words. That's the part worth paying for.
-3. Check each results paragraph against the filing it links to, then send.
+3. Send.
 
-`python run.py weekly` builds it now from the saved history, whatever the day.
+`python run.py weekly` builds it now from the saved history, whatever the day. On GitHub, run the
+workflow with the **weekly** choice.
 
 ## The watchlist
 

@@ -111,8 +111,8 @@ def main():
 
 def _build_weekly(db, cfg, rules, now, weekly_dir):
     res = weekly.build(db, cfg, rules, now, weekly_dir)
-    print(f"  weekly: draft for {res['date']}, {res['stories']} big stories, {res['results']} companies reported, "
-          f"AI intro: {'yes' if res['ai_intro'] else 'no'}, AI results paragraphs: {res['ai_results']}")
+    print(f"  weekly: draft for {res['date']}, {res['big_stories']} big stories, {res['results']} companies reported, "
+          f"AI intro: {'yes' if res['ai_intro'] else 'no'}, AI angles: {res['ai_angles']}")
     for line in res["log"]:
         print(f"    {line}")
     message = (f"All Tech Stocks weekly draft for {res['date']} is ready. "

@@ -222,7 +222,7 @@ weekly:
   late_window_hours: 6      # if runs are late, still build it up to noon
   days: 7                   # how far back the week goes
   model: claude-sonnet-5-5  # one call a week, so a stronger model than the daily lines
-  top_stories: 5
+  big_story_outlets: 10     # outlets that make a "big story" for the pace and outlet measures
   max_results: 8
   most_covered: 8
   filings_max: 10

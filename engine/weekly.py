@@ -1,12 +1,13 @@
-"""The weekly draft: a Saturday morning round-up of the week's coverage, results and filings, for Andy to edit,
-add his own take to, and send on Substack.
+"""The weekly draft: a Saturday morning read on how the press covered the companies we follow that week,
+for Andy to edit, add his own take to, and send on Substack.
 
-Everything factual comes from the database: the stories saved against each stock (stock_stories),
-SEC filings, and the daily coverage counts (stock_daily, section_daily). One AI call drafts the
-prose (an intro, a short paragraph per company that reported, three angles Andy could write about,
-title ideas). Every piece is checked with the same advice and prediction filters as the daily lines.
-A piece that fails is left as a gap for Andy to write, so the worst case is a draft with holes,
-never one that tips a stock.
+It is about the coverage, not a rerun of the week's stories: the three stories the most outlets wrote
+up and how each played out, which stories spread fastest and which faded, who got the attention and
+who got none, and which of the outlets we track were on the big stories. Measures live in coverage.py.
+Everything is counted across the outlets we track. We never say who broke a story.
+
+One AI call drafts the intro, title ideas and three angles for Andy's take. Each piece is checked
+against the advice, prediction and "who was first" filters. A piece that fails is left as a gap.
 
 Written to data/weekly/<date>.md (and latest.md), next to the daily emails. Not on the public site.
 """
@@ -21,7 +22,7 @@ from zoneinfo import ZoneInfo
 
 from jinja2 import Environment, FileSystemLoader
 
-from . import llm, trends
+from . import coverage, llm, trends
 from .config import ROOT, Config
 from .db import DB, iso
 from .rules import Rules
@@ -70,9 +71,20 @@ def _clean(headline: str) -> bool:
 def _story_groups(db: DB, rules: Rules, since: datetime) -> list[dict]:
     """The week's stories, one entry per story however many stocks it was saved against.
     Two saved rows are the same story if they share a link or any article."""
+    # Picked by when their articles came out, not the saved first_seen: a saved story can inherit an
+    # older date when it's merged with an earlier one, which would hide this week's coverage.
     rows = db.conn.execute(
-        "SELECT * FROM stock_stories WHERE first_seen >= ? ORDER BY outlets DESC, last_seen DESC",
+        "SELECT * FROM stock_stories WHERE last_seen >= ? ORDER BY outlets DESC, last_seen DESC",
         (iso(since),)).fetchall()
+    published: dict[int, str] = {}
+    want = sorted({i for r in rows for i in json.loads(r["item_ids"])})
+    for k in range(0, len(want), 500):
+        chunk = want[k:k + 500]
+        published.update(db.conn.execute(
+            f"SELECT id, published FROM items WHERE id IN ({','.join('?' * len(chunk))})", chunk).fetchall())
+    cut = iso(since)
+    rows = [r for r in rows if (lambda t: t and sum(x >= cut for x in t) * 2 >= len(t))(
+        [published.get(i) for i in json.loads(r["item_ids"]) if published.get(i)])]  # mostly this week
     groups: list[dict] = []
     for r in rows:
         if rules.exclusion_reason(r["headline"], r["link"], "", r["outlet"]) or not _clean(r["headline"]):
@@ -185,18 +197,18 @@ def _most_covered(db: DB, cfg: Config, start: Date, end: Date, n: int) -> list[d
 
 
 def gather(db: DB, cfg: Config, rules: Rules, now: datetime) -> dict:
+    """The week as the press covered it. Counts are across the outlets we track."""
     wcfg = cfg.rules.get("weekly", {})
     days = int(wcfg.get("days", 7))
     start, end, since = _week(cfg, now, days)
+    tz = ZoneInfo(cfg.site["timezone"])
     tagger = Tagger(cfg)
     groups = _story_groups(db, rules, since)
+    skip = lambda g: bool(PREVIEW_RE.search(g["headline"]))  # a curtain-raiser isn't the story
 
-    biggest = [g for g in groups if g["section"] != "results" and not PREVIEW_RE.search(g["headline"])]
-    biggest = sorted(biggest, key=lambda g: -g["outlets"])[: int(wcfg.get("top_stories", 5))]
-    ai = cfg.rules.get("ai_lines", {})
-    for g in biggest:
-        line = db.why_line(sorted(g["ids"]), ai.get("valid_from")) or ""
-        g["so_what"] = "" if line in ("", "-") else llm.drop_padding(line)
+    big = int(wcfg.get("big_story_outlets", coverage.BIG))
+    out = coverage.outlets(db, groups, skip, big=big)
+    arts = [a for a in out.pop("arts") if start <= coverage._when(a["published"]).astimezone(tz).date() <= end]
 
     results = _results(db, cfg, tagger, since, int(wcfg.get("max_results", 8)))
 
@@ -208,12 +220,6 @@ def gather(db: DB, cfg: Config, rules: Rules, now: datetime) -> dict:
     shares = [dict(x, name=section_names.get(x["section"], x["section"]),
                    previous_share=x["previous_share"] if full_prev else None)
               for x in trends.section_share(db, days=days, until=end.isoformat())]
-
-    notable = db.conn.execute(
-        "SELECT * FROM filings WHERE filed >= ? AND notable = 1 ORDER BY filed DESC", (iso(since),)).fetchall()
-    other_filings = [dict(f) for f in notable
-                     if not f["label"].startswith("Results") and f["label"] not in ("Quarterly report", "Annual report")]
-    other_filings = other_filings[: int(wcfg.get("filings_max", 10))]
 
     coming = []
     for st in cfg.stocks:
@@ -228,64 +234,100 @@ def gather(db: DB, cfg: Config, rules: Rules, now: datetime) -> dict:
 
     return {
         "start": start, "end": end, "days": days,
-        "history_days": trends.history_days(db), "story_count": sum(1 for g in groups if g["outlets"] >= 2),  # one-outlet items aren't stories yet
-        "biggest": biggest, "results": results,
-        "most_covered": _most_covered(db, cfg, start, end, int(wcfg.get("most_covered", 8))),
-        "shares": shares, "filings": other_filings, "coming": coming,
+        "history_days": trends.history_days(db),
+        "story_count": sum(1 for g in groups if g["outlets"] >= 2),  # one-outlet items aren't stories yet
+        "big3": coverage.big_three(db, groups, tz, skip, big),
+        "pace": coverage.pace(db, groups, tz, skip, big),
+        "attention": coverage.attention(db, cfg, start, end, groups, int(wcfg.get("most_covered", 8))),
+        "movers": coverage.movers(db, cfg, start, end),
+        "outlets": out,
+        "days_load": coverage.busiest_day(arts, tz),
+        "results": results, "shares": shares, "coming": coming,
     }
 
 
 # ---------------------------------------------------------------- AI draft
 
-PROMPT = """You draft the weekly round-up for All Tech Stocks, a research digest of the most covered US and
-UK listed tech companies. Andy edits it, adds his own view and signs it. It is never an advice service.
+PROMPT = """You draft the weekly round-up for All Tech Stocks. It is a weekly read on how the press covered
+US and UK listed tech companies, measured across the outlets the site tracks. Andy edits it, adds his own
+view and signs it. It is never an advice service.
 
 The week: {week}.
 
-Biggest stories of the week (outlets that covered each, most first):
-{biggest}
+The three stories the most outlets wrote up:
+{big3}
 
-Companies that reported results this week, with the headlines about their results:
+Pace among the week's {big_count} big stories ({big} or more outlets):
+{pace}
+
+Share of the week's coverage by company:
+{attention}
+
+Results that drew the press this week (outlets):
 {results}
 
-Most covered stocks this week (stories naming them):
-{covered}
-
 Reply with JSON only, in exactly this shape:
-{{"titles": ["...", "...", "..."], "intro": "...", "results": {{"TICKER": "...", ...}}, "angles": ["...", "...", "..."]}}
+{{"titles": ["...", "...", "..."], "intro": "...", "angles": ["...", "...", "..."]}}
 
-titles: three subject lines, 70 characters or fewer, each naming two companies from the week.
-intro: four to six short sentences, 110 words or fewer, on what defined the week for these companies'
-  businesses. Pick a thread that ties two or more stories together if there is one. Name the companies.
-results: one entry per ticker listed under results, 55 words or fewer, two or three sentences on what the
-  company reported and what it said about the coming quarters (guidance, spending plans, demand),
-  using only the headlines given for it. If a headline says results beat or missed estimates, you may say so.
-  If the headlines give nothing concrete, use the value "NONE".
-angles: three questions Andy could answer in his own take, each one sentence, about the businesses
-  (strategy, customers, costs, rivals, regulation), never about the shares.
+titles: three subject lines, 70 characters or fewer, about where the press attention went this week.
+  Each names at least two companies.
+intro: four to six short sentences, 110 words or fewer, on where the press attention went and how it
+  behaved: what dominated, what spread fast, what faded, who was ignored. Use the numbers given.
+angles: three questions Andy could answer in his own take, each one sentence, about what the pattern of
+  coverage says about the companies or the press (why one story ran for days, why UK names drew so
+  little attention). Never about the shares.
 
 Strict rules for every piece of text:
-- Never say or hint whether to buy, sell or hold anything.
-- Never mention share prices, share moves, valuations, returns, investors' reactions or what the shares might do,
-  even if a headline does. Report the business news inside the headline and leave the share move out.
-- Never predict. Describe what happened and what the companies said. Company guidance is fine when reported
-  as the company's own ("Microsoft said it expects...").
-- Use only the facts given. No figures that aren't in the headlines.
+- Never say or suggest which outlet broke a story or was first. We can't know that.
+- Timings are across the outlets we track. Don't present them as the whole press.
+- Never say or hint whether to buy, sell or hold anything. Never mention shares, share prices, valuations,
+  returns or investors, even if a headline does.
+- Never predict, and don't explain why coverage behaved as it did unless the facts say so. Questions in
+  the angles are fine.
+- Use only the facts given. No figures that aren't here.
 - Plain British English. Vary sentence length. Contractions are fine. A sharp, plain-speaking editor's voice.
-- No dashes of any kind, no semicolons, no comma before "and" in a list, no hype words.
-- Never mention outlets, coverage counts, headlines, sources or this email. Don't greet or sign off."""
+- No dashes of any kind, no semicolons, no comma before "and" in a list, no hype words. Don't greet or sign off."""
+
+
+def _hours(h: float | None) -> str:
+    if h is None:
+        return "n/a"
+    if h < 1:
+        m = max(1, round(h * 60))
+        return f"{m} minute" if m == 1 else f"{m} minutes"
+    if h < 48:
+        return f"{h:.0f} hours" if h >= 1.5 else "about an hour"
+    return f"{h / 24:.1f} days".replace(".0 days", " days")
 
 
 def _facts_text(facts: dict, cfg: Config) -> dict[str, str]:
-    biggest = "\n".join(
-        f"- {g['headline']} ({g['outlets']} outlets) [{', '.join(g['symbols'][:3])}]" for g in facts["biggest"]) or "- none"
-    results = "\n".join(
-        f"{r['symbol']} ({r['name']}):\n" + "\n".join(f"  - {t}" for t in r["facts"][:8])
-        for r in facts["results"] if r["facts"]) or "none"
-    covered = "\n".join(f"- {m['stock'].name} ({m['stock'].symbol}): {m['stories']} stories"
-                        for m in facts["most_covered"]) or "- none"
+    big3 = "\n".join(
+        f"- {g['headline']} [{', '.join(g['symbols'][:3])}]: {g['outlets']} outlets, {g['articles']} articles; "
+        f"reached {facts['pace']['big']} outlets {_hours(g['to_big'])} after the first article we saw; 90% of its articles out within "
+        f"{_hours(g['most_within'])}; peak day {g['peak_day']:%A %-d %B}" for g in facts["big3"]) or "- none"
+    p = facts["pace"]
+    pace = "\n".join(x for x in [
+        f"- Fastest to {p['big']} outlets: {p['fastest']['headline']} ({_hours(p['fastest']['to_big'])})" if p["fastest"] else "",
+        f"- Longest running: {p['longest']['headline']} (90% out within {_hours(p['longest']['most_within'])})" if p["longest"] else "",
+        f"- Quickest to fade: {p['shortest']['headline']} (90% out within {_hours(p['shortest']['most_within'])})" if p["shortest"] else "",
+    ] if x) or "- none"
+    a = facts["attention"]
+    attention = "\n".join(f"- {r['stock'].name}: {r['share']:.1f}%" for r in a["top"])
+    attention += (f"\n- The top three took {a['top3_share']:.0f}% between them."
+                  f"\n- US companies {a['markets'].get('US', 0)}%, UK companies {a['markets'].get('UK', 0)}%. "
+                  f"{a['uk_covered']} of the {a['uk_count']} UK companies we follow got any coverage."
+                  f"\n- {len(a['quiet'])} of the {len(cfg.stocks)} companies we follow got none.")
+    results = "\n".join(f"- {r['name']}: {r['coverage']}" for r in facts["results"]) or "- none"
     week = f"{facts['start']:%-d %B} to {_last_weekday(facts['end']):%A %-d %B %Y}"
-    return {"biggest": biggest, "results": results, "covered": covered, "week": week}
+    return {"big3": big3, "pace": pace, "attention": attention, "results": results, "week": week,
+            "big_count": str(p["count"]), "big": str(p["big"])}
+
+
+# Self-talk and guessing. Unlike the daily lines, the weekly is about coverage, so a plain sentence
+# about outlets or coverage is fine here.
+SELF_TALK = re.compile(r"\bI\b(?!-\d)|\bI'm\b|\bI've\b|\bwe (can't|cannot)\b|speculat\w*|"
+                       r"\b(the|source|this) material\b|\bmaterial provided\b|\bnothing in the\b", re.I)
+FIRST_RE = re.compile(r"\b(broke|breaking|first to|was first|scoop\w*|exclusive\w*|beat (everyone|rivals))\b", re.I)
 
 
 def _check(text: str, max_words: int) -> str | None:
@@ -302,17 +344,20 @@ def _check(text: str, max_words: int) -> str | None:
     m = llm.ADVICE_RE.search(text)
     if m:
         return f"reads like advice or a prediction: {m.group(0)}"
-    m = llm.META.search(text)
+    m = SELF_TALK.search(text)
     if m:
-        return f"talks about itself or its sources: {m.group(0)}"
-    if re.search(r"\b(stock|shares)\b", text, re.I):
+        return f"talks about itself: {m.group(0)}"
+    m = FIRST_RE.search(text)
+    if m:
+        return f"says who had it first: {m.group(0)}"
+    if re.search(r"\b(stock|stocks|shares|investors?)\b", text, re.I):
         return "mentions the shares"
     return None
 
 
 def parse_draft(raw: str | None, facts: dict) -> tuple[dict, list[str]]:
     """Turn the model's JSON into checked pieces. Anything that fails a rule is dropped and logged."""
-    out = {"titles": [], "intro": None, "results": {}, "angles": []}
+    out = {"titles": [], "intro": None, "angles": []}
     log: list[str] = []
     if not raw:
         return out, log
@@ -332,16 +377,6 @@ def parse_draft(raw: str | None, facts: dict) -> tuple[dict, list[str]]:
         log.append(f"intro dropped ({why}): {intro[:120]!r}")
     else:
         out["intro"] = intro
-    wanted = {r["symbol"] for r in facts["results"]}
-    for sym, text in (data.get("results") or {}).items():
-        text = str(text).strip()
-        if sym not in wanted or llm.says_none(text):
-            continue
-        why = _check(text, 65)
-        if why:
-            log.append(f"{sym} paragraph dropped ({why}): {text[:120]!r}")
-        else:
-            out["results"][sym] = text
     for a in data.get("angles", [])[:3]:
         a = str(a).strip()
         why = _check(a, 35)
@@ -351,7 +386,7 @@ def parse_draft(raw: str | None, facts: dict) -> tuple[dict, list[str]]:
 
 def draft(facts: dict, cfg: Config) -> tuple[dict, list[str]]:
     if not llm.enabled():
-        return {"titles": [], "intro": None, "results": {}, "angles": []}, ["no ANTHROPIC_API_KEY, AI parts left blank"]
+        return {"titles": [], "intro": None, "angles": []}, ["no ANTHROPIC_API_KEY, AI parts left blank"]
     wcfg = cfg.rules.get("weekly", {})
     prompt = PROMPT.format(**_facts_text(facts, cfg))
     model = wcfg.get("model", DEFAULT_MODEL)
@@ -363,7 +398,7 @@ def draft(facts: dict, cfg: Config) -> tuple[dict, list[str]]:
         raw = llm._ask(prompt, max_tokens=2500, model=llm.DEFAULT_MODEL, timeout=180, effort="medium")
         if raw is None:
             log.append(f"retry on {llm.DEFAULT_MODEL} failed too: {llm.LAST_ERROR}")
-            return {"titles": [], "intro": None, "results": {}, "angles": []}, log + ["AI parts left blank"]
+            return {"titles": [], "intro": None, "angles": []}, log + ["AI parts left blank"]
         log.append(f"drafted on {llm.DEFAULT_MODEL} instead")
     pieces, checks = parse_draft(raw, facts)
     return pieces, log + checks
@@ -372,11 +407,11 @@ def draft(facts: dict, cfg: Config) -> tuple[dict, list[str]]:
 # ---------------------------------------------------------------- build
 
 def fallback_titles(facts: dict) -> list[str]:
-    names = [m["stock"].name for m in facts["most_covered"][:4]]
+    names = [r["stock"].name for r in facts["attention"]["top"][:3]]
     if len(names) < 2:
         return []
-    return [f"{names[0]} and {names[1]} led the week", f"{names[0]}, {names[2]} and a busy results week"
-            if len(names) > 2 else f"{names[0]} and {names[1]}: the week in tech stocks"]
+    return [f"{names[0]} and {names[1]} took the week's headlines",
+            f"Where the press looked: {', '.join(names[:-1])} and {names[-1]}"]
 
 
 def _last_weekday(d: Date) -> Date:
@@ -393,6 +428,7 @@ def build(db: DB, cfg: Config, rules: Rules, now: datetime, archive: Path) -> di
     env = Environment(loader=FileSystemLoader(ROOT / "templates"), autoescape=False,
                       trim_blocks=False, lstrip_blocks=False)
     env.filters["md"] = lambda t: (t or "").replace("[", "(").replace("]", ")").replace("*", "")
+    env.filters["hours"] = _hours
     tz = ZoneInfo(cfg.site["timezone"])
     md = env.get_template("weekly.md").render(
         site=cfg.site, facts=facts, pieces=pieces, titles=titles, stocks=cfg.by_symbol,
@@ -408,8 +444,8 @@ def build(db: DB, cfg: Config, rules: Rules, now: datetime, archive: Path) -> di
     (archive / f"{day}-log.txt").write_text(
         f"Built {now.astimezone(tz):%a %d %b %Y %H:%M} UK time, {facts['history_days']} days of history\n"
         + ("\n".join(log) if log else "All AI pieces passed the checks.") + "\n", encoding="utf-8")
-    return {"date": day, "results": len(facts["results"]), "stories": len(facts["biggest"]),
-            "ai_intro": bool(pieces["intro"]), "ai_results": len(pieces["results"]), "log": log}
+    return {"date": day, "results": len(facts["results"]), "big_stories": facts["pace"]["count"],
+            "ai_intro": bool(pieces["intro"]), "ai_angles": len(pieces["angles"]), "log": log}
 
 
 def _cover(facts: dict, cfg: Config, titles: list[str], archive: Path, day: str, log: list[str]) -> None:
@@ -417,7 +453,7 @@ def _cover(facts: dict, cfg: Config, titles: list[str], archive: Path, day: str,
     Saved as <date>-cover.png and latest-cover.png. A failed cover never stops the draft."""
     try:
         from . import cover
-        words = next((t for t in titles if len(t) <= 90), None) or facts["biggest"][0]["headline"]
+        words = next((t for t in titles if len(t) <= 90), None) or facts["big3"][0]["headline"]
         found = Tagger(cfg).find(words)
         low = words.lower()
 
@@ -425,7 +461,7 @@ def _cover(facts: dict, cfg: Config, titles: list[str], archive: Path, day: str,
             st = cfg.by_symbol[t]
             hits = [low.find(a.lower()) for a in [t, st.name] + st.aliases + st.exact if a and a.lower() in low]
             return min(hits or [999])
-        tks = sorted(found, key=pos) or [m["stock"].symbol for m in facts["most_covered"][:3]]
+        tks = sorted(found, key=pos) or [r["symbol"] for r in facts["attention"]["top"][:3]]
         when = datetime.combine(facts["end"], datetime.min.time())
         png = cover.render(words, facts["story_count"], tks[:3], when, archive / f"{day}-cover.png",
                            labels=("STORIES", "COVERED", "THIS WEEK"),
