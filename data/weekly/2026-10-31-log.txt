@@ -1,3 +1,2 @@
-Built Sat 31 Oct 2026 10:59 UK time, 12 days of history
-AI call on claude-sonnet-5-5 failed: HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"To turn thinking off on this model, send \"thinking\": {\"type\": \"between_tools\"} instead of {\"type\": \"disabled\"}. The model does not think before responding. The short updates it writes between tool calls come back as thinkin
-drafted on claude-haiku-5-5 instead
+Built Sat 31 Oct 2026 11:23 UK time, 12 days of history
+All AI pieces passed the checks.
