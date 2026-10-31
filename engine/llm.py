@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import urllib.error
 import urllib.request
 
 API_URL = "https://api.anthropic.com/v1/messages"
@@ -117,6 +118,9 @@ def why_it_matters(headline: str, snippets: list[str], companies: str = "") -> s
 STATS = {"ok": 0, "rejected": 0, "failed": 0}
 
 
+LAST_ERROR = ""  # why the most recent call failed, for logs
+
+
 def _ask(prompt: str, max_tokens: int = 300, model: str | None = None, timeout: int = 30,
          effort: str = "low") -> str | None:
     """One plain call to the model. Returns the reply text, or None if the key is missing or the call fails."""
@@ -139,7 +143,15 @@ def _ask(prompt: str, max_tokens: int = 300, model: str | None = None, timeout: 
             data = json.load(resp)
         return "".join(b.get("text", "") for b in data.get("content", []))
     except Exception as e:
-        print(f"  AI call failed: {e}")
+        global LAST_ERROR
+        detail = ""
+        if isinstance(e, urllib.error.HTTPError):  # the API says why in the body; keep a short slice of it
+            try:
+                detail = " " + e.read().decode("utf-8", "replace")[:300]
+            except Exception:
+                pass
+        LAST_ERROR = f"{e}{detail}"
+        print(f"  AI call failed: {LAST_ERROR}")
         return None
 
 

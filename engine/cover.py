@@ -60,9 +60,12 @@ def _fit_headline(draw, text: str, width: int, height: int):
     return font, _wrap(draw, text, font, width)[:4], 65
 
 
-def render(headline: str, stories: int, tickers: list[str], when: datetime, out: Path) -> Path:
+def render(headline: str, stories: int, tickers: list[str], when: datetime, out: Path,
+           labels: tuple[str, ...] = ("STORIES", "IN TODAY'S", "EMAIL"),
+           dateline: str | None = None, brand: str = "ALL TECH STOCKS") -> Path:
     """The Substack cover. The big number is how many stories are in the day's email, so it
-    stays true whichever stories the title mentions."""
+    stays true whichever stories the title mentions. The weekly draft passes its own labels,
+    dateline and brand."""
     img = Image.new("RGB", (W, H), DARK)
     d = ImageDraw.Draw(img)
 
@@ -73,8 +76,8 @@ def render(headline: str, stories: int, tickers: list[str], when: datetime, out:
     # Header: logo tile, name, date.
     logo = Image.open(ROOT / "static" / "logo-512.png").convert("RGBA").resize((84, 84), Image.LANCZOS)
     img.paste(logo, (PAD, PAD - 8), logo)
-    d.text((PAD + 106, PAD - 2), "ALL TECH STOCKS", font=_sans(34, 800), fill=WHITE)
-    d.text((PAD + 106, PAD + 40), when.strftime("%A %-d %B").upper(), font=_sans(26, 600), fill=BRIGHT)
+    d.text((PAD + 106, PAD - 2), brand, font=_sans(34, 800), fill=WHITE)
+    d.text((PAD + 106, PAD + 40), (dateline or when.strftime("%A %-d %B")).upper(), font=_sans(26, 600), fill=BRIGHT)
 
     # Ticker chips for the stocks the title names.
     tag_font = _sans(28, 800)
@@ -104,9 +107,13 @@ def render(headline: str, stories: int, tickers: list[str], when: datetime, out:
     size = 300 if len(num) <= 2 else 230
     nf = _sans(size, 900)
     nw = d.textlength(num, font=nf)
+    while nw > W - panel_x - 70 and size > 100:  # four digits and up shrink to fit the panel
+        size -= 10
+        nf = _sans(size, 900)
+        nw = d.textlength(num, font=nf)
     d.text((cx - nw / 2, 250), num, font=nf, fill=WHITE)
     lf = _sans(38, 800)
-    for i, word in enumerate(("STORIES", "IN TODAY'S", "EMAIL")):
+    for i, word in enumerate(labels):
         lw = d.textlength(word, font=lf)
         d.text((cx - lw / 2, 600 + i * 50), word, font=lf, fill=LIGHT)
     d.line([cx - 60, 790, cx + 60, 790], fill=LIGHT, width=6)

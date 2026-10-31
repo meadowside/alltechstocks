@@ -1,5 +1,5 @@
 #!/bin/bash
-# Downloads the latest All Tech Stocks weekly draft (editable Markdown).
+# Downloads the latest All Tech Stocks weekly draft (editable Markdown) and its Substack cover.
 # Built on Saturdays at about 6:25am UK time. Opens the newest one, whatever day you run it.
 cd "$(dirname "$0")" || exit 1
 mkdir -p weekly
@@ -16,7 +16,18 @@ if curl -fsSL "$BASE/latest.md?nocache=$(date +%s)" -o "$TMP"; then
     mv "$TMP" "$F"
     echo "Downloaded $F"
   fi
+  C="${F%.md}-cover.png"
+  if [ ! -f "$C" ]; then
+    if curl -fsSL "$BASE/latest-cover.png?nocache=$(date +%s)" -o "$C.tmp"; then
+      mv "$C.tmp" "$C"
+      echo "Downloaded the cover image"
+    else
+      rm -f "$C.tmp"
+      echo "No cover image this week."
+    fi
+  fi
   open -e "$F"
+  [ -f "$C" ] && open -R "$C"
 else
   rm -f "$TMP"
   echo "No weekly draft yet. It's built on Saturdays at about 6:25am UK time."

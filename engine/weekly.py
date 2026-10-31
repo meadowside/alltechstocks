@@ -228,7 +228,7 @@ def gather(db: DB, cfg: Config, rules: Rules, now: datetime) -> dict:
 
     return {
         "start": start, "end": end, "days": days,
-        "history_days": trends.history_days(db),
+        "history_days": trends.history_days(db), "story_count": sum(1 for g in groups if g["outlets"] >= 2),  # one-outlet items aren't stories yet
         "biggest": biggest, "results": results,
         "most_covered": _most_covered(db, cfg, start, end, int(wcfg.get("most_covered", 8))),
         "shares": shares, "filings": other_filings, "coming": coming,
@@ -353,11 +353,20 @@ def draft(facts: dict, cfg: Config) -> tuple[dict, list[str]]:
     if not llm.enabled():
         return {"titles": [], "intro": None, "results": {}, "angles": []}, ["no ANTHROPIC_API_KEY, AI parts left blank"]
     wcfg = cfg.rules.get("weekly", {})
-    raw = llm._ask(PROMPT.format(**_facts_text(facts, cfg)), max_tokens=2500,
-                   model=wcfg.get("model", DEFAULT_MODEL), timeout=120, effort="medium")
+    prompt = PROMPT.format(**_facts_text(facts, cfg))
+    model = wcfg.get("model", DEFAULT_MODEL)
+    raw = llm._ask(prompt, max_tokens=2500, model=model, timeout=180, effort="medium")
+    log: list[str] = []
     if raw is None:
-        return {"titles": [], "intro": None, "results": {}, "angles": []}, ["AI call failed, AI parts left blank"]
-    return parse_draft(raw, facts)
+        # One retry on the cheaper daily model, so a bad week on one model still gets an intro.
+        log.append(f"AI call on {model} failed: {llm.LAST_ERROR}")
+        raw = llm._ask(prompt, max_tokens=2500, model=llm.DEFAULT_MODEL, timeout=180, effort="medium")
+        if raw is None:
+            log.append(f"retry on {llm.DEFAULT_MODEL} failed too: {llm.LAST_ERROR}")
+            return {"titles": [], "intro": None, "results": {}, "angles": []}, log + ["AI parts left blank"]
+        log.append(f"drafted on {llm.DEFAULT_MODEL} instead")
+    pieces, checks = parse_draft(raw, facts)
+    return pieces, log + checks
 
 
 # ---------------------------------------------------------------- build
@@ -395,11 +404,35 @@ def build(db: DB, cfg: Config, rules: Rules, now: datetime, archive: Path) -> di
     day = facts["end"].isoformat()
     for name in (f"{day}.md", "latest.md"):
         (archive / name).write_text(md, encoding="utf-8")
+    _cover(facts, cfg, titles, archive, day, log)
     (archive / f"{day}-log.txt").write_text(
         f"Built {now.astimezone(tz):%a %d %b %Y %H:%M} UK time, {facts['history_days']} days of history\n"
         + ("\n".join(log) if log else "All AI pieces passed the checks.") + "\n", encoding="utf-8")
     return {"date": day, "results": len(facts["results"]), "stories": len(facts["biggest"]),
             "ai_intro": bool(pieces["intro"]), "ai_results": len(pieces["results"]), "log": log}
+
+
+def _cover(facts: dict, cfg: Config, titles: list[str], archive: Path, day: str, log: list[str]) -> None:
+    """The Substack cover for the weekly: the first title idea, the week's story count on the side.
+    Saved as <date>-cover.png and latest-cover.png. A failed cover never stops the draft."""
+    try:
+        from . import cover
+        words = next((t for t in titles if len(t) <= 90), None) or facts["biggest"][0]["headline"]
+        found = Tagger(cfg).find(words)
+        low = words.lower()
+
+        def pos(t: str) -> int:  # where the title first names the stock, so chips read in title order
+            st = cfg.by_symbol[t]
+            hits = [low.find(a.lower()) for a in [t, st.name] + st.aliases + st.exact if a and a.lower() in low]
+            return min(hits or [999])
+        tks = sorted(found, key=pos) or [m["stock"].symbol for m in facts["most_covered"][:3]]
+        when = datetime.combine(facts["end"], datetime.min.time())
+        png = cover.render(words, facts["story_count"], tks[:3], when, archive / f"{day}-cover.png",
+                           labels=("STORIES", "COVERED", "THIS WEEK"),
+                           dateline=f"Week to {_last_weekday(facts['end']):%A %-d %B}", brand="ALL TECH STOCKS WEEKLY")
+        (archive / "latest-cover.png").write_bytes(png.read_bytes())
+    except Exception as e:
+        log.append(f"cover failed: {e}")
 
 
 def built(archive: Path, day: str) -> bool:
