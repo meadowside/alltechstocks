@@ -10,10 +10,10 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "auto (normal run, skipped if one ran in the last 45 min), force (normal run, never skipped) or email (build today's email now)"
+        description: "auto (normal run, skipped if one ran in the last 45 min), force (normal run, never skipped) , email (build today's email now) or weekly (rebuild this week's draft)"
         default: auto
         type: choice
-        options: [auto, force, email]
+        options: [auto, force, email, weekly]
 
 permissions:
   contents: write    # to save the database back to the repo
