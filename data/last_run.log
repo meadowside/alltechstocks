@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sat 31 Oct 01:53 UK time
-  feeds: 45/45 worked, 149 new items (47 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 31 Oct 02:53 UK time
+  feeds: 45/45 worked, 104 new items (53 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2299 grouped, 1655 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says iOS 27.2 adds two new features to CarPlay, Apple's system for running iPhone apps through a"
-  site: 1135 stories live, 3 new AI lines. Top: Salesforce to buy defense tech firm Rune in military business push. Most covered stock: AMZN
-  trends: 612 stock-days and 71 section-days refreshed, 12 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+  stories: 2294 grouped, 1652 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says iOS 27.2 adds two new features to CarPlay, Apple's system for linking iPhones to car dashbo"
+  site: 1132 stories live, 0 new AI lines. Top: Salesforce to buy defense tech firm Rune in military business push. Most covered stock: AAPL
+  trends: 619 stock-days and 71 section-days refreshed, 12 days of history
+  AI lines: 0 written, 1 rejected, 0 failed calls
