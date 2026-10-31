@@ -130,7 +130,10 @@ def _ask(prompt: str, max_tokens: int = 300, model: str | None = None, timeout: 
     body = {
         "model": model or os.environ.get("LLM_MODEL", DEFAULT_MODEL),
         "max_tokens": max_tokens,
-        "thinking": {"type": "disabled"},
+        # Haiku turns thinking off with "disabled". Sonnet 5.5 refuses that and wants "between_tools",
+        # which also means no thinking before a plain reply like these.
+        "thinking": {"type": "disabled" if "haiku" in (model or os.environ.get("LLM_MODEL", DEFAULT_MODEL))
+                     else "between_tools"},
         "output_config": {"effort": effort},
         "messages": [{"role": "user", "content": prompt}],
     }
