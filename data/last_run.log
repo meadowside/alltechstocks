@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Sat 31 Oct 14:53 UK time
-  feeds: 45/45 worked, 167 new items (64 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 31 Oct 15:53 UK time
+  feeds: 45/45 worked, 248 new items (60 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2121 grouped, 1527 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: invest): "AMD has agreed to invest $1 billion in Meta Platforms, and the deal comes as AMD's Helios systems move into testing. The investment ties the"
-  AI trending line rejected (30 words): "Apple is adding touch input to its Mac range, a change that would reshape its laptop line-up and product plans, as the company's third major"
-  site: 993 stories live, 1 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
-  trends: 643 stock-days and 71 section-days refreshed, 12 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  stories: 2110 grouped, 1523 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: invest): "AMD has agreed to invest $1 billion in Meta Platforms, a deal that comes as AMD's Helios rack-scale systems move into testing. The investmen"
+  site: 991 stories live, 3 new AI lines. Top: Meta outlook revised to negative by S&P on cash flow and capex concerns. Most covered stock: AMZN
+  trends: 646 stock-days and 71 section-days refreshed, 12 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
