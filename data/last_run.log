@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Sat 31 Oct 19:53 UK time
-  feeds: 45/45 worked, 151 new items (44 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 31 Oct 20:53 UK time
+  feeds: 45/45 worked, 145 new items (46 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 2045 grouped, 1491 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: invest): "AMD has agreed to invest $1 billion in Meta Platforms, a deal that comes as AMD's Helios systems move into testing. The investment ties the "
-  AI trending line rejected (26 words): 'Apple is adding a touchscreen to its MacBook Pro line, a break from its long-standing position that Macs should not have touch input, starti'
-  site: 989 stories live, 2 new AI lines. Top: Amazon meets with Connecticut lawmakers, municipalities over drone delivery proposal. Most covered stock: AMZN
-  trends: 654 stock-days and 71 section-days refreshed, 12 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+  stories: 2015 grouped, 1469 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: invest): "AMD has agreed to invest $1 billion in Meta Platforms, and the two companies' work on AMD's Helios rack-scale AI systems is moving into test"
+  AI trending line rejected (28 words): 'Apple is adding a touchscreen to its MacBook Pro line, a notable change from its long-standing position against touch on Macs, with the new '
+  site: 965 stories live, 3 new AI lines. Top: Amazon meets with Connecticut lawmakers, municipalities over drone delivery proposal. Most covered stock: AMZN
+  trends: 655 stock-days and 71 section-days refreshed, 12 days of history
+  AI lines: 3 written, 2 rejected, 0 failed calls
