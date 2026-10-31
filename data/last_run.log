@@ -1,7 +1,6 @@
-All Tech Stocks run: auto at Sat 31 Oct 10:53 UK time
-  feeds: 45/45 worked, 121 new items (43 excluded by rules, 9 Google queries resting this hour)
-  filings: 73/73 companies checked, 0 new filings
-  stories: 2216 grouped, 1593 name a watched stock or pass the market rules
-  site: 1073 stories live, 2 new AI lines. Top: Uber Joins HSBC, Franklin Templeton in Blockchain Investing Test. Most covered stock: AMZN
-  trends: 644 stock-days and 71 section-days refreshed, 12 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+All Tech Stocks run: weekly at Sat 31 Oct 10:59 UK time
+  AI call failed: HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"To turn thinking off on this model, send \"thinking\": {\"type\": \"between_tools\"} instead of {\"type\": \"disabled\"}. The model does not think before responding. The short updates it writes between tool calls come back as thinkin
+  weekly: draft for 2026-10-31, 5 big stories, 8 companies reported, AI intro: yes, AI results paragraphs: 8
+    AI call on claude-sonnet-5-5 failed: HTTP Error 400: Bad Request {"type":"error","error":{"type":"invalid_request_error","message":"To turn thinking off on this model, send \"thinking\": {\"type\": \"between_tools\"} instead of {\"type\": \"disabled\"}. The model does not think before responding. The short updates it writes between tool calls come back as thinkin
+    drafted on claude-haiku-5-5 instead
+  notify: skipped (no Telegram settings)
