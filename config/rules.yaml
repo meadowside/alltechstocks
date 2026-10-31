@@ -217,6 +217,8 @@ ai_lines:
 # and send on Substack. Saved to data/weekly/<date>.md. Not on the public site.
 # "python run.py weekly" builds it now.
 weekly:
+  enabled: false            # Saturday build switched off 31 Oct 2026. true turns it back on;
+                            # "python run.py weekly" and the workflow's weekly choice still build one by hand.
   day: 5                    # 0 = Monday ... 5 = Saturday
   build_hour: 6             # UK time: the 6:23 run builds it, so it's ready by 6:30
   late_window_hours: 6      # if runs are late, still build it up to noon

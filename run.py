@@ -98,7 +98,7 @@ def main():
             print(f"  notify: {notify.send(message)}")
         wk = cfg.rules.get("weekly", {})
         weekly_dir = args.db.parent / "weekly"
-        if (args.command == "auto" and wk and local.weekday() == wk.get("day", 4)
+        if (args.command == "auto" and wk and wk.get("enabled", True) and local.weekday() == wk.get("day", 4)
                 and not weekly.built(weekly_dir, date)
                 and wk.get("build_hour", 14) <= local.hour < wk.get("build_hour", 14) + wk.get("late_window_hours", 6)):
             _build_weekly(db, cfg, rules, now, weekly_dir)
