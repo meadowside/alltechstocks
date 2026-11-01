@@ -34,6 +34,13 @@ TIP_TITLE = re.compile(
     re.IGNORECASE)
 # Quote and profile pages: "SHOP | Shopify Inc. Cl A Profile", "Marvell Stock Grades | MRVL".
 QUOTE_PAGE = re.compile(r"^[A-Z][A-Z.]{0,5}\s+\||\|\s*[A-Z][A-Z.]{0,5}\s*$")
+# Pirate live-stream spam planted on hijacked sites: "𝚆𝙰𝚃𝙲𝙷 ... Live Streams", "【LIVESTREAMS】",
+# "Ｒｅｄｄｉｔ Ｓｔｒｅａｍｓ". Fancy Unicode letters or the usual stream words give it away.
+SPAM_TITLE = re.compile(
+    r"[\U0001D400-\U0001D7FF\uFF21-\uFF3A\uFF41-\uFF5A\u3010\u3011]|"
+    r"\b(buffstreams|crackstreams|methstreams|streameast|reddit (tv|streams?)|streams? free|free (live ?)?streams?|"
+    r"watch free|live ?streams? (free|reddit|hd|online)|watch\b.{0,60}\blive ?streams?)\b",
+    re.IGNORECASE)
 
 
 class Rules:
@@ -71,6 +78,8 @@ class Rules:
         for k in self.summary_keywords:
             if k in sm:
                 return f"summary:{k}"
+        if SPAM_TITLE.search(title or ""):
+            return "title:stream spam"
         if REVIEW_TITLE.search(title or ""):
             return "title:review"
         if QUOTE_PAGE.search(title or ""):

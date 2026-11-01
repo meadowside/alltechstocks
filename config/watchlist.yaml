@@ -11,6 +11,7 @@
 #              ("Arm" the company, not "arm" the body part)
 # group:       software, chips, internet, hardware, security, fintech, games, telecoms, services, data
 # ignore:      optional phrases that look like the name but aren't the company ("per capita")
+# query:       optional Google News search phrases, for names that are everyday words ("Zoom", "Block")
 # results:     optional next results date (YYYY-MM-DD), shown on the stock's page. Fill in from the
 #              company's investor relations site. Leave it out if you don't know.
 #
@@ -45,10 +46,10 @@ stocks:
   - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the]}
   - {symbol: MRVL, exchange: NASDAQ, name: Marvell, group: chips, aliases: [Marvell Technology, Marvell]}
   - {symbol: SNPS, exchange: NASDAQ, name: Synopsys, group: chips, aliases: [Synopsys]}
-  - {symbol: CDNS, exchange: NASDAQ, name: Cadence, group: chips, aliases: [Cadence Design]}
+  - {symbol: CDNS, exchange: NASDAQ, name: Cadence, group: chips, aliases: [Cadence Design], query: [Cadence Design]}
   - {symbol: NXPI, exchange: NASDAQ, name: NXP, group: chips, aliases: [NXP Semiconductors, NXP]}
   - {symbol: "ON", exchange: NASDAQ, name: ON Semiconductor, group: chips, aliases: [ON Semiconductor, onsemi]}
-  - {symbol: MCHP, exchange: NASDAQ, name: Microchip, group: chips, aliases: [Microchip Technology]}
+  - {symbol: MCHP, exchange: NASDAQ, name: Microchip, group: chips, aliases: [Microchip Technology], query: [Microchip Technology]}
   - {symbol: ADI, exchange: NASDAQ, name: Analog Devices, group: chips, aliases: [Analog Devices]}
 
   # ================= US: hardware, servers and networking =================
@@ -74,7 +75,7 @@ stocks:
   - {symbol: TEAM, exchange: NASDAQ, name: Atlassian, group: software, aliases: [Atlassian]}
   - {symbol: SAP, exchange: NYSE, name: SAP, group: software, aliases: [SAP SE], exact: [SAP]}
   - {symbol: APP, exchange: NASDAQ, name: AppLovin, group: software, aliases: [AppLovin]}
-  - {symbol: ZM, exchange: NASDAQ, name: Zoom, group: software, aliases: [Zoom Video, Zoom Communications]}
+  - {symbol: ZM, exchange: NASDAQ, name: Zoom, group: software, aliases: [Zoom Video, Zoom Communications], query: [Zoom Communications, Zoom Video]}
   - {symbol: DOCU, exchange: NASDAQ, name: DocuSign, group: software, aliases: [DocuSign]}
   - {symbol: TWLO, exchange: NYSE, name: Twilio, group: software, aliases: [Twilio]}
   - {symbol: U, exchange: NYSE, name: Unity Software, group: games, aliases: [Unity Software]}
@@ -89,17 +90,19 @@ stocks:
 
   # ================= US: internet and platforms =================
   - {symbol: SHOP, exchange: NASDAQ, name: Shopify, group: internet, aliases: [Shopify]}
-  - {symbol: UBER, exchange: NYSE, name: Uber, group: internet, aliases: [Uber]}
+  - {symbol: UBER, exchange: NYSE, name: Uber, group: internet, aliases: [Uber], ignore: [Uber Arena, Uber Eats Music Hall, Uber driver, Uber passenger]}
   - {symbol: ABNB, exchange: NASDAQ, name: Airbnb, group: internet, aliases: [Airbnb]}
   - {symbol: DASH, exchange: NASDAQ, name: DoorDash, group: internet, aliases: [DoorDash, Deliveroo]}
   - {symbol: SPOT, exchange: NYSE, name: Spotify, group: internet, aliases: [Spotify]}
   - {symbol: RDDT, exchange: NYSE, name: Reddit, group: internet, aliases: [Reddit]}
-  - {symbol: SNAP, exchange: NYSE, name: Snap, group: internet, aliases: [Snap Inc, Snapchat]}
+  - {symbol: SNAP, exchange: NYSE, name: Snap, group: internet, aliases: [Snap Inc, Snapchat], query: [Snap Inc, Snapchat]}
   - {symbol: PINS, exchange: NYSE, name: Pinterest, group: internet, aliases: [Pinterest]}
 
   # ================= US: fintech =================
   - {symbol: PYPL, exchange: NASDAQ, name: PayPal, group: fintech, aliases: [PayPal, Venmo]}
-  - {symbol: XYZ, exchange: NYSE, name: Block, group: fintech, aliases: [Block Inc, Cash App, Jack Dorsey]}
+  - {symbol: XYZ, exchange: NYSE, name: Block, group: fintech, aliases: [Block Inc, Cash App, Jack Dorsey], query: [Block Inc, Cash App]}
+  # Wise moved its main listing from London to Nasdaq (ticker WSE) in May 2026.
+  - {symbol: WSE, exchange: NASDAQ, name: Wise, group: fintech, aliases: [Wise Group, Wise plc, Kristo Käärmann, Kristo Kaarmann, Käärmann], query: [Wise Group, Wise plc]}
   - {symbol: COIN, exchange: NASDAQ, name: Coinbase, group: fintech, aliases: [Coinbase]}
   - {symbol: HOOD, exchange: NASDAQ, name: Robinhood, group: fintech, aliases: [Robinhood]}
 
@@ -125,7 +128,6 @@ stocks:
   - {symbol: OXIG, exchange: LSE, name: Oxford Instruments, group: hardware, aliases: [Oxford Instruments]}
   - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
   - {symbol: RPI, exchange: LSE, name: Raspberry Pi Holdings, group: hardware, aliases: [Raspberry Pi]}
-  - {symbol: WISE, exchange: LSE, name: Wise, group: fintech, aliases: [Wise plc, Kristo Kaarmann]}
   - {symbol: TRST, exchange: LSE, name: Trustpilot, group: internet, aliases: [Trustpilot]}
   - {symbol: MOON, exchange: LSE, name: Moonpig, group: internet, aliases: [Moonpig]}
   - {symbol: OCDO, exchange: LSE, name: Ocado, group: internet, aliases: [Ocado]}

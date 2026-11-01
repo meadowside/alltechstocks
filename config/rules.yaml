@@ -173,7 +173,13 @@ exclude:
             ticker report, stocktitan, stock titan, insider monkey, stocknews, the globe and mail,
             marketscreener, nasdaq.com, investing.com, finviz, ainvest, coincentral, "stock traders daily",
             moomoo, webull, msn, yahoo finance, aol, the motley fool, motley fool, zacks, seeking alpha,
-            traders union, forex.com, tradingkey, chartmill, auto trader nz, fxstreet, coinpedia, economies.com]
+            traders union, forex.com, tradingkey, chartmill, auto trader nz, fxstreet, coinpedia, economies.com,
+            # Added 1 Nov 2026 after checking two weeks of Google results: tip and quote sites,
+            # entertainment and sports pages, and hijacked sites hosting stream spam.
+            stocktwits, trefis, tikr, quiver quantitative, "yahoo! finance canada", cryptorank, tokenpost,
+            zoom tv, zoomtventertainment, imdb, collider, destructoid, sacnilk, sportskeeda, yahoo sports,
+            espn, 247sports, sports illustrated, jagran josh, sunday guardian,
+            "fc東京", pierce manufacturing, port of rotterdam, vantage data centers, nyc health]
   summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
                      "zacks rank", "stocks to buy"]
   title_keyword_exceptions: [launch, launches, launched]
@@ -252,6 +258,12 @@ clustering:
 # These fill the gaps the outlet feeds miss. Items are credited to the outlet that wrote them.
 auto_google:
   per_query: 6           # companies per query; Google News handles a few ORs well
+  per_query_uk: 3        # UK small caps get smaller batches so Ocado or Vodafone can't crowd them out
+  # Every per-stock query also needs one of these words, so gig listings, TV episode news and sports
+  # pages that happen to say "Uber" or "Netflix" stay out. Delete the list to switch it off.
+  context: [shares, stock, stocks, investors, earnings, results, revenue, profit, sales, CEO,
+            "chief executive", acquisition, acquire, takeover, deal, merger, analysts, regulator,
+            layoffs, Nasdaq, NYSE, FTSE, plc]
   when: 1d
   rotate: 2              # run half the queries one hour, half the next, to go easy on Google
   # US stocks are searched in US English, UK stocks in UK English.

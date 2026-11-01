@@ -223,6 +223,62 @@ sources:
     paywall: true
     sections: [ai, companies]
 
+  # Added 1 Nov 2026: UK small and mid cap coverage was thin.
+
+  - id: sharecast
+    name: Sharecast
+    url: https://news.google.com/rss/search?q=site:sharecast.com+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: sharecast.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [results, companies]
+
+  - id: alliance-news
+    name: Alliance News
+    url: https://news.google.com/rss/search?q=site:alliancenews.com+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: alliancenews.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [results, companies]
+
+  - id: moneyweek
+    name: MoneyWeek
+    url: https://news.google.com/rss/search?q=site:moneyweek.com+(shares+OR+stock+OR+tech)+when:2d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: moneyweek.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [companies]
+
+  - id: evening-standard
+    name: Evening Standard
+    url: https://news.google.com/rss/search?q=site:standard.co.uk/business+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: standard.co.uk
+    google: true
+    tier: 2
+    weight: 2
+    sections: [companies, deals]
+
+  - id: business-insider
+    name: Business Insider
+    url: https://news.google.com/rss/search?q=site:businessinsider.com+(tech+OR+AI+OR+chip+OR+software+OR+shares)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: businessinsider.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [companies, ai]
+
+  - id: fortune
+    name: Fortune
+    url: https://news.google.com/rss/search?q=site:fortune.com+(tech+OR+AI+OR+chip+OR+software)+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: fortune.com
+    google: true
+    tier: 2
+    weight: 2
+    sections: [companies, ai]
+
   # ---------- Tier 3: tech press ----------
   - id: techcrunch
     name: TechCrunch
@@ -264,6 +320,48 @@ sources:
     name: Tom's Hardware
     url: https://www.tomshardware.com/feeds/all
     domain: tomshardware.com
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [chips]
+
+  # Added 1 Nov 2026: UK tech, European tech, enterprise software and chip supply chain.
+
+  - id: uktn
+    name: UKTN
+    url: https://news.google.com/rss/search?q=site:uktech.news+when:2d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: uktech.news
+    google: true
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies, deals]
+
+  - id: sifted
+    name: Sifted
+    url: https://news.google.com/rss/search?q=site:sifted.eu+when:2d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: sifted.eu
+    google: true
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [deals, companies]
+
+  - id: siliconangle
+    name: SiliconANGLE
+    url: https://news.google.com/rss/search?q=site:siliconangle.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: siliconangle.com
+    google: true
+    tier: 3
+    weight: 1
+    always_tech: true
+    sections: [companies, ai]
+
+  - id: digitimes
+    name: DigiTimes
+    url: https://news.google.com/rss/search?q=site:digitimes.com+when:1d&hl=en-US&gl=US&ceid=US:en
+    domain: digitimes.com
+    google: true
     tier: 3
     weight: 1
     always_tech: true
