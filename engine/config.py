@@ -48,6 +48,7 @@ class Stock:
     exact: list[str] = field(default_factory=list)
     results: str | None = None     # next results date, YYYY-MM-DD, if known
     ignore: list[str] = field(default_factory=list)  # phrases that look like the name but aren't ("per capita")
+    query: list[str] = field(default_factory=list)   # Google News search phrases, when the name alone is too vague ("Zoom")
 
     @property
     def market(self) -> str:
@@ -71,7 +72,10 @@ class Stock:
 
     @property
     def search_names(self) -> list[str]:
-        """Names used in Google News queries: the display name, plus multi-word aliases."""
+        """Names used in Google News queries: the display name, plus multi-word aliases.
+        A stock's own `query` list replaces this, for names that are everyday words ("Zoom", "Block", "Wise")."""
+        if self.query:
+            return list(self.query)
         out = [self.name]
         for a in self.aliases:
             if a.lower() != self.name.lower() and (" " in a or len(a) > 5) and a not in out:
@@ -84,8 +88,14 @@ def _host(url: str) -> str:
     return host[4:] if host.startswith("www.") else host
 
 
-def _google_url(terms: list[str], when: str, uk: bool) -> str:
-    q = " OR ".join(f'"{t}"' for t in terms) + f" when:{when}"
+def _google_url(terms: list[str], when: str, uk: bool, context: list[str] | None = None) -> str:
+    q = " OR ".join(f'"{t}"' for t in terms)
+    if context:
+        # Only articles that also use a markets or business word: keeps out gig listings, TV episode
+        # news and sports pages that happen to name a company.
+        ctx = " OR ".join(f'"{w}"' if " " in w else w for w in context)
+        q = f"({q}) ({ctx})"
+    q += f" when:{when}"
     loc = "hl=en-GB&gl=GB&ceid=GB:en" if uk else "hl=en-US&gl=US&ceid=US:en"
     return f"https://news.google.com/rss/search?q={quote_plus(q)}&{loc}"
 
@@ -120,16 +130,22 @@ class Config:
     def _auto_sources(self) -> list[Source]:
         """One Google News query per few watched companies, US and UK searched separately."""
         ag = self.rules.get("auto_google", {})
-        n = int(ag.get("per_query", 6))
         when = ag.get("when", "1d")
+        context = ag.get("context") or []
         out = []
         for market in ("US", "UK"):
-            names = [s.search_names[0] for s in self.stocks if s.market == market]
+            # Google returns about 100 items a query, so a big name in a batch crowds out the small
+            # ones. UK small caps get smaller batches.
+            n = int(ag.get(f"per_query_{market.lower()}", ag.get("per_query", 6)))
+            names: list[str] = []
+            for s in self.stocks:
+                if s.market == market:
+                    names += s.search_names[:2] if s.query else s.search_names[:1]
             for i in range(0, len(names), n):
                 batch = names[i:i + n]
                 out.append(Source(
                     id=f"gn-{market.lower()}-{i // n + 1}", name="Google News",
-                    url=_google_url(batch, when, market == "UK"),
+                    url=_google_url(batch, when, market == "UK", context),
                     tier=0, weight=1, google=True, auto=True,
                 ))
         return out
