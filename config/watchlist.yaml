@@ -117,25 +117,32 @@ stocks:
   - {symbol: EXPN, exchange: LSE, name: Experian, group: data, aliases: [Experian]}
   - {symbol: LSEG, exchange: LSE, name: London Stock Exchange Group, group: data, aliases: [London Stock Exchange Group, LSEG]}
   - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
-  - {symbol: RMV, exchange: LSE, name: Rightmove, group: internet, aliases: [Rightmove]}
-  - {symbol: HLMA, exchange: LSE, name: Halma, group: hardware, aliases: [Halma]}
+  - {symbol: RMV, exchange: LSE, name: Rightmove, group: internet, aliases: [Rightmove], ignore: [on rightmove]}
+  - {symbol: HLMA, exchange: LSE, name: Halma, group: hardware, exact: [Halma]}
   - {symbol: SCT, exchange: LSE, name: Softcat, group: services, aliases: [Softcat]}
   - {symbol: CCC, exchange: LSE, name: Computacenter, group: services, aliases: [Computacenter]}
   - {symbol: KNOS, exchange: LSE, name: Kainos, group: services, aliases: [Kainos]}
   - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: services, aliases: [Bytes Technology]}
-  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita], ignore: [per capita, capita income, capita gdp]}
+  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita], ignore: [per capita, per-capita, capita income, capita gdp, "capita…", "capita...", capita amon]}
   - {symbol: RSW, exchange: LSE, name: Renishaw, group: hardware, aliases: [Renishaw]}
   - {symbol: OXIG, exchange: LSE, name: Oxford Instruments, group: hardware, aliases: [Oxford Instruments]}
   - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
   - {symbol: RPI, exchange: LSE, name: Raspberry Pi Holdings, group: hardware, aliases: [Raspberry Pi]}
   - {symbol: TRST, exchange: LSE, name: Trustpilot, group: internet, aliases: [Trustpilot]}
   - {symbol: MOON, exchange: LSE, name: Moonpig, group: internet, aliases: [Moonpig]}
-  - {symbol: OCDO, exchange: LSE, name: Ocado, group: internet, aliases: [Ocado]}
+  - {symbol: OCDO, exchange: LSE, name: Ocado, group: internet, aliases: [Ocado],
+     # Suppliers getting their products stocked on the Ocado shop, not news about the company
+     ignore: [ocado listing, ocado listings, to ocado, into ocado, on ocado, and ocado, with ocado launch,
+              ocado and booths, ocado and foodservice]}
   - {symbol: BCG, exchange: LSE, name: Baltic Classifieds, group: internet, aliases: [Baltic Classifieds]}
   - {symbol: GAW, exchange: LSE, name: Games Workshop, group: games, aliases: [Games Workshop, Warhammer]}
   - {symbol: FDEV, exchange: LSE, name: Frontier Developments, group: games, aliases: [Frontier Developments]}
-  - {symbol: BT.A, exchange: LSE, name: BT Group, group: telecoms, aliases: [BT Group, Openreach]}
-  - {symbol: VOD, exchange: LSE, name: Vodafone, group: telecoms, aliases: [Vodafone, VodafoneThree]}
+  - {symbol: BT.A, exchange: LSE, name: BT Group, group: telecoms, aliases: [BT Group, Openreach], exact: [BT], ignore: [BT Sport]}
+  - {symbol: VOD, exchange: LSE, name: Vodafone, group: telecoms, aliases: [Vodafone, VodafoneThree],
+     # Separate companies or businesses that only use the name: not the London-listed group
+     ignore: [Vodafone Idea, Vi Vodafone Idea, Vodafone Qatar, Vodafone Ukraine, Vodafone Spain, Vodafone Australia,
+              Vodafone Ghana, Vodafone New Zealand, Vodafone Fiji, Vodafone Park, Vodafone Arena, Vodafone Oman,
+              Vodafone SIM, Gold Coast Vodafone, "Sky TV, Vodafone"]}
   - {symbol: NCC, exchange: LSE, name: NCC Group, group: security, aliases: [NCC Group]}
   - {symbol: GBG, exchange: LSE, name: GB Group, group: security, aliases: [GB Group, GBG]}
   - {symbol: CRW, exchange: LSE, name: Craneware, group: software, aliases: [Craneware]}
