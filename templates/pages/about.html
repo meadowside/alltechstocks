@@ -3,8 +3,8 @@
 <p class="lede">{{ site.name }} shows which US and UK listed tech companies the news is covering most, updated every hour. It's a place to start your research. It never tells you what to buy or sell.</p>
 
 <h2>How it works</h2>
-<p>Every hour we check about 35 news feeds: Reuters, Bloomberg, the FT, the Wall Street Journal, CNBC and the rest of the US and UK financial press, plus tech titles, company newsrooms and London Stock Exchange announcements. We also run a news search for each of the {{ stocks|length }} companies we follow. To decide what counts as a tech stock we use the official classifications: for the US, companies in the Information Technology and Communication Services sectors of the standard used by the S&P 500; for the UK, companies the London Stock Exchange files under Technology or Telecommunications. When several outlets report the same event, we group their articles into one story.</p>
-<p>Stories are ranked by how many outlets are covering them. A major financial paper counts for more than a specialist title. A story has to name a US or UK listed tech company we follow to appear, unless it's about tech shares as a whole and at least six outlets are on it. Older stories lose half their score every 12 hours, so the top of the page shows what's being covered right now. The stock table works the same way. Nobody picks the order by hand.</p>
+<p>Every hour we check about 45 news sources: Reuters, Bloomberg, the FT, the Wall Street Journal, CNBC and the rest of the US and UK financial press, plus tech titles, company newsrooms and London Stock Exchange announcements. We also run news searches covering all {{ stocks|length }} companies we follow, a few at a time. To decide what counts as a tech stock we use the official classifications: for the US, companies in the Information Technology and Communication Services sectors of the standard used by the S&P 500; for the UK, companies the London Stock Exchange files under Technology or Telecommunications. When several outlets report the same event, we group their articles into one story.</p>
+<p>Stories are ranked by how many outlets are covering them. A major financial paper counts for more than a specialist title. A story has to name a US or UK listed tech company we follow to appear, unless it's about tech shares as a whole and widely covered (two national papers, say). Older stories lose half their score every 12 hours, so the top of the page shows what's being covered right now. The stock table works the same way. Nobody picks the order by hand.</p>
 <p>Every headline links straight to the publisher that wrote it. We don't copy or rewrite articles.</p>
 
 <h2>Filings and prices</h2>
@@ -15,11 +15,11 @@
 <p>A lot of coverage means a company is being talked about. It doesn't mean its shares will go up, down or anywhere. We never publish tips, top picks, price targets or predictions, and we filter out other people's. Read <a href="terms.html#not-advice">why this isn't advice</a>.</p>
 
 <h2>The "So what" lines</h2>
-<p>The short "So what" line under a story is written by AI from the coverage. It explains what the news means for the company's business and is checked by software so it never comments on the shares. Like any summary it can be wrong. The publisher's article is always the source to trust.</p>
+<p>The short "So what" line under a story is written by AI from the coverage. It explains what the news means for the company's business and is checked by software to stop it commenting on the shares. Like any summary it can be wrong. The publisher's article is always the source to trust.</p>
 
 <h2>The email</h2>
 <p>The most covered stories go out by email every morning UK time, Monday to Friday. <a href="{{ site.newsletter_url }}">Sign up free</a>.</p>
 
 <h2>Who runs it</h2>
-<p>{{ site.name }} is run by {{ site.owner }}, who also publishes All UK Tech, AI Prompt Hackers and Answerable. Spotted a story tagged with the wrong company, or a stock we should follow? <a href="contact.html">Get in touch</a>.</p>
+<p>{{ site.name }} is run by {{ site.owner }}, who also publishes All UK Tech, AI Prompt Hackers, Answerable and Use Case Archive. Spotted a story tagged with the wrong company, or a stock we should follow? <a href="contact.html">Get in touch</a>.</p>
 {% endblock %}
