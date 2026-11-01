@@ -6,6 +6,7 @@
   python run.py email       # build today's email now (even if one exists)
   python run.py trends      # print coverage spikes and section shares from saved history (no fetching)
   python run.py weekly      # build this week's draft now from saved history (no fetching)
+  python run.py linkedin    # build the two LinkedIn cards and post text for the last 7 days now (no fetching)
 
 Options:
   --fixtures DIR            # read feeds from DIR/<source id>.xml (and DIR/edgar/<TICKER>.xml) instead of the internet
@@ -19,7 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from engine import edgar, llm, notify, trends, weekly
+from engine import edgar, linkedin, llm, notify, trends, weekly
 from engine.config import ROOT, Config
 from engine.db import DB
 from engine.fetch import fetch_all
@@ -30,7 +31,7 @@ from engine.stories import build_stories
 
 def main():
     ap = argparse.ArgumentParser(description="All Tech Stocks engine")
-    ap.add_argument("command", choices=["auto", "hourly", "email", "trends", "weekly"])
+    ap.add_argument("command", choices=["auto", "hourly", "email", "trends", "weekly", "linkedin"])
     ap.add_argument("--fixtures", type=Path)
     ap.add_argument("--now")
     ap.add_argument("--db", type=Path, default=ROOT / "data" / "news.db")
@@ -50,6 +51,13 @@ def main():
         trends.record_daily(db, cfg, now)
         print(trends.report(db, cfg, now, args.date))
         db.close()
+        return
+
+    if args.command == "linkedin":
+        try:
+            _build_linkedin(db, cfg, now, args.db.parent / "linkedin")
+        finally:
+            db.close()
         return
 
     if args.command == "weekly":
@@ -102,6 +110,13 @@ def main():
                 and not weekly.built(weekly_dir, date)
                 and wk.get("build_hour", 14) <= local.hour < wk.get("build_hour", 14) + wk.get("late_window_hours", 6)):
             _build_weekly(db, cfg, rules, now, weekly_dir)
+        # The Monday LinkedIn cards. Counts headlines only, so it costs nothing and can't hurt the run.
+        li_dir = args.db.parent / "linkedin"
+        if args.command == "auto" and linkedin.due(local, cfg) and not linkedin.built(li_dir, now, cfg):
+            try:
+                _build_linkedin(db, cfg, now, li_dir)
+            except Exception as e:  # noqa: BLE001
+                print(f"  linkedin: failed, nothing else affected ({type(e).__name__}: {e})")
         if llm.enabled():
             st = llm.STATS
             print(f"  AI lines: {st['ok']} written, {st['rejected']} rejected, {st['failed']} failed calls")
@@ -117,6 +132,17 @@ def _build_weekly(db, cfg, rules, now, weekly_dir):
         print(f"    {line}")
     message = (f"All Tech Stocks weekly draft for {res['date']} is ready. "
                "Double-click 'Get this week's draft' in the All Tech Stocks folder on your Desktop.")
+    print(f"  notify: {notify.send(message)}")
+
+
+def _build_linkedin(db, cfg, now, folder):
+    res = linkedin.build(db, cfg, now, folder)
+    if not res["cards"]:
+        print(f"  linkedin: skipped, too few stocks named in the week to {res['date']}")
+        return
+    print(f"  linkedin: cards for the week to {res['date']}: {', '.join(res['cards'])}")
+    message = ("All Tech Stocks LinkedIn cards are ready. "
+               "Double-click 'Get this week's LinkedIn cards' in the All Tech Stocks folder on your Desktop.")
     print(f"  notify: {notify.send(message)}")
 
 

@@ -132,7 +132,7 @@ exclude:
                    "stocks to buy", "stock to buy", "shares to buy", "share to buy", "to buy now", "buy now",
                    "should you buy", "should i buy", "is it time to buy", "time to buy", "worth buying",
                    "buy the dip", "buy or sell", "buy, sell", "sell now", "should you sell", "stocks to sell",
-                   "stock pick", "stock picks", "top pick", "top picks", "price target", "price targets",
+                   "stock pick", "stock picks", "live & on demand", "top pick", "top picks", "price target", "price targets",
                    "price prediction", "price forecast", "could soar", "set to soar", "to soar", "millionaire",
                    "get rich", "passive income", "dividend stocks", "growth stocks to", "undervalued",
                    "overvalued", "bargain stock", "bargain buy", "no-brainer", "screaming buy", "strong buy", "buy rating",
@@ -267,6 +267,13 @@ auto_google:
   when: 1d
   rotate: 2              # run half the queries one hour, half the next, to go easy on Google
   # US stocks are searched in US English, UK stocks in UK English.
+
+linkedin:
+  enabled: true             # Monday cards: the 10 most-covered tech stocks, and the 10 most-covered UK ones
+  day: 0                    # 0 = Monday
+  build_hour: 7             # UK time: the first run after 7am builds them
+  late_window_hours: 6
+  count: 10
 
 email:
   build_hour: 6               # UK time; the first run from 6am builds the email

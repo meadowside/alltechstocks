@@ -133,6 +133,21 @@ as a gap, and `data/weekly/<date>-log.txt` says what was dropped and why.
 `python run.py weekly` builds it now from the saved history, whatever the day. On GitHub, run the
 workflow with the **weekly** choice.
 
+## Your Monday LinkedIn cards
+
+At about 7:30am UK time on Mondays the hourly run builds two LinkedIn images for the last seven days:
+the 10 most-covered tech stocks, and the 10 most-covered UK tech stocks. Each comes with post text whose
+suggested first line is a coverage fact ("Vodafone was named in more headlines than the next six UK
+tech stocks put together"). Counts are headlines naming each stock, from the articles the site itself
+would use, so stream spam and tip pieces don't count. Both carry the not-advice line. No AI, no cost.
+Settings under `linkedin:` in `config/rules.yaml`, code in `engine/linkedin.py`.
+
+1. Double-click **Get this week's LinkedIn cards** in the `desktop` folder. It downloads both cards and their text.
+2. Rewrite the first line of each post in your own words. Keep it to coverage: no views on the shares.
+3. Post them. One on Monday and one later in the week works better than both at once.
+
+`python run.py linkedin` builds them now. On GitHub, run the workflow with the **linkedin** choice.
+
 ## The watchlist
 
 `config/watchlist.yaml` has 103 stocks: 73 US, 30 UK. Add or remove any. Each needs a symbol,

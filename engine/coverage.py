@@ -121,14 +121,26 @@ def pace(db: DB, groups: list[dict], tz: ZoneInfo, skip, big: int = BIG) -> dict
     }
 
 
+def _counted(db: DB, cfg: Config, start: Date, end: Date):
+    """The articles the site itself would use: rules applied again, so items saved before a rule existed
+    (stream spam planted on hijacked sites, quote pages, tip pieces) don't count."""
+    from .rules import Rules
+    from .stories import _keep
+    from .tickers import Tagger
+    rules, tagger = Rules(cfg), Tagger(cfg)
+    for r in db.conn.execute("SELECT * FROM items WHERE excluded IS NULL AND published >= ? AND published < ?",
+                             _bounds(start, end)):
+        if _keep(r, cfg, rules, tagger):
+            yield r
+
+
 def attention(db: DB, cfg: Config, start: Date, end: Date, groups: list[dict], n: int = 8) -> dict:
     """Share of the week's coverage by company, how concentrated it was and the US/UK split.
     Counted from the articles themselves: each kept article that names a company counts once for it."""
     from .tickers import Tagger
     tagger = Tagger(cfg)
     arts, outlets = Counter(), {}
-    for r in db.conn.execute("SELECT title, outlet_name FROM items WHERE excluded IS NULL AND published >= ? "
-                             "AND published < ?", _bounds(start, end)):
+    for r in _counted(db, cfg, start, end):
         for sym in tagger.find(r["title"]):
             arts[sym] += 1
             outlets.setdefault(sym, set()).add(r["outlet_name"])
@@ -169,8 +181,7 @@ def _shares(db: DB, cfg: Config, start: Date, end: Date) -> dict[str, float]:
     from .tickers import Tagger
     tagger = Tagger(cfg)
     c = Counter()
-    for r in db.conn.execute("SELECT title FROM items WHERE excluded IS NULL AND published >= ? AND published < ?",
-                             _bounds(start, end)):
+    for r in _counted(db, cfg, start, end):
         c.update(s for s in tagger.find(r["title"]) if s in cfg.by_symbol)
     tot = sum(c.values()) or 1
     return {s: 100 * v / tot for s, v in c.items()}
