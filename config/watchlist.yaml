@@ -112,39 +112,62 @@ stocks:
   - {symbol: RBLX, exchange: NYSE, name: Roblox, group: games, aliases: [Roblox]}
 
   # ================= UK: London Stock Exchange =================
-  - {symbol: SGE, exchange: LSE, name: Sage Group, group: software, aliases: [Sage Group]}
-  - {symbol: REL, exchange: LSE, name: RELX, group: data, aliases: [RELX, LexisNexis]}
-  - {symbol: EXPN, exchange: LSE, name: Experian, group: data, aliases: [Experian]}
-  - {symbol: LSEG, exchange: LSE, name: London Stock Exchange Group, group: data, aliases: [London Stock Exchange Group, LSEG]}
-  - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
-  - {symbol: RMV, exchange: LSE, name: Rightmove, group: internet, aliases: [Rightmove], ignore: [on rightmove]}
-  - {symbol: HLMA, exchange: LSE, name: Halma, group: hardware, exact: [Halma]}
-  - {symbol: SCT, exchange: LSE, name: Softcat, group: services, aliases: [Softcat]}
+  # The UK list follows the LSE's own classification: companies the exchange files under Technology
+  # (ICB industry), plus Telecommunications. Check a company's tearsheet on londonstockexchange.com
+  # before adding it. Not on the list for that reason: Experian, LSEG, Rightmove, Halma, Renishaw,
+  # Oxford Instruments, Capita, Ocado, Moonpig, Games Workshop, Frontier Developments, Wise.
+
+  # ---- Technology: software ----
+  - {symbol: SGE, exchange: LSE, name: Sage Group, group: software, aliases: [Sage Group], exact: [Sage],
+     ignore: [Sage Advice, Sage Green, Sage Steele, Sage Leaves, Sage and Onion, Sage Rosenfels, Sage the Gemini, Sage Kotsenburg]}
+  - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: software, aliases: [Bytes Technology]}
+  - {symbol: KNOS, exchange: LSE, name: Kainos, group: software, aliases: [Kainos]}
+  - {symbol: CRW, exchange: LSE, name: Craneware, group: software, aliases: [Craneware]}
+  - {symbol: PINE, exchange: LSE, name: Pinewood Technologies, group: software, aliases: [Pinewood Technologies]}
+  - {symbol: GBG, exchange: LSE, name: GB Group, group: software, aliases: [GB Group, GBG]}
+  - {symbol: ACSO, exchange: LSE, name: Accesso Technology, group: software, aliases: [Accesso Technology]}
+  - {symbol: ALFA, exchange: LSE, name: Alfa Financial Software, group: software, aliases: [Alfa Financial Software, Alfa Systems]}
+  - {symbol: QTX, exchange: LSE, name: Quartix, group: software, aliases: [Quartix]}
+  - {symbol: SAAS, exchange: LSE, name: Microlise, group: software, aliases: [Microlise]}
+  # ---- Technology: computer services ----
+  - {symbol: REL, exchange: LSE, name: RELX, group: data, aliases: [RELX, LexisNexis, Elsevier]}
   - {symbol: CCC, exchange: LSE, name: Computacenter, group: services, aliases: [Computacenter]}
-  - {symbol: KNOS, exchange: LSE, name: Kainos, group: services, aliases: [Kainos]}
-  - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: services, aliases: [Bytes Technology]}
-  - {symbol: CPI, exchange: LSE, name: Capita, group: services, aliases: [Capita], ignore: [per capita, per-capita, capita income, capita gdp, "capita…", "capita...", capita amon]}
-  - {symbol: RSW, exchange: LSE, name: Renishaw, group: hardware, aliases: [Renishaw]}
-  - {symbol: OXIG, exchange: LSE, name: Oxford Instruments, group: hardware, aliases: [Oxford Instruments]}
-  - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
-  - {symbol: RPI, exchange: LSE, name: Raspberry Pi Holdings, group: hardware, aliases: [Raspberry Pi]}
+  - {symbol: SCT, exchange: LSE, name: Softcat, group: services, aliases: [Softcat]}
+  - {symbol: NCC, exchange: LSE, name: NCC Group, group: security, aliases: [NCC Group]}
+  - {symbol: CER, exchange: LSE, name: Cerillion, group: software, aliases: [Cerillion]}
+  - {symbol: BKS, exchange: LSE, name: Beeks Financial Cloud, group: services, aliases: [Beeks Financial Cloud, Beeks Group], exact: [Beeks]}
+  - {symbol: MTEC, exchange: LSE, name: Made Tech, group: services, aliases: [Made Tech Group], query: ["Made Tech Group"]}
+  - {symbol: SPA, exchange: LSE, name: 1Spatial, group: software, aliases: [1Spatial]}
+  - {symbol: SEE, exchange: LSE, name: Seeing Machines, group: services, aliases: [Seeing Machines]}
+  # ---- Technology: consumer digital services ----
+  - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
   - {symbol: TRST, exchange: LSE, name: Trustpilot, group: internet, aliases: [Trustpilot]}
-  - {symbol: MOON, exchange: LSE, name: Moonpig, group: internet, aliases: [Moonpig]}
-  - {symbol: OCDO, exchange: LSE, name: Ocado, group: internet, aliases: [Ocado],
-     # Suppliers getting their products stocked on the Ocado shop, not news about the company
-     ignore: [ocado listing, ocado listings, to ocado, into ocado, on ocado, and ocado, with ocado launch,
-              ocado and booths, ocado and foodservice]}
   - {symbol: BCG, exchange: LSE, name: Baltic Classifieds, group: internet, aliases: [Baltic Classifieds]}
-  - {symbol: GAW, exchange: LSE, name: Games Workshop, group: games, aliases: [Games Workshop, Warhammer]}
-  - {symbol: FDEV, exchange: LSE, name: Frontier Developments, group: games, aliases: [Frontier Developments]}
-  - {symbol: BT.A, exchange: LSE, name: BT Group, group: telecoms, aliases: [BT Group, Openreach], exact: [BT], ignore: [BT Sport]}
+  - {symbol: ATG, exchange: LSE, name: Auction Technology Group, group: internet, aliases: [Auction Technology Group]}
+  - {symbol: KOO, exchange: LSE, name: Kooth, group: internet, aliases: [Kooth]}
+  - {symbol: DOTD, exchange: LSE, name: Dotdigital, group: software, aliases: [Dotdigital]}
+  - {symbol: IOM, exchange: LSE, name: Iomart, group: services, aliases: [Iomart]}
+  - {symbol: BOOM, exchange: LSE, name: Audioboom, group: internet, aliases: [Audioboom]}
+  # ---- Technology: chips, components and hardware ----
+  - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
+  - {symbol: CML, exchange: LSE, name: CML Microsystems, group: chips, aliases: [CML Microsystems]}
+  - {symbol: NANO, exchange: LSE, name: Nanoco, group: chips, aliases: [Nanoco]}
+  - {symbol: TTG, exchange: LSE, name: TT Electronics, group: hardware, aliases: [TT Electronics]}
+  - {symbol: RPI, exchange: LSE, name: Raspberry Pi Holdings, group: hardware, aliases: [Raspberry Pi]}
+  - {symbol: MIDW, exchange: LSE, name: Midwich, group: hardware, aliases: [Midwich], ignore: [Midwich Cuckoos]}
+
+  # ---- Telecommunications ----
+  - {symbol: BT.A, exchange: LSE, name: BT Group, group: telecoms, aliases: [BT Group, Openreach], exact: [BT, EE],
+     ignore: [BT Sport, EE.UU, EE UU]}
   - {symbol: VOD, exchange: LSE, name: Vodafone, group: telecoms, aliases: [Vodafone, VodafoneThree],
      # Separate companies or businesses that only use the name: not the London-listed group
-     ignore: [Vodafone Idea, Vi Vodafone Idea, Vodafone Qatar, Vodafone Ukraine, Vodafone Spain, Vodafone Australia,
+     ignore: [Vodafone Idea, Vi Vodafone Idea, Vodafone Qatar, Vodafone Ukraine, Vodafone Australia,
               Vodafone Ghana, Vodafone New Zealand, Vodafone Fiji, Vodafone Park, Vodafone Arena, Vodafone Oman,
               Vodafone SIM, Gold Coast Vodafone, "Sky TV, Vodafone"]}
-  - {symbol: NCC, exchange: LSE, name: NCC Group, group: security, aliases: [NCC Group]}
-  - {symbol: GBG, exchange: LSE, name: GB Group, group: security, aliases: [GB Group, GBG]}
-  - {symbol: CRW, exchange: LSE, name: Craneware, group: software, aliases: [Craneware]}
-  - {symbol: ATG, exchange: LSE, name: Auction Technology Group, group: internet, aliases: [Auction Technology Group]}
-  - {symbol: PINE, exchange: LSE, name: Pinewood Technologies, group: software, aliases: [Pinewood Technologies]}
+  - {symbol: AAF, exchange: LSE, name: Airtel Africa, group: telecoms, aliases: [Airtel Africa]}
+  - {symbol: HTWS, exchange: LSE, name: Helios Towers, group: telecoms, aliases: [Helios Towers]}
+  - {symbol: GAMA, exchange: LSE, name: Gamma Communications, group: telecoms, aliases: [Gamma Communications],
+     query: ["Gamma Communications"]}
+  - {symbol: ZEG, exchange: LSE, name: Zegona, group: telecoms, aliases: [Zegona, Vodafone Spain]}
+  - {symbol: ETL, exchange: LSE, name: Eutelsat, group: telecoms, aliases: [Eutelsat, OneWeb]}
+  - {symbol: SRT, exchange: LSE, name: SRT Marine Systems, group: telecoms, aliases: [SRT Marine]}

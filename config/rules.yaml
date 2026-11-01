@@ -258,7 +258,7 @@ clustering:
 # These fill the gaps the outlet feeds miss. Items are credited to the outlet that wrote them.
 auto_google:
   per_query: 6           # companies per query; Google News handles a few ORs well
-  per_query_uk: 3        # UK small caps get smaller batches so Ocado or Vodafone can't crowd them out
+  per_query_uk: 3        # UK small caps get smaller batches so Vodafone or BT can't crowd them out
   # Every per-stock query also needs one of these words, so gig listings, TV episode news and sports
   # pages that happen to say "Uber" or "Netflix" stay out. Delete the list to switch it off.
   context: [shares, stock, stocks, investors, earnings, results, revenue, profit, sales, CEO,
