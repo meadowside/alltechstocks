@@ -1,8 +1,7 @@
-All Tech Stocks run: auto at Sun 01 Nov 08:53 UK time
-  feeds: 45/45 worked, 87 new items (26 excluded by rules, 9 Google queries resting this hour)
+All Tech Stocks run: auto at Sun 01 Nov 09:53 UK time
+  feeds: 45/45 worked, 183 new items (60 excluded by rules, 9 Google queries resting this hour)
   filings: 73/73 companies checked, 0 new filings
-  stories: 1975 grouped, 1436 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage describes a California man who visited what is presented as the world's largest Tesla Supercharger site and reported on the ame"
-  site: 920 stories live, 0 new AI lines. Top: Indianapolis Uber driver accused of raping passenger. Most covered stock: AMZN
-  trends: 688 stock-days and 77 section-days refreshed, 13 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  stories: 1965 grouped, 1417 name a watched stock or pass the market rules
+  site: 905 stories live, 2 new AI lines. Top: Indianapolis Uber driver accused of raping passenger. Most covered stock: AMZN
+  trends: 692 stock-days and 77 section-days refreshed, 13 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
