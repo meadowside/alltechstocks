@@ -1,8 +1,7 @@
-All Tech Stocks run: auto at Sun 01 Nov 20:53 UK time
-  feeds: 60/60 worked, 54 new items (16 excluded by rules, 14 Google queries resting this hour)
-  filings: 77/82 companies checked, 0 new filings
-  stories: 1388 grouped, 910 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Salesforce has signed a definitive agreement to acquire Rune Technologies, a deal that moves the software giant further into its existing cu'
-  site: 494 stories live, 0 new AI lines. Top: ‘Haunted Hotel’ Renewed at Netflix For Season 3 With Confirmed 2027 Return. Most covered stock: AAPL
+All Tech Stocks run: auto at Sun 01 Nov 21:53 UK time
+  feeds: 60/60 worked, 47 new items (6 excluded by rules, 14 Google queries resting this hour)
+  filings: 81/82 companies checked, 0 new filings
+  stories: 1370 grouped, 898 name a watched stock or pass the market rules
+  site: 481 stories live, 1 new AI lines. Top: HD Hyundai Robotics to Advance 'Physical AI Solutions' with Palantir. Most covered stock: AAPL
   trends: 696 stock-days and 77 section-days refreshed, 13 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  AI lines: 1 written, 0 rejected, 0 failed calls
