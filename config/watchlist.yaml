@@ -20,19 +20,24 @@
 # or may have been taken private or delisted.
 
 stocks:
+  # What counts as a tech stock: US companies in the GICS Information Technology or Communication Services
+  # sectors (check the S&P 500 list or the company's own filings); UK companies the London Stock Exchange
+  # files under Technology or Telecommunications (see the UK section). Not on the list for that reason:
+  # Amazon, Tesla, Airbnb, DoorDash (Consumer Discretionary), Uber (Industrials), PayPal, Block, Coinbase,
+  # Robinhood and Wise (Financials; Wise moved its main listing to Nasdaq in May 2026). Electronic Arts was taken private.
   # ================= US: the giants =================
   - {symbol: AAPL, exchange: NASDAQ, name: Apple, group: hardware, aliases: [Apple Inc, iPhone, iPad, Tim Cook], exact: [Apple]}
   - {symbol: MSFT, exchange: NASDAQ, name: Microsoft, group: software, aliases: [Microsoft, Satya Nadella, Azure, LinkedIn, Xbox]}
   - {symbol: NVDA, exchange: NASDAQ, name: Nvidia, group: chips, aliases: [Nvidia, Jensen Huang]}
   - {symbol: GOOGL, exchange: NASDAQ, name: Alphabet, group: internet, aliases: [Alphabet, Google, YouTube, Sundar Pichai, DeepMind, Waymo]}
-  - {symbol: AMZN, exchange: NASDAQ, name: Amazon, group: internet, aliases: [Amazon, AWS, Amazon Web Services, Andy Jassy]}
   - {symbol: META, exchange: NASDAQ, name: Meta Platforms, group: internet, aliases: [Meta Platforms, Facebook, Instagram, WhatsApp, Mark Zuckerberg, Zuckerberg], exact: [Meta]}
-  - {symbol: TSLA, exchange: NASDAQ, name: Tesla, group: hardware, aliases: [Tesla]}
   - {symbol: AVGO, exchange: NASDAQ, name: Broadcom, group: chips, aliases: [Broadcom, Hock Tan, VMware]}
   - {symbol: ORCL, exchange: NYSE, name: Oracle, group: software, aliases: [Larry Ellison], exact: [Oracle]}
   - {symbol: NFLX, exchange: NASDAQ, name: Netflix, group: internet, aliases: [Netflix]}
 
   # ================= US: chips and semiconductor equipment =================
+  - {symbol: TER, exchange: NASDAQ, name: Teradyne, group: chips, aliases: [Teradyne]}
+  - {symbol: GFS, exchange: NASDAQ, name: GlobalFoundries, group: chips, aliases: [GlobalFoundries, GF Foundries]}
   - {symbol: AMD, exchange: NASDAQ, name: AMD, group: chips, aliases: [Advanced Micro Devices, Lisa Su], exact: [AMD]}
   - {symbol: INTC, exchange: NASDAQ, name: Intel, group: chips, aliases: [Intel Corp, Lip-Bu Tan], exact: [Intel]}
   - {symbol: QCOM, exchange: NASDAQ, name: Qualcomm, group: chips, aliases: [Qualcomm, Snapdragon]}
@@ -53,6 +58,14 @@ stocks:
   - {symbol: ADI, exchange: NASDAQ, name: Analog Devices, group: chips, aliases: [Analog Devices]}
 
   # ================= US: hardware, servers and networking =================
+  - {symbol: WDC, exchange: NASDAQ, name: Western Digital, group: hardware, aliases: [Western Digital]}
+  - {symbol: STX, exchange: NASDAQ, name: Seagate, group: hardware, aliases: [Seagate]}
+  - {symbol: SNDK, exchange: NASDAQ, name: SanDisk, group: hardware, aliases: [SanDisk]}
+  - {symbol: NTAP, exchange: NASDAQ, name: NetApp, group: hardware, aliases: [NetApp]}
+  - {symbol: MSI, exchange: NYSE, name: Motorola Solutions, group: hardware, aliases: [Motorola Solutions]}
+  - {symbol: GLW, exchange: NYSE, name: Corning, group: hardware, aliases: [Corning Inc, Corning Incorporated, Gorilla Glass], exact: [Corning],
+     ignore: ["Corning, NY", "Corning, New York", Corning Community College, Corning Museum]}
+  - {symbol: KEYS, exchange: NYSE, name: Keysight, group: hardware, aliases: [Keysight]}
   - {symbol: SMCI, exchange: NASDAQ, name: Super Micro Computer, group: hardware, aliases: [Super Micro, Supermicro]}
   - {symbol: DELL, exchange: NYSE, name: Dell Technologies, group: hardware, aliases: [Dell Technologies, Michael Dell], exact: [Dell]}
   - {symbol: HPE, exchange: NYSE, name: Hewlett Packard Enterprise, group: hardware, aliases: [Hewlett Packard Enterprise, HPE]}
@@ -63,6 +76,11 @@ stocks:
   - {symbol: CRWV, exchange: NASDAQ, name: CoreWeave, group: data, aliases: [CoreWeave]}
 
   # ================= US: software =================
+  - {symbol: ACN, exchange: NYSE, name: Accenture, group: services, aliases: [Accenture]}
+  - {symbol: ADSK, exchange: NASDAQ, name: Autodesk, group: software, aliases: [Autodesk]}
+  - {symbol: CDW, exchange: NASDAQ, name: CDW, group: services, aliases: [CDW Corp], exact: [CDW]}
+  - {symbol: GDDY, exchange: NYSE, name: GoDaddy, group: internet, aliases: [GoDaddy]}
+  - {symbol: AKAM, exchange: NASDAQ, name: Akamai, group: internet, aliases: [Akamai]}
   - {symbol: CRM, exchange: NYSE, name: Salesforce, group: software, aliases: [Salesforce, Marc Benioff, Slack]}
   - {symbol: ADBE, exchange: NASDAQ, name: Adobe, group: software, aliases: [Adobe]}
   - {symbol: NOW, exchange: NYSE, name: ServiceNow, group: software, aliases: [ServiceNow]}
@@ -90,26 +108,26 @@ stocks:
 
   # ================= US: internet and platforms =================
   - {symbol: SHOP, exchange: NASDAQ, name: Shopify, group: internet, aliases: [Shopify]}
-  - {symbol: UBER, exchange: NYSE, name: Uber, group: internet, aliases: [Uber], ignore: [Uber Arena, Uber Eats Music Hall, Uber driver, Uber passenger]}
-  - {symbol: ABNB, exchange: NASDAQ, name: Airbnb, group: internet, aliases: [Airbnb]}
-  - {symbol: DASH, exchange: NASDAQ, name: DoorDash, group: internet, aliases: [DoorDash, Deliveroo]}
   - {symbol: SPOT, exchange: NYSE, name: Spotify, group: internet, aliases: [Spotify]}
-  - {symbol: RDDT, exchange: NYSE, name: Reddit, group: internet, aliases: [Reddit]}
+  - {symbol: RDDT, exchange: NYSE, name: Reddit, group: internet, aliases: [Reddit],
+     # Stories about something people posted on Reddit, not about the company
+     ignore: [reddit user, reddit users, reddit post, reddit posts, reddit thread, on reddit, asks reddit,
+              reddit recommends, viral reddit, redditor, redditors, reddit tv, reddit streams, reddit says]}
   - {symbol: SNAP, exchange: NYSE, name: Snap, group: internet, aliases: [Snap Inc, Snapchat], query: [Snap Inc, Snapchat]}
   - {symbol: PINS, exchange: NYSE, name: Pinterest, group: internet, aliases: [Pinterest]}
 
-  # ================= US: fintech =================
-  - {symbol: PYPL, exchange: NASDAQ, name: PayPal, group: fintech, aliases: [PayPal, Venmo]}
-  - {symbol: XYZ, exchange: NYSE, name: Block, group: fintech, aliases: [Block Inc, Cash App, Jack Dorsey], query: [Block Inc, Cash App]}
   # Wise moved its main listing from London to Nasdaq (ticker WSE) in May 2026.
-  - {symbol: WSE, exchange: NASDAQ, name: Wise, group: fintech, aliases: [Wise Group, Wise plc, Kristo Käärmann, Kristo Kaarmann, Käärmann], query: [Wise Group, Wise plc]}
-  - {symbol: COIN, exchange: NASDAQ, name: Coinbase, group: fintech, aliases: [Coinbase]}
-  - {symbol: HOOD, exchange: NASDAQ, name: Robinhood, group: fintech, aliases: [Robinhood]}
 
   # ================= US: games =================
-  - {symbol: EA, exchange: NASDAQ, name: Electronic Arts, group: games, aliases: [Electronic Arts]}
   - {symbol: TTWO, exchange: NASDAQ, name: Take-Two, group: games, aliases: [Take-Two, Rockstar Games, GTA 6, GTA VI]}
   - {symbol: RBLX, exchange: NYSE, name: Roblox, group: games, aliases: [Roblox]}
+
+  # ================= US: telecoms and cable (GICS Communication Services) =================
+  - {symbol: VZ, exchange: NYSE, name: Verizon, group: telecoms, aliases: [Verizon]}
+  - {symbol: T, exchange: NYSE, name: AT&T, group: telecoms, aliases: ["AT&T"], query: ["AT&T"]}
+  - {symbol: TMUS, exchange: NASDAQ, name: T-Mobile US, group: telecoms, aliases: [T-Mobile]}
+  - {symbol: CMCSA, exchange: NASDAQ, name: Comcast, group: telecoms, aliases: [Comcast, Xfinity]}
+  - {symbol: CHTR, exchange: NASDAQ, name: Charter Communications, group: telecoms, aliases: [Charter Communications]}
 
   # ================= UK: London Stock Exchange =================
   # The UK list follows the LSE's own classification: companies the exchange files under Technology
