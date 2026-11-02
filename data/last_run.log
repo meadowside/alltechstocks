@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Mon 02 Nov 08:53 UK time
-  feeds: 60/60 worked, 155 new items (48 excluded by rules, 14 Google queries resting this hour)
-  filings: 77/82 companies checked, 0 new filings
-  stories: 1311 grouped, 840 name a watched stock or pass the market rules
-  site: 438 stories live, 2 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
-  trends: 714 stock-days and 83 section-days refreshed, 14 days of history
-  linkedin: cards for the week to 2026-11-01: all, uk
-  notify: skipped (no Telegram settings)
+All Tech Stocks run: auto at Mon 02 Nov 09:53 UK time
+  feeds: 60/60 worked, 90 new items (27 excluded by rules, 14 Google queries resting this hour)
+  filings: 82/82 companies checked, 0 new filings
+  stories: 1300 grouped, 825 name a watched stock or pass the market rules
+  site: 419 stories live, 2 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
+  trends: 716 stock-days and 83 section-days refreshed, 14 days of history
   AI lines: 2 written, 0 rejected, 0 failed calls
