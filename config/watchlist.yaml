@@ -154,6 +154,7 @@ stocks:
   # Off the list because they're based abroad: Eutelsat (Paris, main listing Paris), Trustpilot
   # (Copenhagen), Baltic Classifieds (Vilnius), Seeing Machines (Canberra).
   # On the list though most of their business is abroad, like Vodafone: Airtel Africa, Helios Towers, Zegona.
+  # Off the list because their sector couldn't be confirmed as tech: Trainline, Oxford Nanopore, Funding Circle.
   # Taken private, so off the list: Pinewood Technologies (Ridgeview Partners, Oct 2026), 1Spatial (VertiGIS, Apr 2026).
   # Gamma Communications has agreed a takeover by Epiris, due to complete in the first half of 2027: remove it then.
 
@@ -183,6 +184,10 @@ stocks:
   - {symbol: DOTD, exchange: LSE, name: Dotdigital, group: software, aliases: [Dotdigital]}
   - {symbol: IOM, exchange: LSE, name: Iomart, group: services, aliases: [Iomart]}
   - {symbol: BOOM, exchange: LSE, name: Audioboom, group: internet, aliases: [Audioboom]}
+  # ---- Based in the UK, listed only in New York ----
+  - {symbol: DAVA, exchange: NYSE, name: Endava, group: services, country: UK, aliases: [Endava]}
+  - {symbol: RZLV, exchange: NASDAQ, name: Rezolve AI, group: software, country: UK, aliases: [Rezolve AI, Rezolve]}
+  - {symbol: ARQQ, exchange: NASDAQ, name: Arqit, group: security, country: UK, aliases: [Arqit]}
   # ---- Technology: chips, components and hardware ----
   # Arm is based in Cambridge but listed only in New York, so it sits on the UK side.
   - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, country: UK, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the,
