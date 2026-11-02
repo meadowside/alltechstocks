@@ -215,7 +215,8 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
         new_lines += add_trend_lines([t["story"] for t in trend], db, cfg, now, max(left, 0))
 
     local = now.astimezone(ZoneInfo(cfg.site["timezone"]))
-    filings_recent = db.filings_since(now - timedelta(days=2), notable_only=True)
+    filings_recent = [f for f in db.filings_since(now - timedelta(days=2), notable_only=True)
+                      if f["symbol"] in cfg.by_symbol]
     ctx = {
         "site": cfg.site,
         "disclaimer": cfg.rules.get("disclaimer", ""),
@@ -411,7 +412,10 @@ def build_email(stories: list[Story], db: DB, cfg: Config, now: datetime, out: P
 
     date = local.strftime("%Y-%m-%d")
     ranked = rank_stocks([s for s in stories if s.eligible], cfg, now, int(picked["lookback"].total_seconds() // 3600))
-    filings = db.filings_since(now - picked["lookback"], notable_only=True)[: cfg.rules["email"].get("filings_max", 8)]
+    # Filings for stocks since dropped from the watchlist stay in the database until pruned,
+    # so filter them here or the template crashes looking up the company name.
+    filings = [f for f in db.filings_since(now - picked["lookback"], notable_only=True)
+               if f["symbol"] in cfg.by_symbol][: cfg.rules["email"].get("filings_max", 8)]
     env = _env()
     args = dict(site=cfg.site, top=top, sections=picked["sections"], titles=titles, opening=opening, top_why=top_why, stocks=cfg.by_symbol,
                 date_long=local.strftime("%A %-d %B %Y"), date=date, ranked=ranked[:5], filings=filings,
