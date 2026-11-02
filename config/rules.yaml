@@ -152,7 +152,18 @@ exclude:
                    "trailer", "release date", "cast list", "ending explained", "halloween", "takeover event",
                    "horoscope", "recipe", "% gain ahead", "gain ahead", "sees a 2", "sees a 3", "sees a 4", "bullish rating",
                    "bearish rating", "key facts:", "quote & history", "news, quote", "total current assets",
-                   "total assets of", "the guide #", "joins cast", "thriller series", "drama series", "inducement grant", "inducement award"]
+                   "total assets of", "the guide #", "joins cast", "thriller series", "drama series", "inducement grant", "inducement award",
+                   # Digests and lists, not stories. They name a few companies each with nothing new.
+                   "weekly recap", "stocks to watch", "stock to watch", "stocks in focus", "stocks in news",
+                   "stocks in the news", "hot stocks", "buzzing stocks",
+                   # Routine London Stock Exchange notices. Real ones (trading updates, half-year reports,
+                   # new CFOs, funding) don't use these titles, so they still run.
+                   "holding(s) in company", "director/pdmr", "transaction in own shares",
+                   "transactions in own shares", "transaction in own securities", "total voting rights",
+                   "form 8.3", "form 8.5", "form 8 (", "block listing", "director declaration",
+                   "dividend currency exchange rate", "board committee membership",
+                   "remuneration committee chair", "issuance of equity securities", "result of agm",
+                   "leverage shares plc"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
   # unrelated stories together, so they never count. Sector-wide tech stories still run.
   wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",
@@ -179,10 +190,25 @@ exclude:
             stocktwits, trefis, tikr, quiver quantitative, "yahoo! finance canada", cryptorank, tokenpost,
             zoom tv, zoomtventertainment, imdb, collider, destructoid, sacnilk, sportskeeda, yahoo sports,
             espn, 247sports, sports illustrated, jagran josh, sunday guardian,
-            "fc東京", pierce manufacturing, port of rotterdam, vantage data centers, nyc health]
+            "fc東京", pierce manufacturing, port of rotterdam, vantage data centers, nyc health,
+            # Added 2 Nov 2026: entertainment and lifestyle titles that only cover what's on Netflix.
+            men's journal, comic book resources, tvline, slashfilm, movieweb, decider, tv insider,
+            good housekeeping, purewow, "what's on netflix"]
   summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
                      "zacks rank", "stocks to buy"]
   title_keyword_exceptions: [launch, launches, launched]
+  # For stocks marked business_only in watchlist.yaml: a headline naming only that stock needs one of
+  # these words to run, so "Meet the Rising Stars of Netflix's The Body" stays out and layoffs stay in.
+  business_words: [shares, stock, stocks, investor, investors, earnings, results, revenue, revenues, profit,
+                   profits, loss, losses, sales, subscriber, subscribers, subscription, subscriptions, ad, ads,
+                   advertising, advertiser, advertisers, price, prices, pricing, layoff, layoffs, lays off, job cuts,
+                   jobs, staff, firings, fired, downsizes, downsizing, restructuring, leadership, turmoil, crisis,
+                   business, business model, strategy, partnership, app, president, hires, acquisitions,
+                   ceo, co-ceo, cfo, chief, exec, execs, executive, executives, deal, deals, acquisition, acquire,
+                   acquires, merger, takeover, bid, lawsuit, sues, sued, regulator, regulators, antitrust, tax, taxes,
+                   levy, ban, banned, fined, probe, investigation, wall street, analyst, analysts, market, valuation,
+                   guidance, forecast, outlook, quarter, q1, q2, q3, q4, bond, bonds, debt, buyback, dividend, nasdaq,
+                   nflx, licensing, rights, budget, spending]
 
 # Sidebar: newest stories and promos for sister titles. Edit freely.
 just_in:
