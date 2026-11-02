@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 02 Nov 04:53 UK time
-  feeds: 60/60 worked, 100 new items (19 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 02 Nov 05:53 UK time
+  feeds: 60/60 worked, 84 new items (18 excluded by rules, 14 Google queries resting this hour)
   filings: 82/82 companies checked, 0 new filings
-  stories: 1351 grouped, 863 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: Shares fell): "Intel's data centre revenue rose 78%, a sharp gain for the chipmaker's server business. Shares fell anyway after the company flagged a short"
-  site: 456 stories live, 0 new AI lines. Top: Asia shares bend under AI stress; Apple earnings loom. Most covered stock: AAPL
-  trends: 708 stock-days and 83 section-days refreshed, 14 days of history
+  stories: 1340 grouped, 861 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: share price): "Intel's data centre revenue rose 78% in the period, driven by demand for its server processors. The company is now facing a shortage of memo"
+  site: 452 stories live, 0 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
+  trends: 709 stock-days and 83 section-days refreshed, 14 days of history
   AI lines: 0 written, 1 rejected, 0 failed calls
