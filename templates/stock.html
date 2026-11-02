@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% from "_macros.html" import row with context %}
 {% block title %}{{ stock.name }} ({{ stock.symbol }}) news and filings: {{ site.name }}{% endblock %}
-{% block description %}The latest {{ stock.name }} ({{ stock.exchange }}: {{ stock.symbol }}) news from every major outlet{% if stock.market == "US" %}, plus SEC filings{% endif %}, ranked by coverage. News for research, not financial advice.{% endblock %}
+{% block description %}The latest {{ stock.name }} ({{ stock.exchange }}: {{ stock.symbol }}) news from every major outlet{% if stock.listing == "US" %}, plus SEC filings{% endif %}, ranked by coverage. News for research, not financial advice.{% endblock %}
 {% block og_title %}{{ stock.name }} ({{ stock.symbol }}): news ranked by who's covering it{% endblock %}
 {% block og_url %}{{ site.url }}/stocks/{{ stock.slug }}.html{% endblock %}
 {% block main %}
@@ -10,7 +10,7 @@
   <span class="tk">{{ stock.exchange }}: {{ stock.symbol }}</span>
 </div>
 <p class="facts">
-  <span>Listed in the <b>{{ stock.market }}</b></span>
+  <span>Listed in the <b>{{ stock.listing }}</b></span>
   <span>Type: <b>{{ stock.group|capitalize }}</b></span>
   <span>Stories today: <b>{{ summary.day }}</b></span>
   <span>This week: <b>{{ summary.week }}</b></span>
@@ -41,7 +41,7 @@
 
   <aside>
     <section class="panel">
-      {% if stock.market == "UK" %}
+      {% if stock.listing == "UK" %}
       <div class="panel-head"><h2>Price</h2><p>Opens in a new tab.</p></div>
       <div class="price-box">
         <p>We can't show London Stock Exchange prices here yet. See the {{ stock.name }} price and chart on TradingView.</p>
@@ -65,7 +65,7 @@
       {% endif %}
     </section>
 
-    {% if stock.market == "US" %}
+    {% if stock.listing == "US" %}
     <section class="panel">
       <div class="panel-head"><h2>SEC filings</h2><p>Last 60 days, newest first.</p></div>
       {% if filings %}
@@ -92,7 +92,7 @@
   </aside>
 </div>
 
-{% if prices.widgets and stock.market == "US" %}
+{% if prices.widgets and stock.listing == "US" %}
 <script>
 (function () {
   var box = document.getElementById("price-box"); if (!box) return;

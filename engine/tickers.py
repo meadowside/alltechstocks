@@ -35,8 +35,8 @@ class Tagger:
         self.ignore_re = re.compile(r"(?<![\w])(" + _alternation(ignore) + r")(?![\w])", re.IGNORECASE) if ignore else None
         self.loose_re = re.compile(r"(?<![\w])(" + _alternation(list(loose)) + r")(?![\w])", re.IGNORECASE) if loose else None
         self.exact_re = re.compile(r"(?<![\w])(" + _alternation(list(exact)) + r")(?![\w])") if exact else None
-        self.us_symbols = {s.symbol for s in cfg.stocks if s.market == "US"}
-        self.uk_symbols = {s.symbol for s in cfg.stocks if s.market == "UK"}
+        self.us_symbols = {s.symbol for s in cfg.stocks if s.listing == "US"}
+        self.uk_symbols = {s.symbol for s in cfg.stocks if s.listing == "UK"}
         wide = cfg.rules.get("market", {}).get("wide", [])
         self.wide_re = re.compile(r"(?<![\w])(" + _alternation(wide) + r")(?![\w])", re.IGNORECASE) if wide else None
 

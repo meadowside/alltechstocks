@@ -49,16 +49,23 @@ class Stock:
     results: str | None = None     # next results date, YYYY-MM-DD, if known
     ignore: list[str] = field(default_factory=list)  # phrases that look like the name but aren't ("per capita")
     query: list[str] = field(default_factory=list)   # Google News search phrases, when the name alone is too vague ("Zoom")
+    country: str = ""              # UK or US, where the company is based, when that differs from where it's listed (Arm)
+
+    @property
+    def listing(self) -> str:
+        """Where the shares trade: UK for the London Stock Exchange, US otherwise."""
+        return "UK" if self.exchange == "LSE" else "US"
 
     @property
     def market(self) -> str:
-        return "UK" if self.exchange == "LSE" else "US"
+        """Which side of the site the company belongs to: where it's based. Usually where it's listed too."""
+        return self.country or self.listing
 
     @property
     def slug(self) -> str:
         """File name for the stock's page. UK tickers get -l so they never clash with a US one."""
         s = re.sub(r"[^a-z0-9]+", "-", self.symbol.lower()).strip("-")
-        return f"{s}-l" if self.market == "UK" else s
+        return f"{s}-l" if self.listing == "UK" else s
 
     @property
     def tv_symbol(self) -> str:

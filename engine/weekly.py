@@ -131,7 +131,7 @@ def _results(db: DB, cfg: Config, tagger: Tagger, since: datetime, max_companies
 
     reporters = dict(out_at)
     for st in cfg.stocks:
-        if st.market == "UK" and st.symbol not in reporters:
+        if st.listing == "UK" and st.symbol not in reporters:
             hits = [i for i in per_symbol.get(st.symbol, []) if UK_RESULTS_RE.search(i["title"])]
             if len({i["outlet_id"] or i["outlet_name"] for i in hits}) >= 3:
                 reporters[st.symbol] = min(i["published"] for i in hits)
@@ -144,7 +144,7 @@ def _results(db: DB, cfg: Config, tagger: Tagger, since: datetime, max_companies
         # Allow a few hours before the filing: some outlets publish the moment the release is out.
         cutoff = iso(datetime.strptime(when, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=since.tzinfo) - timedelta(hours=3))
         items = [i for i in per_symbol.get(sym, []) if i["published"] >= cutoff]
-        if stock.market == "UK":
+        if stock.listing == "UK":
             items = [i for i in items if UK_RESULTS_RE.search(i["title"]) or RESULTS_RE.search(i["title"])]
         facts, seen = [], set()
         for i in sorted(items, key=lambda i: -weight.get(i["outlet_id"] or i["source_id"], 1)):

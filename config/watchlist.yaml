@@ -5,6 +5,7 @@
 #
 # symbol:      the ticker as the exchange lists it. Put quotes round tickers YAML reads as words: "ON", "YES", "NO"
 # exchange:    NASDAQ, NYSE or LSE
+# country:     optional, UK or US, only when the company is based somewhere other than where it trades (Arm)
 # name:        shown on the site
 # aliases:     words that tag a story with this stock, matched on whole words, any case
 # exact:       words matched with exact capitals only, for names that are also everyday words
@@ -20,6 +21,10 @@
 # or may have been taken private or delisted.
 
 stocks:
+  # Which country: where the company is headquartered. It must also be listed in New York or London.
+  # A company based in the UK but listed only in New York (Arm) goes on the UK side with country: UK.
+  # Not on the list because they're based elsewhere: SAP (Germany), ASML and NXP (Netherlands),
+  # TSMC (Taiwan), Spotify (Sweden), Shopify (Canada), Accenture and Seagate (Dublin).
   # What counts as a tech stock: US companies in the GICS Information Technology or Communication Services
   # sectors (check the S&P 500 list or the company's own filings); UK companies the London Stock Exchange
   # files under Technology or Telecommunications (see the UK section). Not on the list for that reason:
@@ -46,20 +51,21 @@ stocks:
   - {symbol: AMAT, exchange: NASDAQ, name: Applied Materials, group: chips, aliases: [Applied Materials]}
   - {symbol: LRCX, exchange: NASDAQ, name: Lam Research, group: chips, aliases: [Lam Research]}
   - {symbol: KLAC, exchange: NASDAQ, name: KLA, group: chips, aliases: [KLA Corp, KLA Corporation]}
-  - {symbol: ASML, exchange: NASDAQ, name: ASML, group: chips, aliases: [ASML]}
-  - {symbol: TSM, exchange: NYSE, name: TSMC, group: chips, aliases: [TSMC, Taiwan Semiconductor]}
-  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the]}
   - {symbol: MRVL, exchange: NASDAQ, name: Marvell, group: chips, aliases: [Marvell Technology, Marvell]}
   - {symbol: SNPS, exchange: NASDAQ, name: Synopsys, group: chips, aliases: [Synopsys]}
   - {symbol: CDNS, exchange: NASDAQ, name: Cadence, group: chips, aliases: [Cadence Design], query: [Cadence Design]}
-  - {symbol: NXPI, exchange: NASDAQ, name: NXP, group: chips, aliases: [NXP Semiconductors, NXP]}
   - {symbol: "ON", exchange: NASDAQ, name: ON Semiconductor, group: chips, aliases: [ON Semiconductor, onsemi]}
   - {symbol: MCHP, exchange: NASDAQ, name: Microchip, group: chips, aliases: [Microchip Technology], query: [Microchip Technology]}
   - {symbol: ADI, exchange: NASDAQ, name: Analog Devices, group: chips, aliases: [Analog Devices]}
 
   # ================= US: hardware, servers and networking =================
+  - {symbol: APH, exchange: NYSE, name: Amphenol, group: hardware, aliases: [Amphenol]}
+  - {symbol: JBL, exchange: NYSE, name: Jabil, group: hardware, aliases: [Jabil]}
+  - {symbol: FFIV, exchange: NASDAQ, name: F5, group: hardware, aliases: [F5 Inc, F5 Networks], query: [F5 Inc, F5 Networks]}
+  - {symbol: ZBRA, exchange: NASDAQ, name: Zebra Technologies, group: hardware, aliases: [Zebra Technologies]}
+  - {symbol: TRMB, exchange: NASDAQ, name: Trimble, group: hardware, aliases: [Trimble]}
+  - {symbol: PSTG, exchange: NYSE, name: Pure Storage, group: hardware, aliases: [Pure Storage]}
   - {symbol: WDC, exchange: NASDAQ, name: Western Digital, group: hardware, aliases: [Western Digital]}
-  - {symbol: STX, exchange: NASDAQ, name: Seagate, group: hardware, aliases: [Seagate]}
   - {symbol: SNDK, exchange: NASDAQ, name: SanDisk, group: hardware, aliases: [SanDisk]}
   - {symbol: NTAP, exchange: NASDAQ, name: NetApp, group: hardware, aliases: [NetApp]}
   - {symbol: MSI, exchange: NYSE, name: Motorola Solutions, group: hardware, aliases: [Motorola Solutions]}
@@ -76,7 +82,13 @@ stocks:
   - {symbol: CRWV, exchange: NASDAQ, name: CoreWeave, group: data, aliases: [CoreWeave]}
 
   # ================= US: software =================
-  - {symbol: ACN, exchange: NYSE, name: Accenture, group: services, aliases: [Accenture]}
+  - {symbol: IT, exchange: NYSE, name: Gartner, group: services, aliases: [Gartner], query: [Gartner Inc, Gartner]}
+  - {symbol: FICO, exchange: NYSE, name: Fair Isaac, group: software, aliases: [Fair Isaac, FICO score], exact: [FICO]}
+  - {symbol: PTC, exchange: NASDAQ, name: PTC, group: software, aliases: [PTC Inc], query: [PTC Inc]}
+  - {symbol: TYL, exchange: NYSE, name: Tyler Technologies, group: software, aliases: [Tyler Technologies]}
+  - {symbol: DBX, exchange: NASDAQ, name: Dropbox, group: software, aliases: [Dropbox]}
+  - {symbol: HUBS, exchange: NYSE, name: HubSpot, group: software, aliases: [HubSpot]}
+  - {symbol: NTNX, exchange: NASDAQ, name: Nutanix, group: software, aliases: [Nutanix]}
   - {symbol: ADSK, exchange: NASDAQ, name: Autodesk, group: software, aliases: [Autodesk]}
   - {symbol: CDW, exchange: NASDAQ, name: CDW, group: services, aliases: [CDW Corp], exact: [CDW]}
   - {symbol: GDDY, exchange: NYSE, name: GoDaddy, group: internet, aliases: [GoDaddy]}
@@ -91,7 +103,6 @@ stocks:
   - {symbol: DDOG, exchange: NASDAQ, name: Datadog, group: software, aliases: [Datadog]}
   - {symbol: MDB, exchange: NASDAQ, name: MongoDB, group: data, aliases: [MongoDB]}
   - {symbol: TEAM, exchange: NASDAQ, name: Atlassian, group: software, aliases: [Atlassian]}
-  - {symbol: SAP, exchange: NYSE, name: SAP, group: software, aliases: [SAP SE], exact: [SAP]}
   - {symbol: APP, exchange: NASDAQ, name: AppLovin, group: software, aliases: [AppLovin]}
   - {symbol: ZM, exchange: NASDAQ, name: Zoom, group: software, aliases: [Zoom Video, Zoom Communications], query: [Zoom Communications, Zoom Video]}
   - {symbol: DOCU, exchange: NASDAQ, name: DocuSign, group: software, aliases: [DocuSign]}
@@ -107,8 +118,6 @@ stocks:
   - {symbol: OKTA, exchange: NASDAQ, name: Okta, group: security, aliases: [Okta]}
 
   # ================= US: internet and platforms =================
-  - {symbol: SHOP, exchange: NASDAQ, name: Shopify, group: internet, aliases: [Shopify]}
-  - {symbol: SPOT, exchange: NYSE, name: Spotify, group: internet, aliases: [Spotify]}
   - {symbol: RDDT, exchange: NYSE, name: Reddit, group: internet, aliases: [Reddit],
      # Stories about something people posted on Reddit, not about the company
      ignore: [reddit user, reddit users, reddit post, reddit posts, reddit thread, on reddit, asks reddit,
@@ -168,6 +177,8 @@ stocks:
   - {symbol: IOM, exchange: LSE, name: Iomart, group: services, aliases: [Iomart]}
   - {symbol: BOOM, exchange: LSE, name: Audioboom, group: internet, aliases: [Audioboom]}
   # ---- Technology: chips, components and hardware ----
+  # Arm is based in Cambridge but listed only in New York, so it sits on the UK side.
+  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, country: UK, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the]}
   - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
   - {symbol: CML, exchange: LSE, name: CML Microsystems, group: chips, aliases: [CML Microsystems]}
   - {symbol: NANO, exchange: LSE, name: Nanoco, group: chips, aliases: [Nanoco]}

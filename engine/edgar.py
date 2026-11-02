@@ -122,7 +122,7 @@ def fetch_filings(cfg: Config, db: DB, now: datetime, fixtures: Path | None = No
     failures = []
 
     for stock in cfg.stocks:
-        if stock.market != "US":
+        if stock.listing != "US":
             continue
         stats["companies"] += 1
         if fixtures is not None:
