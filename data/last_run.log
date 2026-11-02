@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Mon 02 Nov 18:53 UK time
-  feeds: 60/60 worked, 174 new items (68 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1088 grouped, 577 name a watched stock or pass the market rules
-  AI line rejected (banned: insane): 'A former Meta security chief has described the practice of giving AI agents access to your financial logins as "totally insane". The remark '
-  AI trending line rejected (33 words): 'Raspberry Pi has raised the price of its 16GB Pi 5 by $80 to $385, its latest rise tied to the wider RAM shortage, with the Compute Module 5'
-  site: 319 stories live, 2 new AI lines. Top: Oracle taps investors for $20 billion to finance AI expansion. Most covered stock: AAPL
-  trends: 746 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 19:53 UK time
+  feeds: 60/60 worked, 121 new items (58 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1069 grouped, 563 name a watched stock or pass the market rules
+  site: 324 stories live, 3 new AI lines. Top: Oracle taps investors for $20 billion to finance AI expansion. Most covered stock: AAPL
+  trends: 752 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 3 written, 0 rejected, 0 failed calls
