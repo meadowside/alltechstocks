@@ -1,10 +1,9 @@
-All Tech Stocks run: email at Mon 02 Nov 07:04 UK time
-  feeds: 60/60 worked, 33 new items (3 excluded by rules, 14 Google queries resting this hour)
-  filings: 78/82 companies checked, 0 new filings
-  stories: 1332 grouped, 853 name a watched stock or pass the market rules
-  AI trending line rejected (27 words): "Microsoft's AI chief has publicly argued against building AI systems that seem conscious, a stance that bears on how the company designs and"
-  site: 448 stories live, 0 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
-  trends: 712 stock-days and 83 section-days refreshed, 14 days of history
-  email: 38 stories, 0 new AI lines, opening note: yes
+All Tech Stocks run: auto at Mon 02 Nov 08:53 UK time
+  feeds: 60/60 worked, 155 new items (48 excluded by rules, 14 Google queries resting this hour)
+  filings: 77/82 companies checked, 0 new filings
+  stories: 1311 grouped, 840 name a watched stock or pass the market rules
+  site: 438 stories live, 2 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
+  trends: 714 stock-days and 83 section-days refreshed, 14 days of history
+  linkedin: cards for the week to 2026-11-01: all, uk
   notify: skipped (no Telegram settings)
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  AI lines: 2 written, 0 rejected, 0 failed calls
