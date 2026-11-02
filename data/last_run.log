@@ -1,8 +1,27 @@
-All Tech Stocks run: auto at Mon 02 Nov 05:53 UK time
-  feeds: 60/60 worked, 84 new items (18 excluded by rules, 14 Google queries resting this hour)
-  filings: 82/82 companies checked, 0 new filings
-  stories: 1340 grouped, 861 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: share price): "Intel's data centre revenue rose 78% in the period, driven by demand for its server processors. The company is now facing a shortage of memo"
-  site: 452 stories live, 0 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
-  trends: 709 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 06:53 UK time
+  feeds: 60/60 worked, 77 new items (23 excluded by rules, 14 Google queries resting this hour)
+  filings: 80/82 companies checked, 0 new filings
+  stories: 1334 grouped, 857 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "Intel's data centre revenue rose 78%, but the company's shares fell sharply as a shortage of memory chips weighed on the wider business. The"
+  site: 452 stories live, 1 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
+  trends: 711 stock-days and 83 section-days refreshed, 14 days of history
+Traceback (most recent call last):
+  File "/home/runner/work/alltechstocks/alltechstocks/run.py", line 150, in <module>
+    main()
+  File "/home/runner/work/alltechstocks/alltechstocks/run.py", line 101, in main
+    res = build_email(stories, db, cfg, now, args.out, archive)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/alltechstocks/alltechstocks/engine/publish.py", line 419, in build_email
+    html = env.get_template("email.html").render(**args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/runner/work/alltechstocks/alltechstocks/templates/email.html", line 68, in top-level template code
+    {% for f in filings %}<li><span class="tk">{{ f.symbol }}</span> {{ stocks[f.symbol].name }}: <a href="{{ f.url }}">{{ f.label }} ({{ f.form }})</a></li>
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 490, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'DASH'
