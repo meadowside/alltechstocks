@@ -4,10 +4,12 @@
 cd "$(dirname "$0")" || exit 1
 mkdir -p linkedin
 D=$(date +%Y-%m-%d)
-BASE="https://raw.githubusercontent.com/meadowside/alltechstocks/main/data/linkedin"
+# GitHub's API, not raw.githubusercontent.com: the raw server can hand out a copy up to
+# 5 minutes old, so a fix made just before you click wouldn't show up.
+API="https://api.github.com/repos/meadowside/alltechstocks/contents/data/linkedin"
 
 get() {  # get <file in repo> <save as>; succeeds only if the file was there
-  if curl -fsSL "$BASE/$1?nocache=$(date +%s)" -o "$2.tmp"; then
+  if curl -fsSL -H "Accept: application/vnd.github.raw" "$API/$1?ref=main" -o "$2.tmp"; then
     mv "$2.tmp" "$2"
   else
     rm -f "$2.tmp"
