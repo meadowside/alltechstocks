@@ -150,7 +150,7 @@ Settings under `linkedin:` in `config/rules.yaml`, code in `engine/linkedin.py`.
 
 ## The watchlist
 
-`config/watchlist.yaml` has 124 stocks: 86 US, 38 UK. Add or remove any. Each needs a symbol,
+`config/watchlist.yaml` has 122 stocks: 86 US, 36 UK. Add or remove any. Each needs a symbol,
 exchange (NASDAQ, NYSE or LSE), name and the aliases that should tag a story. Names that are also
 everyday words ("Arm", "Meta", "Oracle", "Sage") go under `exact` so only the capitalised form matches.
 Put quotes round tickers YAML reads as words, like `"ON"`. Add `results: 2026-11-19` to show a

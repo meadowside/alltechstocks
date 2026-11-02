@@ -152,6 +152,8 @@ stocks:
   # Off the list because they're based abroad: Eutelsat (Paris, main listing Paris), Trustpilot
   # (Copenhagen), Baltic Classifieds (Vilnius), Seeing Machines (Canberra).
   # On the list though most of their business is abroad, like Vodafone: Airtel Africa, Helios Towers, Zegona.
+  # Taken private, so off the list: Pinewood Technologies (Ridgeview Partners, Oct 2026), 1Spatial (VertiGIS, Apr 2026).
+  # Gamma Communications has agreed a takeover by Epiris, due to complete in the first half of 2027: remove it then.
 
   # ---- Technology: software ----
   - {symbol: SGE, exchange: LSE, name: Sage Group, group: software, aliases: [Sage Group], exact: [Sage],
@@ -159,7 +161,6 @@ stocks:
   - {symbol: BYIT, exchange: LSE, name: Bytes Technology, group: software, aliases: [Bytes Technology]}
   - {symbol: KNOS, exchange: LSE, name: Kainos, group: software, aliases: [Kainos]}
   - {symbol: CRW, exchange: LSE, name: Craneware, group: software, aliases: [Craneware]}
-  - {symbol: PINE, exchange: LSE, name: Pinewood Technologies, group: software, aliases: [Pinewood Technologies]}
   - {symbol: GBG, exchange: LSE, name: GB Group, group: software, aliases: [GB Group, GBG]}
   - {symbol: ACSO, exchange: LSE, name: Accesso Technology, group: software, aliases: [Accesso Technology]}
   - {symbol: ALFA, exchange: LSE, name: Alfa Financial Software, group: software, aliases: [Alfa Financial Software, Alfa Systems]}
@@ -173,7 +174,6 @@ stocks:
   - {symbol: CER, exchange: LSE, name: Cerillion, group: software, aliases: [Cerillion]}
   - {symbol: BKS, exchange: LSE, name: Beeks Financial Cloud, group: services, aliases: [Beeks Financial Cloud, Beeks Group], exact: [Beeks]}
   - {symbol: MTEC, exchange: LSE, name: Made Tech, group: services, aliases: [Made Tech Group], query: ["Made Tech Group"]}
-  - {symbol: SPA, exchange: LSE, name: 1Spatial, group: software, aliases: [1Spatial]}
   # ---- Technology: consumer digital services ----
   - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
   - {symbol: ATG, exchange: LSE, name: Auction Technology Group, group: internet, aliases: [Auction Technology Group]}
