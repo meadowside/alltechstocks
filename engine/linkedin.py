@@ -27,9 +27,9 @@ W, H = 1080, 1350
 PAD = 72
 TRACK = "#1b2c44"
 CARDS = {
-    "all": {"title": "The {n} most-covered tech stocks this week", "who": "tech stock",
+    "all": {"title": "The {n} most-covered tech stocks last week", "who": "tech stock",
             "hashtags": ["#techstocks", "#stockmarket", "#technews"]},
-    "uk": {"title": "The {n} most-covered UK tech stocks this week", "who": "UK tech stock",
+    "uk": {"title": "The {n} most-covered UK tech stocks last week", "who": "UK tech stock",
            "hashtags": ["#ukstocks", "#ftse", "#uktech"]},
 }
 
@@ -137,6 +137,10 @@ def render(facts: dict, which: str, out: Path) -> Path:
     return out
 
 
+def _words(n: int) -> str:
+    return ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][n] if n < 10 else str(n)
+
+
 def _ahead(rows: list) -> int:
     """How many of the following names the leader outscored put together. 0 if not even two."""
     if len(rows) < 3:
@@ -158,10 +162,10 @@ def teaser(facts: dict, which: str) -> str:
         return ""
     first, k = rows[0], _ahead(rows)
     if k:
-        lead = (f"{first['stock'].name} was named in {first['articles']:,} headlines this week, more than the "
-                f"next {k} most-covered {card['who']}s put together.")
+        lead = (f"{first['stock'].name} was named in {first['articles']:,} headlines last week, more than the "
+                f"next {_words(k)} most-covered {card['who']}s put together.")
     else:
-        lead = f"{first['stock'].name} was the most-covered {card['who']} this week, named in {first['articles']:,} headlines."
+        lead = f"{first['stock'].name} was the most-covered {card['who']} last week, named in {first['articles']:,} headlines."
     if which == "all":
         uk = facts["lists"]["uk"]
         if uk:
@@ -173,7 +177,7 @@ def teaser(facts: dict, which: str) -> str:
         "[Suggested opening line. Rewrite it, then delete this line.]",
         lead,
         "",
-        f"The {len(rows)} most-covered {card['who']}s this week, ranked by how many headlines named them:",
+        f"The {len(rows)} most-covered {card['who']}s last week, ranked by how many headlines named them:",
         "",
         listed + ".",
         "",

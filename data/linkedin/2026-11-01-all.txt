@@ -1,7 +1,7 @@
 [Suggested opening line. Rewrite it, then delete this line.]
-Apple was the most-covered tech stock this week, named in 702 headlines. The most-covered UK name, Vodafone, came in at number 30.
+Apple was the most-covered tech stock last week, named in 702 headlines. The most-covered UK name, Vodafone, came in at number 30.
 
-The 10 most-covered tech stocks this week, ranked by how many headlines named them:
+The 10 most-covered tech stocks last week, ranked by how many headlines named them:
 
 Apple (AAPL), Microsoft (MSFT), Alphabet (GOOGL), Intel (INTC), Nvidia (NVDA), Netflix (NFLX), Oracle (ORCL), SAP (SAP), Cisco (CSCO) and Roblox (RBLX).
 
