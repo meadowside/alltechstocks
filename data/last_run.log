@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Mon 02 Nov 13:53 UK time
-  feeds: 60/60 worked, 252 new items (91 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/87 companies checked, 137 new filings
-  stories: 1176 grouped, 684 name a watched stock or pass the market rules
-  site: 375 stories live, 3 new AI lines. Top: REG - Midwich Group PLC Morgan Stanley - Holding(s) in Company. Most covered stock: AAPL
-  trends: 735 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 14:53 UK time
+  feeds: 60/60 worked, 316 new items (140 excluded by rules, 14 Google queries resting this hour)
+  filings: 86/87 companies checked, 0 new filings
+  stories: 1182 grouped, 677 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: returns): 'Oracle has warned that using AI tools does not automatically translate into business value. Its message points to a growing problem for cust'
+  site: 355 stories live, 2 new AI lines. Top: Oracle Is Offering $10 Billion of High-Grade Dollar Bonds. Most covered stock: AAPL
+  trends: 737 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
