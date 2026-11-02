@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Mon 02 Nov 02:53 UK time
-  feeds: 60/60 worked, 61 new items (16 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 02 Nov 03:53 UK time
+  feeds: 60/60 worked, 82 new items (24 excluded by rules, 14 Google queries resting this hour)
   filings: 82/82 companies checked, 0 new filings
-  stories: 1335 grouped, 867 name a watched stock or pass the market rules
-  site: 457 stories live, 1 new AI lines. Top: Asia shares bend under AI stress; Apple earnings loom. Most covered stock: AAPL
-  trends: 704 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  stories: 1343 grouped, 866 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: valuation): 'FuriosaAI, a South Korean chip designer, has raised US$620 million and quadrupled its valuation as it seeks to compete with Nvidia in AI acc'
+  site: 458 stories live, 2 new AI lines. Top: Asia shares bend under AI stress; Apple earnings loom. Most covered stock: AAPL
+  trends: 707 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
