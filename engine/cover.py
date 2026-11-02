@@ -36,7 +36,7 @@ def _sans(size: int, weight: int = 700) -> ImageFont.FreeTypeFont:
 
 def _wrap(draw: ImageDraw.ImageDraw, text: str, font, width: int) -> list[str]:
     lines, line = [], ""
-    for word in text.split():
+    for word in text.split(" "):  # plain spaces only, so a non-breaking space keeps "26 Oct" together
         trial = f"{line} {word}".strip()
         if draw.textlength(trial, font=font) <= width or not line:
             line = trial

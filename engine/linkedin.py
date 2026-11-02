@@ -61,8 +61,9 @@ def gather(db: DB, cfg: Config, now: datetime) -> dict:
 
 
 def _when(start: Date, end: Date) -> str:
+    nb = "\u00a0"  # non-breaking space, so a date never splits across two lines
     left = f"{start:%-d %b}" if start.year == end.year else f"{start:%-d %b %Y}"
-    return f"{left} to {end:%-d %b %Y}"
+    return f"{left} to {end:%-d %b %Y}".replace(" ", nb).replace(f"{nb}to{nb}", " to ")
 
 
 def _ticker(stock) -> str:
@@ -121,7 +122,7 @@ def render(facts: dict, which: str, out: Path) -> Path:
 
     # What the number means, the not-advice line, then the footer.
     note_f = _sans(22, 500)
-    note = (f"Headlines naming each company, across the outlets we track, {_when(facts['start'], facts['end'])}. "
+    note = (f"Headlines naming each company, across the US and UK financial and tech press we track, {_when(facts['start'], facts['end'])}. "
             "News coverage only. Not investment advice.")
     ny = H - 208
     for line in _wrap(d, note, note_f, W - 2 * PAD):
@@ -188,7 +189,7 @@ def teaser(facts: dict, which: str) -> str:
         "[Suggested opening line. Rewrite it, then delete this line.]",
         lead,
         "",
-        f"The {len(rows)} most-covered {card['who']}s last week, ranked by how many headlines named them:",
+        f"The {len(rows)} most-covered {card['who']}s last week, ranked by how many headlines named them across the US and UK financial and tech press we track:",
         "",
         listed + ".",
         "",
