@@ -82,7 +82,12 @@ stocks:
   - {symbol: CRWV, exchange: NASDAQ, name: CoreWeave, group: data, aliases: [CoreWeave]}
 
   # ================= US: software =================
-  - {symbol: IT, exchange: NYSE, name: Gartner, group: services, aliases: [Gartner], query: [Gartner Inc, Gartner]}
+  - {symbol: IT, exchange: NYSE, name: Gartner, group: services, aliases: [Gartner], query: [Gartner Inc],
+     # Other firms' press releases quoting Gartner research are about them, not about Gartner
+     ignore: [Gartner Magic Quadrant, "Gartner®", Gartner Hype Cycle, Gartner Peer Insights, Gartner Market Guide,
+              Gartner Critical Capabilities, Gartner Cool Vendor, Gartner Research,
+              according to Gartner, Gartner says, Gartner forecasts, Gartner predicts, Gartner survey, Gartner data,
+              Gartner Warning, by Gartner, in Gartner, from Gartner]}
   - {symbol: FICO, exchange: NYSE, name: Fair Isaac, group: software, aliases: [Fair Isaac, FICO score], exact: [FICO]}
   - {symbol: PTC, exchange: NASDAQ, name: PTC, group: software, aliases: [PTC Inc], query: [PTC Inc]}
   - {symbol: TYL, exchange: NYSE, name: Tyler Technologies, group: software, aliases: [Tyler Technologies]}
@@ -178,7 +183,10 @@ stocks:
   - {symbol: BOOM, exchange: LSE, name: Audioboom, group: internet, aliases: [Audioboom]}
   # ---- Technology: chips, components and hardware ----
   # Arm is based in Cambridge but listed only in New York, so it sits on the UK side.
-  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, country: UK, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the]}
+  - {symbol: ARM, exchange: NASDAQ, name: Arm Holdings, group: chips, country: UK, aliases: [Arm Holdings, Rene Haas], exact: [Arm], ignore: [Center Arm, Centre Arm, Data Arm, Investment Arm, Lending Arm, Finance Arm, Cloud Arm, Venture Arm, Ventures Arm, Research Arm, Retail Arm, Banking Arm, Arm of the,
+              Loan Arm, Credit Arm, Lending Arm, Leasing Arm, Insurance Arm, Wealth Arm, Asset Management Arm,
+              Private Equity Arm, Trading Arm, Media Arm, Consulting Arm, Payments Arm, Mortgage Arm, Property Arm,
+              Robotic Arm, Robot Arm, Arm Wrestling, Long Arm, Strong Arm, Strong-Arm, Armed]}
   - {symbol: IQE, exchange: LSE, name: IQE, group: chips, aliases: [IQE]}
   - {symbol: CML, exchange: LSE, name: CML Microsystems, group: chips, aliases: [CML Microsystems]}
   - {symbol: NANO, exchange: LSE, name: Nanoco, group: chips, aliases: [Nanoco]}
