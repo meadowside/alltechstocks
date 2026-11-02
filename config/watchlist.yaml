@@ -130,10 +130,14 @@ stocks:
   - {symbol: CHTR, exchange: NASDAQ, name: Charter Communications, group: telecoms, aliases: [Charter Communications]}
 
   # ================= UK: London Stock Exchange =================
-  # The UK list follows the LSE's own classification: companies the exchange files under Technology
-  # (ICB industry), plus Telecommunications. Check a company's tearsheet on londonstockexchange.com
-  # before adding it. Not on the list for that reason: Experian, LSEG, Rightmove, Halma, Renishaw,
+  # A UK stock has its main listing in London AND its headquarters in the UK. The sector follows the
+  # LSE's own classification: companies it files under Technology (ICB industry), plus Telecommunications.
+  # Check a company's tearsheet on londonstockexchange.com before adding it.
+  # Off the list because the LSE puts them in another sector: Experian, LSEG, Rightmove, Halma, Renishaw,
   # Oxford Instruments, Capita, Ocado, Moonpig, Games Workshop, Frontier Developments, Wise.
+  # Off the list because they're based abroad: Eutelsat (Paris, main listing Paris), Trustpilot
+  # (Copenhagen), Baltic Classifieds (Vilnius), Seeing Machines (Canberra).
+  # On the list though most of their business is abroad, like Vodafone: Airtel Africa, Helios Towers, Zegona.
 
   # ---- Technology: software ----
   - {symbol: SGE, exchange: LSE, name: Sage Group, group: software, aliases: [Sage Group], exact: [Sage],
@@ -156,11 +160,8 @@ stocks:
   - {symbol: BKS, exchange: LSE, name: Beeks Financial Cloud, group: services, aliases: [Beeks Financial Cloud, Beeks Group], exact: [Beeks]}
   - {symbol: MTEC, exchange: LSE, name: Made Tech, group: services, aliases: [Made Tech Group], query: ["Made Tech Group"]}
   - {symbol: SPA, exchange: LSE, name: 1Spatial, group: software, aliases: [1Spatial]}
-  - {symbol: SEE, exchange: LSE, name: Seeing Machines, group: services, aliases: [Seeing Machines]}
   # ---- Technology: consumer digital services ----
   - {symbol: AUTO, exchange: LSE, name: Auto Trader, group: internet, aliases: [Auto Trader, Autotrader]}
-  - {symbol: TRST, exchange: LSE, name: Trustpilot, group: internet, aliases: [Trustpilot]}
-  - {symbol: BCG, exchange: LSE, name: Baltic Classifieds, group: internet, aliases: [Baltic Classifieds]}
   - {symbol: ATG, exchange: LSE, name: Auction Technology Group, group: internet, aliases: [Auction Technology Group]}
   - {symbol: KOO, exchange: LSE, name: Kooth, group: internet, aliases: [Kooth]}
   - {symbol: DOTD, exchange: LSE, name: Dotdigital, group: software, aliases: [Dotdigital]}
@@ -187,5 +188,4 @@ stocks:
   - {symbol: GAMA, exchange: LSE, name: Gamma Communications, group: telecoms, aliases: [Gamma Communications],
      query: ["Gamma Communications"]}
   - {symbol: ZEG, exchange: LSE, name: Zegona, group: telecoms, aliases: [Zegona, Vodafone Spain]}
-  - {symbol: ETL, exchange: LSE, name: Eutelsat, group: telecoms, aliases: [Eutelsat, OneWeb]}
   - {symbol: SRT, exchange: LSE, name: SRT Marine Systems, group: telecoms, aliases: [SRT Marine]}

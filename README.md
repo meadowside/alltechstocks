@@ -150,7 +150,7 @@ Settings under `linkedin:` in `config/rules.yaml`, code in `engine/linkedin.py`.
 
 ## The watchlist
 
-`config/watchlist.yaml` has 123 stocks: 82 US, 41 UK. Add or remove any. Each needs a symbol,
+`config/watchlist.yaml` has 119 stocks: 82 US, 37 UK. Add or remove any. Each needs a symbol,
 exchange (NASDAQ, NYSE or LSE), name and the aliases that should tag a story. Names that are also
 everyday words ("Arm", "Meta", "Oracle", "Sage") go under `exact` so only the capitalised form matches.
 Put quotes round tickers YAML reads as words, like `"ON"`. Add `results: 2026-11-19` to show a
@@ -161,8 +161,9 @@ Technology or Communication Services sectors. The Wikipedia list of S&P 500 comp
 one's sector. Amazon and Tesla (Consumer Discretionary), Uber (Industrials) and PayPal, Coinbase and
 Robinhood (Financials) are off the list for that reason.
 
-The UK list follows the LSE's own classification: every company the exchange files under Technology
-(ICB industry), plus Telecommunications. Before adding a UK company, check its tearsheet on
+A UK stock has its main listing in London and its headquarters in the UK, so Eutelsat (Paris) and
+Trustpilot (Copenhagen) are off. Within that, the UK list follows the LSE's own classification: every
+company the exchange files under Technology (ICB industry), plus Telecommunications. Before adding a UK company, check its tearsheet on
 londonstockexchange.com. If it says something else (Experian is Industrials, Rightmove is Real Estate,
 Games Workshop is Leisure Goods), it doesn't go on.
 
