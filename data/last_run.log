@@ -1,10 +1,8 @@
-All Tech Stocks run: auto at Mon 02 Nov 21:47 UK time
-  feeds: 60/60 worked, 198 new items (62 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 18 new filings
-  stories: 1051 grouped, 543 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Intel's foundry strategy, which aims to make chips for outside customers, is now under close scrutiny after the company's shares fell 45% in"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The headline reports that Intel's shares fell 45% in October, but the coverage gives no specifics on what drove the drop, and nothing about "
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage points to a comparison between Apple's Mac hardware and the rising cost of AI tokens, the metered units businesses pay for when"
-  site: 332 stories live, 3 new AI lines. Top: Oracle taps investors for $20 billion to finance AI expansion. Most covered stock: AAPL
-  trends: 757 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 3 written, 3 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 22:53 UK time
+  feeds: 60/60 worked, 202 new items (88 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 6 new filings
+  stories: 1046 grouped, 548 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "Intel's shares fell 29% after the company issued weak forecasts, which triggered a broader sell-off across semiconductor stocks. The coverag"
+  site: 340 stories live, 6 new AI lines. Top: Palantir Boosts 2026 Revenue Outlook on Strong Commercial Sales. Most covered stock: AAPL
+  trends: 758 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 6 written, 1 rejected, 0 failed calls
