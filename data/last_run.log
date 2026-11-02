@@ -1,27 +1,10 @@
-All Tech Stocks run: auto at Mon 02 Nov 06:53 UK time
-  feeds: 60/60 worked, 77 new items (23 excluded by rules, 14 Google queries resting this hour)
-  filings: 80/82 companies checked, 0 new filings
-  stories: 1334 grouped, 857 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Intel's data centre revenue rose 78%, but the company's shares fell sharply as a shortage of memory chips weighed on the wider business. The"
-  site: 452 stories live, 1 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
-  trends: 711 stock-days and 83 section-days refreshed, 14 days of history
-Traceback (most recent call last):
-  File "/home/runner/work/alltechstocks/alltechstocks/run.py", line 150, in <module>
-    main()
-  File "/home/runner/work/alltechstocks/alltechstocks/run.py", line 101, in main
-    res = build_email(stories, db, cfg, now, args.out, archive)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/alltechstocks/alltechstocks/engine/publish.py", line 419, in build_email
-    html = env.get_template("email.html").render(**args)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 1295, in render
-    self.environment.handle_exception()
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 942, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "/home/runner/work/alltechstocks/alltechstocks/templates/email.html", line 68, in top-level template code
-    {% for f in filings %}<li><span class="tk">{{ f.symbol }}</span> {{ stocks[f.symbol].name }}: <a href="{{ f.url }}">{{ f.label }} ({{ f.form }})</a></li>
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/jinja2/environment.py", line 490, in getattr
-    return getattr(obj, attribute)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'DASH'
+All Tech Stocks run: email at Mon 02 Nov 07:04 UK time
+  feeds: 60/60 worked, 33 new items (3 excluded by rules, 14 Google queries resting this hour)
+  filings: 78/82 companies checked, 0 new filings
+  stories: 1332 grouped, 853 name a watched stock or pass the market rules
+  AI trending line rejected (27 words): "Microsoft's AI chief has publicly argued against building AI systems that seem conscious, a stance that bears on how the company designs and"
+  site: 448 stories live, 0 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
+  trends: 712 stock-days and 83 section-days refreshed, 14 days of history
+  email: 38 stories, 0 new AI lines, opening note: yes
+  notify: skipped (no Telegram settings)
+  AI lines: 0 written, 1 rejected, 0 failed calls
