@@ -112,7 +112,7 @@ def render(facts: dict, which: str, out: Path) -> Path:
             size -= 2
             nf = _sans(size, 800)
         d.text((PAD + 62, ry), name, font=nf, fill=WHITE)
-        d.text((PAD + 62, ry + 38), f"{_ticker(r['stock'])} · {r['outlets']} outlets", font=tag_f, fill=LIGHT)
+        d.text((PAD + 62, ry + 38), f"{_ticker(r['stock'])} · {r['outlets']} outlet{'' if r['outlets'] == 1 else 's'}", font=tag_f, fill=LIGHT)
         num = f"{r['articles']:,}"
         d.text((num_right - d.textlength(num, font=num_f), ry + 12), num, font=num_f, fill=WHITE)
         by = ry + 26
