@@ -183,7 +183,7 @@ def teaser(facts: dict, which: str) -> str:
         "",
         "News coverage only, not investment advice.",
         "",
-        "Every US and UK tech stock story, ranked by who's covering it: https://alltechstocks.com",
+        "US and UK tech stock news, ranked by who's covering it: https://alltechstocks.com",
         f"Get the weekday email: {s['subscribe_url']}",
         "",
         " ".join(card["hashtags"]),
