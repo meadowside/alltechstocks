@@ -50,6 +50,7 @@ class Stock:
     ignore: list[str] = field(default_factory=list)  # phrases that look like the name but aren't ("per capita")
     query: list[str] = field(default_factory=list)   # Google News search phrases, when the name alone is too vague ("Zoom")
     country: str = ""              # UK or US, where the company is based, when that differs from where it's listed (Arm)
+    business_only: bool = False    # the name also sells consumer content: a headline needs a business word to count
 
     @property
     def listing(self) -> str:

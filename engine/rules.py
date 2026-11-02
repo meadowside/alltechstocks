@@ -4,6 +4,7 @@ from __future__ import annotations
 import re
 
 from .config import Config
+from .tickers import Tagger
 
 
 def _phrase_regex(phrases: list[str]) -> re.Pattern | None:
@@ -53,6 +54,9 @@ class Rules:
         self.summary_keywords = [k.lower() for k in ex.get("summary_keywords", [])]
         self.wraps = [k.lower() for k in ex.get("wrap_patterns", [])]
         self.outlets = [k.lower() for k in ex.get("outlets", [])]
+        self.tagger = Tagger(cfg)
+        self.business_only = {s.symbol for s in cfg.stocks if s.business_only}
+        self.business_re = _phrase_regex(ex.get("business_words", []))
 
         self.section_order = cfg.section_ids
         self.section_res = {sid: _phrase_regex(words) for sid, words in r["section_keywords"].items()}
@@ -63,6 +67,14 @@ class Rules:
         if self.tech_re and self.tech_re.search(text):
             return True
         return any(self.section_res.get(sid) and self.section_res[sid].search(text) for sid in self.tech_sections)
+
+    def is_consumer_only(self, title: str) -> bool:
+        """A headline that names only business_only stocks and has no business word: a cast profile,
+        a what-to-stream list. Naming another watched stock keeps it, so that stock's news isn't lost."""
+        if not self.business_only or not self.business_re:
+            return False
+        found = self.tagger.find(title or "")
+        return bool(found) and found <= self.business_only and not self.business_re.search(title)
 
     # ---------- exclusions ----------
     def exclusion_reason(self, title: str, url: str, summary: str = "", outlet: str = "") -> str | None:
@@ -95,6 +107,8 @@ class Rules:
                 if any(e in t for e in self.title_exceptions) and k in ("review:", "hands-on", "hands on:"):
                     continue
                 return f"title:{k.strip()}"
+        if self.is_consumer_only(title):
+            return "title:consumer content, no business angle"
         return None
 
     # ---------- sections ----------

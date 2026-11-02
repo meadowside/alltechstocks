@@ -12,6 +12,8 @@
 #              ("Arm" the company, not "arm" the body part)
 # group:       software, chips, internet, hardware, security, fintech, games, telecoms, services, data
 # ignore:      optional phrases that look like the name but aren't the company ("per capita")
+# business_only: optional, true for names that are also consumer content (Netflix). A headline naming
+#              only this stock needs one of exclude.business_words in rules.yaml, or it never runs.
 # query:       optional Google News search phrases, for names that are everyday words ("Zoom", "Block")
 # results:     optional next results date (YYYY-MM-DD), shown on the stock's page. Fill in from the
 #              company's investor relations site. Leave it out if you don't know.
@@ -38,7 +40,7 @@ stocks:
   - {symbol: META, exchange: NASDAQ, name: Meta Platforms, group: internet, aliases: [Meta Platforms, Facebook, Instagram, WhatsApp, Mark Zuckerberg, Zuckerberg], exact: [Meta]}
   - {symbol: AVGO, exchange: NASDAQ, name: Broadcom, group: chips, aliases: [Broadcom, Hock Tan, VMware]}
   - {symbol: ORCL, exchange: NYSE, name: Oracle, group: software, aliases: [Larry Ellison], exact: [Oracle]}
-  - {symbol: NFLX, exchange: NASDAQ, name: Netflix, group: internet, aliases: [Netflix]}
+  - {symbol: NFLX, exchange: NASDAQ, name: Netflix, group: internet, aliases: [Netflix], business_only: true}
 
   # ================= US: chips and semiconductor equipment =================
   - {symbol: TER, exchange: NASDAQ, name: Teradyne, group: chips, aliases: [Teradyne]}
