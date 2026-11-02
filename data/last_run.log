@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Mon 02 Nov 09:53 UK time
-  feeds: 60/60 worked, 90 new items (27 excluded by rules, 14 Google queries resting this hour)
-  filings: 82/82 companies checked, 0 new filings
-  stories: 1300 grouped, 825 name a watched stock or pass the market rules
-  site: 419 stories live, 2 new AI lines. Top: Accenture stock: Murata partnership puts AI execution in focus. Most covered stock: AAPL
-  trends: 716 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 10:53 UK time
+  feeds: 60/60 worked, 184 new items (56 excluded by rules, 14 Google queries resting this hour)
+  filings: 81/82 companies checked, 0 new filings
+  stories: 1270 grouped, 805 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'Anthropic is reportedly seeking up to $3.5 billion from investors in Japan as part of a planned large IPO in the United States. The coverage'
+  site: 421 stories live, 2 new AI lines. Top: Micron Stock Bounces Back, but the Market Needs More as AI Fears Linger. Most covered stock: AAPL
+  trends: 717 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
