@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Mon 02 Nov 17:53 UK time
-  feeds: 60/60 worked, 162 new items (52 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 37 new filings
-  stories: 1117 grouped, 599 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'A former Meta security chief has called the practice of giving AI agents access to financial logins "totally insane", according to the repor'
-  AI trending line rejected (34 words): 'Raspberry Pi has raised the price of its 16GB Pi 5 by $80 to $385, its latest rise tied to the industry-wide RAM shortage that is also pushi'
-  site: 325 stories live, 4 new AI lines. Top: Oracle Is Offering $10 Billion of High-Grade Dollar Bonds. Most covered stock: AAPL
-  trends: 745 stock-days and 83 section-days refreshed, 14 days of history
-  AI lines: 4 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 02 Nov 18:53 UK time
+  feeds: 60/60 worked, 174 new items (68 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 2 new filings
+  stories: 1088 grouped, 577 name a watched stock or pass the market rules
+  AI line rejected (banned: insane): 'A former Meta security chief has described the practice of giving AI agents access to your financial logins as "totally insane". The remark '
+  AI trending line rejected (33 words): 'Raspberry Pi has raised the price of its 16GB Pi 5 by $80 to $385, its latest rise tied to the wider RAM shortage, with the Compute Module 5'
+  site: 319 stories live, 2 new AI lines. Top: Oracle taps investors for $20 billion to finance AI expansion. Most covered stock: AAPL
+  trends: 746 stock-days and 83 section-days refreshed, 14 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
