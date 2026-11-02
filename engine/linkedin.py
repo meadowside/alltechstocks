@@ -137,6 +137,10 @@ def render(facts: dict, which: str, out: Path) -> Path:
     return out
 
 
+def _ordinal(n: int) -> str:
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
 def _words(n: int) -> str:
     return ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"][n] if n < 10 else str(n)
 
@@ -168,9 +172,16 @@ def teaser(facts: dict, which: str) -> str:
         lead = f"{first['stock'].name} was the most-covered {card['who']} last week, named in {first['articles']:,} headlines."
     if which == "all":
         uk = facts["lists"]["uk"]
-        if uk:
+        # Say plainly whether any UK name made this top 10, so the line can't read as if it's on the card.
+        in_top = [r for r in rows if r["stock"].market == "UK"]
+        if in_top:
+            names_uk = " and ".join(r["stock"].name for r in in_top[:2])
+            lead += (f" {names_uk} {'was the only UK name' if len(in_top) == 1 else 'were the UK names'} "
+                     f"in the top {len(rows)}.")
+        elif uk:
             place = next(i for i, r in enumerate(facts["every"], 1) if r["symbol"] == uk[0]["symbol"])
-            lead += f" The most-covered UK name, {uk[0]['stock'].name}, came in at number {place}."
+            lead += (f" No UK tech stock made the top {len(rows)}. The closest was {uk[0]['stock'].name}, "
+                     f"in {_ordinal(place)} place.")
     names = [f"{r['stock'].name} ({r['symbol']})" for r in rows]
     listed = ", ".join(names[:-1]) + f" and {names[-1]}" if len(names) > 1 else names[0]
     return "\n".join([
