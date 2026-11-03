@@ -49,7 +49,7 @@ class Rules:
         r = cfg.rules
         ex = r["exclude"]
         self.url_patterns = [p.lower() for p in ex["url_patterns"]]
-        self.title_keywords = [k.lower() for k in ex["title_keywords"]]
+        self.title_keywords = [k.lower() for k in ex["title_keywords"]] + [k.lower() for k in ex.get("law_firm_adverts", [])]
         self.title_exceptions = [k.lower() for k in ex.get("title_keyword_exceptions", [])]
         self.summary_keywords = [k.lower() for k in ex.get("summary_keywords", [])]
         self.wraps = [k.lower() for k in ex.get("wrap_patterns", [])]

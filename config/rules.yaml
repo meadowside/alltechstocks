@@ -134,6 +134,19 @@ exclude:
                  /price-target, /penny-stock]
   # Phrases matched anywhere in the title. This site never runs buy or sell tips or price predictions,
   # including other people's. Remove a phrase here if it blocks real news.
+  # Shareholder law firm adverts: "APP DEADLINE: SueWallSt Reminds AppLovin Investors...".
+  # They're paid press releases rather than news. A real lawsuit story ("Uber faces class action") stays.
+  # Phrases, matched anywhere in the title.
+  law_firm_adverts: ["investors with", "investors who", "investors are notified", "notifies investors", "reminds investors",
+                     "alerts investors", "encourages investors", "shareholder alert", "shareholder investigation", "investor alert",
+                     "securities class action", "class action deadline", "class action lawsuit filed", "securities claims",
+                     "opportunity to lead", "lead plaintiff deadline", "class action lawsuit:", "seeks recovery for investors",
+                     "investors to act", "law firm investigates", "a leading law firm", "class action firm", "bronstein, gewirtz", "legal notice:", "investigates possible", "investigates potential", "investigation notice",
+                     "investigation continued", "investigation initiated", "lost money on", "lose money on", "losses in excess",
+                     "upcoming deadline", "law offices of", "faruqi & faruqi", "levi & korsinsky", "kahn swick", "pomerantz",
+                     "rosen law", "bfa law", "suewallst", "halper sadeh", "kaplan fox", "glancy prongay", "bronstein gewirtz",
+                     "robbins geller", "robbins llp", "hagens berman", "bragar eagel", "johnson fistel", "kessler topaz",
+                     "gross law firm", "schall law", "howard g. smith", "frank r. cruz", "bernstein liebhard", "portnoy law"]
   title_keywords: ["deals:", "best deals", "black friday", "prime day", discount, "% off", voucher, coupon,
                    "best ", "top 10", "top ten", "top 5", "top five", "review:", "hands-on", "hands on:",
                    "how to", "what is", "explained", quiz, sponsored, "in partnership with", "partner content",
