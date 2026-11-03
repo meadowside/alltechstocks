@@ -1,8 +1,7 @@
-All Tech Stocks run: auto at Tue 03 Nov 01:53 UK time
-  feeds: 60/60 worked, 78 new items (28 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1039 grouped, 529 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Intel's shares fell 29% after the company issued weak forecasts, which triggered a wider sell-off across semiconductor stocks. The sharp dro"
-  site: 334 stories live, 3 new AI lines. Top: Palantir Boosts 2026 Revenue Outlook on Strong Commercial Sales. Most covered stock: AAPL
-  trends: 765 stock-days and 84 section-days refreshed, 15 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 03 Nov 02:53 UK time
+  feeds: 60/60 worked, 81 new items (28 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 0 new filings
+  stories: 1041 grouped, 522 name a watched stock or pass the market rules
+  site: 330 stories live, 2 new AI lines. Top: Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus. Most covered stock: AAPL
+  trends: 767 stock-days and 84 section-days refreshed, 15 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
