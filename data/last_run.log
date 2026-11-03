@@ -1,8 +1,7 @@
-All Tech Stocks run: auto at Tue 03 Nov 04:53 UK time
-  feeds: 59/60 worked, 82 new items (18 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/90 companies checked, 0 new filings
-  stories: 1050 grouped, 521 name a watched stock or pass the market rules
-  AI trending line rejected (31 words): 'Apple says rising memory chip costs will keep pushing up its component prices, raising the possibility that future device prices could climb'
-  site: 328 stories live, 3 new AI lines. Top: Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus. Most covered stock: AAPL
-  trends: 772 stock-days and 84 section-days refreshed, 15 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 03 Nov 05:53 UK time
+  feeds: 60/60 worked, 89 new items (23 excluded by rules, 14 Google queries resting this hour)
+  filings: 84/90 companies checked, 0 new filings
+  stories: 1055 grouped, 526 name a watched stock or pass the market rules
+  site: 328 stories live, 1 new AI lines. Top: Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus. Most covered stock: AAPL
+  trends: 774 stock-days and 84 section-days refreshed, 15 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
