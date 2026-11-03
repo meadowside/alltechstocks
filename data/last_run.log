@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Tue 03 Nov 09:53 UK time
-  feeds: 60/60 worked, 81 new items (31 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/90 companies checked, 0 new filings
-  stories: 1031 grouped, 495 name a watched stock or pass the market rules
-  site: 311 stories live, 0 new AI lines. Top: Nvidia orders data centre clients to reduce China exposure. Most covered stock: AAPL
-  trends: 780 stock-days and 84 section-days refreshed, 15 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 03 Nov 10:53 UK time
+  feeds: 60/60 worked, 150 new items (59 excluded by rules, 14 Google queries resting this hour)
+  filings: 88/90 companies checked, 0 new filings
+  stories: 1045 grouped, 502 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The only detail supplied is that HPE\'s chief executive said he has "zero exposure" to the financing arrangements tied to AI infrastructure. '
+  site: 314 stories live, 4 new AI lines. Top: Nvidia orders data centre clients to reduce China exposure. Most covered stock: AAPL
+  trends: 781 stock-days and 84 section-days refreshed, 15 days of history
+  AI lines: 4 written, 1 rejected, 0 failed calls
