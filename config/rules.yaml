@@ -77,28 +77,38 @@ sections:
     site_max: 10
 
 # Keywords that pull a story into a section. When several match,
-# the section with the most hits wins; ties go to the first in this list.
+# the section with the most hits wins; ties go to the source's hint, then the first in this list.
+# A story with no hits goes to the last section, Companies & Markets. An outlet's usual beat isn't
+# proof of what one story is about, so hints only break ties. Tier 4 primary sources (company
+# newsrooms, RNS) are the exception: with no hits they still follow their hint.
 section_keywords:
   results: [results, earnings, quarterly, quarter, q1, q2, q3, q4, first-quarter, second-quarter, third-quarter,
             fourth-quarter, half-year, half year, interim results, full-year, full year, annual results, trading update,
-            trading statement, revenue, revenues, sales rose, sales fell, profit, profits, loss, losses, guidance,
-            outlook, forecast, profit warning, eps, dividend, beats, misses, 10-q, 10-k]
-  deals: [acquire, acquires, acquired, acquisition, takeover, merger, merge, bid, offer, buyout, deal to buy,
-          agrees to buy, to buy, sells, divest, divestment, spin-off, spinoff, ipo, listing, listed, float,
-          flotation, share sale, stake, buyback, share buyback, tender offer, delisting, private equity]
+            trading statement, revenue, revenues, sales rose, sales fell, profit, profits, guidance,
+            profit warning, eps, dividend, 10-q, 10-k]
+  deals: [acquire, acquires, acquired, acquisition, takeover, merger, merge, buyout, deal to buy,
+          agrees to buy, to buy, sells, divest, divestment, spin-off, spinoff, ipo, float,
+          flotation, share sale, buyback, share buyback, tender offer, delisting, private equity]
   ai: [ai, artificial intelligence, llm, llms, chatbot, chatbots, openai, anthropic, chatgpt, gemini, claude, copilot,
        machine learning, generative, agentic, ai agents, superintelligence, ai models, ai spending, ai capex]
   chips: [chip, chips, chipmaker, chipmakers, semiconductor, semiconductors, gpu, gpus, foundry, fab, fabs, wafer,
           wafers, memory, hbm, dram, nand, processor, processors, data centre, data centres, data center,
           data centers, server, servers, export controls, euv, lithography]
-  regulation: [regulator, regulators, regulation, antitrust, competition watchdog, cma, ftc, sec, doj,
-               department of justice, european commission, ofcom, ico, fca, lawsuit, sued, sues, court, judge,
-               ruling, trial, fine, fined, penalty, probe, investigation, settlement, tariff, tariffs, ban, banned,
+  regulation: [regulator, regulators, regulation, antitrust, competition watchdog, cma, ftc, doj,
+               department of justice, european commission, ofcom, ico, fca, lawsuit, sued, sues, fined,
+               tariff, tariffs,
                digital markets act, dma, online safety, regulatory, regulatory filing, regulatory document,
                objects to, object to, objection, tokenized, tokenised, tokenization, tokenisation, compliance,
                legal challenge, petition, watchdog, privacy rules]
   companies: [ceo, chief executive, cfo, appoints, appointed, steps down, resigns, layoffs, job cuts, redundancies,
               launch, launches, unveils, product, partnership, contract, outage, breach, hack, hacked, strike]
+
+# Words that only count when the story earns them: the word is in the headline, or the article also
+# has a word from section_keywords. In a summary on their own they're usually a passing mention.
+section_supporting_keywords:
+  results: [loss, losses, outlook, forecast, beats, misses]
+  deals: [bid for, offer, listing, listed, stake]
+  regulation: [sec, court, judge, ruling, trial, fine, penalty, probe, investigation, settlement, ban, banned]
 
 # A story must mention one of these, or a watched stock, to count. It stops general news getting in.
 tech_sections: [ai, chips]

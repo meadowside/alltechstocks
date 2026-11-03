@@ -386,7 +386,7 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     # Section: keyword hits across every item, tie broken by the lead outlet's hint.
     hits = {sid: 0 for sid in cfg.section_ids}
     for i in group:
-        for sid, n in rules.section_hits(f"{i['title']}. {i['summary'] or ''}").items():
+        for sid, n in rules.section_hits(f"{i['title']}. {i['summary'] or ''}", i["title"]).items():
             hits[sid] += n
 
     # Headline from the best outlet; link to the best free, non-redirect copy.
@@ -436,7 +436,8 @@ def _make_story(group: list, cfg: Config, rules: Rules, tagger: Tagger, now: dat
     lead_item = min(lead.items, key=lambda i: (0 if not named or names_it(i) else 1,
                                                0 if current(i) else 1, fit(i), i["published"]))
     s.headline = lead_item["title"]
-    s.section = rules.pick_section(hits, lead.source.sections if lead.source else [])
+    s.section = rules.pick_section(hits, lead.source.sections if lead.source else [],
+                                   primary=bool(lead.source and lead.source.tier == 4))
     if s.is_global and "companies" in cfg.section_ids:
         s.section = "companies"  # market-wide stories sit with the general news
 

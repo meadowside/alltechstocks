@@ -60,6 +60,7 @@ class Rules:
 
         self.section_order = cfg.section_ids
         self.section_res = {sid: _phrase_regex(words) for sid, words in r["section_keywords"].items()}
+        self.section_support_res = {sid: _phrase_regex(words) for sid, words in r.get("section_supporting_keywords", {}).items()}
         self.tech_re = _phrase_regex(r.get("tech_keywords", []))
         self.tech_sections = r.get("tech_sections", list(self.section_res))
 
@@ -112,20 +113,26 @@ class Rules:
         return None
 
     # ---------- sections ----------
-    def section_hits(self, text: str) -> dict[str, int]:
+    def section_hits(self, text: str, title: str = "") -> dict[str, int]:
         hits = {}
         for sid in self.section_order:
             rx = self.section_res.get(sid)
             hits[sid] = len(rx.findall(text)) if rx else 0
+            support = self.section_support_res.get(sid)
+            if support and (hits[sid] or support.search(title)):
+                hits[sid] += len(support.findall(text))
         return hits
 
-    def pick_section(self, hits: dict[str, int], hint: list[str]) -> str:
+    def pick_section(self, hits: dict[str, int], hint: list[str], primary: bool = False) -> str:
         best = max(hits.values()) if hits else 0
         if best == 0:
-            for h in hint:
-                if h in self.section_order:
-                    return h
-            return self.section_order[-1]  # the catch-all, Company News
+            # No keyword evidence, so all we have is the outlet's usual beat. That only counts
+            # when the source is a company's own newsroom or the RNS.
+            if primary:
+                for h in hint:
+                    if h in self.section_order:
+                        return h
+            return self.section_order[-1]  # the catch-all, Companies & Markets
         tied = [s for s in self.section_order if hits[s] == best]
         for h in hint:
             if h in tied:

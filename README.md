@@ -177,7 +177,7 @@ All in `config/rules.yaml`:
 
 - **Same story listed twice?** Lower `min_link_similarity` and `merge_similarity` a little.
 - **Two different stories merged?** Raise them.
-- **Wrong section?** Add words to `section_keywords`.
+- **Wrong section?** Add words to `section_keywords`. A story with no keyword hits goes to Companies & Markets unless it comes from a tier 4 primary source. Words in `section_supporting_keywords` only count when the headline or a stronger word backs them up.
 - **A stock tagged wrongly?** Tighten its aliases in `config/watchlist.yaml`.
 - **Tips or predictions getting through?** Add the phrase to `exclude.title_keywords`.
 - **Google News errors on the status page?** Raise `auto_google.rotate` to 3 so each query runs every
