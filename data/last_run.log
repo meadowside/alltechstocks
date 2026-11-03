@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Tue 03 Nov 17:53 UK time
-  feeds: 60/60 worked, 131 new items (34 excluded by rules, 14 Google queries resting this hour)
-  filings: 84/90 companies checked, 0 new filings
-  stories: 1110 grouped, 486 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: a sell): 'Chip stocks rallied after a sell-off that wiped out an estimated $3.7 trillion in semiconductor market value. Nvidia, AMD and Intel all move'
-  AI trending line rejected (27 words): 'Apple says rising memory chip costs will keep pushing up its component expenses, and it has built up $14.5 billion of inventory to meet expe'
-  site: 341 stories live, 3 new AI lines. Top: Nvidia orders data centre clients to reduce China exposure. Most covered stock: AAPL
-  trends: 801 stock-days and 84 section-days refreshed, 15 days of history
-  AI lines: 3 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 03 Nov 18:53 UK time
+  feeds: 60/60 worked, 212 new items (101 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 2 new filings
+  stories: 1119 grouped, 489 name a watched stock or pass the market rules
+  site: 347 stories live, 2 new AI lines. Top: Why AI is boosting Meta's ad business while hurting Google search. Most covered stock: AAPL
+  trends: 805 stock-days and 84 section-days refreshed, 15 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
