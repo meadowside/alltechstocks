@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Tue 03 Nov 19:53 UK time
-  feeds: 60/60 worked, 140 new items (34 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 0 new filings
-  stories: 1125 grouped, 492 name a watched stock or pass the market rules
-  site: 353 stories live, 1 new AI lines. Top: Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto. Most covered stock: AAPL
-  trends: 806 stock-days and 84 section-days refreshed, 15 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 03 Nov 20:53 UK time
+  feeds: 60/60 worked, 129 new items (46 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 2 new filings
+  stories: 1139 grouped, 491 name a watched stock or pass the market rules
+  AI trending line rejected (28 words): "Reddit is trialling ads in its search results, a placement that aims to earn more from current users as Google's AI search reshapes how peop"
+  site: 357 stories live, 0 new AI lines. Top: Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto. Most covered stock: AAPL
+  trends: 807 stock-days and 84 section-days refreshed, 15 days of history
+  AI lines: 0 written, 1 rejected, 0 failed calls
