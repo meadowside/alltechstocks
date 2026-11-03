@@ -163,7 +163,9 @@ exclude:
                    "form 8.3", "form 8.5", "form 8 (", "block listing", "director declaration",
                    "dividend currency exchange rate", "board committee membership",
                    "remuneration committee chair", "issuance of equity securities", "result of agm",
-                   "leverage shares plc"]
+                   "leverage shares plc",
+                   # One-off: The Information's second piece on Apple's Q4 results. "Apple's Slowdown" stays.
+                   "apple sales cool"]
   # Daily market wraps and automated quote pages. They name a dozen companies each and clump
   # unrelated stories together, so they never count. Sector-wide tech stories still run.
   wrap_patterns: ["ftse 100", "ftse 250", "ftse 350", "ftse all-share", "dow jones", "the dow", "s&p 500",
