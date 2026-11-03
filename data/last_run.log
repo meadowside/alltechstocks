@@ -1,7 +1,9 @@
-All Tech Stocks run: auto at Tue 03 Nov 05:53 UK time
-  feeds: 60/60 worked, 89 new items (23 excluded by rules, 14 Google queries resting this hour)
-  filings: 84/90 companies checked, 0 new filings
-  stories: 1055 grouped, 526 name a watched stock or pass the market rules
-  site: 328 stories live, 1 new AI lines. Top: Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus. Most covered stock: AAPL
-  trends: 774 stock-days and 84 section-days refreshed, 15 days of history
+All Tech Stocks run: auto at Tue 03 Nov 06:53 UK time
+  feeds: 60/60 worked, 91 new items (34 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 0 new filings
+  stories: 1051 grouped, 526 name a watched stock or pass the market rules
+  site: 327 stories live, 1 new AI lines. Top: Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus. Most covered stock: AAPL
+  trends: 775 stock-days and 84 section-days refreshed, 15 days of history
+  email: 36 stories, 0 new AI lines, opening note: yes
+  notify: skipped (no Telegram settings)
   AI lines: 1 written, 0 rejected, 0 failed calls
