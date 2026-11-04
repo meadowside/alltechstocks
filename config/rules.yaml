@@ -7,7 +7,7 @@ site:
   url: https://alltechstocks.com
   timezone: Europe/London
   owner: Andy Wood                 # named on the About, Privacy and Terms pages
-  newsletter_url: https://alltechstocks.substack.com
+  newsletter_url: https://aiprompthackers.com
   # The contact form needs a free Formspree form (formspree.io). Paste its ID here, e.g. "xyzabcd".
   # Until then the Contact page explains it isn't ready yet.
   formspree_id: "https://formspree.io/f/xjyyvjqd"
