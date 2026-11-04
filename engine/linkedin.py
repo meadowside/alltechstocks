@@ -42,7 +42,6 @@ def _settings(cfg: Config) -> dict:
         "build_hour": li.get("build_hour", 7),
         "late_window_hours": li.get("late_window_hours", 6),
         "count": li.get("count", 10),
-        "subscribe_url": li.get("subscribe_url") or cfg.site.get("newsletter_url", "https://alltechstocks.substack.com"),
     }
 
 
@@ -196,7 +195,6 @@ def teaser(facts: dict, which: str) -> str:
         "News coverage only, not investment advice.",
         "",
         "US and UK tech stock news, ranked by who's covering it: https://alltechstocks.com",
-        f"Get the weekday email: {s['subscribe_url']}",
         "",
         " ".join(card["hashtags"]),
     ]) + "\n"
