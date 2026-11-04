@@ -1,7 +1,7 @@
-All Tech Stocks run: auto at Wed 04 Nov 01:53 UK time
-  feeds: 60/60 worked, 90 new items (28 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1208 grouped, 517 name a watched stock or pass the market rules
-  site: 394 stories live, 0 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AAPL
-  trends: 822 stock-days and 83 section-days refreshed, 16 days of history
+All Tech Stocks run: auto at Wed 04 Nov 02:53 UK time
+  feeds: 60/60 worked, 79 new items (27 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 5 new filings
+  stories: 1209 grouped, 518 name a watched stock or pass the market rules
+  site: 395 stories live, 0 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AMD
+  trends: 825 stock-days and 83 section-days refreshed, 16 days of history
   AI lines: 0 written, 0 rejected, 0 failed calls
