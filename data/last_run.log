@@ -1,8 +1,7 @@
-All Tech Stocks run: auto at Wed 04 Nov 04:53 UK time
-  feeds: 60/60 worked, 127 new items (38 excluded by rules, 14 Google queries resting this hour)
-  filings: 85/90 companies checked, 0 new filings
-  stories: 1212 grouped, 515 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The headline says Nvidia's China clients will receive only 1% of the $70 billion of RTX chips they ordered. That is a very small share of th"
-  site: 394 stories live, 1 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AMD
+All Tech Stocks run: auto at Wed 04 Nov 05:53 UK time
+  feeds: 60/60 worked, 93 new items (19 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 0 new filings
+  stories: 1207 grouped, 509 name a watched stock or pass the market rules
+  site: 391 stories live, 3 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AMD
   trends: 834 stock-days and 84 section-days refreshed, 16 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  AI lines: 3 written, 0 rejected, 0 failed calls
