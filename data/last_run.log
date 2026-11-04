@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Wed 04 Nov 21:53 UK time
-  feeds: 60/60 worked, 194 new items (47 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 24 new filings
-  stories: 1307 grouped, 528 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Qualcomm's sales of chips for smartphones came in below analyst estimates, and its shares fell as a result. Smartphone chips are the company"
-  AI trending line rejected (29 words): 'Apple has tightened the budgets its own staff can spend on AI tools internally, which points to tighter control of internal costs rather tha'
-  site: 388 stories live, 2 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
-  trends: 861 stock-days and 84 section-days refreshed, 16 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 04 Nov 22:40 UK time
+  feeds: 60/60 worked, 216 new items (100 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 4 new filings
+  stories: 1323 grouped, 535 name a watched stock or pass the market rules
+  AI trending line rejected (29 words): 'The company has beaten its third-quarter earnings forecast and lifted its full-year outlook, which points to stronger demand for its public '
+  site: 390 stories live, 2 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: AMD
+  trends: 858 stock-days and 84 section-days refreshed, 16 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
