@@ -1,10 +1,7 @@
-All Tech Stocks run: auto at Wed 04 Nov 06:53 UK time
-  feeds: 60/60 worked, 97 new items (19 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/90 companies checked, 0 new filings
-  stories: 1202 grouped, 510 name a watched stock or pass the market rules
-  site: 393 stories live, 1 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AMD
+All Tech Stocks run: auto at Wed 04 Nov 07:53 UK time
+  feeds: 60/60 worked, 98 new items (20 excluded by rules, 14 Google queries resting this hour)
+  filings: 85/90 companies checked, 0 new filings
+  stories: 1195 grouped, 502 name a watched stock or pass the market rules
+  site: 392 stories live, 0 new AI lines. Top: AMD stock jumps 7% on earnings as data center revenue nearly doubles. Most covered stock: AMD
   trends: 834 stock-days and 84 section-days refreshed, 16 days of history
-  AI opening note rejected (reads like advice or a prediction: shares jumped): "AMD shares jumped 7% after data center revenue nearly doubled, and Arista posted its biggest revenue gain since its 2014 IPO. Apple's inventory is up 154% as me"
-  email: 36 stories, 0 new AI lines, opening note: no
-  notify: skipped (no Telegram settings)
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  AI lines: 0 written, 0 rejected, 0 failed calls
