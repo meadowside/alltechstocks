@@ -1,116 +1,113 @@
 TITLE IDEAS (pick one for the Substack title, then delete these lines. Cover 1, 2 and 3 match titles 1, 2 and 3)
-1. Marvell to buy Lumentum as Oracle seeks $20bn for AI expansion
-2. Marvell and Lumentum deal, and Apple's first results under John Ternus
-3. Apple's new CEO reports, while Oracle taps investors for $20bn
+1. Tech Stocks Rise Despite Apple Slump, and AMD Jumps on Earnings
+2. AMD Data Centre Revenue Nearly Doubles as Arista Posts Biggest Gain Since IPO
+3. AMD stock jumps 7% on earnings as data center revenue nearly doubles, plus tech Stocks Rise Despite Apple Slump
 
 ---
 
-All Tech Stocks, Tuesday 3 November 2026
+All Tech Stocks, Wednesday 4 November 2026
 
-[Suggested opening note below. Edit it, then delete this line. Report, don't tip.]
-Apple's first results under John Ternus beat expectations on revenue, and Marvell is buying Lumentum in an all-stock deal that bets heavily on AI connectivity. Oracle, meanwhile, is raising $20 billion from investors to fund its AI build-out.
+[Your opening note: two or three sentences on what's big today. Report, don't tip.]
 
 Andy
 
 ## Top story
 
-**[Apple posts stronger-than-expected revenue in first earnings report for new CEO John Ternus](https://www.theguardian.com/technology/2026/nov/02/apple-third-quarter-revenue-earnings)**
-The Guardian, 7 sources. AAPL
+**[AMD stock jumps 7% on earnings as data center revenue nearly doubles](https://www.cnbc.com/2026/11/03/amd-amd-q3-earnings-report-2026-.html)**
+CNBC, 14 sources. AMD
 
 [Suggested "Why it matters" below. Edit it, then delete this line. Business impact only, nothing on the shares.]
-**Why it matters:** Apple's first quarterly report under Ternus shows the business still growing faster than the market expected while rivals struggled, which puts the new leadership's track record squarely in the spotlight. For customers and the wider sector, it signals that Apple's hardware and services franchise remains a dominant force.
+**Why it matters:** Data center revenue nearly doubling tells you the AI chip boom is still feeding straight into AMD's books, and that matters for every cloud and AI firm buying its processors. It also keeps AMD firmly in the race with Nvidia for the same customers, which is the bigger story for the wider sector.
 
 
 ## Companies & Markets
 
-**Andy's Pick: [Wall Street’s most hated stocks are faring far better than its favorites](https://news.google.com/rss/articles/CBMitAFBVV95cUxPNXkyY3BhQlRGQi1IWXVXaVBNaVFicTQxVExydHUxS09NYzhoMlFEV2xYOXlUTm9kOHoxUUJLWDRyNGg0cEpKMnYyLWpqNzJEcHk1YVloNmVtaDdjR2lvQ2VxNW1MaThHVWJkekx5NGhmMlhnQnNlak5KWXdjVkVYd2dZOEVkUlFJVHBsb1NlUUwtc2VuaDRnVWl5NEZMYV9kSWljUndwMUM5ZDNLcmVVNUFVY2g?oc=5)** (MarketWatch, 23 sources)
+**Andy's Pick: [Binance co-CEO Richard Teng says hackers used fake job interviews, AI tool to steal $6.3 billion in crypto](https://www.cnbc.com/2026/11/03/binance-co-ceo-teng-says-hackers-used-fake-job-interviews-to-steal-6point3-billion-in-crypto.html)** (CNBC, 5 sources) MSFT
 
-- [Tech Stocks and AI Bonds Are Tumbling. Is the AI Trade in Trouble?](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPdkU3QUZDLVJzYmJVQThKcWxGMURKR0Jodm9RUU9yT1RmQmFmMUUxMDRQWk9QLWsyWkFyNDhoWUNDWldfczg4Nm5iVDlIU1BlazdFa2hLOGFEUDcxVjN4Qm1qSGdKcHIzTGVETUQ3YXgtak93WG9WNlNxbFNNQi0zdDdfZWNsWmFQcE9rWVo2dzdNeDQtYUpnaGhza3NfYTBSV2sxMHlGTEdsUkZhcU0xeW82d1lPMThDcGJJWkxxbDBKYzlHbDBnMEQ3RmFIMkg3R1BCbW01NEZMZ0xGOThweXA0T0stek9HeS0w?oc=5) (The Wall Street Journal, £)
-- [Apple @ Work: Next to a growing token bill, Macs might start looking like a bargain](https://news.google.com/rss/articles/CBMipgFBVV95cUxNRmpraE1wM0lhZ3dIUEV3cUl2eW1SUUJMdFlhY0RwaGxUUEV3cnlELTduTEZ3QlpvZC1nU2FMTXZSSUY4YkdNV29pRnVtSXlhaENMZzNYU1V1OWpwMDhOVHlIdXhFdUU3VUhCUFRBYXh5dGx6eFlTbjlIZjM2dG1sZTludUd6QzQzQkdieENLVFdCOGV5VTU5eGlIeFBUVzVsZERHMTNn?oc=5) (9to5Mac) AAPL
-- [AT&T, AST Complete First Handoff Between Terrestrial and Satellite Networks](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNVUlxemZsTkIzNFB0eTBqcHFZbV9GWUIya1dnRjY3Zl9xVmtlNXNGd0FuMVljdG1OOEtqOWVTblBPamVxVFlCOVpmOGZRWldkVFhUcmNBZF94Z3lpc1N6R0g4WV81YnhibmxaNjhNZUIxdUV3X3Rna1BWNzBTMEZfMFNZVmpRNk9UalVHUmUyREtzZkVyNUE0LXREdUl5TFhkS0k0UDhwU0xYQQ?oc=5) (Broadband Breakfast) T
-- [‘Fastest entertainment property in history’: GTA VI arrives to test a thin November box office](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNUJ5eVhxbHM0Z25EOHFGVlNkMFdtM1JEZ2FscGE2dEVZQlRLUEhKZHY1dGdqQWZwWUNGbng2T0tESlRXMFV5eFYzQThqN0Y1RnVKT2ExNzM4ZnYwdVN4YXBnQ1h4WkszWkRWMV9HYzlDSDIwSEN6NFlJRHFPOXNwTW1LZE0xLUlp?oc=5) (Fortune) TTWO
-- [Germany says lawmakers’ iPhones may have been hacked with spyware](https://techcrunch.com/2026/11/02/germany-says-lawmakers-iphones-may-have-been-hacked-with-spyware/) (TechCrunch) AAPL
+- [Adobe’s Premiere mobile app is adding licensed music from ‘leading artists’](https://www.theverge.com/tech/1025160/adobe-umg-wmg-premiere-mobile-licensed-music) (The Verge) ADBE
+- [The Texas governor’s race might be a make-or-break contest for a wobbling AI trade](https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQ0h1dVJBZ3M4UFZCVEFvN2NYbDVxSjZoYWRhRUI3TGtvR1BBWDNiSFJIbkZWVVp4YUhMajNpLWZ4dVEwM0o4NHAzaTU0ZURWbTNKN3JDZDNLNGJfNUlCeS1NLTlySGgtYXpDVlpBSzI0U2trYy1pVE5SMk80dmRsUzBwX3VrRnlqbnp5ajhuZzJZME1MTTVtNllvWUxQbTExVTh5WUNzb0hmMHI3akpmYzRrQ0o0UzVrQTlqajUxSWF1Zw?oc=5) (MarketWatch)
+- [Morgan Stanley Offers $2.3 Billion Debt for Dell Family Deal](https://news.google.com/rss/articles/CBMirwFBVV95cUxQYk9XeTJaTGJncHd5SjZlYzFNNXJ1MV9mRXcxcVZ4dkVFemV0TjJKZG1wdVFkUWs0NFAtLTQwT3U4c3FaS2xOMFluOW13VkIzWTA2VDFPazdMQXhXcW9vUmM0MVVtMDI0SnowWmhYQ0x5VnpydDlPQ3lTUmlLNU93ZHNla1VEbDl6cUUxSVJvTTZpaUxVR3IwNXBHRzNpODE1RWFMbk9YQXpZUHJnQURr?oc=5) (Bloomberg, £) DELL
+- [Reliance Industries Shares Jump After Strong Quarterly Earnings](https://news.google.com/rss/articles/CBMivAFBVV95cUxNMjJWT1dfUDQ4b1NXeWhGWFRkUy0wYk1UcENVSmRWdGdJQnllejZiSW5Yd2NkdnBwVnZNd0lEWG9tUkJxZ0QzSUtlcE5COENTTy1JQ1F2Y2s3MmtwRlg4MjVVOGc0bU8xZ01Ddm1MOWJtVm9OLWpOdEZwbGpVQzZGOGxvMG9HTnNjc3ZEUDFBbnU1b3JyN3Etd1VsRFNrVUJIdG1qTWpGek9IWHB3N1BRUmtZSDJmWHhDUWZ5MQ?oc=5) (MarketWatch)
+- Update: [Apple Beats Wall Street Expectations With Boost From Higher Prices](https://www.wsj.com/tech/apple-beats-wall-street-expectations-with-boost-from-higher-prices-36749418?mod=rss_Technology) (The Wall Street Journal, £) AAPL
 
 
 ## Deals & Listings
 
-**Andy's Pick: [Marvell to buy Lumentum in all-stock deal, a massive bet on AI connectivity](https://www.cnbc.com/2026/11/02/marvell-lumentum-ai-deal.html)** (CNBC, 46 sources) MRVL
-*So what: Marvell has agreed to buy Lumentum, a maker of data centre components, in an all-stock deal valued at $115bn. The two companies describe the combination as creating a leader in AI connectivity, which covers the optical and networking hardware that links servers in large data centres. For Marvell, the deal adds Lumentum's product range to its own chips for data centre networking. Because the consideration is all stock, existing Lumentum holders would receive Marvell shares rather than cash.*
+**Andy's Pick: [Behind Musk and Zuckerberg’s decade-long efforts to repel investor lawsuits](https://www.ft.com/content/e8d40d03-4d86-46ca-aab5-68f7ea69f364?syn-25a6b1a6=1)** (Financial Times, £) META
+*So what: Meta has created a new share class, and the change is part of wider moves by Mark Zuckerberg and Elon Musk to limit shareholder lawsuits. Shareholder rights have been weakened in Delaware and Texas, where many large US companies are incorporated, and the new structure is expected to make legal challenges harder to bring. Meta's dual-class arrangement gives Zuckerberg voting control that outweighs the wishes of other investors. Critics argue this leaves ordinary shareholders with less say over how the company is run.*
 
-- [SpaceX Pursues 80,000 Cell Sites in Bid to Take On T-Mobile, Verizon and AT&T](https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWWNSeXNqMWJmVGhqMGF1b2tTcW44cTMzaEpKRDZfTl9nejNSYXZQbW42dWMwdVc2cldmQkJjVGVEcGR1RVY1QjJraXMzLTI0SEtuUFRtbzZYWjM2cmlpOVZTUWl5aFpINWNsdW1NNWotX3lrelB1RHFDLWZmSzE2WE5NLUEyWlBWcThRUU42UWdka2M3YW5fUTJ4UGxiMk1HbTdmWWFDclNHQQ?oc=5) (Northeast Times) TMUS, VZ, T
-- [Airtel Africa's East Africa H1 EBITDA Rises 26% to US$953mn](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRmtNbnQ4QTE0QTNsZjg1LXhQR21LbmJ6Z2VBOEgxZVB4Y0UybnQ4ZzltS0t6SnBvZ3VtaTJhbnRzallocGdHOEFPaG5xR0ZuTlRhdWEzWTRIN2NGQ01ZYVNwUHE1R3VpMmlLVHlsNDR6V2RFdEJGUmd0bVZydHhVN1dCRWFTbHBVNWpkd19kNnZFQ2Q1TU1COXBRRGlqOXFVcnhoLUlBUDZQTnc?oc=5) (The Kenyan Wallstreet) AAF
-- [Analog Devices stock adds phased-array platform for defense](https://news.google.com/rss/articles/CBMivwFBVV95cUxQTXpmTEJTVmNQSnBwZlZiYnhKd2dZelhlcFpzSVdYVEMxeWNrVXNKbTRzREVZdHNtcHBFQ3ZkLUo4ZDlyYUwxZ3FPemh4Z2NDSEljcHMzRF9Bd3EyUGxqY2Zhd1ZueTh6bVlvRjlWb0NuX2RhZERXNnkxV0hrb3NBd1Vfa2hzOGNNdlBjZlQweFNocjMtampLTFZheTJuYWNSZlVIblhxMFBOVGdCU1VXcjVYQkxTT3ZtcEIwYjVfTQ?oc=5) (ad-hoc-news.de) ADI
+- [Deutsche Telekom CEO Declines To Comment on T-Mobile US Merger Report](https://news.google.com/rss/articles/CBMi1gFBVV95cUxNV1JHb3oyNTlpbEZ5cmFSU1RWT2JxdVFzYVhfZk9jRm1haUJ6Sk5PMm5PZWRzQWRXeUtDU1dpWnBTTjYtR2tpaTNtLUFaejJFWHFVdGFEYXVPUi1kOEVGUmZrYmNHRXFiUEk5eGNGbEZCTi0xTGIzZHhCZkoybW4yVWc1VWdySlhXNTFHekUtS3llU215RERlUDRVaC1rWUswVDBnR0c0M2w1WEMyQlRNcGpkSGdlXzhkaThOQ2V6S0w5dFRudTd4X3czS09SUlA1SUdHcEFR?oc=5) (TradingView) TMUS
+- [Emaar Said to Study Buyout of $15 Billion Construction Arm](https://news.google.com/rss/articles/CBMisAFBVV95cUxNRzgzM3BGN2pOck9nLVJ1U3FuU29ZWVpEdVJ6VEJGbF9NTjBUUnVwbV8zdnBxNjQ0bHBCN0hyeGUxWDF5MHA1NEZIaEpWdkZpMkVIOXcyNEpmeGQ2RDBwVTR3S0xGR19JZVhFSUNfM3RqeE5fYjk0TjVTX2RhSEd2d0xOQlptNjk5eHlNQ0RMV2tuMHBkcEZETzBfR3FsbDZmYkxEUjE3eGtZN01DRHdTNw?oc=5) (Bloomberg, £) ARM
+- [I'm an employment law attorney. Here are the 3 steps you should take if you're offered a buyout like Microsoft's.](https://news.google.com/rss/articles/CBMilgFBVV95cUxPcnRDNEhTcy1pbmFuVTRKMThUbmV3cWZSbXFOS1phclNOOWFSYWEwMEpOTTJQUHd6MVBsZXdjU2Rlbl94VGw3X3NDVEwyS3I3MHQzNWVwWmpCamdKV0UtdThJNm5DMW85U1JaN0tGWkRXVTJWUkJ2WkdZUDY0aVYzdkdrOTZBLWJHWnJha19FU1pQSHdCb1E?oc=5) (Business Insider) MSFT
+- [Besi stock: Applied Materials stake plan keeps AI packaging in focus](https://news.google.com/rss/articles/CBMiygFBVV95cUxOcWJ0UjA0bWdXU3FlZGNRUWIxSy1iNWZtNUVBT3hNbjlDRHpqR0l2dHRrVW5BbXM0c1JWNTlsVlFmR3c4ZnFrdjJQXzZ0MkF0ZkwzeU1XV2xWNDBENDkxanhUbU1zYzJpdXRmbF9KNzFmYUR3dzhyVXl0M0xlRDRHTWZVLUpiRl9EVHEtUk9PZXB1OE9ZT1hCeFhkY00xeWhrVkQ3QWxOTnpvSTFMVVVxeWxGcUpISXNjWTBtSjlXOE1naklXOG1NWFF3?oc=5) (ad-hoc-news.de) AMAT
+- [Broadcom denied names of cloud providers backing VMware merger challenge](https://www.theregister.com/virtualization/2026/11/03/broadcom-denied-names-of-cloud-providers-backing-vmware-merger-challenge/5307178) (The Register) AVGO
 
 
 ## Regulation & Legal
 
-**Andy's Pick: [Snap Settles US Social Media Trial Days After Meta](https://news.google.com/rss/articles/CBMisAFBVV95cUxOdGhMSFdHd0JveE9zcWNvQ3RuY2xDeUFVU3NBUmhuSDlveEIybHVaM1ZCUDlyWnlQemxUczVFUVhWWjNZNXRMUHM1Umt1cHpmTDhBZVUtQTE4eV9VdVBVR3ljRG55SktXdWlwcWFTSE1QVHV1NC1Ec0dVeFN3MGs1UnJ0VXlILWhqdDZtNVZFS0RvTF9JMTM1MmpuQ1owWDJkNjN6Y2VPSElid0haeXVtYQ?oc=5)** (Barron's, £, 4 sources) META
-*So what: Meta has settled with a teenage plaintiff during a trial in which she claimed its social media platforms caused her depression and eating disorders. The settlement removes a case that was being tested in court while Meta faces many similar claims from families and US state authorities. Lawsuits of this kind have grown in number since 2023, when dozens of states sued the company over the effects of its apps on young users.*
+**Andy's Pick: [EXCLUSIVE: Ambani's Jio explores tech-for-equity talks with Comcast and Charter, sources say](https://news.google.com/rss/articles/CBMizwFBVV95cUxOVk1sUHd5bUdEcHFJdHJrQTlmV0tSY3Y4dzh3R09TTWpKOTlvT2NUTXlISU9pSlpZY3Bpei14aDFjclduRVRQTU5pUTRVR0o4LWQ5QlgwZmVObHdDTmZqQUhCb1E4dWllX3Q1QkZCdXhyVDZ4M29tV2FpaHZlcDVUT0M2TlFHc2lQei1kQmROQlZBUXF0Y3pINHRYeHp0WEM4ZzVsWUJRc2p0bThCU2tubno4alU0V1Vham8wYkxRbVBBTHlaUlNSVU5OcDJrMzg?oc=5)** (Reuters, 4 sources) CMCSA
 
-- [GOOGL UPCOMING DEADLINE: Faruqi & Faruqi, LLP Reminds Alphabet In](https://news.google.com/rss/articles/CBMirwFBVV95cUxQbmE5b1NHN3RmTWVMUE1PZzVBS1piLTN2MGxLWDB2OG04andHenU0TEphUlJySFlaVnp6ZXVrWWt3Y0xleDExYTFjS2x0eThKQTJ0RUNBRlZqWkpPWGtXT1JuRXRmZ2Y1aEVZR1h5el9nMzFlUXNNNjN0TV9XVlFoeWNSRWYzMWtObzhTbFlhZzN1SFltdGwzV04zMC1UeE1lcS0zNjFaTTE5UGd1cjdJ?oc=5) (The National Law Review) GOOGL
-- [AppLovin Deadline: APP Investors with Losses in Excess of $100K Have Opportunity to Lead AppLovin Corporation Securities Fraud Lawsuit](https://news.google.com/rss/articles/CBMingJBVV95cUxOQnliMWxwVHYyQXhRWDM3R0dUZWN5NmFLY1k5Y1pLYms5Mk44TC1DYk03YVNlNGgwb3hJMUs1MHpNWGxKZ05YTHZKZzR5U01OSTZ4ekVEVGg1eXFtc19PaWpJRjlnT2E4YjR3bEM5SDRjdXd0Zk1RLUlnQzJZckhMbnlpRGJVSEtZV1FLdlVVT29HVmNMREozc1ZZN2N5ci1aQi1hVVVXV3NwMERjcHAycTVKWTdLQUlKdk5qQk1pVnNHcGs1cDFwaEREQ21uOWVMcDgwNVd0bEJYeVRTZEh0T01ELUtaOTlKcUpzZUwtd3dwWDZGZExJa3VqNXM2cW40aF9ZWlFmZklxbFVqSWQ0Q2dRVUdZQmpRb3RjT05B?oc=5) (Morningstar) APP
-- [One of Google’s Android partners turned 1.3 million set-top boxes into a botnet](https://www.theverge.com/tech/1024807/google-botnet-android-tv-shut-down) (The Verge) GOOGL
-- [Teens settle with Snapchat parent, ending trial against Big Tech over social media addiction claims](https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSWxCT01zM3NQRUVNVkZwd2tKN2s3cnJRM19hWFQ3N0hOUGQtaUZnNi1GdngycjJjREdpZERha1dKWngyWlFNczVTV1dOUjZUMWdqQnJpT2JsbkI2X3pKTWRid19DaGNIZGhVcFA1X0ZzdGotcVZtZGt6S0tPQUJyNDlFd0pzYVpyckhlVTdyMWtkSkphZmNyMlQtODhxVHlJQWZnOFBQb2p3NTNDaUhaOTVqYWFfbS1xeVFYZ0N5dU9hOFRDaWhEd1p6eUVQTmFBM0JIOA?oc=5) (New York Post) SNAP
+- [Reddit blasts 'inept' Australian social media ban as challenge airs in court](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQNExqdTFHQWs3dnpIQ0plUEoyTVl6X2NiZ205SFBaVWJpRnlYOVZZcmlJNERRQ3lkdF9pLWlzdkV1TnQ3NnJqYzJOYUhCQy1jR1BPM1pjd3B3X0U4c042WXNUcE5YVklOSDVQR096bS1aNl9hNmtHTkptcEZRSGNncnJTRVlEZVR0UTJTSXk0VHplVVQzQnBEbER1UUVOUmxvUTVvTm5JVVhONmRoaHE0YTFxdGx4TWdjeGthaUtDQmE?oc=5) (Reuters) RDDT
+- [Landmark Cloudflare Stock Ruling Likely Set for Mid-Case Appeal](https://news.google.com/rss/articles/CBMipwFBVV95cUxObU1iR1V3Mk9vVkkxT0tWa2hwMGJ5MGhkdFVmN0poUElKQkY5QjFvZkg1UlM5dzVFVU9kdHlDbmhMSnBNYS1vXzBBbEw4aWZYRVAzTXJIOXd0azdLZVZqLWw5ZnFNYTZTbDRGRDJrM1ZBSy1QcEhUNGc4V0VRZVJ6WWpiTTR5MWZLUjBkQmpqdVZJZ1l6eTJLOGxhbnZWam55SlVBbFpmdw?oc=5) (Bloomberg Law News) NET
 
 
 ## AI
 
-**Andy's Pick: [Oracle taps investors for $20 billion to finance AI expansion](https://news.google.com/rss/articles/CBMif0FVX3lxTE9OVGUyeXVqQlVYMEx3TEhEVHY5ekZLX3paamdqNUF1ek80VE9RZVhuSFl2d3dsVkF6T2JyVFdJdF8xR1FuWU5EdU9OWG03SmRoLUloaEFCc3pGLXFxN0FyOUNnVkM3T3prb1NMYXBOanNGT2RMYjNxcTZsdUEwbGs?oc=5)** (Reuters, 24 sources) ORCL
-*So what: Oracle has raised $20 billion from investors to fund its expansion of AI infrastructure. The money is intended to pay for data centre capacity and the computing equipment that goes with it. The move puts Oracle in the same spending race as its larger cloud rivals, all of which are committing heavy sums to AI hardware.*
+**Andy's Pick: Update: [Tech Stocks Rise Despite Apple Slump](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZE9BRkVuT3ZjS1NnUjAtU0RRZjUwU2JQdXdLS0YtNTNYbFRTendtTTZkaDVUR1ppVThpYUtIVmJ0NkQtOVhyVVYxbzBZTlBhai1jOGh0WGpLWnhjbWV4NXVzMEFoUHFrRE9OOC1qT3BmYlhxZUNpSlJtVWlIVTBFaVZ2YUVPS0lGS1lpQi1LdzM0X2NFbnY2WHRFbGVjUGgwNG1RWlBHVGdrYk0?oc=5)** (The Wall Street Journal, £, 53 sources) AAPL, NVDA
 
-- [CrowdStrike stock faces AI security test after law-firm threat report](https://news.google.com/rss/articles/CBMizAFBVV95cUxQcE9KbWtBYUc0VHVjMjlCaFJxX09RSzZTOTktZGktdEN2akQ1SVduVV9POC16Wmg5SFpEcjRRbVFuV3d5RlBMdUZTc3daWkQwanowRFRpWnNkcWU0UW1SUWVqX1FVS0tTVFBLSkNENFdJejRWZWw5bXYwU1JrelJtRjI4NmF2LXFFU1pkUVNNR2owdEVtN2o5RmFFdHN3bDJKTC1MdlVCM044WWNjVDJHR0Z1eDhUeTNBcjBVR3l2WFNiZEh6NnZ1S0xIYjk?oc=5) (ad-hoc-news.de) CRWD
-- [Apple’s Slowdown](https://news.google.com/rss/articles/CBMie0FVX3lxTE5hYWxuaG1za1NzQ010QTk0bjh1cUVtUU50R1Z2cVF1VDFlYUxScm5EaFpHdzJxYURPV05sMFc0Y3lIVXhYT1V3SHFobml2RE9OVEtUSlFKaXlKYTFiT25pZ1VJM0JXWkNxYkp1R2lFcWRwNlRUcWZtMXpOUQ?oc=5) (The Information, £) AAPL
-- [Tech Down as Marvell Deal Fails to Quell AI Worries - Tech Roundup](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3d1eGVITk8xalh3MFZiVDQyY3ZDOGQ4N3B1N2czVnJWdlBYbU8wZ1dpLTZQWDVGVkZibzV1RFJ2LUFpNGVKV1RtNHNEQml4Wk5fUlMzb29tSTEtbnc2cmd6OFlGbXJZdDBoSjFrVk5xVHhDZG1tZW5mY3pWZ2tpQVBvbjd6eGNLZUdLZ1pCYVNQLTBjMDRFR2ZuenJ1QUZESjUwNDNlRE4xOHNfTnlBOEFtU1VpalE0VWU4?oc=5) (MarketWatch) MRVL
-- [Microsoft links ConnectWise supply chain attack to AI agents ...](https://news.google.com/rss/articles/CBMif0FVX3lxTE9rZWRYT1FyU0dmWi1WWHU0VUpYWkoyMkJHUlZYdXB6dDk3UTlRVl9PTWlxbXhiSXdUYVRJVjFFb09ETFNOWlV2eDBfanc3ekNnam4ta3ZIWm9hS2Voejl2TWdGQnhhdWxHQ0ExcmJvZ3dQRXNrVUdIenQ1TktIbXM?oc=5) (eeNews Europe) MSFT
-- [Breakingviews - COMMENTARY: China adds latency to Marvell's optical mega-deal](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPeldpVy1qY3FQcjZoUTRuMFdOQXNFLUd4ek0wa1luODZ0ZklQbHFwaUtJLUNqR2gwUEowYS1XU3RMX0RzTHpLNjIxRTZWM2xWU0JQeFdYaEk5Z2VDNTk3anB3cGFpRmxsNFdzMW0tN2tiZUlYemJwWHM4LXg3RmxsaUxoODVTLWN4ZzdEY1R6dUtScHFZbGd2aHlOUmcteGRES1hJdTNJZXB4UQ?oc=5) (Reuters) MRVL
+- [Oracle cancels $7bn Tencent AI deal under Trump pressure](https://www.ft.com/content/c5a6a738-cd78-4a8e-a814-57a7473ebb9c?syn-25a6b1a6=1) (Financial Times, £) ORCL
+- [onsemi to Acquire Ferric, Establishing Leadership in Power Delivery for Next-Generation AI Processors](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPWm94M0d2Y2hCcG9zVGFGN1NPRzJBQy1vcktDRUJ5dTViLVVWRHdpV21QY3B3ZWpDNUVqMF9wNVBhamdjc3c3Z2hna3gxQ2VCVGgxTmtNdXVuc3pSMnlySEkzOXJjTDktc0JxSjFNa3pVcXk0dndMOXgzcVdTdEZRU0gta0UtYVN3YTFxUEE3Y0JQWG15MWRWSTNuazVXUW9NeGw0ZXNMUkJvUHNwalo3X3JsYVNNVHhIRTFfcE9tQ1VUbVVNYUl3dHQyV0ptMXY4SHg0SHc2cmQ4LVVXWjlVLVJuaVJYTWxxZnVrSEZhOW4?oc=5) (Business Insider) ON
+- [Apple AI Tools Come To China After Two-year Delay](https://news.google.com/rss/articles/CBMikAFBVV95cUxPUkdsVEdFWFdfQjJPTzdzekJLN29Ma3psVFdtdU91SDB0bWRIN2dib0kydnVDYWFLODdKQ0U5aldvZHZFeHpzUGw0VG1aX2dTM2hYZlI1QlBjUF9vQVVVRkpFbjVaaXJXeW9abjFCc3QxMEhLcVcySHhpbmFFb2JYMVJfRV82aTFDd21jT1UtTWE?oc=5) (Barron's, £) AAPL
+- [Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it](https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts) (The Guardian) PLTR
+- [Rack-scale AI: How Dell and AMD are building infrastructure](https://news.google.com/rss/articles/CBMikgFBVV95cUxNUEs0a3NNN0JTS0l1NWxIM1FUZEU5LXA5X25tS3N6Q21XNGZKRGs0NmpBY0pKUDFPNjYwczBrSkM1M0ktTHlVVlhJVGVWVU1UWmk3UnFQaFltR29fZ1lnZ3Y1Z2NsYlpvRi1aeHQ5RUZCUHdzc05ZS19GczUtcjB2VDM3ZjRXbTV1R2N2TDNMTE5tZw?oc=5) (SiliconANGLE) AMD, DELL
 
 
 ## Chips & Hardware
 
-**Andy's Pick: [Nvidia orders data centre clients to reduce China exposure](https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2?syn-25a6b1a6=1)** (Financial Times, £, 3 sources) NVDA
-*So what: Nvidia has told cloud computing providers that most of their clients must be based outside China. The rule means cloud firms that serve Chinese customers will need to rebalance their books towards overseas buyers. For Nvidia, which sells the high-end chips that power these data centres, it is a direct limit on where its products can end up. The move follows US export restrictions on advanced chips to China.*
+**Andy's Pick: Update: [Apple’s inventory surges 154% as memory chip costs climb](https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/)** (TechCrunch, 9 sources) AAPL
+*So what: Apple has beaten sales expectations even as rising memory chip prices squeeze its costs. The company has said demand for its products has held up, with strength across its range. Higher memory costs cut into margins on each device sold, and Apple has so far kept revenue growing despite them. Rivals making phones and laptops face the same component pressure, so the situation is not unique to Apple.*
 
-- [Apple’s inventory surges 154% as memory chip costs climb](https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/) (TechCrunch) AAPL
-- Update: [Intel stock plunges 29%. Analysts urge caution on buying the dip](https://news.google.com/rss/articles/CBMicEFVX3lxTE5OVHZQSUVWSmhocUZUSUdWcjFYQ2x2VVE4c1J4Qm02Vm83MnlycEZZbkFWUGU0SjFEM05PZDJxV0JDcjd0ZlV2X2lZZFctSml2S3owcG1TbWw1ZlNxVGVVdGloMlVVOHRacmYwUC1vdjU?oc=5) (CNBC) INTC
-- [Apple says 2nm transition is easing its advanced-node chip constraints](https://news.google.com/rss/articles/CBMihwFBVV95cUxPV3dsam0yQVBJWENzaFJpd1NMcjNHOUU2REpoS3lZRGRvMFc5cmZVUGlSdURYM1U5VFdDbkV2V2NhcFJGLUNMT19STm5pRXUwOVNPMVE1LUE0cVloamZrSkhqUGFta29CLURhRG0zUFlwVWt2ckhINVp0MF94SzZCVGhjeUVSeVk?oc=5) (DigiTimes) AAPL
-- [Micron dismisses 4F-squared DRAM as CXMT presses ahead — why Samsung, SK Hynix remain divided](https://news.google.com/rss/articles/CBMikAFBVV95cUxQTkp4clVrSUJibEJmcHNZanBxQkdmcjAya3Vzem5Ic2NsWUdHakpSY2JDOUtzV2p5N1Q1Nkc1VnliVk1OODBvYTFVRmdRNjlSdmdNQmU2TE1HWVdWS1FDRldqX2dwZlJNYmVXeTgtN05JeTdnMm5IS1l4ZmFEMGpzM3Npdm14Y3djWlcxekFReDc?oc=5) (DigiTimes) MU
-- [Chip Stocks Crash 7% as Apple and Palantir Report Tonight](https://news.google.com/rss/articles/CBMikwFBVV95cUxQbXhVTWR5SEtLNHczQ0o1dTJPVjR2N1UxMGxKMTRXdTZWMndyaTdUM1VyLXNDQlhsMTQ2ZkhmX1hSM1VRdkFrSm1PSWdCX3Z6eDlsbVN6UENRbDBxOF96TmNOM3VwbXZiMXVka1hKOHlwZWVzWkpyX1hyQk1vRU1EVldYU1V3cXhQRnMzSTB5QnJyT1U?oc=5) (CoinDCX) AAPL, PLTR
+- [AMD Posts Beat-And-Raise Report On Record AI Data Center Sales](https://news.google.com/rss/articles/CBMieEFVX3lxTE1XUlpyMXlqcVpLcWt5MHZGLWJZd1FXVDlUTDlMTUhrMjVuOGNtMmhDUmFsang0MVN4RmRTR0o3TFk2Zndka1ZkWWp1QzViaEhkbmcxdXpZejRKWEV2enFDb3NZNmNzb3R5STEtclNmZk1DOUxQemZWQQ?oc=5) (Investor's Business Daily) AMD
+- [Windows 11 8GB RAM configurations get a performance boost — As AI demand keeps pushing prices up, Microsoft says Windows is now 20% more responsive, multitasking 40% faster on memory-constrained machines](https://www.tomshardware.com/software/windows/windows-11-8gb-ram-configurations-get-a-performance-boost-as-ai-demand-keeps-pushing-prices-up-microsoft-says-windows-is-now-20-percent-more-responsive-multitasking-40-percent-faster-on-memory-constrained-machines) (Tom's Hardware) MSFT
+- [Supermicro's record AI server sales put margins and cash conversion in focus](https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UcnlJdFJvTzVraWlpUV9oYzBGZm1TOW9seWJiQ0xqQkwzX3N1Q1lnZmFEamktckhXN0l5QU8tN2N5OS13WHBoMk1XNlJfQi1VWllUS21HaDlIODdPNTFB?oc=5) (DigiTimes) SMCI
+- [AMD expects more than 80% revenue growth in 2027, led by data centers](https://news.google.com/rss/articles/CBMijwFBVV95cUxNcTJQSzdfczVUR1dmS0JSYzZ3MTA3MGhvY3czN04zMW4yNnhzTUk4MUtHa0UwLVVEa19mbnB5LXJSb09rX21wbmlLWmFXYUNYVVB1cy1UZFZUMzhXV2dmMUdkMGhKNGg4TVRubkhrb3BVVk93NDZrWUxVdGozWnRfYUZzUGZ6d3VZWXo4WHBrQQ?oc=5) (DigiTimes) AMD
+- [U.S. stocks close | On Election Day, the S&P and Nasdaq snapped a three-day losing streak; the chip index rose 3%, with AMD up 4%; Bitcoin rebounded under pressure, with Coinbase gaining more than 5%; gold regained the $3,900 level after losing it](https://news.google.com/rss/articles/CBMijwFBVV95cUxPd0g2WXNGTlU2UzlkblhmaEZZelFDbDRjS2c5YTRLaXc3amZocEVPam9ReHlzT2pEZl9OUm16YTN3S2d2X2k2X29Hc2h6c2xPLUp5aE93VlI1eHBGUnV6SmJqTUJCZlVQOXNIVl9xTzBLOHhja3ZMcmp6M00tbGxkWVF5aVVqMnNGSmtZQTNiZw?oc=5) (富途牛牛) AMD
 
 
 ## Results & Outlook
 
-**Andy's Pick: [Palantir Boosts 2026 Revenue Outlook on Strong Commercial Sales](https://news.google.com/rss/articles/CBMitAFBVV95cUxObEtVWWY0N2lwNzJ6NVpTWFpSSHdRV3hNSnlnSnppYnBvM2paNVVmTTdhWl9wcnVmMFRHRTROaENxUDlvM01nOHRPLWxXd3gzX0lBR1Itc0ZuZHFzODJEbzFDeUlVbXNlMFpTc1JzaTlaM2JLRjhoUHJTYmVmckxaaUtIQTJUcEJGQnZyeWsyQmpmeWxKUE5WV2tiSEVMUnhPMnJMdkY4MlBQb3AzSEVLVU9pcnU?oc=5)** (Bloomberg, £, 8 sources) PLTR
+**Andy's Pick: [Arista Networks Notches Biggest Revenue Gain Since 2014 IPO](https://news.google.com/rss/articles/CBMihAFBVV95cUxPYVlCRW9Ydi0zaHFyRVBPTVBidV8zSzVTOTlrMV9XNnR6dklSSHJDRFRsWm4wQzJnRm5Eb0M3SHo2a3RWbTN4ZXFyY2tycHpvS3ZQU3JFUUNRWXRtSDdzVkNEdkFwX3ZmZVVIQXB6ekdhT0lDWlRzbkNrZUg1Y01HVm5ES3g?oc=5)** (Barron's, £, 6 sources) ANET
 
-- Update: [Palantir raises revenue forecast to $8.53bn after record quarter](https://news.google.com/rss/articles/CBMizAFBVV95cUxQdWhJNWdwR0N3TGtHSktBNlp0bXdJeUZ2SHVQVUJEbU1Yc1F2RU9DWEpYbDY2NWZXaURQNmlaWWt2LUp1Q0ZNTjdwbUQ0SnZHZjZjWWxmb3QwaldwX2pzdWlVR0FIRjVDOWlPVVlkTm0zZmxwNGwyMld3Vk9lcm00c1ZNengyaUdoUkc4eXZNR2ozVUhpdFVwby1PeWdibG8yazBfenNta3RtY0tOWmkwc0xwTGltM010MjN4WTZScVlIdEd1b2hsREpSMlU?oc=5) (The Times, £) PLTR
-- [Alphabet Kicks Off Sale of Its Second Euro Bond This Year](https://news.google.com/rss/articles/CBMirAFBVV95cUxQTXZEZVR0eFFhajNmbHRXVldFdzBMWXlOWHo5WnhHcTJHR0t3bng5SEZNVERBU09IRW1Va0xMVVo0MlVGX3FxNHo1MTlVUHlDV0RGZ21FZVg5QjAzUGZ0MnA4UVpwWXBSdUsxTldiTHEzbEItRnVwdlVvSzM1LXJtdF9OWU94bXJnaEFMckdlRnZ6WElLeUlmYVpjUGlETzU4UkpXV2NSUFFPYmlC?oc=5) (Bloomberg, £) GOOGL
-- [CrowdStrike Wins an Upgrade After Tech Selloff: ‘You Ain’t Seen Nothing Yet’](https://news.google.com/rss/articles/CBMijAFBVV95cUxQT1Y3aXMyYWJfdTJHQmlOV1lJSkVTVzV0YThwa29FQnVmOWtjbzJqZ3BSdVpBMmdBbHgxVVo3Vi1WeDd1TDZkaUVsQmFXYjJtb2o4Tmlqc3lMTFppY1gxeWhwT1NmZ3VqM2VTekxjYy1ZbTFYS1hKUmxab0p0U1JRSjY2TUdyYUoyU19Obw?oc=5) (Barron's, £) CRWD
-- [Apple reports fourth quarter results](https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/) (Apple Newsroom) AAPL
-- [AppLovin earnings: what to look for from APP](https://news.google.com/rss/articles/CBMipwFBVV95cUxQSnc4SW9UbHNaTGJyX0wxcDhsY1BIWmNHc1YxeG5DZHRWYVJYQWtOLUw1LUJJOUFPNVRIYk4zdGR2YjE2VzBBWkFtZVZUVEZBaUhRTmZqam5xNXFUc0JSTFVZVVZqbW9VQUV3R0tjZWlCWFN1ZWExWFBQek1fWUhlTDE2ZmFoSUhnX1R3bnM3MDRpbUZiaVJNVkluRVBXRExkakthUXFLRQ?oc=5) (TradingView) APP
-- Update: [What to Expect From AMD’s Q3 Earnings](https://news.google.com/rss/articles/CBMihwFBVV95cUxQS3FlNmJKZmt4TmMtSXRUcmpaUnNoVlotWVdzR0EtcnpqYldWbDNsNUtVaUJGRTR0Y2hHcElQaVZGU2UyR2hla19UaGxBYVFTZXZMbGluai11cXk1R0FDQmpxUG1rekp1RElXMDUzSmdNQkM4Q1hacTAwb3hldVVTTjNMR1ZHMkU?oc=5) (Barchart.com) AMD
-- [Palantir’s revenue rises 96% to $2.3 billion as investors’ patience rests on a hair trigger](https://news.google.com/rss/articles/CBMif0FVX3lxTE9NUkpYWTh2djlrMldmMmtiWENXcW5fdlVETzh0c0ZvLTk0cklTbGNqU0dLei1uNmM0ekJBVl9Lel9TeVV5MlVIV0xLNFFhUHVLWDBJdkZTajd6TTN1OGFsZ2hNRXBvR0N3RVRmWmxPLXYyTkdpbEZMcUJHNmU5RHM?oc=5) (Fortune) PLTR
+- [Reddit tests ads in search results as traffic declines and growth concerns mount](https://techcrunch.com/2026/11/03/reddit-tests-ads-in-search-results-as-traffic-declines-and-growth-concerns-mount/) (TechCrunch) RDDT
+- [Charter Communications stock: Investors await quarterly results](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPSDVOcXA0Tl9WejJ0SkpaTE5IaEFhbUl4SEpYMkNLNm5RZ05IZ1B4ZDZYWFY1ZDFzQ0lQLWhTMVhpWmhYX2RnR3JPUTUwd3prbEh0QzFCejJfYzZyempxS21YSE1wcmFkdlBseTJidmNvQW1WMmJla3pIT1RPanQxY1V1VFllZkVnMUxoWjFyQjNiLUppNzIyZHZ2UzM3SzJyNmRiSm9GMnVDU1d0MjNxUHQzMFFKZkVXYTNucUJ3aV82dHc?oc=5) (ad-hoc-news.de) CHTR
+- [Intel Stock Had Its Worst Day Since 1974 Despite 8th Straight Guidance Beat. Here’s What Investors Missed.](https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVTN3ckNKZFVINVpGVzh2Y0dKNFFaclh4SDAwMVMyRUtxZHlkMEdZcnBwTWVoVVRmWnNkejhBaklETWxIbjh0TFJQZWN4QUxQc1d1TjBlVS1tNTE3N1hPZ1pJaFVFS0lLX21fSEZkNEp1TWh6LThFR0RSa3VrcGNWaFBaY2FmMU84R2xSeUJQeUd0aGdnc1piUk54LS1BdlFKdzdyWWdMcmQtTHd0RklCXzdLcUp2MWs5NVhiUTVycXQzemRVX25uLVVPWGVZWEpIa0ZabTVqcThXSnYtV0ItYQ?oc=5) (Barchart.com) INTC
+- Update: [Apple reports fourth quarter results](https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/) (Apple Newsroom) AAPL
+- [AMD Projects Rapid Revenue Acceleration in Fourth Quarter](https://news.google.com/rss/articles/CBMimwFBVV95cUxOMkI0a29XRFNuRVB1Ym1abUVUT1VqZVZEZmtGMkFvbEI4cl9paEE4TFlST2hUeWZfN3hGMGpiQ3NZUjY3YzBOSmF2dDg4czY3dzY3N1pJcUFCZzlXc3J5eVpsWHA1WjJGUlJNTWQ4OFFHV25CSGY3TFBoQ3hKQ1hIOUh3enhXRnBDY0E3WURuM21fOE1MUUhFb1ZZdw?oc=5) (The Information, £) AMD
+- [AMD (NASDAQ:AMD) surprises with Q3 sales, stock soars](https://news.google.com/rss/articles/CBMivwFBVV95cUxPUFRHMnoydExYNEwtQlJFOTZpSTVrd3pzaDN5cmtWWGY4aG03UkxhcV9DaG51OVNTenVUa05Ccm1nQWlubDk2M19IV2dRb1hueUJyRzB3cmVPTlY3aGFVc1A4M0xZemFkODAyRjV2c1NSY0hONUp0N1BJQ2ZkMDNDaS1WVFVyNWoxMlN6OTZiRW1McnlVUFNRWU52NnN0S2NFLVlKZ3lxaXlDcFd6aGYxRk9wT1dzNzBZQ0R0U1VzSQ?oc=5) (FinancialContent) AMD
+- [AMD's gaming revenue drops 40%, says PC market will decline by double-digit percentage in 2027](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVVpERngtdWtrTGtmbjR5YzZWdm1pbXFBVFJKRkhUQmZ5Y0VRNV9MMXVXNmVXV0xFVE03dG00cko3TUFRM0hURXE0QUV3RGQ1Zk5tQThiX3lsbVVVdTFCRzdWMXdWbzZtVGhBMTFLTU9LclUzMnhsOFhUSF9EXzUzRjFPTzNwVXM2V2NoaXk1S1ZHYUJKY21PTGZMRzF5c3B5M0RmTmV5N252V0J5MjA0MkRUZEh2R0I0c2hsYWxsNGt2NkcyQno4ZVZIR2w5Y0VXdVRPVTU3NlVSTFNzSTRRUTNn?oc=5) (TweakTown) AMD
 
 
 ## Most covered stocks
 
-- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 52 outlets, 30 stories
-- **PLTR** [Palantir](https://alltechstocks.com/stocks/pltr.html): 39 outlets, 15 stories
-- **MRVL** [Marvell](https://alltechstocks.com/stocks/mrvl.html): 50 outlets, 10 stories
-- **GOOGL** [Alphabet](https://alltechstocks.com/stocks/googl.html): 29 outlets, 14 stories
-- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 19 outlets, 9 stories
+- **AMD** [AMD](https://alltechstocks.com/stocks/amd.html): 44 outlets, 34 stories
+- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 90 outlets, 37 stories
+- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 71 outlets, 18 stories
+- **RDDT** [Reddit](https://alltechstocks.com/stocks/rddt.html): 26 outlets, 6 stories
+- **GOOGL** [Alphabet](https://alltechstocks.com/stocks/googl.html): 17 outlets, 7 stories
 
 *Ranked by news coverage, not by merit. Not a buy list.*
 
 
 ## New US filings
 
-- **AAPL** Apple: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/320193/000032019326000024/0000320193-26-000024-index.htm)
-- **KEYS** Keysight: [Board or executive change (8-K)](https://www.sec.gov/Archives/edgar/data/1601046/000160104626000038/0001601046-26-000038-index.htm)
-- **ON** ON Semiconductor: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/1097864/000109786426000021/0001097864-26-000021-index.htm)
-- **ON** ON Semiconductor: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1097864/000114036126041580/0001140361-26-041580-index.htm)
-- **ON** ON Semiconductor: [Major agreement (8-K)](https://www.sec.gov/Archives/edgar/data/1097864/000119312526443681/0001193125-26-443681-index.htm)
-- **PLTR** Palantir: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1321655/000132165526000045/0001321655-26-000045-index.htm)
-- **MRVL** Marvell: [Major agreement (8-K)](https://www.sec.gov/Archives/edgar/data/1835632/000119312526442717/0001193125-26-442717-index.htm)
-- **MRVL** Marvell: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/0001193125-26-442714-index.htm)
+- **SMCI** Super Micro Computer: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1375365/000137536526000026/0001375365-26-000026-index.htm)
+- **AMD** AMD: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/2488/000000248826000188/0000002488-26-000188-index.htm)
+- **ANET** Arista Networks: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1596532/000159653226000252/0001596532-26-000252-index.htm)
+- **ZBRA** Zebra Technologies: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/877212/000162828026069444/0001628280-26-069444-index.htm)
+- **TRMB** Trimble: [Board or executive change (8-K)](https://www.sec.gov/Archives/edgar/data/864749/000086474926000115/0000864749-26-000115-index.htm)
+- **ZBRA** Zebra Technologies: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/877212/000162828026069148/0001628280-26-069148-index.htm)
+- **IT** Gartner: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/749251/000074925126000307/0000749251-26-000307-index.htm)
+- **IT** Gartner: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/749251/000074925126000305/0000749251-26-000305-index.htm)
 
 
 *Not financial advice. All Tech Stocks is a news index for research. Nothing here is financial advice or a recommendation to buy, sell or hold any investment. Rankings show how much news coverage a company is getting, not whether its shares are a good investment. Check the original sources and consider regulated advice before you invest.*
