@@ -1,7 +1,9 @@
-All Tech Stocks run: auto at Wed 04 Nov 11:53 UK time
-  feeds: 60/60 worked, 200 new items (86 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 2 new filings
-  stories: 1188 grouped, 483 name a watched stock or pass the market rules
-  site: 383 stories live, 0 new AI lines. Top: AMD Earnings 'Met the Bar,' Wedbush's Bryson Says. Most covered stock: AMD
-  trends: 840 stock-days and 84 section-days refreshed, 16 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 04 Nov 12:53 UK time
+  feeds: 60/60 worked, 220 new items (119 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 5 new filings
+  stories: 1185 grouped, 478 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: opportunity): "Meta's head of products, Alex Schultz, told the FT's Future of AI summit that falling birth rates mean AI will be needed to support shrinkin"
+  AI trending line rejected (reads like advice or a prediction: invest): 'Alphabet plans to invest $15 billion in expanding its data centre infrastructure in Malaysia, adding capacity in the region.'
+  site: 381 stories live, 3 new AI lines. Top: Meta seeks to raise up to $25 billion in debt sale as AI spending jumps. Most covered stock: AMD
+  trends: 841 stock-days and 84 section-days refreshed, 16 days of history
+  AI lines: 3 written, 2 rejected, 0 failed calls
