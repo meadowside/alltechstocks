@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Thu 05 Nov 00:53 UK time
-  feeds: 60/60 worked, 158 new items (60 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1337 grouped, 545 name a watched stock or pass the market rules
-  AI trending line rejected (30 words): 'Agility Robotics, the humanoid robot maker, plans to raise $465 million and list on Nasdaq via a SPAC merger, with its business plans and pr'
-  site: 399 stories live, 2 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
+All Tech Stocks run: auto at Thu 05 Nov 01:53 UK time
+  feeds: 60/60 worked, 71 new items (24 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 5 new filings
+  stories: 1333 grouped, 543 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): 'Qualcomm shares fell about 5% even though the chipmaker beat earnings expectations, with the memory shortage cited as the concern. The memor'
+  AI trending line rejected (33 words): 'Agility Robotics, the humanoid robot maker, plans to raise $465 million through its merger with a blank-cheque company and begin trading on '
+  site: 395 stories live, 0 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
   trends: 861 stock-days and 83 section-days refreshed, 16 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  AI lines: 0 written, 2 rejected, 0 failed calls
