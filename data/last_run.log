@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Wed 04 Nov 22:40 UK time
-  feeds: 60/60 worked, 216 new items (100 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 4 new filings
-  stories: 1323 grouped, 535 name a watched stock or pass the market rules
-  AI trending line rejected (29 words): 'The company has beaten its third-quarter earnings forecast and lifted its full-year outlook, which points to stronger demand for its public '
-  site: 390 stories live, 2 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: AMD
-  trends: 858 stock-days and 84 section-days refreshed, 16 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Wed 04 Nov 23:53 UK time
+  feeds: 60/60 worked, 155 new items (70 excluded by rules, 14 Google queries resting this hour)
+  filings: 79/90 companies checked, 5 new filings
+  stories: 1320 grouped, 539 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: rally): 'The Dow surged nearly 1,650 points, with 3M and Microsoft leading the gains. The coverage gives no company-specific news for Microsoft, such'
+  AI trending line rejected (26 words): 'Motorola Solutions has raised its full-year outlook after beating its third-quarter earnings per share forecast, which points to stronger pr'
+  site: 391 stories live, 1 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
+  trends: 859 stock-days and 78 section-days refreshed, 16 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
