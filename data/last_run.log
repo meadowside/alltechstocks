@@ -1,9 +1,7 @@
-All Tech Stocks run: auto at Thu 05 Nov 21:53 UK time
-  feeds: 60/60 worked, 192 new items (65 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 22 new filings
-  stories: 1380 grouped, 583 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline and a single bullet, which states that AppLovin's shares jumped 31% as strong cash generation supported"
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage only gives the headline, so I don't have details of what lawmakers asked or what the tie is. Without the specifics of the probe"
-  site: 417 stories live, 0 new AI lines. Top: Micron's $4.5 billion Taoyuan plant construction halted amidst labor dispute. Most covered stock: QCOM
-  trends: 906 stock-days and 84 section-days refreshed, 17 days of history
-  AI lines: 0 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Thu 05 Nov 22:53 UK time
+  feeds: 60/60 worked, 186 new items (77 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 9 new filings
+  stories: 1390 grouped, 583 name a watched stock or pass the market rules
+  site: 418 stories live, 1 new AI lines. Top: Micron's $4.5 billion Taoyuan plant construction halted amidst labor dispute. Most covered stock: QCOM
+  trends: 911 stock-days and 84 section-days refreshed, 17 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
