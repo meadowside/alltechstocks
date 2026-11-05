@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Thu 05 Nov 11:53 UK time
-  feeds: 60/60 worked, 158 new items (49 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 2 new filings
-  stories: 1334 grouped, 537 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "Qualcomm's shares fell as weaker demand for its smartphone chips outweighed growth in its data-centre business. Handset chips remain the bul"
-  site: 398 stories live, 1 new AI lines. Top: Micron Pauses Work on $4.5 Billion Taiwan Plant After Labor Spat. Most covered stock: QCOM
-  trends: 880 stock-days and 84 section-days refreshed, 17 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Thu 05 Nov 12:53 UK time
+  feeds: 60/60 worked, 213 new items (84 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 2 new filings
+  stories: 1336 grouped, 542 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "Qualcomm's shares fell as weaker demand for its smartphone chips outweighed growth in its data-centre business. Handset makers are its core "
+  AI line rejected (reads like advice or a prediction: valuation): "Baidu's AI chip unit, Kunlunxin, has reportedly pushed back its planned Hong Kong listing to next year. The report gives no reason for the d"
+  site: 400 stories live, 0 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
+  trends: 882 stock-days and 84 section-days refreshed, 17 days of history
+  AI lines: 0 written, 2 rejected, 0 failed calls
