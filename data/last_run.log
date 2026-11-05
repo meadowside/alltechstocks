@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Thu 05 Nov 07:53 UK time
-  feeds: 60/60 worked, 92 new items (29 excluded by rules, 14 Google queries resting this hour)
-  filings: 84/90 companies checked, 0 new filings
-  stories: 1342 grouped, 539 name a watched stock or pass the market rules
-  site: 401 stories live, 2 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
-  trends: 873 stock-days and 84 section-days refreshed, 17 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Thu 05 Nov 08:53 UK time
+  feeds: 60/60 worked, 97 new items (38 excluded by rules, 14 Google queries resting this hour)
+  filings: 83/90 companies checked, 0 new filings
+  stories: 1346 grouped, 543 name a watched stock or pass the market rules
+  AI trending line rejected (reads like advice or a prediction: portfolio): 'Helios Towers reports record tenancy additions across its tower portfolio, and now expects full-year results toward the upper end of its gui'
+  site: 401 stories live, 1 new AI lines. Top: SpaceX signs deal with Qualcomm to provide network technology for U.S. mobile service. Most covered stock: QCOM
+  trends: 874 stock-days and 84 section-days refreshed, 17 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
