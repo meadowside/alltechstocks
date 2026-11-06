@@ -1,7 +1,9 @@
-All Tech Stocks run: auto at Fri 06 Nov 17:53 UK time
-  feeds: 60/60 worked, 145 new items (53 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 06 Nov 18:53 UK time
+  feeds: 60/60 worked, 139 new items (43 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1368 grouped, 554 name a watched stock or pass the market rules
-  site: 393 stories live, 3 new AI lines. Top: Protesters break into Microsoft data center site in Amsterdam. Most covered stock: NVDA
-  trends: 950 stock-days and 84 section-days refreshed, 18 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  stories: 1353 grouped, 549 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: a sell): 'Executives at major technology firms, including OpenAI, Arm and Qualcomm, have publicly expressed confidence in continued growth in artifici'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only a headline, and it doesn't name the specific regulation, the regulator, or any figures for lost revenue. Without tho"
+  site: 398 stories live, 1 new AI lines. Top: Microsoft Is Winding Down Oracle Deal to Rent AI Cloud Capacity. Most covered stock: NVDA
+  trends: 954 stock-days and 84 section-days refreshed, 18 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
