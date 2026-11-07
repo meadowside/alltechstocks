@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Sat 07 Nov 00:53 UK time
-  feeds: 60/60 worked, 85 new items (30 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1317 grouped, 527 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: a sell): 'Executives at major technology firms, including those at OpenAI, Arm and Qualcomm, have publicly expressed confidence in continued growth ac'
-  AI line rejected (reads like advice or a prediction: valuation): 'Anthropic, the AI developer behind the Claude models, is reported to be facing investor scepticism over its expected stock market listing. R'
-  site: 380 stories live, 1 new AI lines. Top: Microsoft Is Winding Down Oracle Deal to Rent AI Cloud Capacity. Most covered stock: MSFT
-  trends: 961 stock-days and 80 section-days refreshed, 18 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Sat 07 Nov 01:53 UK time
+  feeds: 60/60 worked, 57 new items (20 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 3 new filings
+  stories: 1307 grouped, 526 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: a sell): 'Executives at OpenAI, Arm and Qualcomm have spoken optimistically about artificial intelligence growth following a sell-off in the sector af'
+  site: 376 stories live, 0 new AI lines. Top: Microsoft Is Winding Down Oracle Deal to Rent AI Cloud Capacity. Most covered stock: MSFT
+  trends: 962 stock-days and 82 section-days refreshed, 19 days of history
+  AI lines: 0 written, 1 rejected, 0 failed calls
