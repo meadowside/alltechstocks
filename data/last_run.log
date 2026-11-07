@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sat 07 Nov 12:53 UK time
-  feeds: 60/60 worked, 109 new items (40 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 07 Nov 13:53 UK time
+  feeds: 60/60 worked, 112 new items (41 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1205 grouped, 497 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: valuation): 'Anthropic is reportedly weighing a public listing at a valuation below the $1.5 trillion some had expected, as investor enthusiasm for AI co'
-  site: 327 stories live, 1 new AI lines. Top: Key Republicans seek briefing from Nvidia CEO over Chinese spy allegations-document. Most covered stock: NVDA
-  trends: 974 stock-days and 84 section-days refreshed, 19 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  stories: 1187 grouped, 489 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives too little detail to say what CrowdStrike's two deals involve, and the headline alone does not name the counterparties, p"
+  site: 318 stories live, 2 new AI lines. Top: Key Republicans seek briefing from Nvidia CEO over Chinese spy allegations-document. Most covered stock: NVDA
+  trends: 977 stock-days and 84 section-days refreshed, 19 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
