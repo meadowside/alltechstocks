@@ -1,11 +1,9 @@
-All Tech Stocks run: auto at Mon 09 Nov 22:53 UK time
-  feeds: 59/59 worked, 205 new items (95 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 734 grouped, 311 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage describes Ark Invest, the fund run by Cathie Wood, buying $96 million of SpaceX, which is private and so not listed, alongside '
-  AI line rejected (reads like advice or a prediction: investing): "Alphabet's Wing unit has committed $125 million to manufacturing for its drone delivery business. The spend points to a move from trials tow"
-  AI trending line rejected (26 words): 'Goldman Sachs says it sees continued investor demand for financing AI infrastructure, even as the sector has been volatile and data centre p'
+All Tech Stocks run: auto at Mon 09 Nov 23:53 UK time
+  feeds: 59/59 worked, 129 new items (39 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 5 new filings
+  stories: 739 grouped, 315 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
   indexnow: 0 URLs queued for after deploy
-  site: 267 stories live, 3 new AI lines. Top: AMD Stock Pops. It’s About Much More Than the Jensen Huang Probe.. Most covered stock: NVDA
-  trends: 1060 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 3 written, 3 rejected, 0 failed calls
+  site: 276 stories live, 2 new AI lines. Top: AMD Stock Pops. It’s About Much More Than the Jensen Huang Probe.. Most covered stock: NVDA
+  trends: 1062 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
