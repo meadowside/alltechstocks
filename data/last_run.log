@@ -1,11 +1,10 @@
-All Tech Stocks run: auto at Mon 09 Nov 18:53 UK time
-  feeds: 59/59 worked, 153 new items (71 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 727 grouped, 297 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: returns): 'Lam Research has announced a $25 billion share buyback, a move that returns cash to shareholders rather than changing its chipmaking operati'
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, bought about $96 million of SpaceX and added to its holdings in Nvidia and AMD. It also trimmed its'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline and the CEO\'s remark that AMD is a "data center first company", with no figures or detail on pricing, s'
+All Tech Stocks run: auto at Mon 09 Nov 19:53 UK time
+  feeds: 59/59 worked, 120 new items (36 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 9 new filings
+  stories: 729 grouped, 300 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which reports a share price rise tied to a $25 billion buyback by Lam Research, a maker of chip-making'
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
   indexnow: 0 URLs queued for after deploy
-  site: 231 stories live, 1 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1055 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 1 written, 3 rejected, 0 failed calls
+  site: 241 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1058 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
