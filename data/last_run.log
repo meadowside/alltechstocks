@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Mon 09 Nov 14:53 UK time
-  feeds: 59/59 worked, 260 new items (89 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 15:53 UK time
+  feeds: 59/59 worked, 183 new items (77 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 733 grouped, 287 name a watched stock or pass the market rules
-  AI trending line rejected (30 words): 'A US senator has asked Alphabet to offer a version of Google Search without AI features for schools, a request that would affect how its edu'
+  stories: 725 grouped, 279 name a watched stock or pass the market rules
+  AI trending line rejected (30 words): 'Meta is widening its AI age checks globally, which moves more suspected teens into restricted Teen Account settings and could shape how many'
+  AI trending line rejected (30 words): 'ByteDance, which is private and not listed, is reportedly considering more data centre capacity in Brazil, a sign of its ongoing investment '
   indexnow: 0 URLs queued for after deploy
-  site: 189 stories live, 3 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1048 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+  site: 196 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1049 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
