@@ -1,10 +1,11 @@
-All Tech Stocks run: auto at Mon 09 Nov 19:53 UK time
-  feeds: 59/59 worked, 120 new items (36 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 9 new filings
-  stories: 729 grouped, 300 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which reports a share price rise tied to a $25 billion buyback by Lam Research, a maker of chip-making'
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
+All Tech Stocks run: auto at Mon 09 Nov 20:53 UK time
+  feeds: 59/59 worked, 106 new items (38 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 730 grouped, 299 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which reports a $25 billion share buyback at Lam Research and a rebound in chip stocks. No detail is a'
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, a private company that is not listed on any exchange, and added t'
+  AI trending line rejected (29 words): "Nvidia's board has opened an internal investigation into CEO Jensen Huang, which could weigh on leadership and governance, though the compan"
   indexnow: 0 URLs queued for after deploy
-  site: 241 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  site: 243 stories live, 2 new AI lines. Top: AMD Stock Pops. It’s About Much More Than the Jensen Huang Probe.. Most covered stock: NVDA
   trends: 1058 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+  AI lines: 2 written, 3 rejected, 0 failed calls
