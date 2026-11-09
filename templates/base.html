@@ -255,6 +255,9 @@ ul.filings .when { color: var(--muted); font-size: 12px; }
 ul.filings b { font-weight: 600; }
 .price-box { min-height: 120px; border: 1px dashed var(--rule); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
 .price-box.on { border: 0; padding: 0; }
+/* When the page is dark, browsers paint a white backdrop behind any iframe whose own colour scheme differs.
+   TradingView's frames are transparent, so give them the default scheme and they show the dark page through. */
+.price-box iframe { color-scheme: normal; }
 .price-box p { margin: 0; color: var(--muted); font-size: 13.5px; }
 .price-box button { align-self: flex-start; font: 600 14px var(--sans); background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
 [data-theme="dark"] .price-box button { color: #0b1730; }
