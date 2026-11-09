@@ -1,10 +1,11 @@
-All Tech Stocks run: auto at Mon 09 Nov 17:53 UK time
-  feeds: 59/59 worked, 160 new items (63 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 18:53 UK time
+  feeds: 59/59 worked, 153 new items (71 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 721 grouped, 283 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which reports that Lam Research shares rose after the company announced a $25 billion buyback, and tha'
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
+  stories: 727 grouped, 297 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: returns): 'Lam Research has announced a $25 billion share buyback, a move that returns cash to shareholders rather than changing its chipmaking operati'
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, bought about $96 million of SpaceX and added to its holdings in Nvidia and AMD. It also trimmed its'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline and the CEO\'s remark that AMD is a "data center first company", with no figures or detail on pricing, s'
   indexnow: 0 URLs queued for after deploy
-  site: 216 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1052 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 2 written, 2 rejected, 0 failed calls
+  site: 231 stories live, 1 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1055 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 1 written, 3 rejected, 0 failed calls
