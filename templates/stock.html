@@ -123,6 +123,9 @@
   }
   function load() {
     if (window.tvLoaded) return; window.tvLoaded = true;
+    render();
+  }
+  function render() {
     var sym = box.dataset.symbol;
     box.innerHTML = ""; box.classList.add("on");
     box.appendChild(widget("https://s3.tradingview.com/external-embedding/embed-widget-symbol-info.js",
@@ -140,6 +143,8 @@
   // Clicking loads the chart on this page only. It doesn't switch on Google Analytics.
   document.getElementById("price-load").addEventListener("click", load);
   document.addEventListener("ats-consent", load);
+  // TradingView sits in an iframe our CSS can't reach, so rebuild it in the new colours.
+  document.addEventListener("ats-theme", function () { if (window.tvLoaded) render(); });
 })();
 </script>
 {% endif %}
