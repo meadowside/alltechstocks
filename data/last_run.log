@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 09 Nov 04:53 UK time
-  feeds: 59/60 worked, 86 new items (15 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 05:53 UK time
+  feeds: 60/60 worked, 105 new items (23 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 650 grouped, 259 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares rose): 'AMD shares rose more than 11% in one day as the broader AI chip sector rebounded from a steep selloff, though the Philadelphia Semiconductor'
-  site: 119 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1016 stock-days and 84 section-days refreshed, 21 days of history
+  stories: 662 grouped, 258 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares rose): "AMD's shares rose more than 11% in a single session as AI chip stocks recovered from a sharp selloff. The wider Philadelphia Semiconductor I"
+  site: 123 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1020 stock-days and 84 section-days refreshed, 21 days of history
   AI lines: 2 written, 1 rejected, 0 failed calls
