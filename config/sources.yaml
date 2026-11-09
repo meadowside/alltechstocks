@@ -133,7 +133,7 @@ sources:
 
   - id: times-business
     name: The Times
-    url: https://news.google.com/rss/search?q=site:thetimes.com/business-money+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    url: https://news.google.com/rss/search?q=site:thetimes.com+when:2d&hl=en-GB&gl=GB&ceid=GB:en
     domain: thetimes.com
     google: true
     tier: 1
@@ -187,8 +187,8 @@ sources:
 
   - id: proactive
     name: Proactive Investors
-    url: https://news.google.com/rss/search?q=site:proactiveinvestors.co.uk+(technology+OR+software+OR+tech)+when:1d&hl=en-GB&gl=GB&ceid=GB:en
-    domain: proactiveinvestors.co.uk
+    url: https://news.google.com/rss/search?q=site:proactiveinvestors.com+(technology+OR+software+OR+tech)+when:1d&hl=en-GB&gl=GB&ceid=GB:en
+    domain: proactiveinvestors.com
     google: true
     tier: 2
     weight: 2
@@ -234,14 +234,7 @@ sources:
     weight: 2
     sections: [results, companies]
 
-  - id: alliance-news
-    name: Alliance News
-    url: https://news.google.com/rss/search?q=site:alliancenews.com+when:1d&hl=en-GB&gl=GB&ceid=GB:en
-    domain: alliancenews.com
-    google: true
-    tier: 2
-    weight: 2
-    sections: [results, companies]
+  # Alliance News removed Nov 2026: Google News doesn't index alliancenews.com, so the search never returned anything.
 
   - id: moneyweek
     name: MoneyWeek

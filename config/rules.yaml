@@ -238,6 +238,13 @@ exclude:
   summary_keywords: ["apply now", "job description", "salary:", "closing date", "the motley fool",
                      "zacks rank", "stocks to buy"]
   title_keyword_exceptions: [launch, launches, launched]
+  # Whole titles that are never an article (section pages and forms picked up by Google News).
+  # Matched against the full headline only, so real news containing these words is safe.
+  junk_titles: [news, business news, latest news, more news, the latest, market news, press releases,
+                consultation response form, your response, technology, tech news]
+  # Items found through Google News need at least this many words in the headline. Shorter
+  # ones are nearly always section pages ("Markets"), author pages or company names.
+  google_min_title_words: 3
   # For stocks marked business_only in watchlist.yaml: a headline naming only that stock needs one of
   # these words to run, so "Meet the Rising Stars of Netflix's The Body" stays out and layoffs stay in.
   business_words: [shares, stock, stocks, investor, investors, earnings, results, revenue, revenues, profit,

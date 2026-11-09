@@ -34,6 +34,8 @@ TIP_TITLE = re.compile(
     r"\b(stock|shares)\b.{0,30}\b(could|will|set to|poised to) (see|drop|fall|plunge|soar|surge|rise|double|triple|crash|tank)\b",
     re.IGNORECASE)
 # Quote and profile pages: "SHOP | Shopify Inc. Cl A Profile", "Marvell Stock Grades | MRVL".
+# A stock quote page title: "BIOA.OQ", "1598stat.TW", "WKHS.MX".
+TICKER_TITLE = re.compile(r"^[A-Za-z0-9^]{1,12}\.[A-Z]{1,3}$")
 QUOTE_PAGE = re.compile(r"^[A-Z][A-Z.]{0,5}\s+\||\|\s*[A-Z][A-Z.]{0,5}\s*$")
 # Pirate live-stream spam planted on hijacked sites: "𝚆𝙰𝚃𝙲𝙷 ... Live Streams", "【LIVESTREAMS】",
 # "Ｒｅｄｄｉｔ Ｓｔｒｅａｍｓ". Fancy Unicode letters or the usual stream words give it away.
@@ -52,6 +54,8 @@ class Rules:
         self.title_keywords = [k.lower() for k in ex["title_keywords"]] + [k.lower() for k in ex.get("law_firm_adverts", [])]
         self.title_exceptions = [k.lower() for k in ex.get("title_keyword_exceptions", [])]
         self.summary_keywords = [k.lower() for k in ex.get("summary_keywords", [])]
+        self.junk_titles = {k.lower().strip() for k in ex.get("junk_titles", [])}
+        self.google_min_words = int(ex.get("google_min_title_words", 3))
         self.wraps = [k.lower() for k in ex.get("wrap_patterns", [])]
         self.outlets = [k.lower() for k in ex.get("outlets", [])]
         self.tagger = Tagger(cfg)
@@ -78,6 +82,21 @@ class Rules:
         return bool(found) and found <= self.business_only and not self.business_re.search(title)
 
     # ---------- exclusions ----------
+    def junk_reason(self, title: str, url: str = "") -> str | None:
+        """Google News searches pick up pages that aren't articles: section fronts ("Markets", "FX Center"),
+        author pages ("Mark Zuckerberg", "Alex Stamos"), print pages ("Page A11"), stock quote pages
+        ("WKHS.MX") and items whose headline is only the outlet's name ("- Arm Newsroom")."""
+        t = (title or "").strip().lstrip("-–| ").strip()
+        if not re.search(r"[A-Za-z]{2}", t) and not re.search(r"[^\x00-\x7f]{4}", t):
+            return "title:no headline"
+        if TICKER_TITLE.match(t):
+            return "title:stock quote page"
+        if t.lower() in self.junk_titles or re.match(r"^page [a-z]?_?\d+$", t.lower()):
+            return "title:not an article"
+        if "news.google.com" in (url or "") and len(t.split()) < self.google_min_words:
+            return "title:too short for a headline"
+        return None
+
     def exclusion_reason(self, title: str, url: str, summary: str = "", outlet: str = "") -> str | None:
         o = (outlet or "").lower()
         for k in self.outlets:
@@ -91,6 +110,9 @@ class Rules:
         for k in self.summary_keywords:
             if k in sm:
                 return f"summary:{k}"
+        junk = self.junk_reason(title, u)
+        if junk:
+            return junk
         if SPAM_TITLE.search(title or ""):
             return "title:stream spam"
         if REVIEW_TITLE.search(title or ""):
