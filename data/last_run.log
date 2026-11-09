@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Mon 09 Nov 10:53 UK time
-  feeds: 60/60 worked, 137 new items (45 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 11:53 UK time
+  feeds: 60/60 worked, 190 new items (62 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 676 grouped, 263 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Nvidia's Korea deals are proceeding despite a probe involving chief executive Jensen Huang,"
+  stories: 669 grouped, 261 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 135 stories live, 1 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1032 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 138 stories live, 3 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1033 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 3 written, 0 rejected, 0 failed calls
