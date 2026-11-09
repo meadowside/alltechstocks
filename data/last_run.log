@@ -1,11 +1,10 @@
-All Tech Stocks run: auto at Mon 09 Nov 16:53 UK time
-  feeds: 59/59 worked, 193 new items (72 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 17:53 UK time
+  feeds: 59/59 worked, 160 new items (63 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 736 grouped, 281 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The only detail available is the headline itself: Lam Research has announced a $25 billion share buyback, and its stock rose as chip stocks '
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX shares, which is not a listed stock, and added to its holdings of '
-  AI trending line rejected (29 words): 'Meta is widening its AI age detection to find teens who gave adult birthdays, moving more under Teen Account protections and changing how ma'
+  stories: 721 grouped, 283 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which reports that Lam Research shares rose after the company announced a $25 billion buyback, and tha'
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
   indexnow: 0 URLs queued for after deploy
-  site: 204 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1050 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 2 written, 3 rejected, 0 failed calls
+  site: 216 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1052 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
