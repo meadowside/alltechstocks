@@ -1,12 +1,31 @@
 {% extends "base.html" %}
 {% from "_macros.html" import row, coverage, src_line, chips with context %}
+{% block title %}Tech Stock News Today: US and UK Tech Stocks | {{ site.name }}{% endblock %}
+{% block description %}Today's tech stock news for US and UK listed companies, ranked by how many outlets are covering each story. Updated every hour. News for research, not financial advice.{% endblock %}
+{% block og_title %}Tech Stock News Today: US and UK Tech Stocks | {{ site.name }}{% endblock %}
+{% block og_description %}{{ self.description() }}{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"{{ site.url }}/#website","url":"{{ site.url }}/","name":"{{ site.name }}","inLanguage":"en-GB","publisher":{"@id":"{{ site.url }}/#org"}},
+{"@type":"Organization","@id":"{{ site.url }}/#org","name":"{{ site.name }}","url":"{{ site.url }}/","logo":"{{ site.url }}/logo-512.png","founder":{"@type":"Person","@id":"{{ site.url }}/about.html#editor","name":"Andy Wood"}},
+{"@type":"CollectionPage","url":"{{ site.url }}/","name":"Tech stock news today","isPartOf":{"@id":"{{ site.url }}/#website"},"dateModified":"{{ modified }}",
+ "mainEntity":{{ {"@type": "ItemList", "itemListOrder": "https://schema.org/ItemListOrderDescending",
+   "itemListElement": item_list(([top] if top else []) + (sections | map(attribute="stories") | map("first_n", 4) | sum(start=[])))} | tojson }}}
+]}
+</script>
+{% endblock %}
 {% block main %}
+<div class="home-head">
+  <h1>Tech stock news today</h1>
+  <p>The latest news on US and UK listed tech stocks for {{ today }}, ranked by how many outlets are covering each story.</p>
+</div>
 {% if top %}
 <article class="lead-story">
   <div class="big-count"><b>{{ top.source_count }}</b><span>outlets <br>covering this</span></div>
   <div class="lead-body">
     <div class="label">Top story right now</div>
-    <h1><a href="{{ top.link }}" rel="noopener" target="_blank">{{ top.headline }}</a></h1>
+    <h2><a href="{{ top.link }}" rel="noopener" target="_blank">{{ top.headline }}</a></h2>
     {% if top.teaser %}<p class="teaser">{{ top.teaser }}</p>{% endif %}
     {{ src_line(top) }}
   </div>

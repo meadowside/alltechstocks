@@ -1,0 +1,11 @@
+{% extends "pages/_page.html" %}
+{% block title %}Tech Stock News Sources | {{ site.name }}{% endblock %}
+{% block description %}The financial papers, markets titles, tech press and company newsrooms {{ site.name }} reads every hour to rank US and UK tech stock news.{% endblock %}
+{% block body %}
+<p class="lede">The financial papers, markets titles and tech press we read every hour to rank <a href="./">today's tech stock news</a>. We also run news searches for every stock we follow.</p>
+{% for group in source_groups %}
+<h2>{{ group.name }}</h2>
+<p>{{ group.sources | join(", ") }}</p>
+{% endfor %}
+<p>Each outlet counts once per story, and the major financial papers count for more. For US companies we also list SEC filings from EDGAR. <a href="about.html">How the ranking works</a>.</p>
+{% endblock %}

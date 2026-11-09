@@ -13,8 +13,9 @@
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{% block og_title %}{{ site.name }}: {{ site.tagline }}{% endblock %}">
-<meta property="og:description" content="The US and UK tech stock stories the most outlets are covering, ranked and updated every hour. News for research, not advice.">
-<meta property="og:url" content="{% block og_url %}{{ site.url }}/{{ page if page not in ('home', None) else 'index' }}.html{% endblock %}">
+<meta property="og:description" content="{% block og_description %}The US and UK tech stock stories the most outlets are covering, ranked and updated every hour. News for research, not advice.{% endblock %}">
+<meta property="og:url" content="{% block og_url %}{{ site.url }}/{% if page not in ('home', None) %}{{ page }}.html{% endif %}{% endblock %}">
+{% block canonical %}{% if page != 'status' %}<link rel="canonical" href="{{ site.url }}/{% if page not in ('home', None) %}{{ page }}.html{% endif %}">{% endif %}{% endblock %}
 <meta name="twitter:card" content="summary">
 {% block head %}{% endblock %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,7 +93,10 @@ main.wrap { padding-top: 24px; padding-bottom: 48px; }
 .big-count { border-right: 1px solid var(--rule); padding-right: 20px; text-align: center; align-self: start; }
 .big-count b { display: block; font: 700 64px/1 var(--serif); color: var(--accent); letter-spacing: -2px; }
 .big-count span { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.3; }
-.lead-body h1 { font: 700 30px/1.2 var(--serif); margin: 4px 0 8px; letter-spacing: -0.3px; }
+.lead-body h2 { font: 700 30px/1.2 var(--serif); margin: 4px 0 8px; letter-spacing: -0.3px; }
+.home-head { margin: 0 0 18px; }
+.home-head h1 { font: 700 28px/1.2 var(--serif); margin: 0 0 4px; letter-spacing: -0.3px; }
+.home-head p { color: var(--muted); margin: 0; }
 .lead-body .teaser { font-size: 16px; color: var(--muted); margin: 0 0 10px; }
 .lead-story .why { grid-column: 1 / -1; margin: 0; padding: 12px 14px; background: var(--accent-soft); border-radius: 8px; font-size: 14.5px; }
 .coverage { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; font-size: 13px; }
@@ -277,7 +281,8 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
   .big-count { border-right: 0; padding-right: 0; text-align: left; display: flex; align-items: baseline; gap: 8px; }
   .big-count b { font-size: 44px; }
   .big-count span br { display: none; }
-  .lead-body h1 { font-size: 24px; }
+  .lead-body h2 { font-size: 24px; }
+  .home-head h1 { font-size: 24px; }
   .section { padding: 14px 16px 4px; }
   .brand { font-size: 26px; }
   .updated { display: none; }
@@ -289,7 +294,7 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
   <div class="wrap">
     <div class="masthead">
       <div>
-        <a class="brand" href="{{ root }}index.html">All Tech <span class="hl-word">Stocks</span></a>
+        <a class="brand" href="{{ root or './' }}">All Tech <span class="hl-word">Stocks</span></a>
         <div class="tagline">{{ site.tagline }}</div>
       </div>
       <div class="mast-right">
@@ -302,7 +307,7 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
       </div>
     </div>
     <nav class="sections" aria-label="Sections">
-      <a href="{{ root }}index.html" class="{{ 'on' if page == 'home' }}">Top</a>
+      <a href="{{ root or './' }}" class="{{ 'on' if page == 'home' }}">Top</a>
       <a href="{{ root }}us.html" class="{{ 'on' if page == 'us' }}">US</a>
       <a href="{{ root }}uk.html" class="{{ 'on' if page == 'uk' }}">UK</a>
       {% for id, name in nav %}<a href="{{ root }}{{ id }}.html" class="{{ 'on' if page == id }}">{{ name }}</a>{% endfor %}
@@ -371,7 +376,7 @@ ol.plain a.h { font: 600 15.5px/1.35 var(--serif); }
     <p><b>Not financial advice.</b> {{ disclaimer }}</p>
     <p>Every headline links to the publisher that wrote it. {{ site.name }} ranks US and UK tech stock news by how many outlets cover it and refreshes every hour. &copy; {{ year }} {{ site.name }}.</p>
     <nav aria-label="Site information">
-      <a href="{{ root }}about.html">About</a><a href="{{ root }}privacy.html">Privacy</a><a href="{{ root }}terms.html">Terms</a><a href="{{ root }}contact.html">Contact</a><a href="#" id="cookie-settings">Cookie settings</a>
+      <a href="{{ root }}stocks/">All stocks</a><a href="{{ root }}top-10/">Weekly top 10</a><a href="{{ root }}about.html">About</a><a href="{{ root }}about.html#editor">Editor</a><a href="{{ root }}sources.html">Sources</a><a href="{{ root }}privacy.html">Privacy</a><a href="{{ root }}terms.html">Terms</a><a href="{{ root }}contact.html">Contact</a><a href="#" id="cookie-settings">Cookie settings</a>
     </nav>
   </div>
 </footer>

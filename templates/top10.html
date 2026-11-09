@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% set when = w.end.strftime("%-d %B %Y") %}
+{% set url = site.url ~ "/top-10/" ~ w.slug %}
+{% block title %}Most Covered Tech Stocks, Week to {{ when }} | {{ site.name }}{% endblock %}
+{% block og_title %}The most covered tech stocks, week to {{ when }}{% endblock %}
+{% block description %}{{ w.summary }}{% endblock %}
+{% block og_description %}{{ w.summary }}{% endblock %}
+{% block og_url %}{{ url }}{% endblock %}
+{% block canonical %}<link rel="canonical" href="{{ url }}">{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{{ w.jsonld | tojson }}
+</script>
+<style>
+{% include "_rank_table.css" %}
+.wk-crumbs { font-size: 13px; color: var(--muted); margin: 0 0 10px; }
+.wk-crumbs a, .wk-nav a { color: var(--accent-ink); }
+.wk-head h1 { font: 700 30px/1.15 var(--serif); margin: 0 0 8px; letter-spacing: -0.3px; }
+.wk-head .answer { font-size: 16.5px; line-height: 1.55; margin: 0 0 8px; max-width: 760px; }
+.wk-head .sub { color: var(--muted); margin: 0 0 18px; }
+.wk-tables .section { margin-bottom: 22px; }
+.rank-table .tk { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
+.wk-nav { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin: 4px 0 0; font-size: 14px; }
+@media (max-width: 560px) { .wk-head h1 { font-size: 24px; } }
+</style>
+{% endblock %}
+{% block main %}
+<p class="wk-crumbs"><a href="./">Weekly top 10</a> / Week to {{ when }}</p>
+<div class="wk-head">
+  <h1>The most covered tech stocks, week to {{ when }}</h1>
+  <p class="answer">{{ w.summary }}</p>
+  <p class="sub">{{ w.start.strftime("%A %-d %B") }} to {{ w.end.strftime("%A %-d %B %Y") }}. Ranked by how many headlines named each company across the financial and tech press {{ site.name }} follows. Coverage only, not investment advice.</p>
+</div>
+<div class="wk-tables">
+{% for key, rows in w.lists.items() %}
+<section class="section">
+  <div class="section-head"><h2>Most covered {{ lists[key] }}</h2></div>
+  <div class="rank-wrap">
+  <table class="rank-table">
+    <thead><tr><th scope="col">#</th><th scope="col">Company</th><th scope="col" class="num">Headlines</th><th scope="col" class="num">Outlets</th><th scope="col" class="wide">Most covered story</th></tr></thead>
+    <tbody>
+    {% for r in rows %}
+    <tr>
+      <td class="rk">{% if r.joint %}<small>=</small>{% endif %}{{ r.rank }}</td>
+      <td><a href="../stocks/{{ r.slug }}.html">{{ r.name }}</a> <span class="tk">{{ r.exchange }}: {{ r.symbol }}</span></td>
+      <td class="num">{{ r.headlines }}</td>
+      <td class="num">{{ r.outlets }}</td>
+      <td class="wide">{% if r.biggest %}<a href="{{ r.biggest.link }}" rel="noopener" target="_blank">{{ r.biggest.headline }}</a> <span class="o">{{ r.biggest.outlet }}</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</section>
+{% endfor %}
+</div>
+<p class="rank-note">= means joint. Only the {{ stocks|length }} <a href="../stocks/">US and UK tech stocks we follow</a> are ranked. A headline counts for a company when it names it. Company press releases and exchange announcements don't count. <a href="../about.html">How the ranking works</a>.</p>
+<div class="wk-nav">
+  <span>{% if w.prev %}<a href="{{ w.prev.slug }}">&larr; Week to {{ w.prev.end.strftime("%-d %B") }}</a>{% endif %}</span>
+  <a href="./">All weeks</a>
+  <span>{% if w.next %}<a href="{{ w.next.slug }}">Week to {{ w.next.end.strftime("%-d %B") }} &rarr;</a>{% endif %}</span>
+</div>
+{% endblock %}

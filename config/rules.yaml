@@ -13,6 +13,9 @@ site:
   formspree_id: "https://formspree.io/f/xjyyvjqd"
   # Google Analytics 4 Measurement ID, e.g. "G-ABC123XYZ". Blank = no analytics and no cookie banner.
   ga_id: "G-YV69WTHYP0"
+  # IndexNow tells Bing (and so ChatGPT search and Copilot) about new and changed pages straight away.
+  # The key is public by design: the same value sits in static/<key>.txt. Blank turns it off.
+  indexnow_key: "b96f8b12fc4ddd764f71093dd96b22f0"
 
 # The disclaimer shown on every page and in every email. Keep it plain.
 disclaimer: >-
@@ -47,31 +50,43 @@ sec:
 sections:
   - id: results
     name: Results & Outlook
+    heading: Tech Earnings and Results News Today      # page title and main heading on the section page
+    blurb: The latest results, forecasts and guidance from US and UK tech companies.
     email_min: 3
     email_max: 8
     site_max: 10
   - id: deals
     name: Deals & Listings
+    heading: Tech Deals, Mergers and IPO News Today
+    blurb: The latest takeovers, mergers, stock market listings and big deals in tech.
     email_min: 3
     email_max: 6
     site_max: 10
   - id: ai
     name: AI
+    heading: AI Stock News Today
+    blurb: The latest news on the listed companies building and selling AI.
     email_min: 3
     email_max: 6
     site_max: 10
   - id: chips
     name: Chips & Hardware
+    heading: Chip and Semiconductor Stock News Today
+    blurb: The latest news on chipmakers, chip designers and hardware companies.
     email_min: 2
     email_max: 6
     site_max: 10
   - id: regulation
     name: Regulation & Legal
+    heading: Tech Regulation and Legal News Today
+    blurb: The latest lawsuits, regulator decisions and government rules affecting listed tech companies.
     email_min: 2
     email_max: 5
     site_max: 10
   - id: companies
     name: Companies & Markets
+    heading: Tech Company and Market News Today
+    blurb: The rest of today's news on US and UK listed tech companies and tech shares.
     email_min: 2
     email_max: 6
     site_max: 10

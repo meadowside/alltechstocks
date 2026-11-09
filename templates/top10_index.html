@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Most covered tech stocks each week | {{ site.name }}{% endblock %}
+{% block og_title %}Most covered tech stocks each week{% endblock %}
+{% block description %}Every week's ranking of the US and UK tech stocks the financial and tech press wrote about most. Coverage only, not investment advice.{% endblock %}
+{% block og_description %}{{ self.description() }}{% endblock %}
+{% block og_url %}{{ site.url }}/top-10/{% endblock %}
+{% block canonical %}<link rel="canonical" href="{{ site.url }}/top-10/">{% endblock %}
+{% block head %}
+<style>
+.wk-head h1 { font: 700 30px/1.15 var(--serif); margin: 0 0 8px; letter-spacing: -0.3px; }
+.wk-head p { color: var(--muted); margin: 0 0 18px; max-width: 760px; }
+ul.weeks { list-style: none; margin: 0; padding: 0; }
+ul.weeks li { padding: 14px 0; border-bottom: 1px solid var(--rule); }
+ul.weeks li:last-child { border-bottom: 0; }
+ul.weeks a { font: 600 17px var(--serif); }
+ul.weeks p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+</style>
+{% endblock %}
+{% block main %}
+<div class="wk-head">
+  <h1>Most covered tech stocks each week</h1>
+  <p>Every Monday we rank the US and UK tech stocks the press named most in the week before. It shows how much was written, not whether the shares are worth buying. Each week stays here as a permanent record.</p>
+</div>
+<section class="section">
+  <ul class="weeks">
+    {% for w in weeks %}
+    <li><a href="{{ w.slug }}">Week to {{ w.end.strftime("%-d %B %Y") }}</a><p>{{ w.summary }}</p></li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

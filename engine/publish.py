@@ -22,12 +22,21 @@ def _env() -> Environment:
     env = Environment(loader=FileSystemLoader(TEMPLATES), autoescape=select_autoescape(["html"], default_for_string=False, default=False))
     env.filters["ago"] = _ago
     env.filters["md"] = _md
+    env.filters["first_n"] = lambda xs, n: list(xs)[:n]
+    env.globals["item_list"] = _item_list
     env.filters["day"] = lambda d: d.strftime("%-d %b")
     env.filters["iso"] = parse_iso
     return env
 
 
 _NOW: datetime | None = None
+
+
+def _item_list(stories) -> list[dict]:
+    """Ranked stories as schema.org ListItems, for the structured data on the home, section and market pages.
+    Each points at the publisher's article, the same link the headline uses."""
+    return [{"@type": "ListItem", "position": i, "name": s.headline, "url": s.link}
+            for i, s in enumerate((s for s in stories if s.link and "news.google.com" not in s.link), 1)]
 
 
 def _md(text: str) -> str:
@@ -180,6 +189,28 @@ def _stock_summary(cfg: Config, db: DB, now: datetime) -> dict[str, dict]:
     return out
 
 
+def _ordinal(n: int) -> str:
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
+def stock_summary_text(stock, history: list, week: int, rank: int | None, joint: bool, ranked: int) -> str:
+    """The answer at the top of a stock's page, in plain sentences a search engine or AI tool can quote.
+    Coverage only, never anything about whether to buy or sell."""
+    first = f"{stock.name} ({stock.exchange}: {stock.symbol}) is {stock.about}." if stock.about else \
+        f"{stock.name} ({stock.exchange}: {stock.symbol}) is a {stock.market} tech company."
+    n = len(history)
+    if not n:
+        return f"{first} We haven't seen any news coverage of {stock.name} in the last 30 days."
+    latest = history[0]
+    when = parse_iso(latest["last_seen"]).astimezone(ZoneInfo("Europe/London")).strftime("%-d %B")
+    out = (f"{first} The financial and tech press has run {n} {'story' if n == 1 else 'stories'} about {stock.name} "
+           f"in the last 30 days. The latest, on {when} in {latest['outlet']}, was \u201c{latest['headline']}\u201d.")
+    if week and rank:
+        out += (f" In the last 7 days it had {week} {'story' if week == 1 else 'stories'}, "
+                f"{'joint ' if joint else ''}{_ordinal(rank)} of the {ranked} stocks we follow that were in the news.")
+    return out
+
+
 def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Path,
                email_archive: Path | None = None) -> dict:
     global _NOW
@@ -198,7 +229,8 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
             continue
         by_section[s.section].append(s)
     sections = [
-        {"id": sec["id"], "name": sec["name"], "stories": by_section[sec["id"]][: sec["site_max"]]}
+        {"id": sec["id"], "name": sec["name"], "heading": sec["heading"], "blurb": sec["blurb"],
+         "stories": by_section[sec["id"]][: sec["site_max"]]}
         for sec in cfg.sections
     ]
 
@@ -222,6 +254,8 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
         "disclaimer": cfg.rules.get("disclaimer", ""),
         "nav": [(s["id"], s["name"]) for s in cfg.sections],
         "updated": local.strftime("%-d %b %Y, %H:%M"),
+        "today": local.strftime("%A %-d %B %Y"),
+        "modified": local.isoformat(timespec="minutes"),
         "year": local.year,
         "trending": trend,
         "just_in": just_in(live, cfg),
@@ -264,6 +298,9 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
         for sym in s.tickers:
             live_by_symbol.setdefault(sym, []).append(s)
     month = now - timedelta(days=30)
+    weeks = {sym: v["week"] for sym, v in summary.items() if v["week"]}
+    wrank = {sym: 1 + sum(1 for n in weeks.values() if n > c) for sym, c in weeks.items()}
+    wjoint = {sym: list(weeks.values()).count(c) > 1 for sym, c in weeks.items()}
     for stock in cfg.stocks:
         history = db.stock_stories(month, stock.symbol)
         live_keys = set()
@@ -275,13 +312,35 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
               stock=stock, live=sorted(live_by_symbol.get(stock.symbol, []), key=lambda s: -s.score),
               older=older[:40], filings=db.filings_since(now - timedelta(days=60), stock.symbol),
               summary=summary[stock.symbol], peers=peers,
+              answer=stock_summary_text(stock, history, summary[stock.symbol]["week"], wrank.get(stock.symbol),
+                                        wjoint.get(stock.symbol, False), len(weeks)),
               results_date=(datetime.strptime(stock.results, "%Y-%m-%d") if stock.results else None),
               today=local.date())
 
-    pages = {"about": "About", "privacy": "Privacy", "terms": "Terms", "contact": "Contact"}
+    # Weekly rankings: save the last finished week, then build its permanent page. A problem here
+    # must never stop the rest of the site.
+    weeks = {"urls": [], "latest": None}
+    try:
+        from . import rankings
+        rankings.save(db, cfg, now)
+        weeks = rankings.build(env, ctx, db, out)
+    except Exception as e:  # noqa: BLE001
+        print(f"  weekly rankings: failed, rest of the site unaffected ({type(e).__name__}: {e})")
+
+    tier_names = {1: "Major financial and national outlets", 2: "Markets and business titles", 3: "Tech press",
+                  4: "Company newsrooms and announcements"}
+    source_groups = []
+    for tier, label in tier_names.items():
+        names = []
+        for src in cfg.sources:
+            if src.tier == tier and src.name not in names:
+                names.append(src.name)
+        if names:
+            source_groups.append({"name": label, "sources": names})
+    pages = {"about": "About", "sources": "Tech stock news sources", "privacy": "Privacy", "terms": "Terms", "contact": "Contact"}
     for slug, title in pages.items():
         write(f"{slug}.html", f"pages/{slug}.html", page=slug, page_title=title, sidebar=False,
-              updated_date=PAGES_UPDATED)
+              updated_date=PAGES_UPDATED, source_groups=source_groups)
 
     health = db.health()
     rows = []
@@ -299,12 +358,23 @@ def build_site(stories: list[Story], db: DB, cfg: Config, now: datetime, out: Pa
           quiet=quiet, sidebar=False)
 
     host = cfg.site["url"].split("://", 1)[-1].strip("/")
-    urls = ["", "us.html", "uk.html", "stocks/"] + [f"{s}.html" for s in cfg.section_ids] + \
-           [f"stocks/{s.slug}.html" for s in cfg.stocks] + ["about.html"]
+    base = cfg.site["url"].rstrip("/")
+    urls = ["", "us.html", "uk.html", "stocks/"] + [f"{s}.html" for s in cfg.section_ids] + weeks["urls"] + \
+           [f"stocks/{s.slug}.html" for s in cfg.stocks] + ["about.html", "sources.html"]
+    stamp = now.strftime("%Y-%m-%d")
     (out / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        + "".join(f"  <url><loc>{cfg.site['url'].rstrip('/')}/{u}</loc></url>\n" for u in urls) + "</urlset>\n",
+        + "".join(f"  <url><loc>{base}/{u}</loc><lastmod>{stamp}</lastmod></url>\n" for u in urls) + "</urlset>\n",
         encoding="utf-8")
+    write("llms.txt", "llms.txt", sections=sections, weeks=weeks)
+    key = cfg.site.get("indexnow_key")
+    if key and hasattr(db, "path"):
+        try:
+            from . import indexnow
+            n = indexnow.plan([f"{base}/{u}" for u in urls], base, key, Path(db.path).parent, local)
+            print(f"  indexnow: {n} URLs queued for after deploy")
+        except Exception as e:  # noqa: BLE001
+            print(f"  indexnow: failed, site unaffected ({type(e).__name__}: {e})")
     (out / "robots.txt").write_text(
         f"User-agent: *\nDisallow: /status.html\nSitemap: {cfg.site['url'].rstrip('/')}/sitemap.xml\n", encoding="utf-8")
     (out / "CNAME").write_text(host + "\n", encoding="utf-8")

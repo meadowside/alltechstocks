@@ -1,4 +1,18 @@
 {% extends "pages/_page.html" %}
+{% block head %}
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is All Tech Stocks?", "acceptedAnswer": {"@type": "Answer", "text": "A news site that ranks stories about US and UK listed tech companies by how many outlets are covering them. It reads the major financial papers, markets titles and tech press every hour and links every headline to the publisher."}}, {"@type": "Question", "name": "How are stories ranked?", "acceptedAnswer": {"@type": "Answer", "text": "By coverage. Each outlet covering a story counts once, and major financial papers such as Reuters, Bloomberg and the FT count for more. Fresh stories rank above older ones. Nobody picks the order by hand."}}, {"@type": "Question", "name": "Which stocks does it follow?", "acceptedAnswer": {"@type": "Answer", "text": "About 125 tech companies headquartered in the US or UK and listed in New York or London, from Apple and Nvidia to Arm and Sage. Each has its own page, and every Monday we publish a ranking of the most covered."}}, {"@type": "Question", "name": "Is anything here financial advice?", "acceptedAnswer": {"@type": "Answer", "text": "No. A lot of coverage means a company is being talked about, not that its shares will rise or fall. We never publish tips, price targets or predictions."}}, {"@type": "Question", "name": "How often is it updated?", "acceptedAnswer": {"@type": "Answer", "text": "Every hour, around the clock, seven days a week."}}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Person", "@id": "https://alltechstocks.com/about.html#editor", "name": "Andy Wood", "jobTitle": "Editor and publisher", "image": "https://alltechstocks.com/andy-wood.jpg", "url": "https://alltechstocks.com/about.html#editor", "sameAs": ["https://www.linkedin.com/in/andyhq", "https://x.com/andyhq"], "worksFor": {"@type": "Organization", "name": "All Tech Stocks", "url": "https://alltechstocks.com/"}}
+</script>
+<style>
+.editor { display: flex; gap: 18px; align-items: flex-start; margin: 0 0 14px; }
+.editor img { border-radius: 50%; flex: none; }
+.editor p { margin: 0 0 8px; }
+@media (max-width: 520px) { .editor { flex-direction: column; } }
+</style>
+{% endblock %}
 {% block body %}
 <p class="lede">{{ site.name }} shows which US and UK listed tech companies the news is covering most, updated every hour. It's a place to start your research. It never tells you what to buy or sell.</p>
 
@@ -14,6 +28,26 @@
 <h2>What this site isn't</h2>
 <p>A lot of coverage means a company is being talked about. It doesn't mean its shares will go up, down or anywhere. We never publish tips, top picks, price targets or predictions, and we filter out other people's. Read <a href="terms.html#not-advice">why this isn't advice</a>.</p>
 
-<h2>Who runs it</h2>
-<p>{{ site.name }} is run by {{ site.owner }}, who also publishes All UK Tech, AI Prompt Hackers, Answerable and Use Case Archive. Spotted a story tagged with the wrong company, or a stock we should follow? <a href="contact.html">Get in touch</a>.</p>
+<h2>Questions</h2>
+<h3>What is All Tech Stocks?</h3>
+<p>A news site that ranks stories about US and UK listed tech companies by how many outlets are covering them. It reads the major financial papers, markets titles and tech press every hour and links every headline to the publisher.</p>
+<h3>How are stories ranked?</h3>
+<p>By coverage. Each outlet covering a story counts once, and major financial papers such as Reuters, Bloomberg and the FT count for more. Fresh stories rank above older ones. Nobody picks the order by hand.</p>
+<h3>Which stocks does it follow?</h3>
+<p>About 125 tech companies headquartered in the US or UK and listed in New York or London, from Apple and Nvidia to Arm and Sage. Each has its own page, and every Monday we publish a ranking of the most covered.</p>
+<h3>Is anything here financial advice?</h3>
+<p>No. A lot of coverage means a company is being talked about, not that its shares will rise or fall. We never publish tips, price targets or predictions.</p>
+<h3>How often is it updated?</h3>
+<p>Every hour, around the clock, seven days a week.</p>
+
+<h2 id="editor">Who runs it</h2>
+<div class="editor">
+  <img src="andy-wood.jpg" width="120" height="120" alt="Andy Wood, editor of {{ site.name }}" loading="lazy">
+  <div>
+    <p><strong>Andy Wood</strong>, editor and publisher</p>
+    <p>Andy Wood has been CEO, COO and CTO of technology businesses, including a management buyout, and worked at the European Broadcasting Union. He was twice listed in Who's Who of Britain's Business Elite. He also publishes AI Prompt Hackers, Answerable, All UK Tech and Use Case Archive under Fifth Radar.</p>
+    <p><a href="https://www.linkedin.com/in/andyhq" rel="me noopener">LinkedIn</a> / <a href="https://x.com/andyhq" rel="me noopener">X</a></p>
+  </div>
+</div>
+<p>Spotted a story tagged with the wrong company, or a stock we should follow? <a href="contact.html">Get in touch</a>.</p>
 {% endblock %}

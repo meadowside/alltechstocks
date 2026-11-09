@@ -6,3 +6,4 @@ __pycache__/
 .venv/
 tests/fixtures/
 data/sec_tickers.json.tmp
+data/indexnow_pending.json

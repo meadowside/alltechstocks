@@ -1,11 +1,19 @@
 {% extends "base.html" %}
 {% from "_macros.html" import row with context %}
-{% block title %}{{ section.name }}: {{ site.name }}{% endblock %}
-{% block og_title %}{{ section.name }} news, ranked by who's covering it: {{ site.name }}{% endblock %}
+{% block title %}{{ section.heading }} | {{ site.name }}{% endblock %}
+{% block og_title %}{{ section.heading }} | {{ site.name }}{% endblock %}
+{% block description %}{{ section.blurb }} Ranked by how many outlets are covering each story and updated every hour.{% endblock %}
+{% block og_description %}{{ self.description() }}{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","url":"{{ site.url }}/{{ section.id }}.html","name":"{{ section.heading }}","inLanguage":"en-GB","isPartOf":{"@type":"WebSite","url":"{{ site.url }}/","name":"{{ site.name }}"},"dateModified":"{{ modified }}",
+ "mainEntity":{{ {"@type": "ItemList", "itemListOrder": "https://schema.org/ItemListOrderDescending", "itemListElement": item_list(stories)} | tojson }}}
+</script>
+{% endblock %}
 {% block main %}
 <div class="page-head">
-  <h1>{{ section.name }}</h1>
-  <p>Most covered puts the biggest stories first. Latest shows the newest first.</p>
+  <h1>{{ section.heading }}</h1>
+  <p>{{ section.blurb }} Most covered puts the biggest stories first. Latest shows the newest first.</p>
 </div>
 <div class="order-switch" role="tablist" aria-label="Sort stories">
   <button type="button" role="tab" aria-selected="true" data-show="covered">Most covered</button>

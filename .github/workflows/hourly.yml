@@ -109,3 +109,7 @@ jobs:
       - id: deploy
         if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly'  # a weekly run builds no pages
         uses: actions/deploy-pages@v4
+      - name: Tell Bing about new pages (IndexNow)
+        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly' && steps.deploy.outcome == 'success'
+        continue-on-error: true
+        run: python -m engine.indexnow data/indexnow_pending.json

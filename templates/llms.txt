@@ -1,0 +1,23 @@
+# {{ site.name }}
+
+> {{ site.name }} ranks news about US and UK listed tech stocks by how many outlets are covering each story. It reads Reuters, Bloomberg, the FT, the Wall Street Journal, CNBC and about 40 other financial and tech sources every hour, plus SEC filings for US companies, and links every headline straight to the publisher. It follows {{ stocks|length }} tech stocks and publishes a weekly ranking of the most covered.
+
+Run by {{ site.owner }}. Updated every hour. Coverage only: nothing on the site is financial advice or a view on whether to buy or sell any share.
+
+## Today's news
+
+- [Tech stock news today]({{ site.url }}/): the most covered tech stock stories right now
+- [US tech stock news today]({{ site.url }}/us.html)
+- [UK tech stock news today]({{ site.url }}/uk.html)
+{% for sec in sections %}- [{{ sec.heading }}]({{ site.url }}/{{ sec.id }}.html): {{ sec.blurb }}
+{% endfor %}
+## Data
+
+- [Most covered tech stocks each week]({{ site.url }}/top-10/): weekly rankings by headlines naming each company, one permanent page per week
+{% if weeks.latest %}- [Latest week, to {{ weeks.latest.end.strftime("%-d %B %Y") }}]({{ site.url }}/top-10/{{ weeks.latest.slug }}): {{ weeks.latest.summary }}
+{% endif %}- [All {{ stocks|length }} stocks we follow]({{ site.url }}/stocks/): a page per stock with its recent coverage and, for US companies, SEC filings
+
+## About
+
+- [How the ranking works]({{ site.url }}/about.html)
+- [Sources we read]({{ site.url }}/sources.html)

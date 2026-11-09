@@ -1,14 +1,25 @@
 {% extends "base.html" %}
 {% from "_macros.html" import row with context %}
-{% block title %}{{ stock.name }} ({{ stock.symbol }}) news and filings: {{ site.name }}{% endblock %}
+{% block title %}{{ stock.name }} ({{ stock.symbol }}) Stock News Today | {{ site.name }}{% endblock %}
 {% block description %}The latest {{ stock.name }} ({{ stock.exchange }}: {{ stock.symbol }}) news from every major outlet{% if stock.listing == "US" %}, plus SEC filings{% endif %}, ranked by coverage. News for research, not financial advice.{% endblock %}
 {% block og_title %}{{ stock.name }} ({{ stock.symbol }}): news ranked by who's covering it{% endblock %}
 {% block og_url %}{{ site.url }}/stocks/{{ stock.slug }}.html{% endblock %}
+{% block canonical %}<link rel="canonical" href="{{ site.url }}/stocks/{{ stock.slug }}.html">{% endblock %}
+{% block head %}
+<script type="application/ld+json">
+{{ {"@context": "https://schema.org", "@type": "ProfilePage", "url": site.url ~ "/stocks/" ~ stock.slug ~ ".html",
+    "name": stock.name ~ " (" ~ stock.symbol ~ ") stock news", "description": answer, "inLanguage": "en-GB", "dateModified": modified,
+    "isPartOf": {"@type": "WebSite", "url": site.url ~ "/", "name": site.name},
+    "mainEntity": {"@type": "Corporation", "name": stock.name, "tickerSymbol": stock.exchange ~ ": " ~ stock.symbol, "description": stock.about}} | tojson }}
+</script>
+<style>.stock-answer { font-size: 16.5px; line-height: 1.55; margin: 4px 0 12px; max-width: 760px; }</style>
+{% endblock %}
 {% block main %}
 <div class="stock-head">
-  <h1>{{ stock.name }}</h1>
+  <h1>{{ stock.name }} stock news</h1>
   <span class="tk">{{ stock.exchange }}: {{ stock.symbol }}</span>
 </div>
+<p class="stock-answer">{{ answer }}</p>
 <p class="facts">
   <span>Listed in the <b>{{ stock.listing }}</b></span>
   <span>Type: <b>{{ stock.group|capitalize }}</b></span>

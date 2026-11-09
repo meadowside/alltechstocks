@@ -54,7 +54,9 @@ def week(now: datetime, tz: ZoneInfo) -> tuple[Date, Date]:
 def gather(db: DB, cfg: Config, now: datetime) -> dict:
     s = _settings(cfg)
     start, end = week(now, ZoneInfo(cfg.site["timezone"]))
-    every = coverage.attention(db, cfg, start, end, [], n=len(cfg.stocks))["top"]
+    # Press coverage only: company newsrooms, press releases and exchange announcements don't count as headlines.
+    own = {src.id for src in cfg.sources if src.tier == 4}
+    every = coverage.attention(db, cfg, start, end, [], n=len(cfg.stocks), skip_sources=own)["top"]
     return {"start": start, "end": end, "settings": s, "every": every,
             "lists": {"all": every[:s["count"]], "uk": [r for r in every if r["stock"].market == "UK"][:s["count"]]}}
 
