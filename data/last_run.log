@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Mon 09 Nov 02:53 UK time
-  feeds: 60/60 worked, 75 new items (19 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 03:53 UK time
+  feeds: 60/60 worked, 94 new items (19 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 651 grouped, 256 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares jumped): 'AMD shares jumped more than 11% in a single session as AI chip stocks recovered from a sharp earlier selloff. The Philadelphia Semiconductor'
-  AI line rejected (reads like advice or a prediction: expensive): 'CoreWeave has reported a backlog of $129 billion in contracts, which the company now needs to convert into revenue and cash. The task is a p'
-  site: 118 stories live, 1 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
-  trends: 1011 stock-days and 84 section-days refreshed, 21 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  stories: 643 grouped, 258 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares rose): 'AMD shares rose more than 11% in a single session as AI chip stocks recovered from a steep selloff. The Philadelphia Semiconductor Index gai'
+  site: 120 stories live, 2 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1014 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
