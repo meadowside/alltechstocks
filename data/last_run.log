@@ -1,7 +1,8 @@
-All Tech Stocks run: auto at Mon 09 Nov 00:53 UK time
-  feeds: 60/60 worked, 94 new items (15 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 09 Nov 01:53 UK time
+  feeds: 60/60 worked, 75 new items (14 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 686 grouped, 265 name a watched stock or pass the market rules
-  site: 118 stories live, 0 new AI lines. Top: Nvidia CEO Jensen Huang summoned by Congress over Chinese espionage concerns. Most covered stock: NVDA
-  trends: 1009 stock-days and 81 section-days refreshed, 20 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+  stories: 674 grouped, 263 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares jumped): 'AMD shares jumped more than 11% in a single day as AI chip stocks recovered from a steep selloff. The Philadelphia Semiconductor Index rose '
+  site: 120 stories live, 1 new AI lines. Top: Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy. Most covered stock: NVDA
+  trends: 1011 stock-days and 84 section-days refreshed, 21 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
