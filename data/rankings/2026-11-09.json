@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-03",
+ "end": "2026-11-09",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 560,
+    "outlets": 171,
+    "biggest": {
+     "headline": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+     "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+     "outlet": "CNBC",
+     "outlets": 96
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 204,
+    "outlets": 99,
+    "biggest": {
+     "headline": "Nvidia, AMD and other chip stocks rebound. Is the ‘violent’ AI selloff over?",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOS05rMlNIQXZwWGRFbUlERjJ6bXlobEFuV19nckJuSlpWZlpKYmJvd1c0Z0FiOGtqc0FaeTItWDBsUkZJY044ZnV0emk5dlBjcVFtNkxBM2xGbzhmRi1adk9XNXpIZVpYNXRubUcwOVNYcHZJVjFzMEducG1pMXFscE9rX0xJazdhaHh0UDZUN3gzZ19aRm4xOG1acE5ONXBVeUVKM1dBb0ZYRjdrUGZNTzBhaEs?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 11
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 194,
+    "outlets": 78,
+    "biggest": {
+     "headline": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjlhNk9NU1ZVZFo4UG9TR3FmcGxtMWhnY3o4R3dJNGxHc3E2QlR4cmlOSDBuU2JHLVFnMlpVYWtneGxacHhOZWM5bWNJWndxZndxdEstamJjenMwaFoxT3RHSXg3Q2E3cC1pdDM1bm16VkJPak43T2xLRkNvTE9QNHdTRjdfekNGbXJuMFNrcWJ5OGpxR0x3OEJPTll6bHNOaUwzc1E1OF9DQnRZdFZBRXgtN0VYeEhUTTVOa3RKdDlrVU9keXNDOA?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 11
+    }
+   },
+   {
+    "symbol": "QCOM",
+    "name": "Qualcomm",
+    "slug": "qcom",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 128,
+    "outlets": 63,
+    "biggest": {
+     "headline": "AI meltdown: Nvidia and Qualcomm drop more than 9%, pushing Nasdaq to worst day since April 2025",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUGR6VGxMQVNKdUF0R21NRjNRYzB1MlJMRzZFVVViM0tLZXpMM3BOc210T2FGZ0RMcEVWOTRXeGx3dHJNd2JlOHh4Z05BREdvSmVGdjdHWlptek45UEc1UGU1eDFYdVdRczVheTJCcE93S2E4d0dULWI0NUtVXzNiQg?oc=5",
+     "outlet": "CNBC",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 105,
+    "outlets": 36,
+    "biggest": {
+     "headline": "Crusoe sells troubled Wyoming data center project to Google",
+     "link": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+     "outlet": "TechCrunch",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 85,
+    "outlets": 35,
+    "biggest": {
+     "headline": "Microsoft rejects multibillion-dollar AI deal with UK’s Nscale",
+     "link": "https://www.ft.com/content/668e6ef8-88a1-4bef-8664-8f495baf09f8?syn-25a6b1a6=1",
+     "outlet": "Financial Times",
+     "outlets": 5
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 74,
+    "outlets": 47,
+    "biggest": {
+     "headline": "Take-Two lifts annual revenue, profit forecasts ahead of \"GTA VI\" launch",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVU1kNnl5WDJ3dmRVVTJEczM5UF9Lc0otMlB3YlRqWGtmYzNlZ0VtTlhJN1VWQjd5M2RNbVNlbnROS2JDajd2cjhISzBNRHVnc0d0MG8yT292SFJJb19RdEd5b0diUVVkLXIzWFFRbGhKZFNBRXJISGdLVzZpd0ExTWVza1BGSjV5TW9BY3VTa1huVXN4SGpTU3Q4M1ZVcDdMYVNv?oc=5",
+     "outlet": "Reuters",
+     "outlets": 10
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 73,
+    "outlets": 39,
+    "biggest": {
+     "headline": "Intel shares fall as competitor reports record results",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObWtIVzhJVFFpQXFpMnIzbzdjN0paenh5blVYSnNwUVJSbXNnVUJDcS11ZjhzS2VHYS11Xzd3dzRCLUJfZEg5dUp4dTdOWGpDd01tSHlZTnQ1V2ZlTm5xWEJXdk5EQmZVeFZIQ1JLWXhybkFFTGNQYTNfWXM5SnlEN09xTWRndHMwR3Jfb2w3THZWdkpMbkY1Z1FkYmpSeFNZbmwxSVZhZUhWUWQ2?oc=5",
+     "outlet": "StreetInsider",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "MRVL",
+    "name": "Marvell",
+    "slug": "mrvl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 69,
+    "outlets": 21,
+    "biggest": {
+     "headline": "Nasdaq Today: Composite Falls to 25,164.36 as Oracle, AMD and Marvell Lead Fresh Tech Rout",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNSUpMTTd5YTlxTEJ2QzZFWG12ZXBWbklNaUVWSzc5NVEtcHJ2Q3NkY1JMdTVfRnNfaWdxX1dsRnpCT0QwTGo1VGRZYi1YYTJTZVp6UXprN1VoQ3JReHdGV1ZwS1RrQklXR0puQXpsMTJ1Z1N5QTZ4X0NCdlZVN2k2WHBHMTVIejZ4alYxZGtReEpkUEp0NGxpclRpaVpDM2JZX3hjN0FzZk9MeFNmWXBOeU5ZbXJ6MUVWQ3pSTWkwUXhPdw?oc=5",
+     "outlet": "BBN Times",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 68,
+    "outlets": 29,
+    "biggest": {
+     "headline": "Micron Rises With Chip Peers as Apple's Memory Warning Cuts Both Ways",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcS1BUGVRUnZfT05SZXpxRkNVaUY2aVpWcmRtak1wMzBfQllxMUszUm11bnBhRnlCNllITHNJUXIyOU9DV0FGaHdlcUtjWDhrMXFZQzZJbU1LdlgwaEZfWlNNMWpJNkVpRmIzODNLZEhpcXpnSDZWalNjUjJkNkZqX1BXdzc4ekswb2dtSnJtdUpxcXlVX0RHa0dhSXR6ak1GN2xsalVkTU53TUd5eHlza3VvbDdqNXAxWV9jS0ZvSDJYaEtKM3NzZGFKeWNZU1Q1SW82TGdLOG8?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "BT.A",
+    "name": "BT Group",
+    "slug": "bt-a-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 28,
+    "outlets": 21,
+    "biggest": {
+     "headline": "BT reports higher profit as broadband customer losses ease",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNXzJwTHVYTXR6Z0UtcnQtVkNIdTFrVkZCVTVVeUI1anl4cmxMTzJ4cU9fRURzY3o5MDREMFdZZHhyU3NIVE9iNlpYVU5YbjhsNUdnRWpRVm1ZbFBaSmZDQjRhT2hnNXM5dDdUN2JKMVVjVnZrQWlMZHJ6N3JRS2Q1dm1ITmVCVHNLeVJ5SWxXNVdPNjBVLXd4N1VpekxuZVNuWDVCUUF1RjdyMGVmUk1NNzNmX25fT1J2Q2pBa1BYLWVKOHJpR3pJ?oc=5",
+     "outlet": "The Times",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 21,
+    "outlets": 14,
+    "biggest": {
+     "headline": "Arm forecasts third-quarter revenue above estimates on AI spending boom",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGV2UGo5V1FRUGxkUzdPWVo1NGhFM2lvM2N5NVUycUUya2VIX3N2aHM5am8tNUhCQ21oMng4LVQ2UllCWnRpdlNqUDd4MTM2ZVhpUTBlR3NQTTdBZFNMVlRDVV9LQ2d4Vjc1M0ZBcldwZmVEaGpDTENnVHR2bmp3Sm9ENnF6YWU1TDRjcmxiSWQwTjY5clQwb2V2a1JMdUhxLXRfLUZwUlNwR0Rob1E?oc=5",
+     "outlet": "Reuters",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 13,
+    "outlets": 4,
+    "biggest": {
+     "headline": "LexisNexis Risk Solutions Launches Accurint One, Reimagining the Future of Law Enforcement Investigations",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMlVLZ0xOd3FXS0RQZnR1Z0lGdnV5SGhzOXJlaERSMkZrVEl2YTlwSlA5NUhwcFhOcjNfVEs5SGk3RnN4akpvS1NYcWlrV09pU0ZjX2ZCNDZ3ZVprbEljWGw2bVB0bVRTVVh4Qlk0SzhPWlRTbXJMalZFWHFhS280Vl9zRnhqTThadUhCdzF5NEVuTm01RHdfNVdnNVNKcXdyLVFJNGVnd0hoMzU5bXVpdWM0dlRLdjQ?oc=5",
+     "outlet": "Quantisnow",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "KNOS",
+    "name": "Kainos",
+    "slug": "knos-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 12,
+    "outlets": 9,
+    "biggest": {
+     "headline": "Kainos revenue jumps 37% as government contracts drive first-half growth",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY3JqeDQzSDktMWR1ZmY0dWhFbkxHYVBNLVNDZFR1QXJfa2c4cEU1SXl0eUVTMXhvUDNJVkdUcUdfMWNxbm15eFVGUC1wS3l3MGVaaDFqejNQVm4zUC01YU1rT0tqRExYeUl3RVVqMUlyV0dJdVUzQ2FjVkw3NHZWYWZwOWhISWgyMWhWZ1V4YVFUcTROUmRJc1ljTEUycVh2WVZWNTNXeDZvLTNITXQ1M3J0MTRhQlh6NkR5T0F0c2dxOFdQZll0empDRzBQWTZOQjAzUWlMQlRtdw?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 8,
+    "outlets": 8,
+    "biggest": {
+     "headline": "Airtel Africa Targets 12 Million Shares In Fresh Buyback",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVzJLVF82VmdOQ09VNFY4cUNpZzFGVHYwck1ld1B6R3plMUNLX0h2dnZUUzgzaXoxUFFhUGRjSDJRR2hKNjdDTENhQ3ZqQkNILVF6RVIyVGFhM3dvX0FHWkpPM3hUMl9vd1lLa2d5TGdYTWw3djdfT0pNRkx1bWdJcl9OajVIVzA?oc=5",
+     "outlet": "The Whistler Newspaper",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "AUTO",
+    "name": "Auto Trader",
+    "slug": "auto-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 8,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Auto Trader stock heads into half-year results",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQnJqZlNlMmgxdnFsZ3VuVXJQLUlMV0ktSG1PLVFLcC0zS3V0RTN3YmNSN2tqZXJPNHFjd0lqWDNxdFVlU3d0Z3hIcjhqUktwcVBfTXdWa09lWnJaOVQ4SGJBZGV1OHpDQldLcG5qQTJqZ1J0cU83eEZTMlhXX1BreEtuZE5WNlpnT0FBQUt6YTdGT01oUl8zeGRTalVEZEZVMG4zXzZLRkI?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 7,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Vodafone Stock Gains 3.37%, Momentum Gains In Focus",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQS3ZfeGNuWUhtSzQ2QjFIdXhjZTlqY0pSSExfR044cHVXd2ctS0VQd2J6UVhPTXVwa1QxOU93blFMQXFnYVpTSDRXWktHS1VjN3NqdnJLTkt1Nl91b0s4cUhtSHJyNzdHZGozQzNwd2JqU3puRmdxTW4wd0ZGUUh5WnNUX2dkQlhmNXhiSjFWQ2VWQQ?oc=5",
+     "outlet": "JournalArta",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "HTWS",
+    "name": "Helios Towers",
+    "slug": "htws-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 5,
+    "outlets": 2,
+    "biggest": {
+     "headline": "Helios Towers hails record tenancy additions, tightens FY guidance upwards",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPa1loWER1cFFRQ0hsU3hfYTJMZVRoMm5oYjRMNGtSajhjLU1zY0NEWk1DNjhncEdJQklEUWd5T3RWUEdVZi1fY1hUN28xR3V0dTRzN1RTamhEWWRCWkxXaklYenBublcwY1V5RG43OHpaTkk2NVdPX1lWdGYzY0FCbFlWQlZZUVlEakZqS3FRY3JDa3h2WTd3dVNNeDlQSFZSR0QwZWJCcmRsdTJ2b2h6MmFvRXByOWRmOXU1OWpqQnNCRHdJX0dqMjVYWE5ydWdwYkFVUnhQZ2FTUQ?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "DAVA",
+    "name": "Endava",
+    "slug": "dava",
+    "exchange": "NYSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "DAVA STOCKHOLDER ALERT: Endava plc Investors Have Until",
+     "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNUk9VSkxTQWY2SkV0Mjc2cmZlalpzVVIzRU1ydHZHXzhGTEQxWk9FeENvRVR0eTZkdGRYRTYwSW1kaDBiMTZWRWlGaENPOWJ6WDZ2cnJ3ODM5NGo3MXktWUFuSVlUQ2p6SjFsdHV3dk1acmFJLURRY2lkYnhFUjlnRW1FUV85cURkLWtieFZyRWFvdnE1WGRjNTZvTjd2d1p0U1V0RnY3Y1FKQ05ZWjlqT2VqaXNodC1va0NIdXpydjllUkw1Z0sxVmVpeEgzRklpNlkyRWE3WnVLa3J3dDhyNVdhakhBa3puTGVSYWlVOVNFVzNfb2dHYUo4WU5iSk5jcy0yT2dMWW90V1BDRzR5c3VJc1gtS0FIQXpKd1YwckRISXIxWTRRMzh1Yw?oc=5",
+     "outlet": "GlobeNewswire",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "SRT",
+    "name": "SRT Marine Systems",
+    "slug": "srt-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 2,
+    "biggest": {
+     "headline": "SRT Marine Systems flags going concern uncertainty as profit rises",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQemZCbkd2MU5WSnRNQk5MS0pMSWdwcHl1bno0elpGODRYT05aYjBZSmlnMW5HdGFWVG0tOGp0bmFiM3hvNTdqVk5ONEx6Sl9PVzZkXzI5SjhEd3o0WC1WcUx4elpjU3JLTXZuMDR2M05oUks4ak1GQ3kzaFhnd2ZqUFlFQTNMcWsyN2JmTUhFZHkwU2NBcHpOUFA4MGtqN0g4eU5qRURmSzhranlJWm5aSldXSE5VVVhCNHhUWGthR0FPbnNOdFhhd2M1OU1MT0R4RElN?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 2
+    }
+   }
+  ]
+ }
+}
