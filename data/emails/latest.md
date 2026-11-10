@@ -1,116 +1,108 @@
 TITLE IDEAS (pick one for the Substack title, then delete these lines. Cover 1, 2 and 3 match titles 1, 2 and 3)
-1. Nvidia probes Jensen Huang's ties to alleged spy, Apple AI push
-2. Nvidia probes Jensen Huang's ties to alleged spy as TSMC denies 3D DRAM request
-3. Apple's AI ambitions and TSMC denial: what Nvidia's week brought to tech
+1. Take-Two lifts guidance ahead of GTA VI, and its CEO calls launch uncharted
+2. Take-Two raises forecasts as GTA VI nears, while Akamai seeks $2.2bn from bonds
+3. Take-Two lifts annual revenue, plus take-Two Forecast Disappoints as CEO Calls GTA VI ’Uncharted Territory’
 
 ---
 
-All Tech Stocks, Monday 9 November 2026
+All Tech Stocks, Tuesday 10 November 2026
 
 [Suggested opening note below. Edit it, then delete this line. Report, don't tip.]
-Nvidia is looking into its CEO Jensen Huang's ties to an alleged Chinese spy, which is the story everyone's talking about. Apple's Tim Cook is reportedly pushing the software chief for a bolder AI strategy, and TSMC has denied it's been exploring 3D DRAM at Nvidia's request.
+Take-Two is the story of the day, lifting its annual revenue and profit forecasts ahead of the GTA VI launch, though its CEO called the release "uncharted territory" and the outlook still disappointed some. Akamai is seeking $2.2 billion through convertible bonds, and Kainos reported first-half revenue up 37% on government contract wins.
 
 Andy
 
 ## Top story
 
-**[Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy](https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html)**
-CNBC, 59 sources. NVDA
+**[Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch](https://news.google.com/rss/articles/CBMiowFBVV95cUxOVU1kNnl5WDJ3dmRVVTJEczM5UF9Lc0otMlB3YlRqWGtmYzNlZ0VtTlhJN1VWQjd5M2RNbVNlbnROS2JDajd2cjhISzBNRHVnc0d0MG8yT292SFJJb19RdEd5b0diUVVkLXIzWFFRbGhKZFNBRXJISGdLVzZpd0ExTWVza1BGSjV5TW9BY3VTa1huVXN4SGpTU3Q4M1ZVcDdMYVNv?oc=5)**
+Reuters, 16 sources. TTWO
 
 [Suggested "Why it matters" below. Edit it, then delete this line. Business impact only, nothing on the shares.]
-**Why it matters:** Nvidia's board is probing its own chief executive, and any outcome will shape how the company handles governance, security and its exposure to China-linked suppliers and partners. For a firm whose chips sit at the centre of the AI build-out, customers and rivals will be watching how it manages the fallout. The board's findings are still to come.
+**Why it matters:** Raising its revenue and profit outlook this close to launch tells you Take-Two is confident in the timing and demand for GTA VI, which is the single biggest driver of its business for years to come. For rivals and the wider games sector, it sets a high bar for how much attention and spending one release can command.
 
 
 ## Companies & Markets
 
-**Andy's Pick: [Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjlhNk9NU1ZVZFo4UG9TR3FmcGxtMWhnY3o4R3dJNGxHc3E2QlR4cmlOSDBuU2JHLVFnMlpVYWtneGxacHhOZWM5bWNJWndxZndxdEstamJjenMwaFoxT3RHSXg3Q2E3cC1pdDM1bm16VkJPak43T2xLRkNvTE9QNHdTRjdfekNGbXJuMFNrcWJ5OGpxR0x3OEJPTll6bHNOaUwzc1E1OF9DQnRZdFZBRXgtN0VYeEhUTTVOa3RKdDlrVU9keXNDOA?oc=5)** (Bloomberg, £, 5 sources) AAPL
-*So what: Apple's chief executive has reportedly urged the head of software to take a bolder approach to artificial intelligence. The push suggests Apple wants its AI work to move faster and reach more of its products. For customers, that could mean more AI features arriving across the iPhone, Mac and other devices. Rivals such as Google and Microsoft have already moved quickly on consumer AI, so Apple faces pressure to keep pace.*
+**Andy's Pick: [Take-Two Forecast Disappoints as CEO Calls GTA VI ’Uncharted Territory’](https://news.google.com/rss/articles/CBMie0FVX3lxTE5STjZmSGdRcmsyLVZ6YzNZd0tGYXk1M21VMTZrRWxuMG1YZVpRNlljV3VtbTU0UWFpVmVzVnZ6WkpXWTYyY3RfVHZ3Q1BjN0NOZlVyaGpnU1FGbWh6TnpCTWo5b0ZBRGlRS21tUkNOdUJWOWcyb1o3SVRYaw?oc=5)** (Barron's, £, 14 sources) TTWO
+*So what: Take-Two's latest forecast came in below expectations, and its chief executive described the upcoming GTA VI as "uncharted territory." The comment points to the scale of the game's launch, which the company has yet to set out in full detail. Investors and players have long treated the title as the company's biggest release, so any change in how management talks about it matters to the wider business. The forecast shortfall adds attention to how the company plans its revenue around that launch.*
 
-- [Adobe Inc (ADBE.O) | Stock Price & Latest News](https://news.google.com/rss/articles/CBMiXkFVX3lxTFBEYTFuelRJaFZlRThhY2IzUnNMSTVFUFVsa1FKNUF6MVBzYm5PSWpUMVowenZZSFhkbnpkb0s5dDNwSVhrQWFIbEs5MjZub2d5X3dGWklqc2xIdU51c2c?oc=5) (Reuters) ADBE
-- [Inflation Data, Constellation Energy, Skydance, Applied Materials, and More to Watch This Week](https://news.google.com/rss/articles/CBMisAFBVV95cUxOU2FVVHJzY1d5akRyY0JZcnB6Tm9ad2NwZW1KRG5xdHh2WDF6WGJPM25ReUJ4Z1RtWHVUOUZ1WUxwOUhvOXZSaDNVYS10YlV2RmlnM3Z4cGk4Ync1czg1cW1xeEF3eDE4bkxTY2xNcWlqMG5tSzl3RllsbGREMHliR0lPaVZ3R1B6T2dhQ0QyZ0VLQ1VxOGVwdTBBc3BfUm00WUhZYUhrQmhJeVJYUFFSYw?oc=5) (Barron's, £) AMAT
-- [Trump’s Push for Data Centers on Public Land Faces Top Senate Democrat’s Scrutiny](https://news.google.com/rss/articles/CBMiygFBVV95cUxQOUJUTVA3d0VMZlg0dlpqWUFCYTAxbUYyTWhvWEZMWlg1QkNWa2ItTERKZDlmTTRHOW5TLTdXbnhpY2xiZDNuVDdySlh2T0tIUEo2UDhwUDh6bzBMMXFiWE94cWgwb1NJU2tyZkgtNXlKc0FGSk52OGRQSkJYYkI4Vl8wOEcxWDgxYWpPRWVjVks0Qjk3VXkxZ3hPNktjWEFlYmRCVHpaRXlMSUNoNDllNzVSNnZWZXViSGJXVDE4Z3hvUUNQVnFCRHVB?oc=5) (Bloomberg, £)
-- [CoreWeave's $129 Billion Backlog Meets Its Toughest Test: Turning Contracts Into Cash](https://news.google.com/rss/articles/CBMi6wFBVV95cUxPY19tdlFDV3hPbFFXMi1WRTlONVRzd1dDS0xaZ1RrVVJoM19pOEZHQk9jNVZITzl3VEwwVm1tckExODI5NDAtbTFBQkVPN0d0ZnRCNElMaHBobWxMWU1Md2s1WG1QMGRscFhYY3hQd1R4WWJibVB0ejlIWktZZGR4MFEwV0NrcEVnOTNfV0FnNDhKdDJvV01EUEx6NXVmdmpjQXRkYUxNd0tLaFptNzFZRGp5LVFhUWRLaEFtcWZVTWhhNFp4cHNkOXNLYkxEVTd2N0hQbU5yUWpHRlU2Ylc3b3FEYTN5dmZvRGV3?oc=5) (ad-hoc-news.de) CRWV
-- [Vodafone Share Price: 116.50p, Down 2.43% Nov 6](https://news.google.com/rss/articles/CBMirAFBVV95cUxOWDdoRUh5bnJlMTNoMG9aV09WQUlBN0NiajFLZWduNGtQT2JQUzRPWGRGRnZGRG5oUTNNUy01V2R2LWdIZWxKY2ZLSUVyZXBCLS1mOHJ2M2dmR1ZFa2ZDbFNLUlBZc21GVGJGWWh6a216M3RpRXNGbEVDd3NMaU5vSEFBMENTcXZOSFI4S05VakJfeHRWRXZjUlVEQ3h2bWJuU3h2UzBXVXZnckFW?oc=5) (JournalArta) VOD
+- [Wall St brokerages say AI selloff overdone, downplay Democrat regulation risks](https://news.google.com/rss/articles/CBMiygFBVV95cUxPRENQMlVnSU1PdXZ1cHhWUU9kRnhzSXRLaXBNZWZlR1RRV0xtZmo4aW05SjVnbXRlblJFaW9UUGxaWXE0QzVYcno2QUJuUGY4SHlUbmFzazRfMjc2Mmh5Umk1M292djBpVG9EY1FjVHJZZDlGVVAtNFdUQjFNcnZWZF9Zdl9pQWxMM0ZHQTNTSlhtRWVFQjloaUROZkJ4QUtLYkNOdkhrYXNOM3FYZ1cycTFDai1vd2FveVVBdW9xQ3FqeklOcEVfdUhn?oc=5) (Reuters)
+- Update: [Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy](https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html) (CNBC) NVDA
+- [The internet is roasting Jensen Huang's rough start to the week](https://news.google.com/rss/articles/CBMic0FVX3lxTE5UMHpZZ094WjVoQ0Rhd0d1TGlSOUhpQi15eFR6b3VfeF9aUXQ3azNMcTZHdlpFRFduSjk2ODNabjAtdjRqdzJ3T0FiZ3ItQjgtVC12eHhoc1A5ZXRXRWE0aUx1T1NkWVZWX2hlejBITy1PaVk?oc=5) (Business Insider) NVDA
+- [BT cools on Starlink satellite tie-up after Musk Ukraine controversy](https://www.ft.com/content/2bb44a56-abbe-432a-8205-5e28a0a2e839) (Financial Times, £) BT.A
+- [Goldman CEO Solomon says AI financing remains strong despite market jitters](https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html) (CNBC)
 
 
 ## Deals & Listings
 
-**Andy's Pick: [Palantir alumni launch plan to ‘wake sleeping giants’ of European defence](https://www.ft.com/content/e6a98d84-eadc-40c4-81b9-bff70d4c70b2?syn-25a6b1a6=1)** (Financial Times, £) PLTR
-*So what: Palantir alumni behind Dutch start-up Onodrim have raised $300mn as they look to buy and scale up smaller European companies to expand the region's defence production capacity. The effort is aimed at reviving under-used manufacturers, a goal with clear overlap with Palantir's own defence customers in Europe. For Palantir, it adds a new well-funded player in the same European defence market.*
+**Andy's Pick: [Lam Research stock enters a new capital-return phase](https://news.google.com/rss/articles/CBMitgFBVV95cUxPZDFTdXFBTXd4RWRFX1JyQWktY1RCNUU0LW5sS1l5OXc4MDZLbmQ0RHVwTlJkNHk5cDJoY0drY3FLRVZEYVN2Yks1WkZUV1YxNzdPYXJxdkk5MnNpaXhkdExIX2tJcVBxQXROZzlnN1B3MGFodGlPUVpjSHFFdzR0WU93d25xYURmcnlGdnpiaVFMVFcya1QwN3VYNHFUOXRPUVRKR21MV0RrN3o0WGlWVjUyNllEdw?oc=5)** (ad-hoc-news.de, 4 sources) LRCX
 
-- [Amphenol stock enters week after record sales and 4 billion buyback](https://news.google.com/rss/articles/CBMiygFBVV95cUxOUk1DNlhZc00yNVNKNVpzMGY2M1hza25zNW0xcjFWX2hJbFBoT195NC0ycUR5dURLc0k0ZU44eGNHTi0ydFBIX1lBZmp2c1BqeXhZcVZyeElPRlV4Y2xEM0FEeGVsT2lja1JFNlRoRjBjNUFpN2x1cFFXdVpDalZzLUJhZV9hQVlKOWdTSUtnczZqTF93X053WU10WlZMd3BZTV9uV2l0SjRxOEFSM2VodENFOVVkajZWb0dHNUtOQl9ZSmFQRTN6aFNR?oc=5) (ad-hoc-news.de) APH
-- [Intel's Classiq acquisition includes $350 million in performance-based payments](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBsMVVIXzBpdWdUdFQ4eEh4MEJha2tmbEVUS1ozSHNxX1BVVUgtX3VCOEdQSm5iNm44NnQzbG1kVl90ZlBiYTh1VnVtWVhtSU14VzBLOGppQmFJMlh5eUNYeWlFaFhkLW8?oc=5) (CTech) INTC
-- [Alphabet discloses $548 million worth of Qualcomm stake](https://news.google.com/rss/articles/CBMinAFBVV95cUxOZXlYcFdWcV9JU25ST013NGFEdWszTUFKS0xKNG5vYVhnVm1fbHFoa2lUWk16RGhqMmVXdzFkQ0NwRGcwaTdSdl82VjdUZWREdnhJZ1VIYXJUQzdWbVJCUTlySUJHVFFzc0M1QlNieFRSTU81bkF2MWpfbUlWQUxnUEhsUzdnUlBwRGo1a0hPcWh3VkFmYnJOX3E2UnE?oc=5) (Reuters) GOOGL, QCOM
-- [Lam Research Shares Gain on $25B Buyback Authorization](https://news.google.com/rss/articles/CBMirAFBVV95cUxQUTNtRjZXdkR3OHRaa2pTdlBPN3ZHaDdrWWhDRHVUU1gyRXI2OFlyc1ZTcF9FUi03VlVaWjMzNzFzVVlWeDRoTy1ob3J6UXZrYjVsc1lyMDRaeEpaRF9QcHFwaHU0TExEX2RBUU1mQ3lGSE9NTlpwN2VKOXNCdVY3aVFGTnpxY21fajZKQXpPamtMM2pGQnJUOXV6dWxKUWdOYXpnM1hpRTR0d3pV?oc=5) (MarketWatch) LRCX
-- [Intel Discloses $1.9B Classiq Deal Terms, With Up to $350M More at Stake](https://news.google.com/rss/articles/CBMidkFVX3lxTE9TOWlnZjlidDg0YTRyQjEtRzNBUzRkQ3lQWkJYbVQzMkNnRkdOUlgyMFlpWVE2ckpzeGxING8xWEIzUTM2WVlmWnZtNk9TUjJTS2FRRWFKSF93Qjk4YmdNSWlLbUtidzJEd3dSdnROVVR4Qnk5Nmc?oc=5) (BigGo Finance) INTC
+- [Nvidia Shares Slump on Spy Probe](https://www.wsj.com/business/nvidia-shares-slump-on-spy-probe-1d59bde7?mod=rss_Technology) (The Wall Street Journal, £) NVDA
+- [Cathie Wood's Ark Invest buys $96M of SpaceX, adds to Nvidia and AMD; trims Broadcom](https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZTBWSWo3UXFuZEcyQkwxb0RuSTBzQklOVWV2WlRrTWFoRDZlTjhReHN1d1cybkNWT3h4RWQtamNBdXFkb1plZVJoN3dJbWVKTGFrZFozZmNyb2pUQVhmV09fRTZ1TVJMX2FzQ3JCN1lFaGU3eENNRkZ5YlZOeVhGcWd3U19kYktQaVRfQzhsaGVrX3hSOVdhM2d3alNQdkdJdEo5WU1fTHl1LUVUQjBMR1FHOTRMZmJVS1Vhd243U3BEVWQ5SGRLZi1XVTNYcmx4bGlydERTNVVkOUgw?oc=5) (TradingView) AMD, AVGO, NVDA
+- [Qualcomm Stocks Jump 5.82% After Alphabet Discloses $548 Million Stake](https://news.google.com/rss/articles/CBMixwFBVV95cUxNcUhtQTM3NVgtOE5NeFNkS0lLNVgzR0o2V29vOExCTzdpX3JwV3FUSDRhcjQ3UEVkaUtLYzZ5Qm51dm1KeGxfeDhpMVh4VlZBNGJRVVpzYmhGbko5SUhuZlZ3ZkNOSzZqNG1OSkR4ZDFMYm1vdUdpdmRqSkNSSWhQMXV4YmlZeDlCZ3FhbUNYUXlqdmdzb1pnOEs0WHpLcEZ1N3c3MFdrM2J1bWZ4RS1IT2dMRkRodFF0aFFtR0xxTEhOVmpDSzFB?oc=5) (TradingView) GOOGL, QCOM
 
 
 ## Regulation & Legal
 
-**Andy's Pick: [EU sues IBM and partners over troubled border system](https://www.ft.com/content/eacea609-d571-4725-b795-a1afd5c3c301?syn-25a6b1a6=1)** (Financial Times, £) IBM
-*So what: The European Union has taken legal action in Estonia against IBM and its partners over repeated delays to the Entry/Exit System, a border registration platform. The project has been held back by missed deadlines, and the lawsuit puts the cost and timing of that work in dispute. For IBM, the case centres on a flagship public contract, and a court outcome could shape how it approaches large government systems in future.*
+**Andy's Pick: [Akamai Technologies Seeks $2.2 Billion From Convertible Bonds](https://news.google.com/rss/articles/CBMisAFBVV95cUxQcUVPQVkySklWeERSLVRyWTVaOFNXaFQ3dTNmRFNaU05KTlRtWE5rMmlZUXJxdVVaUU9HeG5saGpaWDZGNEZjNXQxd0hFM0lGT2lwQXpnUWNZcEhlblJucERBVnVfbWNYcUNWVTVZS1RUUlNwZXdISGRFSjVlNW5sX0xIUXFjbTFTazRYYk9pWFBOc0hiUU5oSFhhaG5GSHhabks4OENRYV9xTmhGSEFaSQ?oc=5)** (Bloomberg, £, 7 sources) AKAM
+*So what: Akamai Technologies is seeking to raise $2.2 billion through a convertible bond offering. Convertible bonds are debt that can later be exchanged for shares, so the move adds to the company's borrowing while leaving the option to dilute existing holders.*
 
-- [Nvidia Announces Probe Into Huang Amid Reports China Spied On Him](https://news.google.com/rss/articles/CBMipgFBVV95cUxNWkprV1p4NEJHa2I4SW9kOXQ0bXZ4YXVQZDZqME9QdEpkSGxGQmZGM2xSWGRwN1dLZ01DR3RVUjZRamtLOEh4dmtVTDJmYnAxVjJnblgzMThSY2JFRnFlSl9jdk51OU95U0FJQVNhWTktVm52Z3ktUHZpN09vVktaSmJJdzU1SHB1N0FmM19PNTdYd0lySG1fbHJtVXUyVlAtWUttaU5n?oc=5) (Barron's, £) NVDA
-- ['Was unfaithful...my choices': Nvidia chief apologises to family, staff; vows cooperation with probe](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNLU1vYjVSYTIza1c5NHV6MzQ0NGRoX3ZNbEQzWU9tZ3lVV2J4WWFuZmhLUXkzc3Ztc3VDYmlfUGVlcTJEV0ZUTG00b3gwZ3gyclpWcERNdTZmSFBKMkFmZlJjekVUd3owRFNUcUt1RFZPREV5RVBhY3lFdUtsaEhkZUpHT0FpczhtRF84QXNUWFM1TndLOXZxNjJobFF5N3pfd2ZRQVRGRjhKb3FiTDVLRHpUQ0lGTUdnN1pnN2wwQm54ZlBOa04zQVhQMTVjNzNaYzRzUVdRaUN2R3Bf0gHiAUFVX3lxTE5lc09fRUlNT0tNd1RmN2lHUEstTTlrM29hUUNjU2NYQU4ybjJ4RkQyeHBMSk9zVGM0ZlBVSkMwUDNJRWVxcmRzNVVhOGRHUkU4WlR2TDVjS0VBaFhlY2I2M3V5WlFtSmt2NmFDWWRFNkFLak50SHpfYldxVzN2SU1hMkhQZ0pZNGRpNnRLZXpJNmdGN3FCQk1LWkVCVlBhUDNUdE1zVjUtaHRTMWdiUFdHWmhUdE84TFBhWUZwejFDNVBPVFRGSEQ1S0tvUHV5cTR0RENvVW40X2RYak91VU9KcEE?oc=5) (Mathrubhumi English) NVDA
-- [AppLovin (APP) Facing Securities Fraud Class Action Amid Concerns Over Model Improvements](https://news.google.com/rss/articles/CBMi2wFBVV95cUxOZFBFRzlFTGRZU242MElNZFRtLVowTDhoVV9DQ1dnUk5kZGdZOEFYaXFtOWRYaGVxYmxGN2xxUDZ6VmZzLUtmN25hVWRqMElNVGVLcnRaRmNvQXdHc1RWbm9iLV8tVE1WY0laamUwY19ibTBqZk5JNGlsRmpQdUpOM192V0tYcXg3UDBDWVpQZTh3Rko3Wk1acG1DdGlIZEFyQl9zSl9xc05SdXh2Sm9QRU1UU0xrOU9HbUozamFpZ1Q0RG1EdVoyQzBlYno3OUVSc0ZaX0FIRGZkOXM?oc=5) (PR Newswire) APP
+- Update: [EU sues IBM and two European firms over troubled entry/exit border system](https://www.theguardian.com/world/2026/nov/09/eu-lawsuit-ibm-atos-leonardo-entry-exit-border-system) (The Guardian) IBM
+- [Nvidia's Korea deals proceed despite Jensen probe as Kakao Mobility signs Level 4 autonomous driving pact](https://news.google.com/rss/articles/CBMinwFBVV95cUxPLTVLVjlvZGF1NFBwLU1ld2swVlVfUmR0R1R6V0lRekpRd3BhOXZsZURTWk1TV0xBMWpKUGJSbGZpUm5rM2VNVk5mVVhydklGOFZWdXg1RTRYY1hiRTU2MmNzWDVSQW5CZDByMHhaalp1OV94S3NVV2dsbUZIQWJrQWxabmJtNEpyNlpCM1M5UlZIVjJCMGdlbnZZa2p0dzQ?oc=5) (DigiTimes) NVDA
 
 
 ## AI
 
-**Andy's Pick: [My Week With Apple’s Beach-Friendly iPad Mini and Amazon’s Upscale Alexa Tablet](https://www.wsj.com/tech/personal-tech/apple-ipad-mini-amazon-alexa-tablet-best-in-years-c5004bac?mod=rss_Technology)** (The Wall Street Journal, £) AAPL
-*So what: Apple's iPad Mini is being positioned as a device for relaxed, outdoor use, while Amazon has launched a premium Alexa tablet aimed at the same home setting. For Apple, the point is that the iPad line remains a product category it continues to promote for everyday couch and leisure use. Rivals like Amazon are targeting the same space with a higher-end offering.*
+**Andy's Pick: [AI’s affair to remember](https://www.ft.com/content/4bf7b037-7ef1-4421-b298-7c2ecf4bf870?syn-25a6b1a6=1)** (Financial Times, £, 2 sources) NVDA
 
-- [Nvidia Inquiry, Anthropic, CoreWeave and Unity News Promise Big Week](https://news.google.com/rss/articles/CBMiugFBVV95cUxQV1FRUkllZWhfa2R1SGlnUVhKRkl2X2tjTkk2djdzWEVQNGJFUmJqdW9LYnI4UDRtYzlmTnlQdHAzN0dOcFVrNjJ2aEJ5d0FBbzVmVGV2UUxhZUhibnRwZWpqM29oV28yc1RLUFRwcG4yWDBnVHFWNF90d0FWOGJ3QXZ2Wkl5MkxCWVB2YUl3NFlyODVoOW8tcTUtb1p0ZmlaM3c2U0Z1WW9nNkJjTXNTS1hfWnFWeTQ1bGc?oc=5) (The Information, £) CRWV, NVDA
-- [ServiceNow's AI ambitions come with a $9 billion balance-sheet reversal](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9RYzVyVzYxUVlZVXBOa1JuLXkzMjBOWGM5WWhBU1pLbnRyU0dTd2NwQjRsdkwtX0ZOZUdhN09fMUhKMGQ0Unc1N2VVYW1SSjAwWnVlZjZGSU90aDdNVlg0bnBPNEpnakU?oc=5) (CTech) NOW
-- [Inside the Siri overhaul: Apple's performance in the AI race](https://news.google.com/rss/articles/CBMifkFVX3lxTE5VVUxVNDUtajZvZy1pbTJtZ3QtTkdfMlpoOE01aWJfX3pHYU1BLU1lSGx1MmphQWl1OVh3eng3bFpMYXNzX2pPcmVIaXFHdXlPNUNuZUdlTS1aYjYzbFpITV9aLXVPSHNmM2I2aHJnbF9MRHcxeXNTZ2hnNEJSUQ?oc=5) (DigiTimes) AAPL
-- [MediaTek, Qualcomm shift focus to cloud AI as smartphones stall](https://news.google.com/rss/articles/CBMilwFBVV95cUxOWlVYQ3E5MUxCSi1BNEx6c2pwQnpwd2JyVlNRVlNmYUo1RlpTZDdVaFQwcUxsdGtDMHBWeF8teTlaOVB3X2kyZ0s1R0xfQnVDalRodXY0SHRSYUlnUm5FQWYxdnRvUjlsT0tHOEVDaXJUcEhiS2dKRDc0c0t4WVJiVWkxT2xqUnB3MUNBcWFkWnNMR2ZmZ1Rn?oc=5) (DigiTimes) QCOM
-- [Meet the founder who helped build Nvidia’s early cloud computing infrastructure before leaving the $5 trillion tech giant to bring AI computing power to Africa](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcnNTd2lfRWtCbTRLR0s5Umpja0RKU1R5VUMtSHNSd1ZVaGl5TjR4emtyLWYwRmtpek82WlpKZVdjZWlJcHFoREJaUXkxcGdobkxZOHpyeVNqdzlSN1dMbjVxMGFrbXFTV1FaYXJUQWZPVXR2QlZDSnptNHZTUURGMVRMRTdOQ2U1Vk9ZRk0xc0tHRExpak5VWEtQWFVXVUpzTUxkSkhJTDFOMjg1a2tmZXlNc3BlVHg0a291M2MzNlFNS0tpVWpHQ1B6LVNialJGZEtyUjRsMVJ2Zw?oc=5) (Business Insider) NVDA
+- [AMD Expands Work With Google to Power Host Infrastructure for Cloud TPU](https://news.google.com/rss/articles/CBMixwFBVV95cUxNTVNyWXdFUm9lTHRlYUg5c1cyaXJZS1o3QkliRXVPb09pXzV2c1A3TVh4QXZpNm1FTG54c1otT29NRWkxY0xuRXdYYTdzWTRxUjMxUThmS2JRbldQcjNRYTlhUkFRMlFNTXVaM2kyUzFIZWR0WWFRRU1lb1NjQ1FiN1hrMGZHSlF2eDZmd1RUUW1Tdkl0TnpKYUstVG5RMDk5bmlfalVJOXlLbVR3TEdZYWlvcE9sMGFXUjNjcUM1bjBwb0FGUy1Z?oc=5) (MarketWatch) GOOGL
+- [Moonshot Rents Nvidia’s Top AI Chips in China, Documents Show](https://news.google.com/rss/articles/CBMisAFBVV95cUxNRXFQdXM5NGdadXhNSnRhalRtOE9aSHdPYUNyeWtIam9xZ3JjMEI5cGxyUGpZbXBQamZlY2hxZFdTRC1NbllidG1MdDNpb193bGdmMEpwdGhLMmxLQjVQekZGNEpRY181RkVick94WHlDMTMtblVBaTNWT0tRSkVmNXhlSEZYcFFRTV96WVAzLURWcEo3MGx1RDZFdk1KQ1plTldWdHlxbkdHVlVsX1k0bw?oc=5) (Bloomberg, £) NVDA
+- [How China Gets The Nvidia Chips It Needs To Develop AI](https://news.google.com/rss/articles/CBMilwFBVV95cUxOYVYyaVFNWWNmM1Fha3B6QTdzaHp3OXB3VHFKdUJITzl2YXZ0OW1XRzBucUpLeXY5NXBBNE93MzdRWEk0UldZeUlfU2ljRE9maEhQeDV5TXcwam5KZ3BZZ0dRekZRVUVCV1RpYTQwT1NqYTNTeG15QjhpTjJZMy1mV29Fem1qYnk5MGhORG1SYXFtME9WSUNZ?oc=5) (Barron's, £) NVDA
+- [Instagram’s AI age detection is expanding globally](https://www.theverge.com/tech/1029627/meta-instagram-ai-age-assurance-global-expansion) (The Verge) META
+- [How Nvidia became the engine that keeps AI boom going](https://news.google.com/rss/articles/CBMijgFBVV95cUxPNFNNeWRxRDB2X1BudGNpTXdLTjB1TkpnZUJ6RnpCTkVjamNfVE1rVnh4eTlScmZZanNKb2FuZ3loWFR0WTQtajFlZF85Q09TVDZpU3FkUGxIcmdad25FdjlvOHkyOHlXTjVWVmdNVnRHblhEM1dKSXpEUVk5SWdVZVBUU2pnWW10RU0yS2Rn?oc=5) (The Times, £) NVDA
 
 
 ## Chips & Hardware
 
-**Andy's Pick: [TSMC denies exploring 3D DRAM at Nvidia's request](https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability)** (Tom's Hardware, 3 sources) NVDA
-*So what: Nvidia has reportedly asked TSMC to produce 3D DRAM, a memory design stacking chips vertically, as a way to ease shortages of memory. TSMC has denied that it is exploring the technology at Nvidia's request. If Nvidia pursued the approach, it would reach into memory supply, an area where chipmakers have struggled to keep up with demand for AI hardware.*
+**Andy's Pick: [The short seller who saw signs of Nvidia’s China scandal months ago claims Megaspeed isn’t the only company helping China access chips](https://news.google.com/rss/articles/CBMihAJBVV95cUxOWGxBUEduTU5VYXprTkk1cm5sSDBleExnY2RVWWp5ZHlGdGE5bUZNbUxwOGF1UHYtYkhQSUVVMjJVMEJMdGpwUEpFOVNPb0NXQ3dmVFJSZEhYRG5kSm41b2tfT1RXc3ZpUEhLUTRNYlZScVQyTEluX1ZFSzJFNFMtQldNMjFYVWdRRlVSNmlDb3BJZW1KejVGOEI1Q0M4ekVJYmVaNUdMVkd0emtMMjVaZE0yVHFlSGhSVm82VENRWWtPcVhqZVpMZHNBcTJrdms0d0dhUHZZcTlEVmRpZFJ0dF9GMGdOSWVzRDUySkplVjhaNmhYODhUUGRWdFFFUnpwZmVaYw?oc=5)** (MarketWatch) NVDA
+*So what: A short seller says Megaspeed is not the only firm helping China obtain Nvidia chips, which points to a wider problem than one intermediary. The claim comes from the investor who flagged signs of the scandal months earlier. Nvidia faces scrutiny over export controls that limit sales of its advanced AI chips to China. The company has no new ruling against it in this account, but any further evidence of diversion could draw more attention from US regulators.*
 
-- [The US let Nvidia sell chips to an empty office in China](https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government) (The Verge) NVDA
-- [AI Chip Stocks Bounce After Steep Selloff; AMD Soars Over 11% in a Day, Philadelphia Semiconductor Index Rebounds 4.21% but Still Plunges 15% for the Week](https://news.google.com/rss/articles/CBMidkFVX3lxTE5XOVVqbE1tMlpsOVVwNXhtdzVMZHVabjFXWWh4cjVzVTJuZFRrSFUyR3NIaV9Kc3JGclZobVg2NG9mTU9IRXpxaXZEeEEwSDV5TVJHMVNrMlprbWVJdTNmZnh3RFNkN0V4elVJekZsem5hVVBUckE?oc=5) (BigGo Finance) AMD
-- [Apple’s M5 MacBook Air is down to its lowest price since July](https://www.theverge.com/gadgets/1029019/apple-macbook-air-13-15-inch-m5-deal-sale) (The Verge) AAPL
-- [Nvidia released its 8800 GTX GPU 20 years ago today, celebrates with Steam game homage](https://www.tomshardware.com/pc-components/gpus/nvidia-released-its-8800-gtx-gpu-20-years-ago-today-celebrates-with-steam-game-homage-interactive-demos-eye-watering-minimum-requirements-include-rtx-4070-32gb-ram-and-30gb-storage) (Tom's Hardware) NVDA
-- [Crusoe sells troubled Wyoming data center project to Google](https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/) (TechCrunch) GOOGL
+- [AMD CEO Lisa Su: 'We are a data center-first company'](https://news.google.com/rss/articles/CBMilgFBVV95cUxQZ1dvb3UzdFEyakdpTUItWmhUMzhxUGVDdV9EYjZhenF4NmJYUjgySVZ6aHhOTExXcTBjZVQ2XzJyVVVUVTRyT2xuN3ZJb2hiZHVjeENZSWFoVDZwbGtHN3BhYlpGWUdTLVZfUXZiU2t0dVU0ZURLZ3l0alg3d29yenZ2Skl3bUctVGpxeUdwTFg4ODliYVE?oc=5) (PC Gamer) AMD
+- [Column: Nvidia explores PTFE for AI servers amid PFAS concerns](https://news.google.com/rss/articles/CBMipwFBVV95cUxQR3cwV3RfQmFfVW43TVFqU3NPemgyRmRTR1ZjYlN2S3RfNmhpNWduaEJJenhSNkVhSGtpdkpSaDRPeHZrdHU3T3NjbE1mZjJhLVBnWGdLcVRndmppR2dselotQUxmQUFKT3RlV2U2dHBZRnBwbUwtZzNMWDlfbU9BU2pFd2ZkaWdEamtoQWZWTFRWb2JyS3lWSzcxcXJNb2ItSDlMcVd3dw?oc=5) (DigiTimes) NVDA
+- [Nasdaq Today: Tech Index Jumps to 25,253.14 as AMD and Broadcom Lead Chip Rebound While Nvidia Sinks on CEO Probe](https://news.google.com/rss/articles/CBMi4gFBVV95cUxOS3gxdnkyTXlCWHhib192NWEyUnVoOFZIWjFNSmF1ZDZKQmpsOHRobW11V1NPM3VkTjJkVXlsWElGTE41ZGlZcDhHamVDV0Noc3MwS3Rfb1EtNjYyTjM1ZW4zZU9JQUdJamtrVlJmcVZVUmdCRTJkZWRWTUJzbllIc0FXRVBjbFFzLVpQSTZ5cUxHb3RPbXJZSklzcGdCR2VWeGw0YWdyTTNHVWlVZzdlYmdJSEoxeEJibGlMVkxIQkMwVDhVZjQ2ZWJicUY5WHpOQ2MtVUl2QnZMM0xwVDdLR2ZR?oc=5) (BBN Times) AMD, AVGO, NVDA
+- [Nvidia cracks down on overseas cloud AI GPU rentals for China](https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million) (Tom's Hardware) NVDA
+- [Nvidia RTX PRO 6000 user’s cables almost melted, even when limited to 500W](https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-pro-6000-users-cables-almost-melted-even-when-limited-to-500w-12v-2x6-cables-appear-to-still-cause-problems-show-clear-signs-of-melting) (Tom's Hardware) NVDA
 
 
 ## Results & Outlook
 
-**Andy's Pick: [Apple, Palantir, AMD and Nvidia Put AI and Earnings in the Spotlight and More: This Week In Tech](https://news.google.com/rss/articles/CBMi5wFBVV95cUxOYnZrRkgzaFBfSlBPcTNlZGpXX24zTDU5OVYwcDFXbHV4NC1HQkZOcmMzNDlpSEc5Sy01bk9Iam9NMHNraXFWSHd5aXI1RzVPaHFubGFnWndpX3dMbW9YdWs2cUVGcDJ3UndtUGJPa045OXYtMWVMekVWdnFLSE5SQWdTZGRfaS1QQXlkeTlJd2Fod011XzFsQ1REdGVMRjVaT3RoazVvYTZyZ1NVcVo0UHMxRjFmUFI2YmloYkNVUkFPNGN1ejhxUHBoYjBPLW5nNF9saU5EZnhCdmt5QTdhNVVXbjRobGM?oc=5)** (TradingView, 2 sources) AMD, PLTR, AAPL
+**Andy's Pick: [Kainos revenue jumps 37% as government contracts drive first-half growth](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY3JqeDQzSDktMWR1ZmY0dWhFbkxHYVBNLVNDZFR1QXJfa2c4cEU1SXl0eUVTMXhvUDNJVkdUcUdfMWNxbm15eFVGUC1wS3l3MGVaaDFqejNQVm4zUC01YU1rT0tqRExYeUl3RVVqMUlyV0dJdVUzQ2FjVkw3NHZWYWZwOWhISWgyMWhWZ1V4YVFUcTROUmRJc1ljTEUycVh2WVZWNTNXeDZvLTNITXQ1M3J0MTRhQlh6NkR5T0F0c2dxOFdQZll0empDRzBQWTZOQjAzUWlMQlRtdw?oc=5)** (Proactive Investors, 7 sources) KNOS
 
-- [Marvell Technology, Inc. Announces Conference Call to Review Third Quarter of Fiscal Year 2027 Financial Results](https://news.google.com/rss/articles/CBMi_AFBVV95cUxObEYyTjRyNTB5R21Gb0Nud3BNZWlVZ05CUklmQ0NRTUFVRVB3VjdqeTdoUXhBS3pWNm1DYTdjbzJ3TU1yTlpsOTVvdjBqM0pnZHJsTGZZcHc4Nld5RkZGSDhmNTd0OUl5a010S3QzckhXT3dtMnFZcFBJRjRYcUFiV2VadlY1UkJBZ0Q2REloRW54X3UxVEt4VGt0U2NiTFVreVpocC1LQS1rcml2b2dLbVYxX0hIVk53WDBzazdCUXY0eUNJdWR4aV9VZ0plNVNzSU5lNjA5Sy1HRG5yamR3WGh0clhSSU41TmxyNkJHR29JU19aNm5JWTRiVnc?oc=5) (Business Wire) MRVL
-- [CoreWeave Stock Expected to Swing 20.7% as Earnings Loom Amid Texas and Debt Concerns](https://news.google.com/rss/articles/CBMiugFBVV95cUxPaDFiUC1wWFd2UHpFRG1tYndrb3hyaGxpVEk2S1Q1dDdoWkhwSUN0ci1lQnQ5ellfUEs5c0dBUDZBMm5MTVc2dWtxcjE0VjA1VkpaM0pXYWVRMGs1RDRGSmMtdlpqa0dOQnB5aXZlLXMxbHhlODA5d2hkVDVDVXBaVlBYVDFFYVVobzI0dmFNMFpmZnJWM25hWUQxMUlaMl9rQ2lRRzl3NXRkZFJRU2hfR3RzX0NKZW5va3c?oc=5) (KuCoin) CRWV
-- [Verizon offers a 6.2% dividend yield backed by strong cash flow despite high debt from Frontier deal.](https://news.google.com/rss/articles/CBMigwFBVV95cUxPMWg3dEd1MW1pVUV6Z2ladkZZa1F5eG5uWkxXWW4wX1NVY1hDWjZEVWkycEhvaE1MTUlVdzQzVFhBZV84aEZ4ZzNUa2hVdFhsZGdhOS1FbzhEUHdaU1p0MWRTTmxjaE1rY0lsMUNWdGdITFNKa2psOVpkMzhfdXZOSXRTSQ?oc=5) (Pluang) VZ
-- [Comcast offers 5.6% yield at 8x earnings but fa...](https://news.google.com/rss/articles/CBMirwFBVV95cUxPdWNlRFlzVm9hakdQZDFMMktiWF83dE93a2xxSzZ1cVRKODh0MVpITFZ4akVndXZqQUtoV091c3ZXczQzdm5OUU80dnJZblhxUlItYjdJbnBxbnRtd1lIM1FXMld1WUdRWmUzTHMxM29kM19abS1sSHJ5S2NXM2VJTGpLRzNJWDUxdEpuRkdUV2xxM05fUUNqaHVEcDM4eGF1R0J5Mk82UkZZREtsMjAw?oc=5) (Pluang) CMCSA
-- [TradFi News | US CPI, PPI and CoreWeave Earnings to Test Markets as Fed Hike Bets Hit 80%](https://news.google.com/rss/articles/CBMiZEFVX3lxTE1zelltamtudS1RZlFvb0dvdGdtZFdmZzBQVEtFQ1BCc0tFYVc2ZFVPTkwyREQyNkRSQm1BZkYwWVNvRGd0M3U1aTBCN3dKZFBsb0VDQ1hoZkkyclYzY0Y0MFV6R0c?oc=5) (Binance) CRWV
-- [US inflation, CoreWeave earnings steer Korea stocks after blue wave](https://news.google.com/rss/articles/CBMigAFBVV95cUxOLWdUc1ZfLXFXX1pDWGFSY25tdnhYcTZjSHpxdGxmQk53Y2ppUHc5dU5vaFZfc1lWcnZfY2taQ1J4Q0R2OHpYNGloWmFLbnpIek9tUE1NNGlkZjZZRWVBay1tNjZ4NGVRS0lqRUtkQl9iWXJNVTExTEZqTV84UG00U9IBlAFBVV95cUxPNkNyQWp1YlFiVGhSZ0l2Rm1rVU9QNTdHS0Y1TFBXakV1Q1AzU0JSOGEtaUoxNU5fUE9xRWxWNGJCWDJ3LWxoR0hLLVViUnVESHUxT0NiNUZBblBJVktna3V6QjRsekFLd0NUR0RReTFfUHFjcXRraGY1TG9XdVRmUnd1ZUdVaGRENS1xc0Y1UEdWeWFY?oc=5) (Chosunbiz) CRWV
-- [CoreWeave Stock Faces Earnings Test Amid Head-and-Shoulders Pattern and Rising Debt](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOV3VUTVp0TW92ZGpxbTg5bjR0eWZja2lnUXRWcXZ6LUs2eEQzQ05aNGpaR29YSFRsU3NsdlVXdGZmY1BrM2RMMEpsMXNaN3NVRFdYNjNqTXI3RHZXSmp1RkU4OFZsMDFRTFVFc3p6WUh0RkVhWFMzM3lULTFQOVNxaXlFMktMQnZaUEQzcFhsNDJQSkFwcUVfODZjdzdhb2xDS0lqRUotVXozVTFwMzdqRGFyQ1hYZ2FL?oc=5) (KuCoin) CRWV
+- [BTIG Reiterates Buy as Take-Two Prepares to Post Fiscal Q2 Results](https://news.google.com/rss/articles/CBMi1AFBVV95cUxQUlJkSlIyX19UcmNmbnh6OGRmVC1LSkVnQkpHcGtDWGxGVHRiU3Y3Q3V1VjJld01SeEV2dXJfWlZTeDdpaEVBWUxlamw1NTYtNnZQYlg5TFJQamtNRGJTV215U0x2YXZ4YjZOelJvdE16NDY3WW1TTjdkNmxGNjhBSFBMVzVockhhaVlNRGV4amFFSUczYklLVmVYSlJQQWVoamUySVpLZ0lNSTFsVFhYRWN2ekRrSGh4VmtKUDBpb3p0YXI2NjBtV2h1WU1YdFR5NUZwcg?oc=5) (ad-hoc-news.de) TTWO
+- [Take-Two Holds Outlook, Shares Rise](https://news.google.com/rss/articles/CBMie0FVX3lxTE5aYVVGc3BjdGwyU3J3YzU0a3hnS1llSjdHQTUyTjNRZmxvNWRxX3RsZFJ1dENhYnRHN1Y3YTJ6N3h4Si1WaGJEQ1Y5VElqSmpqTmJRUW50WUplekdRTzJVcmZ0SmZ1Uk1LcGRRVVlMSjJmSHRGbTYwS1RBQQ?oc=5) (AskTraders.com) TTWO
+- [Applied Materials stock climbs ahead of earnings report](https://news.google.com/rss/articles/CBMirgFBVV95cUxPaWhCSXA0QlBUTl96cHVDcFNEcUFhNk1SU29uZHF5OXRTRHcxLUIyNHNjb3dPSVRoUl9UOHdObi04UVVuejM2WEFpMF9FckxlQmVYWHFob2txVW1WSF9NTU5VZ2dDczhoMW9DVmZPSW5TblFrRm9DWDBldkFOLXNTa19MWDJ3cWFjdEpVaWhXVGdObHRNaVVOMlRJeWdiWkhGZE1aNUtveExKVThfdnc?oc=5) (StreetInsider) AMAT
+- [AI boom helps Kainos profits rise but slowdown on the way](https://news.google.com/rss/articles/CBMipwFBVV95cUxOdF9qeEJ1cktfMFRNUHBaaXNJMktfcGFFR2daTlZENU1xYmV2ZDNINElVRkdGS3VBbGY2RGxkdU5JRVF5ZTRlVTZUOE12M0QxUFJPdXoxUjhFZzI4NWZ0aEItbnAtYlV6M2RDalNkNEZRR0VNNmtwY2pJdDFZTkY5N2k3cW9OY2ZFQ0NFU2VvSzZiakZuRXJZNF96VGVoNnUxZVZUWDNNWQ?oc=5) (The Times, £) KNOS
+- [SRT Marine Systems flags going concern uncertainty as profit rises](https://news.google.com/rss/articles/CBMi0wFBVV95cUxQemZCbkd2MU5WSnRNQk5MS0pMSWdwcHl1bno0elpGODRYT05aYjBZSmlnMW5HdGFWVG0tOGp0bmFiM3hvNTdqVk5ONEx6Sl9PVzZkXzI5SjhEd3o0WC1WcUx4elpjU3JLTXZuMDR2M05oUks4ak1GQ3kzaFhnd2ZqUFlFQTNMcWsyN2JmTUhFZHkwU2NBcHpOUFA4MGtqN0g4eU5qRURmSzhranlJWm5aSldXSE5VVVhCNHhUWGthR0FPbnNOdFhhd2M1OU1MT0R4RElN?oc=5) (Proactive Investors) SRT
+- Update: [CoreWeave Stock Expected to Swing 20.7% as Earnings Loom Amid Texas and Debt Concerns](https://news.google.com/rss/articles/CBMiugFBVV95cUxPaDFiUC1wWFd2UHpFRG1tYndrb3hyaGxpVEk2S1Q1dDdoWkhwSUN0ci1lQnQ5ellfUEs5c0dBUDZBMm5MTVc2dWtxcjE0VjA1VkpaM0pXYWVRMGs1RDRGSmMtdlpqa0dOQnB5aXZlLXMxbHhlODA5d2hkVDVDVXBaVlBYVDFFYVVobzI0dmFNMFpmZnJWM25hWUQxMUlaMl9rQ2lRRzl3NXRkZFJRU2hfR3RzX0NKZW5va3c?oc=5) (KuCoin) CRWV
+- [Charter Communications Reports $14.9 Billion In Q3 Revenue And Announces $2 Billion Cost Savings Plan](https://news.google.com/rss/articles/CBMiuwFBVV95cUxQS3FnZy1lLVpVMURod29zZUJZZlpydFJGcWtNMXY0d2NaaVN3aUpISDdseEtpSlRieEtBMGtNSjBpWncwdFVxTFc1Q1hyVTdJMDl0T2JJYUVQWE41VHdFbXVGVHAwY2pJWTg1TFZmNlZsWEF1MlZ5RnpwY3NZNjBXbWlMMnY5cmlNVUt2RmVIZ3IwTDEwajM1LVhVWjFUa3JUVG1FN203WU84SkFDeDV2elUyelNPSk5IWGJz?oc=5) (Pulse 2.0) CHTR
 
 
 ## Most covered stocks
 
-- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 70 outlets, 32 stories
-- **AAPL** [Apple](https://alltechstocks.com/stocks/aapl.html): 17 outlets, 17 stories
-- **CRWV** [CoreWeave](https://alltechstocks.com/stocks/crwv.html): 18 outlets, 16 stories
-- **PLTR** [Palantir](https://alltechstocks.com/stocks/pltr.html): 6 outlets, 5 stories
-- **IBM** [IBM](https://alltechstocks.com/stocks/ibm.html): 6 outlets, 4 stories
+- **NVDA** [Nvidia](https://alltechstocks.com/stocks/nvda.html): 149 outlets, 65 stories
+- **TTWO** [Take-Two](https://alltechstocks.com/stocks/ttwo.html): 43 outlets, 15 stories
+- **GOOGL** [Alphabet](https://alltechstocks.com/stocks/googl.html): 13 outlets, 15 stories
+- **AMD** [AMD](https://alltechstocks.com/stocks/amd.html): 26 outlets, 18 stories
+- **CRWV** [CoreWeave](https://alltechstocks.com/stocks/crwv.html): 16 outlets, 14 stories
 
 *Ranked by news coverage, not by merit. Not a buy list.*
 
 
 ## New US filings
 
-- **AKAM** Akamai: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/1086222/000108622226000100/0001086222-26-000100-index.htm)
-- **TEAM** Atlassian: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/1650372/000165037226000054/0001650372-26-000054-index.htm)
-- **DBX** Dropbox: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/1467623/000146762326000061/0001467623-26-000061-index.htm)
-- **FICO** Fair Isaac: [Annual report (10-K)](https://www.sec.gov/Archives/edgar/data/814547/000081454726000042/0000814547-26-000042-index.htm)
-- **CHTR** Charter Communications: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/1091667/000109166726000073/0001091667-26-000073-index.htm)
-- **CHTR** Charter Communications: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/1091667/000109166726000072/0001091667-26-000072-index.htm)
+- **TTWO** Take-Two: [Quarterly report (10-Q)](https://www.sec.gov/Archives/edgar/data/946581/000162828026072254/0001628280-26-072254-index.htm)
+- **TTWO** Take-Two: [Results (8-K)](https://www.sec.gov/Archives/edgar/data/946581/000162828026072175/0001628280-26-072175-index.htm)
+- **AKAM** Akamai: [Major agreement (8-K)](https://www.sec.gov/Archives/edgar/data/1086222/000119312526452631/0001193125-26-452631-index.htm)
 
 
 *Not financial advice. All Tech Stocks is a news index for research. Nothing here is financial advice or a recommendation to buy, sell or hold any investment. Rankings show how much news coverage a company is getting, not whether its shares are a good investment. Check the original sources and consider regulated advice before you invest.*
