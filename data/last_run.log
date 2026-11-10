@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Tue 10 Nov 14:53 UK time
-  feeds: 59/59 worked, 406 new items (156 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 3 new filings
-  stories: 910 grouped, 392 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Tue 10 Nov 15:53 UK time
+  feeds: 59/59 worked, 234 new items (78 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 939 grouped, 397 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 355 stories live, 1 new AI lines. Top: Take-Two’s ‘NBA 2K’ Sales Disappoint Due to ‘Grand Theft Auto VI’. Most covered stock: NVDA
-  trends: 1099 stock-days and 84 section-days refreshed, 22 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  site: 361 stories live, 2 new AI lines. Top: Take-Two’s ‘NBA 2K’ Sales Disappoint Due to ‘Grand Theft Auto VI’. Most covered stock: NVDA
+  trends: 1102 stock-days and 84 section-days refreshed, 22 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
