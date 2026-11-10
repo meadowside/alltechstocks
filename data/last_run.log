@@ -1,11 +1,11 @@
-All Tech Stocks run: auto at Tue 10 Nov 06:53 UK time
-  feeds: 59/59 worked, 71 new items (17 excluded by rules, 14 Google queries resting this hour)
-  filings: 88/90 companies checked, 0 new filings
-  stories: 816 grouped, 344 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, a private company that is not listed on any exchange, so the stak'
-  indexnow: 140 URLs queued for after deploy
-  site: 311 stories live, 0 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
-  trends: 1077 stock-days and 84 section-days refreshed, 22 days of history
-  email: 34 stories, 0 new AI lines, opening note: yes
-  notify: skipped (no Telegram settings)
-  AI lines: 0 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Tue 10 Nov 07:53 UK time
+  feeds: 59/59 worked, 83 new items (14 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 816 grouped, 346 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, which is not listed, so'
+  AI trending line rejected (31 words): "Vodafone's cost savings from cutting 3,000 European roles, worth €200m, have lifted its profit target, and it has said the reductions were m"
+  AI trending line rejected (26 words): 'Deaths at a Tata-run supplier add pressure on Apple to police safety across its Indian production base, which is a growing share of its iPho'
+  indexnow: 0 URLs queued for after deploy
+  site: 312 stories live, 1 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
+  trends: 1078 stock-days and 84 section-days refreshed, 22 days of history
+  AI lines: 1 written, 3 rejected, 0 failed calls
