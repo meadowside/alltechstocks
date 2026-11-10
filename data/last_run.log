@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Tue 10 Nov 04:53 UK time
-  feeds: 59/59 worked, 88 new items (21 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 10 Nov 05:53 UK time
+  feeds: 59/59 worked, 89 new items (21 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 799 grouped, 340 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX stock while adding to its holdings in Nvidia and AMD. It has also '
+  stories: 813 grouped, 343 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX shares while adding to its holdings in Nvidia and AMD. It has also'
   indexnow: 0 URLs queued for after deploy
-  site: 304 stories live, 1 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
-  trends: 1075 stock-days and 84 section-days refreshed, 22 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 308 stories live, 2 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
+  trends: 1076 stock-days and 84 section-days refreshed, 22 days of history
+  AI lines: 2 written, 1 rejected, 0 failed calls
