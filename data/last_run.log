@@ -1,11 +1,11 @@
-All Tech Stocks run: auto at Tue 10 Nov 07:53 UK time
-  feeds: 59/59 worked, 83 new items (14 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 816 grouped, 346 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, which is not listed, so'
-  AI trending line rejected (31 words): "Vodafone's cost savings from cutting 3,000 European roles, worth €200m, have lifted its profit target, and it has said the reductions were m"
-  AI trending line rejected (26 words): 'Deaths at a Tata-run supplier add pressure on Apple to police safety across its Indian production base, which is a growing share of its iPho'
+All Tech Stocks run: auto at Tue 10 Nov 08:53 UK time
+  feeds: 59/59 worked, 99 new items (35 excluded by rules, 14 Google queries resting this hour)
+  filings: 88/90 companies checked, 0 new filings
+  stories: 828 grouped, 353 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: Invest): 'Ark Invest, the fund run by Cathie Wood, has bought $96 million of SpaceX, the private rocket and satellite company, and added to its holdin'
+  AI trending line rejected (26 words): "BT's planned Starlink launch is on hold while it waits for controversy over Starlink's battlefield service disruptions to fade, leaving its "
+  AI trending line rejected (26 words): "Vodafone's German business faces a non-cash write-down because higher yields lower the value it places on assets there, while the group stil"
   indexnow: 0 URLs queued for after deploy
-  site: 312 stories live, 1 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
-  trends: 1078 stock-days and 84 section-days refreshed, 22 days of history
+  site: 317 stories live, 1 new AI lines. Top: Take-Two lifts annual revenue, profit forecasts ahead of "GTA VI" launch. Most covered stock: NVDA
+  trends: 1082 stock-days and 84 section-days refreshed, 22 days of history
   AI lines: 1 written, 3 rejected, 0 failed calls
