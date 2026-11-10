@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Tue 10 Nov 12:53 UK time
-  feeds: 59/59 worked, 233 new items (89 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 10 Nov 13:53 UK time
+  feeds: 21/59 worked, 28 new items (2 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 872 grouped, 376 name a watched stock or pass the market rules
+  stories: 864 grouped, 371 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 342 stories live, 3 new AI lines. Top: Vodafone raises profit target after cutting 3,000 European jobs. Most covered stock: NVDA
+  site: 337 stories live, 0 new AI lines. Top: Vodafone raises profit target after cutting 3,000 European jobs. Most covered stock: NVDA
   trends: 1093 stock-days and 84 section-days refreshed, 22 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  AI lines: 0 written, 0 rejected, 0 failed calls
