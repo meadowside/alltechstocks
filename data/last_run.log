@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Wed 11 Nov 10:53 UK time
-  feeds: 59/59 worked, 135 new items (44 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 11 Nov 11:53 UK time
+  feeds: 59/59 worked, 140 new items (44 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1216 grouped, 523 name a watched stock or pass the market rules
+  stories: 1224 grouped, 528 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 450 stories live, 2 new AI lines. Top: Options Action: CoreWeave reports earnings Tuesday. Most covered stock: NVDA
+  site: 447 stories live, 1 new AI lines. Top: Watch CoreWeave Earnings Top Estimates, Boosts Annual Forecast. Most covered stock: NVDA
   trends: 1133 stock-days and 84 section-days refreshed, 23 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  AI lines: 1 written, 0 rejected, 0 failed calls
