@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Wed 11 Nov 21:53 UK time
-  feeds: 59/59 worked, 98 new items (27 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 11 Nov 22:53 UK time
+  feeds: 59/59 worked, 207 new items (96 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1387 grouped, 602 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares rose): "Teradyne's shares rose after Jefferies, the investment bank, put a figure of around $2 billion on the opportunity it sees in Nvidia's busine"
+  stories: 1402 grouped, 615 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares rose): "The only detail available is that Teradyne's shares rose and that Jefferies has put a figure of about $2 billion on an opportunity linked to"
+  AI line rejected (reads like advice or a prediction: shares rose): "SanDisk's shares rose sharply after Evercore backed an upswing in NAND flash memory, the chip type SanDisk makes. The rally also lifted othe"
   indexnow: 0 URLs queued for after deploy
-  site: 428 stories live, 1 new AI lines. Top: CoreWeave Sees ‘No Reason’ That Nvidia Partnership Will Change. Most covered stock: NVDA
-  trends: 1154 stock-days and 84 section-days refreshed, 23 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 433 stories live, 5 new AI lines. Top: CoreWeave Sees ‘No Reason’ That Nvidia Partnership Will Change. Most covered stock: NVDA
+  trends: 1156 stock-days and 84 section-days refreshed, 23 days of history
+  AI lines: 5 written, 2 rejected, 0 failed calls
