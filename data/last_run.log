@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Wed 11 Nov 21:02 UK time
-  feeds: 59/59 worked, 108 new items (35 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 11 Nov 21:53 UK time
+  feeds: 59/59 worked, 98 new items (27 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1374 grouped, 598 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: opportunity): 'Jefferies has reportedly identified a potential $2 billion opportunity linked to Nvidia, and Teradyne shares rose on the news. Teradyne make'
+  stories: 1387 grouped, 602 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares rose): "Teradyne's shares rose after Jefferies, the investment bank, put a figure of around $2 billion on the opportunity it sees in Nvidia's busine"
   indexnow: 0 URLs queued for after deploy
-  site: 437 stories live, 0 new AI lines. Top: Meta is losing its longtime head of infrastructure. Most covered stock: NVDA
-  trends: 1155 stock-days and 84 section-days refreshed, 23 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  site: 428 stories live, 1 new AI lines. Top: CoreWeave Sees ‘No Reason’ That Nvidia Partnership Will Change. Most covered stock: NVDA
+  trends: 1154 stock-days and 84 section-days refreshed, 23 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
