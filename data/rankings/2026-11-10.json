@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-04",
+ "end": "2026-11-10",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 680,
+    "outlets": 171,
+    "biggest": {
+     "headline": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+     "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+     "outlet": "CNBC",
+     "outlets": 111
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 207,
+    "outlets": 90,
+    "biggest": {
+     "headline": "AMD Stock Pops. It’s About Much More Than the Jensen Huang Probe.",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbzRFN0hDSWhxMU1KTVJhRXZ5ejlrUWtjXzlLT1IxR1lMQ0RONGxTN1dQUENXSlktYTZVN0Y1X2toSUdGcHJyS244anFDd3dRU05sZVc1Vm95cmt4VXlES2dJTTY4Y2NDcXZ2VlphR2NjZ08zTkw2ODRRYWNOTEdoT19YX3NXbmNvXzRPeEFR?oc=5",
+     "outlet": "Barron's",
+     "outlets": 20
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 140,
+    "outlets": 80,
+    "biggest": {
+     "headline": "Take-Two lifts annual revenue, profit forecasts ahead of \"GTA VI\" launch",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVU1kNnl5WDJ3dmRVVTJEczM5UF9Lc0otMlB3YlRqWGtmYzNlZ0VtTlhJN1VWQjd5M2RNbVNlbnROS2JDajd2cjhISzBNRHVnc0d0MG8yT292SFJJb19RdEd5b0diUVVkLXIzWFFRbGhKZFNBRXJISGdLVzZpd0ExTWVza1BGSjV5TW9BY3VTa1huVXN4SGpTU3Q4M1ZVcDdMYVNv?oc=5",
+     "outlet": "Reuters",
+     "outlets": 24
+    }
+   },
+   {
+    "symbol": "QCOM",
+    "name": "Qualcomm",
+    "slug": "qcom",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 123,
+    "outlets": 63,
+    "biggest": {
+     "headline": "SpaceX partners with Qualcomm to take on Verizon, AT&T and T-Mobile",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPaW0zdUdpU1pPR0E4LXU2MVQ5bURzNlhtMXI2LU1INTBiOC1Rc1VHa2xEVDR5cXQzWXo5M3BJSjEtVnh1SnpBZ19YT3RELWpwbmFGNF9BcjMza3dtanZEREhhRFlIcjdsRVF0TzFiQVRuUlVzNHpYUEZGY1d1WDNQQlBfVTBrWU05MTBPODJwWUdVbk5id01kblZCemYzVk8zVkpaVFVDcDNhUmZYZTZB?oc=5",
+     "outlet": "Firstpost",
+     "outlets": 5
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 120,
+    "outlets": 40,
+    "biggest": {
+     "headline": "AMD Expands Work With Google to Power Host Infrastructure for Cloud TPU",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTVNyWXdFUm9lTHRlYUg5c1cyaXJZS1o3QkliRXVPb09pXzV2c1A3TVh4QXZpNm1FTG54c1otT29NRWkxY0xuRXdYYTdzWTRxUjMxUThmS2JRbldQcjNRYTlhUkFRMlFNTXVaM2kyUzFIZWR0WWFRRU1lb1NjQ1FiN1hrMGZHSlF2eDZmd1RUUW1Tdkl0TnpKYUstVG5RMDk5bmlfalVJOXlLbVR3TEdZYWlvcE9sMGFXUjNjcUM1bjBwb0FGUy1Z?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 5
+    }
+   },
+   {
+    "symbol": "CRWV",
+    "name": "CoreWeave",
+    "slug": "crwv",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 97,
+    "outlets": 50,
+    "biggest": {
+     "headline": "Options Action: CoreWeave reports earnings Tuesday",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa2FubXV1andrcTJ3UmNqNGhaMDdpcFFrNTE2cTJKVjBTRUp1V2FMcHM3WUFXdFlTUzlHYlNmclFBajZYNGNXVURDYVBsc3l2RUNSbDkyRkxvMXBqV3ktWHJkVG11UVhGMEN2aWZsN1NiZklUZi16MW16a1pFcXlDbDJaOUtlcGk3dTJxaWtscDdhbEI2YUpr?oc=5",
+     "outlet": "CNBC",
+     "outlets": 28
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 91,
+    "outlets": 35,
+    "biggest": {
+     "headline": "Apple CEO Presses Software Chief to Pursue More Ambitious AI Strategy",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQjlhNk9NU1ZVZFo4UG9TR3FmcGxtMWhnY3o4R3dJNGxHc3E2QlR4cmlOSDBuU2JHLVFnMlpVYWtneGxacHhOZWM5bWNJWndxZndxdEstamJjenMwaFoxT3RHSXg3Q2E3cC1pdDM1bm16VkJPak43T2xLRkNvTE9QNHdTRjdfekNGbXJuMFNrcWJ5OGpxR0x3OEJPTll6bHNOaUwzc1E1OF9DQnRZdFZBRXgtN0VYeEhUTTVOa3RKdDlrVU9keXNDOA?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 12
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 86,
+    "outlets": 36,
+    "biggest": {
+     "headline": "Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZlMwX3dzdHpVbEFBcTlGVWlibGtMcDBYOGJwbVJaaWs5X2xiVWM3ZUVDZHBoM1dyM0t1NjNYdVpzTHlYVHhKYTRHbXJTSmpRSFRLZ3FENE9kcXRFcHZVVTloYVJybUJaWWJ0a0ZGcVZpWXA1U2dZNmp1ZjRtbEJWSEtSc1RRbXdsSnh3bjV2WE90SHpBeGJkQ1hfUUtnZV9ldW14RUJoRVFMMFZmVGxBemNXSlM?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 10
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 71,
+    "outlets": 38,
+    "biggest": {
+     "headline": "Intel shares fall as competitor reports record results",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObWtIVzhJVFFpQXFpMnIzbzdjN0paenh5blVYSnNwUVJSbXNnVUJDcS11ZjhzS2VHYS11Xzd3dzRCLUJfZEg5dUp4dTdOWGpDd01tSHlZTnQ1V2ZlTm5xWEJXdk5EQmZVeFZIQ1JLWXhybkFFTGNQYTNfWXM5SnlEN09xTWRndHMwR3Jfb2w3THZWdkpMbkY1Z1FkYmpSeFNZbmwxSVZhZUhWUWQ2?oc=5",
+     "outlet": "StreetInsider",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 70,
+    "outlets": 30,
+    "biggest": {
+     "headline": "Micron Rises With Chip Peers as Apple's Memory Warning Cuts Both Ways",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcS1BUGVRUnZfT05SZXpxRkNVaUY2aVpWcmRtak1wMzBfQllxMUszUm11bnBhRnlCNllITHNJUXIyOU9DV0FGaHdlcUtjWDhrMXFZQzZJbU1LdlgwaEZfWlNNMWpJNkVpRmIzODNLZEhpcXpnSDZWalNjUjJkNkZqX1BXdzc4ekswb2dtSnJtdUpxcXlVX0RHa0dhSXR6ak1GN2xsalVkTU53TUd5eHlza3VvbDdqNXAxWV9jS0ZvSDJYaEtKM3NzZGFKeWNZU1Q1SW82TGdLOG8?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 31,
+    "outlets": 22,
+    "biggest": {
+     "headline": "Vodafone raises profit target after cutting 3,000 European jobs",
+     "link": "https://www.cityam.com/vodafone-raises-profit-target-after-cutting-3000-european-jobs/",
+     "outlet": "City AM",
+     "outlets": 15
+    }
+   },
+   {
+    "symbol": "BT.A",
+    "name": "BT Group",
+    "slug": "bt-a-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 31,
+    "outlets": 21,
+    "biggest": {
+     "headline": "BT reports higher profit as broadband customer losses ease",
+     "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNXzJwTHVYTXR6Z0UtcnQtVkNIdTFrVkZCVTVVeUI1anl4cmxMTzJ4cU9fRURzY3o5MDREMFdZZHhyU3NIVE9iNlpYVU5YbjhsNUdnRWpRVm1ZbFBaSmZDQjRhT2hnNXM5dDdUN2JKMVVjVnZrQWlMZHJ6N3JRS2Q1dm1ITmVCVHNLeVJ5SWxXNVdPNjBVLXd4N1VpekxuZVNuWDVCUUF1RjdyMGVmUk1NNzNmX25fT1J2Q2pBa1BYLWVKOHJpR3pJ?oc=5",
+     "outlet": "The Times",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 22,
+    "outlets": 15,
+    "biggest": {
+     "headline": "Arm forecasts third-quarter revenue above estimates on AI spending boom",
+     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMGV2UGo5V1FRUGxkUzdPWVo1NGhFM2lvM2N5NVUycUUya2VIX3N2aHM5am8tNUhCQ21oMng4LVQ2UllCWnRpdlNqUDd4MTM2ZVhpUTBlR3NQTTdBZFNMVlRDVV9LQ2d4Vjc1M0ZBcldwZmVEaGpDTENnVHR2bmp3Sm9ENnF6YWU1TDRjcmxiSWQwTjY5clQwb2V2a1JMdUhxLXRfLUZwUlNwR0Rob1E?oc=5",
+     "outlet": "Reuters",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "KNOS",
+    "name": "Kainos",
+    "slug": "knos-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 16,
+    "outlets": 12,
+    "biggest": {
+     "headline": "Kainos revenue jumps 37% as government contracts drive first-half growth",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY3JqeDQzSDktMWR1ZmY0dWhFbkxHYVBNLVNDZFR1QXJfa2c4cEU1SXl0eUVTMXhvUDNJVkdUcUdfMWNxbm15eFVGUC1wS3l3MGVaaDFqejNQVm4zUC01YU1rT0tqRExYeUl3RVVqMUlyV0dJdVUzQ2FjVkw3NHZWYWZwOWhISWgyMWhWZ1V4YVFUcTROUmRJc1ljTEUycVh2WVZWNTNXeDZvLTNITXQ1M3J0MTRhQlh6NkR5T0F0c2dxOFdQZll0empDRzBQWTZOQjAzUWlMQlRtdw?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 12,
+    "outlets": 3,
+    "biggest": {
+     "headline": "RELX Share Price: 3,084.0p, Up 0.85% Nov 5",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORUljY3NpYzNHRmF4VHU3b25oYTRUeFNIWmE1ZEtFZDM2LTJNUGlGU3Z4aTZ6cWd0SmpocTlMaUhKZ2M4SHY5ZU5HRVJ0QWpCWUNDbTBXenRkR1RFSXpnZnZLZ2dGYjhodUQ5dzN1d1lWdmJKNEZwZG80eDVsT2IyS2NDZXZZVVgxRnZaQ3V0ZERPOVhWcXV3dw?oc=5",
+     "outlet": "JournalArta",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 8,
+    "outlets": 7,
+    "biggest": {
+     "headline": "Airtel Africa Targets 12 Million Shares In Fresh Buyback",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVzJLVF82VmdOQ09VNFY4cUNpZzFGVHYwck1ld1B6R3plMUNLX0h2dnZUUzgzaXoxUFFhUGRjSDJRR2hKNjdDTENhQ3ZqQkNILVF6RVIyVGFhM3dvX0FHWkpPM3hUMl9vd1lLa2d5TGdYTWw3djdfT0pNRkx1bWdJcl9OajVIVzA?oc=5",
+     "outlet": "The Whistler Newspaper",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "AUTO",
+    "name": "Auto Trader",
+    "slug": "auto-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 8,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Auto Trader stock heads into half-year results",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQnJqZlNlMmgxdnFsZ3VuVXJQLUlMV0ktSG1PLVFLcC0zS3V0RTN3YmNSN2tqZXJPNHFjd0lqWDNxdFVlU3d0Z3hIcjhqUktwcVBfTXdWa09lWnJaOVQ4SGJBZGV1OHpDQldLcG5qQTJqZ1J0cU83eEZTMlhXX1BreEtuZE5WNlpnT0FBQUt6YTdGT01oUl8zeGRTalVEZEZVMG4zXzZLRkI?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "HTWS",
+    "name": "Helios Towers",
+    "slug": "htws-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 5,
+    "outlets": 2,
+    "biggest": {
+     "headline": "Helios Towers hails record tenancy additions, tightens FY guidance upwards",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPa1loWER1cFFRQ0hsU3hfYTJMZVRoMm5oYjRMNGtSajhjLU1zY0NEWk1DNjhncEdJQklEUWd5T3RWUEdVZi1fY1hUN28xR3V0dTRzN1RTamhEWWRCWkxXaklYenBublcwY1V5RG43OHpaTkk2NVdPX1lWdGYzY0FCbFlWQlZZUVlEakZqS3FRY3JDa3h2WTd3dVNNeDlQSFZSR0QwZWJCcmRsdTJ2b2h6MmFvRXByOWRmOXU1OWpqQnNCRHdJX0dqMjVYWE5ydWdwYkFVUnhQZ2FTUQ?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "SRT",
+    "name": "SRT Marine Systems",
+    "slug": "srt-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 2,
+    "biggest": {
+     "headline": "SRT Marine Systems flags going concern uncertainty as profit rises",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQemZCbkd2MU5WSnRNQk5MS0pMSWdwcHl1bno0elpGODRYT05aYjBZSmlnMW5HdGFWVG0tOGp0bmFiM3hvNTdqVk5ONEx6Sl9PVzZkXzI5SjhEd3o0WC1WcUx4elpjU3JLTXZuMDR2M05oUks4ak1GQ3kzaFhnd2ZqUFlFQTNMcWsyN2JmTUhFZHkwU2NBcHpOUFA4MGtqN0g4eU5qRURmSzhranlJWm5aSldXSE5VVVhCNHhUWGthR0FPbnNOdFhhd2M1OU1MT0R4RElN?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "SAAS",
+    "name": "Microlise",
+    "slug": "saas-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 2,
+    "outlets": 2,
+    "biggest": {
+     "headline": "Patrick Viney joins Microlise as new Regional Sales Director",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWWNqQWV2d0lVb3dXLXdIUjJDSk93LThkOVBtb0RFd05xZThUWEk1dFpxbEFjVEtsY2YtX0JHc2dkSlc5WFVISFNTVVN5YUhQZTBWaTlqLVFQeDRoV01MSFBKOXlRby0zS1lIWGtzcWdMa3MyRTZOSGc0WlVPdWx2YkZRQnNzb2ozR1p1S2VReDEwZkI0aFNkV3NBVQ?oc=5",
+     "outlet": "Big Rigs",
+     "outlets": 2
+    }
+   }
+  ]
+ }
+}
