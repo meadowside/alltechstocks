@@ -1,12 +1,8 @@
-All Tech Stocks run: auto at Thu 12 Nov 06:53 UK time
-  feeds: 59/59 worked, 107 new items (38 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 12 Nov 07:53 UK time
+  feeds: 59/59 worked, 120 new items (31 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1427 grouped, 625 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares rose): "AMD's shares rose sharply after UBS reported that its server CPU shipments climbed 31%. The figure points to growing demand for AMD's data c"
-  indexnow: 142 URLs queued for after deploy
-  site: 441 stories live, 4 new AI lines. Top: Meta is losing its longtime head of infrastructure. Most covered stock: NVDA
-  trends: 1167 stock-days and 84 section-days refreshed, 24 days of history
-  AI line rejected (reads like advice or a prediction: shares rise): "AMD has seen its shares rise after UBS reported a 31% jump in shipments of its server CPUs. The figure points to growing demand for AMD's pr"
-  email: 32 stories, 0 new AI lines, opening note: yes, short sections: Regulation & Legal
-  notify: skipped (no Telegram settings)
-  AI lines: 4 written, 2 rejected, 0 failed calls
+  stories: 1431 grouped, 625 name a watched stock or pass the market rules
+  indexnow: 0 URLs queued for after deploy
+  site: 444 stories live, 0 new AI lines. Top: Meta is losing its longtime head of infrastructure. Most covered stock: NVDA
+  trends: 1168 stock-days and 84 section-days refreshed, 24 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
