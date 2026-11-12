@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Thu 12 Nov 02:53 UK time
-  feeds: 59/59 worked, 103 new items (25 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1435 grouped, 632 name a watched stock or pass the market rules
-  AI trending line rejected (29 words): 'Reports say Commerce Secretary Howard Lutnick held back a planned tightening of controls on Nvidia chips reaching China through third countr'
+All Tech Stocks run: auto at Thu 12 Nov 03:53 UK time
+  feeds: 59/59 worked, 75 new items (17 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 0 new filings
+  stories: 1426 grouped, 633 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 451 stories live, 3 new AI lines. Top: CoreWeave Sees ‘No Reason’ That Nvidia Partnership Will Change. Most covered stock: NVDA
-  trends: 1163 stock-days and 83 section-days refreshed, 24 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+  site: 449 stories live, 0 new AI lines. Top: CoreWeave Sees ‘No Reason’ That Nvidia Partnership Will Change. Most covered stock: NVDA
+  trends: 1163 stock-days and 84 section-days refreshed, 24 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
