@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Thu 12 Nov 19:53 UK time
-  feeds: 59/59 worked, 131 new items (42 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Thu 12 Nov 20:53 UK time
+  feeds: 59/59 worked, 115 new items (30 excluded by rules, 14 Google queries resting this hour)
   filings: 89/90 companies checked, 0 new filings
-  stories: 1462 grouped, 641 name a watched stock or pass the market rules
+  stories: 1464 grouped, 635 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "Intel's chief executive, Lip-Bu Tan, has bought $9.7 million of the company's stock following what the headline describes as the firm's wors"
   indexnow: 0 URLs queued for after deploy
-  site: 445 stories live, 1 new AI lines. Top: Paul Meeks: AMD and Broadcom's gains aren't necessarily Nvidia's losses. Most covered stock: NVDA
-  trends: 1190 stock-days and 84 section-days refreshed, 24 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  site: 441 stories live, 0 new AI lines. Top: Microsoft’s Outlook email hit by new outage. Most covered stock: NVDA
+  trends: 1191 stock-days and 84 section-days refreshed, 24 days of history
+  AI lines: 0 written, 1 rejected, 0 failed calls
