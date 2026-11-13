@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Fri 13 Nov 12:53 UK time
-  feeds: 59/59 worked, 222 new items (118 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 13 Nov 13:53 UK time
+  feeds: 59/59 worked, 167 new items (63 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1440 grouped, 626 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only a headline and no detail on the buyback itself, such as its size, timing or how it is funded. Lam Research makes sem'
+  stories: 1426 grouped, 622 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage only says that a sale of shares by co-founder Jensen Huang would unsettle investors and carries legal and price risks. It gives'
+  AI trending line rejected (28 words): 'Take-Two says NBA 2K27 fell short of its sales plans, which it attributes to the timing of Grand Theft Auto 6, a rival release in its own po'
   indexnow: 0 URLs queued for after deploy
-  site: 437 stories live, 2 new AI lines. Top: Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft. Most covered stock: NVDA
-  trends: 1210 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  site: 436 stories live, 3 new AI lines. Top: Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft. Most covered stock: NVDA
+  trends: 1212 stock-days and 84 section-days refreshed, 25 days of history
+  AI lines: 3 written, 2 rejected, 0 failed calls
