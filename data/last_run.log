@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Fri 13 Nov 16:53 UK time
-  feeds: 59/59 worked, 182 new items (80 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1372 grouped, 614 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline says companies linked to Alice Huang have invested in DeepSeek, the Chinese AI developer, and that these companies have promise'
+All Tech Stocks run: auto at Fri 13 Nov 17:53 UK time
+  feeds: 59/59 worked, 149 new items (65 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1413 grouped, 637 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage is thin: it says stock market bulls have largely shrugged off worries about concentrated risk, following recent turbulence arou'
   indexnow: 0 URLs queued for after deploy
-  site: 421 stories live, 5 new AI lines. Top: Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft. Most covered stock: NVDA
-  trends: 1223 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 5 written, 1 rejected, 0 failed calls
+  site: 415 stories live, 1 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
+  trends: 1231 stock-days and 84 section-days refreshed, 25 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
