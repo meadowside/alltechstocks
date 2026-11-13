@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Fri 13 Nov 14:53 UK time
-  feeds: 59/59 worked, 189 new items (71 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 13 Nov 15:53 UK time
+  feeds: 59/59 worked, 148 new items (50 excluded by rules, 14 Google queries resting this hour)
   filings: 89/90 companies checked, 1 new filings
-  stories: 1411 grouped, 627 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage describes Jensen Huang, Nvidia's co-founder, weighing a sale of shares worth about $135bn. Any such sale would be a notable eve"
+  stories: 1388 grouped, 616 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only headline-level facts: Cerebras, a chipmaker, has a partnership with Microsoft, and Modine Manufacturing is linked to'
+  AI trending line rejected (29 words): 'Cisco says its AI infrastructure orders are set to double in revenue this fiscal year, as it works to build a larger presence in the market '
   indexnow: 0 URLs queued for after deploy
-  site: 435 stories live, 2 new AI lines. Top: Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft. Most covered stock: NVDA
-  trends: 1217 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  site: 425 stories live, 2 new AI lines. Top: Anthropic Unveils Office Tools Ahead of IPO, Taking on Microsoft. Most covered stock: NVDA
+  trends: 1220 stock-days and 84 section-days refreshed, 25 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
