@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Fri 13 Nov 00:53 UK time
-  feeds: 59/59 worked, 105 new items (30 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 11 new filings
-  stories: 1489 grouped, 659 name a watched stock or pass the market rules
-  indexnow: 1 URLs queued for after deploy
+All Tech Stocks run: auto at Fri 13 Nov 01:53 UK time
+  feeds: 59/59 worked, 86 new items (35 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1471 grouped, 656 name a watched stock or pass the market rules
+  indexnow: 0 URLs queued for after deploy
   site: 456 stories live, 1 new AI lines. Top: Applied Materials forecasts quarterly revenue above estimates on strong AI chip demand. Most covered stock: NVDA
   trends: 1196 stock-days and 83 section-days refreshed, 25 days of history
   AI lines: 1 written, 0 rejected, 0 failed calls
