@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Fri 13 Nov 20:53 UK time
-  feeds: 59/59 worked, 128 new items (49 excluded by rules, 14 Google queries resting this hour)
-  filings: 88/90 companies checked, 0 new filings
-  stories: 1384 grouped, 629 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Fri 13 Nov 21:53 UK time
+  feeds: 59/59 worked, 169 new items (51 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 10 new filings
+  stories: 1388 grouped, 620 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 418 stories live, 2 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
-  trends: 1237 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  site: 409 stories live, 1 new AI lines. Top: Microsoft outage hits Outlook. AWS and Google users also report issues. Most covered stock: NVDA
+  trends: 1238 stock-days and 84 section-days refreshed, 25 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
