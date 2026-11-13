@@ -259,6 +259,12 @@ def cluster(items: list, cfg: Config) -> list[list]:
             ga, gb = groups[a], groups[b]
             if max(ga["last"], gb["last"]) - min(ga["first"], gb["first"]) > close_after:
                 continue
+            # Same quiet-gap rule as the first pass: a story that went silent for longer than the
+            # window is over. Without this, Anthropic's office tools launch (quiet since the 10th)
+            # merged with the Microsoft outage two days later on "Microsoft" and "Office", and the
+            # outage coverage ran under the Anthropic headline.
+            if max(ga["first"], gb["first"]) - min(ga["last"], gb["last"]) > window:
+                continue
             if ga["kind"] != gb["kind"]:
                 continue
             ca, cb = ga["core"], gb["core"]
