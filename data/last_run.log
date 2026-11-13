@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Fri 13 Nov 04:53 UK time
-  feeds: 59/59 worked, 95 new items (31 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 13 Nov 05:53 UK time
+  feeds: 59/59 worked, 85 new items (32 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1479 grouped, 658 name a watched stock or pass the market rules
-  AI trending line rejected (27 words): "Nvidia's board says Jensen Huang has stepped down as chief executive and president with immediate effect, so leadership of the company's ope"
+  stories: 1465 grouped, 653 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 452 stories live, 0 new AI lines. Top: Cisco Raises Sales Guidance in Sign of AI-Fueled Momentum. Most covered stock: NVDA
+  site: 449 stories live, 0 new AI lines. Top: Cisco Raises Sales Guidance in Sign of AI-Fueled Momentum. Most covered stock: NVDA
   trends: 1199 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  AI lines: 0 written, 0 rejected, 0 failed calls
