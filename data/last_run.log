@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Fri 13 Nov 17:53 UK time
-  feeds: 59/59 worked, 149 new items (65 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1413 grouped, 637 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage is thin: it says stock market bulls have largely shrugged off worries about concentrated risk, following recent turbulence arou'
+All Tech Stocks run: auto at Fri 13 Nov 18:53 UK time
+  feeds: 59/59 worked, 164 new items (75 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 1 new filings
+  stories: 1401 grouped, 630 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage describes stock market bulls brushing off worries about how concentrated risk has become around Nvidia. That is a description o'
+  AI trending line rejected (26 words): 'Cisco says its AI infrastructure orders are set to double in revenue this fiscal year, as it works to build a larger presence in the market.'
   indexnow: 0 URLs queued for after deploy
-  site: 415 stories live, 1 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
-  trends: 1231 stock-days and 84 section-days refreshed, 25 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 409 stories live, 1 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
+  trends: 1235 stock-days and 84 section-days refreshed, 25 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
