@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sat 14 Nov 12:53 UK time
-  feeds: 59/59 worked, 179 new items (100 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 14 Nov 13:53 UK time
+  feeds: 59/59 worked, 73 new items (26 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1254 grouped, 573 name a watched stock or pass the market rules
+  stories: 1244 grouped, 575 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 364 stories live, 2 new AI lines. Top: Microsoft outage hits Outlook. AWS and Google users also report issues. Most covered stock: NVDA
-  trends: 1248 stock-days and 84 section-days refreshed, 26 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  site: 363 stories live, 0 new AI lines. Top: Microsoft outage hits Outlook. AWS and Google users also report issues. Most covered stock: NVDA
+  trends: 1253 stock-days and 84 section-days refreshed, 26 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
