@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Sat 14 Nov 19:53 UK time
-  feeds: 59/59 worked, 73 new items (22 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 14 Nov 20:53 UK time
+  feeds: 59/59 worked, 86 new items (23 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1153 grouped, 534 name a watched stock or pass the market rules
-  AI line rejected (banned: epic): "Epic Games has added further lawyers to its legal team ahead of a Supreme Court case against Apple. The dispute centres on Apple's rules for"
+  stories: 1146 grouped, 529 name a watched stock or pass the market rules
+  AI line rejected (banned: epic): "Epic Games has added further legal counsel to its team ahead of a Supreme Court hearing against Apple. The dispute centres on Apple's App St"
   indexnow: 0 URLs queued for after deploy
-  site: 324 stories live, 0 new AI lines. Top: Italy fines Meta €805m over accessing users' photos. Most covered stock: NVDA
+  site: 311 stories live, 2 new AI lines. Top: Italy fines Meta €805m over accessing users' photos. Most covered stock: NVDA
   trends: 1260 stock-days and 84 section-days refreshed, 26 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  AI lines: 2 written, 1 rejected, 0 failed calls
