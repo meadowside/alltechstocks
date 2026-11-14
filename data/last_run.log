@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sat 14 Nov 02:53 UK time
-  feeds: 59/59 worked, 78 new items (32 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1399 grouped, 618 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Sat 14 Nov 03:53 UK time
+  feeds: 59/59 worked, 51 new items (19 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 0 new filings
+  stories: 1387 grouped, 608 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 411 stories live, 1 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
-  trends: 1242 stock-days and 82 section-days refreshed, 26 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+  site: 402 stories live, 0 new AI lines. Top: Bessent blames Lutnick’s commerce department for failure to blacklist Megaspeed. Most covered stock: NVDA
+  trends: 1242 stock-days and 83 section-days refreshed, 26 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
