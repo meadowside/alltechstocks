@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Sun 15 Nov 15:53 UK time
-  feeds: 59/59 worked, 164 new items (65 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Sun 15 Nov 17:15 UK time
+  feeds: 59/59 worked, 123 new items (48 excluded by rules, 14 Google queries resting this hour)
   filings: 73/90 companies checked, 0 new filings
-  stories: 888 grouped, 408 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: surge): 'A US judge has refused to dismiss a lawsuit accusing Micron, Samsung and SK hynix of fixing DRAM prices, finding the collusion claim plausib'
+  stories: 849 grouped, 399 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 202 stories live, 0 new AI lines. Top: Even Grand Theft Auto's original creators haven't been able to play GTA 6. Most covered stock: NVDA
+  site: 184 stories live, 2 new AI lines. Top: Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO. Most covered stock: NVDA
   trends: 1276 stock-days and 84 section-days refreshed, 27 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+  AI lines: 2 written, 0 rejected, 0 failed calls
