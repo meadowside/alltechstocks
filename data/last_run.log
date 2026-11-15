@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sun 15 Nov 10:53 UK time
-  feeds: 59/59 worked, 88 new items (14 excluded by rules, 14 Google queries resting this hour)
-  filings: 82/90 companies checked, 0 new filings
-  stories: 1016 grouped, 481 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Sun 15 Nov 11:53 UK time
+  feeds: 59/59 worked, 48 new items (12 excluded by rules, 14 Google queries resting this hour)
+  filings: 81/90 companies checked, 0 new filings
+  stories: 989 grouped, 462 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 254 stories live, 0 new AI lines. Top: Italy fines Meta €805m over accessing users' photos. Most covered stock: NVDA
-  trends: 1271 stock-days and 84 section-days refreshed, 27 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+  site: 243 stories live, 2 new AI lines. Top: Italy fines Meta €805m over accessing users' photos. Most covered stock: NVDA
+  trends: 1272 stock-days and 84 section-days refreshed, 27 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
