@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Sun 15 Nov 18:53 UK time
-  feeds: 59/59 worked, 125 new items (50 excluded by rules, 14 Google queries resting this hour)
-  filings: 67/90 companies checked, 0 new filings
-  stories: 832 grouped, 394 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Sun 15 Nov 20:53 UK time
+  feeds: 59/59 worked, 105 new items (33 excluded by rules, 14 Google queries resting this hour)
+  filings: 77/90 companies checked, 0 new filings
+  stories: 793 grouped, 373 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 178 stories live, 4 new AI lines. Top: Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says. Most covered stock: NVDA
-  trends: 1278 stock-days and 84 section-days refreshed, 27 days of history
-  AI lines: 4 written, 0 rejected, 0 failed calls
+  site: 165 stories live, 1 new AI lines. Top: Suspected China spy linked to Nvidia's ex-boss left in 2025, Megaspeed says. Most covered stock: NVDA
+  trends: 1280 stock-days and 84 section-days refreshed, 27 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
