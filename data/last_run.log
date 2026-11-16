@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Mon 16 Nov 00:53 UK time
-  feeds: 59/59 worked, 160 new items (37 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 0 new filings
-  stories: 751 grouped, 351 name a watched stock or pass the market rules
-  AI trending line rejected (27 words): "Singapore has barred a figure in the investigation into alleged diversion of Nvidia chips to China, a case that has left Nvidia's sales chan"
-  indexnow: 1 URLs queued for after deploy
-  site: 148 stories live, 0 new AI lines. Top: Intel sued by shareholders following 29% stock plunge. Most covered stock: NVDA
-  trends: 1287 stock-days and 83 section-days refreshed, 28 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 16 Nov 01:53 UK time
+  feeds: 59/59 worked, 97 new items (19 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 0 new filings
+  stories: 756 grouped, 353 name a watched stock or pass the market rules
+  indexnow: 0 URLs queued for after deploy
+  site: 151 stories live, 3 new AI lines. Top: Intel sued by shareholders following 29% stock plunge. Most covered stock: NVDA
+  trends: 1288 stock-days and 84 section-days refreshed, 28 days of history
+  AI lines: 3 written, 0 rejected, 0 failed calls
