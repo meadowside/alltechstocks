@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 16 Nov 02:53 UK time
-  feeds: 59/59 worked, 81 new items (24 excluded by rules, 14 Google queries resting this hour)
-  filings: 88/90 companies checked, 0 new filings
-  stories: 756 grouped, 354 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Mon 16 Nov 03:53 UK time
+  feeds: 59/59 worked, 88 new items (31 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 0 new filings
+  stories: 750 grouped, 347 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 155 stories live, 2 new AI lines. Top: Intel sued by shareholders following 29% stock plunge. Most covered stock: NVDA
-  trends: 1288 stock-days and 84 section-days refreshed, 28 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  site: 159 stories live, 0 new AI lines. Top: Investors sue chip giant Intel after 29% stock plunge. Most covered stock: NVDA
+  trends: 1290 stock-days and 84 section-days refreshed, 28 days of history
+  AI lines: 0 written, 0 rejected, 0 failed calls
