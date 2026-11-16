@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-09",
+ "end": "2026-11-15",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1746,
+    "outlets": 306,
+    "biggest": {
+     "headline": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
+     "link": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+     "outlet": "TechCrunch",
+     "outlets": 92
+    }
+   },
+   {
+    "symbol": "CRWV",
+    "name": "CoreWeave",
+    "slug": "crwv",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 248,
+    "outlets": 95,
+    "biggest": {
+     "headline": "US close: Stocks higher as CoreWeave surges, Nvidia rebounds",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWVhGNzJ2WnFHMmNnLVlFbWQ3NzlRZkhPY2NuaGZKczBQM25JUjl4NW1HVkROazVibGNlMTdMdlFvcXlHVGNUMkQwRE9ESVRRXzBEVzQ2R0JJa2ptX0lLZy0xWkE1WUtSLTUxc0p3NHNvQnVIWTFkUDlVeGZQeDBmZWduWkJBWmlGMWVDNDg4bV9fUVVRbl9nang5ZnJXRHZJOWNYbm5Xekp5RkJ1ZUc1UjY4ajdIWXNyWExhMHRRa2poZzJ3UFE?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 204,
+    "outlets": 75,
+    "biggest": {
+     "headline": "AMD Stock: Two Catalysts Could Drive 80% Growth in 2027",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XQzhvVkctckxPVXliaDJ6cTk2akZuV0N0WnpiWEJiNzJSaTRlV1JaWjBsaE5qQXVYQThYWWRpTi1FRjNIdjJXVVI4TmJ3enZISU1nVHF2UUZ3YzZZZmpIeXV6a085RWdBUmppZFVMUQ?oc=5",
+     "outlet": "I/O Fund",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 153,
+    "outlets": 97,
+    "biggest": {
+     "headline": "Take-Two CEO Says Physical Games Aren’t Going Away Despite GTA 6 Skipping Discs",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdnBNcmdHVXRzQ3JFdnhNakxfYlRBY0oyd3pIa3g0Y2gyVU5WTEk2NDQ1MEN5cFEzYlhQbThPU3JRT0dPYl9kVXNrbm1FeG1IMXJmeXk2UWc4UWNiMUJULUdKM0gwTlA1YWpKNEJVVGQ1SHN0T0hQS1lwbTg4Y3Y4RGpWbTN5UFZKMU1DWEFDbzg2U2VQaGR4b0pmRDPSAaIBQVVfeXFMT0tpbTBDNzVmbzJRUDdOanZTTms5TzlDdXdIeFY4UjFaSTQ0alM0cm5JcmUtTDRlWUJXLVpONGNUcFhiS2ljVUNUbUFTQ3ZTYVBaMklUdmVIQ2dNVW1zTS0tQ0VxQlZYSmlJaUxIWVBmQlZiZVM3eUNLZGdtZU1JaXVrN3RucXBvNWpIMnV6WTVnaUxkSmZnYzJsdGdMTUVoeElB?oc=5",
+     "outlet": "Beebom",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 148,
+    "outlets": 46,
+    "biggest": {
+     "headline": "Australia's spy agency, federal police hit by Microsoft outage",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ0x3UHpOT2FfZW9tc1Zia0F3NmNsZzUzUUJqd25Kcl9JdUFlOVhOMEFXR2ctazRoVXlkMFF4V1hIbGlLdnNQc3ZMRlBTeGZBVmxwSGx6a2cxVXgtZDhFUE80WFkxLUhfRjNMRmhtcGZvaGxlWjItSXpibmVXSkxrT1N4eWI4U3JzRDJnTXQ0SzBTMkFTYnBKT3JBWEQ1V0RMNzFoRDR6ckdvSTVRekw1SlU5SQ?oc=5",
+     "outlet": "Reuters",
+     "outlets": 26
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 121,
+    "outlets": 38,
+    "biggest": {
+     "headline": "AMD Stock Rises On Google Cloud Deal, Wall Street Upgrade",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNc0pob1FQZVItVXBmSHRhb1kzQkg0T3ZaR1FlT3hqQ3NEUEpPUDZoN19qTHRHZ1R4UHN2dUI3MEg4OVRITGNxc3V3WjRNZTJpQndZbm1SY2J1Wm1SRGZWRVRkQm5HaGZhWlBhbG15dHdYaWc5cUdYZjN5QjBjWk5kVlhDZ0N6WlJzbEdfWUU3QU1FaFhraTVUNzBORFVhOVRG?oc=5",
+     "outlet": "Investor's Business Daily",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 86,
+    "outlets": 36,
+    "biggest": {
+     "headline": "Donald Trump really wants Tim Cook to run Nvidia",
+     "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+     "outlet": "The Verge",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 64,
+    "outlets": 40,
+    "biggest": {
+     "headline": "Intel reclaims overall CPU market share for the first time since 2025",
+     "link": "https://www.tomshardware.com/pc-components/cpus/intel-reclaims-overall-cpu-market-share-for-the-first-time-since-2025-massive-desktop-gains-offset-amds-record-server-and-mobile-growth",
+     "outlet": "Tom's Hardware",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 57,
+    "outlets": 27,
+    "biggest": {
+     "headline": "Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT1AtR2lzLXRZdkUwZkxnbVV4Y1RRQ1ZmRkZSTTUwWTBNc0ZRaDU5dUctQnFoOWxXQ00wbmJUMnRhcHo2eWNUVlZHS3FOVTJkcUlTdU1HVE5CdWw5WnBNWE0ydVlsbjRFYkdRUDBiT2VIYUQzWU1KenhUbkJQOTB4Ty1sRC1HMTRYQUtDYXVobUZYNjJtdFFrTWVETnc?oc=5",
+     "outlet": "Invezz",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "CSCO",
+    "name": "Cisco",
+    "slug": "csco",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 55,
+    "outlets": 36,
+    "biggest": {
+     "headline": "Cisco CEO Chuck Robbins on Q1 earnings beat",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOankzS2lSYVNJWU9XLXZRTExtTE11REVDRmVJd1B4a0xvMERPNnhXSzVEZUg4LXZYb1dVZ3B1RFJZXzQ2bnYzNW52RWYtMXFTNjF3YmtXZTNOUGdBaUJici1NcjJqcEhSVzI0WGxsUUZjY3VTQi10am9MSC1uTTh2N2Npc2ZfY0RmWVpQSzMxUQ?oc=5",
+     "outlet": "CNBC",
+     "outlets": 13
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 34,
+    "outlets": 25,
+    "biggest": {
+     "headline": "Vodafone raises profit target after cutting 3,000 European jobs",
+     "link": "https://www.cityam.com/vodafone-raises-profit-target-after-cutting-3000-european-jobs/",
+     "outlet": "City AM",
+     "outlets": 15
+    }
+   },
+   {
+    "symbol": "KNOS",
+    "name": "Kainos",
+    "slug": "knos-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 16,
+    "outlets": 12,
+    "biggest": {
+     "headline": "Kainos revenue jumps 37% as government contracts drive first-half growth",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY3JqeDQzSDktMWR1ZmY0dWhFbkxHYVBNLVNDZFR1QXJfa2c4cEU1SXl0eUVTMXhvUDNJVkdUcUdfMWNxbm15eFVGUC1wS3l3MGVaaDFqejNQVm4zUC01YU1rT0tqRExYeUl3RVVqMUlyV0dJdVUzQ2FjVkw3NHZWYWZwOWhISWgyMWhWZ1V4YVFUcTROUmRJc1ljTEUycVh2WVZWNTNXeDZvLTNITXQ1M3J0MTRhQlh6NkR5T0F0c2dxOFdQZll0empDRzBQWTZOQjAzUWlMQlRtdw?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 14,
+    "outlets": 11,
+    "biggest": {
+     "headline": "Nvidia board reportedly approached Arm CEO Rene Haas during replacement search",
+     "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void",
+     "outlet": "Tom's Hardware",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 11,
+    "outlets": 2,
+    "biggest": {
+     "headline": "RELX Share Price: 3,000.0p, Up 0.94% Nov 11",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWkRyZklqa0h6dFd6RTlNMXliYmlrSUl5cHpCQXNkTV9yMHA1eWY2N3BRaXpjZG9UNTVDdEZMMjhhSlFIN0JoQnUxV3FlWGRmazBlVnhncVV4dXBpZlBwUEw3bXE4RGREZlI5cjJHUUI0T3ZqM0VDLV9OcFc0RVZESzdBVXNSM1B1WlQyelYyenl3bjQ4UnhkV3Itc0hOSVgyUVZsSkY0aWU?oc=5",
+     "outlet": "JournalArta",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "BT.A",
+    "name": "BT Group",
+    "slug": "bt-a-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 8,
+    "outlets": 8,
+    "biggest": {
+     "headline": "BT cools on Starlink satellite tie-up after Musk Ukraine controversy",
+     "link": "https://www.ft.com/content/2bb44a56-abbe-432a-8205-5e28a0a2e839",
+     "outlet": "Financial Times",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "SCT",
+    "name": "Softcat",
+    "slug": "sct-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Softcat reiterates outlook after 'strong start' to FY27",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVkROUjkyMHVLMkgyUXNtNDByd0NTazVLQnpsOHR1MFp6M1ZsQTFOeTRWUlpPbDF3ZHJBSXU1RHdYNnpheDBmeGhERlZOSS1uVEdJbFhoNlhmX1JFYU5GSndaWmpUZHJEa25lQkJEQzRLS2xvcTBaNVEwVXVqb1cwV21KVjVVUkxtMUZBOG9QY2poMHFmRWFZSzFHZFRzY0J2U3NJVUplTTFCLVRUa21OWEdTZmpsdk9lSXZ2OFJlcw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "SRT",
+    "name": "SRT Marine Systems",
+    "slug": "srt-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 2,
+    "biggest": {
+     "headline": "SRT Marine Systems flags going concern uncertainty as profit rises",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQemZCbkd2MU5WSnRNQk5MS0pMSWdwcHl1bno0elpGODRYT05aYjBZSmlnMW5HdGFWVG0tOGp0bmFiM3hvNTdqVk5ONEx6Sl9PVzZkXzI5SjhEd3o0WC1WcUx4elpjU3JLTXZuMDR2M05oUks4ak1GQ3kzaFhnd2ZqUFlFQTNMcWsyN2JmTUhFZHkwU2NBcHpOUFA4MGtqN0g4eU5qRURmSzhranlJWm5aSldXSE5VVVhCNHhUWGthR0FPbnNOdFhhd2M1OU1MT0R4RElN?oc=5",
+     "outlet": "Proactive Investors",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "AUTO",
+    "name": "Auto Trader",
+    "slug": "auto-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 1,
+    "biggest": {
+     "headline": "Broker tips: Auto Trader, AB Foods, Vaalco Energy",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNc1ZLXzFqODNacmRrSzNWNUh0YkpwSUpyZzhqclo0VmFMQVUxQXV2ZUtpeUp0REtDbnFLVE1SSlBiMTNvejBRc0lqcTY3OEFMLUY2OF93cGFSWVR5bndpMDdwam5UX3VsQURIeWJqcFA3M1EwbmpZUUpsVU1hbElwbVVYSjFrejdBQ3hBbHVJWFBTcE8zWG9kcHk5bEplclZkdVYyQTNIZEQyWUJNcUdsTVVqNkF4U2c1N1JiRw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "DAVA",
+    "name": "Endava",
+    "slug": "dava",
+    "exchange": "NYSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 2,
+    "biggest": {
+     "headline": "ENDAVA (NYSE: DAVA) Replaces CEO and CFO, Confirms Financial Statements Are Unreliable, Contracts Lack Economic Substance, Financial Restatements Pending",
+     "link": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQWEhzUjRWa2tVaDhhR2tIOHFPVVIzODNBbDRzLWJ4WlI4SzVBWWR0Rk5udk1xSWdzaUR5Z3lzRlNwUllXWmtMUTBIUHdwa0Y5RFowenE3ajJRR1NBZVdTV3poZGpEQzE4QTFfZnRaMm9JU1ZYVEhCY180c1NOdjFLZTZuM2RiQm5WdzVOUkQtTW1lMEJWY3RnclgxcE9MbGFxNk1UNjNneko4R3JUdjEwRlpwcnFtRVpYZ1NXT3hlSV9LT1VwRzFSdGdsSzJpVThWSm1lVGxOV1FJMjJuSUw4THhfTGVpRVViX3ZFdG1UNzhldm12d2RnWkhrNjQ1djVBZ2hkd1M1RThSWi1EQVBvalkzVTNzbXlXZ2s4Y2RXN0F6ZHI2YnAxR3g3Zw?oc=5",
+     "outlet": "PR Newswire",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 2,
+    "outlets": 2,
+    "biggest": {
+     "headline": "Airtel Africa Doubles Network Spending As Half-Year Profit Climbs",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUHpieEhGc0xOVGRUN1lLT004WEhYNEJ0a2xwMnZBenhIUTNIemdnOFg3ckZKTDVfbzI3RkxkQXlMYWo1elJGVTQ5SWFiQ083LW56Ni1wcmc5b3Y4UDhCTW0zc1lLYTBBNUVhVkZPRmpzcjF6dndPZWpVbG9ldmJSQWFkMVNxWUE1QXA4NzNKakk?oc=5",
+     "outlet": "CIO Africa",
+     "outlets": 1
+    }
+   }
+  ]
+ }
+}
