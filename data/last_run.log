@@ -1,8 +1,12 @@
-All Tech Stocks run: auto at Mon 16 Nov 05:53 UK time
-  feeds: 59/59 worked, 113 new items (21 excluded by rules, 14 Google queries resting this hour)
-  filings: 88/90 companies checked, 0 new filings
-  stories: 765 grouped, 355 name a watched stock or pass the market rules
-  indexnow: 0 URLs queued for after deploy
-  site: 159 stories live, 1 new AI lines. Top: Investors sue chip giant Intel after 29% stock plunge. Most covered stock: NVDA
-  trends: 1297 stock-days and 84 section-days refreshed, 28 days of history
-  AI lines: 1 written, 0 rejected, 0 failed calls
+All Tech Stocks run: auto at Mon 16 Nov 06:53 UK time
+  feeds: 59/59 worked, 102 new items (24 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 756 grouped, 353 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only one line of substance, that ServiceNow is cutting jobs while committing hundreds of millions to acquired talent. Wit'
+  indexnow: 146 URLs queued for after deploy
+  site: 165 stories live, 2 new AI lines. Top: Investors sue chip giant Intel after 29% stock plunge. Most covered stock: NVDA
+  trends: 1302 stock-days and 84 section-days refreshed, 28 days of history
+  AI opening note rejected (reads like advice or a prediction: plunge): 'Intel is facing a shareholder lawsuit after its 29% plunge, and the US Treasury wants answers from Nvidia soon. Meanwhile Italy has fined Meta €805m over access'
+  email: 38 stories, 0 new AI lines, opening note: no
+  notify: skipped (no Telegram settings)
+  AI lines: 2 written, 1 rejected, 0 failed calls
