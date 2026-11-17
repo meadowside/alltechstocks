@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Tue 17 Nov 15:53 UK time
-  feeds: 59/59 worked, 198 new items (70 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 17 Nov 16:53 UK time
+  feeds: 59/59 worked, 210 new items (79 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 966 grouped, 384 name a watched stock or pass the market rules
+  stories: 988 grouped, 395 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 325 stories live, 0 new AI lines. Top: UK companies line up to replace Palantir in NHS contract. Most covered stock: NVDA
+  site: 335 stories live, 1 new AI lines. Top: UK companies line up to replace Palantir in NHS contract. Most covered stock: NVDA
   trends: 1373 stock-days and 84 section-days refreshed, 29 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+  AI lines: 1 written, 0 rejected, 0 failed calls
