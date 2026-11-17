@@ -1,10 +1,11 @@
-All Tech Stocks run: auto at Tue 17 Nov 17:53 UK time
-  feeds: 59/59 worked, 197 new items (68 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 17 Nov 18:53 UK time
+  feeds: 59/59 worked, 172 new items (78 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1031 grouped, 418 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: a sell): 'Salesforce led a sell-off in software stocks on Wall Street as investors looked ahead to a planned Anthropic IPO. The coverage gives no deta'
-  AI line rejected (reads like advice or a prediction: upside): 'Nvidia used SC26 to show that its Vera CPU, built on custom Olympus Arm cores, can gain up to 39% more performance on certain workloads thro'
+  stories: 1047 grouped, 419 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: a sell): 'Salesforce led a sell-off in software stocks on Wall Street, with investors reacting to the prospect of an initial public offering from Anth'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline and a single quote-based claim: Oracle\'s chief executive has said the wider tech sector made a "classic'
+  AI trending line rejected (26 words): 'Alphabet now lets Gemini users switch off AI training on their chats separately from keeping chat history, which may ease privacy concerns f'
   indexnow: 0 URLs queued for after deploy
-  site: 355 stories live, 1 new AI lines. Top: Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit. Most covered stock: NVDA
-  trends: 1380 stock-days and 84 section-days refreshed, 29 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  site: 357 stories live, 3 new AI lines. Top: Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit. Most covered stock: NVDA
+  trends: 1385 stock-days and 84 section-days refreshed, 29 days of history
+  AI lines: 3 written, 3 rejected, 0 failed calls
