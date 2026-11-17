@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Tue 17 Nov 02:53 UK time
-  feeds: 45/59 worked, 87 new items (38 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Tue 17 Nov 03:53 UK time
+  feeds: 51/59 worked, 67 new items (13 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 810 grouped, 346 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: invest): 'Anthropic is set to begin trading on the Nasdaq this week under the ticker ANT, a listing that brings the AI lab into public markets. The co'
+  stories: 811 grouped, 349 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: portfolio): 'Altimeter Capital, a hedge fund, has reportedly sold its holding in Qualcomm, according to its latest 13F filing with US regulators. The sam'
   indexnow: 0 URLs queued for after deploy
-  site: 261 stories live, 1 new AI lines. Top: Morning Bid: AI selloff resumes as Nvidia earnings loom. Most covered stock: NVDA
+  site: 263 stories live, 0 new AI lines. Top: Morning Bid: AI selloff resumes as Nvidia earnings loom. Most covered stock: NVDA
   trends: 1334 stock-days and 84 section-days refreshed, 29 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  AI lines: 0 written, 1 rejected, 0 failed calls
