@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-10",
+ "end": "2026-11-16",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1646,
+    "outlets": 288,
+    "biggest": {
+     "headline": "Tech world's calls for Jensen Huang to return to Nvidia are growing",
+     "link": "https://www.cnbc.com/2026/11/16/nvidia-jensen-huang-return-tech.html",
+     "outlet": "CNBC",
+     "outlets": 79
+    }
+   },
+   {
+    "symbol": "CRWV",
+    "name": "CoreWeave",
+    "slug": "crwv",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 228,
+    "outlets": 91,
+    "biggest": {
+     "headline": "US close: Stocks higher as CoreWeave surges, Nvidia rebounds",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPWVhGNzJ2WnFHMmNnLVlFbWQ3NzlRZkhPY2NuaGZKczBQM25JUjl4NW1HVkROazVibGNlMTdMdlFvcXlHVGNUMkQwRE9ESVRRXzBEVzQ2R0JJa2ptX0lLZy0xWkE1WUtSLTUxc0p3NHNvQnVIWTFkUDlVeGZQeDBmZWduWkJBWmlGMWVDNDg4bV9fUVVRbl9nang5ZnJXRHZJOWNYbm5Xekp5RkJ1ZUc1UjY4ajdIWXNyWExhMHRRa2poZzJ3UFE?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 183,
+    "outlets": 70,
+    "biggest": {
+     "headline": "AMD Stock: Two Catalysts Could Drive 80% Growth in 2027",
+     "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XQzhvVkctckxPVXliaDJ6cTk2akZuV0N0WnpiWEJiNzJSaTRlV1JaWjBsaE5qQXVYQThYWWRpTi1FRjNIdjJXVVI4TmJ3enZISU1nVHF2UUZ3YzZZZmpIeXV6a085RWdBUmppZFVMUQ?oc=5",
+     "outlet": "I/O Fund",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 159,
+    "outlets": 47,
+    "biggest": {
+     "headline": "Nasdaq Index and S&P500: Nvidia, Microsoft Slide as Hot CPI Fuels Fed Fears",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZ3p2dXNxTXdRM000UkVFNW9PSXczWkZjSFdZR3FrV0VVMkNyeUJFTnVRdFlXNFJvMmc3QUJlbE1HcUJzOVMtcWwweV93Y3hVUF96SlVaTEtsdUx2MUtxZEhHZjBqMDlLdGRYNjlROEl4bTlNSU1ScVh2Y2tlY2lOaUhxbnZpRmg3SjJLQW9WbGxFZUhNaXU2LUhlWkY3a29nTVRIaDFQTG1BbEI2SDdzX2NtQzZHOExpX2ZPbVgxSjY?oc=5",
+     "outlet": "FXEmpire",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 129,
+    "outlets": 73,
+    "biggest": {
+     "headline": "Investors sue chip giant Intel after 29% stock plunge",
+     "link": "https://www.bbc.co.uk/news/articles/cw62p42p288do?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlets": 40
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 115,
+    "outlets": 74,
+    "biggest": {
+     "headline": "‘Grand Theft Auto Flu’: is the whole world really taking the day off work to play GTA VI?",
+     "link": "https://www.theguardian.com/games/2026/nov/16/grand-theft-auto-gta-vi-first-new-game-released-in-13-years",
+     "outlet": "The Guardian",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 105,
+    "outlets": 32,
+    "biggest": {
+     "headline": "Google rolls out Gemini 4 Hydrogen, finally replacing 3.8 Flash",
+     "link": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/",
+     "outlet": "Ars Technica",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 87,
+    "outlets": 33,
+    "biggest": {
+     "headline": "Donald Trump really wants Tim Cook to run Nvidia",
+     "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+     "outlet": "The Verge",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 59,
+    "outlets": 27,
+    "biggest": {
+     "headline": "Why are Micron, SK Hynix, and SanDisk stocks falling on Friday?",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT1AtR2lzLXRZdkUwZkxnbVV4Y1RRQ1ZmRkZSTTUwWTBNc0ZRaDU5dUctQnFoOWxXQ00wbmJUMnRhcHo2eWNUVlZHS3FOVTJkcUlTdU1HVE5CdWw5WnBNWE0ydVlsbjRFYkdRUDBiT2VIYUQzWU1KenhUbkJQOTB4Ty1sRC1HMTRYQUtDYXVobUZYNjJtdFFrTWVETnc?oc=5",
+     "outlet": "Invezz",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "SNDK",
+    "name": "SanDisk",
+    "slug": "sndk",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 55,
+    "outlets": 20,
+    "biggest": {
+     "headline": "AI Trade Isn't Dead Yet: CoreWeave Rockets 15%, SanDisk Soars 11% As Chip Stocks Roar Back",
+     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNU2plOXBrZW1Cd0NXWnlTbmdiZjd0b2JFTVJYdWhRYThzOWRXOFJtbU5hZHlWQ05QVk5sanBIbVZEbGN2QlAwQVZ2U0Frb1NUSldaSWd6YjJIV1dWcm1MUVZVQVhNT1BYVDF2MUh2bXFqQWRSMFJhUlVvaVg3NVNQV25YckloU0xuU0M5UmhhYWtoRDJ4VjRCa3JScVJGTzVXSzU2UERzaFpLQkE0SWFIN2JNYVcyVC1oQi10a3NyN182VDZhV3kwRdIB0AFBVV95cUxQTFNfSExrYXFJMTlmQlkyQ1RMdnYxUHpTR3VObjcwYTRuNUVtbVJQRlBQYklmQjJOVlgySnJNZUxIS2wyek44cGJJaVdxa185aFpyZ3ZGU19ZMmpEMVYxbVVOaDEweXItMkdrQzhTekhPSUNfUVRyMDlFVzlvaXJOTmxES1duc3VtMm83MzBzOUNmUlRiM2hNTmFucU93RmZlU1Y2X0tseV9sclBYWVB5OXhiUFdpem1CcU80c2lfSlV1M25tS1dkSk9EVFoydHFB?oc=5",
+     "outlet": "NDTV Profit",
+     "outlets": 2
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 33,
+    "outlets": 24,
+    "biggest": {
+     "headline": "Vodafone raises profit target after cutting 3,000 European jobs",
+     "link": "https://www.cityam.com/vodafone-raises-profit-target-after-cutting-3000-european-jobs/",
+     "outlet": "City AM",
+     "outlets": 15
+    }
+   },
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 14,
+    "outlets": 11,
+    "biggest": {
+     "headline": "Nvidia board reportedly approached Arm CEO Rene Haas during replacement search",
+     "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void",
+     "outlet": "Tom's Hardware",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 9,
+    "outlets": 2,
+    "biggest": {
+     "headline": "RELX Share Price: 3,000.0p, Up 0.94% Nov 11",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWkRyZklqa0h6dFd6RTlNMXliYmlrSUl5cHpCQXNkTV9yMHA1eWY2N3BRaXpjZG9UNTVDdEZMMjhhSlFIN0JoQnUxV3FlWGRmazBlVnhncVV4dXBpZlBwUEw3bXE4RGREZlI5cjJHUUI0T3ZqM0VDLV9OcFc0RVZESzdBVXNSM1B1WlQyelYyenl3bjQ4UnhkV3Itc0hOSVgyUVZsSkY0aWU?oc=5",
+     "outlet": "JournalArta",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "BT.A",
+    "name": "BT Group",
+    "slug": "bt-a-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 7,
+    "outlets": 7,
+    "biggest": {
+     "headline": "BT cools on Starlink satellite tie-up after Musk Ukraine controversy",
+     "link": "https://www.ft.com/content/2bb44a56-abbe-432a-8205-5e28a0a2e839",
+     "outlet": "Financial Times",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "SCT",
+    "name": "Softcat",
+    "slug": "sct-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Softcat reiterates outlook after 'strong start' to FY27",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVkROUjkyMHVLMkgyUXNtNDByd0NTazVLQnpsOHR1MFp6M1ZsQTFOeTRWUlpPbDF3ZHJBSXU1RHdYNnpheDBmeGhERlZOSS1uVEdJbFhoNlhmX1JFYU5GSndaWmpUZHJEa25lQkJEQzRLS2xvcTBaNVEwVXVqb1cwV21KVjVVUkxtMUZBOG9QY2poMHFmRWFZSzFHZFRzY0J2U3NJVUplTTFCLVRUa21OWEdTZmpsdk9lSXZ2OFJlcw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "KNOS",
+    "name": "Kainos",
+    "slug": "knos-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 2,
+    "outlets": 2,
+    "biggest": {
+     "headline": "Belfast firm Kainos secures £1bn in deals as profits and sales rise",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPSktsdE5YUWJyMnRpN0V0M05KNVpCZmxNNVZfSGtNQklIbElPRl94TlM5LUlfb3QyQnJxZWU0cDhjbUI0NVViTk5HYk9qaWRvSThnUU9OSVNldnk2ZWRiN2c2blYxZWF6V2dkQnNXVkpNbjRKVVBHaUYwMGVIRXBrdzR0Z3Mzb3F0d3l5aWFoSWxaV2tySnZkMUZpV3llN2hkTDJ2TVJQVllsbGZITEpmc2p6NlFKQ0tIUEhrMTdVUzA2X1ptanQxY2ZuVnpmQUEwNXFMclRxNnBZTUlH?oc=5",
+     "outlet": "Belfast Telegraph",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 1,
+    "outlets": 1,
+    "biggest": {
+     "headline": "Airtel Africa buys 799,925 shares in first two days of new buyback tranche",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMmRaOUd2REJzOFNrSzNBSThVcXpEVkhoQ2hLa2wyZ2N5SXVjV2R4NzlweG1yYTExNUotVXIyQUwxOW9CSjZId280OUl6MjZEUVVqRXZWOEJjcTc0ZlZBNUp3VE9ZR2thT2I3TkQtN0t2SlNVMEFOYWlFeExScDRxVkRSQV9pa0xaekJvdHIxMG5LaTQ3WXhTdHZ1UkdJMXl5V1FINENSMWRYYlA4RHZN?oc=5",
+     "outlet": "Nairametrics",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "NCC",
+    "name": "NCC Group",
+    "slug": "ncc-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 1,
+    "outlets": 1,
+    "biggest": {
+     "headline": "NCC Group Appoints Guy Ellis as CEO, Andy Beaver as Interim CFO",
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPd2VxcFNpa3FvYzhPaUw0QjlzV2pramJFYTE0dWlkZFUyTDhCekRHLW0wTk9SdjhXOVdxR08wenM5MVE3MWtzRzZZRjB1NS04clRITkZBN3FlZGNzWVZib0xCVWtNX1M2b0xIRUpPLUhxMV90TUFRVFprMlhqQ3RrOFUwb1VCbU93MDMzRVlKT1Y0UTFNYUM2NjZKN1pDc1k0ZVVud2x5UUxXYnBCVmRhLXlwM19nVFkzb21ZXzRaRkh0QUpJTHcwYlhFb2E4TDBzMlBfNFVkTQ?oc=5",
+     "outlet": "Security Info Watch",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ALFA",
+    "name": "Alfa Financial Software",
+    "slug": "alfa-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 1,
+    "outlets": 1,
+    "biggest": {
+     "headline": "Alfa Financial Software sees FY profits ahead of expectations after strong Q3",
+     "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNY05pZ3B4RFduT1FUN0JnUVdtXzdvVE1yNzFSdmRZVWI3VVFkUFdoLVFtZkZOZDRRU29TNmdrY01zVkNsQTdXRHBEcnVfVnR4clhiVDFpUTVyeHA5VUtXWTh0azZKWFFUOGJfVmdiLUU4T25sZVBDQlpSb1gyNkszbXRqMXYtQUl5R1UyYnNoWGtEMjU2eFFwa0NlSWFHckFCOGlRa1YwRVc5c19KeUlHZ2FKc0tyYnhsdGdoOE5ZRWNWYkVJS0x3Y295M3hndzZSNktLWVdYeGxobDIxblhJOUkyOUxIVjFLNTJKMUFqUE1BX1RsYkVJOVIwR2JZaUFPZl9JWFJaZ1loV19SZkNVb0JZZDNDbHViVXdGNEdWX1RCVnBBb2lmam9ZX2dZWi14ZzZ2c0Y1OTlUS2ZfR1c1Q1lEUnppTmRDRlhmV2NZMTdGbXV2?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "DAVA",
+    "name": "Endava",
+    "slug": "dava",
+    "exchange": "NYSE",
+    "market": "UK",
+    "headlines": 1,
+    "outlets": 1,
+    "biggest": {
+     "headline": "ENDAVA DEADLINE REMINDER: Endava plc Investors Have Until",
+     "link": "https://news.google.com/rss/articles/CBMirgJBVV95cUxPbmw3TDFqWldwR0xhbk14dVNsWlpTLTNGOWhoQ1BCckZwdmEzdTFZb0ZjWnVUbW1GYW1xWWhlcDRhWm54RjY0Yy1UZXlzVHdjZVVVdXZjckp3Mk9QeHRnQnBjZE5CelNobDhjUkg3dkF1WlB0UUdNbGdwU2FHeGNzYjZtZko3bGprNlF2X3kzNDkwYmc5TVlpbG93MklXT0xnSVpQVTNQeHlBbWxYTlRKRXdUNzkwUEh5bEpwZ2RIR3NBbWJveHR5blRKUkdzZDN1VFNkYXVUdm5rNEhvSko3N01wUzNNSUcySGV4UEd4eW9YcG8zU2ZrX2hqenBJOWJRLUVIdm85eThlVDJBRk90MzVYUVBCT2tiM3FtZDNidHZKM0tXcmVhbHBGcTQ0QQ?oc=5",
+     "outlet": "GlobeNewswire",
+     "outlets": 1
+    }
+   }
+  ]
+ }
+}
