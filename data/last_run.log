@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Wed 18 Nov 20:53 UK time
-  feeds: 59/59 worked, 129 new items (39 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1438 grouped, 580 name a watched stock or pass the market rules
-  AI trending line rejected (31 words): 'A former Take-Two chief executive has argued that generative AI in game development will gain wider acceptance only after producing a broadl'
+All Tech Stocks run: auto at Wed 18 Nov 21:53 UK time
+  feeds: 58/59 worked, 185 new items (69 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 37 new filings
+  stories: 1450 grouped, 584 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: likely to rise): 'Prosecutors say a Russian national entered the US from Mexico and stalked Palantir employees in Silicon Valley, in a case linked to the comp'
   indexnow: 0 URLs queued for after deploy
-  site: 446 stories live, 1 new AI lines. Top: What to Stream: ‘GTA VI,’ ‘Always Lalisa,’ ‘The Altruists’ and ‘Steps’. Most covered stock: NVDA
-  trends: 1434 stock-days and 84 section-days refreshed, 30 days of history
+  site: 437 stories live, 1 new AI lines. Top: What to Stream: ‘GTA VI,’ ‘Always Lalisa,’ ‘The Altruists’ and ‘Steps’. Most covered stock: NVDA
+  trends: 1435 stock-days and 84 section-days refreshed, 30 days of history
   AI lines: 1 written, 1 rejected, 0 failed calls
