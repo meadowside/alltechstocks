@@ -1,10 +1,8 @@
-All Tech Stocks run: auto at Wed 18 Nov 04:53 UK time
-  feeds: 59/59 worked, 72 new items (19 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 18 Nov 05:53 UK time
+  feeds: 59/59 worked, 90 new items (13 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1205 grouped, 507 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares rose): "The coverage gives only the headline, so there are few specifics. CoreWeave's shares rose, while Nvidia, which is both a supplier and a majo"
-  AI trending line rejected (27 words): 'Nvidia, a major supplier and investor in CoreWeave, has described its approach to financing as disciplined, a signal about how the chipmaker'
+  stories: 1200 grouped, 502 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 431 stories live, 1 new AI lines. Top: Waymo suspends freeway rides nationwide after California DMV order. Most covered stock: NVDA
-  trends: 1404 stock-days and 84 section-days refreshed, 30 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  site: 429 stories live, 3 new AI lines. Top: Waymo suspends freeway rides nationwide after California DMV order. Most covered stock: NVDA
+  trends: 1405 stock-days and 84 section-days refreshed, 30 days of history
+  AI lines: 3 written, 0 rejected, 0 failed calls
