@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Wed 18 Nov 11:53 UK time
-  feeds: 59/59 worked, 192 new items (76 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Wed 18 Nov 12:53 UK time
+  feeds: 58/59 worked, 184 new items (82 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1268 grouped, 524 name a watched stock or pass the market rules
+  stories: 1279 grouped, 530 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage describes a planned contest for US television rights to the 2030 World Cup, with Netflix set to compete against the traditional'
   indexnow: 0 URLs queued for after deploy
-  site: 433 stories live, 3 new AI lines. Top: Nvidia creates committee to oversee compliance with US chip export controls. Most covered stock: NVDA
-  trends: 1412 stock-days and 84 section-days refreshed, 30 days of history
-  AI lines: 3 written, 0 rejected, 0 failed calls
+  site: 436 stories live, 1 new AI lines. Top: Nvidia creates committee to oversee compliance with US chip export controls. Most covered stock: NVDA
+  trends: 1415 stock-days and 84 section-days refreshed, 30 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
