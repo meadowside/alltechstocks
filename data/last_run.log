@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Wed 18 Nov 15:53 UK time
-  feeds: 59/59 worked, 183 new items (59 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 0 new filings
-  stories: 1353 grouped, 546 name a watched stock or pass the market rules
-  AI trending line rejected (31 words): "A congressional commission says China's military wants Nvidia's top AI chips, while the company has no comment on its chief executive's resi"
+All Tech Stocks run: auto at Wed 18 Nov 16:53 UK time
+  feeds: 59/59 worked, 219 new items (81 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 0 new filings
+  stories: 1382 grouped, 560 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 439 stories live, 4 new AI lines. Top: GTA 6 hacker pleads guilty after release from secure hospital. Most covered stock: NVDA
-  trends: 1421 stock-days and 84 section-days refreshed, 30 days of history
-  AI lines: 4 written, 1 rejected, 0 failed calls
+  site: 444 stories live, 4 new AI lines. Top: GTA 6 hacker pleads guilty after release from secure hospital. Most covered stock: NVDA
+  trends: 1423 stock-days and 84 section-days refreshed, 30 days of history
+  AI lines: 4 written, 0 rejected, 0 failed calls
