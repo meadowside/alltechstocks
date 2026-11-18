@@ -1,9 +1,8 @@
-All Tech Stocks run: auto at Wed 18 Nov 22:53 UK time
-  feeds: 58/59 worked, 172 new items (53 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 5 new filings
-  stories: 1482 grouped, 607 name a watched stock or pass the market rules
-  AI trending line rejected (27 words): "Waymo's robotaxi service is now limited to city streets in California after regulators restricted its freeway operations, affecting a core p"
+All Tech Stocks run: auto at Wed 18 Nov 23:53 UK time
+  feeds: 59/59 worked, 111 new items (31 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 2 new filings
+  stories: 1503 grouped, 619 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 449 stories live, 1 new AI lines. Top: Palo Alto Networks CEO offers his solution on tech outages. Most covered stock: NVDA
+  site: 456 stories live, 1 new AI lines. Top: Palo Alto Networks CEO offers his solution on tech outages. Most covered stock: NVDA
   trends: 1439 stock-days and 84 section-days refreshed, 30 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  AI lines: 1 written, 0 rejected, 0 failed calls
