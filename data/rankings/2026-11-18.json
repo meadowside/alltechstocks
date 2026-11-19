@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-12",
+ "end": "2026-11-18",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1912,
+    "outlets": 321,
+    "biggest": {
+     "headline": "Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit",
+     "link": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
+     "outlet": "CNBC",
+     "outlets": 44
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 179,
+    "outlets": 56,
+    "biggest": {
+     "headline": "ASUS Empowers Businesses with Trusted AI Solutions at Microsoft Ignite 2026",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVzl0Sm9mQkhlTlptdkl2T1JnZk8xLWpzY05HdHV0d24zU1E5aE81R3V5VkQ0MzlYcVZRSUVaam11U0JrYVpsajRUNXAxcnFNdmpHOWxVd21qSS1iaEVFeHpIaFVTRUJSc1VwdGdpeG9aTE1mTnR1N0p3aFUyNEgxNTdFV25xLV8xRmJaRXcxMnlJMlVjOFN3SmZhdkE3cWxzcnJISS16cmlWUkxLenVDSmpSS2k4NTRCUGhDejZCcTV6Q1lndzBNZDJZNmJnZU0?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 17
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 141,
+    "outlets": 66,
+    "biggest": {
+     "headline": "Micron, AMD and other AI stocks fall as the chip sector’s selloff intensifies",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPbzJiOHRPNHFvdUhKTGlYRXJxeUgtSXJrdlQ3Tk0xLXI4d3RkOXpsNXFyaTh3ZHdPMGI4bGxJQ2dVS1hjOFVQVkh5clBOQlFkUEFTak1XWGlza19SYjJ0QWlQb1ZvRUE2OVV4VUFVSmZZWHlPVWVsYjlWSVlTMEtXZ1hnVEFaYkJuODdVWWo1MWRxa2hraWFyQmttX2RVNWp2LUlUSWdfNEZMR3NfQmFqenBib3MxaUNpOFE?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 136,
+    "outlets": 79,
+    "biggest": {
+     "headline": "Intel sued by investors after PC sales slump hits share price",
+     "link": "https://www.bbc.co.uk/news/articles/cw62p42p288do?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlets": 43
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 121,
+    "outlets": 72,
+    "biggest": {
+     "headline": "What to Stream: ‘GTA VI,’ ‘Always Lalisa,’ ‘The Altruists’ and ‘Steps’",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOSmJPVW84UnpKbjdacmxHVGxJNnpCWFhYWF9tMV9jeUZ5cFY4ekpjOHJpODN1RS1JZWladVROc05nOEt6WVlkM19RczFselh2bnczZnI1dVpZTGZVNlUyN1dBWkI3N01ha2FXUWRsekhBS2Vac3l6NnpzaXAtNmJwNHo3ZFd6SGd5YUxOWDVJdGdaemVUVjhQRHpSa3R2Wks5?oc=5",
+     "outlet": "AP",
+     "outlets": 39
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 102,
+    "outlets": 30,
+    "biggest": {
+     "headline": "Waymo suspends freeway rides nationwide after California DMV order",
+     "link": "https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/",
+     "outlet": "TechCrunch",
+     "outlets": 12
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 91,
+    "outlets": 34,
+    "biggest": {
+     "headline": "Donald Trump really wants Tim Cook to run Nvidia",
+     "link": "https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang",
+     "outlet": "The Verge",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "slug": "crm",
+    "exchange": "NYSE",
+    "market": "US",
+    "headlines": 78,
+    "outlets": 53,
+    "biggest": {
+     "headline": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "SNDK",
+    "name": "SanDisk",
+    "slug": "sndk",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 64,
+    "outlets": 20,
+    "biggest": {
+     "headline": "Micron, SanDisk and SK Hynix Face New Warning From Wall Street",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRXl1eDUzUVNUeUxDcFdaTzVXdnhRMmxVTnRzM0ZXZ2R1dlhrRVFreDlVOHhuY2JMRFJiYTZvMGVucEtuRGRWUE81ajBHTGNxY200NkMycFRMeml5VXdMRUFrSUpBdm03MW9UV2hRTHlzZk1tVXgyM0lsc0xNcFFrcURFTVFfOHlvOFp5RXBoXzgwUmQxb3FmTFhJYW5WMmEwa0RlN1Fnc2FIUjRqY3YtemxlUTg0YkxVZXVZaDdn?oc=5",
+     "outlet": "TradingView",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 63,
+    "outlets": 32,
+    "biggest": {
+     "headline": "Micron Stock Falls 7.6% as Chip Sell-Off Deepens and DRAM Lawsuit Advances",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1sQ0hWX1ZpMklTVUY2aC1MWk5ZZjNPY2hFRmd6UVBMU1ZBdGNZRVp6QkpXcHg1RjctMkd1bFJGc1AxNTB4cU53dkU5bkdpNEZWVi0yN1Joa3RtNHJPaTg1SFUwQmhKbHlrSFVzUUFCV3ROQkN1M2VudXQ2MS04Zw?oc=5",
+     "outlet": "Markets.com",
+     "outlets": 8
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 18,
+    "outlets": 15,
+    "biggest": {
+     "headline": "Nvidia board reportedly approached Arm CEO Rene Haas during replacement search",
+     "link": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void",
+     "outlet": "Tom's Hardware",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 10,
+    "outlets": 5,
+    "biggest": {
+     "headline": "RELX Share Price: 3,000.0p, Up 0.94% Nov 11",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPWkRyZklqa0h6dFd6RTlNMXliYmlrSUl5cHpCQXNkTV9yMHA1eWY2N3BRaXpjZG9UNTVDdEZMMjhhSlFIN0JoQnUxV3FlWGRmazBlVnhncVV4dXBpZlBwUEw3bXE4RGREZlI5cjJHUUI0T3ZqM0VDLV9OcFc0RVZESzdBVXNSM1B1WlQyelYyenl3bjQ4UnhkV3Itc0hOSVgyUVZsSkY0aWU?oc=5",
+     "outlet": "JournalArta",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 6,
+    "outlets": 5,
+    "biggest": {
+     "headline": "Nvidia’s scandal, Vodafone and Labour’s new pension rules",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeFp5VzkyZEV4eHBvd2FHN0s0a3pBLWJtUWltLU5vLVk4SUdjRlV1T2pLd0RzUzdsUGtKUVBjcWNsZnJKUXRVdmNzMUxaOWdJV3QwOTNhUThRb3RkOE8wWXFuN21CY2lXWDlZTVF6QmlxVDQxd1ZGT2F5WnltNTZyNnUySG9Va3Jx?oc=5",
+     "outlet": "Investors' Chronicle",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "BT.A",
+    "name": "BT Group",
+    "slug": "bt-a-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Openreach announces Board and executive changes",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQZll0aUJBRTVwM29rWXF2QUtjNFE3TGFWLTdRclU5Q0wtM3ExdzRZSWVCRnktMnVlRXVfUEZ2SGVjTVRuSkE2U1ZNV3ZYYXBPdks1c3VzRFdNc0FvLWNJaVUxaU4tdUpDaHNOaU9vb3dXODVER29xbmNITUt4d1A0YlgyTkw3eFJWc19MS281MXk0XzV1dHRlTkpITXNSTkc4NVp3SEFjZ1JBUnJHLTdjVk1xaw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "SCT",
+    "name": "Softcat",
+    "slug": "sct-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Softcat reiterates outlook after 'strong start' to FY27",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVkROUjkyMHVLMkgyUXNtNDByd0NTazVLQnpsOHR1MFp6M1ZsQTFOeTRWUlpPbDF3ZHJBSXU1RHdYNnpheDBmeGhERlZOSS1uVEdJbFhoNlhmX1JFYU5GSndaWmpUZHJEa25lQkJEQzRLS2xvcTBaNVEwVXVqb1cwV21KVjVVUkxtMUZBOG9QY2poMHFmRWFZSzFHZFRzY0J2U3NJVUplTTFCLVRUa21OWEdTZmpsdk9lSXZ2OFJlcw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ZEG",
+    "name": "Zegona",
+    "slug": "zeg-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Can Zegona’s Vodafone Spain turnaround deliver for investors?",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ3lsTEVaLUM5UUc0VDI0V2hBeFR3a2lGMWhxTEpIa3pJU3NVNENSblkzME9UOG1hNUlDVFlXOVBiZ3BYTWdtVzVkaGw0RmNvTGZ4TmFYWDJrRU16azdxVEI2empoY3JkcnpHWGEtWEFUaTBoS3cyVXI2dkJhUnQ5cWtOc0JEUmpaMnhnMnNfenRpbEJHZUxYQlpWckg1eEtFVWNsOG9TSQ?oc=5",
+     "outlet": "The Armchair Trader",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "IQE",
+    "name": "IQE",
+    "slug": "iqe-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "IQE shares up as upgrades adjusted earnings revenue guide; hails core",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTW9LTEplYzctQlBKeFhzaFJzalBYYW5sYnlub3E1Nk4zU01VQUVxNjdCblM0dk4yYkdPT1pmQkpSTnpieFMyamRRUVNMeWFqWmphd0lQMjlwTGliQUdpR1c2R3hWOXFSeDRjbmpJaWozVnVfNVlSTkM3bGYxRzdkLWM3bGRRc0NHaUVTeXBJZVBrWTdTSFlPNWlfVlJ5bHlWUXdxblNaaGR4a0d1UXhmU1M1VXdEZDg?oc=5",
+     "outlet": "London South East",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ACSO",
+    "name": "Accesso Technology",
+    "slug": "acso-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 2,
+    "outlets": 2,
+    "biggest": {
+     "headline": "accesso Technology Group (ACSO) Wins Seven-Year Premier Parks Technology Partnership",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMjl5bWd1OExTeENZSWs2YzMyZUJMaF9KYlcwckJSOVRrQkxjdzh1eUwwZzA0MVdrZkNKXzBISFU0NENxMUtCMWFDVHcxUFVFYm9jRGxlX2hLVTRsaDZKanVtaDV6N3U3anBBaHhxSWdEbnZNanM0YXlFVUNGTVZ3MFJXcGFNOFRBdWlHVVo2VG50TlVwV2xyenM1RzN1Sy1pUllXNVlsRlVGUUxrbVo5MGM1R3NsM0thNHlTR1ViVTdWSXBJb1MycjlMdl9NUTY5SlYxT2kydnliSE8y?oc=5",
+     "outlet": "TradingView",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "CML",
+    "name": "CML Microsystems",
+    "slug": "cml-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 2,
+    "outlets": 2,
+    "biggest": {
+     "headline": "CML Microsystems H1 revenue rises on growth across key geographies",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQZE0xNDBSb0lzMkZZLXVTR2djNGZKZjdHaC1FQmNscXp3eXB0VmR3ZWQxcHFEUVdXRVZDc2RKbm1URXZiSU5qQndEZVc2VDlYYmg1VmRxb1h6YjU1R21WeXUwbVhFel94QWY2SjB1V2ZiYll3c2VZVUkyazlOcW1GcFlobkJiLWh0Z3UtLW5lY0UzeEUxallpYTJIYktvbGRrNlFLaURUZ0t3U1l4VkFZTUVESnZmMllhNG45Z1JvNVJfTk5wOGl3Q1lrQXlvMWdJd3c?oc=5",
+     "outlet": "TradingView",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "ALFA",
+    "name": "Alfa Financial Software",
+    "slug": "alfa-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 1,
+    "outlets": 1,
+    "biggest": {
+     "headline": "Alfa Financial Software sees FY profits ahead of expectations after strong Q3",
+     "link": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxNY05pZ3B4RFduT1FUN0JnUVdtXzdvVE1yNzFSdmRZVWI3VVFkUFdoLVFtZkZOZDRRU29TNmdrY01zVkNsQTdXRHBEcnVfVnR4clhiVDFpUTVyeHA5VUtXWTh0azZKWFFUOGJfVmdiLUU4T25sZVBDQlpSb1gyNkszbXRqMXYtQUl5R1UyYnNoWGtEMjU2eFFwa0NlSWFHckFCOGlRa1YwRVc5c19KeUlHZ2FKc0tyYnhsdGdoOE5ZRWNWYkVJS0x3Y295M3hndzZSNktLWVdYeGxobDIxblhJOUkyOUxIVjFLNTJKMUFqUE1BX1RsYkVJOVIwR2JZaUFPZl9JWFJaZ1loV19SZkNVb0JZZDNDbHViVXdGNEdWX1RCVnBBb2lmam9ZX2dZWi14ZzZ2c0Y1OTlUS2ZfR1c1Q1lEUnppTmRDRlhmV2NZMTdGbXV2?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   }
+  ]
+ }
+}
