@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Thu 19 Nov 12:53 UK time
-  feeds: 58/59 worked, 189 new items (76 excluded by rules, 14 Google queries resting this hour)
-  filings: 58/90 companies checked, 0 new filings
-  stories: 1530 grouped, 638 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: portfolio): 'Nvidia has struck at least 293 deals since 2023 and built an investment portfolio worth more than $100 billion. The deals link the chipmaker'
+All Tech Stocks run: auto at Thu 19 Nov 13:53 UK time
+  feeds: 59/59 worked, 224 new items (84 excluded by rules, 14 Google queries resting this hour)
+  filings: 68/90 companies checked, 1 new filings
+  stories: 1554 grouped, 652 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: portfolio): 'Nvidia has struck at least 293 deals since 2023 and built an investment portfolio worth more than $100 billion. The scale of these stakes me'
   indexnow: 0 URLs queued for after deploy
-  site: 456 stories live, 2 new AI lines. Top: Victoria Greene on this week's earnings: Palo Alto Networks is still a hold. Most covered stock: NVDA
-  trends: 1468 stock-days and 84 section-days refreshed, 31 days of history
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  site: 464 stories live, 0 new AI lines. Top: Victoria Greene on this week's earnings: Palo Alto Networks is still a hold. Most covered stock: NVDA
+  trends: 1475 stock-days and 84 section-days refreshed, 31 days of history
+  AI lines: 0 written, 1 rejected, 0 failed calls
