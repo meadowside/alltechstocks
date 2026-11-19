@@ -1,9 +1,11 @@
-All Tech Stocks run: auto at Thu 19 Nov 14:53 UK time
-  feeds: 59/59 worked, 211 new items (82 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 2 new filings
-  stories: 1556 grouped, 639 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: portfolio): 'Nvidia has struck at least 293 deals since 2023 and built an investment portfolio worth more than $100 billion. Those stakes span AI start-u'
+All Tech Stocks run: auto at Thu 19 Nov 15:53 UK time
+  feeds: 59/59 worked, 190 new items (56 excluded by rules, 14 Google queries resting this hour)
+  filings: 63/90 companies checked, 0 new filings
+  stories: 1566 grouped, 635 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: investing): 'Sage Group has told investors it expects to deliver another year of double-digit growth. The company, which sells accounting and business ma'
+  AI trending line rejected (30 words): "Rezolve Ai's chief executive has said the company is betting that specialists serving particular industries will outlast general-purpose AI "
+  AI trending line rejected (31 words): "A tribunal has ruled the UK cannot keep a surveillance order to Apple secret, so details of Apple's encryption obligations may become public"
   indexnow: 0 URLs queued for after deploy
-  site: 450 stories live, 1 new AI lines. Top: Victoria Greene on this week's earnings: Palo Alto Networks is still a hold. Most covered stock: NVDA
-  trends: 1479 stock-days and 84 section-days refreshed, 31 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 450 stories live, 5 new AI lines. Top: Intel signs first external customer for advanced 18A chips. Most covered stock: NVDA
+  trends: 1480 stock-days and 84 section-days refreshed, 31 days of history
+  AI lines: 5 written, 3 rejected, 0 failed calls
