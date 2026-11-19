@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Thu 19 Nov 21:53 UK time
-  feeds: 59/59 worked, 173 new items (62 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/90 companies checked, 23 new filings
-  stories: 1560 grouped, 640 name a watched stock or pass the market rules
-  AI trending line rejected (26 words): "Alphabet's Gemini app on macOS can now carry out multi-step tasks across local files, desktop apps and the web, extending its assistant into"
+All Tech Stocks run: auto at Thu 19 Nov 22:53 UK time
+  feeds: 59/59 worked, 196 new items (64 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 4 new filings
+  stories: 1557 grouped, 637 name a watched stock or pass the market rules
+  AI trending line rejected (27 words): 'Intuit is selling a marketing platform to Bending Spoons, a deal that moves a non-core product out of its portfolio while it reports results'
+  AI trending line rejected (28 words): "Alphabet's Gemini app on Mac can now carry out multi-step tasks across local files, desktop apps and the web, which Google says could speed "
   indexnow: 0 URLs queued for after deploy
-  site: 436 stories live, 3 new AI lines. Top: AMD shares fall after short seller report on China links. Most covered stock: NVDA
-  trends: 1494 stock-days and 84 section-days refreshed, 31 days of history
-  AI lines: 3 written, 1 rejected, 0 failed calls
+  site: 435 stories live, 1 new AI lines. Top: Intuit to sell Mailchimp to Bending Spoons for $3.68 billion. Most covered stock: NVDA
+  trends: 1495 stock-days and 84 section-days refreshed, 31 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
