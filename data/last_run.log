@@ -1,10 +1,9 @@
-All Tech Stocks run: auto at Thu 19 Nov 19:53 UK time
-  feeds: 59/59 worked, 326 new items (83 excluded by rules, 14 Google queries resting this hour)
-  filings: 85/90 companies checked, 1 new filings
-  stories: 1564 grouped, 631 name a watched stock or pass the market rules
-  AI trending line rejected (35 words): "Rezolve AI's chief executive is arguing that vertical market specialists, rather than broad AI platforms, will ultimately build the stronges"
-  AI trending line rejected (27 words): 'A Verizon survey found many small businesses are relying on social media and AI tools to prepare for the holiday season, a segment the telec'
+All Tech Stocks run: auto at Thu 19 Nov 20:53 UK time
+  feeds: 59/59 worked, 208 new items (80 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1578 grouped, 644 name a watched stock or pass the market rules
+  AI trending line rejected (26 words): "Google plans to put its TPU AI chips into orbit, with Blue Origin's New Glenn rocket launching the satellites in early 2029, according to th"
   indexnow: 0 URLs queued for after deploy
-  site: 435 stories live, 7 new AI lines. Top: AMD shares fall after short seller report on China links. Most covered stock: NVDA
-  trends: 1488 stock-days and 84 section-days refreshed, 31 days of history
-  AI lines: 7 written, 2 rejected, 0 failed calls
+  site: 437 stories live, 3 new AI lines. Top: AMD shares fall after short seller report on China links. Most covered stock: NVDA
+  trends: 1490 stock-days and 84 section-days refreshed, 31 days of history
+  AI lines: 3 written, 1 rejected, 0 failed calls
