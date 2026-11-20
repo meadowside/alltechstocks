@@ -1,11 +1,10 @@
-All Tech Stocks run: auto at Fri 20 Nov 21:53 UK time
-  feeds: 59/59 worked, 178 new items (80 excluded by rules, 14 Google queries resting this hour)
-  filings: 90/90 companies checked, 27 new filings
-  stories: 1469 grouped, 577 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares rose): 'Zscaler shares rose 20% after a report said CrowdStrike is in talks to buy the security vendor. Zscaler sells cloud-based network security, '
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage describes a probe by the state of California, where Nvidia has its global headquarters, into its AI chips sold in China. The pr'
-  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk shares fell more than 14% after a bearish outlook on NAND flash pricing weighed on chip stocks. NAND is the memory used in SanDisk's"
+All Tech Stocks run: auto at Fri 20 Nov 22:53 UK time
+  feeds: 59/59 worked, 194 new items (72 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 2 new filings
+  stories: 1466 grouped, 583 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares rose): "CrowdStrike is reportedly in talks to acquire Zscaler, and Zscaler's shares rose sharply on the news. The reported talks fit a wider pattern"
+  AI line rejected (reads like advice or a prediction: shares fell): 'SanDisk shares fell more than 14% after a bearish outlook for NAND flash pricing weighed on chip stocks. NAND is the memory used in SSDs, ph'
   indexnow: 0 URLs queued for after deploy
-  site: 383 stories live, 0 new AI lines. Top: Zscaler stock jumps 20% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
-  trends: 1521 stock-days and 84 section-days refreshed, 32 days of history
-  AI lines: 0 written, 3 rejected, 0 failed calls
+  site: 385 stories live, 1 new AI lines. Top: 'Big Short' Michael Burry says he 'tried to warn' about Nvidia, CoreWeave, Nebius stocks. Most covered stock: NVDA
+  trends: 1531 stock-days and 84 section-days refreshed, 32 days of history
+  AI lines: 1 written, 2 rejected, 0 failed calls
