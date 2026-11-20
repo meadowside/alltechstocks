@@ -1,9 +1,10 @@
-All Tech Stocks run: auto at Fri 20 Nov 17:53 UK time
-  feeds: 59/59 worked, 161 new items (67 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Fri 20 Nov 18:53 UK time
+  feeds: 59/59 worked, 205 new items (68 excluded by rules, 14 Google queries resting this hour)
   filings: 87/90 companies checked, 0 new filings
-  stories: 1497 grouped, 589 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk's shares fell more than 14% after a bearish outlook for NAND flash pricing hit chip stocks broadly. NAND is the memory used in SSDs,"
+  stories: 1497 grouped, 593 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: bearish): "SanDisk fell more than 14% after a bearish outlook for NAND flash pricing weighed on chip stocks. NAND is the memory used in SanDisk's flash"
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, with no detail on the contract's size, timing or which chips are involved, so I can't describe what In"
   indexnow: 0 URLs queued for after deploy
-  site: 380 stories live, 1 new AI lines. Top: Apple Is Working on AI Agent for Device Control, Apps, Browsing and Coding. Most covered stock: NVDA
-  trends: 1512 stock-days and 84 section-days refreshed, 32 days of history
-  AI lines: 1 written, 1 rejected, 0 failed calls
+  site: 377 stories live, 0 new AI lines. Top: Intuit to sell Mailchimp to Bending Spoons for $3.68 billion. Most covered stock: NVDA
+  trends: 1515 stock-days and 84 section-days refreshed, 32 days of history
+  AI lines: 0 written, 2 rejected, 0 failed calls
