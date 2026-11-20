@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Fri 20 Nov 13:53 UK time
-  feeds: 58/59 worked, 139 new items (48 excluded by rules, 14 Google queries resting this hour)
-  filings: 87/90 companies checked, 0 new filings
-  stories: 1550 grouped, 619 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Fri 20 Nov 14:53 UK time
+  feeds: 59/59 worked, 200 new items (78 excluded by rules, 14 Google queries resting this hour)
+  filings: 84/90 companies checked, 0 new filings
+  stories: 1555 grouped, 613 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 417 stories live, 0 new AI lines. Top: California Probing If Nvidia Misled Investors on China Risks. Most covered stock: NVDA
-  trends: 1507 stock-days and 84 section-days refreshed, 32 days of history
-  AI lines: 0 written, 0 rejected, 0 failed calls
+  site: 411 stories live, 4 new AI lines. Top: California Probing If Nvidia Misled Investors on China Risks. Most covered stock: NVDA
+  trends: 1508 stock-days and 84 section-days refreshed, 32 days of history
+  AI lines: 4 written, 0 rejected, 0 failed calls
