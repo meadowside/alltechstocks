@@ -1,8 +1,9 @@
-All Tech Stocks run: auto at Fri 20 Nov 16:53 UK time
-  feeds: 59/59 worked, 197 new items (74 excluded by rules, 14 Google queries resting this hour)
-  filings: 80/90 companies checked, 0 new filings
-  stories: 1505 grouped, 588 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Fri 20 Nov 17:53 UK time
+  feeds: 59/59 worked, 161 new items (67 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 0 new filings
+  stories: 1497 grouped, 589 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk's shares fell more than 14% after a bearish outlook for NAND flash pricing hit chip stocks broadly. NAND is the memory used in SSDs,"
   indexnow: 0 URLs queued for after deploy
-  site: 380 stories live, 2 new AI lines. Top: Apple Is Working on AI Agent for Device Control, Apps, Browsing and Coding. Most covered stock: NVDA
-  trends: 1510 stock-days and 84 section-days refreshed, 32 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  site: 380 stories live, 1 new AI lines. Top: Apple Is Working on AI Agent for Device Control, Apps, Browsing and Coding. Most covered stock: NVDA
+  trends: 1512 stock-days and 84 section-days refreshed, 32 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
