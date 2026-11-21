@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Sat 21 Nov 09:53 UK time
-  feeds: 59/59 worked, 63 new items (32 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Sat 21 Nov 10:53 UK time
+  feeds: 59/59 worked, 91 new items (30 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 1392 grouped, 546 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk's shares fell more than 14% after a bearish outlook on NAND flash pricing weighed on chip stocks. NAND is the memory used in SSDs, p"
+  stories: 1386 grouped, 542 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk's shares fell more than 14% after a bearish outlook for NAND flash pricing weighed on chip stocks. NAND is the memory used in SSDs, "
   indexnow: 0 URLs queued for after deploy
-  site: 345 stories live, 1 new AI lines. Top: Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
-  trends: 1482 stock-days and 84 section-days refreshed, 33 days of history
+  site: 341 stories live, 1 new AI lines. Top: Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
+  trends: 1484 stock-days and 84 section-days refreshed, 33 days of history
   AI lines: 1 written, 1 rejected, 0 failed calls
