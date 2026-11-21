@@ -1,10 +1,9 @@
-All Tech Stocks run: auto at Fri 20 Nov 23:53 UK time
-  feeds: 59/59 worked, 106 new items (32 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 1 new filings
-  stories: 1470 grouped, 588 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline: AI stocks rallied after Nvidia's outlook eased worries about demand for AI chips. Nothing in it descri"
-  AI line rejected (reads like advice or a prediction: bearish): "SanDisk fell more than 14% after a bearish outlook for NAND flash pricing weighed on chip stocks. NAND is the memory used in SanDisk's flash"
-  indexnow: 0 URLs queued for after deploy
-  site: 384 stories live, 4 new AI lines. Top: AI stocks rally as Nvidia outlook calms demand fears. Most covered stock: NVDA
-  trends: 1473 stock-days and 84 section-days refreshed, 32 days of history
-  AI lines: 4 written, 2 rejected, 0 failed calls
+All Tech Stocks run: auto at Sat 21 Nov 00:53 UK time
+  feeds: 59/59 worked, 107 new items (46 excluded by rules, 14 Google queries resting this hour)
+  filings: 89/90 companies checked, 4 new filings
+  stories: 1461 grouped, 576 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: shares fell): "SanDisk's shares fell more than 14% after a bearish outlook for NAND flash pricing weighed on chip stocks. NAND is the memory used in storag"
+  indexnow: 1 URLs queued for after deploy
+  site: 374 stories live, 1 new AI lines. Top: AI stocks rally as Nvidia outlook calms demand fears. Most covered stock: NVDA
+  trends: 1476 stock-days and 82 section-days refreshed, 33 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls

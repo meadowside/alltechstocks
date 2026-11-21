@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-14",
+ "end": "2026-11-20",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1240,
+    "outlets": 228,
+    "biggest": {
+     "headline": "Nvidia's Colette Kress tells Cramer: Employees and customers are not going anywhere",
+     "link": "https://www.cnbc.com/2026/11/17/nvidias-colette-kress-tells-cramer-customers-and-employees-are-not-going-anywhere.html",
+     "outlet": "CNBC",
+     "outlets": 51
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 200,
+    "outlets": 103,
+    "biggest": {
+     "headline": "Rockstar promotes GTA VI in China despite lack of sales approval",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVmEzTWFRSTRmdDg5emtqSER1aTNfQVNMd1pWV3FzVFRZR0xGSzRBTzZ3aV9WRmN3Q2F1eDdHTlp6OW9vS0FrZll2MldBVzFaa1hFVURoSjA5cFc0cGhZN21DV2RGdTFEdHpILW5kVk5JdFNuaEdzbEhfdzJVVDY1eVpkbTRmLUxrYmliYURCSU81NV92Q2c1VF9NeHFYamQxSkF0c0x1a28?oc=5",
+     "outlet": "Reuters",
+     "outlets": 72
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 149,
+    "outlets": 83,
+    "biggest": {
+     "headline": "Intel signs first external customer for advanced 18A chips",
+     "link": "https://www.cnbc.com/2026/11/18/intel-first-18a-foundry-customer.html",
+     "outlet": "CNBC",
+     "outlets": 18
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 146,
+    "outlets": 72,
+    "biggest": {
+     "headline": "AMD shares fall after short seller report on China links",
+     "link": "https://www.ft.com/content/69fd7870-a2cf-4e75-88bc-a1c4036efded?syn-25a6b1a6=1",
+     "outlet": "Financial Times",
+     "outlets": 34
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 123,
+    "outlets": 53,
+    "biggest": {
+     "headline": "ASUS Empowers Businesses with Trusted AI Solutions at Microsoft Ignite 2026",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVzl0Sm9mQkhlTlptdkl2T1JnZk8xLWpzY05HdHV0d24zU1E5aE81R3V5VkQ0MzlYcVZRSUVaam11U0JrYVpsajRUNXAxcnFNdmpHOWxVd21qSS1iaEVFeHpIaFVTRUJSc1VwdGdpeG9aTE1mTnR1N0p3aFUyNEgxNTdFV25xLV8xRmJaRXcxMnlJMlVjOFN3SmZhdkE3cWxzcnJISS16cmlWUkxLenVDSmpSS2k4NTRCUGhDejZCcTV6Q1lndzBNZDJZNmJnZU0?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 26
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 117,
+    "outlets": 29,
+    "biggest": {
+     "headline": "Waymo pulls driverless taxis from all US freeways",
+     "link": "https://www.bbc.co.uk/news/articles/cmy86pp336qlo?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlets": 7
+    }
+   },
+   {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "slug": "crm",
+    "exchange": "NYSE",
+    "market": "US",
+    "headlines": 85,
+    "outlets": 57,
+    "biggest": {
+     "headline": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "SNDK",
+    "name": "SanDisk",
+    "slug": "sndk",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 78,
+    "outlets": 32,
+    "biggest": {
+     "headline": "Sandisk Announces Participation in Investor Conferences",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHZQY3dkQmZ5UkZPb0JkbDhfb0tYMGQyVW5ISTZBNXJLeVFjWTZfbVB0ZWhlQklmbnhaS09mUnUtUC1vbmFvMUh0c19JVnRleUV2ZVJUQ3JYeG12eldfeE5TLUNESHFHYTkwNWluLVdRa1hNQWl4MmdydG9rT193cHlSWUNFQQ?oc=5",
+     "outlet": "01net",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 74,
+    "outlets": 22,
+    "biggest": {
+     "headline": "Apple Is Working on AI Agent for Device Control, Apps, Browsing and Coding",
+     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQzRPX3FrZlMybjdvY2FJVWhVOHU5M2lTTGNPazZYUW0zVlA3ZkVRcWxERk9XM2FvXzgzVDVUaTYwTzVzOXg0TGQtN25fOE9aeTRtUXhqTGE2Q01zQ21iTUg1dmFTNGZQRV9hTDVBV3BjWW4tUzYxXzBVTzA1UzkyOEtySVhfbWZlbmRXSFd1bVZLZElzSThUMmlQVnAyOHJIWUs0YTBNVTBIM29HV2ZieUtzQ1d0SDVIVTA2VTRTYk4?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 9
+    }
+   },
+   {
+    "symbol": "PANW",
+    "name": "Palo Alto Networks",
+    "slug": "panw",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 65,
+    "outlets": 41,
+    "biggest": {
+     "headline": "Palo Alto Networks CEO offers his solution on tech outages",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZmJrcVpfTDRhOFFXVTJHRE9lM1B4UzJiWUM3d2NxVW5zSEtLWFJHRUNqa3JXSVgtVHJ4ejgzOGYtT3puMV9xWUlNR2lGQmRWQ3F6MjJlUTRpZGZILWdQelJISGZ1eXY3RGJZS0Vlb2ZNdk80Z1J3R1l5cHpWQzA5VWowbjBPV3JUcWp4MVlHbEpPTENIMl83WXVzUHdBZnpUSnVv?oc=5",
+     "outlet": "CNBC",
+     "outlets": 23
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 21,
+    "outlets": 15,
+    "biggest": {
+     "headline": "Canaccord Gives Nod to U.K. Wealth Management Arm Sale, CEO Buyout",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONXAwQ252VDY0WklaMkFCdEYwT0ZNNWpxbkliZ3RlM2VyWVdXNDdFN01feHo4YndVOHZCQ1hYODNrbkpEcm1qRjBVT2lzaWtnQTZFRnhPbjBhZC1EcUNxdTBHa3JLQ0hlSDJmR0lPRDlrLW9yTmxQb2R1cl9GdHI1NzdTanhPSkNxV1dGQjBBODBYZUdLRVN3UTZnZEx6VVNLanUzbFUzR2FiREtJVmt6QXMtQlIybnNVd1FTX2F3?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "RZLV",
+    "name": "Rezolve AI",
+    "slug": "rzlv",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 14,
+    "outlets": 11,
+    "biggest": {
+     "headline": "Rezolve Ai CEO: “The Long-Term Winners in AI Will Be the Vertical Market Specialists”",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQM0pjT0ZKa1pTMnBTbVN5Sm5xb0xNLXhnRURlTlRoVmNxXzNXUlJNcTl1ZWhOaEk5NUdVVkRWcndoT1VfLWNBY1lTY2JDeGxhZ2RzeEV5WUpMM0hPYlVDcjlOYVZoYThwVHdNdDhqbnFlUFQzZGdlTFJzQmxsYzlCRmVNanNlNFFFRFIyYzZLRklLUUVZUUs4ZkxoOWRMRU1MNUMzZl8xSEViMGhYbE9MOXNxU3EtMVNFM05jdjFaTkhOT1Q5VUU1Vnh0Szg4aC1Gck5YbTBuTzc?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 10
+    }
+   },
+   {
+    "symbol": "SGE",
+    "name": "Sage Group",
+    "slug": "sge-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 10,
+    "outlets": 6,
+    "biggest": {
+     "headline": "Sage targets another year of double-digit growth",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNY25tWEtVRnptX1liR01tc2x2NHlzemhReTJyajEtcHQ0QUZ2Z3VtV3Q5b0kxREFOWXFrU0swaU1WSmhhWnZMMGI2aHl0Y1UwOUZ1OElCOEZUbFlvOE04MjNtdWxwMUNrM1l3Qm4xSmVGeVpvLTNBWnc1X09nWkdSUElIUGxIU1Ew?oc=5",
+     "outlet": "Investors' Chronicle",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 7,
+    "outlets": 4,
+    "biggest": {
+     "headline": "RELX stock: Morgan Stanley keeps Hold at 2,990 pence target",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd3dLcEZWNm9LbE9jOTQzU0lwamtJT2cxWXhOamMzNmhRU1pud1pJeUp6NVQtQVVIOWpJN0lHRTJVdUR0V0ZxMk05TUYtM1Buc0pncmJ3RTRIX18xejdhc3RoTlBBZjdjMkdDeFBOUmp0bmlKMVlQQmFBTVVQbHJHUWRpVFRtZ3RPNGZqZFpjRHNQRTBnNnhfUWVtMlBBWE1aOEhFMFZfMkhXRWFFVkRfanAzUGxGTmgwWnZGNVVn?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Vodafone stock gains support from FY27 guidance upgrade",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPRlJZU0NSYm5GVm9TN0t3QnNDQ2FqdkZoN1Zmb3ZuMFgyRWJSRW1XaW1lUGVOYjA3NFZleGo3RnVZSG9uNzRiSWhaeTZGY2V3cWcyYXNLSldOUjNUSFcyam96Vmlmb2JzY1pvQU1TRHhfVlN4ZWt2QWR2TlVQdHFpZ1hlMGdPSlhMbGpHbXdSWVBmbHU1enVSaGp0OHhST1BYdGFUNVd0dkx4UV9hdTFRc3F1WE9idlMxSGc?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ACSO",
+    "name": "Accesso Technology",
+    "slug": "acso-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "accesso Technology Group (ACSO) Wins Seven-Year Premier Parks Technology Partnership",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMjl5bWd1OExTeENZSWs2YzMyZUJMaF9KYlcwckJSOVRrQkxjdzh1eUwwZzA0MVdrZkNKXzBISFU0NENxMUtCMWFDVHcxUFVFYm9jRGxlX2hLVTRsaDZKanVtaDV6N3U3anBBaHhxSWdEbnZNanM0YXlFVUNGTVZ3MFJXcGFNOFRBdWlHVVo2VG50TlVwV2xyenM1RzN1Sy1pUllXNVlsRlVGUUxrbVo5MGM1R3NsM0thNHlTR1ViVTdWSXBJb1MycjlMdl9NUTY5SlYxT2kydnliSE8y?oc=5",
+     "outlet": "TradingView",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ZEG",
+    "name": "Zegona",
+    "slug": "zeg-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Can Zegona’s Vodafone Spain turnaround deliver for investors?",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ3lsTEVaLUM5UUc0VDI0V2hBeFR3a2lGMWhxTEpIa3pJU3NVNENSblkzME9UOG1hNUlDVFlXOVBiZ3BYTWdtVzVkaGw0RmNvTGZ4TmFYWDJrRU16azdxVEI2empoY3JkcnpHWGEtWEFUaTBoS3cyVXI2dkJhUnQ5cWtOc0JEUmpaMnhnMnNfenRpbEJHZUxYQlpWckg1eEtFVWNsOG9TSQ?oc=5",
+     "outlet": "The Armchair Trader",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "IQE",
+    "name": "IQE",
+    "slug": "iqe-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "IQE shares up as upgrades adjusted earnings revenue guide; hails core",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTW9LTEplYzctQlBKeFhzaFJzalBYYW5sYnlub3E1Nk4zU01VQUVxNjdCblM0dk4yYkdPT1pmQkpSTnpieFMyamRRUVNMeWFqWmphd0lQMjlwTGliQUdpR1c2R3hWOXFSeDRjbmpJaWozVnVfNVlSTkM3bGYxRzdkLWM3bGRRc0NHaUVTeXBJZVBrWTdTSFlPNWlfVlJ5bHlWUXdxblNaaGR4a0d1UXhmU1M1VXdEZDg?oc=5",
+     "outlet": "London South East",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Airtel Africa repurchases 3.4 million shares in new buyback Programme",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTkRUUU1UdUxUdkg4Qkk1dDEyc2pQd2syYnhfTjJ3bVh4Ul8tOG5LUlN3Zlhfdk01ckx5eWh5aXFUOWgtbXFrVFBNR3d0R3A3LUwxVHY5YXVhLUpwTEEzenZRWWVUMm9BYmpOc04zRFV5YmJ4UjAwLVhNTXp3eHBrZlN3MXdkbmY5X2NTRFVaMjhJbnBzVmc?oc=5",
+     "outlet": "Blueprint Newspapers",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "IOM",
+    "name": "Iomart",
+    "slug": "iom-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 3,
+    "biggest": {
+     "headline": "REG - Iomart Group PLC - COO Appointment to the Board",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPdWZwdUkyZjIwcS1COGQxRjV0aE82RXNCbUhWbjA1T0tRc2I0cXJ4TG5RNEZjMnJjRjhFbFJiRlhVNWpCSi0tTnZ1b1JDamN3Q0w1Z28tMmIyUzJIdUhpeERMQllMWTlJaGRyME1zeUU1TWNOM1RLZXZkVGtFUmV6bml5WHFzbk1xcFl6eFJSek1UN2djNEdMTGNCNkI3RC1TLWZYclpkb0VXcV91QXVmX1RhcTA0SzdmeFJabFhHaGdSYnc?oc=5",
+     "outlet": "TradingView",
+     "outlets": 1
+    }
+   }
+  ]
+ }
+}
