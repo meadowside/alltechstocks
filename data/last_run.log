@@ -1,10 +1,10 @@
-All Tech Stocks run: auto at Sat 21 Nov 14:53 UK time
-  feeds: 59/59 worked, 95 new items (36 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 0 new filings
-  stories: 1322 grouped, 521 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: shares fell): 'SanDisk shares fell more than 14% after a bearish outlook on NAND flash pricing weighed on chip stocks. NAND is the memory used in SSDs, pho'
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Rockstar has revealed the actors and voice cast behind Vice City in Grand Theft Auto VI. It'
+All Tech Stocks run: auto at Sat 21 Nov 15:53 UK time
+  feeds: 59/59 worked, 100 new items (44 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1307 grouped, 506 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: bearish): 'SanDisk fell more than 14% after a bearish outlook on NAND flash pricing weighed on chip stocks. NAND is the memory used in SSDs, memory car'
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The coverage gives only the headline, which says Rockstar has revealed the actors and voice cast behind Vice City in Grand Theft Auto VI. No'
   indexnow: 0 URLs queued for after deploy
-  site: 321 stories live, 1 new AI lines. Top: Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
+  site: 308 stories live, 2 new AI lines. Top: Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
   trends: 1487 stock-days and 84 section-days refreshed, 33 days of history
-  AI lines: 1 written, 2 rejected, 0 failed calls
+  AI lines: 2 written, 2 rejected, 0 failed calls
