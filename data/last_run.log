@@ -1,10 +1,10 @@
-All Tech Stocks run: auto at Sun 22 Nov 09:53 UK time
-  feeds: 59/59 worked, 46 new items (21 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 0 new filings
-  stories: 1037 grouped, 398 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: bearish): 'Michael Burry has halved his bearish put positions on Nvidia and a semiconductor ETF, while keeping a short position on the Nasdaq. The move'
-  AI line rejected (reads like advice or a prediction: shares fell): "Micron's shares fell sharply after investor concern grew over the outlook for memory prices. Memory chips are a core product for Micron, so "
+All Tech Stocks run: auto at Sun 22 Nov 10:53 UK time
+  feeds: 59/59 worked, 41 new items (10 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1026 grouped, 394 name a watched stock or pass the market rules
+  AI line rejected (reads like advice or a prediction: bearish): 'Michael Burry has halved his bearish put positions on Nvidia and a semiconductor ETF, while keeping his short on the Nasdaq. The move comes '
+  AI line rejected (reads like advice or a prediction: shares fell): "Micron's shares fell 14 percent after the chipmaker warned about rising risks to memory prices. Memory chips are a core product line for Mic"
   indexnow: 0 URLs queued for after deploy
-  site: 214 stories live, 0 new AI lines. Top: Oracle says OpenAI infrastructure deal is fully funded after final capital raise. Most covered stock: NVDA
-  trends: 1441 stock-days and 84 section-days refreshed, 34 days of history
-  AI lines: 0 written, 2 rejected, 0 failed calls
+  site: 204 stories live, 2 new AI lines. Top: Meta's India offices hit by opposition protests over account removals. Most covered stock: NVDA
+  trends: 1443 stock-days and 84 section-days refreshed, 34 days of history
+  AI lines: 2 written, 2 rejected, 0 failed calls
