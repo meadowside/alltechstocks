@@ -1,9 +1,9 @@
-All Tech Stocks run: auto at Sun 22 Nov 05:53 UK time
-  feeds: 59/59 worked, 49 new items (7 excluded by rules, 14 Google queries resting this hour)
-  filings: 89/90 companies checked, 0 new filings
-  stories: 1098 grouped, 407 name a watched stock or pass the market rules
-  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which describes Meta's AI chief, Alexandr Wang, first praising Apple chief executive Tim Cook and then"
-  indexnow: 0 URLs queued for after deploy
-  site: 218 stories live, 0 new AI lines. Top: Oracle says OpenAI infrastructure deal is fully funded after final capital raise. Most covered stock: NVDA
-  trends: 1435 stock-days and 84 section-days refreshed, 34 days of history
-  AI lines: 0 written, 1 rejected, 0 failed calls
+All Tech Stocks run: auto at Sun 22 Nov 06:53 UK time
+  feeds: 59/59 worked, 35 new items (8 excluded by rules, 14 Google queries resting this hour)
+  filings: 90/90 companies checked, 0 new filings
+  stories: 1089 grouped, 409 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): "The coverage gives only the headline, which says Meta's AI chief Alexandr Wang made a public remark about Apple days after praising Apple's "
+  indexnow: 152 URLs queued for after deploy
+  site: 219 stories live, 1 new AI lines. Top: Oracle says OpenAI infrastructure deal is fully funded after final capital raise. Most covered stock: NVDA
+  trends: 1436 stock-days and 84 section-days refreshed, 34 days of history
+  AI lines: 1 written, 1 rejected, 0 failed calls
