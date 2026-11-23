@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 23 Nov 13:53 UK time
-  feeds: 59/59 worked, 236 new items (64 excluded by rules, 14 Google queries resting this hour)
-  filings: 86/90 companies checked, 0 new filings
-  stories: 852 grouped, 297 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Mon 23 Nov 14:53 UK time
+  feeds: 59/59 worked, 282 new items (118 excluded by rules, 14 Google queries resting this hour)
+  filings: 88/90 companies checked, 1 new filings
+  stories: 850 grouped, 298 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 155 stories live, 5 new AI lines. Top: Zscaler stock jumps 18% on report that CrowdStrike in talks to buy security vendor. Most covered stock: NVDA
-  trends: 1440 stock-days and 84 section-days refreshed, 35 days of history
-  AI lines: 5 written, 0 rejected, 0 failed calls
+  site: 159 stories live, 2 new AI lines. Top: Arm CEO Extends Contract Through 2033 After Nvidia Approach. Most covered stock: NVDA
+  trends: 1442 stock-days and 84 section-days refreshed, 35 days of history
+  AI lines: 2 written, 0 rejected, 0 failed calls
