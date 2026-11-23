@@ -1,9 +1,9 @@
 [Suggested opening line. Rewrite it, then delete this line.]
-Vodafone was named in 34 headlines last week, more than the next two most-covered UK tech stocks put together.
+Arm Holdings was the most-covered UK tech stock last week, named in 19 headlines.
 
 The 10 most-covered UK tech stocks last week, ranked by how many headlines named them across the US and UK financial and tech press we track:
 
-Vodafone (VOD), Kainos (KNOS), Arm Holdings (ARM), RELX (REL), BT Group (BT.A), Softcat (SCT), SRT Marine Systems (SRT), Auto Trader (AUTO), Endava (DAVA) and Airtel Africa (AAF).
+Arm Holdings (ARM), Rezolve AI (RZLV), Sage Group (SGE), RELX (REL), Accesso Technology (ACSO), Zegona (ZEG), IQE (IQE), Vodafone (VOD), Endava (DAVA) and Airtel Africa (AAF).
 
 News coverage only, not investment advice.
 

@@ -1,11 +1,11 @@
-All Tech Stocks run: auto at Mon 23 Nov 06:53 UK time
-  feeds: 59/59 worked, 81 new items (21 excluded by rules, 14 Google queries resting this hour)
+All Tech Stocks run: auto at Mon 23 Nov 07:53 UK time
+  feeds: 59/59 worked, 94 new items (27 excluded by rules, 14 Google queries resting this hour)
   filings: 90/90 companies checked, 0 new filings
-  stories: 818 grouped, 292 name a watched stock or pass the market rules
-  AI line rejected (reads like advice or a prediction: hold stock): 'The headline makes a simple point: Rockstar Games, the studio behind Grand Theft Auto and Red Dead Redemption, has no shares of its own. Inv'
-  indexnow: 153 URLs queued for after deploy
-  site: 116 stories live, 1 new AI lines. Top: Can you buy Rockstar Games stock? No, but you can buy its owner, Take-Two (TTWO). Most covered stock: NVDA
-  trends: 1416 stock-days and 84 section-days refreshed, 35 days of history
-  email: 38 stories, 1 new AI lines, opening note: yes
+  stories: 815 grouped, 294 name a watched stock or pass the market rules
+  AI line rejected (empty, stop_reason=end_turn, blocks=['text']): 'The headline names an "iPhone Duo" launch, but the coverage gives no detail on Apple\'s own product, pricing or sales. BENKS, a third-party a'
+  indexnow: 0 URLs queued for after deploy
+  site: 119 stories live, 0 new AI lines. Top: Can you buy Rockstar Games stock? No, but you can buy its owner, Take-Two (TTWO). Most covered stock: NVDA
+  trends: 1417 stock-days and 84 section-days refreshed, 35 days of history
+  linkedin: cards for the week to 2026-11-22: all, uk
   notify: skipped (no Telegram settings)
-  AI lines: 2 written, 1 rejected, 0 failed calls
+  AI lines: 0 written, 1 rejected, 0 failed calls
