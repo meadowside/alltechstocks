@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 23 Nov 14:53 UK time
-  feeds: 59/59 worked, 282 new items (118 excluded by rules, 14 Google queries resting this hour)
-  filings: 88/90 companies checked, 1 new filings
-  stories: 850 grouped, 298 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Mon 23 Nov 15:53 UK time
+  feeds: 59/59 worked, 263 new items (84 excluded by rules, 14 Google queries resting this hour)
+  filings: 86/90 companies checked, 1 new filings
+  stories: 840 grouped, 299 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 159 stories live, 2 new AI lines. Top: Arm CEO Extends Contract Through 2033 After Nvidia Approach. Most covered stock: NVDA
-  trends: 1442 stock-days and 84 section-days refreshed, 35 days of history
-  AI lines: 2 written, 0 rejected, 0 failed calls
+  site: 170 stories live, 1 new AI lines. Top: Jensen Huang wasn't mentioned in latest talks with China, Bessent says. Most covered stock: NVDA
+  trends: 1449 stock-days and 84 section-days refreshed, 35 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
