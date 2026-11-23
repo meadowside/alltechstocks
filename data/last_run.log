@@ -1,8 +1,8 @@
-All Tech Stocks run: auto at Mon 23 Nov 10:53 UK time
-  feeds: 59/59 worked, 209 new items (93 excluded by rules, 14 Google queries resting this hour)
-  filings: 82/90 companies checked, 0 new filings
-  stories: 837 grouped, 290 name a watched stock or pass the market rules
+All Tech Stocks run: auto at Mon 23 Nov 11:53 UK time
+  feeds: 59/59 worked, 181 new items (64 excluded by rules, 14 Google queries resting this hour)
+  filings: 87/90 companies checked, 2 new filings
+  stories: 846 grouped, 292 name a watched stock or pass the market rules
   indexnow: 0 URLs queued for after deploy
-  site: 128 stories live, 5 new AI lines. Top: CrowdStrike Reaches $44 Billion CyberSecurity Deal for Zscaler. Most covered stock: NVDA
-  trends: 1427 stock-days and 84 section-days refreshed, 35 days of history
-  AI lines: 5 written, 0 rejected, 0 failed calls
+  site: 134 stories live, 1 new AI lines. Top: Spy Chief Says US Probing Alleged Spy Tied to Former Nvidia CEO. Most covered stock: NVDA
+  trends: 1428 stock-days and 84 section-days refreshed, 35 days of history
+  AI lines: 1 written, 0 rejected, 0 failed calls
