@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-16",
+ "end": "2026-11-22",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1094,
+    "outlets": 215,
+    "biggest": {
+     "headline": "California investigates Nvidia over whether chip exports ended up in China",
+     "link": "https://www.theguardian.com/technology/2026/nov/20/california-investigates-nvidia-over-whether-chip-exports-ended-up-in-china",
+     "outlet": "The Guardian",
+     "outlets": 28
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 221,
+    "outlets": 113,
+    "biggest": {
+     "headline": "GTA 6 breaks records as sales top $2bn - industry estimate",
+     "link": "https://www.bbc.co.uk/news/articles/c9zr5nyv5dj2o?at_medium=RSS&at_campaign=rss",
+     "outlet": "BBC",
+     "outlets": 38
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 148,
+    "outlets": 79,
+    "biggest": {
+     "headline": "AMD, Intel and Nvidia Fall as AI Chip Selloff Continues",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOVTRnSzlwTFR4UjJNZVhha0tNdHZXd0dsNWF1cmZvcWFfaUs1YmNYcjZkbHJvMXNRNTNzRE9KVjFIbDVDZG8xRllTSERNWWxSb2tCU2JmUXhhRThJaHVhck1lMU5vTXQ1aENxU3JPdDY4UlNXSWllSjVzaURMVkd2a2wtamFqU2lBSlJrM0YtSXIwcWFnOUtpbTFvSEd0UEhyazFkaER4YVI0VkxiYVUzYWRqb3g?oc=5",
+     "outlet": "TradingView",
+     "outlets": 7
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 132,
+    "outlets": 65,
+    "biggest": {
+     "headline": "US let Nvidia and AMD sell bucketloads of chips to military-linked Chinese companies",
+     "link": "https://www.theregister.com/legal/2026/11/20/us-let-nvidia-and-amd-sell-bucketloads-of-chips-to-military-linked-chinese-companies/5311200",
+     "outlet": "The Register",
+     "outlets": 18
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 111,
+    "outlets": 49,
+    "biggest": {
+     "headline": "AI Agents in Bond Market Arrive With a Stealthy Microsoft Trade",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQRDE1Y1FPaVcyOWNoSXNJZ2JCVmE2LXNVemhTaVhVNlctMVFFUG5YU2pDcTN2N3ZSZWNwVWcyOE5PVFlsMzRDZTMtMEFoZHE1cWJqaHp0Tm5oTDdHTDVLOHF0Tm8xc1RfaVFQSVlnSWdDMUNhZ3pLWGxHR3JNOXhWRDlkZDFwdnREVTlIbWx5TjRtMzlIUnU2ek9BQlpEUWE1dEVOMHlKci02ZDktbllDT3BIb3I?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 110,
+    "outlets": 28,
+    "biggest": {
+     "headline": "Blue Origin will launch Google’s AI server satellites in 2029",
+     "link": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+     "outlet": "The Verge",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "slug": "crm",
+    "exchange": "NYSE",
+    "market": "US",
+    "headlines": 84,
+    "outlets": 56,
+    "biggest": {
+     "headline": "AI Startup Dreamteam Raises Capital to Challenge Salesforce, SAP",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQi10bmVBRE1LOElDMjBnNTh6MnRaZGZ5SU1TMG9HUEwyRlRiU3pUN0RJanRoM1lXMHVYMXJtSXc2c0tPa3h3c2xFREx6d2V2dTJiLTV1amtxV2pZTlF4T3VYMzVaWlBDMFJnaHduSnpJcG5UV3hadGpHaVE4UGRuVnJHTlpvcDE0WThkV3k4YVpMWWRPenkzcXVERlZ6bmh4bzJnRk5meFJuOVNwX0ZUa3lBNlQ?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "SNDK",
+    "name": "SanDisk",
+    "slug": "sndk",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 80,
+    "outlets": 37,
+    "biggest": {
+     "headline": "Sandisk Announces Participation in Investor Conferences",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHZQY3dkQmZ5UkZPb0JkbDhfb0tYMGQyVW5ISTZBNXJLeVFjWTZfbVB0ZWhlQklmbnhaS09mUnUtUC1vbmFvMUh0c19JVnRleUV2ZVJUQ3JYeG12eldfeE5TLUNESHFHYTkwNWluLVdRa1hNQWl4MmdydG9rT193cHlSWUNFQQ?oc=5",
+     "outlet": "01net",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "slug": "aapl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 75,
+    "outlets": 23,
+    "biggest": {
+     "headline": "Apple seems to be building its own AI agent. This could be bad news for Meta’s Muse.",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMzkzSVNtbXBvWUc0YlNnTWhnalpSeldLVTZHbllYYXE1RkllbDJ1aDJsNVJsX2hMOE1PcGFXU1U0b1Zqc3J0NXVjM01HcnFRTTU5THdsd3JYQWhwSlN5SnZqX2U1M3NFeTRXNWpJNVpaQUV6dV9zZWdra0x1WWFTNGF3bVprR3c0ZmZNUFgxZHF0OENPUk9BYTRrQlNEcS1RX3M2V0FQTXRIZVo1d2hBSXRKNG9Qd1piX2VPMEx4SjlKZw?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 9
+    }
+   },
+   {
+    "symbol": "MU",
+    "name": "Micron",
+    "slug": "mu",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 73,
+    "outlets": 34,
+    "biggest": {
+     "headline": "Why Micron, Intel and other AI stocks are getting a lift on Thursday",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOWEhhTnU4WlVySDlWdzRGTHlaZlg1U1ZMd19LRk1tcUd3b25qTmVuekxNbDBXQ044dEpzRGZwcG85dlUtZGJNSTk2bHI1UDNXS1BnQWE1bmw0WEE3ZUh0UEdQV1JnU0wya2J3OFlxVmh2Xzc4M2V3X05femQzcGJ6VS1pd01OS0ZIbV9BdzlJc09Za0xBZFY5aDE3VlNLRXp2V1YzdUgxR2ZxLUYzLWl3?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 6
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 19,
+    "outlets": 14,
+    "biggest": {
+     "headline": "Canaccord Gives Nod to U.K. Wealth Management Arm Sale, CEO Buyout",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONXAwQ252VDY0WklaMkFCdEYwT0ZNNWpxbkliZ3RlM2VyWVdXNDdFN01feHo4YndVOHZCQ1hYODNrbkpEcm1qRjBVT2lzaWtnQTZFRnhPbjBhZC1EcUNxdTBHa3JLQ0hlSDJmR0lPRDlrLW9yTmxQb2R1cl9GdHI1NzdTanhPSkNxV1dGQjBBODBYZUdLRVN3UTZnZEx6VVNLanUzbFUzR2FiREtJVmt6QXMtQlIybnNVd1FTX2F3?oc=5",
+     "outlet": "MarketWatch",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "RZLV",
+    "name": "Rezolve AI",
+    "slug": "rzlv",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 14,
+    "outlets": 11,
+    "biggest": {
+     "headline": "Rezolve Ai CEO: “The Long-Term Winners in AI Will Be the Vertical Market Specialists”",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQM0pjT0ZKa1pTMnBTbVN5Sm5xb0xNLXhnRURlTlRoVmNxXzNXUlJNcTl1ZWhOaEk5NUdVVkRWcndoT1VfLWNBY1lTY2JDeGxhZ2RzeEV5WUpMM0hPYlVDcjlOYVZoYThwVHdNdDhqbnFlUFQzZGdlTFJzQmxsYzlCRmVNanNlNFFFRFIyYzZLRklLUUVZUUs4ZkxoOWRMRU1MNUMzZl8xSEViMGhYbE9MOXNxU3EtMVNFM05jdjFaTkhOT1Q5VUU1Vnh0Szg4aC1Gck5YbTBuTzc?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 9
+    }
+   },
+   {
+    "symbol": "SGE",
+    "name": "Sage Group",
+    "slug": "sge-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 10,
+    "outlets": 6,
+    "biggest": {
+     "headline": "Sage targets another year of double-digit growth",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNY25tWEtVRnptX1liR01tc2x2NHlzemhReTJyajEtcHQ0QUZ2Z3VtV3Q5b0kxREFOWXFrU0swaU1WSmhhWnZMMGI2aHl0Y1UwOUZ1OElCOEZUbFlvOE04MjNtdWxwMUNrM1l3Qm4xSmVGeVpvLTNBWnc1X09nWkdSUElIUGxIU1Ew?oc=5",
+     "outlet": "Investors' Chronicle",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 6,
+    "outlets": 4,
+    "biggest": {
+     "headline": "RELX stock: Morgan Stanley keeps Hold at 2,990 pence target",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd3dLcEZWNm9LbE9jOTQzU0lwamtJT2cxWXhOamMzNmhRU1pud1pJeUp6NVQtQVVIOWpJN0lHRTJVdUR0V0ZxMk05TUYtM1Buc0pncmJ3RTRIX18xejdhc3RoTlBBZjdjMkdDeFBOUmp0bmlKMVlQQmFBTVVQbHJHUWRpVFRtZ3RPNGZqZFpjRHNQRTBnNnhfUWVtMlBBWE1aOEhFMFZfMkhXRWFFVkRfanAzUGxGTmgwWnZGNVVn?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "ACSO",
+    "name": "Accesso Technology",
+    "slug": "acso-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "accesso Technology Group (ACSO) Wins Seven-Year Premier Parks Technology Partnership",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMjl5bWd1OExTeENZSWs2YzMyZUJMaF9KYlcwckJSOVRrQkxjdzh1eUwwZzA0MVdrZkNKXzBISFU0NENxMUtCMWFDVHcxUFVFYm9jRGxlX2hLVTRsaDZKanVtaDV6N3U3anBBaHhxSWdEbnZNanM0YXlFVUNGTVZ3MFJXcGFNOFRBdWlHVVo2VG50TlVwV2xyenM1RzN1Sy1pUllXNVlsRlVGUUxrbVo5MGM1R3NsM0thNHlTR1ViVTdWSXBJb1MycjlMdl9NUTY5SlYxT2kydnliSE8y?oc=5",
+     "outlet": "TradingView",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ZEG",
+    "name": "Zegona",
+    "slug": "zeg-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Can Zegona’s Vodafone Spain turnaround deliver for investors?",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ3lsTEVaLUM5UUc0VDI0V2hBeFR3a2lGMWhxTEpIa3pJU3NVNENSblkzME9UOG1hNUlDVFlXOVBiZ3BYTWdtVzVkaGw0RmNvTGZ4TmFYWDJrRU16azdxVEI2empoY3JkcnpHWGEtWEFUaTBoS3cyVXI2dkJhUnQ5cWtOc0JEUmpaMnhnMnNfenRpbEJHZUxYQlpWckg1eEtFVWNsOG9TSQ?oc=5",
+     "outlet": "The Armchair Trader",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "IQE",
+    "name": "IQE",
+    "slug": "iqe-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "IQE shares up as upgrades adjusted earnings revenue guide; hails core",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOTW9LTEplYzctQlBKeFhzaFJzalBYYW5sYnlub3E1Nk4zU01VQUVxNjdCblM0dk4yYkdPT1pmQkpSTnpieFMyamRRUVNMeWFqWmphd0lQMjlwTGliQUdpR1c2R3hWOXFSeDRjbmpJaWozVnVfNVlSTkM3bGYxRzdkLWM3bGRRc0NHaUVTeXBJZVBrWTdTSFlPNWlfVlJ5bHlWUXdxblNaaGR4a0d1UXhmU1M1VXdEZDg?oc=5",
+     "outlet": "London South East",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Zegona advances by almost 4% after raising Vodafone España's half-year revenues by 2.9%",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNd0NhMmwxM0ZuZVA3Qm5uYUVPbEwyZU9SWFJVZVNZTVF0dmI3NWNHZTQ0VW00V0VwRFlubFFYT2swZUVJVldOUFFSM0d1Y2MwLV94R05ObmNaNWlyTGZybGZYc25rSmZQREtOZk9KbjhnX1l2b1FQRWdZT1RxNm9YeDlJZmJkSFg3cV9TRlRDano5ZTB5Q0RSdTJMV3dyNFJZMmlmYTVtTDRZQ09nemh2UlY5cXM5eHNQazJmbTFLSdIBxAFBVV95cUxPQ2NPTUcxcWFMX3lxdGZRc3lZX3JYUlR2MmktaUd2XzhuSjdFSjVpV1RRZWpsM3FFa0tLd3MzNFNvaVhhWGlaeGxzSkxZdXJlN1V0aWZaZU5pc19Ec0JsUjc4QmVibjJxZ2NJTndXVUgtajZaWjIySjU1c1UzQ091WVUtMzdaaVBQMFpvalEybnBWUzNYRW03ekdHa3dUa25aaWxlZ01YSHZKaVBmLWMydkFTTmhGNGY2MG5tQWlkcWpOYVN3?oc=5",
+     "outlet": "Demócrata",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "DAVA",
+    "name": "Endava",
+    "slug": "dava",
+    "exchange": "NYSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Endava receives NYSE notice over delayed annual report filing",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVmVWVjlERW9QQ1dOcTRZeE1yb2xEUTJTRGJKcEN6RElKeXJLUkRlTmctdkZjTVcwSXdhVWlidFpFeDZGRHBnX0RNemJfSHV0VGo3aW5SN1lYdnJDS2N1MTN3N2xzTHhpNU4waDZMcU5pOVF4Rm5uUHFrVnVCcWFrRERvQVNHeDRpLWptTDZnejVtMDZXd2RuVkNRVV9MQVBBYVhZZjNkLWVDVUpUNkFzVEJkTFR5RDNlb090UQ?oc=5",
+     "outlet": "StreetInsider",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "AAF",
+    "name": "Airtel Africa",
+    "slug": "aaf-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 3,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Airtel Africa repurchases 3.4 million shares in new buyback Programme",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTkRUUU1UdUxUdkg4Qkk1dDEyc2pQd2syYnhfTjJ3bVh4Ul8tOG5LUlN3Zlhfdk01ckx5eWh5aXFUOWgtbXFrVFBNR3d0R3A3LUwxVHY5YXVhLUpwTEEzenZRWWVUMm9BYmpOc04zRFV5YmJ4UjAwLVhNTXp3eHBrZlN3MXdkbmY5X2NTRFVaMjhJbnBzVmc?oc=5",
+     "outlet": "Blueprint Newspapers",
+     "outlets": 2
+    }
+   }
+  ]
+ }
+}
