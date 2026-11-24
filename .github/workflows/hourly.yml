@@ -31,7 +31,7 @@ jobs:
     timeout-minutes: 20
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.deploy_retry.outputs.page_url }}
     steps:
       - name: Skip if the engine already ran in the last 45 minutes
         id: check
@@ -106,10 +106,32 @@ jobs:
         if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly'  # a weekly run builds no pages
         with:
           path: site
+      # GitHub sometimes takes a few seconds to list a freshly uploaded artifact, and deploy-pages
+      # gives up at once if it can't see it ("No artifacts named github-pages were found").
+      # So wait until GitHub lists it (up to 60 seconds), then deploy, and try once more if that fails.
+      - name: Wait for GitHub to list the site bundle
+        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 12); do
+            n=$(gh api "repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts" \
+                  --jq '[.artifacts[] | select(.name == "github-pages")] | length' 2>/dev/null || echo 0)
+            if [ "$n" -gt 0 ]; then echo "Site bundle is listed. Deploying."; exit 0; fi
+            echo "Not listed yet, waiting ($i/12)"; sleep 5
+          done
+          echo "Still not listed after 60 seconds. Trying the deploy anyway."
       - id: deploy
         if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly'  # a weekly run builds no pages
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Wait before retrying the deploy
+        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly' && steps.deploy.outcome == 'failure'
+        run: sleep 30
+      - id: deploy_retry
+        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly' && steps.deploy.outcome == 'failure'
         uses: actions/deploy-pages@v4
       - name: Tell Bing about new pages (IndexNow)
-        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly' && steps.deploy.outcome == 'success'
+        if: steps.check.outputs.skip != 'true' && inputs.command != 'weekly' && (steps.deploy.outcome == 'success' || steps.deploy_retry.outcome == 'success')
         continue-on-error: true
         run: python -m engine.indexnow data/indexnow_pending.json
