@@ -1,0 +1,310 @@
+{
+ "start": "2026-11-17",
+ "end": "2026-11-23",
+ "lists": {
+  "all": [
+   {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "slug": "nvda",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 1237,
+    "outlets": 262,
+    "biggest": {
+     "headline": "Arm CEO Extends Contract Through 2033 After Nvidia Approach",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV2VIVEFDaFFQRTMzWl96NmhERll5Q2pINWw2T1Zqd3M0NUpKcHp1emdUdk9PellRWkg5b1o3UjBHeVBqdHZLMFhkOUc3RHFYcTRwY3BmZjh6aUlYdVRnM29vNjRzR0FYaUs4aWN3QkgzZUhjaHY4N3Q2c2xzMnYtNGcwQ2dSSGNWRjA0dzJfdXBsNUNfcGZjV1FTM3hOdHpFOEZ2Z1RfZzBVU2w5VlBN?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "TTWO",
+    "name": "Take-Two",
+    "slug": "ttwo",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 224,
+    "outlets": 113,
+    "biggest": {
+     "headline": "GTA VI's $2.36 Billion Launch Day Puts Streaming Giants Netflix (NASDAQ: NFLX) And Disney (NYSE: DIS) On Notice",
+     "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPT0Zrc3dQVGljalRKWWdqRHdoTXNxY2hLS093RG1FYkxjQXhwbndGbFRVWmhDSGdwWmVVSUlVZlpFMHcteXRoQ1ZXdkVvT09ySWtPaTRINE1ud3o3dk5uWlZtRmxYWGs0bVl3SnZ0eXRfeVAwS3N4TGRkUEVVTktyUFlkZHRYU3JreVpFQ25xZzFXYjJSTWIzNE9KeG80WkZyVDQyLWszTml5OWxESVpDVnV5SFJGZDI0V1ZCaklwb0tDU0ZOUy1QbFFiRWhzYkZQMEktNnY0LWJ6QnZkeHZnSmEwblhvQkE?oc=5",
+     "outlet": "Foreign Policy Journal",
+     "outlets": 7
+    }
+   },
+   {
+    "symbol": "AMD",
+    "name": "AMD",
+    "slug": "amd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 133,
+    "outlets": 67,
+    "biggest": {
+     "headline": "AMD completes acquisition of World Labs to bolster its spatial intelligence",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUWtrakRYdUs1TXNsVUlVX3RVdllXRGJjOGZBNzJkSHF2OTQxWXhyaFpZRWw4TE4wRml3dnlUWUVSNXRXcWMzLUNla0YwWVhTc2ZaMXhlQTY1XzZidHFJZzlvSXdZV0VmUUQtOWlGTjd0U1ZKOU1GZjBVa2pyRXBnNHdTOXZXS0hCYVBVMkNqWE9pRERvRkYtR19ONEVFY19kcEhVZGZtSE90NHJER0M1elNpU1hlN09keUJZamNqcUJGSnM?oc=5",
+     "outlet": "Techzine Global",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "CRWD",
+    "name": "CrowdStrike",
+    "slug": "crwd",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 122,
+    "outlets": 68,
+    "biggest": {
+     "headline": "CrowdStrike’s Talks with Zscaler Show AI-Led Cyber Consolidation",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb0VYZF9KRG42dkJPc2xHRUVQYWdOTjd3dWdCOEhWbzZ0dGdGWXV5c29QaXZFOURSSDJmZU9LUUgyTjc2SC1HNFNMTU53V0NCZlMya1BLQWdCWk9HZGU4RGJ4WDI3bTZHWGRobjBTYnpGSUlST2xHLWtOYjlnZy0yTUgtbWkwdjBoSHhIX01teDB0Y2JVV1BvdnNQMkFybWV2V2Z4NmE5OGF1UkRqMEpycU1LdmdVQQ?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 56
+    }
+   },
+   {
+    "symbol": "ZS",
+    "name": "Zscaler",
+    "slug": "zs",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 115,
+    "outlets": 62,
+    "biggest": {
+     "headline": "CrowdStrike’s Talks with Zscaler Show AI-Led Cyber Consolidation",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQb0VYZF9KRG42dkJPc2xHRUVQYWdOTjd3dWdCOEhWbzZ0dGdGWXV5c29QaXZFOURSSDJmZU9LUUgyTjc2SC1HNFNMTU53V0NCZlMya1BLQWdCWk9HZGU4RGJ4WDI3bTZHWGRobjBTYnpGSUlST2xHLWtOYjlnZy0yTUgtbWkwdjBoSHhIX01teDB0Y2JVV1BvdnNQMkFybWV2V2Z4NmE5OGF1UkRqMEpycU1LdmdVQQ?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 56
+    }
+   },
+   {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "slug": "msft",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 109,
+    "outlets": 49,
+    "biggest": {
+     "headline": "Red Hat and Microsoft bring OpenShift virtual machines to Azure",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdGpEeDNlLWF1NDR6TVVmMUZZZEV2bS1WNTJLRFNka2JUTktmazhSQ1hqLUZMQWFhS2Y0aFN1TE9udk9BUVdNQnRVWEUzQnNSX0RnRWlEOEFVNW1HdkVwc1YyR29KRHZjQ0FJMloxZnMzU0plZ18tOXVhcUVDWm1oVEJLZk94RDJqYlBWUlJacjhUSVJsSVljMi1GZ3k4OFBSTGc?oc=5",
+     "outlet": "SiliconANGLE",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "slug": "googl",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 107,
+    "outlets": 29,
+    "biggest": {
+     "headline": "Blue Origin will launch Google’s AI server satellites in 2029",
+     "link": "https://www.theverge.com/tech/1037535/google-blue-origin-project-suncatcher-2029",
+     "outlet": "The Verge",
+     "outlets": 6
+    }
+   },
+   {
+    "symbol": "INTC",
+    "name": "Intel",
+    "slug": "intc",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 94,
+    "outlets": 52,
+    "biggest": {
+     "headline": "Broadcom, Intel, Nvidia, and Qualcomm stocks trade down, what you need to know",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQbEpRSnhmdjVSZU4zNnRSb0FablplaDNoQjdFa05idEx3QndSNEtYY1lkaWFsRmh6S3N0WmFwN2tHeHVsUzVDaEtLTG5INWFOcW85NWxmTWJJRDRIbHFPU0ZWZTd5WXBac1RUTnV5RF84TTExLVZ5TkMyY1lxNXc0aGU1WnpIcjRmRzFlaTVJdWtFbUpJZndhQ2NNbFJfeG5UT2JZdVpheDdkUzVZY0NveXV3QzRZQ0FsLVhWRlhiRUNjY3ZRMkw1WEk3Ny1aYnNY?oc=5",
+     "outlet": "TradingView",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "slug": "crm",
+    "exchange": "NYSE",
+    "market": "US",
+    "headlines": 85,
+    "outlets": 54,
+    "biggest": {
+     "headline": "Salesforce sets AI budgets after employees spent 'thousands of dollars per month on tokens,' memo says",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcDBtaDdMN0hITldBVm41V01HcllkMTA3LW8yRWZBVzVaZlZnYUVDY3JpT2c1akVNVWJMME45Y1haM0hfb0NJZ2IxazZVVURfWV9MOURzTUxWRnNkaTVvd2RVdllCTEdINGw5WmhIZXJGMmpOSEpJZzBDY1FRMk1TNU1aRWVQakhFdWNEc2ROM3pHRnNBUmFj?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 4
+    }
+   },
+   {
+    "symbol": "SNDK",
+    "name": "SanDisk",
+    "slug": "sndk",
+    "exchange": "NASDAQ",
+    "market": "US",
+    "headlines": 78,
+    "outlets": 38,
+    "biggest": {
+     "headline": "Sandisk Announces Participation in Investor Conferences",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdHZQY3dkQmZ5UkZPb0JkbDhfb0tYMGQyVW5ISTZBNXJLeVFjWTZfbVB0ZWhlQklmbnhaS09mUnUtUC1vbmFvMUh0c19JVnRleUV2ZVJUQ3JYeG12eldfeE5TLUNESHFHYTkwNWluLVdRa1hNQWl4MmdydG9rT193cHlSWUNFQQ?oc=5",
+     "outlet": "01net",
+     "outlets": 2
+    }
+   }
+  ],
+  "uk": [
+   {
+    "symbol": "ARM",
+    "name": "Arm Holdings",
+    "slug": "arm",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 28,
+    "outlets": 20,
+    "biggest": {
+     "headline": "Arm CEO Extends Contract Through 2033 After Nvidia Approach",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQV2VIVEFDaFFQRTMzWl96NmhERll5Q2pINWw2T1Zqd3M0NUpKcHp1emdUdk9PellRWkg5b1o3UjBHeVBqdHZLMFhkOUc3RHFYcTRwY3BmZjh6aUlYdVRnM29vNjRzR0FYaUs4aWN3QkgzZUhjaHY4N3Q2c2xzMnYtNGcwQ2dSSGNWRjA0dzJfdXBsNUNfcGZjV1FTM3hOdHpFOEZ2Z1RfZzBVU2w5VlBN?oc=5",
+     "outlet": "Bloomberg",
+     "outlets": 8
+    }
+   },
+   {
+    "symbol": "RZLV",
+    "name": "Rezolve AI",
+    "slug": "rzlv",
+    "exchange": "NASDAQ",
+    "market": "UK",
+    "headlines": 17,
+    "outlets": 11,
+    "biggest": {
+     "headline": "Rezolve Ai CEO: “The Long-Term Winners in AI Will Be the Vertical Market Specialists”",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQM0pjT0ZKa1pTMnBTbVN5Sm5xb0xNLXhnRURlTlRoVmNxXzNXUlJNcTl1ZWhOaEk5NUdVVkRWcndoT1VfLWNBY1lTY2JDeGxhZ2RzeEV5WUpMM0hPYlVDcjlOYVZoYThwVHdNdDhqbnFlUFQzZGdlTFJzQmxsYzlCRmVNanNlNFFFRFIyYzZLRklLUUVZUUs4ZkxoOWRMRU1MNUMzZl8xSEViMGhYbE9MOXNxU3EtMVNFM05jdjFaTkhOT1Q5VUU1Vnh0Szg4aC1Gck5YbTBuTzc?oc=5",
+     "outlet": "Business Insider",
+     "outlets": 9
+    }
+   },
+   {
+    "symbol": "SGE",
+    "name": "Sage Group",
+    "slug": "sge-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 10,
+    "outlets": 6,
+    "biggest": {
+     "headline": "Sage targets another year of double-digit growth",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNY25tWEtVRnptX1liR01tc2x2NHlzemhReTJyajEtcHQ0QUZ2Z3VtV3Q5b0kxREFOWXFrU0swaU1WSmhhWnZMMGI2aHl0Y1UwOUZ1OElCOEZUbFlvOE04MjNtdWxwMUNrM1l3Qm4xSmVGeVpvLTNBWnc1X09nWkdSUElIUGxIU1Ew?oc=5",
+     "outlet": "Investors' Chronicle",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "REL",
+    "name": "RELX",
+    "slug": "rel-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 6,
+    "outlets": 4,
+    "biggest": {
+     "headline": "RELX stock: Morgan Stanley keeps Hold at 2,990 pence target",
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQd3dLcEZWNm9LbE9jOTQzU0lwamtJT2cxWXhOamMzNmhRU1pud1pJeUp6NVQtQVVIOWpJN0lHRTJVdUR0V0ZxMk05TUYtM1Buc0pncmJ3RTRIX18xejdhc3RoTlBBZjdjMkdDeFBOUmp0bmlKMVlQQmFBTVVQbHJHUWRpVFRtZ3RPNGZqZFpjRHNQRTBnNnhfUWVtMlBBWE1aOEhFMFZfMkhXRWFFVkRfanAzUGxGTmgwWnZGNVVn?oc=5",
+     "outlet": "ad-hoc-news.de",
+     "outlets": 2
+    }
+   },
+   {
+    "symbol": "DAVA",
+    "name": "Endava",
+    "slug": "dava",
+    "exchange": "NYSE",
+    "market": "UK",
+    "headlines": 6,
+    "outlets": 3,
+    "biggest": {
+     "headline": "Endava receives NYSE notice over delayed annual report filing",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVmVWVjlERW9QQ1dOcTRZeE1yb2xEUTJTRGJKcEN6RElKeXJLUkRlTmctdkZjTVcwSXdhVWlidFpFeDZGRHBnX0RNemJfSHV0VGo3aW5SN1lYdnJDS2N1MTN3N2xzTHhpNU4waDZMcU5pOVF4Rm5uUHFrVnVCcWFrRERvQVNHeDRpLWptTDZnejVtMDZXd2RuVkNRVV9MQVBBYVhZZjNkLWVDVUpUNkFzVEJkTFR5RDNlb090UQ?oc=5",
+     "outlet": "StreetInsider",
+     "outlets": 3
+    }
+   },
+   {
+    "symbol": "CER",
+    "name": "Cerillion",
+    "slug": "cer-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 5,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Cerillion ups payout despite profit fall as costs outpace revenue rise",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS1M0MEc1ZUFkaXJRNDFlMEd4WE5EMDhxSHp6aE5mZ2hCVEU4SHYxbUZnODZMTWpnUWZzTXdJb1RWbzJHQ1ltaTJNQXczMm1UbFRZNmVkcjhmZzNocE5Lb3VENVF1U0E5V2NHQ0NrbG5Helpfc0JZSTZXV0JRVjhkdzlEWERqOV9TOGNZNC16c08tX3RHaUd6NkhOQmpvR3c4RU1BM1BOX1pwa2xYeUZmaWEyZ1FSYm5KckE?oc=5",
+     "outlet": "London South East",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ACSO",
+    "name": "Accesso Technology",
+    "slug": "acso-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "accesso Technology Group (ACSO) Wins Seven-Year Premier Parks Technology Partnership",
+     "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMjl5bWd1OExTeENZSWs2YzMyZUJMaF9KYlcwckJSOVRrQkxjdzh1eUwwZzA0MVdrZkNKXzBISFU0NENxMUtCMWFDVHcxUFVFYm9jRGxlX2hLVTRsaDZKanVtaDV6N3U3anBBaHhxSWdEbnZNanM0YXlFVUNGTVZ3MFJXcGFNOFRBdWlHVVo2VG50TlVwV2xyenM1RzN1Sy1pUllXNVlsRlVGUUxrbVo5MGM1R3NsM0thNHlTR1ViVTdWSXBJb1MycjlMdl9NUTY5SlYxT2kydnliSE8y?oc=5",
+     "outlet": "TradingView",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "ZEG",
+    "name": "Zegona",
+    "slug": "zeg-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Can Zegona’s Vodafone Spain turnaround deliver for investors?",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQ3lsTEVaLUM5UUc0VDI0V2hBeFR3a2lGMWhxTEpIa3pJU3NVNENSblkzME9UOG1hNUlDVFlXOVBiZ3BYTWdtVzVkaGw0RmNvTGZ4TmFYWDJrRU16azdxVEI2empoY3JkcnpHWGEtWEFUaTBoS3cyVXI2dkJhUnQ5cWtOc0JEUmpaMnhnMnNfenRpbEJHZUxYQlpWckg1eEtFVWNsOG9TSQ?oc=5",
+     "outlet": "The Armchair Trader",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "IQE",
+    "name": "IQE",
+    "slug": "iqe-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 3,
+    "biggest": {
+     "headline": "IQE boosts guidance after bumper second half, shares spark",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVjljWjdXdWRieGJvS3lyY3gtVjVpaTQ1M21rM1RfSXZIVFpZZE1LMWRqRkQtaEIwSkxYdXlQNUhqSXg0TThGcHQtMVN0NGtWOVBmR0tpaUZkTy1aR1ZvTUN2SFE3NlBZSm1TSjdRWEtMVHJjUWlWLXYzMDk1VVloV0lMeHpLSno5RTU0VTItQmNibE5VbDJNQkFjTVQ3Y1IwWXlpaGVITUtmX0VCcWswTjY2aw?oc=5",
+     "outlet": "Sharecast",
+     "outlets": 1
+    }
+   },
+   {
+    "symbol": "VOD",
+    "name": "Vodafone",
+    "slug": "vod-l",
+    "exchange": "LSE",
+    "market": "UK",
+    "headlines": 4,
+    "outlets": 4,
+    "biggest": {
+     "headline": "Zegona advances by almost 4% after raising Vodafone España's half-year revenues by 2.9%",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNd0NhMmwxM0ZuZVA3Qm5uYUVPbEwyZU9SWFJVZVNZTVF0dmI3NWNHZTQ0VW00V0VwRFlubFFYT2swZUVJVldOUFFSM0d1Y2MwLV94R05ObmNaNWlyTGZybGZYc25rSmZQREtOZk9KbjhnX1l2b1FQRWdZT1RxNm9YeDlJZmJkSFg3cV9TRlRDano5ZTB5Q0RSdTJMV3dyNFJZMmlmYTVtTDRZQ09nemh2UlY5cXM5eHNQazJmbTFLSdIBxAFBVV95cUxPQ2NPTUcxcWFMX3lxdGZRc3lZX3JYUlR2MmktaUd2XzhuSjdFSjVpV1RRZWpsM3FFa0tLd3MzNFNvaVhhWGlaeGxzSkxZdXJlN1V0aWZaZU5pc19Ec0JsUjc4QmVibjJxZ2NJTndXVUgtajZaWjIySjU1c1UzQ091WVUtMzdaaVBQMFpvalEybnBWUzNYRW03ekdHa3dUa25aaWxlZ01YSHZKaVBmLWMydkFTTmhGNGY2MG5tQWlkcWpOYVN3?oc=5",
+     "outlet": "Demócrata",
+     "outlets": 1
+    }
+   }
+  ]
+ }
+}
